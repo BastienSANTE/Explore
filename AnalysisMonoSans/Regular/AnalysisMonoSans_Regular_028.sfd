@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1726144911
-ModificationTime: 1732568113
+ModificationTime: 1732708093
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -53,7 +53,7 @@ NameList: AGL For New Fonts
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 12 10
+WinInfo: 32 8 2
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -9232,12 +9232,13 @@ SplineSet
  16 463 l 1
  16 523 l 1
 EndSplineSet
+Validated: 5
 EndChar
 
 StartChar: dollar
 Encoding: 36 36 25
 Width: 600
-Flags: W
+Flags: HW
 HStem: -8 60<191.969 373.746> 687 60<200.366 373.489>
 VStem: 54 66<122.072 152.389> 76 72<498.095 638.144> 253 72<-136 875> 430 72<106.21 257.734>
 LayerCount: 2
@@ -9267,9 +9268,9 @@ EndSplineSet
 Fore
 SplineSet
 282 747 m 1xdc
- 368 747 441 724 498.1171875 624.62109375 c 1
- 438.705078125 592 l 1
- 401.580078125 655 361 687 283 687 c 1
+ 368 747 441 724 498 625 c 1
+ 439 592 l 1
+ 402 655 361 687 283 687 c 1
  196 687 148 634 148 573 c 1xdc
  148 496 188 466 307 410 c 0
  410 362 502 294 502 190 c 1
@@ -9287,6 +9288,7 @@ SplineSet
  253 -136 l 1
  253 875 l 1
 EndSplineSet
+Validated: 5
 EndChar
 
 StartChar: percent
@@ -9358,7 +9360,7 @@ EndChar
 StartChar: ampersand
 Encoding: 38 38 27
 Width: 600
-Flags: W
+Flags: HW
 HStem: -8 60<175.653 343.482> 687 60<198.005 337.622>
 VStem: 24 72<135.45 342.431> 87 72<508.954 648.407> 440 72<168.825 412>
 LayerCount: 2
@@ -11502,9 +11504,9 @@ SplineSet
  367 52 440 136 440 305 c 1
  440 412 l 1xe8
 266 747 m 1
- 343 747 395.870117188 719.794921875 442 652 c 1
- 386.491210938 612.874023438 l 1
- 358.995117188 652.546875 323 687 269 687 c 1
+ 343 747 396 720 442 652 c 1
+ 386 613 l 1
+ 359 653 323 687 269 687 c 1
  201 687 159 639 159 593 c 1
  159 526 191 491 230 440 c 1
  558 35 l 1
@@ -11513,6 +11515,7 @@ SplineSet
  138 442 87 510 87 593 c 1xd8
  87 667 151 747 266 747 c 1
 EndSplineSet
+Validated: 5
 EndChar
 
 StartChar: quotesingle
@@ -33682,7 +33685,7 @@ EndChar
 StartChar: Q
 Encoding: 81 81 70
 Width: 600
-Flags: WO
+Flags: W
 HStem: -180 59<376.051 515.528> -8 8<264 326> 687 60<210.249 355.654>
 VStem: 41 72<191.575 548.976> 452 73<191.575 548.976>
 LayerCount: 2
