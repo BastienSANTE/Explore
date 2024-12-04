@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1726144911
-ModificationTime: 1733264780
+ModificationTime: 1733331035
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -53,7 +53,7 @@ NameList: AGL For New Fonts
 DisplaySize: -128
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 14 14 6
+WinInfo: 98 14 4
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -3854,7 +3854,7 @@ EndChar
 StartChar: c
 Encoding: 99 99 13
 Width: 600
-Flags: W
+Flags: HW
 HStem: -8 60<207.432 380.991> 455 60<207.496 387.34>
 VStem: 57 72<135.107 366.651> 410 72<331 438>
 LayerCount: 2
@@ -4172,11 +4172,11 @@ o*#%7;;\6[X;jo@z8OZBBY!QNJ
 EndImage2
 Fore
 SplineSet
-482 438 m 1
- 482 331 l 29
- 410 331 l 5
- 410 438 l 1
- 482 438 l 1
+482 438 m 5
+ 450.712890625 312.8515625 l 29
+ 380.862304688 330.314453125 l 5
+ 412.149414062 455.462890625 l 5
+ 482 438 l 5
 292 515 m 1
  380 515 432 488 482 438 c 1
  446 385 l 1
@@ -8012,9 +8012,9 @@ EndChar
 StartChar: r
 Encoding: 114 114 21
 Width: 600
-Flags: W
-HStem: 0 56<57 325> 451 56<30 172> 452 63<321.373 431.969>
-VStem: 151 72<0 352 389 441.864> 151 21<451 507> 433 72<353 502>
+Flags: WO
+HStem: 0 56<57 325> 451 56<30 172> 452 63<321.373 424.276>
+VStem: 151 72<0 352 389 441.864> 151 21<451 507> 406.632 71.3682<339.561 384.293>
 LayerCount: 2
 Back
 Image2: image/png 18480 0 800 2 2
@@ -8330,25 +8330,25 @@ W_uY*&-3)1)\<#^-jB\YWu+hcW!J30KV]-6J-ZjAJ:pp]WYAD86pSW;#"1]ZMEsME.RmDF.KUe:
 EndImage2
 Fore
 SplineSet
-433 502 m 1x84
- 505 502 l 1
- 505 353 l 1
- 433 353 l 1
- 433 502 l 1x84
+429.631835938 511.515625 m 1x84
+ 501 502 l 1
+ 478 331 l 1
+ 406.631835938 340.516601562 l 1
+ 429.631835938 511.515625 l 1x84
 402 515 m 1xb4
- 444 515 473 510 505 502 c 1
- 488 440 l 1
- 463 447 444 452 402 452 c 1
+ 444 515 469 510 501 502 c 1
+ 484 440 l 1
+ 459 447 444 452 402 452 c 1
  306 452 223 364 223 252 c 1
  199 352 l 1
  209 439 302 515 402 515 c 1xb4
-57 56 m 5
+57 56 m 1
  151 56 l 1
  223 56 l 1
- 325 56 l 5
+ 325 56 l 1
  325 0 l 1
  57 0 l 1
- 57 56 l 5
+ 57 56 l 1
 30 507 m 1xcc
  172 507 l 1
  172 451 l 1
@@ -40964,7 +40964,7 @@ EndChar
 StartChar: cacute
 Encoding: 263 263 120
 Width: 600
-Flags: W
+Flags: HW
 HStem: -8 60<207.432 380.991> 455 60<207.496 387.34> 582 181
 VStem: 57 72<135.107 366.651> 196 241 410 72<331 438>
 LayerCount: 2
@@ -41392,7 +41392,7 @@ EndChar
 StartChar: ccircumflex
 Encoding: 265 265 132
 Width: 600
-Flags: W
+Flags: HW
 HStem: -8 60<207.432 380.991> 455 60<207.496 387.34> 582 181
 VStem: 57 72<135.107 366.651> 122 320 410 72<331 438>
 LayerCount: 2
@@ -41846,7 +41846,7 @@ EndChar
 StartChar: ccedilla
 Encoding: 231 231 149
 Width: 600
-Flags: W
+Flags: HW
 HStem: -229 56<186.592 340.283> -99 48<283.015 339.524> -99 98<239 283 297 305> -8 60<207.432 380.991> 455 60<207.496 387.34>
 VStem: 57 72<135.107 366.651> 239 66<-20.5491 -1> 343 72<-169.078 -103.018> 410 72<331 438>
 LayerCount: 2
