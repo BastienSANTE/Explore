@@ -1,7 +1,7 @@
 SplineFontDB: 3.2
-FontName: AnalysisMonoRegular
-FullName: Analysis Mono Regular
-FamilyName: AnalysisMono
+FontName: AnalysisMonoSans
+FullName: Analysis Mono Sans
+FamilyName: Analysis Mono
 Weight: Regular
 Copyright: Copyright (c) 2024, Bastien
 UComments: "2024-9-12: Created with FontForge (http://fontforge.org)"
@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1726144911
-ModificationTime: 1733433538
+ModificationTime: 1733693850
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -47,13 +47,12 @@ MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 25 4
+WinInfo: 60 6 10
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -36800,9 +36799,9 @@ EndChar
 StartChar: u
 Encoding: 117 117 87
 Width: 600
-Flags: W
-HStem: -8 60<184.108 338.031> 0 21G<413 472.039> 487 20G<65 137 401 473>
-VStem: 65 72<100.548 507> 401 72<44.16 80 116 507> 417 55<0 35.84>
+Flags: WO
+HStem: -8 60<184.108 338.031> 0 21G<413 473> 487 20G<65 137 401 473>
+VStem: 65 72<100.548 507> 401 72<44.16 80 116 507> 417 56<0 35.84>
 LayerCount: 2
 Back
 SplineSet
@@ -36823,23 +36822,22 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-472 0 m 1x74
+473 0 m 5x74
  417 0 l 1x74
  401 80 l 1
  401 507 l 1
  473 507 l 1x78
- 472 0 l 1x74
+ 473 0 l 5x74
 419 116 m 1
  391 45 340 -8 250 -8 c 0
  123 -8 65 83 65 189 c 1
  65 507 l 1
  137 507 l 1
  137 191 l 2
- 137 103 178 52 259 52 c 4
- 355 52 401 121 401 203 c 5xb8
+ 137 103 178 52 259 52 c 0
+ 355 52 401 121 401 203 c 1xb8
  419 116 l 1
 EndSplineSet
-Validated: 5
 EndChar
 
 StartChar: v
@@ -39433,9 +39431,9 @@ EndChar
 StartChar: Agrave
 Encoding: 192 192 99
 Width: 600
-Flags: HW
-HStem: 0 21G<49 124.115 448.885 524> 180 60<139 447> 719 20G<234.831 338.169> 798 181
-VStem: 49 70<0 27.7338> 154 241 454 70<0 27.7338>
+Flags: W
+HStem: 0 21G<61 135.79 437.21 512> 180 60<139 447> 719 20G<235.156 337.844> 798 181
+VStem: 61 70<0 29.593> 154 241 442 70<0 29.593>
 LayerCount: 2
 Fore
 Refer: 96 768 N 1 0 0 1 256 51 2
@@ -39491,9 +39489,9 @@ EndChar
 StartChar: Aacute
 Encoding: 193 193 101
 Width: 600
-Flags: HW
-HStem: 0 21G<49 124.115 448.885 524> 180 60<139 447> 719 20G<234.831 338.169> 798 181
-VStem: 49 70<0 27.7338> 154 241 454 70<0 27.7338>
+Flags: W
+HStem: 0 21G<61 135.79 437.21 512> 180 60<139 447> 719 20G<235.156 337.844> 798 181
+VStem: 61 70<0 29.593> 154 241 442 70<0 29.593>
 LayerCount: 2
 Fore
 Refer: 97 769 N 1 0 0 1 258 51 2
@@ -39585,8 +39583,8 @@ EndChar
 StartChar: Igrave
 Encoding: 204 204 104
 Width: 600
-Flags: HW
-HStem: 0 60<81 469> 679 60<81 469> 798 181
+Flags: W
+HStem: 0 56<81 469> 683 56<81 469> 798 181
 VStem: 154 241 241 72<0 739>
 LayerCount: 2
 Back
@@ -39620,8 +39618,8 @@ EndChar
 StartChar: Iacute
 Encoding: 205 205 105
 Width: 600
-Flags: HW
-HStem: 0 60<81 469> 679 60<81 469> 798 181
+Flags: W
+HStem: 0 56<81 469> 683 56<81 469> 798 181
 VStem: 154 241 241 72<0 739>
 LayerCount: 2
 Back
@@ -39993,7 +39991,7 @@ EndChar
 StartChar: ugrave
 Encoding: 249 249 116
 Width: 600
-Flags: W
+Flags: HW
 HStem: -8 60<184.108 338.031> 0 21G<413 472.039> 487 20G<65 137 401 473> 582 181
 VStem: 65 72<100.548 507> 154 241 401 72<44.16 80 116 507> 417 55<0 35.84>
 LayerCount: 2
@@ -40022,13 +40020,12 @@ EndSplineSet
 Fore
 Refer: 96 768 N 1 0 0 1 256 -165 2
 Refer: 87 117 N 1 0 0 1 0 0 3
-Validated: 5
 EndChar
 
 StartChar: uacute
 Encoding: 250 250 117
 Width: 600
-Flags: W
+Flags: HW
 HStem: -8 60<184.108 338.031> 0 21G<413 472.039> 487 20G<65 137 401 473> 582 181
 VStem: 65 72<100.548 507> 154 241 401 72<44.16 80 116 507> 417 55<0 35.84>
 LayerCount: 2
@@ -40057,7 +40054,6 @@ EndSplineSet
 Fore
 Refer: 97 769 N 1 0 0 1 258 -165 2
 Refer: 87 117 N 1 0 0 1 0 0 3
-Validated: 5
 EndChar
 
 StartChar: yacute
@@ -40162,9 +40158,9 @@ EndChar
 StartChar: Acircumflex
 Encoding: 194 194 121
 Width: 600
-Flags: HW
-HStem: 0 21G<49 124.115 448.885 524> 180 60<139 447> 719 20G<234.831 338.169> 800 181
-VStem: 49 70<0 27.7338> 126 320 454 70<0 27.7338>
+Flags: W
+HStem: 0 21G<61 135.79 437.21 512> 180 60<139 447> 719 20G<235.156 337.844> 800 181
+VStem: 61 70<0 29.593> 126 320 442 70<0 29.593>
 LayerCount: 2
 Back
 SplineSet
@@ -40244,8 +40240,8 @@ EndChar
 StartChar: Icircumflex
 Encoding: 206 206 123
 Width: 600
-Flags: HW
-HStem: 0 60<81 469> 679 60<81 469> 800 181
+Flags: W
+HStem: 0 56<81 469> 683 56<81 469> 800 181
 VStem: 117 320 241 72<0 739>
 LayerCount: 2
 Back
@@ -40471,7 +40467,7 @@ EndChar
 StartChar: ucircumflex
 Encoding: 251 251 129
 Width: 600
-Flags: W
+Flags: HW
 HStem: -8 60<184.108 338.031> 0 21G<413 472.039> 487 20G<65 137 401 473> 582 181
 VStem: 65 72<100.548 507> 114 320 401 72<44.16 80 116 507> 417 55<0 35.84>
 LayerCount: 2
@@ -40503,7 +40499,6 @@ EndSplineSet
 Fore
 Refer: 98 770 N 1 0 0 1 258 -165 2
 Refer: 87 117 N 1 0 0 1 0 0 3
-Validated: 5
 EndChar
 
 StartChar: icircumflex
@@ -40661,9 +40656,9 @@ EndChar
 StartChar: Adieresis
 Encoding: 196 196 135
 Width: 600
-Flags: HW
-HStem: 0 21G<49 124.115 448.885 524> 180 60<139 447> 719 20G<234.831 338.169> 843 102<130.456 213.544 334.456 417.544>
-VStem: 49 70<0 27.7338> 121 102<852.456 935.544> 325 102<852.456 935.544> 454 70<0 27.7338>
+Flags: W
+HStem: 0 21G<61 135.79 437.21 512> 180 60<139 447> 719 20G<235.156 337.844> 843 102<130.456 213.544 334.456 417.544>
+VStem: 61 70<0 29.593> 121 102<852.456 935.544> 325 102<852.456 935.544> 442 70<0 29.593>
 LayerCount: 2
 Back
 SplineSet
@@ -40714,8 +40709,8 @@ EndChar
 StartChar: Idieresis
 Encoding: 207 207 137
 Width: 600
-Flags: HW
-HStem: 0 60<81 469> 679 60<81 469> 843 102<131.456 214.544 335.456 418.544>
+Flags: W
+HStem: 0 56<81 469> 683 56<81 469> 843 102<131.456 214.544 335.456 418.544>
 VStem: 122 102<852.456 935.544> 241 72<0 739> 326 102<852.456 935.544>
 LayerCount: 2
 Fore
@@ -40863,14 +40858,13 @@ EndChar
 StartChar: udieresis
 Encoding: 252 252 145
 Width: 600
-Flags: W
+Flags: HW
 HStem: -8 60<184.108 338.031> 0 21G<413 472.039> 487 20G<65 137 401 473> 627 102<130.456 213.544 334.456 417.544>
 VStem: 65 72<100.548 507> 121 102<636.456 719.544> 325 102<636.456 719.544> 401 72<44.16 80 116 507> 417 55<0 35.84>
 LayerCount: 2
 Fore
 Refer: 134 776 N 1 0 0 1 274 -157 2
 Refer: 87 117 N 1 0 0 1 0 0 3
-Validated: 5
 EndChar
 
 StartChar: ydieresis
