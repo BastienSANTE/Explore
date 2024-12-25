@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1735138560
-ModificationTime: 1735144101
+ModificationTime: 1735147995
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -41,25 +41,55 @@ HheadAOffset: 0
 HheadDescent: 224
 HheadDOffset: 0
 OS2Vendor: 'PfEd'
+Lookup: 258 0 0 "Kern Latin" { "Kern Latin-Latin" [153,0,2] } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+KernClass2: 7 5 "Kern Latin-Latin"
+ 50 A Agrave Aacute Acircumflex Atilde Adieresis Aring
+ 1 C
+ 1 D
+ 3 O Q
+ 1 V
+ 1 T
+ 50 A Agrave Aacute Acircumflex Atilde Adieresis Aring
+ 5 C O Q
+ 3 T V
+ 0 
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -55 {} -64 {} -112 {} 0 {} 0 {} 0 {} 0 {} -29 {} 0 {} 0 {} 0 {} 0 {} -52 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -112 {} -40 {} -27 {} 0 {} 0 {} -112 {} 0 {} 0 {} 0 {}
 LangName: 1033
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 25 4
+WinInfo: 24 8 7
 BeginPrivate: 0
 EndPrivate
 Grid
--1024 734.99991862 m 0
- 2048 734.99991862 l 1024
+-1024 880 m 0
+ 2048 880 l 1024
+  Named: "Uppercase_Accent_Y"
+-997 670 m 0
+ 2075 670 l 1024
+  Named: "Lowercase_Accent_Y"
+-1024 928 m 0
+ 2048 928 l 1024
+-1024 -192 m 0
+ 2048 -192 l 1024
+-1024 739 m 0
+ 2048 739 l 1024
+-1024 747 m 0
+ 2048 747 l 1024
+-1024 507 m 0
+ 2048 507 l 1024
+-1024 -8 m 0
+ 2048 -8 l 1024
+-1018 515 m 0
+ 2054 515 l 1024
 EndSplineSet
 AnchorClass2: "Ring"""  "AccentCenter"""  "None""" 
-BeginChars: 65536 129
+BeginChars: 65536 153
 
 StartChar: A
 Encoding: 65 65 0
@@ -68,6 +98,7 @@ VWidth: 1048
 Flags: W
 HStem: 0 21G<41 119.74 525.923 604> 184 62<168 499> 704 20G<281.177 388.133>
 VStem: 532 72<0 23.3767>
+AnchorPoint: "AccentCenter" 334 880 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -76,16 +107,16 @@ SplineSet
  499 184 l 1
  168 184 l 1
  168 246 l 1
-382 724 m 5
+382 724 m 1
  604 0 l 1
  532 0 l 1
- 312 724 l 5
- 382 724 l 5
-288 724 m 5
- 357 724 l 5
+ 312 724 l 1
+ 382 724 l 1
+288 724 m 1
+ 357 724 l 1
  113 0 l 1
  41 0 l 1
- 288 724 l 5
+ 288 724 l 1
 EndSplineSet
 EndChar
 
@@ -179,25 +210,26 @@ StartChar: E
 Encoding: 69 69 4
 Width: 608
 VWidth: 1048
-Flags: W
+Flags: HW
 HStem: 0 61<158 544> 350 66<157 466> 663 61<158 544>
 VStem: 157 1<350 416>
+AnchorPoint: "AccentCenter" 334 880 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 157 416 m 1
- 466 416 l 5
- 466 350 l 5
+ 474 416 l 1
+ 474 350 l 1
  157 350 l 1
  157 416 l 1
 158 61 m 1
- 544 61 l 5
- 544 0 l 5
+ 552 61 l 1
+ 552 0 l 1
  158 0 l 1
  158 61 l 1
 158 724 m 1
- 544 724 l 5
- 544 663 l 5
+ 552 724 l 1
+ 552 663 l 1
  158 663 l 1
  158 724 l 1
 84 724 m 1
@@ -210,22 +242,22 @@ EndChar
 
 StartChar: F
 Encoding: 70 70 5
-Width: 611
+Width: 605
 VWidth: 1048
 Flags: W
-HStem: 0 21G<84 157> 354 66<141 463> 663 61<121 541>
+HStem: 0 21G<84 157> 354 66<141 457> 663 61<121 535>
 VStem: 84 73<0 354 420 663> 121 36<663 724> 141 16<354 420>
 LayerCount: 2
 Fore
 SplineSet
 141 420 m 1xe4
- 463 420 l 5
- 463 354 l 5
+ 457 420 l 1
+ 457 354 l 1
  141 354 l 1
  141 420 l 1xe4
 121 724 m 1xe8
- 541 724 l 5
- 541 663 l 5
+ 535 724 l 1
+ 535 663 l 1
  121 663 l 1
  121 724 l 1xe8
 84 724 m 1xf0
@@ -299,6 +331,7 @@ VWidth: 1048
 Flags: W
 HStem: 0 21G<84 157> 704 20G<84 157>
 VStem: 84 73<0 724>
+AnchorPoint: "AccentCenter" 120 880 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -456,19 +489,20 @@ VWidth: 1048
 Flags: W
 HStem: -8 61<257.252 433.567> 671 61<253.248 436.557>
 VStem: 56 74<212.643 517.34> 561 75<212.643 517.34>
+AnchorPoint: "AccentCenter" 345 880 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-130 366 m 4
- 130 131 241 53 345 53 c 4
- 449 53 561 131 561 366 c 4
- 561 601 447 671 345 671 c 4
- 241 671 130 601 130 366 c 4
-56 365 m 4
- 56 650 219 732 345 732 c 4
- 471 732 636 650 636 365 c 4
- 636 80 481 -8 345 -8 c 4
- 212 -8 56 80 56 365 c 4
+130 366 m 0
+ 130 131 241 53 345 53 c 0
+ 449 53 561 131 561 366 c 0
+ 561 601 447 671 345 671 c 0
+ 241 671 130 601 130 366 c 0
+56 365 m 0
+ 56 650 219 732 345 732 c 0
+ 471 732 636 650 636 365 c 0
+ 636 80 481 -8 345 -8 c 0
+ 212 -8 56 80 56 365 c 0
 EndSplineSet
 EndChar
 
@@ -596,24 +630,24 @@ EndChar
 
 StartChar: T
 Encoding: 84 84 19
-Width: 623
+Width: 563
 VWidth: 1048
 Flags: W
-HStem: 0 21G<275 348.055> 665 61<64 559>
-VStem: 275 73<0 726>
+HStem: 0 21G<245 318.055> 665 61<24 539>
+VStem: 245 73<0 726>
 LayerCount: 2
 Fore
 SplineSet
-64 726 m 1
- 559 726 l 1
- 559 665 l 1
- 64 665 l 1
- 64 726 l 1
-277 726 m 1
- 350 726 l 1
- 348 0 l 1
- 275 0 l 1
- 277 726 l 1
+24 726 m 1
+ 539 726 l 1
+ 539 665 l 1
+ 24 665 l 1
+ 24 726 l 1
+247 726 m 1
+ 320 726 l 1
+ 318 0 l 1
+ 245 0 l 1
+ 247 726 l 1
 EndSplineSet
 EndChar
 
@@ -621,23 +655,24 @@ StartChar: U
 Encoding: 85 85 20
 Width: 649
 VWidth: 1048
-Flags: W
+Flags: HW
 HStem: -8 61<240.541 406.24> 704 20G<84 157 491 565>
 VStem: 84 73<145.964 724> 491 74<147.206 724>
+AnchorPoint: "AccentCenter" 328 880 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-84 724 m 5
- 157 724 l 5
- 157 257 l 5
- 157 116 230 53 324 53 c 0
+93 724 m 5
+ 166 724 l 5
+ 166 257 l 5
+ 166 116 230 53 324 53 c 0
  412 53 491 116 491 257 c 1
  491 724 l 1
  565 724 l 1
  565 255 l 1
  565 77 449 -8 320 -8 c 0
- 195 -8 84 77 84 257 c 5
- 84 724 l 5
+ 195 -8 93 77 93 257 c 5
+ 93 724 l 5
 EndSplineSet
 EndChar
 
@@ -725,26 +760,27 @@ StartChar: Y
 Encoding: 89 89 24
 Width: 595
 VWidth: 1048
-Flags: W
+Flags: HWO
 HStem: 0 21G<261 334> 285 12<261 329> 704 20G<24 121.159 473.841 571>
 VStem: 261 73<0 297>
+AnchorPoint: "AccentCenter" 296 880 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-261 297 m 5
- 334 297 l 5
+263 307 m 5
+ 336 307 l 5
  334 0 l 1
  261 0 l 1
- 261 297 l 5
-261 285 m 5
+ 263 307 l 5
+263 295 m 5
  484 724 l 1
  571 724 l 1
- 329 285 l 5
- 261 285 l 5
+ 331 295 l 5
+ 263 295 l 5
 24 724 m 1
  111 724 l 1
- 334 285 l 5
- 266 285 l 5
+ 336 295 l 5
+ 268 295 l 5
  24 724 l 1
 EndSplineSet
 EndChar
@@ -1625,8 +1661,8 @@ StartChar: z
 Encoding: 122 122 57
 Width: 558
 VWidth: 1048
-Flags: HW
-HStem: 0 66<150 474> 454 66<64 474>
+Flags: W
+HStem: 0 66<150 474> 454 65<64 474>
 LayerCount: 2
 Fore
 SplineSet
@@ -2634,8 +2670,8 @@ StartChar: gravecomb
 Encoding: 768 768 95
 Width: 0
 VWidth: 1048
-Flags: HW
-HStem: 765 185
+Flags: W
+HStem: 745 185
 VStem: -123 247
 AnchorPoint: "AccentCenter" 4 840 mark 0
 LayerCount: 2
@@ -3069,6 +3105,247 @@ LayerCount: 2
 Fore
 Refer: 101 776 N 1 0 0 1 279 -174 2
 Refer: 56 121 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Agrave
+Encoding: 192 192 129
+Width: 663
+HStem: 0 21G<41 119.74 525.923 604> 184 62<168 499> 704 20G<281.177 388.133> 785 185
+VStem: 207 247 532 72<0 23.3767>
+LayerCount: 2
+Fore
+Refer: 95 768 N 1 0 0 1 330 40 2
+Refer: 0 65 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Aacute
+Encoding: 193 193 130
+Width: 663
+Flags: H
+LayerCount: 2
+Fore
+Refer: 96 769 N 1 0 0 1 328 40 2
+Refer: 0 65 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Acircumflex
+Encoding: 194 194 131
+Width: 663
+Flags: H
+LayerCount: 2
+Fore
+Refer: 97 770 N 1 0 0 1 334 40 2
+Refer: 0 65 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Atilde
+Encoding: 195 195 132
+Width: 663
+Flags: H
+LayerCount: 2
+Fore
+Refer: 98 771 N 1 0 0 1 334 40 2
+Refer: 0 65 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Adieresis
+Encoding: 196 196 133
+Width: 663
+Flags: H
+LayerCount: 2
+Fore
+Refer: 101 776 N 1 0 0 1 334 20 2
+Refer: 0 65 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Aring
+Encoding: 197 197 134
+Width: 663
+Flags: H
+LayerCount: 2
+Fore
+Refer: 100 778 N 1 0 0 1 335 -17.4667 2
+Refer: 0 65 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Egrave
+Encoding: 200 200 135
+Width: 608
+Flags: H
+LayerCount: 2
+Fore
+Refer: 95 768 N 1 0 0 1 330 40 2
+Refer: 4 69 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Eacute
+Encoding: 201 201 136
+Width: 608
+Flags: H
+LayerCount: 2
+Fore
+Refer: 96 769 N 1 0 0 1 328 40 2
+Refer: 4 69 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Ecircumflex
+Encoding: 202 202 137
+Width: 608
+Flags: H
+LayerCount: 2
+Fore
+Refer: 97 770 N 1 0 0 1 334 40 2
+Refer: 4 69 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Edieresis
+Encoding: 203 203 138
+Width: 608
+Flags: H
+LayerCount: 2
+Fore
+Refer: 101 776 N 1 0 0 1 334 20 2
+Refer: 4 69 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Igrave
+Encoding: 204 204 139
+Width: 241
+Flags: H
+LayerCount: 2
+Fore
+Refer: 95 768 N 1 0 0 1 116 40 2
+Refer: 8 73 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Iacute
+Encoding: 205 205 140
+Width: 241
+Flags: H
+LayerCount: 2
+Fore
+Refer: 96 769 N 1 0 0 1 114 40 2
+Refer: 8 73 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Icircumflex
+Encoding: 206 206 141
+Width: 241
+Flags: H
+LayerCount: 2
+Fore
+Refer: 97 770 N 1 0 0 1 120 40 2
+Refer: 8 73 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Idieresis
+Encoding: 207 207 142
+Width: 241
+Flags: H
+LayerCount: 2
+Fore
+Refer: 101 776 N 1 0 0 1 120 20 2
+Refer: 8 73 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Ograve
+Encoding: 210 210 143
+Width: 692
+Flags: H
+LayerCount: 2
+Fore
+Refer: 95 768 N 1 0 0 1 341 40 2
+Refer: 14 79 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Oacute
+Encoding: 211 211 144
+Width: 692
+Flags: H
+LayerCount: 2
+Fore
+Refer: 96 769 N 1 0 0 1 339 40 2
+Refer: 14 79 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Ocircumflex
+Encoding: 212 212 145
+Width: 692
+Flags: H
+LayerCount: 2
+Fore
+Refer: 97 770 N 1 0 0 1 345 40 2
+Refer: 14 79 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Otilde
+Encoding: 213 213 146
+Width: 692
+Flags: H
+LayerCount: 2
+Fore
+Refer: 98 771 N 1 0 0 1 345 40 2
+Refer: 14 79 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Odieresis
+Encoding: 214 214 147
+Width: 692
+Flags: H
+LayerCount: 2
+Fore
+Refer: 101 776 N 1 0 0 1 345 20 2
+Refer: 14 79 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Ugrave
+Encoding: 217 217 148
+Width: 649
+Flags: H
+LayerCount: 2
+Fore
+Refer: 95 768 N 1 0 0 1 324 40 2
+Refer: 20 85 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Uacute
+Encoding: 218 218 149
+Width: 649
+Flags: H
+LayerCount: 2
+Fore
+Refer: 96 769 N 1 0 0 1 322 40 2
+Refer: 20 85 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Ucircumflex
+Encoding: 219 219 150
+Width: 649
+Flags: H
+LayerCount: 2
+Fore
+Refer: 97 770 N 1 0 0 1 328 40 2
+Refer: 20 85 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Udieresis
+Encoding: 220 220 151
+Width: 649
+Flags: H
+LayerCount: 2
+Fore
+Refer: 101 776 N 1 0 0 1 328 20 2
+Refer: 20 85 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: Yacute
+Encoding: 221 221 152
+Width: 595
+Flags: H
+LayerCount: 2
+Fore
+Refer: 96 769 N 1 0 0 1 290 40 2
+Refer: 24 89 N 1 0 0 1 0 0 3
 EndChar
 EndChars
 EndSplineFont
