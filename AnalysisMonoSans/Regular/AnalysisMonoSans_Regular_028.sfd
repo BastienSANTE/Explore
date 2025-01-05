@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1726144911
-ModificationTime: 1735140321
+ModificationTime: 1735503411
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -52,7 +52,7 @@ NameList: AGL For New Fonts
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 744 6 7
+WinInfo: 48 6 10
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -15256,8 +15256,8 @@ StartChar: five
 Encoding: 53 53 42
 Width: 600
 Flags: W
-HStem: -8 58<181.908 376.845> 408 59<197.384 383.023> 643 64<128 484>
-VStem: 454 72<129.18 336>
+HStem: -8 59<166.096 372.742> 400 64<141 374.641> 645 62<120 476>
+VStem: 447 74<127.995 327.09>
 LayerCount: 2
 Back
 Image2: image/png 54571 208.5 800 2 2
@@ -16197,29 +16197,28 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-298 467 m 1
- 426 467 526 390 526 235 c 4
- 526 90 438 -8 284 -8 c 1
- 159 -8 108 39 74 89 c 1
- 126 128 l 1
- 157 80 195 50 284 50 c 1
- 384 50 454 102 454 231 c 4
- 454 349 396 408 296 408 c 1
- 231 408 196 390 170 366 c 1
- 130 392 l 17
- 159 438 214 467 298 467 c 1
-124 707 m 1
- 196 707 l 1
- 170 366 l 1
- 102 401 l 1
- 124 707 l 1
-128 707 m 1
- 484 707 l 1
- 484 643 l 1
- 128 643 l 1
- 128 707 l 1
+279.5 464 m 1
+ 403 464 521 394 521 235 c 0
+ 521 87 431 -8 273 -8 c 1
+ 145 -8 83.5 40 48.5 91 c 1
+ 101.5 131 l 1
+ 133.5 82 182 51 273 51 c 1
+ 375 51 447 99 447 231 c 0
+ 447 352 379.5 400 277.5 400 c 1
+ 157 400 l 1
+ 141 464 l 1
+ 279.5 464 l 1
+113.5 707 m 1
+ 183.5 707 l 1
+ 157 400 l 1
+ 87 400 l 1
+ 113.5 707 l 1
+120 707 m 1
+ 476 707 l 1
+ 476 645 l 1
+ 120 645 l 1
+ 120 707 l 1
 EndSplineSet
-Validated: 5
 EndChar
 
 StartChar: six
@@ -20587,7 +20586,7 @@ EndChar
 StartChar: A
 Encoding: 65 65 54
 Width: 600
-Flags: W
+Flags: WO
 HStem: 0 21G<46 121.827 478.173 554> 180 60<152 460> 687 20G<248.116 351.884>
 VStem: 46 70<0 24.3643> 484 70<0 24.3643>
 AnchorPoint: "Ring" 300 784 basechar 0
@@ -21518,11 +21517,11 @@ SplineSet
  460 180 l 1
  152 180 l 1
  152 240 l 1
-346 707 m 1
- 554 0 l 5
- 484 0 l 5
+346 707 m 5
+ 554 0 l 1
+ 484 0 l 1
  278 707 l 1
- 346 707 l 1
+ 346 707 l 5
 254 707 m 1
  322 707 l 1
  116 0 l 1
@@ -39372,7 +39371,7 @@ EndChar
 StartChar: gravecomb
 Encoding: 768 768 96
 Width: 0
-Flags: WO
+Flags: W
 HStem: 747 181
 VStem: -120 241
 AnchorPoint: "AccentCenter" 4 840 mark 0
@@ -40100,9 +40099,9 @@ EndChar
 StartChar: Cacute
 Encoding: 262 262 119
 Width: 600
-Flags: HW
-HStem: -8 60<227.469 406.253> 655 60<238.668 398.928> 798 181
-VStem: 65 72<167.542 517.507> 208 241
+Flags: W
+HStem: -8 60<235.38 406.253> 655 60<238.668 398.928> 798 181
+VStem: 65 72<189.039 517.507> 208 241
 LayerCount: 2
 Back
 SplineSet
@@ -40552,9 +40551,9 @@ EndChar
 StartChar: Ccircumflex
 Encoding: 264 264 131
 Width: 600
-Flags: HW
-HStem: -8 60<227.469 406.253> 655 60<238.668 398.928> 798 181
-VStem: 65 72<167.542 517.507> 144 320
+Flags: W
+HStem: -8 60<235.38 406.253> 655 60<238.668 398.928> 798 181
+VStem: 65 72<189.039 517.507> 144 320
 LayerCount: 2
 Fore
 Refer: 98 770 S 1 0 0 1 304 51 2
@@ -40938,9 +40937,9 @@ EndChar
 StartChar: Ccedilla
 Encoding: 199 199 148
 Width: 600
-Flags: HW
-HStem: -228 56<205.592 359.283> -98 48<302.015 358.524> -98 98<258 302 316 324> -8 60<227.469 406.253> 655 60<238.668 398.928>
-VStem: 65 72<167.542 517.507> 258 66<-19.5491 0> 362 72<-168.078 -102.018>
+Flags: W
+HStem: -228 56<205.592 359.283> -98 48<302.015 358.524> -98 98<258 302 316 324> -8 60<235.38 406.253> 655 60<238.668 398.928>
+VStem: 65 72<189.039 517.507> 258 66<-19.5491 0> 362 72<-168.078 -102.018>
 LayerCount: 2
 Back
 SplineSet
