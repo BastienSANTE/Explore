@@ -94,7 +94,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 81 9 4
+WinInfo: 54 18 4
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -1540,25 +1540,25 @@ StartChar: r
 Encoding: 114 114 49
 Width: 418
 VWidth: 1048
-Flags: HW
-HStem: 0 21G<88 161> 463 64<224.555 366.655> 499 20G<88 147.645>
+Flags: W
+HStem: 0 21G<88 161> 463 64<224.75 364> 463 54<309.441 364> 499 20G<88 147.645>
 VStem: 88 73<0 373 398 452.208> 88 57<464.792 519>
 LayerCount: 2
 Fore
 SplineSet
-308 527 m 1xd0
- 339 527 353 525 378 517 c 1
+308 527 m 1xc8
+ 339 527 353 525 378 517 c 1xa8
  364 463 l 1
  304 463 l 1
  200 463 161 386 161 271 c 1
  137 373 l 1
- 147 462 212 527 308 527 c 1xd0
-88 519 m 1xa8
- 145 519 l 1xa8
+ 147 462 212 527 308 527 c 1xc8
+88 519 m 1x94
+ 145 519 l 1x94
  161 398 l 1
  161 0 l 1
- 88 0 l 1xb0
- 88 519 l 1xa8
+ 88 0 l 1x98
+ 88 519 l 1x94
 EndSplineSet
 Colour: ff0000
 EndChar
