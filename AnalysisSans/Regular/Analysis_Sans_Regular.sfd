@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1735138560
-ModificationTime: 1737986991
+ModificationTime: 1738011864
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -153,7 +153,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 18 18 6
+WinInfo: 36 12 8
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -1127,8 +1127,8 @@ SplineSet
  151 462 204 527 317 527 c 1
  444 527 553 440 553 269 c 1
  553 78 441 -8 317 -8 c 1
- 202 -8 151 75 131 122 c 5
- 162 188 l 1
+ 202 -8 151 75 131 122 c 1
+ 162 188 l 5
  162 110 225 53 313 53 c 1
  414 53 479 120 479 266 c 1
  479 399 407 466 313 466 c 1
@@ -1141,7 +1141,6 @@ SplineSet
  88 0 l 1x6c
  88 724 l 1
 EndSplineSet
-Validated: 5
 EndChar
 
 StartChar: c
@@ -1428,7 +1427,7 @@ StartChar: l
 Encoding: 108 108 43
 Width: 258
 VWidth: 1048
-Flags: WO
+Flags: W
 HStem: 0 21G<88 162> 748 20G<88 162>
 VStem: 88 74<0 768>
 LayerCount: 2
@@ -1572,7 +1571,7 @@ StartChar: q
 Encoding: 113 113 48
 Width: 608
 VWidth: 1048
-Flags: HW
+Flags: W
 HStem: -8 61<220.045 386.877> 466 61<205.639 382.415> 499 20G<458.322 520>
 VStem: 56 74<149.974 381.234> 446 74<-197 401 432 470.976> 462 58<480.024 519>
 LayerCount: 2
@@ -2299,7 +2298,7 @@ StartChar: comma
 Encoding: 44 44 73
 Width: 230
 VWidth: 1048
-Flags: HW
+Flags: W
 HStem: -197 290
 VStem: 76 72<-83.0046 93>
 LayerCount: 2
