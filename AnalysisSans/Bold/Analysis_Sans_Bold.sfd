@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1735138560
-ModificationTime: 1738017008
+ModificationTime: 1738078331
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -96,7 +96,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 12 8
+WinInfo: 0 39 14
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -148,18 +148,18 @@ AnchorPoint: "AccentCenter" 351 880 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-155 257 m 1
- 496 257 l 1
- 496 153 l 1
- 155 153 l 1
- 155 257 l 1
+155 257 m 5
+ 496 257 l 5
+ 496 153 l 5
+ 155 153 l 5
+ 155 257 l 5
 429 707 m 1
  655 0 l 1
  523 0 l 1
  311 707 l 1
  429 707 l 1
 275 707 m 1
- 392 707 l 5
+ 392 707 l 1
  156 0 l 1
  24 0 l 1
  275 707 l 1
@@ -270,7 +270,7 @@ SplineSet
 192 420 m 5
  484 420 l 5
  484 316 l 5
- 192 316 l 1
+ 192 316 l 5
  192 420 l 5
 192 104 m 1
  542 104 l 1
@@ -347,7 +347,7 @@ SplineSet
  615 418 l 1
  615 108 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: H
@@ -628,7 +628,7 @@ SplineSet
  376 -184 300 -80 300 0 c 1
  421 0 l 1
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: R
@@ -694,7 +694,7 @@ SplineSet
  120 356 75.0412737472 433 75 534 c 1
  76.041015625 651 191 715 318 715 c 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: T
@@ -1089,7 +1089,7 @@ SplineSet
  242.745117188 423 192 377 192 262 c 1xb9
  179 370 l 1xb3
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: c
@@ -1114,7 +1114,7 @@ SplineSet
  153 -8 40 88 40 259 c 1
  40 423 149 527 302 527 c 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: d
@@ -1145,7 +1145,7 @@ SplineSet
  386.254497871 423 437 377 437 262 c 5
  450 370 l 5
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: e
@@ -1259,7 +1259,7 @@ SplineSet
  65 189 176 218.145299145 270 231 c 1
  292 173 l 1
 EndSplineSet
-Validated: 524293
+Validated: 5
 Colour: ff0000
 EndChar
 
@@ -1428,7 +1428,7 @@ SplineSet
  64 0 l 1
  64 519 l 1xbc
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: n
@@ -1514,7 +1514,7 @@ SplineSet
  589 97.072265625 492.349609375 -8 348 -8 c 4
  259 -8 179 57 179 149 c 5xc6
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: q
@@ -1545,7 +1545,7 @@ SplineSet
  386.254882812 96 437 142 437 257 c 5xd8
  450 149 l 5xd2
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: r
@@ -1630,7 +1630,7 @@ SplineSet
  385 415 l 5
  40 415 l 5
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: u
@@ -2500,7 +2500,7 @@ SplineSet
  160 603 l 1
  177 707 l 1
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: six
@@ -2528,14 +2528,14 @@ SplineSet
  200.862217571 626.620892012 258 676 303 707 c 1
  467 707 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: seven
 Encoding: 55 55 84
 Width: 594
 VWidth: 1048
-Flags: WO
+Flags: W
 HStem: 0 21G<161 297.06> 481 122<46 174> 603 104<46 532>
 VStem: 46 128<481 603>
 LayerCount: 2
@@ -2557,6 +2557,7 @@ SplineSet
  161 0 l 1
  402 603 l 1
 EndSplineSet
+Validated: 5
 Colour: ff0000
 EndChar
 
@@ -2591,7 +2592,7 @@ SplineSet
  528 413.014326982 423.819335938 337 296.127929688 337 c 0
  168.758789062 337 66 412.568563904 66 532.1252708 c 0xb6
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: nine
@@ -2619,7 +2620,7 @@ SplineSet
  395.000082999 81.9999350445 362 49 297 0 c 5
  133 0 l 5
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: colon
@@ -2766,7 +2767,7 @@ SplineSet
  184 624 137 598 118 550 c 1
  30 612 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: at
@@ -6273,47 +6274,47 @@ EndChar
 
 StartChar: AE
 Encoding: 198 198 154
-Width: 907
+Width: 999
 VWidth: 1048
-Flags: W
-HStem: 0 61<492 851> 184 62<191 420> 350 66<492 773> 646 61<492 851>
-AnchorPoint: "AccentCenter" 563 880 basechar 0
+Flags: WO
+HStem: 0 104<602 943> 153 104<235 496> 316 104<535 865> 603 104<602 943>
+VStem: 474 22<153 257> 535 67<316 420>
+AnchorPoint: "AccentCenter" 617 880 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-492 416 m 1
- 773 416 l 1
- 773 350 l 1
- 492 350 l 1
- 492 416 l 1
-492 61 m 1
- 851 61 l 1
- 851 0 l 1
- 492 0 l 1
- 492 61 l 1
-492 707 m 1
- 851 707 l 1
- 851 646 l 1
- 492 646 l 1
- 492 707 l 1
-420 707 m 1
- 492 707 l 1
- 492 0 l 1
- 420 0 l 1
- 420 707 l 1
-191 246 m 1
- 420 246 l 1
- 420 184 l 1
- 191 184 l 1
- 191 246 l 1
-373 707 m 1
- 420 707 l 1
- 427 666 l 1
- 116 0 l 1
+235 257 m 1
+ 496 257 l 1
+ 496 153 l 1
+ 235 153 l 1
+ 235 257 l 1
+535 420 m 1
+ 865 420 l 1
+ 865 316 l 1
+ 535 316 l 1
+ 535 420 l 1
+602 104 m 1
+ 943 104 l 1
+ 943 0 l 1
+ 602 0 l 1
+ 602 104 l 1
+602 707 m 1
+ 943 707 l 1
+ 943 603 l 1
+ 602 603 l 1
+ 602 707 l 1
+474 707 m 1
+ 602 707 l 1
+ 602 0 l 1
+ 474 0 l 1
+ 474 707 l 1
+390 707 m 1
+ 474 707 l 1
+ 480 622 l 5
+ 170 0 l 1
  40 0 l 1
- 373 707 l 1
+ 390 707 l 1
 EndSplineSet
-Validated: 5
 EndChar
 
 StartChar: Euro
