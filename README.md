@@ -1,2 +1,2 @@
-# Analysis
-Repository for the Analysis font superfamily
+# Explore
+Repository for the Explore font superfamily
