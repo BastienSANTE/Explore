@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1735138560
-ModificationTime: 1740520809
+ModificationTime: 1740558541
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -96,7 +96,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 90 9 4
+WinInfo: 209 19 6
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -222,7 +222,7 @@ SplineSet
  167.020278856 -8 40 143.348329391 40 355.131596867 c 0
  40 571.801923312 172.950093829 715 365 715 c 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: D
@@ -345,7 +345,7 @@ SplineSet
  615 418 l 1
  615 108 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: H
@@ -563,7 +563,7 @@ SplineSet
  677 134.240234375 548.815429688 -8 356.943359375 -8 c 0
  162.639648438 -8 40 137.51357975 40 353.94053872 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: P
@@ -1056,7 +1056,7 @@ SplineSet
  353 0 l 5x7a
  345 64 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: b
@@ -1112,7 +1112,7 @@ SplineSet
  153 -8 40 88 40 259 c 1
  40 423 149 527 302 527 c 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: d
@@ -1209,7 +1209,7 @@ StartChar: g
 Encoding: 103 103 38
 Width: 565
 VWidth: 1048
-Flags: WO
+Flags: W
 HStem: -192 90<171.791 385.722> 0 104<197.161 404.707> 43 18<110 172> 172 62<173 246> 424 95<414 537> 436 91<179.3 310.639>
 VStem: 28 128<-85.0018 -8.92174 288.357 410.806> 49 111<106 168.184> 339 124<287.936 408.872> 413 124<-77.1083 -8.64246 424 519>
 LayerCount: 2
@@ -1256,7 +1256,6 @@ SplineSet
  49 204 173 234 246 234 c 1
  268 173 l 1
 EndSplineSet
-Validated: 524293
 Colour: ff0000
 EndChar
 
@@ -1490,7 +1489,7 @@ SplineSet
  552 101.354492188 449.491210938 -8 294 -8 c 0
  140.270507812 -8 40 100.715820312 40 261 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: p
@@ -1759,7 +1758,7 @@ StartChar: y
 Encoding: 121 121 56
 Width: 550
 VWidth: 1048
-Flags: W
+Flags: HW
 HStem: 499 20G<16 168.071 378.857 526>
 AnchorPoint: "AccentCenter" 271 686 basechar 0
 LayerCount: 2
@@ -1768,8 +1767,8 @@ SplineSet
 109 -192 m 0
  213 58 l 1
  252 93 l 1
- 252 104 l 5
- 286 239 l 5
+ 252 104 l 1
+ 286 239 l 1
  386 519 l 1
  526 519 l 1
  236 -192 l 1
@@ -1781,7 +1780,6 @@ SplineSet
  228 15 l 1
  16 519 l 1
 EndSplineSet
-Validated: 5
 Colour: ff0000
 EndChar
 
@@ -2114,7 +2112,7 @@ SplineSet
  192 401 145 465 145 550 c 1x68
  145 634 218 715 357 715 c 1
 EndSplineSet
-Validated: 524293
+Validated: 5
 Colour: ff0000
 EndChar
 
@@ -2437,7 +2435,7 @@ SplineSet
  201 607 163.896484375 584 147 535 c 1
  44 580 l 1xf0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: four
@@ -2501,7 +2499,7 @@ SplineSet
  160 599 l 5
  177 707 l 1
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: six
@@ -2529,7 +2527,7 @@ SplineSet
  200.862217571 626.620892012 258 676 303 707 c 1
  467 707 l 1
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: seven
@@ -2593,7 +2591,7 @@ SplineSet
  528 413.014326982 423.819335938 337 296.127929688 337 c 0
  168.758789062 337 66 412.568563904 66 532.1252708 c 0xb6
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: nine
@@ -2621,7 +2619,7 @@ SplineSet
  395.000082999 81.9999350445 362 49 297 0 c 1
  125 0 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: colon
@@ -2817,7 +2815,7 @@ SplineSet
  577 430 l 1
  554 461 522 473 496 473 c 0
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: space
@@ -3314,27 +3312,25 @@ EndChar
 StartChar: yacute
 Encoding: 253 253 127
 Width: 550
-Flags: W
+Flags: HW
 HStem: 499 20G<16 168.071 378.857 526> 583 193
 VStem: 127 280
 LayerCount: 2
 Fore
 Refer: 96 769 N 1 0 0 1 271 -154 2
 Refer: 56 121 N 1 0 0 1 0 0 3
-Validated: 5
 EndChar
 
 StartChar: ydieresis
 Encoding: 255 255 128
 Width: 550
-Flags: W
+Flags: HW
 HStem: 499 20G<16 168.071 378.857 526> 614 138<108.092 207.908 334.092 433.908>
 VStem: 89 138<633.092 732.908> 315 138<633.092 732.908>
 LayerCount: 2
 Fore
 Refer: 101 776 N 1 0 0 1 271 -174 2
 Refer: 56 121 N 1 0 0 1 0 0 3
-Validated: 5
 EndChar
 
 StartChar: Agrave
@@ -10476,7 +10472,7 @@ StartChar: thorn
 Encoding: 254 254 159
 Width: 629
 VWidth: 1048
-Flags: W
+Flags: HWO
 HStem: -8 104<261.087 401.115> 423 104<258.267 401.768> 695 20G<64 192>
 VStem: 64 128<-192 715> 169 23<71 196> 179 13<310.45 470> 461 128<158.364 360.193>
 LayerCount: 2
@@ -10499,7 +10495,6 @@ SplineSet
  64 -192 l 1
  64 715 l 1xf2
 EndSplineSet
-Validated: 524293
 EndChar
 EndChars
 EndSplineFont

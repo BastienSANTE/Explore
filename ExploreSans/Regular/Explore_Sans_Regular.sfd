@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1735138560
-ModificationTime: 1740523073
+ModificationTime: 1740573676
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -153,7 +153,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 27 9 4
+WinInfo: 152 19 6
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -399,7 +399,7 @@ SplineSet
  608 402 l 1
  608 102 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: H
@@ -746,7 +746,7 @@ SplineSet
  134.001318559 359.755473557 75 427 75 537 c 1
  75 642 171 715 298 715 c 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: T
@@ -1265,7 +1265,7 @@ StartChar: g
 Encoding: 103 103 38
 Width: 560
 VWidth: 1048
-Flags: WO
+Flags: W
 HStem: -192 57<151.954 389.759> 12 62<194.279 419.551> 188 57<135.5 317.575> 459 60<367 505> 467 60<159.781 315.187>
 VStem: 49 73<-105.407 -12.368 281.213 430.067> 49 66<86.9209 159.122> 355 73<281.713 427.16> 436 74<-98.1091 -3.98912>
 LayerCount: 2
@@ -2092,7 +2092,7 @@ SplineSet
  260 -139 l 5
  260 863 l 5
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: percent
@@ -2870,7 +2870,7 @@ SplineSet
  607 438 l 1
  588 484 539.381835938 513 484.8828125 513 c 0
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: space
@@ -12691,12 +12691,17 @@ StartChar: thorn
 Encoding: 254 254 159
 Width: 608
 VWidth: 1048
-Flags: W
+Flags: HWO
 HStem: -8 61<221.406 391.628> 466 61<226.582 400.276>
 VStem: 88 73<620 658.976> 88 57<668.024 707> 479 73<148.478 376.539>
 LayerCount: 2
 Fore
 SplineSet
+88 -197 m 5xd8
+ 103.855146516 -213.956373635 135.67151486 -198.990303614 161 -197 c 5
+ 161 707 l 1xe8
+ 88 707 l 1
+ 88 -197 l 5xd8
 135 98 m 1xe8
  151 57 200 -8 313 -8 c 1
  440 -8 552 87 552 258 c 1
@@ -12708,14 +12713,7 @@ SplineSet
  479 124 403 53 309 53 c 1
  223 53 161 102 161 182 c 1
  135 98 l 1xe8
-88 -197 m 1xd8
- 161 -197 l 1
- 161 620 l 1xe8
- 145 707 l 1
- 88 707 l 1
- 88 -197 l 1xd8
 EndSplineSet
-Validated: 5
 EndChar
 EndChars
 EndSplineFont
