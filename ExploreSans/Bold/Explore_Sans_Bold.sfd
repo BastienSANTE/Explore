@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1735138560
-ModificationTime: 1741039354
+ModificationTime: 1741104814
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -96,7 +96,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 90 18 4
+WinInfo: 162 18 6
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -384,17 +384,16 @@ VWidth: 1048
 Flags: W
 HStem: 0 21G<64 192> 687 20G<64 192>
 VStem: 64 128<0 707>
-AnchorPoint: "AccentCenter" 156 880 basechar 0
+AnchorPoint: "AccentCenter" 126 880 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 64 707 m 1
- 192 707 l 5
- 192 0 l 5
+ 192 707 l 1
+ 192 0 l 1
  64 0 l 1
  64 707 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: J
@@ -1208,7 +1207,7 @@ StartChar: g
 Encoding: 103 103 38
 Width: 557
 VWidth: 1048
-Flags: WO
+Flags: W
 HStem: -192 96<166.274 389.458> 0 108<197.161 409.177> 182 62<173 246> 415 104<414 537> 431 96<178.965 313.131>
 VStem: 28 128<-81.6529 -13.3759 296.325 407.893> 49 111<111.685 165.347> 339 124<296.549 406.543> 413 124<-70.8484 -6.2923 415 519>
 LayerCount: 2
@@ -3439,53 +3438,49 @@ EndChar
 StartChar: Igrave
 Encoding: 204 204 139
 Width: 256
-Flags: W
+Flags: HW
 HStem: 0 21G<64 192> 687 20G<64 192> 777 193
 VStem: 12 280 64 128<0 707>
 LayerCount: 2
 Fore
-Refer: 95 768 N 1 0 0 1 156 40 2
+Refer: 95 768 N 1 0 0 1 126 40 2
 Refer: 8 73 N 1 0 0 1 0 0 3
-Validated: 1
 EndChar
 
 StartChar: Iacute
 Encoding: 205 205 140
 Width: 256
-Flags: W
+Flags: HW
 HStem: 0 21G<64 192> 687 20G<64 192> 777 193
 VStem: 12 280 64 128<0 707>
 LayerCount: 2
 Fore
-Refer: 96 769 N 1 0 0 1 156 40 2
+Refer: 96 769 N 1 0 0 1 126 40 2
 Refer: 8 73 N 1 0 0 1 0 0 3
-Validated: 1
 EndChar
 
 StartChar: Icircumflex
 Encoding: 206 206 141
 Width: 256
-Flags: W
+Flags: HW
 HStem: 0 21G<64 192> 687 20G<64 192> 769 201
 VStem: 64 128<0 707>
 LayerCount: 2
 Fore
-Refer: 97 770 N 1 0 0 1 156 40 2
+Refer: 97 770 N 1 0 0 1 126 40 2
 Refer: 8 73 N 1 0 0 1 0 0 3
-Validated: 1
 EndChar
 
 StartChar: Idieresis
 Encoding: 207 207 142
 Width: 256
-Flags: W
+Flags: HW
 HStem: 0 21G<64 192> 687 20G<64 192> 808 138<-6.90787 92.9079 219.092 318.908>
 VStem: -26 138<827.092 926.908> 64 128<0 707> 200 138<827.092 926.908>
 LayerCount: 2
 Fore
-Refer: 101 776 N 1 0 0 1 156 20 2
+Refer: 101 776 N 1 0 0 1 126 20 2
 Refer: 8 73 N 1 0 0 1 0 0 3
-Validated: 1
 EndChar
 
 StartChar: Ograve
