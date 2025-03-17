@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1735138560
-ModificationTime: 1742156943
+ModificationTime: 1742200125
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -153,7 +153,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 36 18 6
+WinInfo: 54 18 6
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -459,25 +459,24 @@ EndChar
 
 StartChar: J
 Encoding: 74 74 9
-Width: 374
+Width: 487
 VWidth: 1048
-Flags: W
-HStem: -8 61<44.4103 166.242> 687 20G<222 294>
-VStem: 222 72<118.471 707>
+Flags: HW
+HStem: -7 60<135.874 285.665> 687 20G<335 407>
+VStem: 335 72<106.288 707>
 LayerCount: 2
 Fore
 SplineSet
-294 707 m 1
- 294 234 l 1
- 294 76 216 -8 91 -8 c 1
- 68 -8 45 -3 32 4 c 1
- 48 59 l 1
- 59 54 75 53 87 53 c 3
- 183 53 222 118 222 231 c 1
- 222 707 l 1
- 294 707 l 1
+407 707 m 1
+ 407 210 l 1
+ 407 64 316 -7 210 -7 c 1
+ 150 -7 75.0048828125 11.4033203125 32 105 c 1
+ 90 135 l 1
+ 116 70 168 53 211 53 c 3
+ 292 53 335 102 335 207 c 1
+ 335 707 l 1
+ 407 707 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: K
@@ -2060,7 +2059,7 @@ StartChar: dollar
 Encoding: 36 36 65
 Width: 610
 VWidth: 1048
-Flags: WO
+Flags: W
 HStem: -7 59<209.588 416.727> 656 60<214.496 412.635>
 VStem: 87 72<450.178 606.028> 279 73<-139 863> 480 72<107.761 256.999>
 LayerCount: 2
@@ -28881,7 +28880,7 @@ SplineSet
  162 -191 l 1
  88 -191 l 1
 EndSplineSet
-Validated: 524293
+Validated: 5
 EndChar
 
 StartChar: paragraph

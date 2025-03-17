@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1735138560
-ModificationTime: 1742157035
+ModificationTime: 1742215921
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -96,7 +96,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 18 18 6
+WinInfo: 54 18 6
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -405,25 +405,24 @@ EndChar
 
 StartChar: J
 Encoding: 74 74 9
-Width: 398
+Width: 505
 VWidth: 1048
 Flags: W
-HStem: -8 104<35 174.236> 0 96<35 121.904> 687 20G<206 334>
-VStem: 206 128<124.234 707>
+HStem: -8 104<147.295 278.767> 687 20G<313 441>
+VStem: 313 128<133.934 707>
 LayerCount: 2
 Fore
 SplineSet
-334 707 m 1xb0
- 334 208 l 1
- 334 50 249 -8 124 -8 c 1xb0
- 79 -8 52 -6 28 0 c 1x70
- 35 96 l 1
- 100 96 l 3
- 171 96 206 122 206 204 c 1
- 206 707 l 1
- 334 707 l 1xb0
+441 707 m 1
+ 441 213 l 1
+ 441 55 347 -8 222 -8 c 1
+ 128 -8 57 17 16 102 c 1
+ 120 160 l 1
+ 133 120 164 96 216 96 c 3
+ 278 96 313 138 313 209 c 1
+ 313 707 l 1
+ 441 707 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: K
@@ -676,9 +675,9 @@ StartChar: S
 Encoding: 83 83 18
 Width: 617
 VWidth: 1048
-Flags: W
-HStem: -8 108<214.464 411.608> 607 108<214.137 402.128>
-VStem: 56 124<459.618 574.744> 449 128<133.334 257.473>
+Flags: WO
+HStem: -8 108<210.464 408.806> 607 108<215.462 402.128>
+VStem: 60 124<458.312 575.542> 449 128<134.223 256.976>
 LayerCount: 2
 Fore
 SplineSet
@@ -686,21 +685,20 @@ SplineSet
  420 715 509 670 566 574 c 1
  469 514 l 1
  432 582 377 607 314 607 c 1
- 228 607 180 579 180 522 c 1
- 180 456 222 434 295 419 c 1
- 367 404 l 0
- 497 377 577 311 577 191 c 1
- 577 59 474 -8 313 -8 c 1
- 203 -8 104 23 40 129 c 1
- 144 195 l 1
- 176 130 238 100 313 100 c 1
- 405 100 449 130 449 195 c 1
- 449 266 402 285 317 302 c 1
- 251 315 l 0
- 135 337 56 393 56 519 c 1
- 56 645 158 715 318 715 c 1
+ 228 607 184 579 184 522 c 1
+ 184 456 222 432 295 417 c 1
+ 367 402 l 0
+ 502 373.961538462 577 311 577 191 c 1
+ 577 59 470 -8 309 -8 c 1
+ 199 -8 100 23 36 129 c 1
+ 140 195 l 1
+ 172 130 234 100 309 100 c 1
+ 401 100 449 130 449 195 c 1
+ 449 266 402 283 317 300 c 1
+ 251 313 l 0
+ 135 335 60 393 60 519 c 1
+ 60 645 158 715 318 715 c 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: T
