@@ -8,7 +8,7 @@ UComments: "2024-12-25: Created with FontForge (http://fontforge.org)"
 Version: 001.000
 ItalicAngle: 0
 UnderlinePosition: -102
-UnderlineWidth: 51
+UnderlineWidth: 64
 Ascent: 800
 Descent: 224
 InvalidEm: 0
@@ -16,13 +16,14 @@ LayerCount: 2
 Layer: 0 0 "Arri+AOgA-re" 1
 Layer: 1 0 "Avant" 0
 XUID: [1021 760 1580941675 4706664]
+StyleMap: 0x0040
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1735138560
-ModificationTime: 1742510895
-PfmFamily: 17
+ModificationTime: 1742751065
+PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
 LineGap: 192
@@ -148,13 +149,12 @@ MATH:RadicalKernAfterDegree: -568
 MATH:RadicalDegreeBottomRaisePercent: 60
 MATH:MinConnectorOverlap: 20
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 9 6
+WinInfo: 37 37 6
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -1277,7 +1277,7 @@ StartChar: g
 Encoding: 103 103 38
 Width: 546
 VWidth: 1048
-Flags: W
+Flags: WO
 HStem: -192 57<143.476 373.799> 12 62<189.034 419.179> 188 57<131.5 313.575> 460 60<149.668 300.289 415 501>
 VStem: 40 79<-110.899 -9.18562> 45 66<86.9209 159.122 292.275 419.029> 351 73<281.713 427.16> 432 74<-91.1798 -2.84891>
 LayerCount: 2
@@ -1321,6 +1321,7 @@ SplineSet
  501 460 l 1
  415 460 l 1
 EndSplineSet
+Validated: 5
 Colour: ff0000
 EndChar
 
@@ -1507,29 +1508,30 @@ StartChar: n
 Encoding: 110 110 45
 Width: 562
 VWidth: 1048
-Flags: HW
-HStem: 0 21G<80 153 424 498> 466 61<215.381 369.099> 499 20G<80 141.638>
-VStem: 80 73<0 413 450 480.912> 80 57<488.088 519> 424 74<0 411.239>
+Flags: W
+HStem: 0 21G<80 153 424 498> 466 61<215.523 369.099> 499 20G<80 141.638>
+VStem: 80 57<307 307 413 457.646 496.713 519> 135 18<307 307 413 465> 424 74<0 411.239>
 AnchorPoint: "AccentCenter" 282 686 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-80 519 m 5xac
- 137 519 l 5xac
+80 519 m 5xb4
+ 137 519 l 5xb4
  153 450 l 5
- 153 0 l 5
- 80 0 l 5xb4
- 80 519 l 5xac
-135 413 m 5
+ 153 0 l 5xac
+ 80 0 l 5
+ 80 519 l 5xb4
+135 413 m 5xcc
  147 465 215 527 307 527 c 4
  437 527 498 435 498 326 c 5
  498 0 l 5
  424 0 l 5
  424 324 l 6
  424 414 375 466 292 466 c 4
- 192 466 140 383 140 307 c 5xd4
- 135 413 l 5
+ 192 466 140 383 140 307 c 5
+ 135 413 l 5xcc
 EndSplineSet
+Validated: 5
 EndChar
 
 StartChar: o
@@ -1703,6 +1705,7 @@ SplineSet
  346 460 l 1
  40 460 l 1
 EndSplineSet
+Validated: 5
 EndChar
 
 StartChar: u
@@ -1843,6 +1846,7 @@ SplineSet
  234 -192 l 1
  159 -192 l 1
 EndSplineSet
+Validated: 1
 Colour: ff0000
 EndChar
 
@@ -2430,7 +2434,7 @@ StartChar: two
 Encoding: 50 50 79
 Width: 550
 VWidth: 1048
-Flags: WO
+Flags: W
 HStem: 0 68<160 478> 655 61<168.358 334.744>
 VStem: 396 74<417.874 596.641>
 LayerCount: 2
@@ -2451,6 +2455,7 @@ SplineSet
  65 0 l 1
  65 68 l 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: three
@@ -2482,6 +2487,7 @@ SplineSet
  186 655 143 614 124 562 c 1
  69 592 l 1xf0
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: four
@@ -3230,13 +3236,14 @@ EndChar
 StartChar: ntilde
 Encoding: 241 241 117
 Width: 562
-Flags: HW
-HStem: 0 21G<80 153 424 498> 466 61<215.381 369.099> 499 20G<80 141.638> 614 21G<102.5 128> 623 65<313.734 408.19> 693 66<156.94 265.52>
-VStem: 80 57<488.088 519> 80 73<0 413 450 480.912> 424 74<0 411.239>
+Flags: W
+HStem: 0 21G<80 153 424 498> 466 61<215.523 369.099> 499 20G<80 141.638> 614 21G<102.5 128> 623 65<313.734 408.19> 693 66<156.94 265.52>
+VStem: 80 57<307 307 413 457.646 496.713 519> 135 18<307 307 413 465> 424 74<0 411.239>
 LayerCount: 2
 Fore
 Refer: 98 771 N 1 0 0 1 282 -154 2
 Refer: 45 110 N 1 0 0 1 0 0 3
+Validated: 5
 EndChar
 
 StartChar: ograve
@@ -3359,25 +3366,27 @@ EndChar
 StartChar: yacute
 Encoding: 253 253 127
 Width: 555
-Flags: HW
-HStem: 499 20G<56 143.979 426.604 518> 591 185
+Flags: W
+HStem: 499 20G<48 136.396 426.604 518> 591 185
 VStem: 162 247
 LayerCount: 2
 Fore
 Refer: 96 769 N 1 0 0 1 285 -154 2
 Refer: 56 121 N 1 0 0 1 0 0 3
+Validated: 1
 EndChar
 
 StartChar: ydieresis
 Encoding: 255 255 128
 Width: 555
-Flags: HW
-HStem: 499 20G<56 143.979 426.604 518> 631 104<143.854 229.485 352.515 438.146>
+Flags: W
+HStem: 499 20G<48 136.396 426.604 518> 631 104<143.854 229.485 352.515 438.146>
 VStem: 134 105<640.515 725.485> 343 105<640.515 725.485>
 LayerCount: 2
 Fore
 Refer: 101 776 N 1 0 0 1 291 -174 2
 Refer: 56 121 N 1 0 0 1 0 0 3
+Validated: 1
 EndChar
 
 StartChar: Agrave
@@ -3897,9 +3906,9 @@ EndChar
 StartChar: eth
 Encoding: 240 240 158
 Width: 596
-Flags: HW
-HStem: -8 60<213.701 383.066> 467 60<213.33 380.899> 687 28G<196 347.5 411.02 462>
-VStem: 56 72<147.973 373.202> 468 72<144.647 365.319>
+Flags: W
+HStem: -8 60<213.701 383.066> 468 60<215.087 379.455> 687 28G<196 347.5 411.02 462>
+VStem: 56 72<147.973 373.396> 468 72<144.647 391.253>
 LayerCount: 2
 Fore
 SplineSet
@@ -3923,15 +3932,16 @@ SplineSet
  397 553 280 672 196 715 c 1
  290 715 l 1
 EndSplineSet
+Validated: 5
 EndChar
 
 StartChar: thorn
 Encoding: 254 254 159
 Width: 607
 VWidth: 1048
-Flags: HW
-HStem: -8 61<220.406 390.628> 466 61<225.582 399.276>
-VStem: 478 73<148.478 376.539>
+Flags: W
+HStem: -8 61<216.565 390.628> 466 61<222.018 399.276>
+VStem: 121 26<102 121.158> 478 73<148.478 376.539>
 LayerCount: 2
 Fore
 SplineSet
@@ -3952,6 +3962,7 @@ SplineSet
  222 53 147 102 147 182 c 5
  121 98 l 5
 EndSplineSet
+Validated: 5
 EndChar
 
 StartChar: currency
@@ -4170,6 +4181,7 @@ SplineSet
  162 -191 l 1
  88 -191 l 1xe0
 EndSplineSet
+Validated: 5
 EndChar
 
 StartChar: paragraph
@@ -4300,11 +4312,9 @@ EndChar
 
 StartChar: uni00A0
 Encoding: 160 160 171
-Width: 1024
-Flags: W
+Width: 200
+Flags: HW
 LayerCount: 2
-Fore
-Validated: 1
 EndChar
 
 StartChar: Ccedilla
