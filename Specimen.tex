@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{a4paper, landscape}
+\usepackage{mwe}
+\usepackage{fontspec}
+\usepackage{pgffor}
+
+\setmainfont{Explore Sans Regular}[
+  BoldFont = Explore Sans Bold,
+  ItalicFont = Explore Sans Regular Italic]
+
+
+\begin{document}
+
+\noindent
+\foreach \sz in {\fontsize{8}{9},\fontsize{9}{10},\fontsize{10}{11},\fontsize{12}{15},\fontsize{}}{
+  \sz\selectfont{The quick brown fox jumps over the lazy dog}\\
+}
+
+
+Explore Sans \textbf{Bold}
+
+\foreach \x in {32,...,255}{
+  \begin{minipage}[b][1em][b]{1em}
+    \vspace{0pt}
+    \char\x
+  \end{minipage}
+}
+
+\vspace{3em}
+
+\foreach \x in {32,...,255}{
+  \begin{minipage}[b][1em][b]{1em}
+    \vspace{0pt}
+    \textbf{\char\x}
+  \end{minipage}
+}
+
+\vspace{3em}
+
+\foreach \x in {32,...,255}{
+  \begin{minipage}[b][1em][b]{1em}
+    \vspace{0pt}
+    \textit{\char\x}
+  \end{minipage}
+}
+
+\end{document}
