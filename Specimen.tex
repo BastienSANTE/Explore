@@ -25,8 +25,18 @@
 \foreach \x in {33,...,512}{
   \iffontchar\font\x
   {
-    \begin{minipage}[b][1em][b]{1em}
+    \begin{minipage}[b][1.1em][b]{1em}
         \char\x\hspace*{\fill}
+  \end{minipage}
+  }
+  \fi
+}
+
+\foreach \x in {33,...,512}{
+  \iffontchar\font\x
+  {
+    \begin{minipage}[b][1.1em][b]{1em}
+        \textbf{\char\x}\hspace*{\fill}
   \end{minipage}
   }
   \fi

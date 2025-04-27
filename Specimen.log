@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Debian)  (format=lualatex 2024.2.4)  26 APR 2025 17:35
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Debian)  (format=lualatex 2024.2.4)  27 APR 2025 19:28
  restricted system commands enabled.
 **Specimen.tex
 (./Specimen.tex
@@ -431,17 +431,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (6.96979pt too wide) in paragraph at lines 38--42
+Overfull \hbox (15.28229pt too wide) in paragraph at lines 48--52
 \TU/Explore_Sans_Regular.ttf(0)/b/n/64 Lorem ip-sum do-lor sit
  []
 
 
-Overfull \hbox (23.2823pt too wide) in paragraph at lines 38--42
+Overfull \hbox (40.2823pt too wide) in paragraph at lines 48--52
 \TU/Explore_Sans_Regular.ttf(0)/b/n/64 amet, con-secte-tur ad-
  []
 
 
-Overfull \hbox (12.5948pt too wide) in paragraph at lines 38--42
+Overfull \hbox (1.03229pt too wide) in paragraph at lines 48--52
+\TU/Explore_Sans_Regular.ttf(0)/m/n/64 Lorem ip-sum do-lor sit
+ []
+
+
+Overfull \hbox (23.4698pt too wide) in paragraph at lines 48--52
 \TU/Explore_Sans_Regular.ttf(0)/m/n/64 amet, con-secte-tur ad-
  []
 
@@ -449,16 +454,16 @@ Overfull \hbox (12.5948pt too wide) in paragraph at lines 38--42
 
 Here is how much of LuaTeX's memory you used:
  10254 strings out of 478382
- 100000,1977958 words of node,token memory allocated
+ 125007,1977958 words of node,token memory allocated
  406 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 4 attribute, 48 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 1:1,2:2638,3:684,4:99,5:38,6:330,7:4716,9:1354,10:32,11:24
+   avail lists: 1:1,2:5492,3:1358,4:99,5:368,6:666,7:8566,9:2706,10:32,11:24
  30074 multiletter control sequences out of 65536+600000
- 32 fonts using 1304815 bytes
+ 32 fonts using 1309615 bytes
  87i,5n,86p,361b,225s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <./Exports/Explore_Sans_Bold.ttf><./Exports/Explore_Sans_Regular.ttf>
-Output written on Specimen.pdf (2 pages, 16271 bytes).
+Output written on Specimen.pdf (2 pages, 23054 bytes).
 
 PDF statistics: 25 PDF objects out of 1000 (max. 8388607)
  14 compressed objects within 1 object stream
