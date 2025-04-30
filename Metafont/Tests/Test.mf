@@ -1,40 +1,46 @@
 outputtemplate := "%j-%c.svg";
 outputformat := "svg";
 
-beginchar("a", 5.5pt#, 12pt#, 4pt#);
-  bld = 1;
-  cst = 1.5;
-  
-  lc_top = 0.6h;
+input Config.mf;
+
+
+beginchar("k", 5.5pt#, 12pt#, 4pt#);
+  %bld = 1;
+  %cst = 1.5;
+
+  top_h = uc_h * h;
+  lc_top = lc_h * h;
   l_stem_x = 0.1w;
-  crv_ydel = 0.12h;
-  ear_x = 0.5w;
+  crv_ydel = 0.15h;
+  ear_c_x = 0.5w;
+  ear_r_x = 0.8w;
+  r_leg_x = 0.9w;
   ear_bot_y = 0.3h;
   stem_gap_x = 0.3w;
   
-  z1 = (0.2w, 0.8h);
-  z11 = (0.15w, 0.78h);
+  z1 = (0.2w, top_h);
+  z11 = (0.15w, top_h);
   z2 = (l_stem_x, 0.75h);
   z3 = (l_stem_x, 0);
   z4 = (l_stem_x, lc_top - crv_ydel);
-  z5 = (ear_x, lc_top);
-  z6 = (0.9w, lc_top - crv_ydel);
-  z7 = (ear_x, ear_bot_y);
-  z71 = (ear_x,ear_bot_y);
+  z5 = (ear_c_x, lc_top);
+  z6 = (ear_r_x, lc_top - crv_ydel);
+  z7 = (ear_c_x, ear_bot_y);
+  z71 = (ear_c_x,ear_bot_y);
   z8 = (l_stem_x + stem_gap_x, ear_bot_y);
-  z9 = (w, 0);
+  z9 = (r_leg_x, 0);
 
-  penpos1(0.5pt * bld, -45);
-  penpos11(0.5pt * bld, -20);
-  penpos2(0.5pt * bld, 0);
-  penpos3(0.5pt * bld, 0);
+  penpos1(0.5pt * bld, 90);
+  penpos11(0.5pt * bld, 135);
+  penpos2(0.5pt * bld, 180);
+  penpos3(0.5pt * bld, 180);
   penpos4((0.25pt * bld) / cst, 150);
   penpos5((0.5pt * bld) / cst, 90);
   penpos6(0.5pt * bld, 0);
-  penpos7((0.5pt * bld) / cst, -90);
-  penpos71((0.5pt * bld) / cst, 90);
-  penpos8((0.5pt * bld) / cst, 90);
-  penpos9(0.5pt * bld, 90);
+  penpos7((0.5pt * bld) / cst, 270);
+  penpos71((0.5pt * bld) / cst, 270);
+  penpos8((0.5pt * bld) / cst, 270);
+  penpos9(0.5pt * bld, 180);
   
   % drawing
   % pickup pencircle xscaled 0.1w yscaled 0.05w;
@@ -44,12 +50,12 @@ beginchar("a", 5.5pt#, 12pt#, 4pt#);
   % draw z7 -- z8;
   %draw z8 -- z9;
 
-  penstroke z1e..z11e..z2e;
-  penstroke z2e -- z3e;
-  penstroke z4e..z5e..z6e{down}..z7e{left};
-  penstroke z71..z8;
-  penstroke z8..z9;
+  penstroke z1e..z11e..z2e{down} -- z3e;
+  %xpenstroke z2e -- z3e;
+  penstroke z4e..z5e{right}..z6e{down}..z7e{left} -- z8e;
+  penstroke z8e..z9e;
 
   labels(range 1 thru 71);
 endchar;
+
 end
