@@ -1,0 +1,10 @@
+let glyphcount = 256;
+let glyph_id = [];
+
+glyphtable = document.getElementById("glyphtable");
+
+for(let i = 0; i < glyphcount; i++){
+    glyph_id.push(i);
+}
+
+for(i in glyph_id

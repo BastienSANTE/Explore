@@ -1,0 +1,31 @@
+%%%====================%%%
+%%% CONFIGURATION FILE %%%
+%%%====================%%%
+
+%%% PEN STROKE SETTINGS
+%%% These settings define the main "boldness" of the glyphs.
+mediumx:= .64pt;        % Thickness of the average horizontal stroke
+mediumy:= .8pt;         % Thickness of the average vertical stroke
+thinx = mediumx / 1.5;  % Thinner stroke, used for joints and inktraps
+thiny = mediumy / 2;    % Same as above
+
+%%% ESSENTIAL METRICS
+stretch:= 1;     % Font width setting, to create "condensed" or "expanded" versions.
+em_h:= 8pt#;     % height of the bounding box of the font
+depth:= 2.24pt#; % Size of the bounding box's descender.
+% The total of em_h and depth are equal to 10.24, in order to match the 1024 unit TrueType convetion.
+cap_height:= 7pt;                 % Height of standard uppercase glyphs
+x_height:= 5.2pt;                 % Height of standard lowercase glyphs
+baseline:= 0pt;                   % Self-explanatory
+overshoot:= 0.08pt;               % Height compensation for glyphs with rounded tops
+cap_top = cap_height + overshoot; % Top of uppercase glyphs with oversoot
+cap_bottom = baseline - overshoot;% Lowest point of uppercase glyphs with overshoot
+descender = -1.92pt;              % Actual position of the descender
+
+%%% SIDEBEARINGS & BASIC KERNING
+curve_bearing:=.54pt; %Average sidebearing for glyphs with curved edges
+line_bearing:=.8pt;   %Average sidebearing for glyphs with straight stems
+
+%%% DIACRITICS & ACCENTS
+lc_accent_yoffset:= 1.5pt; %Offset between the top of the lowercase glyphs and diacritics. 
+dotsize:= mediumy * 1.25;  % diameter of the standard dot above i, ï, ÿ...

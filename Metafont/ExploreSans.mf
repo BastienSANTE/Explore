@@ -1,0 +1,270 @@
+outputtemplate := "%j-%c.svg";
+outputformat := "svg";
+
+% Input settings file
+input ExploreSansCFG.mf;
+
+% Font-wide settings, valid for all characters
+caph = cap_height;
+xh = x_height;
+
+beginchar("A", stretch * 6.2pt#, em_h, depth);
+  width:= .8w;
+  barcoef:= 0.7; % "Bar coefficient": how low the bar is. Width is automatic.
+  x1 = .5w; y1 = caph;
+  x2 = x1 - width / 2; y2 = baseline;
+  x3 = x1 + width / 2; y3 = baseline;
+
+  x4 = x1 - (barcoef * (width / 2)); y4 = caph - (barcoef * caph);
+  x5 = x1 + (barcoef * (width / 2)); y5 = caph - (barcoef * caph);
+  
+  penpos1(mediumy / 1.25, 0);
+  penpos2(mediumy, 0);
+  penpos3(mediumy, 0);
+  penpos4(mediumx, 90);
+  penpos5(mediumx, 90);
+  
+  penstroke z1e -- z2e;
+  penstroke z1e -- z3e;
+  penstroke z4e -- z5e;
+
+  penlabels(range 1 thru 5);
+endchar;
+
+beginchar("B", stretch * 6.1pt#, em_h, depth);
+  stem_x:= 0.2w;
+  btension:= 0.9;
+
+  x0 = x8; y0 = y4;
+  x1 = x8; y1r = caph;
+  x2 = 0.535w; y2r = caph; %temp
+  x3 = 0.82w ; y3 = 0.66h;
+  x4 = x2; y4 = 0.465h;
+  x41 = x2; y41l = y4l;
+  x42 = x2; y42l = y4r;
+  x5 = 0.88w; y5 = 0.25h;
+  x6 = x2; y6r = baseline;
+  x7 = x8; y7r = baseline;
+  x8l = line_bearing; y8 = y1r;
+  x9l = line_bearing; y9 = y7r;
+
+  penpos0(mediumx, -90);
+  
+  penpos1(mediumx, 90);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 0);
+  penpos41(thinx, -90);
+
+  penpos4(mediumx, -90);
+
+  penpos42(thinx, 90);
+  penpos5(mediumy, 0);
+  penpos6(mediumx, -90);
+  penpos7(mediumx, -90);
+
+  penpos8(mediumy, 0);
+  penpos9(mediumy, 0);
+  
+  penstroke z1e -- z2e{right}..tension btension..z3e{down}..tension btension..z41e{left};
+  penstroke z0e -- z4e;
+  penstroke z42e{right}..tension btension..z5e{down}..tension btension..z6e{left} -- z7e;
+  penstroke z8e -- z9e;
+  
+  penlabels(range 0 thru 99);
+endchar;
+
+beginchar("C", stretch * 6.05pt#, em_h, depth);
+  ctension:= 0.85;
+  aperture:=0.2h;
+  x1 = 0.92w; y1 = cap_top - aperture;
+  x2 = 0.58w; y2r = cap_top;
+  x3r = curve_bearing; y3 = caph / 2;
+  x4 = x2; y4r = baseline;
+  x5 = x1; y5 = baseline + aperture;
+
+  penpos1(mediumx, 45);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 180);
+  penpos4(mediumx, 270);
+  penpos5(mediumx, 315);
+
+  penstroke z1e..z2e{left}..tension ctension..z3e{down}..tension ctension..z4e{right}..z5e;
+
+  penlabels (range 1 thru 5);
+endchar;
+
+beginchar("D", stretch * 6.2pt#, em_h, depth);
+  ctension:= .9;
+  x1 = line_bearing; y1r = caph;
+  x2 = 0.45w; y2r = caph;
+  x3r = w - curve_bearing; y3 = 0.45h;
+  x4 = x2; y4r = baseline;
+  x5 = x1; y5r = baseline;
+  x6l = x1; y6 = y1r;
+  x7l = x1; y7 = baseline;
+  
+  penpos1(mediumx, 90);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 0);
+  penpos4(mediumx, -90);
+  penpos5(mediumx, -90);
+  penpos6(mediumy, 0);
+  penpos7(mediumy, 0);
+
+  penstroke z1e -- z2e{right}..tension ctension..z3e{down}..tension ctension..z4e{left} -- z5e;
+  penstroke z6e -- z7e;
+  penlabels(range 1 thru 7);
+endchar;
+
+beginchar("G", stretch * 6.5pt#, em_h, depth);
+  ctension:= 0.9;
+  upper_aperture:=0.2h;
+  lower_aperture:=0.15h;
+  x1r = w - curve_bearing; y1 = cap_top - upper_aperture;
+  x2 = 0.55w; y2r = cap_top;
+  x3r = curve_bearing; y3 = caph / 2;
+  x4 = x2; y4r = baseline;
+  x5 = x1; y5 = baseline + lower_aperture;
+
+  %Right angle stroke
+  x6r = x5r; y6r = y5r;
+  x7r = x6r; y7 = y3;
+  x71 = x6r; y71 = y7;
+  x8 = 0.5w; y8 = y71;
+  
+  penpos1(mediumx, 45);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 180);
+  penpos4(mediumx, 270);
+  penpos5(mediumx, 315);
+
+  penpos6(mediumy, 0);
+  penpos7(mediumy, 0);
+  penpos71(mediumx, -90);
+  penpos8(mediumx, -90);
+  
+
+  penstroke z1e..z2e{left}..tension ctension..z3e{down}..tension ctension..z4e{right}..z5e;
+  penstroke z6e -- z7e;
+  penstroke z71e -- z8e;
+
+  penlabels (range 1 thru 71);
+endchar;
+
+beginchar("S", stretch * 5.94pt#, em_h, depth);
+  upper_aperture:= 0.14h;
+  lower_aperture:= 0.16h;
+  spine_center_y = 0.45h;
+  spine_angle:= 12;
+  spine_straight_length:= 0.05w;
+  spine_ydelta:= 0.25h;
+  beak_spine_xdelta = 0.01w;
+  right_terminal_xoffset:=0.1w;
+  
+  ctension:= 0.9;
+  
+  x1r = w - right_terminal_xoffset; y1r = cap_top - upper_aperture;
+  x2 = x4 + beak_spine_xdelta; y2r = cap_top;
+  x3 = 0.17w; y3 = y2l - ((y2l - y41l) / 2);
+  x4 = 0.5w; y4 = spine_center_y;
+  z41 = z4 shifted(-spine_straight_length, 0) rotatedaround((z4), -spine_angle);
+  z42 = z4 shifted(spine_straight_length, 0) rotatedaround((z4), -spine_angle);
+  x5l = w - curve_bearing; y5 = 0.235h;
+  x6 = x4 - beak_spine_xdelta; y6l = cap_bottom;
+  x7r = x3; y7 = baseline + lower_aperture;
+  
+  penpos1(mediumx, 35);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 180);
+  penpos41(mediumx, 270 - spine_angle);
+  penpos42(mediumx, 270 - spine_angle);
+  penpos5(mediumy, 180);
+  penpos6(mediumx, 90);
+  penpos7(mediumx, 35);
+
+  penstroke z1e..tension ctension..z2e{left}..tension ctension..z3e{down}..tension ctension..z41e{dir -spine_angle} -- z42e{dir -spine_angle}..tension ctension..z5e{down}..tension ctension..z6e{left}..tension ctension..z7e;
+  penlabels (range 1 thru 42);
+
+endchar;
+
+
+beginchar("g", stretch * 5.5pt#, em_h, depth);
+  ubox = 0.15w;
+  ubwidth = 0.55w;
+  ubheight = 0.35h;
+  ubtension:= 0.9;
+  lbey = -.07h;
+  tlendx = 0.9w;
+  %lbox
+
+  % upper bowl
+  x1 = ubox + (ubwidth / 2); y1l = xh + overshoot;
+  x2 = ubox + ubwidth; y2 = y1 - (ubheight / 2);
+  x3 = x1; y3 = y1 - ubheight;
+  x4 = ubox; y4 = y2;
+
+  % spinal cord & lower bowl
+  x5 = x3; y5l = y3l;       % Keep spine base attached
+  x6r = x4l; y6 = y5l - ((y5l - y7l) / 2); % align vertical center of spine to middle xof 2 bowls
+  x7r = x4r + ((x3 - x4) / 2); y7r = baseline;      % put on baseline;
+  x8l = x2r;  y8r = baseline;
+  x9l = tlendx; y9 = lbey;
+  x10 = x1; y10l = descender;
+  x11l = x4l; y11 = -.1h;
+  x117r = x7r; y117r = y7r;
+  
+  % tail
+  x12 = x1 + (x2 - x1) / 2; y12l = xh;
+  x13 = .9w; y13l = y12l;
+  
+  penpos1(mediumx, -90);
+  penpos2(mediumy, -180);
+  penpos3(mediumx, -270);
+  penpos4(mediumy, 0);
+
+  penpos5(thinx, -270);
+  penpos6(mediumy, -180);
+  penpos7(mediumy, -90);
+  penpos8(mediumy, -90);
+  penpos9(mediumy, -180);
+  penpos10(mediumx, -270);
+  penpos11(mediumx, 0);
+  penpos117(thinx, -40);
+
+  penpos12(mediumx, -90);
+  penpos13(mediumx, -90);
+  
+  penstroke z1e{right}..tension ubtension..z2e{down}..tension ubtension..z3e{left}..tension ubtension..z4e{up}..tension ubtension..cycle;
+  penstroke z5e{dir -180}..z6e{down}..z7e{right} -- z8e{right}..tension 1..z9e{down}..tension 1.25..z10e{left}..z11e{up}..z117e{dir 0};
+  penstroke z12e -- z13e;
+  
+  penlabels(range 1 thru 117);
+endchar;
+
+beginchar("i", stretch * 3pt#, em_h, depth);
+  x1 = 0.1w; y1r = x_height;
+  x2 = 0.6w; y2r = y1r;
+  x3 = x2; y3 = y1r;
+  x4 = x2; y4 = baseline;
+
+  x5 = x2; y5 = x_height + lc_accent_yoffset;
+  x6 = x5; y6 = y5;
+
+  penpos1(mediumx, 90);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 0);
+  penpos4(mediumy, 0);
+
+  penstroke z1e -- z2e;
+  penstroke z3e -- z4e;
+
+  pickup pencircle scaled dotsize;
+
+  draw z5 -- z6;
+
+  penlabels(range 1 thru 6);
+endchar;
+
+end
+
+  
