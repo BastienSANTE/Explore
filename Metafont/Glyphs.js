@@ -8,6 +8,6 @@ for(let i = 0; i < glyphcount; i++){
 }
 
 for(i in glyph_id){
-    glyphtable.innerHTML += `<div><img src="./ExploreSans-${i}.svg"></img></div>`;
+    glyphtable.innerHTML += `<div><img src="./${i}.svg"></img></div>`;
     
 }

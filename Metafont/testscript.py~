@@ -1,0 +1,7 @@
+import fontforge
+
+testfont = fontforge.font()
+
+glyphA = testfont.createChar(65)
+glyphA.importOutlines('ExploreSans-65.svg')
+testfont.save('font.sfd')
