@@ -4,13 +4,13 @@
 
 %%% PEN STROKE SETTINGS
 %%% These settings define the main "boldness" of the glyphs.
-mediumx:= 0.64pt;        % Thickness of the average horizontal stroke
-mediumy:= 0.8pt;         % Thickness of the average vertical stroke
+mediumx:= .64pt;       % Thickness of the average horizontal stroke
+mediumy:= .8pt;        % Thickness of the average vertical stroke
 thinx = mediumx / 1.5;  % Thinner stroke, used for joints and inktraps
 thiny = mediumy / 2;    % Same as above
 
 %%% ESSENTIAL METRICS
-STRETCH:= 1.05;     % Font width setting, to create "condensed" or "expanded" versions.
+STRETCH:= 1;  % Font width setting, to create "condensed" or "expanded" versions.
 EM_H:= 8pt#;     % height of the bounding box of the font
 DEPTH:= 2.24pt#; % Size of the bounding box's descender.
 % The total of em_h and depth are equal to 10.24, in order to match the 1024 unit TrueType convetion.
@@ -22,10 +22,26 @@ CAP_TOP = CAP_H + OVERSHOOT; % Top of uppercase glyphs with oversoot
 CAP_BOTTOM = BASELINE - OVERSHOOT;% Lowest point of uppercase glyphs with overshoot
 DESCENDER = -1.92pt;              % Actual position of the descender
 
+%%% MONOSPACE METRICS
+MONO_WIDTH:= 6pt#;
+
 %%% SIDEBEARINGS & BASIC KERNING
-CURVE_BEARING:=.54pt; %Average sidebearing for glyphs with curved edges
-LINE_BEARING:=.8pt;   %Average sidebearing for glyphs with straight stems
+CURVE_BEARING:=.48pt; %Average sidebearing for glyphs with curved edges
+LINE_BEARING:=.64pt;   %Average sidebearing for glyphs with straight stems
 
 %%% DIACRITICS & ACCENTS
-lc_accent_yoffset:= 1.5pt; %Offset between the top of the lowercase glyphs and diacritics. 
-dotsize:= mediumy * 1.25;  % diameter of the standard dot above i, ï, ÿ...
+lc_accent_yoffset:= 1.5pt; % Offset between the top of the lowercase glyphs and diacritics. 
+dotsize:= mediumy * 1.25;  % Diameter of the standard dot above i, ï, ÿ...
+
+%%% ALTERNATE GLYPHS
+% Some fonts have an option to enable "alternate" styles for certain glyphs,
+% namely A, G, K, S, Z, etc. Modern type engines allow to select these alte-
+% rnate glyphs for style reasons, to add flair.
+
+% Variables which are not of NUMERIC type must have a type declaration.
+% See the METAFONTbook, Chapter 7 for more information.
+boolean OLDSTYLE;
+OLDSTYLE = false;
+
+boolean MONOSPACE;
+MONOSPACE = true;
