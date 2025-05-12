@@ -1,0 +1,12 @@
+% U+0049 LATIN CAPITAL LETTER I - CODE 73
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 2.3pt#; fi
+beginchar(73, WIDTH, EM_H, DEPTH);
+  SERIF = 1;
+  x1 = 0.5w; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+
+  penpos1(mediumy, 0); penpos2(mediumy, 0);
+  penstroke z1e -- z2e;
+  penlabels(range 1 thru 2);
+endchar;
+

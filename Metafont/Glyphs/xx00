@@ -1,0 +1,6 @@
+outputtemplate := "%c.svg";
+outputformat := "svg";
+
+% Input settings file
+input ../Config/ExploreSansCFG.mf;
+

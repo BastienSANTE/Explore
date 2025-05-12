@@ -1,0 +1,662 @@
+outputtemplate := "%c.svg";
+outputformat := "svg";
+
+% Input settings file
+input ../Config/ExploreSansCFG.mf;
+
+% U+0041 LATIN CAPITAL LETTER A - CODE 65
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.2pt#; fi
+beginchar(65, WIDTH, EM_H, DEPTH);
+  width:= .8w;
+  barcoef:= 0.7; % "Bar coefficient": how low the bar is. Width is automatic.
+  x1 = .5w; y1 = CAP_H;
+  x2 = x1 - width / 2; y2 = BASELINE;
+  x3 = x1 + width / 2; y3 = BASELINE;
+
+  x4 = x1 - (barcoef * (width / 2)); y4 = CAP_H - (barcoef * CAP_H);
+  x5 = x1 + (barcoef * (width / 2)); y5 = CAP_H - (barcoef * CAP_H);
+  
+  penpos1(mediumy / 1.25, 0);
+  penpos2(mediumy, 0);
+  penpos3(mediumy, 0);
+  penpos4(mediumx, 90);
+  penpos5(mediumx, 90);
+  
+  penstroke z1e -- z2e;
+  penstroke z1e -- z3e;
+  penstroke z4e -- z5e;
+
+  penlabels(range 1 thru 5);
+endchar;
+
+% U+0042 LATIN CAPITAL LETTER B - CODE 66
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.1pt#; fi
+beginchar(66, WIDTH, EM_H, DEPTH);
+  stem_x:= 0.2w;
+  btension:= 0.9;
+
+  x0 = x1; y0 = y4;
+  x1l = LINE_BEARING; y1r = CAP_H;
+  x2 = 0.535w; y2r = CAP_H;
+  x3 = 0.82w ; y3 = 0.66h;
+  x4 = x2; y4 = 0.465h;
+  x41 = x2; y41l = y4l;
+  x42 = x2; y42l = y4r;
+  x5 = 0.88w; y5 = 0.25h;
+  x6 = x2; y6r = BASELINE;
+  x7 = x8; y7r = BASELINE;
+  x8l = LINE_BEARING; y8 = y1r;
+  x9l = LINE_BEARING; y9 = y7r;
+
+  penpos0(mediumx, -90);
+  
+  penpos1(mediumx, 90);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 0);
+  penpos41(thinx, -90);
+
+  penpos4(mediumx, -90);
+
+  penpos42(thinx, 90);
+  penpos5(mediumy, 0);
+  penpos6(mediumx, -90);
+  penpos7(mediumx, -90);
+
+  penpos8(mediumy, 0);
+  penpos9(mediumy, 0);
+  
+  penstroke z1e -- z2e{right}..tension btension..z3e{down}..tension btension..z41e{left};
+  penstroke z0e -- z4e;
+  penstroke z42e{right}..tension btension..z5e{down}..tension btension..z6e{left} -- z7e;
+  penstroke z8e -- z9e;
+  
+  penlabels(range 0 thru 99);
+endchar;
+
+% U+0043 LATIN CAPITAL LETTER C - CODE 67
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.05pt#; fi
+beginchar(67, WIDTH, EM_H, DEPTH); 
+  ctension:= 0.85;
+  aperture:=0.2h;
+  x1 = 0.92w; y1 = CAP_TOP - aperture;
+  x2 = 0.58w; y2r = CAP_TOP;
+  x3r = CURVE_BEARING; y3 = CAP_H / 2;
+  x4 = x2; y4r = BASELINE;
+  x5 = x1; y5 = BASELINE + aperture;
+
+  penpos1(mediumx, 45);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 180);
+  penpos4(mediumx, 270);
+  penpos5(mediumx, 315);
+
+  penstroke z1e..z2e{left}..tension ctension..z3e{down}..tension ctension..z4e{right}..z5e;
+
+  penlabels (range 1 thru 5);
+endchar;
+
+% U+0044 LATIN CAPITAL LETTER D - CODE 68
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.2pt#; fi
+beginchar("D", WIDTH, EM_H, DEPTH);
+  ctension:= .9;
+  x1 = LINE_BEARING; y1r = CAP_H;
+  x2 = 0.45w; y2r = CAP_H;
+  x3r = w - CURVE_BEARING; y3 = 0.45h;
+  x4 = x2; y4r = BASELINE;
+  x5 = x1; y5r = BASELINE;
+  x6l = x1; y6 = y1r;
+  x7l = x1; y7 = BASELINE;
+  
+  penpos1(mediumx, 90);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 0);
+  penpos4(mediumx, -90);
+  penpos5(mediumx, -90);
+  penpos6(mediumy, 0);
+  penpos7(mediumy, 0);
+
+  penstroke z1e -- z2e{right}..tension ctension..z3e{down}..tension ctension..z4e{left} -- z5e;
+  penstroke z6e -- z7e;
+  penlabels(range 1 thru 7);
+endchar;
+
+% U+0045 LATIN CAPITAL LETTER E - CODE 69
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.2pt#; fi
+beginchar("E", WIDTH, EM_H, DEPTH);
+  bar_h:= 0.5 * CAP_H;
+  bar_crease:=0.1w;
+  bottom_advance:= 0.05w;
+  
+  x1l = LINE_BEARING; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+  x3 = x1; y3r = y1;
+  x4 = 0.9w; y4r = y3r;
+  x5 = x1; y5 = bar_h;
+  x6 = x4 - bar_crease; y6 = y5;
+  x7 = x1; y7l = BASELINE;
+  x8 = x4 + bottom_advance; y8l = y7l;
+  
+  penpos1(mediumy, 0);  penpos2(mediumy, 0);
+  penpos3(mediumx, 90); penpos4(mediumx, 90);
+  penpos5(mediumx, 90); penpos6(mediumx, 90);
+  penpos7(mediumx, 90); penpos8(mediumx, 90);
+  penstroke z1e -- z2e;
+  penstroke z3e -- z4e;
+  penstroke z5e -- z6e;
+  penstroke z7e -- z8e;
+  penlabels(range 1 thru 8);
+endchar;
+
+% U+0046 LATIN CAPITAL LETTER F - CODE 70
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 5.45pt#; fi
+beginchar(70, WIDTH, EM_H, DEPTH);
+  bar_h:= 0.5 * CAP_H;
+  bar_crease:=0.1w;
+  
+  x1l = LINE_BEARING; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+  x3 = x1; y3r = y1;
+  x4 = 0.9w; y4r = y3r;
+  x5 = x1; y5 = bar_h;
+  x6 = x4 - bar_crease; y6 = y5;
+  
+  penpos1(mediumy, 0);  penpos2(mediumy, 0);
+  penpos3(mediumx, 90); penpos4(mediumx, 90);
+  penpos5(mediumx, 90); penpos6(mediumx, 90);
+  penstroke z1e -- z2e;
+  penstroke z3e -- z4e;
+  penstroke z5e -- z6e;
+  penlabels(range 1 thru 6);
+endchar;
+
+% U+0047 LATIN CAPITAL LETTER G - CODE 71
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.5pt#; fi
+beginchar(71, WIDTH, EM_H, DEPTH);
+  ctension:= 0.9;
+  upper_aperture:=0.2h;
+  lower_aperture:=0.15h;
+  x1r = w - CURVE_BEARING; y1 = CAP_TOP - upper_aperture;
+  x2 = 0.55w; y2r = CAP_TOP;
+  x3r = CURVE_BEARING; y3 = CAP_H / 2;
+  x4 = x2; y4r = BASELINE;
+  x5 = x1; y5 = BASELINE + lower_aperture;
+
+  %Right angle stroke
+  x6r = x5r; y6r = y5r;
+  x7r = x6r; y7 = y3;
+  x71 = x6r; y71 = y7;
+  x8 = 0.5w; y8 = y71;
+  
+  penpos1(mediumx, 45);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 180);
+  penpos4(mediumx, 270);
+  penpos5(mediumx, 315);
+
+  penpos6(mediumy, 0);
+  penpos7(mediumy, 0);
+  penpos71(mediumx, -90);
+  penpos8(mediumx, -90);
+  
+
+  penstroke z1e..z2e{left}..tension ctension..z3e{down}..tension ctension..z4e{right}..z5e;
+  penstroke z6e -- z7e;
+  penstroke z71e -- z8e;
+
+  penlabels (range 1 thru 71);
+endchar;
+
+% U+0048 LATIN CAPITAL LETTER H - CODE 72
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.1pt#; fi
+beginchar(72, WIDTH, EM_H, DEPTH);
+  bar_h:= 0.55 * CAP_H;
+  
+  x1l = LINE_BEARING; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+
+  x3r = w - LINE_BEARING; y3 = y2;
+  x4r = x3r; y4 = y1;
+
+  x5 = x1; y5 = bar_h;
+  x6 = x3; y6 = y5;
+
+  penpos1(mediumy, 0);  penpos2(mediumy, 0);
+  penpos3(mediumy, 0);  penpos4(mediumy, 0);
+  penpos5(mediumx, 90); penpos6(mediumx, 90);
+
+  penstroke z1e -- z2e; penstroke z3e -- z4e;
+  penstroke z5e -- z6e;
+  penlabels(range 1 thru 6);
+endchar;
+
+% U+0049 LATIN CAPITAL LETTER I - CODE 73
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 2.3pt#; fi
+beginchar(73, WIDTH, EM_H, DEPTH);
+  SERIF = 1;
+  x1 = 0.5w; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+
+  penpos1(mediumy, 0); penpos2(mediumy, 0);
+  penstroke z1e -- z2e;
+  penlabels(range 1 thru 2);
+endchar;
+
+% U+004A LATIN CAPITAL LETTER J - CODE 74
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 4.8pt#; fi
+beginchar(74, WIDTH, EM_H, DEPTH);
+  if MONOSPACE =  true:
+    x1r = w - LINE_BEARING; y1 = CAP_H;
+    x2r = x1r; y2 = (x2 - x3);
+    x3 = 0.5w; y3r = CAP_BOTTOM;
+    x4r = LINE_BEARING; y4 = y2;
+    x5 = (x3 - x4); y5r = CAP_H;
+    x51 = x1; y51r = CAP_H;
+  else:
+    x1r = w - LINE_BEARING; y1 = CAP_H;
+    x2r = x1r; y2 =  0.3 * CAP_H;
+    x3 = 0.415w; y3r = CAP_BOTTOM;
+    x4 = 0.1w; y4 = 0.18 * CAP_H;
+  fi
+
+  penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumx, -90);
+  if MONOSPACE = true:
+    penpos4(mediumy, 210);
+    penpos5(mediumx, 90);
+    penpos51(mediumx, 90);
+  else:
+    penpos4(mediumx, -150);
+  fi
+    
+  penstroke z1e -- z2e{down}..z3e{left}..z4e;
+  if MONOSPACE = true: penstroke z5e -- z51e; fi
+  penlabels(range 1 thru 51);
+endchar;
+
+% U+004B LATIN CAPITAL LETTER K - CODE 75
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 5.8pt#; fi
+beginchar(75, WIDTH, EM_H, DEPTH);
+  arm_width_coef:= 1.3;
+  arm_x_delta = 0.05w;
+  
+  x1l = LINE_BEARING; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+  x3r = w - arm_x_delta; y3 = y1;
+  x4l = x1r; y4 = 0.5 * CAP_H;
+  x5r = x3r; y5 = y2;
+
+  penpos1(mediumy, 0); penpos2(mediumy, 0);
+  penpos3(mediumy * arm_width_coef, 0); penpos4(mediumy * arm_width_coef, 0); penpos5(mediumy * arm_width_coef, 0);
+
+  penstroke z1e -- z2e;
+  penstroke z3e -- z4e -- z5e;
+  penlabels(range 1 thru 5);
+endchar;
+
+% U+004C LATIN CAPITAL LETTER L - CODE 7
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 5.2pt#; fi
+beginchar(76, WIDTH, EM_H, DEPTH);
+  x1l = LINE_BEARING; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+  x3 = x1; y3l = BASELINE;
+  x4 = .92w; y4l = y3l;
+
+  penpos1(mediumy, 0); penpos2(mediumy, 0);
+  penpos3(mediumx, 90); penpos4(mediumx, 90);
+  penstroke z1e -- z2e; penstroke z3e -- z4e;
+  penlabels(range 1 thru 4);
+endchar;
+
+% U+004D LATIN CAPITAL LETTER M - CODE 77
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 7.4pt#; fi
+beginchar(77, WIDTH, EM_H, DEPTH);
+  x1l = LINE_BEARING; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+  x3r = w - LINE_BEARING; y3 = y1;
+  x4r = x3r; y4 = y2;
+  x5 = 0.5w; y5 = .25 * CAP_H;
+  
+  penpos1(mediumy, 0); penpos2(mediumy, 0);
+  penpos3(mediumy, 0); penpos4(mediumy, 0);
+  penpos5(mediumy, 0);
+  penstroke z1e -- z2e; penstroke z3e -- z4e;
+  penstroke z1e -- z5e; penstroke z3e -- z5e;
+  penlabels(range 1 thru 5);
+endchar;
+
+% U+004E LATIN CAPITAL LETTER N - CODE 78
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.4pt#; fi
+beginchar(78, WIDTH, EM_H, DEPTH);
+  diag_width_coef:= 1.2;
+  
+  x1l = LINE_BEARING; y1 = CAP_H;
+  x11l = x1l; y11 = y1;
+  x2l = x1l; y2 = BASELINE;
+  x3r = w - LINE_BEARING; y3 = y1;
+  x4r = x3r; y4 = y2;
+  x41r = x4r; y41 = y2;
+  
+  penpos1(mediumy, 0); penpos2(mediumy, 0);
+  penpos3(mediumy, 0); penpos4(mediumy, 0);
+  penpos5(mediumy, 0);
+  penpos11(mediumy * diag_width_coef, 0); penpos41(mediumy * diag_width_coef, 0);
+  
+  penstroke z1e -- z2e; penstroke z3e -- z4e;
+  penstroke z11e -- z41e;
+  
+  penlabels(range 1 thru 41);
+endchar;
+
+% U+004F LATIN CAPITAL LETTER O - CODE 79
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.6pt#; fi
+beginchar(79, WIDTH, EM_H, DEPTH);
+  ctension:= 0.9;
+
+  x1 = 0.5w; y1r = CAP_TOP;
+  x2r = w - CURVE_BEARING; y2 = 0.5 * CAP_H;
+  x3 = x1; y3r = CAP_BOTTOM;
+  x4r  = CURVE_BEARING; y4 = y2;
+
+  penpos1(mediumx, 90); penpos2(mediumy, 0);
+  penpos3(mediumx, -90); penpos4(mediumy, -180);
+
+  penstroke z1e..tension ctension..z2e..tension ctension..z3e..tension ctension..z4e..tension ctension..cycle;
+  penlabels(range 1 thru 4);
+endchar;
+
+% U+0050 LATIN CAPITAL LETTER P - CODE 80
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6pt#; fi
+beginchar(80, WIDTH, EM_H, DEPTH);
+
+  x1l = LINE_BEARING; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+
+  x3 = x1; y3r = CAP_H;
+  x4 = 0.55w; y4r = y3r;
+  x5r = w - CURVE_BEARING; y5 = 0.7 * CAP_H;
+  x6 = x4; y6r = 0.4 * CAP_H;
+  x7 = x1; y7r = y6r;
+  
+  penpos1(mediumy, 0); penpos2(mediumy, 0);
+  penpos3(mediumx, 90); penpos4(mediumx, 90); penpos5(mediumy, 0); penpos6(mediumx, -90); penpos7(mediumx, -90);
+
+  penstroke z1e -- z2e;
+  penstroke z3e -- z4e{right}..z5e{down}..z6e{left} -- z7e;
+  
+  penlabels(range 0 thru 99);
+endchar;
+
+% U+0051 LATIN CAPITAL LETTER Q - CODE 81
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.6pt#; fi
+beginchar(81, WIDTH, EM_H, DEPTH);
+  ctension:= 0.9;
+  tail_straight_length:=0.2w;
+
+  x1 = 0.5w; y1r = CAP_TOP;
+  x2r = w - CURVE_BEARING; y2 = 0.5 * CAP_H;
+  x3 = x1; y3r = CAP_BOTTOM;
+  x4r  = CURVE_BEARING; y4 = y2;
+  x5 = x1; y5 = BASELINE;
+  x6 = x2r - tail_straight_length; y6l = DESCENDER;
+  x7 = x2; y7l = y6l;
+
+  penpos1(mediumx, 90); penpos2(mediumy, 0);
+  penpos3(mediumx, -90); penpos4(mediumy, -180);
+  penpos5(mediumy, 0); penpos6(mediumx, 90); penpos7(mediumx, 90);
+
+  penstroke z1e..tension ctension..z2e..tension ctension..z3e..tension ctension..z4e..tension ctension..cycle;
+  penstroke z5e{down}..z6e{right}..z7e;
+  penlabels(range 1 thru 7);
+endchar;
+
+% U+0052 LATIN CAPITAL LETTER R - CODE 82
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6pt#; fi
+beginchar(82, WIDTH, EM_H, DEPTH);
+
+  x1l = LINE_BEARING; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+
+  x3 = x1; y3r = CAP_H;
+  x4 = 0.55w; y4r = y3r;
+  x5r = w - CURVE_BEARING; y5 = 0.7 * CAP_H;
+  x6 = x4; y6r = 0.4 * CAP_H;
+  x7 = x1; y7r = y6r;
+  x8 = x6; y8 = y6;
+  x9r = x5r; y9 = BASELINE;
+  
+  penpos1(mediumy, 0); penpos2(mediumy, 0);
+  penpos3(mediumx, 90); penpos4(mediumx, 90); penpos5(mediumy, 0); penpos6(mediumx, -90); penpos7(mediumx, -90);
+  penpos8(mediumy, 0); penpos9(mediumy, 0);
+
+  penstroke z1e -- z2e;
+  penstroke z3e -- z4e{right}..z5e{down}..z6e{left} -- z7e;
+  penstroke z8e -- z9e;
+  
+  penlabels(range 0 thru 9);
+endchar;
+
+% U+0053 LATIN CAPITAL LETTER S - CODE 83
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 5.8pt#; fi
+beginchar(83, WIDTH, EM_H, DEPTH);
+  upper_aperture:= 0.14h;
+  lower_aperture:= 0.16h;
+  spine_center_y = 0.45h;
+  spine_angle:= 12;
+  spine_straight_length:= 0.05w;
+  spine_ydelta:= 0.25h;
+  beak_spine_xdelta = 0.01w;
+  right_terminal_xoffset:=0.1w;
+  
+  ctension:= 0.9;
+  
+  x1r = w - right_terminal_xoffset; y1r = CAP_TOP - upper_aperture;
+  x2 = x4 + beak_spine_xdelta; y2r = CAP_TOP;
+  x3 = 0.17w; y3 = y2l - ((y2l - y41l) / 2);
+  x4 = 0.5w; y4 = spine_center_y;
+  z41 = z4 shifted(-spine_straight_length, 0) rotatedaround((z4), -spine_angle);
+  z42 = z4 shifted(spine_straight_length, 0) rotatedaround((z4), -spine_angle);
+  x5l = w - CURVE_BEARING; y5 = 0.235h;
+  x6 = x4 - beak_spine_xdelta; y6l = CAP_BOTTOM;
+  x7r = x3; y7 = BASELINE + lower_aperture;
+  
+  penpos1(mediumx, 35);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 180);
+  penpos41(mediumx, 270 - spine_angle);
+  penpos42(mediumx, 270 - spine_angle);
+  penpos5(mediumy, 180);
+  penpos6(mediumx, 90);
+  penpos7(mediumx, 35);
+
+  penstroke z1e..tension ctension..z2e{left}..tension ctension..z3e{down}..tension ctension..z41e{dir -spine_angle} -- z42e{dir -spine_angle}..tension ctension..z5e{down}..tension ctension..z6e{left}..tension ctension..z7e;
+  penlabels (range 1 thru 42);
+endchar;
+
+% U+0054 LATIN CAPITAL LETTER T - CODE 84
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.1pt#; fi
+beginchar(84, WIDTH, EM_H, DEPTH);
+  x1 = 0.1w; y1r = CAP_H;
+  x2 = 0.9w; y2r = y1r;
+
+  x3 = 0.5w; y3 = y1;
+  x4 = x3; y4 = BASELINE;
+
+  penpos1(mediumx, 90); penpos2(mediumx, 90);
+  penpos3(mediumy, 0); penpos4(mediumy, 0);
+
+  penstroke z1e -- z2e; penstroke z3e -- z4e;
+  penlabels(range 1 thru 4);
+endchar;
+
+% U+0055 LATIN CAPITAL LETTER U - CODE 85
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.35pt#; fi
+beginchar(85, WIDTH, EM_H, DEPTH);
+  x1l = LINE_BEARING; y1 = CAP_H;
+  x2l = x1l; y2 = 0.37 * CAP_H;
+  x3 = 0.5w; y3l = CAP_BOTTOM;
+  x4l = w - LINE_BEARING; y4 = y2;
+  x5l = x4l; y5 = y1;
+
+  penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumx, 90); penpos4(mediumy, 180); penpos5(mediumy, 180);
+
+  penstroke z1e -- z2e{down}..z3e{right}..z4e{up} -- z5e;
+  penlabels(range 1 thru 5);
+endchar;
+
+% U+0056 LATIN CAPITAL LETTER V - CODE 86
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.55pt#; fi
+beginchar(86, WIDTH, EM_H, DEPTH)
+  x1l = LINE_BEARING / 2; y1 = CAP_H;
+  x2 = 0.5w; y2 = BASELINE;
+  x3r = w - (LINE_BEARING / 2); y3 = y1;
+
+  penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumy, 0);
+
+  penstroke z1e -- z2e; penstroke z3e -- z2e;
+  penlabels(range 1 thru 3);
+endchar;
+
+% U+0057 LATIN CAPITAL LETTER W - CODE 87
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 8.2pt#; fi
+beginchar(87, WIDTH, EM_H, DEPTH);
+  x1l = LINE_BEARING / 2; y1 = CAP_H;
+  x2 = x1 + ((x3 - x1) / 2); y2 = BASELINE;
+  x3 = 0.5w; y3 = y1;
+  x4 = x3 + ((x5 - x3) / 2); y4 = y2;
+  x5r = w - (LINE_BEARING / 2); y5 = y1;
+
+  penpos1(mediumy, 0); penpos2(mediumx, 0); penpos3(mediumx, 0); penpos4(mediumx, 0); penpos5(mediumy, 0);
+  penstroke z1e -- z2e; penstroke z3e -- z2e; penstroke z3e -- z4e; penstroke z5e -- z4e;
+  penlabels(range 1 thru 5);
+endchar;
+
+% U+0058 LATIN CAPITAL LETTER X - CODE 88
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.6pt#; fi
+beginchar(88, WIDTH, EM_H, DEPTH);
+  x1l = LINE_BEARING / 2; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+  x3r = w - (LINE_BEARING / 2); y3 = y1;
+  x4r = x3r; y4 = y2;
+
+  penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumy, 0); penpos4(mediumy, 0);
+  penstroke z1e -- z4e; penstroke z3e -- z2e;
+  penlabels(range 1 thru 4);
+endchar;
+
+% U+0059 LATIN CAPITAL LETTER Y - CODE 89
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 5.9pt#; fi
+beginchar(89, WIDTH, EM_H, DEPTH)
+  stem_h:= 0.45 * CAP_H;
+  
+  x1l = LINE_BEARING / 2; y1 = CAP_H;
+  x2 = 0.5w; y2 = stem_h;
+  x3r = w - (LINE_BEARING / 2); y3 = y1;
+  x4 = x2; y4 = BASELINE;
+
+  penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumy, 0); penpos4(mediumy, 0);
+
+  penstroke z1e -- z2e; penstroke z3e -- z2e; penstroke z2e -- z4e;
+  penlabels(range 1 thru 4);
+endchar;
+
+% U+0060 LATIN CAPITAL LETTER Z - CODE 90
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6pt#; fi
+beginchar(90, WIDTH, EM_H, DEPTH)
+  x1 = LINE_BEARING; y1r = CAP_H;
+  x2 = w - LINE_BEARING; y2 = y1;
+  x21r = x2; y21 = y2l;
+  x3 = x1; y3l = BASELINE;
+  x31l = x3; y31 = y3r;
+  x4 = x2; y4 = y3;
+
+  penpos1(mediumx, 90); penpos2(mediumx, 90); penpos3(mediumx, 90); penpos4(mediumx, 90);
+  penpos21(mediumy, 0);  penpos31(mediumy, 0);
+
+  penstroke z1e -- z2e; penstroke z3e -- z4e; penstroke z21e -- z31e;
+  
+  penlabels(range 1 thru 31);
+endchar;
+
+% U+0067 LATIN SMALL LETTER G | CODE 103
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 5.5pt#; fi
+beginchar(103, WIDTH, EM_H, DEPTH);
+  ubox = 0.15w;
+  ubwidth = 0.55w;
+  ubheight = 0.35h;
+  ubtension:= 0.9;
+  lbey = -.05h;
+  lboy = .05h;
+  tlendx = 0.9w;
+  %lbox
+
+  % upper bowl
+  x1 = ubox + (ubwidth / 2); y1l = X_H + OVERSHOOT;
+  x2 = ubox + ubwidth; y2 = y1 - (ubheight / 2);
+  x3 = x1; y3 = y1 - ubheight;
+  x4 = ubox; y4 = y2;
+
+  % spinal cord & lower bowl
+  x5 = x3; y5l = y3l;                      % Keep spine base attached
+  x6r = x4l; y6 = y5l - ((y5l - y7l) / 2); % Align vertical center of spine to middle xof 2 bowls
+  x7r = x4r + ((x3 - x4) / 2); y7 = lboy;  % put on BASELINE;
+  x8l = x2r;  y8 = y7;
+  x9l = tlendx; y9 = lbey;
+  x10 = x1; y10l = DESCENDER;
+  x11l = x4l; y11 = -.1h;
+  x117r = x7r; y117r = y7r;
+  
+  % tail
+  x12 = x1 + (x2 - x1) / 2; y12l = X_H;
+  x13 = .9w; y13l = y12l;
+  
+  penpos1(mediumx, -90);
+  penpos2(mediumy, -180);
+  penpos3(mediumx, -270);
+  penpos4(mediumy, 0);
+
+  penpos5(thinx, -270);
+  penpos6(mediumy, -180);
+  penpos7(mediumx, -90);
+  penpos8(mediumx, -90);
+  penpos9(mediumy, -180);
+  penpos10(mediumx, -270);
+  penpos11(mediumx, 0);
+  penpos117(thinx, -40);
+
+  penpos12(mediumx, -90);
+  penpos13(mediumx, -90);
+  
+  penstroke z1e{right}..tension ubtension..z2e{down}..tension ubtension..z3e{left}..tension ubtension..z4e{up}..tension ubtension..cycle;
+  penstroke z5e{dir -180}..z6e{down}..z7e{right} -- z8e{right}..tension 1..z9e{down}..tension 1..z10e{left}..z11e{up}..z117e{dir 0};
+  penstroke z12e -- z13e;
+  
+  penlabels(range 1 thru 117);
+endchar;
+
+% U+0069 LATIN SMALL LETTER I | CODE 105
+beginchar(105, STRETCH * 3pt#, EM_H, DEPTH);
+  x1 = 0.1w; y1r = X_H;
+  x2 = 0.6w; y2r = y1r;
+  x3 = x2; y3 = y1r;
+  x4 = x2; y4 = BASELINE;
+
+  x5 = x2; y5 = X_H + lc_accent_yoffset;
+  x6 = x5; y6 = y5;
+
+  penpos1(mediumx, 90);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 0);
+  penpos4(mediumy, 0);
+
+  penstroke z1e -- z2e;
+  penstroke z3e -- z4e;
+
+  pickup pencircle scaled dotsize;
+
+  draw z5 -- z6;
+
+  penlabels(range 1 thru 6);
+endchar;
+
+end
+
+  

@@ -1,0 +1,23 @@
+% U+0051 LATIN CAPITAL LETTER Q - CODE 81
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.6pt#; fi
+beginchar(81, WIDTH, EM_H, DEPTH);
+  ctension:= 0.9;
+  tail_straight_length:=0.2w;
+
+  x1 = 0.5w; y1r = CAP_TOP;
+  x2r = w - CURVE_BEARING; y2 = 0.5 * CAP_H;
+  x3 = x1; y3r = CAP_BOTTOM;
+  x4r  = CURVE_BEARING; y4 = y2;
+  x5 = x1; y5 = BASELINE;
+  x6 = x2r - tail_straight_length; y6l = DESCENDER;
+  x7 = x2; y7l = y6l;
+
+  penpos1(mediumx, 90); penpos2(mediumy, 0);
+  penpos3(mediumx, -90); penpos4(mediumy, -180);
+  penpos5(mediumy, 0); penpos6(mediumx, 90); penpos7(mediumx, 90);
+
+  penstroke z1e..tension ctension..z2e..tension ctension..z3e..tension ctension..z4e..tension ctension..cycle;
+  penstroke z5e{down}..z6e{right}..z7e;
+  penlabels(range 1 thru 7);
+endchar;
+

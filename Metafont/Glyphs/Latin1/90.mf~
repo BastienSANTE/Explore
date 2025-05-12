@@ -1,0 +1,18 @@
+% U+0060 LATIN CAPITAL LETTER Z - CODE 90
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6pt#; fi
+beginchar(90, WIDTH, EM_H, DEPTH)
+  x1 = LINE_BEARING; y1r = CAP_H;
+  x2 = w - LINE_BEARING; y2 = y1;
+  x21r = x2; y21 = y2l;
+  x3 = x1; y3l = BASELINE;
+  x31l = x3; y31 = y3r;
+  x4 = x2; y4 = y3;
+
+  penpos1(mediumx, 90); penpos2(mediumx, 90); penpos3(mediumx, 90); penpos4(mediumx, 90);
+  penpos21(mediumy, 0);  penpos31(mediumy, 0);
+
+  penstroke z1e -- z2e; penstroke z3e -- z4e; penstroke z21e -- z31e;
+  
+  penlabels(range 1 thru 31);
+endchar;
+

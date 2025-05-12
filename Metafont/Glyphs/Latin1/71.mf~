@@ -1,0 +1,37 @@
+% U+0047 LATIN CAPITAL LETTER G - CODE 71
+if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.5pt#; fi
+beginchar(71, WIDTH, EM_H, DEPTH);
+  ctension:= 0.9;
+  upper_aperture:=0.2h;
+  lower_aperture:=0.15h;
+  x1r = w - CURVE_BEARING; y1 = CAP_TOP - upper_aperture;
+  x2 = 0.55w; y2r = CAP_TOP;
+  x3r = CURVE_BEARING; y3 = CAP_H / 2;
+  x4 = x2; y4r = BASELINE;
+  x5 = x1; y5 = BASELINE + lower_aperture;
+
+  %Right angle stroke
+  x6r = x5r; y6r = y5r;
+  x7r = x6r; y7 = y3;
+  x71 = x6r; y71 = y7;
+  x8 = 0.5w; y8 = y71;
+  
+  penpos1(mediumx, 45);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 180);
+  penpos4(mediumx, 270);
+  penpos5(mediumx, 315);
+
+  penpos6(mediumy, 0);
+  penpos7(mediumy, 0);
+  penpos71(mediumx, -90);
+  penpos8(mediumx, -90);
+  
+
+  penstroke z1e..z2e{left}..tension ctension..z3e{down}..tension ctension..z4e{right}..z5e;
+  penstroke z6e -- z7e;
+  penstroke z71e -- z8e;
+
+  penlabels (range 1 thru 71);
+endchar;
+

@@ -1,0 +1,29 @@
+outputtemplate := "%c.svg";
+outputformat := "svg";
+
+PROP_WIDTH:= 6.1pt#;
+
+input ../Config/ExploreSansCFG.mf;
+
+% U+0048 LATIN CAPITAL LETTER H - CODE 72
+beginchar(72, WIDTH, EM_H, DEPTH);
+  bar_h:= 0.55 * CAP_H;
+  
+  x1l = LINE_BEARING; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+
+  x3r = w - LINE_BEARING; y3 = y2;
+  x4r = x3r; y4 = y1;
+
+  x5 = x1; y5 = bar_h;
+  x6 = x3; y6 = y5;
+
+  penpos1(mediumy, 0);  penpos2(mediumy, 0);
+  penpos3(mediumy, 0);  penpos4(mediumy, 0);
+  penpos5(mediumx, 90); penpos6(mediumx, 90);
+
+  penstroke z1e -- z2e; penstroke z3e -- z4e;
+  penstroke z5e -- z6e;
+  penlabels(range 1 thru 6);
+endchar;
+

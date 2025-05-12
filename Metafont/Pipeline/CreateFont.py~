@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+
+import os
+import os.path
+import subprocess
+import fontforge
+import time
+
+temp_font_name : str = "Explore.sfd"
+filename : str = ""
+testfont = fontforge.font()
+
+if os.path.isfile(temp_font_name):
+    subprocess.run(["rm", temp_font_name])
+    print("Removed old font file")
+else:
+    print("Error: No file to delete")
+
+
+time.sleep(5)
+
+
+for g in range(65, 90):
+    filename = "{}.svg".format(g)
+    g = testfont.createChar(g)
+    g.importOutlines(filename)
+    g.right_side_bearing = 0
+
+    
+
+testfont.save("Explore.sfd")
+testfont.generate("Explore.ttf")
+
+
+def exportMFGlyph():
+    if

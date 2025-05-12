@@ -1,0 +1,28 @@
+outputtemplate := "%c.svg";
+outputformat := "svg";
+
+PROP_WIDTH:= 6.05pt#;
+
+input ../Config/ExploreSansCFG.mf;
+
+% U+0043 LATIN CAPITAL LETTER C - CODE 67
+beginchar(67, WIDTH, EM_H, DEPTH); 
+  ctension:= 0.85;
+  aperture:=0.2h;
+  x1 = 0.92w; y1 = CAP_TOP - aperture;
+  x2 = 0.58w; y2r = CAP_TOP;
+  x3r = CURVE_BEARING; y3 = CAP_H / 2;
+  x4 = x2; y4r = BASELINE;
+  x5 = x1; y5 = BASELINE + aperture;
+
+  penpos1(mediumx, 45);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 180);
+  penpos4(mediumx, 270);
+  penpos5(mediumx, 315);
+
+  penstroke z1e..z2e{left}..tension ctension..z3e{down}..tension ctension..z4e{right}..z5e;
+
+  penlabels (range 1 thru 5);
+endchar;
+

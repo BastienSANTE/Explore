@@ -1,0 +1,33 @@
+outputtemplate := "%c.svg";
+outputformat := "svg";
+
+PROP_WIDTH:=6.2pt#;
+
+input ../Config/ExploreSansCFG.mf;
+
+% U+0045 LATIN CAPITAL LETTER E - CODE 69
+beginchar("E", WIDTH, EM_H, DEPTH);
+  bar_h:= 0.5 * CAP_H;
+  bar_crease:=0.1w;
+  bottom_advance:= 0.05w;
+  
+  x1l = LINE_BEARING; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+  x3 = x1; y3r = y1;
+  x4 = 0.9w; y4r = y3r;
+  x5 = x1; y5 = bar_h;
+  x6 = x4 - bar_crease; y6 = y5;
+  x7 = x1; y7l = BASELINE;
+  x8 = x4 + bottom_advance; y8l = y7l;
+  
+  penpos1(mediumy, 0);  penpos2(mediumy, 0);
+  penpos3(mediumx, 90); penpos4(mediumx, 90);
+  penpos5(mediumx, 90); penpos6(mediumx, 90);
+  penpos7(mediumx, 90); penpos8(mediumx, 90);
+  penstroke z1e -- z2e;
+  penstroke z3e -- z4e;
+  penstroke z5e -- z6e;
+  penstroke z7e -- z8e;
+  penlabels(range 1 thru 8);
+endchar;
+

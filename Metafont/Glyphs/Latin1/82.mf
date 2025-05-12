@@ -1,0 +1,31 @@
+outputtemplate := "%c.svg";
+outputformat := "svg";
+
+PROP_WIDTH:= 6pt#;
+
+input ../Config/ExploreSansCFG.mf;
+
+% U+0052 LATIN CAPITAL LETTER R - CODE 82
+beginchar(82, WIDTH, EM_H, DEPTH);
+  x1l = LINE_BEARING; y1 = CAP_H;
+  x2l = x1l; y2 = BASELINE;
+
+  x3 = x1; y3r = CAP_H;
+  x4 = 0.55w; y4r = y3r;
+  x5r = w - CURVE_BEARING; y5 = 0.7 * CAP_H;
+  x6 = x4; y6r = 0.4 * CAP_H;
+  x7 = x1; y7r = y6r;
+  x8 = x6; y8 = y6;
+  x9r = x5r; y9 = BASELINE;
+  
+  penpos1(mediumy, 0); penpos2(mediumy, 0);
+  penpos3(mediumx, 90); penpos4(mediumx, 90); penpos5(mediumy, 0); penpos6(mediumx, -90); penpos7(mediumx, -90);
+  penpos8(mediumy, 0); penpos9(mediumy, 0);
+
+  penstroke z1e -- z2e;
+  penstroke z3e -- z4e{right}..z5e{down}..z6e{left} -- z7e;
+  penstroke z8e -- z9e;
+  
+  penlabels(range 0 thru 9);
+endchar;
+
