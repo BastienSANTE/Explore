@@ -1,5 +1,11 @@
+outputtemplate := "%c.svg";
+outputformat := "svg";
+
+PROP_WIDTH:=6.2pt#;
+
+input ../Config/ExploreSansCFG.mf;
+
 % U+0044 LATIN CAPITAL LETTER D - CODE 68
-if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 6.2pt#; fi
 beginchar("D", WIDTH, EM_H, DEPTH);
   ctension:= .9;
   x1 = LINE_BEARING; y1r = CAP_H;

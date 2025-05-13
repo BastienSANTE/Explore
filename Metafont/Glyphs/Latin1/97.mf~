@@ -1,7 +1,7 @@
 outputtemplate := "%c.svg";
 outputformat := "svg";
 
-PROP_WIDTH:= 6.2pt#;
+PROP_WIDTH:=6.2pt#;
 
 input ../Config/ExploreSansCFG.mf;
 
@@ -28,4 +28,4 @@ beginchar("D", WIDTH, EM_H, DEPTH);
   penstroke z6e -- z7e;
   penlabels(range 1 thru 7);
 endchar;
-
+end

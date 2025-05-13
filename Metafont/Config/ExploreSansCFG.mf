@@ -2,6 +2,8 @@
 %%% CONFIGURATION FILE %%%
 %%%====================%%%
 
+pair serif[];
+
 %%% PEN STROKE SETTINGS
 %%% These settings define the main "boldness" of the glyphs.
 mediumx:= .64pt;       % Thickness of the average horizontal stroke
@@ -21,6 +23,7 @@ OVERSHOOT:= 0.08pt;               % Height compensation for glyphs with rounded 
 CAP_TOP = CAP_H + OVERSHOOT; % Top of uppercase glyphs with oversoot
 CAP_BOTTOM = BASELINE - OVERSHOOT;% Lowest point of uppercase glyphs with overshoot
 DESCENDER = -1.92pt;              % Actual position of the descender
+X_TOP:= X_H + OVERSHOOT;          % Top of rounded lowercase glyphs
 
 %%% MONOSPACE METRICS
 MONO_WIDTH:= 6pt#;

@@ -6,7 +6,7 @@ PROP_WIDTH:=6.2pt#;
 input ../Config/ExploreSansCFG.mf;
 
 % U+0045 LATIN CAPITAL LETTER E - CODE 69
-beginchar("E", WIDTH, EM_H, DEPTH);
+beginchar(69, WIDTH, EM_H, DEPTH);
   bar_h:= 0.5 * CAP_H;
   bar_crease:=0.1w;
   bottom_advance:= 0.05w;
@@ -19,7 +19,7 @@ beginchar("E", WIDTH, EM_H, DEPTH);
   x6 = x4 - bar_crease; y6 = y5;
   x7 = x1; y7l = BASELINE;
   x8 = x4 + bottom_advance; y8l = y7l;
-  
+
   penpos1(mediumy, 0);  penpos2(mediumy, 0);
   penpos3(mediumx, 90); penpos4(mediumx, 90);
   penpos5(mediumx, 90); penpos6(mediumx, 90);
@@ -28,6 +28,7 @@ beginchar("E", WIDTH, EM_H, DEPTH);
   penstroke z3e -- z4e;
   penstroke z5e -- z6e;
   penstroke z7e -- z8e;
+
   penlabels(range 1 thru 8);
 endchar;
 end
