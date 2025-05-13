@@ -15,4 +15,4 @@ beginchar(73, WIDTH, EM_H, DEPTH);
   penstroke z1e -- z2e;
   penlabels(range 1 thru 2);
 endchar;
-
+end

@@ -40,4 +40,4 @@ beginchar(83, WIDTH, EM_H, DEPTH);
   penstroke z1e..tension ctension..z2e{left}..tension ctension..z3e{down}..tension ctension..z41e{dir -spine_angle} -- z42e{dir -spine_angle}..tension ctension..z5e{down}..tension ctension..z6e{left}..tension ctension..z7e;
   penlabels (range 1 thru 42);
 endchar;
-
+end

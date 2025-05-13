@@ -20,4 +20,4 @@ beginchar(79, WIDTH, EM_H, DEPTH);
   penstroke z1e..tension ctension..z2e..tension ctension..z3e..tension ctension..z4e..tension ctension..cycle;
   penlabels(range 1 thru 4);
 endchar;
-
+end

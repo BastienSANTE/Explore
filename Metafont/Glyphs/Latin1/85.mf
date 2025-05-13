@@ -18,4 +18,4 @@ beginchar(85, WIDTH, EM_H, DEPTH);
   penstroke z1e -- z2e{down}..z3e{right}..z4e{up} -- z5e;
   penlabels(range 1 thru 5);
 endchar;
-
+end

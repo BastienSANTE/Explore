@@ -34,4 +34,4 @@ beginchar(74, WIDTH, EM_H, DEPTH);
   if MONOSPACE = true: penstroke z5e -- z51e; fi
   penlabels(range 1 thru 51);
 endchar;
-
+end

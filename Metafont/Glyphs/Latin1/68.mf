@@ -22,4 +22,4 @@ beginchar("D", WIDTH, EM_H, DEPTH);
   penstroke z6e -- z7e;
   penlabels(range 1 thru 7);
 endchar;
-
+end

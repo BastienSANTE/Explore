@@ -1,5 +1,11 @@
+outputtemplate := "%c.svg";
+outputformat := "svg";
+
+PROP_WIDTH:=5.45pt#;
+
+input ../Config/ExploreSansCFG.mf;
+
 % U+0046 LATIN CAPITAL LETTER F - CODE 70
-if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:= STRETCH * 5.45pt#; fi
 beginchar(70, WIDTH, EM_H, DEPTH);
   bar_h:= 0.5 * CAP_H;
   bar_crease:=0.1w;
@@ -19,4 +25,4 @@ beginchar(70, WIDTH, EM_H, DEPTH);
   penstroke z5e -- z6e;
   penlabels(range 1 thru 6);
 endchar;
-
+end

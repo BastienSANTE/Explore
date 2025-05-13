@@ -29,7 +29,6 @@ beginchar(105, STRETCH * 3pt#, EM_H, DEPTH);
 
   penlabels(range 1 thru 6);
 endchar;
-
 end
 
   

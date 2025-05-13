@@ -28,4 +28,5 @@ beginchar(65, WIDTH, EM_H, DEPTH);
 
   penlabels(range 1 thru 5);
 endchar;
+end
 

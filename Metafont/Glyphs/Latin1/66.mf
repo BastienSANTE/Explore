@@ -47,4 +47,4 @@ beginchar(66, WIDTH, EM_H, DEPTH);
   
   penlabels(range 0 thru 99);
 endchar;
-
+end

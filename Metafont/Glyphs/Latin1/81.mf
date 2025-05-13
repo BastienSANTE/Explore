@@ -26,4 +26,4 @@ beginchar(81, WIDTH, EM_H, DEPTH);
   penstroke z5e{down}..z6e{right}..z7e;
   penlabels(range 1 thru 7);
 endchar;
-
+end

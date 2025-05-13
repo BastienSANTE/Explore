@@ -6,27 +6,30 @@ import subprocess
 #import fontforge
 import time
 
-glyphdict = {
-    "file": "ExploreSans.mf",
+latin1 = {
+    "set": "Latin1",
+    "file": "../Glyphs/Latin1/",
     "range_start": 65,
     "range_end": 90
 }
 
-source_dir = "../Glyphs/"
-source_file = "ExploreSans.mf"
 
 def exportMFGlyphs(dict):
-    subprocess.run(["mpost", "&mfplain", source_file])
+    for id in range(dict["range_start"], dict["range_end"]):
 
-    
-print("Going to" + source_dir + source_file)
-if os.path.isfile(source_dir + source_file):
-    print("File is present. Starting SVG export")
-    exportMFGlyphs(glyphdict)
-else:
-    print("File is missing")
+        fullpath = (dict["file"] + str(id) + ".mf")
+        
+        if os.path.isfile(fullpath):
+            print("File exists. Starting MPost for SVG export")
+            subprocess.run(f"mpost -mem=mfplain {fullpath}")
+            
+        else:
+            print(f"File {fullpath} does not exist")
 
-    
+
+
+exportMFGlyphs(latin1)
+
 time.sleep(1)
 
 
