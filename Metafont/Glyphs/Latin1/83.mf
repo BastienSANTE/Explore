@@ -16,8 +16,6 @@ beginchar(83, WIDTH, EM_H, DEPTH);
   beak_spine_xdelta = 0.01w;
   right_terminal_xoffset:=0.1w;
   
-  ctension:= 0.9;
-  
   x1r = w - right_terminal_xoffset; y1r = CAP_TOP - upper_aperture;
   x2 = x4 + beak_spine_xdelta; y2r = CAP_TOP;
   x3 = 0.17w; y3 = y2l - ((y2l - y41l) / 2);
@@ -37,7 +35,7 @@ beginchar(83, WIDTH, EM_H, DEPTH);
   penpos6(mediumx, 90);
   penpos7(mediumx, 35);
 
-  penstroke z1e..tension ctension..z2e{left}..tension ctension..z3e{down}..tension ctension..z41e{dir -spine_angle} -- z42e{dir -spine_angle}..tension ctension..z5e{down}..tension ctension..z6e{left}..tension ctension..z7e;
+  penstroke z1e..tension TSN..z2e{left}..tension TSN..z3e{down}..tension TSN..z41e{dir -spine_angle} -- z42e{dir -spine_angle}..tension TSN..z5e{down}..tension TSN..z6e{left}..tension TSN..z7e;
   penlabels (range 1 thru 42);
 endchar;
 end

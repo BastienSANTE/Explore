@@ -7,33 +7,33 @@ input ../Config/ExploreSansCFG.mf;
 
 % U+0061 LATIN SMALL LETTER A - CODE 97
 beginchar(97, WIDTH, EM_H, DEPTH);
-  x1 = 0.2w; y1 = 0.8 * X_H;
-  x2 = 0.47w; y2r = X_TOP;
-  x3r = w - LINE_BEARING; y3 = 0.7 * X_H;
-  x31r = x3r; y31 = 0.15 * X_H;
+  x1 = 0.2w; y1 = X_H * (1 - APERTURE);
+  x2 = x1 + ((x3 - x1) / 2); y2r = X_TOP;
+  x3r = w - LINE_BEARING; y3 = 0.65 * X_H;
+  x31r = x3r; y31 = y8l + ((y7l - y8l) / 2);
   x4r = x3r; y4 = BASELINE;
 
-  x5 = x3; y5 = 0.5 * X_H;
-  x6 = x2; y6 = y5;
+  x5 = x3; y5 = 0.52 * X_H;
+  x6 = x8; y6 = y5;
   x7r = CURVE_BEARING; y7 = y8l + ((y6l - y8l) / 2);
-  x8 = x2; y8r = CAP_BOTTOM;
-  x9 = x3; y9 = y7;
 
-  serif1 = (0, 0);
-  serif2 = (w, 0);
+  if mediumx > 0.8pt:
+    x8 = x7l + ((x9l - x7l) / 2); y8r = CAP_BOTTOM;
+  else:
+    x8 = x7 + y7; y8r = CAP_BOTTOM;
+  fi
+  
+  x9l = x31l; y9r = y31r ;
+
   
   penpos1(mediumx, 135); penpos2(mediumx, 90); penpos3(mediumy, 0); penpos31(mediumy, 0); penpos4(mediumx, 0);
 
-  penpos5(mediumx, 90); penpos6(mediumx, 90); penpos7(mediumy, 180); penpos8(mediumx, 270); penpos9(thinx, 315);
+  penpos5(mediumx, 90); penpos6(mediumx, 90); penpos7(mediumy, 180); penpos8(mediumx, 270); penpos9(thinx, 300);
 
   %fill z1r..z2r{right}..z3r{down} -- z31r -- z4r -- z4l..tension 2..z31l -- z3l{up}..z2l{left}..z1l -- cycle;
   
-  penstroke z1e..z2e{right}..z3e{down} -- z31e -- z4e;
-  penstroke z5e -- z6e{left}..z7e{down}..z8e{right}..z9e;
-
-  pickup pencircle scaled 5;x
-  draw serif1 -- serif2;
-
+  penstroke z1e..z2e{right}..tension TSN..z3e{down} -- z31e -- z4e;
+  penstroke z5e -- z6e{left}..tension TSN..z7e{down}..tension TSN..z8e{right}..z9e;
 
   penlabels(range 1 thru 31);  
 endchar;

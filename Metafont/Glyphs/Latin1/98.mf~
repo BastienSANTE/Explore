@@ -1,0 +1,8 @@
+outputtemplate := "%c.svg";
+outputformat := "svg";
+
+PROP_WIDTH:= 5.84pt#;
+
+input ../Config/ExploreSansCFG.mf;
+
+% U+0055 LATIN CAPITAL LETTER U - CODE 85

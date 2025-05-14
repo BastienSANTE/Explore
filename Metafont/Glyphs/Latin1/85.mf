@@ -8,7 +8,7 @@ input ../Config/ExploreSansCFG.mf;
 % U+0055 LATIN CAPITAL LETTER U - CODE 85
 beginchar(85, WIDTH, EM_H, DEPTH);
   x1l = LINE_BEARING; y1 = CAP_H;
-  x2l = x1l; y2 = 0.37 * CAP_H;
+  x2l = x1l; y2 = BASELINE + (x3 - x2l);
   x3 = 0.5w; y3l = CAP_BOTTOM;
   x4l = w - LINE_BEARING; y4 = y2;
   x5l = x4l; y5 = y1;

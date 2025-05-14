@@ -2,14 +2,19 @@
 %%% CONFIGURATION FILE %%%
 %%%====================%%%
 
-pair serif[];
+%%% VARIABLE DECLARATIONS 
+pair inktrap[]; % Coordinates to define inktraps
 
 %%% PEN STROKE SETTINGS
 %%% These settings define the main "boldness" of the glyphs.
-mediumx:= .64pt;       % Thickness of the average horizontal stroke
-mediumy:= .8pt;        % Thickness of the average vertical stroke
-thinx = mediumx / 1.5;  % Thinner stroke, used for joints and inktraps
+mediumx:= .64pt;        % Thickness of the average horizontal stroke
+mediumy:= .8pt;         % Thickness of the average vertical stroke
+jointx = mediumx / 1.5; % Thickness used for bowl joints
+jointy = mediumy / 1.5; % Thicnkess used for bowl joints
+thinx = mediumx / 2;  % Thinner stroke, used for joints and inktraps
 thiny = mediumy / 2;    % Same as above
+verythinx = mediumx / 4;
+verythiny = mediumy / 4;
 
 %%% ESSENTIAL METRICS
 STRETCH:= 1;  % Font width setting, to create "condensed" or "expanded" versions.
@@ -25,12 +30,21 @@ CAP_BOTTOM = BASELINE - OVERSHOOT;% Lowest point of uppercase glyphs with oversh
 DESCENDER = -1.92pt;              % Actual position of the descender
 X_TOP:= X_H + OVERSHOOT;          % Top of rounded lowercase glyphs
 
+%%% CURVATURE
+TSN:= .9; % Average tension of curvature
+APERTURE:= 0.2; % Average aperture of glyphs, based on height;
+
+%%% SERIFS
+SERIF_LENGTH:= 0.2pt#;
+SERIF_THICKNESS:= mediumx;
+
 %%% MONOSPACE METRICS
 MONO_WIDTH:= 6pt#;
 
 %%% SIDEBEARINGS & BASIC KERNING
-CURVE_BEARING:=.54pt; %Average sidebearing for glyphs with curved edges
-LINE_BEARING:=.8pt;   %Average sidebearing for glyphs with straight stems
+CURVE_BEARING:=.54pt; % Average sidebearing for glyphs with curved edges
+LINE_BEARING:=.8pt;   % Average sidebearing for glyphs with straight stems
+STEM_BEARING:= .64pt; % Average sidebearing for B, D, P, Q...
 
 %%% DIACRITICS & ACCENTS
 lc_accent_yoffset:= 1.5pt; % Offset between the top of the lowercase glyphs and diacritics. 

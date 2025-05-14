@@ -40,9 +40,9 @@ beginchar(66, WIDTH, EM_H, DEPTH);
   penpos8(mediumy, 0);
   penpos9(mediumy, 0);
   
-  penstroke z1e -- z2e{right}..tension btension..z3e{down}..tension btension..z41e{left};
+  penstroke z1e -- z2e{right}..tension TSN..z3e{down}..tension TSN..z41e{left};
   penstroke z0e -- z4e;
-  penstroke z42e{right}..tension btension..z5e{down}..tension btension..z6e{left} -- z7e;
+  penstroke z42e{right}..tension TSN..z5e{down}..tension TSN..z6e{left} -- z7e;
   penstroke z8e -- z9e;
   
   penlabels(range 0 thru 99);

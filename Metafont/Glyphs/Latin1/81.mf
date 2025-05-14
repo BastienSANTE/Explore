@@ -7,7 +7,6 @@ input ../Config/ExploreSansCFG.mf;
 
 % U+0051 LATIN CAPITAL LETTER Q - CODE 81x
 beginchar(81, WIDTH, EM_H, DEPTH);
-  ctension:= 0.9;
   tail_straight_length:=0.2w;
 
   x1 = 0.5w; y1r = CAP_TOP;
@@ -22,7 +21,7 @@ beginchar(81, WIDTH, EM_H, DEPTH);
   penpos3(mediumx, -90); penpos4(mediumy, -180);
   penpos5(mediumy, 0); penpos6(mediumx, 90); penpos7(mediumx, 90);
 
-  penstroke z1e..tension ctension..z2e..tension ctension..z3e..tension ctension..z4e..tension ctension..cycle;
+  penstroke z1e..tension TSN..z2e..tension TSN..z3e..tension TSN..z4e..tension TSN..cycle;
   penstroke z5e{down}..z6e{right}..z7e;
   penlabels(range 1 thru 7);
 endchar;

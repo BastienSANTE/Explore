@@ -14,6 +14,7 @@ beginchar(103, WIDTH, EM_H, DEPTH);
   lbey = -.05h;
   lboy = .05h;
   tlendx = 0.9w;
+  tlangle = 30;
   %lbox
 
   % upper bowl
@@ -33,8 +34,8 @@ beginchar(103, WIDTH, EM_H, DEPTH);
   x117r = x7r; y117r = y7r;
   
   % tail
-  x12 = x1 + (x2 - x1) / 2; y12l = X_H;
-  x13 = .9w; y13l = y12l;
+  x12 = x1 + (x2 - x1) / 2; y12l = y1r;
+  %z13 = z12 shifted(1pt#, 0) rotatedaround(z12, 45);
   
   penpos1(mediumx, -90);
   penpos2(mediumy, -180);
@@ -50,12 +51,17 @@ beginchar(103, WIDTH, EM_H, DEPTH);
   penpos11(mediumx, 0);
   penpos117(thinx, -40);
 
-  penpos12(mediumx, -90);
-  penpos13(mediumx, -90);
+  penpos12(mediumx, 90 + tlangle);
+
   
-  penstroke z1e{right}..tension ubtension..z2e{down}..tension ubtension..z3e{left}..tension ubtension..z4e{up}..tension ubtension..cycle;
-  penstroke z5e{dir -180}..z6e{down}..z7e{right} -- z8e{right}..tension 1..z9e{down}..tension 1..z10e{left}..z11e{up}..z117e{dir 0};
+  z13 = z12 shifted(0.35w, 0) rotatedaround(z12, tlangle);
+  penpos13(mediumx, 90 + tlangle);
+
+  penstroke z1e{right}..tension ubtension..z2e{down}..tension TSN..z3e{left}..tension TSN..z4e{up}..tension TSN..cycle;
+  %penstroke z5e{dir -180}..z6e{down}..z7e{right} -- z8e{right}..tension 1..z9e{down}..tension 1..z10e{left}..z11e{up}..z117e{dir 0};
   penstroke z12e -- z13e;
+
+  fill z5..z6r..z7r{right} -- z8r{right}..z9r..tension (1/TSN)..z10r..z11r..z117r -- z117l..z11l..z10l..tension (1/TSN)..z9l..z8l{left} -- z7l{left}..z6l..z5l -- cycle;
   
   penlabels(range 1 thru 117);
 endchar;

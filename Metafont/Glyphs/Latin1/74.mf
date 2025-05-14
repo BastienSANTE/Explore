@@ -30,7 +30,7 @@ beginchar(74, WIDTH, EM_H, DEPTH);
     penpos4(mediumx, -150);
   fi
     
-  penstroke z1e -- z2e{down}..z3e{left}..z4e;
+  penstroke z1e -- z2e{down}..tension TSN..z3e{left}..tension TSN..z4e;
   if MONOSPACE = true: penstroke z5e -- z51e; fi
   penlabels(range 1 thru 51);
 endchar;
