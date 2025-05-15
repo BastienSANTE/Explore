@@ -16,7 +16,7 @@ beginchar(83, WIDTH, EM_H, DEPTH);
   beak_spine_xdelta = 0.01w;
   right_terminal_xoffset:=0.1w;
   
-  x1r = w - right_terminal_xoffset; y1r = CAP_TOP - upper_aperture;
+  x1r = w - right_terminal_xoffset; y1r = CAP_TOP - (CAP_TOP * APERTURE);
   x2 = x4 + beak_spine_xdelta; y2r = CAP_TOP;
   x3 = 0.17w; y3 = y2l - ((y2l - y41l) / 2);
   x4 = 0.5w; y4 = spine_center_y;
@@ -26,14 +26,14 @@ beginchar(83, WIDTH, EM_H, DEPTH);
   x6 = x4 - beak_spine_xdelta; y6l = CAP_BOTTOM;
   x7r = x3; y7 = BASELINE + lower_aperture;
   
-  penpos1(mediumx, 35);
+  penpos1(mediumx, 90 - APERTURE_ANGLE);
   penpos2(mediumx, 90);
   penpos3(mediumy, 180);
   penpos41(mediumx, 270 - spine_angle);
   penpos42(mediumx, 270 - spine_angle);
   penpos5(mediumy, 180);
   penpos6(mediumx, 90);
-  penpos7(mediumx, 35);
+  penpos7(mediumx, 90 - APERTURE_ANGLE);
 
   penstroke z1e..tension TSN..z2e{left}..tension TSN..z3e{down}..tension TSN..z41e{dir -spine_angle} -- z42e{dir -spine_angle}..tension TSN..z5e{down}..tension TSN..z6e{left}..tension TSN..z7e;
   penlabels (range 1 thru 42);

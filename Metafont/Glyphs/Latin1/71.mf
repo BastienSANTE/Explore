@@ -19,11 +19,11 @@ beginchar(71, WIDTH, EM_H, DEPTH);
   x71 = x6r; y71 = y7;
   x8 = 0.5w; y8 = y71;
   
-  penpos1(mediumx, 45);
+  penpos1(mediumx, 90 - APERTURE_ANGLE);
   penpos2(mediumx, 90);
   penpos3(mediumy, 180);
   penpos4(mediumx, 270);
-  penpos5(mediumx, 315);
+  penpos5(mediumx, 270 + APERTURE_ANGLE);
 
   penpos6(mediumy, 0);
   penpos7(mediumy, 0);

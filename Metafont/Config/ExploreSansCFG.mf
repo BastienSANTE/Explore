@@ -32,7 +32,8 @@ X_TOP:= X_H + OVERSHOOT;          % Top of rounded lowercase glyphs
 
 %%% CURVATURE
 TSN:= .9; % Average tension of curvature
-APERTURE:= 0.2; % Average aperture of glyphs, based on height;
+APERTURE:= .2; % Average aperture of glyphs, based on height;
+APERTURE_ANGLE:= 35;
 
 %%% SERIFS
 SERIF_LENGTH:= 0.2pt#;

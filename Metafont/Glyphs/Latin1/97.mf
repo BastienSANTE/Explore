@@ -26,7 +26,7 @@ beginchar(97, WIDTH, EM_H, DEPTH);
   x9l = x31l; y9r = y31r ;
 
   
-  penpos1(mediumx, 135); penpos2(mediumx, 90); penpos3(mediumy, 0); penpos31(mediumy, 0); penpos4(mediumx, 0);
+  penpos1(mediumx, 90 + APERTURE_ANGLE); penpos2(mediumx, 90); penpos3(mediumy, 0); penpos31(mediumy, 0); penpos4(mediumx, 0);
 
   penpos5(mediumx, 90); penpos6(mediumx, 90); penpos7(mediumy, 180); penpos8(mediumx, 270); penpos9(thinx, 300);
 
