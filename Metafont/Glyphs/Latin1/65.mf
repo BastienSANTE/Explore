@@ -37,7 +37,6 @@ beginchar(65, WIDTH, EM_H, DEPTH);
   fill z1 -- z1l -- z2l -- z2r -- inktrap2 -- inktrap3 -- z1 -- cycle;
   fill z4r -- z5r -- z5l -- z4l -- cycle;
 
-  fill (x2 - SERIF_LENGTH, BASELINE) -- (x2 + SERIF_LENGTH, BASELINE) -- (x2 + SERIF_LENGTH, BASELINE + SERIF_THICKNESS) -- (x2 - SERIF_LENGTH, BASELINE + SERIF_THICKNESS) -- cycle;
   penlabels(range 1 thru 5);
 endchar;
 end

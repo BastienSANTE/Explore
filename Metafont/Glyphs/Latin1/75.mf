@@ -7,7 +7,7 @@ input ../Config/ExploreSansCFG.mf;
 
 % U+004B LATIN CAPITAL LETTER K - CODE 75
 beginchar(75, WIDTH, EM_H, DEPTH);
-  arm_width_coef:= 1.3;
+  arm_width_coef:= 1 / cosd(45);
   arm_x_delta = 0.05w;
   
   x1l = LINE_BEARING; y1 = CAP_H;

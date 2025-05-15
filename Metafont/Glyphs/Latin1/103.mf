@@ -42,7 +42,7 @@ beginchar(103, WIDTH, EM_H, DEPTH);
   penpos3(mediumx, -270);
   penpos4(mediumy, 0);
 
-  penpos5(thinx, -270);
+  penpos5(txhinx, -270);
   penpos6(mediumy, -180);
   penpos7(mediumx, -90);
   penpos8(mediumx, -90);

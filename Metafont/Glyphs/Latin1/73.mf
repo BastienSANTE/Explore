@@ -7,7 +7,6 @@ input ../Config/ExploreSansCFG.mf;
 
 % U+0049 LATIN CAPITAL LETTER I - CODE 73
 beginchar(73, WIDTH, EM_H, DEPTH);
-  SERIF = 1;
   x1 = 0.5w; y1 = CAP_H;
   x2l = x1l; y2 = BASELINE;
 

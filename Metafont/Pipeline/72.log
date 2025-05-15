@@ -1,4 +1,4 @@
-This is MetaPost, version 2.02 (TeX Live 2022/Debian) (kpathsea version 6.3.4)  15 MAY 2025 16:35
+This is MetaPost, version 2.02 (TeX Live 2022/Debian) (kpathsea version 6.3.4)  15 MAY 2025 23:30
 **../Glyphs/Latin1/72.mf
 (/usr/share/texlive/texmf-dist/metapost/base/mfplain.mp
 Preloading the plain base, version 0.99: preliminaries,
@@ -9,6 +9,12 @@ Preloading the plain base, version 0.99: preliminaries,
  macros for proof labels and rules,
  macros for character and font administration,
 and a few last-minute items.) (../Glyphs/Latin1/72.mf
-(../Config/ExploreSansCFG.mf) [72] )
-1 output file written: 72.svg
+>> xoutputtemplate
+>> "%c.svg"
+! Equation cannot be performed (numeric=string).
+<to be read again> 
+                   ;
+l.1 xoutputtemplate := "%c.svg";
+                                
+? x
 

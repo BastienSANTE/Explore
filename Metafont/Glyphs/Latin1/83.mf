@@ -7,8 +7,6 @@ input ../Config/ExploreSansCFG.mf;
 
 % U+0053 LATIN CAPITAL LETTER S - CODE 83
 beginchar(83, WIDTH, EM_H, DEPTH);
-  upper_aperture:= 0.14h;
-  lower_aperture:= 0.16h;
   spine_center_y = 0.45h;
   spine_angle:= 12;
   spine_straight_length:= 0.05w;
@@ -24,7 +22,7 @@ beginchar(83, WIDTH, EM_H, DEPTH);
   z42 = z4 shifted(spine_straight_length, 0) rotatedaround((z4), -spine_angle);
   x5l = w - CURVE_BEARING; y5 = 0.235h;
   x6 = x4 - beak_spine_xdelta; y6l = CAP_BOTTOM;
-  x7r = x3; y7 = BASELINE + lower_aperture;
+  x7r = x3; y7 = BASELINE + (CAP_H * APERTURE);
   
   penpos1(mediumx, 90 - APERTURE_ANGLE);
   penpos2(mediumx, 90);

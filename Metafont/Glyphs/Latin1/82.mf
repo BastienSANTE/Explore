@@ -23,7 +23,7 @@ beginchar(82, WIDTH, EM_H, DEPTH);
   penpos8(mediumy, 0); penpos9(mediumy, 0);
 
   penstroke z1e -- z2e;
-  penstroke z3e -- z4e{right}..z5e{down}..z6e{left} -- z7e;
+  penstroke z3e -- z4e{right} ..tension TSN.. z5e{down} ..tension TSN.. z6e{left} -- z7e;
   penstroke z8e -- z9e;
   
   penlabels(range 0 thru 9);

@@ -4,6 +4,7 @@
 
 %%% VARIABLE DECLARATIONS 
 pair inktrap[]; % Coordinates to define inktraps
+pair serifp[];  % Coordinates to define serif positions
 
 %%% PEN STROKE SETTINGS
 %%% These settings define the main "boldness" of the glyphs.
@@ -32,15 +33,19 @@ X_TOP:= X_H + OVERSHOOT;          % Top of rounded lowercase glyphs
 
 %%% CURVATURE
 TSN:= .9; % Average tension of curvature
-APERTURE:= .2; % Average aperture of glyphs, based on height;
-APERTURE_ANGLE:= 35;
+APERTURE:= .17; % Average aperture of glyphs, based on height;
+APERTURE_ANGLE:= 20;
 
 %%% SERIFS
-SERIF_LENGTH:= 0.2pt#;
+boolean SERIF;
+SERIF:= true;
+SERIF_LENGTH#:= 1pt#;
 SERIF_THICKNESS:= mediumx;
 
+SERIFL:= SERIF_LENGTH;
+
 %%% MONOSPACE METRICS
-MONO_WIDTH:= 6pt#;
+MONO_WIDTH#:= 6pt#;
 
 %%% SIDEBEARINGS & BASIC KERNING
 CURVE_BEARING:=.54pt; % Average sidebearing for glyphs with curved edges
@@ -63,5 +68,16 @@ OLDSTYLE = false;
 
 boolean MONOSPACE;
 MONOSPACE = false;
-if MONOSPACE = true: WIDTH:= MONO_WIDTH; else: WIDTH:=PROP_WIDTH; fi
 
+if MONOSPACE = true:
+  WIDTH:= MONO_WIDTH#;
+else:
+  
+  if SERIF = true:
+    WIDTH:= PROP_WIDTH * STRETCH;
+  else:
+    WIDTH:= PROP_WIDTH * STRETCH;
+  fi
+fi
+
+%def midpoint(expr a)

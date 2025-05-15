@@ -7,11 +7,11 @@ input ../Config/ExploreSansCFG.mf;
 
 % U+0047 LATIN CAPITAL LETTER G - CODE 71
 beginchar(71, WIDTH, EM_H, DEPTH);
-  x1r = w - CURVE_BEARING; y1 = CAP_TOP - (APERTURE * h);
+  x1r = w - CURVE_BEARING; y1 = CAP_TOP - (APERTURE * CAP_H);
   x2 = 0.55w; y2r = CAP_TOP;
   x3r = CURVE_BEARING; y3 = CAP_H / 2;
   x4 = x2; y4r = BASELINE;
-  x5 = x1; y5 = BASELINE + ((APERTURE * h) / 2);
+  x5l = x1r; y5 = BASELINE + ((APERTURE * CAP_H) / 2);
 
   %Right angle stroke
   x6r = x5r; y6r = y5r;
@@ -23,8 +23,7 @@ beginchar(71, WIDTH, EM_H, DEPTH);
   penpos2(mediumx, 90);
   penpos3(mediumy, 180);
   penpos4(mediumx, 270);
-  penpos5(mediumx, 270 + APERTURE_ANGLE);
-
+  penpos5(mediumx, 270);
   penpos6(mediumy, 0);
   penpos7(mediumy, 0);
   penpos71(mediumx, -90);
