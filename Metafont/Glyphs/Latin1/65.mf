@@ -1,14 +1,16 @@
 outputtemplate := "%c.svg";
 outputformat := "svg";
 
+mode_setup;
+
 PROP_WIDTH:=6.2pt#;
+SERIF_C:= 3;
 
 input ../Config/ExploreSansCFG.mf;
 
+define_pixels(SERIF_LENGTH);
 % U+0041 LATIN CAPITAL LETTER A - CODE 65
 beginchar(65, WIDTH, EM_H, DEPTH);
-  pair inktrap[];
-  
   width:= .8w;
   barcoef:= 0.7; % "Bar coefficient": how low the bar is. Width is automatic.
   x1 = .5w; y1 = CAP_H;
@@ -24,17 +26,37 @@ beginchar(65, WIDTH, EM_H, DEPTH);
   penpos4(mediumx, 90);
   penpos5(mediumx, 90);
 
-  inktrap1 = (x1 + (x1r - x1) / 8, y1 - mediumy);
-  inktrap2 = (x1 - (x1r - x1) / 8, y1 - mediumy);
-  inktrap3 = (x1, y1 - mediumy / 2);
-  %penstroke z1e -- z2e;
-  %penstroke z1e -- z3e;
-  %penstroke z4e -- z5e;
+  ikp1 = (x1 + (x1r - x1) / 8, y1 - mediumy);
+  ikp2 = (x1 - (x1r - x1) / 8, y1 - mediumy);
+  ikp3 = (x1, y1 - mediumy / 2);
 
+  if SERIF = true:
+    sfp1 = z1l;
+    sfp11 = sfp1 shifted(-SERIF_LENGTH, 0);
+    sfp12 = sfp1 shifted(-SERIF_LENGTH, -SERIF_THICKNESS);
+    sfp13 = sfp1 shifted(0, -SERIF_THICKNESS);
+
+    fill sfp1 -- sfp11 -- sfp12 -- sfp13 -- cycle;
+
+    sfp2 = z2r;
+    sfp21 = sfp2 shifted(-SERIF_LENGTH, 0);
+    sfp22 = sfp2 shifted(SERIF_LENGTH, 0);
+    sfp23 = sfp2 shifted(SERIF_LENGTH, SERIF_THICKNESS);
+    sfp24 = sfp2 shifted(-SERIF_LENGTH, SERIF_THICKNESS);
+
+    fill sfp21 -- sfp22 -- sfp23 -- sfp24 -- cycle;
+
+    sfp3 = z3l;
+    sfp31 = sfp3 shifted(-SERIF_LENGTH, 0);
+    sfp32 = sfp3 shifted(SERIF_LENGTH, 0);
+    sfp33 = sfp3 shifted(SERIF_LENGTH, SERIF_THICKNESS);
+    sfp34 = sfp3 shifted(-SERIF_LENGTH, SERIF_THICKNESS);
+
+    fill sfp31 -- sfp32 -- sfp33 -- sfp34 --  cycle;
+  fi
   
-
-  fill z1 -- z1r -- z3r -- z3l -- inktrap1 -- inktrap3 -- z1 -- cycle;
-  fill z1 -- z1l -- z2l -- z2r -- inktrap2 -- inktrap3 -- z1 -- cycle;
+  fill z1 -- z1r -- z3r -- z3l -- ikp1 -- ikp3 -- z1 -- cycle;
+  fill z1 -- z1l -- z2l -- z2r -- ikp2 -- ikp3 -- z1 -- cycle;
   fill z4r -- z5r -- z5l -- z4l -- cycle;
 
   penlabels(range 1 thru 5);

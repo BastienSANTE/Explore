@@ -6,7 +6,6 @@ mode_setup;
 PROP_WIDTH:= 5.3pt#;
 SERIF_C:= 1;
 
-%serifl = SERIF_LENGTH;
 
 input ../Config/ExploreSansCFG.mf;
 
@@ -37,24 +36,20 @@ beginchar(97, WIDTH, EM_H, DEPTH);
   penpos5(mediumx, 90); penpos6(mediumx, 90); penpos7(mediumy, 180); penpos8(mediumx, 270); penpos9(thinx, 300);
 
   if SERIF = true:
-    serifp1 = z4;
-    serifp2 = serifp1 shifted(SERIF_LENGTH, 0);
-    serifp4 = serifp1 shifted(0, SERIF_THICKNESS);
-    serifp3 = serifp1 shifted(SERIF_LENGTH, SERIF_THICKNESS);
+    sfp1 = z4;
+    sfp2 = sfp1 shifted(SERIF_LENGTH, 0);
+    sfp4 = sfp1 shifted(0, SERIF_THICKNESS);
+    sfp3 = sfp1 shifted(SERIF_LENGTH, SERIF_THICKNESS);
 
-    serifp5 = z1r;
-    serifp6 = serifp5 shifted(SERIF_THICKNESS, 0);
-    serifp7 = serifp5 shifted(SERIF_THICKNESS, -SERIF_LENGTH);
-    serifp8 = serifp5 shifted(0, -SERIF_LENGTH);
+    sfp5 = z1r;
+    sfp6 = sfp5 shifted(SERIF_THICKNESS, 0);
+    sfp7 = sfp5 shifted(SERIF_THICKNESS, -SERIF_LENGTH);
+    sfp8 = sfp5 shifted(0, -SERIF_LENGTH);
       
-    fill serifp1 -- serifp2 -- serifp3 -- serifp4 -- cycle;
-    fill serifp5 -- serifp6 -- serifp7 -- serifp8 -- cycle;
-    labels(serifp1, serifp2, serifp3, serifp4);
+    fill sfp1 -- sfp2 -- sfp3 -- sfp4 -- cycle;
+    fill sfp5 -- sfp6 -- sfp7 -- sfp8 -- cycle;
+    labels(sfp1, sfp2, sfp3, sfp4);
   fi
-  %fill z1r..z2r{right}..z3r{down} -- z31r -- z4r -- z4l..tension 2..z31l -- z3l{up}..z2l{left}..z1l -- cycle;
-  
-  %penstroke z1e..z2e{right}..tension TSN..z3e{down} -- z31e -- z4e;
-  %penstroke z5e -- z6e{left}..tension TSN..z7e{down}..tension TSN..z8e{right}..z9e;
 
   fill z1r..tension TSN..z2r{right}.. tension TSN..z3r{down} -- z4r -- z4l -- z31l -- z3l{up}..tension TSN..z2l{left}..tension TSN..z1l -- cycle;
   fill z5r..z6r{left}..tension TSN..z7r{down}..tension TSN..z8r{right}..z9r -- z9l..z8l{left}..tension TSN..z7l{up}..tension TSN..z6l{right}..z5l -- z5r -- cycle;

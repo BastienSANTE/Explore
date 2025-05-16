@@ -2,9 +2,11 @@
 %%% CONFIGURATION FILE %%%
 %%%====================%%%
 
-%%% VARIABLE DECLARATIONS 
-pair inktrap[]; % Coordinates to define inktraps
-pair serifp[];  % Coordinates to define serif positions
+%%% VARIABLE DECLARATIONS
+%%% These variables are font-wide, and serve to define
+%%% parameters in each glyph
+pair ikp[]; % Coordinates to define inktraps
+pair sfp[]; % Coordinates to define serif positions
 
 %%% PEN STROKE SETTINGS
 %%% These settings define the main "boldness" of the glyphs.
@@ -19,7 +21,7 @@ verythiny = mediumy / 4;
 
 %%% ESSENTIAL METRICS
 STRETCH:= 1;  % Font width setting, to create "condensed" or "expanded" versions.
-EM_H:= 8pt#;     % height of the bounding box of the font
+EM_H:= 8pt#;     % height of the bounding box of the fontx
 DEPTH:= 2.24pt#; % Size of the bounding box's descender.
 % The total of em_h and depth are equal to 10.24, in order to match the 1024 unit TrueType convetion.
 CAP_H:= 7pt;                 % Height of standard uppercase glyphs
@@ -81,3 +83,5 @@ else:
 fi
 
 %def midpoint(expr a)
+
+def makeserif(expr origin)
