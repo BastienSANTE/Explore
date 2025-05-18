@@ -1,24 +1,27 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 5.84pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+0062 LATIN SMALL LETTER B - CODE 98
-beginchar(98, WIDTH, EM_H, DEPTH);
+newchar(98, 5.84pt#, 1);
   x1l = STEM_BEARING; y1 = CAP_TOP;
   x2l = x1l; y2 = 0.2 * CAP_H;
   x3l = x1l; y3 = BASELINE;
 
-  x4 = x1r; y4 = X_H * (1 - APERTURE);
+  x4l = x1r; y4 = X_H * (1 - APERTURE);
   x5 = 0.5w; y5r = X_TOP;
   x6r = w - CURVE_BEARING; y6 = y5l - ((y5l - y7l) / 2);
   x7 =  x5; y7r = CAP_BOTTOM;
   x8l = x2r; y8r = y2r;
 
   penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumx, 0);
-  penpos4(jointx, 90); penpos5(mediumx, 90); penpos6(mediumy, 0); penpos7(mediumx, -90); penpos8(jointx, -135);
+  penpos4(jointx, 90 + APERTURE_ANGLE); penpos5(mediumx, 90); penpos6(mediumy, 0); penpos7(mediumx, -90); penpos8(jointx, -90 - APERTURE_ANGLE);
+
+if SERIF = true:
+  makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
+  makeserif(2, z3l, -SERIF_LENGTH,  SERIF_THICKNESS);
+fi
+
 
   fill z1l -- z3l -- z3r -- z2r -- z1r -- cycle;
   fill z4r .. z5r{right} ..tension TSN.. z6r{down} ..tension TSN.. z7r{left} .. z8r -- z8l .. z7l{right} ..tension TSN .. z6l{up} ..tension TSN.. z5l{left} .. z4l -- cycle;

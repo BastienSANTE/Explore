@@ -8,5 +8,5 @@ for(let i = 0; i < glyphcount; i++){
 }
 
 for(i in glyph_id){
-    glyphtable.innerHTML += `<div><img src="../MFExport/${i}.svg"></img></div>`;
+    glyphtable.innerHTML += `<div><img src="../MFExport/${i}.svg"></img></div><br><p>${i}.mf</p>`;
 }

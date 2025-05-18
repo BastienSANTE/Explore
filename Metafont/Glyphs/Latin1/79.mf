@@ -1,12 +1,9 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 6.6pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+004F LATIN CAPITAL LETTER O - CODE 79
-beginchar(79, WIDTH, EM_H, DEPTH);
+newchar(79, 6.6pt#, 0);
   x1 = 0.5w; y1r = CAP_TOP;
   x2r = w - CURVE_BEARING; y2 = 0.5 * CAP_H;
   x3 = x1; y3r = CAP_BOTTOM;
@@ -15,7 +12,9 @@ beginchar(79, WIDTH, EM_H, DEPTH);
   penpos1(mediumx, 90); penpos2(mediumy, 0);
   penpos3(mediumx, -90); penpos4(mediumy, -180);
 
-  penstroke z1e..tension TSN..z2e..tension TSN..z3e..tension TSN..z4e..tension TSN..cycle;
+  fill z1r{right}..tsn..z2r{down}..tsn..z3r{left}..tsn..z4r{up}..tsn..cycle;
+  unfill z1l{left}..tsn..z4l{down}..tsn..z3l{right}..tsn..z2l{up}..tsn..cycle;
+  
   penlabels(range 1 thru 4);
 endchar;
 end

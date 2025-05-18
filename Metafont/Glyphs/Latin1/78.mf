@@ -1,12 +1,9 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 6.4pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+004E LATIN CAPITAL LETTER N - CODE 78
-beginchar(78, WIDTH, EM_H, DEPTH);
+newchar(78, 6.4pt#, 2);
   diag_width_coef:= 1.2;
   
   x1l = LINE_BEARING; y1 = CAP_H;
@@ -20,6 +17,13 @@ beginchar(78, WIDTH, EM_H, DEPTH);
   penpos3(mediumy, 0); penpos4(mediumy, 0);
   penpos5(mediumy, 0);
   penpos11(mediumy * diag_width_coef, 0); penpos41(mediumy * diag_width_coef, 0);
+
+  if SERIF = true:
+    makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(2, z3r,  SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(3, z2l, -SERIF_LENGTH,  SERIF_THICKNESS);
+    makeserif(4, z4r,  SERIF_LENGTH,  SERIF_THICKNESS);
+  fi
   
   penstroke z1e -- z2e; penstroke z3e -- z4e;
   penstroke z11e -- z41e;

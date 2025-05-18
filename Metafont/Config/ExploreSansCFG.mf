@@ -5,6 +5,7 @@
 %%% VARIABLE DECLARATIONS
 %%% These variables are font-wide, and serve to define
 %%% parameters in each glyph
+%path skl[];
 pair ikp[]; % Coordinates to define inktraps
 pair sfp[]; % Coordinates to define serif positions
 
@@ -12,6 +13,8 @@ pair sfp[]; % Coordinates to define serif positions
 %%% These settings define the main "boldness" of the glyphs.
 mediumx:= .64pt;        % Thickness of the average horizontal stroke
 mediumy:= .8pt;         % Thickness of the average vertical stroke
+terminalx:= mediumx * 0.8;
+terminaly:= mediumy * 0.8;
 jointx = mediumx / 1.5; % Thickness used for bowl joints
 jointy = mediumy / 1.5; % Thicnkess used for bowl joints
 thinx = mediumx / 2;  % Thinner stroke, used for joints and inktraps
@@ -36,23 +39,26 @@ X_TOP:= X_H + OVERSHOOT;          % Top of rounded lowercase glyphs
 %%% CURVATURE
 TSN:= .9; % Average tension of curvature
 APERTURE:= .17; % Average aperture of glyphs, based on height;
-APERTURE_ANGLE:= 20;
+APERTURE_ANGLE:= 40;
 
 %%% SERIFS
 boolean SERIF;
-SERIF:= true;
-SERIF_LENGTH#:= 1pt#;
+SERIF:= false;
+SERIF_LENGTH#:= .4pt#;
 SERIF_THICKNESS:= mediumx;
+TERM_LENGTH#:= 1pt#;
 
 SERIFL:= SERIF_LENGTH;
 
 %%% MONOSPACE METRICS
-MONO_WIDTH#:= 6pt#;
+MONO_WIDTH#:= 4pt#;
 
 %%% SIDEBEARINGS & BASIC KERNING
 CURVE_BEARING:=.54pt; % Average sidebearing for glyphs with curved edges
-LINE_BEARING:=.8pt;   % Average sidebearing for glyphs with straight stems
+LINE_BEARING:= .8pt;  % Average sidebearing for glyphs with straight stems
 STEM_BEARING:= .64pt; % Average sidebearing for B, D, P, Q...
+MONO_CURVE_BEARING:= .56pt;
+MONO_LINE_BEARING:= .8pt;
 
 %%% DIACRITICS & ACCENTS
 lc_accent_yoffset:= 1.5pt; % Offset between the top of the lowercase glyphs and diacritics. 
@@ -71,17 +77,75 @@ OLDSTYLE = false;
 boolean MONOSPACE;
 MONOSPACE = false;
 
-if MONOSPACE = true:
-  WIDTH:= MONO_WIDTH#;
-else:
-  
-  if SERIF = true:
-    WIDTH:= PROP_WIDTH * STRETCH;
-  else:
-    WIDTH:= PROP_WIDTH * STRETCH;
-  fi
-fi
-
 %def midpoint(expr a)
 
-def makeserif(expr origin)
+%def makeserif(expr origin)
+
+% NEWCHAR() : Creates a new glyph, with all definitions already made
+def export_setup =
+  outputtemplate := "%c.svg";
+  outputformat := "svg";
+enddef;
+
+
+def newchar(expr code, width, serifc) =
+  mode_setup;
+
+  PROP_WIDTH:= width;
+  SERIF_C:= serifc;
+
+  if MONOSPACE = true:
+    WIDTH:= MONO_WIDTH#;
+    LINE_BEARING:= MONO_LINE_BEARING;
+    CURVE_BEARING:= MONO_CURVE_BEARING;
+  else:
+  
+    if SERIF = true:
+      WIDTH:= PROP_WIDTH * STRETCH;
+    else:
+      WIDTH:= PROP_WIDTH * STRETCH;
+    fi
+  fi
+
+  %input ../Config/ExploreSansCFG.mf;
+
+  define_pixels(SERIF_LENGTH);
+  define_pixels(TERM_LENGTH);
+  beginchar(code, WIDTH, EM_H, DEPTH);
+enddef;
+
+
+def makeserif(suffix $)(expr origin, h_expand, v_expand) =
+  z$a = origin;
+  z$b = origin shifted(h_expand, 0);
+  z$c = origin shifted(h_expand, v_expand);
+  z$d = origin shifted(0, v_expand);
+
+  fill z$a -- z$b -- z$c -- z$d -- cycle;
+  labels($a, $b, $c, $d);
+enddef;
+
+numeric PI; PI:= 3.141593;
+
+def dotproduct(expr sp, ep) =
+  ((xpart sp / 1pt) * (xpart ep / 1pt)) + ((ypart sp / 1pt) * (ypart ep / 1pt))
+enddef;
+
+def magnitude(expr p) =
+  sqrt(((xpart p / 1pt) * (xpart p / 1pt)) + ((ypart p / 1pt) * (ypart p / 1pt));
+enddef;
+
+def radtodeg(expr ang) =
+  ang * 180/PI;
+enddef;
+
+  
+
+
+
+
+def tsn = tension TSN enddef;
+
+  
+
+  

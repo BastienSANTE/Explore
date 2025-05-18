@@ -1,12 +1,9 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 6pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+0052 LATIN CAPITAL LETTER R - CODE 82
-beginchar(82, WIDTH, EM_H, DEPTH);
+newchar(82, 6pt#, 1);
   x1l = LINE_BEARING; y1 = CAP_H;
   x2l = x1l; y2 = BASELINE;
 
@@ -16,15 +13,24 @@ beginchar(82, WIDTH, EM_H, DEPTH);
   x6 = x4; y6r = 0.4 * CAP_H;
   x7 = x1; y7r = y6r;
   x8 = x6; y8 = y6;
-  x9r = x5r; y9 = BASELINE;
-  
-  penpos1(mediumy, 0); penpos2(mediumy, 0);
+x9r = x5r; y9 = BASELINE;
+
+penpos1(mediumy, 0); penpos2(mediumy, 0);
   penpos3(mediumx, 90); penpos4(mediumx, 90); penpos5(mediumy, 0); penpos6(mediumx, -90); penpos7(mediumx, -90);
   penpos8(mediumy, 0); penpos9(mediumy, 0);
 
-  penstroke z1e -- z2e;
-  penstroke z3e -- z4e{right} ..tension TSN.. z5e{down} ..tension TSN.. z6e{left} -- z7e;
-  penstroke z8e -- z9e;
+
+if SERIF = true:
+  makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
+  makeserif(2, z2l, -SERIF_LENGTH,  SERIF_THICKNESS);
+fi
+
+  fill z1l -- z1r -- z2r -- z2l -- cycle;
+  %penstroke z1e -- z2e;
+  %penstroke z3e -- z4e{right}..tension TSN..z5e{down}..tension TSN..z6e{left} -- z7e;
+
+  fill z3r -- z4r{right}..tsn..z5r{down}..tsn..z6r{left} -- z7r -- z7l -- z6l{right}..tsn..z5l{up}..tsn..z4l{left} -- z3l -- cycle;
+  fill z8r -- z9r -- z9l -- z8l -- cycle;
   
   penlabels(range 0 thru 9);
 endchar;

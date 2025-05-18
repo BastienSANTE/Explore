@@ -1,16 +1,32 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 2.3pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+0049 LATIN CAPITAL LETTER I - CODE 73
-beginchar(73, WIDTH, EM_H, DEPTH);
+newchar(73, 2.3pt#, 0);
   x1 = 0.5w; y1 = CAP_H;
   x2l = x1l; y2 = BASELINE;
 
   penpos1(mediumy, 0); penpos2(mediumy, 0);
+
+  if MONOSPACE = true:
+    z3r = (CURVE_BEARING, y1); z4r = (w - CURVE_BEARING, y1);
+    z5r = (CURVE_BEARING, y2); z6r = (w - CURVE_BEARING, y2);
+
+    penpos3(mediumx, 90); penpos4(mediumx, 90);
+    penpos5(mediumx, -90); penpos6(mediumx, -90);
+
+    fill z3r -- z4r -- z4l -- z3l -- cycle;
+    fill z5r -- z6r -- z6l -- z5l -- cycle;
+  fi
+
+  if SERIF = true:
+    makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(2, z1r,  SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(3, z2l, -SERIF_LENGTH,  SERIF_THICKNESS);
+    makeserif(4, z2r,  SERIF_LENGTH,  SERIF_THICKNESS);
+  fi
+
   penstroke z1e -- z2e;
   penlabels(range 1 thru 2);
 endchar;

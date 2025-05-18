@@ -1,12 +1,10 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:=6.1pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+0042 LATIN CAPITAL LETTER B - CODE 66
-beginchar(66, WIDTH, EM_H, DEPTH);
+
+newchar(66, 6.1pt#, 0);
   stem_x:= 0.2w;
   btension:= 0.9;
 
@@ -17,11 +15,18 @@ beginchar(66, WIDTH, EM_H, DEPTH);
   x4 = x2; y4 = 0.465h;
   x41 = x2; y41l = y4l;
   x42 = x2; y42l = y4r;
-  x5 = 0.88w; y5 = 0.25h;
+  x5r = 0.88w; y5 = 0.25h;
   x6 = x2; y6r = BASELINE;
   x7 = x8; y7r = BASELINE;
   x8l = LINE_BEARING; y8 = y1r;
   x9l = LINE_BEARING; y9 = y7r;
+
+
+  if MONOSPACE = true:
+    x5r:= w - (CURVE_BEARING / 2);
+  else:
+    x5r:= 0.88w;
+  fi
 
   penpos0(mediumx, -90);
   
@@ -40,8 +45,10 @@ beginchar(66, WIDTH, EM_H, DEPTH);
   penpos8(mediumy, 0);
   penpos9(mediumy, 0);
 
-  if SERIF =  true:
-    sfp1 = z1r; s
+if SERIF =  true:
+  makeserif(1, z1r, -SERIF_LENGTH, -SERIF_THICKNESS);
+  makeserif(2, z9l, -SERIF_LENGTH, SERIF_THICKNESS);
+fi
   
   penstroke z1e -- z2e{right}..tension TSN..z3e{down}..tension TSN..z41e{left};
   penstroke z0e -- z4e;

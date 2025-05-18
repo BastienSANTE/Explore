@@ -1,12 +1,9 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 6.5pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+0047 LATIN CAPITAL LETTER G - CODE 71
-beginchar(71, WIDTH, EM_H, DEPTH);
+newchar(71, 6.5pt#, 0);
   x1r = w - CURVE_BEARING; y1 = CAP_TOP - (APERTURE * CAP_H);
   x2 = 0.55w; y2r = CAP_TOP;
   x3r = CURVE_BEARING; y3 = CAP_H / 2;
@@ -27,8 +24,12 @@ beginchar(71, WIDTH, EM_H, DEPTH);
   penpos6(mediumy, 0);
   penpos7(mediumy, 0);
   penpos71(mediumx, -90);
-  penpos8(mediumx, -90);
-  
+penpos8(mediumx, -90);
+
+  if SERIF = true:
+    makeserif(1, z1r, -SERIF_THICKNESS, -TERM_LENGTH);
+  fi
+
 
   penstroke z1e..z2e{left}..tension TSN..z3e{down}..tension TSN..z4e{right}..z5e;
   penstroke z6e -- z7e;

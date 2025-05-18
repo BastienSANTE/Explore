@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1735138560
-ModificationTime: 1747253715
+ModificationTime: 1747485026
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -178,7 +178,6 @@ MATH:RadicalKernAfterDegree: -568
 MATH:RadicalDegreeBottomRaisePercent: 60
 MATH:MinConnectorOverlap: 20
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -48
@@ -1173,7 +1172,7 @@ StartChar: b
 Encoding: 98 98 33
 Width: 584
 VWidth: 1048
-Flags: WO
+Flags: W
 HStem: -7 64<211.369 374.124> 464 64<205.343 370.482> 696 20G<64 142>
 VStem: 64 78<44.6301 83 133 363 437 716> 64 61<-8 30.3699> 448 80<143.435 376.666>
 LayerCount: 2
@@ -1265,7 +1264,7 @@ StartChar: e
 Encoding: 101 101 36
 Width: 545
 VWidth: 1048
-Flags: W
+Flags: HW
 HStem: -8 64<206.339 382.712> 236 62<134 417> 463 64<199.715 361.837>
 VStem: 54 80<138.521 236 298 386.167> 417 75<299.468 404.662>
 AnchorPoint: "AccentCenter" 285 686 basechar 0
@@ -1273,8 +1272,8 @@ LayerCount: 2
 Fore
 SplineSet
 134 298 m 1
- 417 298 l 5
- 417 318 l 6
+ 417 298 l 1
+ 417 318 l 2
  417 413 364 463 287 463 c 0
  183 463 134 395 134 298 c 1
 54 261 m 0
@@ -1288,7 +1287,6 @@ SplineSet
  435 28 384 -8 285 -8 c 0
  144 -8 54 99 54 261 c 0
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: f
@@ -3176,53 +3174,49 @@ EndChar
 StartChar: egrave
 Encoding: 232 232 108
 Width: 545
-Flags: W
+Flags: HW
 HStem: -8 64<206.339 382.712> 236 62<134 417> 463 64<199.715 361.837> 590 187
 VStem: 54 80<138.521 236 298 386.167> 166 255 417 75<299.468 404.662>
 LayerCount: 2
 Fore
 Refer: 95 768 N 1 0 0 1 293 -154 2
 Refer: 36 101 N 1 0 0 1 0 0 3
-Validated: 1
 EndChar
 
 StartChar: eacute
 Encoding: 233 233 109
 Width: 545
-Flags: W
+Flags: HW
 HStem: -8 64<206.339 382.712> 236 62<134 417> 463 64<199.715 361.837> 590 187
 VStem: 54 80<138.521 236 298 386.167> 165 254 417 75<299.468 404.662>
 LayerCount: 2
 Fore
 Refer: 96 769 N 1 0 0 1 291 -154 2
 Refer: 36 101 N 1 0 0 1 0 0 3
-Validated: 1
 EndChar
 
 StartChar: ecircumflex
 Encoding: 234 234 110
 Width: 545
-Flags: W
+Flags: HW
 HStem: -8 64<206.339 382.712> 236 62<134 417> 463 64<199.715 361.837> 590 186
 VStem: 54 80<138.521 236 298 386.167> 130 334 417 75<299.468 404.662>
 LayerCount: 2
 Fore
 Refer: 97 770 N 1 0 0 1 297 -154 2
 Refer: 36 101 N 1 0 0 1 0 0 3
-Validated: 1
 EndChar
 
 StartChar: edieresis
 Encoding: 235 235 111
 Width: 545
-Flags: W
+Flags: HW
 HStem: -8 64<206.339 382.712> 236 62<134 417> 463 64<199.715 361.837> 626 109<148.398 236.324 357.676 445.602>
 VStem: 54 80<138.521 236 298 386.167> 137 110<637.463 723.153> 347 110<637.463 723.153> 417 75<299.468 404.662>
 LayerCount: 2
 Fore
 Refer: 101 776 N 1 0 0 1 297 -174 2
 Refer: 36 101 N 1 0 0 1 0 0 3
-Validated: 1
 EndChar
 
 StartChar: igrave

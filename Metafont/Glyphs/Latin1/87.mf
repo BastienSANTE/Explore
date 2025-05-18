@@ -1,12 +1,9 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 8.2pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+0057 LATIN CAPITAL LETTER W - CODE 87
-beginchar(87, WIDTH, EM_H, DEPTH);
+newchar(87, 8.2pt#, 2);
   x1l = LINE_BEARING / 2; y1 = CAP_H;
   x2 = x1 + ((x3 - x1) / 2); y2 = BASELINE;
   x3 = 0.5w; y3 = y1;
@@ -14,6 +11,16 @@ beginchar(87, WIDTH, EM_H, DEPTH);
   x5r = w - (LINE_BEARING / 2); y5 = y1;
 
   penpos1(mediumy, 0); penpos2(mediumx, 0); penpos3(mediumx, 0); penpos4(mediumx, 0); penpos5(mediumy, 0);
+
+  if SERIF = true:
+    makeserif(1, z3l, -SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(2,  z3,  SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(3,  z1, -SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(4, z1r,  SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(5, z5l, -SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(6,  z5,  SERIF_LENGTH, -SERIF_THICKNESS);
+  fi
+  
   penstroke z1e -- z2e; penstroke z3e -- z2e; penstroke z3e -- z4e; penstroke z5e -- z4e;
   penlabels(range 1 thru 5);
 endchar;

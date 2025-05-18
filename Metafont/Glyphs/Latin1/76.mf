@@ -1,12 +1,9 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 5.2pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+004C LATIN CAPITAL LETTER L - CODE 7
-beginchar(76, WIDTH, EM_H, DEPTH);
+newchar(76, 5.2pt#, 1);
   x1l = LINE_BEARING; y1 = CAP_H;
   x2l = x1l; y2 = BASELINE;
   x3 = x1; y3l = BASELINE;
@@ -14,6 +11,14 @@ beginchar(76, WIDTH, EM_H, DEPTH);
 
   penpos1(mediumy, 0); penpos2(mediumy, 0);
   penpos3(mediumx, 90); penpos4(mediumx, 90);
+
+  if SERIF = true:
+    makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(2, z1r,  SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(3, z2l, -SERIF_LENGTH,  SERIF_THICKNESS);
+    makeserif(4, z4r, -SERIF_THICKNESS,  SERIF_LENGTH);
+  fi
+  
   penstroke z1e -- z2e; penstroke z3e -- z4e;
   penlabels(range 1 thru 4);
 endchar;

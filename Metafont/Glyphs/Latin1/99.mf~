@@ -1,0 +1,24 @@
+outputtemplate := "%c.svg";
+outputformat := "svg";
+
+PROP_WIDTH:=5.05pt#;
+
+input ../Config/ExploreSansCFG.mf;
+
+% U+0063 LATIN SMALL LETTER C - CODE 99
+beginchar(99, WIDTH, EM_H, DEPTH);
+  z1 = (w - CURVE_BEARING, X_H * (1 - APERTURE));
+  z2r = (x3l + ((x1l - x3l) / 2), X_TOP);
+  z3r = (CURVE_BEARING, 0.5 * X_H);
+  z4r = (x2, CAP_BOTTOM);
+  z5 = (x1, BASELINE + (X_H * APERTURE));
+
+  penpos1(mediumx, 90 - APERTURE_ANGLE); penpos2(mediumx, 90); penpos3(mediumy, 180); penpos4(mediumx, 270); penpos5(mediumx, 270 + APERTURE_ANGLE);
+
+  %penstroke z1e..z2e..z3e..z4e..z5e;
+
+  fill z1r..tension TSN..z2r{left}..tension TSN..z3r{down}..tension TSN..z4r{right}..z5r -- z5l..z4l{left}..tension TSN..z3l{up}..tension TSN..z2l{right}..tension TSN..z1l  -- z1r -- cycle;
+  
+  penlabels(range 0 thru 99);
+endchar;
+end

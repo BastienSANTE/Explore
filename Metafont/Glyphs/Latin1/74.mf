@@ -1,12 +1,9 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 4.8pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+004A LATIN CAPITAL LETTER J - CODE 74
-beginchar(74, WIDTH, EM_H, DEPTH);
+newchar(74, 4.8pt#, 0);
   if MONOSPACE =  true:
     x1r = w - LINE_BEARING; y1 = CAP_H;
     x2r = x1r; y2 = (x2 - x3);
@@ -22,6 +19,12 @@ beginchar(74, WIDTH, EM_H, DEPTH);
   fi
 
   penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumx, -90);
+
+  if SERIF = true:
+    makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
+  fi
+  
+  
   if MONOSPACE = true:
     penpos4(mediumy, 210);
     penpos5(mediumx, 90);

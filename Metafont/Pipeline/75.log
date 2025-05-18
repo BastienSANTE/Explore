@@ -1,4 +1,4 @@
-This is MetaPost, version 2.02 (TeX Live 2022/Debian) (kpathsea version 6.3.4)  15 MAY 2025 23:30
+This is MetaPost, version 2.02 (TeX Live 2022/Debian) (kpathsea version 6.3.4)  18 MAY 2025 22:08
 **../Glyphs/Latin1/75.mf
 (/usr/share/texlive/texmf-dist/metapost/base/mfplain.mp
 Preloading the plain base, version 0.99: preliminaries,
@@ -9,6 +9,1121 @@ Preloading the plain base, version 0.99: preliminaries,
  macros for proof labels and rules,
  macros for character and font administration,
 and a few last-minute items.) (../Glyphs/Latin1/75.mf
-(../Config/ExploreSansCFG.mf) [75] )
+(../Config/ExploreSansCFG.mf)
+{(5.8)*(1)}
+{if}
+{unknown(mode)}
+{true}
+{(mode)=(1)}
+{fi}
+{numeric}
+{transform}
+{scantokens}
+{if}
+{string(1)}
+{false}
+{fi}
+{proofing:=2}
+{fontmaking:=0}
+{tracingtitles:=1}
+{blacker:=0}
+{o_correction:=1}
+{if}
+{unknown(mag)}
+{true}
+{(mag)=(36)}
+{else}
+{if}
+{unknown(36)}
+{false}
+{if}
+{unknown(aspect_ratio)}
+{true}
+{(aspect_ratio)=(1)}
+{fi}
+{(0.02)*(36)}
+{bp_per_pixel:=0.72015}
+{scantokens}
+{if}
+{unknown((xpart currenttransform,ypart currenttransform,xxpart currenttransform
+,xypart currenttransform,yxpart currenttransform,yypart currenttransform))}
+{true}
+{((xpart currenttransform,ypart currenttransform,xxpart currenttransform,xypart
+ currenttransform,yxpart currenttransform,yypart currenttransform))=((0,0,1,0,0
+,1))}
+{fi}
+{nullpicture}
+{currentpicture:=picture}
+{pencircle}
+{(0.4)*(49.80244)}
+{(19.92067)+(0)}
+{(pen)scaled(19.92067)}
+{if}
+{numeric(pen)}
+{false}
+{fi}
+{currentpen:=pen}
+{((0,-1))penoffset(pen)}
+{xpart((-9.96034,0))}
+{pen_lft:=-9.96034}
+{((0,1))penoffset(pen)}
+{xpart((9.96034,0))}
+{pen_rt:=9.96034}
+{((-1,0))penoffset(pen)}
+{ypart((0,9.96034))}
+{pen_top:=9.96034}
+{((1,0))penoffset(pen)}
+{ypart((0,-9.96034))}
+{pen_bot:=-9.96034}
+{path}
+{PROP_WIDTH:=5.8}
+{SERIF_C:=0}
+{if}
+{true}
+{(false)=(true)}
+{false}
+{if}
+{true}
+{(false)=(true)}
+{false}
+{(5.8)*(1)}
+{WIDTH:=5.8}
+{fi}
+{fi}
+{forsuffixes}
+{loop value=SERIF_LENGTH}
+{(0.4)*(49.80244)}
+{SERIF_LENGTH:=19.92067}
+{[repeat the loop]}
+{forsuffixes}
+{loop value=TERM_LENGTH}
+{(1)*(49.80244)}
+{TERM_LENGTH:=49.80244}
+{[repeat the loop]}
+{begingroup}
+{if}
+{known(75)}
+{true}
+{else}
+{begingroup}
+{if}
+{string(75)}
+{false}
+{endgroup}
+{charcode:=75}
+{charwd:=5.8}
+{charht:=8}
+{chardp:=2.24}
+{(5.8)*(49.80244)}
+{w:=288.85432}
+{(8)*(49.80244)}
+{h:=398.41956}
+{(2.24)*(49.80244)}
+{d:=111.55775}
+{charic:=0}
+{save}
+{nullpicture}
+{currentpicture:=picture}
+{nullpen}
+{currentpen:=pen}
+{pen_bot:=0}
+{pen_top:=0}
+{pen_rt:=0}
+{pen_lft:=0}
+{path}
+{scantokens}
+{sind(45)}
+{(1)/(0.7071)}
+{arm_width_coef:=1.41422}
+{(0.15)*(288.85432)}
+{(arm_x_delta)=(43.32639)}
+{(x1l)=(39.8421)}
+{(y1)=(348.61711)}
+{(x2l)=(39.8421)}
+{(y2)=(0)}
+{(288.85432)-(43.32639)}
+{(x3)=(245.52794)}
+{(y3)=(348.61711)}
+{(x5r)=(x3r)}
+{(y5)=(0)}
+{begingroup}
+{(x1r)-(39.8421)}
+{(y1r)-(y1l)}
+{((39.8421,0))rotated(0)}
+{((x1r-39.8421,linearform))=((39.8421,0))}
+{(39.8421)+(79.6842)}
+{(0.5)*(119.5263)}
+{(x1)=(59.76315)}
+{(y1r)+(y1r)}
+{(0.5)*(2y1r)}
+{(348.61711)=(y1r)}
+{endgroup}
+{begingroup}
+{(x2r)-(39.8421)}
+{(y2r)-(y2l)}
+{((39.8421,0))rotated(0)}
+{((x2r-39.8421,linearform))=((39.8421,0))}
+{(39.8421)+(79.6842)}
+{(0.5)*(119.5263)}
+{(x2)=(59.76315)}
+{(y2r)+(y2r)}
+{(0.5)*(2y2r)}
+{(0)=(y2r)}
+{endgroup}
+{(x4)=(79.6842)}
+{(0.5)*(348.61711)}
+{(y4)=(174.30856)}
+{begingroup}
+{(x5r)-(x3l)}
+{(y3r)-(y3l)}
+{((39.8421,0))rotated(0)}
+{((linearform,linearform))=((39.8421,0))}
+{(x5r-39.8421)+(x5r)}
+{(0.5)*(2x5r-39.8421)}
+{(245.52794)=(x5r-19.92105)}
+{(y3r)+(y3r)}
+{(0.5)*(2y3r)}
+{(348.61711)=(y3r)}
+{endgroup}
+{begingroup}
+{(x4r)-(x4l)}
+{(y4r)-(y4l)}
+{((39.8421,0))rotated(0)}
+{((linearform,linearform))=((39.8421,0))}
+{(x4r-39.8421)+(x4r)}
+{(0.5)*(2x4r-39.8421)}
+{(79.6842)=(x4r-19.92105)}
+{(y4r)+(y4r)}
+{(0.5)*(2y4r)}
+{(174.30856)=(y4r)}
+{endgroup}
+{begingroup}
+{(265.44899)-(x5l)}
+{(y5r)-(y5l)}
+{((39.8421,0))rotated(0)}
+{((-x5l+265.44899,linearform))=((39.8421,0))}
+{(225.60689)+(265.44899)}
+{(0.5)*(491.05588)}
+{(x5)=(245.52794)}
+{(y5r)+(y5r)}
+{(0.5)*(2y5r)}
+{(0)=(y5r)}
+{endgroup}
+{forsuffixes}
+{loop value=l}
+{begingroup}
+{endgroup}
+{begingroup}
+{endgroup}
+{path_.l:=path}
+{[repeat the loop]}
+{loop value=r}
+{begingroup}
+{endgroup}
+{begingroup}
+{endgroup}
+{path_.r:=path}
+{[repeat the loop]}
+{reverse(path)}
+{addto}
+{exitif}
+{begingroup}
+{if}
+{(2)>(0)}
+{true}
+{def}
+{else}
+{endgroup}
+{numeric(vacuous)}
+{false}
+{(path)transformed((0,0,1,0,0,1))}
+{forsuffixes}
+{loop value=l}
+{begingroup}
+{endgroup}
+{begingroup}
+{endgroup}
+{begingroup}
+{endgroup}
+{path_.l:=path}
+{[repeat the loop]}
+{loop value=r}
+{begingroup}
+{endgroup}
+{begingroup}
+{endgroup}
+{begingroup}
+{endgroup}
+{path_.r:=path}
+{[repeat the loop]}
+{reverse(path)}
+{addto}
+{(path)transformed((0,0,1,0,0,1))}
+{begingroup}
+{if}
+{(2)>(1)}
+{true}
+{forsuffixes}
+{loop value=l}
+{forsuffixes}
+{for}
+{(1)+(1)}
+{loop value=2}
+{[repeat the loop]}
+{loop value=3}
+{[repeat the loop]}
+{loop value=4}
+{[repeat the loop]}
+{loop value=5}
+{[repeat the loop]}
+{loop value=1}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((39.8421,348.61711))}
+{true}
+{("1l")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((39.8421,348.61711))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((39.8421,348.61711))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((10.75987,0))}
+{ulcorner(picture)}
+{(0)*((0,9.60701))}
+{((5.37994,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((5.37994,0))+((0,0))}
+{((39.8421,352.78288))-((5.37994,0))}
+{(picture)shifted((34.46216,352.78288))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((39.8421,348.61711))}
+{false}
+{((39.8421,348.61711))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{loop value=2}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((39.8421,0))}
+{true}
+{("2l")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((39.8421,0))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((39.8421,0))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((10.75987,0))}
+{ulcorner(picture)}
+{(0)*((0,9.60701))}
+{((5.37994,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((5.37994,0))+((0,0))}
+{((39.8421,4.16577))-((5.37994,0))}
+{(picture)shifted((34.46216,4.16577))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((39.8421,0))}
+{false}
+{((39.8421,0))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{loop value=3}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((225.60689,348.61711))}
+{true}
+{("3l")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((225.60689,348.61711))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((225.60689,348.61711))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((10.75987,0))}
+{ulcorner(picture)}
+{(0)*((0,9.60701))}
+{((5.37994,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((5.37994,0))+((0,0))}
+{((225.60689,352.78288))-((5.37994,0))}
+{(picture)shifted((220.22694,352.78288))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((225.60689,348.61711))}
+{false}
+{((225.60689,348.61711))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{loop value=4}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((59.76315,174.30856))}
+{true}
+{("4l")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((59.76315,174.30856))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((59.76315,174.30856))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((10.75987,0))}
+{ulcorner(picture)}
+{(0)*((0,9.60701))}
+{((5.37994,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((5.37994,0))+((0,0))}
+{((59.76315,178.47433))-((5.37994,0))}
+{(picture)shifted((54.38321,178.47433))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((59.76315,174.30856))}
+{false}
+{((59.76315,174.30856))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{loop value=5}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((225.60689,0))}
+{true}
+{("5l")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((225.60689,0))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((225.60689,0))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((10.75987,0))}
+{ulcorner(picture)}
+{(0)*((0,9.60701))}
+{((5.37994,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((5.37994,0))+((0,0))}
+{((225.60689,4.16577))-((5.37994,0))}
+{(picture)shifted((220.22694,4.16577))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((225.60689,0))}
+{false}
+{((225.60689,0))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{[repeat the loop]}
+{loop value=}
+{forsuffixes}
+{for}
+{(1)+(1)}
+{loop value=2}
+{[repeat the loop]}
+{loop value=3}
+{[repeat the loop]}
+{loop value=4}
+{[repeat the loop]}
+{loop value=5}
+{[repeat the loop]}
+{loop value=1}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((59.76315,348.61711))}
+{true}
+{("1")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((59.76315,348.61711))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((59.76315,348.61711))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((6.91707,0))}
+{ulcorner(picture)}
+{(0)*((0,8.91528))}
+{((3.45854,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((3.45854,0))+((0,0))}
+{((59.76315,352.78288))-((3.45854,0))}
+{(picture)shifted((56.30461,352.78288))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((59.76315,348.61711))}
+{false}
+{((59.76315,348.61711))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{loop value=2}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((59.76315,0))}
+{true}
+{("2")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((59.76315,0))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((59.76315,0))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((6.91707,0))}
+{ulcorner(picture)}
+{(0)*((0,8.91528))}
+{((3.45854,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((3.45854,0))+((0,0))}
+{((59.76315,4.16577))-((3.45854,0))}
+{(picture)shifted((56.30461,4.16577))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((59.76315,0))}
+{false}
+{((59.76315,0))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{loop value=3}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((245.52794,348.61711))}
+{true}
+{("3")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((245.52794,348.61711))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((245.52794,348.61711))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((6.91707,0))}
+{ulcorner(picture)}
+{(0)*((0,8.91528))}
+{((3.45854,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((3.45854,0))+((0,0))}
+{((245.52794,352.78288))-((3.45854,0))}
+{(picture)shifted((242.0694,352.78288))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((245.52794,348.61711))}
+{false}
+{((245.52794,348.61711))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{loop value=4}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((79.6842,174.30856))}
+{true}
+{("4")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((79.6842,174.30856))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((79.6842,174.30856))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((6.91707,0))}
+{ulcorner(picture)}
+{(0)*((0,8.91528))}
+{((3.45854,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((3.45854,0))+((0,0))}
+{((79.6842,178.47433))-((3.45854,0))}
+{(picture)shifted((76.22566,178.47433))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((79.6842,174.30856))}
+{false}
+{((79.6842,174.30856))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{loop value=5}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((245.52794,0))}
+{true}
+{("5")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((245.52794,0))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((245.52794,0))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((6.91707,0))}
+{ulcorner(picture)}
+{(0)*((0,8.91528))}
+{((3.45854,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((3.45854,0))+((0,0))}
+{((245.52794,4.16577))-((3.45854,0))}
+{(picture)shifted((242.0694,4.16577))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((245.52794,0))}
+{false}
+{((245.52794,0))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{[repeat the loop]}
+{loop value=r}
+{forsuffixes}
+{for}
+{(1)+(1)}
+{loop value=2}
+{[repeat the loop]}
+{loop value=3}
+{[repeat the loop]}
+{loop value=4}
+{[repeat the loop]}
+{loop value=5}
+{[repeat the loop]}
+{loop value=1}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((79.6842,348.61711))}
+{true}
+{("1r")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((79.6842,348.61711))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((79.6842,348.61711))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((12.33543,0))}
+{ulcorner(picture)}
+{(0)*((0,8.91528))}
+{((6.16772,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((6.16772,0))+((0,0))}
+{((79.6842,352.78288))-((6.16772,0))}
+{(picture)shifted((73.51648,352.78288))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((79.6842,348.61711))}
+{false}
+{((79.6842,348.61711))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{loop value=2}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((79.6842,0))}
+{true}
+{("2r")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((79.6842,0))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((79.6842,0))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((12.33543,0))}
+{ulcorner(picture)}
+{(0)*((0,8.91528))}
+{((6.16772,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((6.16772,0))+((0,0))}
+{((79.6842,4.16577))-((6.16772,0))}
+{(picture)shifted((73.51648,4.16577))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((79.6842,0))}
+{false}
+{((79.6842,0))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{loop value=3}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((265.44899,348.61711))}
+{true}
+{("3r")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((265.44899,348.61711))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((265.44899,348.61711))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((12.33543,0))}
+{ulcorner(picture)}
+{(0)*((0,8.91528))}
+{((6.16772,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((6.16772,0))+((0,0))}
+{((265.44899,352.78288))-((6.16772,0))}
+{(picture)shifted((259.28127,352.78288))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((265.44899,348.61711))}
+{false}
+{((265.44899,348.61711))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{loop value=4}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((99.60526,174.30856))}
+{true}
+{("4r")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((99.60526,174.30856))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((99.60526,174.30856))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((12.33543,0))}
+{ulcorner(picture)}
+{(0)*((0,8.91528))}
+{((6.16772,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((6.16772,0))+((0,0))}
+{((99.60526,178.47433))-((6.16772,0))}
+{(picture)shifted((93.43753,178.47433))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((99.60526,174.30856))}
+{false}
+{((99.60526,174.30856))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{loop value=5}
+{begingroup}
+{endgroup}
+{begingroup}
+{save}
+{picture}
+{if}
+{known((265.44899,0))}
+{true}
+{("5r")infont("cmr10")}
+{(1)/(0.72015)}
+{(picture)scaled(1.3886)}
+{(unknown picture p)=(picture)}
+{((265.44899,0))transformed((0,0,1,0,0,1))}
+{(3)/(0.72015)}
+{(4.16577)*((0,1))}
+{((265.44899,0))+((0,4.16577))}
+{lrcorner(picture)}
+{(0.5)*((12.33543,0))}
+{ulcorner(picture)}
+{(0)*((0,8.91528))}
+{((6.16772,0))+((0,0))}
+{(1)-(0.5)}
+{(0.5)-(0)}
+{llcorner(picture)}
+{(0.5)*((0,0))}
+{((6.16772,0))+((0,0))}
+{((265.44899,4.16577))-((6.16772,0))}
+{(picture)shifted((259.28127,4.16577))}
+{addto}
+{if}
+{picture(picture)}
+{true}
+{else}
+{interim}
+{linecap:=1}
+{addto}
+{if}
+{picture((265.44899,0))}
+{false}
+{((265.44899,0))transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(3)/(0.72015)}
+{(pen)scaled(4.16577)}
+{fi}
+{endgroup}
+{[repeat the loop]}
+{[repeat the loop]}
+{fi}
+{endgroup}
+{scantokens}
+{if}
+{(2)>(0)}
+{true}
+{for}
+{-(111.55775)}
+{loop value=0}
+{begingroup}
+{interim}
+{linecap:=2}
+{addto}
+{if}
+{picture(path)}
+{false}
+{(path)transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(0.4)/(0.72015)}
+{(pen)scaled(0.55544)}
+{endgroup}
+{[repeat the loop]}
+{loop value=398.41956}
+{begingroup}
+{interim}
+{linecap:=2}
+{addto}
+{if}
+{picture(path)}
+{false}
+{(path)transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(0.4)/(0.72015)}
+{(pen)scaled(0.55544)}
+{endgroup}
+{[repeat the loop]}
+{loop value=-111.55775}
+{begingroup}
+{interim}
+{linecap:=2}
+{addto}
+{if}
+{picture(path)}
+{false}
+{(path)transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(0.4)/(0.72015)}
+{(pen)scaled(0.55544)}
+{endgroup}
+{[repeat the loop]}
+{for}
+{loop value=0}
+{-(111.55775)}
+{begingroup}
+{interim}
+{linecap:=2}
+{addto}
+{if}
+{picture(path)}
+{false}
+{(path)transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(0.4)/(0.72015)}
+{(pen)scaled(0.55544)}
+{endgroup}
+{[repeat the loop]}
+{loop value=288.85432}
+{-(111.55775)}
+{begingroup}
+{interim}
+{linecap:=2}
+{addto}
+{if}
+{picture(path)}
+{false}
+{(path)transformed((0,0,1,0,0,1))}
+{fi}
+{pencircle}
+{(0.4)/(0.72015)}
+{(pen)scaled(0.55544)}
+{endgroup}
+{[repeat the loop]}
+{if}
+{(0)<>(0)}
+{false}
+{fi}
+{chardx:=288.85432}
+{if}
+{(2)>=(0)}
+{true}
+{shipout}
+{((0,0,1,0,0,1))shifted((0,0))}
+{((0,0,1,0,0,1))scaled(0.72015)}
+{fi}
+{(picture)transformed((0,0,0.72015,0,0,0.72015))}
+ [75]
+{endgroup}
+ )
 1 output file written: 75.svg
 

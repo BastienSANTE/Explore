@@ -1,14 +1,10 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 6.6pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
-% U+0051 LATIN CAPITAL LETTER Q - CODE 81x
-beginchar(81, WIDTH, EM_H, DEPTH);
-  tail_straight_length:=0.2w;
+export_setup;
 
+% U+0051 LATIN CAPITAL LETTER Q - CODE 81
+newchar(81, 6.6pt#, 0);
+  tail_straight_length:=0.2w;
   x1 = 0.5w; y1r = CAP_TOP;
   x2r = w - CURVE_BEARING; y2 = 0.5 * CAP_H;
   x3 = x1; y3r = CAP_BOTTOM;
@@ -21,8 +17,11 @@ beginchar(81, WIDTH, EM_H, DEPTH);
   penpos3(mediumx, -90); penpos4(mediumy, -180);
   penpos5(mediumy, 0); penpos6(mediumx, 90); penpos7(mediumx, 90);
 
-  penstroke z1e..tension TSN..z2e..tension TSN..z3e..tension TSN..z4e..tension TSN..cycle;
-  penstroke z5e{down}..z6e{right}..z7e;
+  fill z1r{right}..tsn..z2r{down}..tsn..z3r{left}..tsn..z4r{up}..tsn..cycle;
+  unfill z1l{left}..tsn..z4l{down}..tsn..z3l{right}..tsn..z2l{up}..tsn..cycle;
+
+  fill z5r{down}...z6r{right} -- z7r -- z7l -- z6l{left}...z5l{up} -- cycle;
+
   penlabels(range 1 thru 7);
 endchar;
 end

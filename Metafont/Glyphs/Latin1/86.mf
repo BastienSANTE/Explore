@@ -1,18 +1,22 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 6.55pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+0056 LATIN CAPITAL LETTER V - CODE 86
-beginchar(86, WIDTH, EM_H, DEPTH)
+newchar(86, 6.55pt#, 2);
   x1l = LINE_BEARING / 2; y1 = CAP_H;
   x2 = 0.5w; y2 = BASELINE;
   x3r = w - (LINE_BEARING / 2); y3 = y1;
 
   penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumy, 0);
 
+  if SERIF = true:
+    makeserif(1, z3l,  -SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(2,  z3,   SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(3,  z1,  -SERIF_LENGTH, -SERIF_THICKNESS);
+    makeserif(4, z1r,   SERIF_LENGTH, -SERIF_THICKNESS);
+  fi
+  
   penstroke z1e -- z2e; penstroke z3e -- z2e;
   penlabels(range 1 thru 3);
 endchar;

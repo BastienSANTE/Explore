@@ -1,23 +1,51 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 5.8pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
+tracingcommands:= 3;
+
 % U+004B LATIN CAPITAL LETTER K - CODE 75
-beginchar(75, WIDTH, EM_H, DEPTH);
-  arm_width_coef:= 1 / cosd(45);
-  arm_x_delta = 0.05w;
+newchar(75, 5.8pt#, 0);
+  arm_width_coef:= 1 / sind(45);
+  arm_x_delta = 0.15w;
   
   x1l = LINE_BEARING; y1 = CAP_H;
   x2l = x1l; y2 = BASELINE;
-  x3r = w - arm_x_delta; y3 = y1;
-  x4l = x1r; y4 = 0.5 * CAP_H;
+  x3 = w - arm_x_delta; y3 = y1;
   x5r = x3r; y5 = y2;
 
-  penpos1(mediumy, 0); penpos2(mediumy, 0);
-  penpos3(mediumy * arm_width_coef, 0); penpos4(mediumy * arm_width_coef, 0); penpos5(mediumy * arm_width_coef, 0);
+penpos1(mediumy, 0); penpos2(mediumy, 0);
+
+x4 = x1r; y4 = 0.5 * CAP_H;
+
+%numeric dotp, vmsp, vmep, ang, pv, wcorr;
+%numeric xsp, ysp, xep, yep;
+%pv:= 1pt;
+
+%xsp:= xpart z3 / pv; ysp:= ypart z3 / pv;
+%xep:= xpart z4 / pv; yep:= ypart z4 / pv;
+
+%dotp:= dotproduct(z3, z4);
+%vmsp:=magnitude(z3)
+%vmep:=magnitude(z4);
+%wcorr:= 1 / cosd(dotp / (vmsp * vmep));
+
+
+% numeric xssq, yssq, xesq, yesq;
+% xssq:= (xpart z3 / pt) * (xpart z3 / pt);
+% yssq:= (ypart z3 / pt) * (ypart z3 / pt);
+% xesq:= (xpart z4 / pt) * (xpart z4 / pt);
+% yesq:= (ypart z4 / pt) * (ypart z4 / pt);
+
+% numeric dp; dp:= dotproduct(z4, z3);
+% numeric ma; ma:= sqrt(xssq * yssq);
+% numeric mb; mb:= sqrt(xesq * yesq);
+
+% numeric angle;
+% angle:= 1 / cosd(dp / (ma * mb));
+
+
+penpos3(mediumy, 0); penpos4(mediumy, 0); penpos5(mediumy, 0);
 
   penstroke z1e -- z2e;
   penstroke z3e -- z4e -- z5e;

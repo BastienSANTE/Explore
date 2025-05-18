@@ -1,12 +1,9 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 3pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+0069 LATIN SMALL LETTER I | CODE 105
-beginchar(105, STRETCH * 3pt#, EM_H, DEPTH);
+newchar(105, 3pt#, 0);
   x1 = 0.1w; y1r = X_H;
   x2 = 0.6w; y2r = y1r;
   x3 = x2; y3 = y1r;

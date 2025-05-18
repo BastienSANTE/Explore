@@ -1,12 +1,9 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:= 5.5pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+0067 LATIN SMALL LETTER G | CODE 103
-beginchar(103, WIDTH, EM_H, DEPTH);
+newchar(103, 5.5pt#, 0);
   ubox = 0.15w;
   ubwidth = 0.55w;
   ubheight = 0.35h;
@@ -61,7 +58,7 @@ beginchar(103, WIDTH, EM_H, DEPTH);
   %penstroke z5e{dir -180}..z6e{down}..z7e{right} -- z8e{right}..tension 1..z9e{down}..tension 1..z10e{left}..z11e{up}..z117e{dir 0};
   penstroke z12e -- z13e;
 
-  fill z5..z6r..z7r{right} -- z8r{right}..z9r..tension (1/TSN)..z10r..z11r..z117r -- z117l..z11l..z10l..tension (1/TSN)..z9l..z8l{left} -- z7l{left}..z6l..z5l -- cycle;
+  fill z3{left}..z6r..z7r{right} -- z8r{right}..z9r..tension (1/TSN)..z10r{left}...z11r..z117r -- z117l..z11l..z10l..tension (1/TSN)..z9l..z8l{left} -- z7l{left}.. {left}flex(z7l, z6l, z5l) -- cycle;
   
   penlabels(range 1 thru 117);
 endchar;

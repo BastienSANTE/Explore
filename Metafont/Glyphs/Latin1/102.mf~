@@ -1,0 +1,8 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+newchar(102, 4.2pt#);
+
+endchar;
+end

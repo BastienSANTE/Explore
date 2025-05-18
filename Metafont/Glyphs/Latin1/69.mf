@@ -1,12 +1,9 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-PROP_WIDTH:=6.2pt#;
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
+
 % U+0045 LATIN CAPITAL LETTER E - CODE 69
-beginchar(69, WIDTH, EM_H, DEPTH);
+newchar(69, 6.2pt#, 0);
   bar_h:= 0.5 * CAP_H;
   bar_crease:=0.1w;
   bottom_advance:= 0.05w;
@@ -28,6 +25,14 @@ beginchar(69, WIDTH, EM_H, DEPTH);
   penstroke z3e -- z4e;
   penstroke z5e -- z6e;
   penstroke z7e -- z8e;
+
+if SERIF = true:
+  makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
+  makeserif(2, z2l, -SERIF_LENGTH, SERIF_THICKNESS);
+  makeserif(3, z4l, -SERIF_THICKNESS, -SERIF_LENGTH);
+  makeserif(4, z8r, -SERIF_THICKNESS, SERIF_LENGTH);
+fi
+
 
   penlabels(range 1 thru 8);
 endchar;

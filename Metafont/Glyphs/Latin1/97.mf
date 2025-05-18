@@ -1,18 +1,9 @@
-outputtemplate := "%c.svg";
-outputformat := "svg";
-
-mode_setup;
-
-PROP_WIDTH:= 5.3pt#;
-SERIF_C:= 1;
-
-
 input ../Config/ExploreSansCFG.mf;
 
+export_setup;
 
-define_pixels(SERIF_LENGTH);
 % U+0061 LATIN SMALL LETTER A - CODE 97
-beginchar(97, WIDTH, EM_H, DEPTH);
+newchar(97, 5.3pt#, 1);
   x1 = 0.2w; y1 = X_H * (1 - APERTURE);
   x2 = x1 + ((x3 - x1) / 2); y2r = X_TOP;
   x3r = (w - LINE_BEARING); y3 = 0.65 * X_H;
@@ -36,19 +27,8 @@ beginchar(97, WIDTH, EM_H, DEPTH);
   penpos5(mediumx, 90); penpos6(mediumx, 90); penpos7(mediumy, 180); penpos8(mediumx, 270); penpos9(thinx, 300);
 
   if SERIF = true:
-    sfp1 = z4;
-    sfp2 = sfp1 shifted(SERIF_LENGTH, 0);
-    sfp4 = sfp1 shifted(0, SERIF_THICKNESS);
-    sfp3 = sfp1 shifted(SERIF_LENGTH, SERIF_THICKNESS);
-
-    sfp5 = z1r;
-    sfp6 = sfp5 shifted(SERIF_THICKNESS, 0);
-    sfp7 = sfp5 shifted(SERIF_THICKNESS, -SERIF_LENGTH);
-    sfp8 = sfp5 shifted(0, -SERIF_LENGTH);
-      
-    fill sfp1 -- sfp2 -- sfp3 -- sfp4 -- cycle;
-    fill sfp5 -- sfp6 -- sfp7 -- sfp8 -- cycle;
-    labels(sfp1, sfp2, sfp3, sfp4);
+    makeserif(1, z1r,  SERIF_THICKNESS, -SERIF_LENGTH);
+    makeserif(2, z4r,  SERIF_THICKNESS,  SERIF_LENGTH);
   fi
 
   fill z1r..tension TSN..z2r{right}.. tension TSN..z3r{down} -- z4r -- z4l -- z31l -- z3l{up}..tension TSN..z2l{left}..tension TSN..z1l -- cycle;
