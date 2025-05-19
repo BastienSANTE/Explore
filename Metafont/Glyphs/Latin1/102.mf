@@ -14,21 +14,14 @@ z3 = (x2r + (stem_arc_y - X_H), CAP_H);
 z4r = (x7, y3r);
 
 
-z6r = (CURVE_BEARING, X_H);
-z7r = (w - CURVE_BEARING, X_H);
+z6r = (LINE_BEARING, X_H);
+z7r = (w - LINE_BEARING, X_H);
 
-penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumx, -90); penpos4(terminalx, -90);
+penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumx, -90);
+if MONOSPACE = true: penpos4(mediumx, -90); else: penpos4(terminalx, -90); fi
 penpos6(mediumx, 90); penpos7(mediumx, 90);
 
-
-%penstroke z4e{left}..tension TSN..z3e..tension TSN..z2e{down} -- z1e;
-%penstroke z6e -- z7e;
-
-%path p;
-%p = z1l -- z2l..z3l..z4l -- z4r -- z3r{left} -- flex(z3r, z21, z2r) -- z2r{down} -- z1r -- cycle;
-
 fill z1l -- z2l{up}..tension TSN..z3l{right}..z4l -- z4r -- z3r{left}...{down}z2r -- z1r -- cycle;
-%fill p;
 fill z6r -- z7r -- z7l -- z6l -- cycle;
 
 penlabels(range 1 thru 21);

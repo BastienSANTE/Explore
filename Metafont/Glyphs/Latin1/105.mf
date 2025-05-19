@@ -4,13 +4,19 @@ export_setup;
 
 % U+0069 LATIN SMALL LETTER I | CODE 105
 newchar(105, 3pt#, 0);
-  x1 = 0.1w; y1r = X_H;
-  x2 = 0.6w; y2r = y1r;
+  x1 = CURVE_BEARING; y1r = X_H;
+  if MONOSPACE = true: z2 = (0.5w, y1); else: z2 = (0.6w, y1); fi;
   x3 = x2; y3 = y1r;
   x4 = x2; y4 = BASELINE;
 
   x5 = x2; y5 = X_H + lc_accent_yoffset;
-  x6 = x5; y6 = y5;
+  x6 = x5; y6 = y5; % TODO : Change with drawdot or fullcircle
+
+  if MONOSPACE = true:
+    z41r = (x4, BASELINE); z7r = (w - LINE_BEARING, BASELINE);
+    penpos41(mediumx, -90); penpos7(mediumx, -90);
+    penstroke z41e -- z7e;
+  fi
 
   penpos1(mediumx, 90);
   penpos2(mediumx, 90);
@@ -23,8 +29,9 @@ newchar(105, 3pt#, 0);
   pickup pencircle scaled dotsize;
 
   draw z5 -- z6;
+  
 
-  penlabels(range 1 thru 6);
+  penlabels(range 1 thru 7);
 endchar;
 end
 

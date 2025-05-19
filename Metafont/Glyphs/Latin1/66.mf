@@ -7,7 +7,7 @@ export_setup;
 newchar(66, 6.1pt#, 0);
   stem_x:= 0.2w;
   btension:= 0.9;
-
+  bxdelta:= 0.05w;
   x0 = x1; y0 = y4;
   x1l = LINE_BEARING; y1r = CAP_H;
   x2 = 0.535w; y2r = CAP_H;
@@ -15,7 +15,7 @@ newchar(66, 6.1pt#, 0);
   x4 = x2; y4 = 0.465h;
   x41 = x2; y41l = y4l;
   x42 = x2; y42l = y4r;
-  x5r = 0.88w; y5 = 0.25h;
+  x5 = x3 + bxdelta; y5 = 0.25h;
   x6 = x2; y6r = BASELINE;
   x7 = x8; y7r = BASELINE;
   x8l = LINE_BEARING; y8 = y1r;
@@ -23,13 +23,10 @@ newchar(66, 6.1pt#, 0);
 
 
   if MONOSPACE = true:
-    x5r:= w - (CURVE_BEARING / 2);
-  else:
-    x5r:= 0.88w;
+    x5:= x3:= w - CURVE_BEARING;
   fi
 
   penpos0(mediumx, -90);
-  
   penpos1(mediumx, 90);
   penpos2(mediumx, 90);
   penpos3(mediumy, 0);
@@ -50,9 +47,9 @@ if SERIF =  true:
   makeserif(2, z9l, -SERIF_LENGTH, SERIF_THICKNESS);
 fi
   
-  penstroke z1e -- z2e{right}..tension TSN..z3e{down}..tension TSN..z41e{left};
+  penstroke z1e -- z2e{right}..tsn..z3e{down}..tsn..z41e{left};
   penstroke z0e -- z4e;
-  penstroke z42e{right}..tension TSN..z5e{down}..tension TSN..z6e{left} -- z7e;
+  penstroke z42e{right}..tsn..z5e{down}..tsn..z6e{left} -- z7e;
   penstroke z8e -- z9e;
   
   penlabels(range 0 thru 99);

@@ -12,8 +12,8 @@ newchar(79, 6.6pt#, 0);
   penpos1(mediumx, 90); penpos2(mediumy, 0);
   penpos3(mediumx, -90); penpos4(mediumy, -180);
 
-  fill z1r{right}..tsn..z2r{down}..tsn..z3r{left}..tsn..z4r{up}..tsn..cycle;
-  unfill z1l{left}..tsn..z4l{down}..tsn..z3l{right}..tsn..z2l{up}..tsn..cycle;
+fill z1r{right}..tsn..z2r{down}..tsn..z3r{left}..tsn..z4r{up}..tsn..z1r{right} --
+  z1l{left}..tsn..z4l{down}..tsn..z3l{right}..tsn..z2l{up}..tsn..z1l{left} -- z1r -- cycle;
   
   penlabels(range 1 thru 4);
 endchar;

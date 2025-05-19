@@ -51,7 +51,7 @@ TERM_LENGTH#:= 1pt#;
 SERIFL:= SERIF_LENGTH;
 
 %%% MONOSPACE METRICS
-MONO_WIDTH#:= 4pt#;
+MONO_WIDTH#:= 6pt#;
 
 %%% SIDEBEARINGS & BASIC KERNING
 CURVE_BEARING:=.54pt; % Average sidebearing for glyphs with curved edges
