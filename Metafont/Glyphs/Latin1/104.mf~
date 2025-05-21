@@ -1,0 +1,8 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0068 LATIN SMALL LETTER H | CODE 104
+newchar(104, 5.5pt#, 0);
+endchar;
+end

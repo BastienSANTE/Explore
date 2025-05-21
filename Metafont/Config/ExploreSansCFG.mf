@@ -57,12 +57,13 @@ MONO_WIDTH#:= 6pt#;
 CURVE_BEARING:=.54pt; % Average sidebearing for glyphs with curved edges
 LINE_BEARING:= .8pt;  % Average sidebearing for glyphs with straight stems
 STEM_BEARING:= .64pt; % Average sidebearing for B, D, P, Q...
+LEG_BEARING:= .64pt;
 MONO_CURVE_BEARING:= .56pt;
 MONO_LINE_BEARING:= .8pt;
 
 %%% DIACRITICS & ACCENTS
-lc_accent_yoffset:= 1.5pt; % Offset between the top of the lowercase glyphs and diacritics. 
-dotsize:= mediumy * 1.25;  % Diameter of the standard dot above i, ï, ÿ...
+ACC_YOFFSET:= 1.5pt; % Offset between the top of the lowercase glyphs and diacritics. 
+DOTSIZE:= mediumy * 1.25;  % Diameter of the standard dot above i, ï, ÿ...
 
 %%% ALTERNATE GLYPHS
 % Some fonts have an option to enable "alternate" styles for certain glyphs,

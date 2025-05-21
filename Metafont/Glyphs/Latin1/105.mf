@@ -10,7 +10,7 @@ newchar(105, 3pt#, 0);
   x4 = x2; y4 = BASELINE;
 
   x5 = x2; y5 = X_H + lc_accent_yoffset;
-  x6 = x5; y6 = y5; % TODO : Change with drawdot or fullcircle
+  z5 = (x2, X_H + ACC_YOFFSET);
 
   if MONOSPACE = true:
     z41r = (x4, BASELINE); z7r = (w - LINE_BEARING, BASELINE);
@@ -26,10 +26,7 @@ newchar(105, 3pt#, 0);
   penstroke z1e -- z2e;
   penstroke z3e -- z4e;
 
-  pickup pencircle scaled dotsize;
-
-  draw z5 -- z6;
-  
+  fill fullcircle scaled DOTSIZE shifted z5;
 
   penlabels(range 1 thru 7);
 endchar;
