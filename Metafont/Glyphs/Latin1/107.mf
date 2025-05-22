@@ -1,0 +1,22 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+006B LATIN SMALL LETTER K | CODE 107
+newchar(107, 5.1pt#, 0);
+z1l = (LINE_BEARING, CAP_H);
+z2l = (x1l, BASELINE);
+
+z3r = (w - LINE_BEARING / 2, X_H);
+z4l = (x1r, 0.5 * X_H);
+z5r = (x3r, BASELINE);
+
+penpos1(mediumy, 0); penpos2(mediumy, 0);
+penpos3(mediumy, 0); penpos4(mediumy, 0); penpos5(mediumy, 0);
+
+penstroke z1e -- z2e;
+penstroke z3e -- z4e -- z5e;
+penlabels(range 1 thru 5);
+
+endchar;
+end
