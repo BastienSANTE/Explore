@@ -17,9 +17,9 @@ z9r = (w - LINE_BEARING, y5r);
 z10r = (x9r, BASELINE);
 z8r = (x7l + ((x10l - x7l) * ARCHCOEF), y4r);
 
-penpos1(mediumy, 0); penpos2(mediumy, 0);
-penpos3(jointx, 90 + APERTURE_ANGLE); penpos4(mediumx, 90); penpos5(mediumy, 0); penpos6(mediumy, 0);
-penpos7(jointx, 90 + APERTURE_ANGLE); penpos8(mediumx, 90); penpos9(mediumy, 0); penpos10(mediumy, 0);
+penpos1(STEM, 0); penpos2(STEM, 0);
+penpos3(BAR_JOINT, 90 + APERTURE_ANGLE); penpos4(BAR, 90); penpos5(STEM, 0); penpos6(STEM, 0);
+penpos7(BAR_JOINT, 90 + APERTURE_ANGLE); penpos8(BAR, 90); penpos9(STEM, 0); penpos10(STEM, 0);
 
 z41 = z4r shifted(STRETCH * ARCHCORR, 0);
 z81 = z8r shifted(STRETCH * ARCHCORR, 0);

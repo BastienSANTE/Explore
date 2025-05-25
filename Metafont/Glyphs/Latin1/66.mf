@@ -26,21 +26,21 @@ newchar(66, 6.1pt#, 0);
     x5:= x3:= w - CURVE_BEARING;
   fi
 
-  penpos0(mediumx, -90);
-  penpos1(mediumx, 90);
-  penpos2(mediumx, 90);
-  penpos3(mediumy, 0);
-  penpos41(jointx, -90);
+  penpos0(BAR, -90);
+  penpos1(BAR, 90);
+  penpos2(BAR, 90);
+  penpos3(STEM, 0);
+  penpos41(BAR_JOINT, -90);
 
-  penpos4(mediumx, -90);
+  penpos4(BAR, -90);
 
-  penpos42(jointx, 90);
-  penpos5(mediumy, 0);
-  penpos6(mediumx, -90);
-  penpos7(mediumx, -90);
+  penpos42(BAR_JOINT, 90);
+  penpos5(STEM, 0);
+  penpos6(BAR, -90);
+  penpos7(BAR, -90);
 
-  penpos8(mediumy, 0);
-  penpos9(mediumy, 0);
+  penpos8(STEM, 0);
+  penpos9(STEM, 0);
 
 if SERIF =  true:
   makeserif(1, z1r, -SERIF_LENGTH, -SERIF_THICKNESS);

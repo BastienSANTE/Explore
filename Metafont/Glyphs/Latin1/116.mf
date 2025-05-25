@@ -13,10 +13,10 @@ z5r = (CURVE_BEARING, X_H); z6r = (w - CURVE_BEARING, X_H);
 
 z11 = (x1l , y1l - 0.1 * X_H);
 
-penpos1(mediumy, 0); penpos2(mediumy, 0);
-penpos3(mediumx, 90); penpos4(terminalx, 90 + (APERTURE_ANGLE / 4));
+penpos1(STEM, 0); penpos2(STEM, 0);
+penpos3(BAR, 90); penpos4(BAR_TERM, 90 + (APERTURE_ANGLE / 4));
 
-penpos5(mediumx, 90); penpos6(mediumx, 90);
+penpos5(BAR, 90); penpos6(BAR, 90);
 
 %penstroke z1e -- z2e{down}..tsn..{right}z3e -- z4e;
 penstroke z5e -- z6e;

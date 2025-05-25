@@ -1,6 +1,0 @@
-input ../Config/ExploreSansCFG.mf;
-
-export_setup;
-
-% U+006D LATIN SMALL LETTER M | CODE 109
-newchar(109, 8.1pt#, 0);

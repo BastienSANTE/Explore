@@ -7,14 +7,14 @@ newchar(73, 2.3pt#, 0);
   x1 = 0.5w; y1 = CAP_H;
   x2l = x1l; y2 = BASELINE;
 
-  penpos1(mediumy, 0); penpos2(mediumy, 0);
+  penpos1(STEM, 0); penpos2(STEM, 0);
 
   if MONOSPACE = true:
     z3r = (CURVE_BEARING, y1); z4r = (w - CURVE_BEARING, y1);
     z5r = (CURVE_BEARING, y2); z6r = (w - CURVE_BEARING, y2);
 
-    penpos3(mediumx, 90); penpos4(mediumx, 90);
-    penpos5(mediumx, -90); penpos6(mediumx, -90);
+    penpos3(BAR, 90); penpos4(BAR, 90);
+    penpos5(BAR, -90); penpos6(BAR, -90);
 
     fill z3r -- z4r -- z4l -- z3l -- cycle;
     fill z5r -- z6r -- z6l -- z5l -- cycle;

@@ -34,25 +34,25 @@ newchar(103, 5.5pt#, 0);
   x12 = x1 + (x2 - x1) / 2; y12r = y1;
   %z13 = z12 shifted(1pt#, 0) rotatedaround(z12, 45);
   
-  penpos1(mediumx, -90);
-  penpos2(mediumy, -180);
-  penpos3(mediumx, -270);
-  penpos4(mediumy, 0);
+  penpos1(BAR, -90);
+  penpos2(STEM, -180);
+  penpos3(BAR, -270);
+  penpos4(STEM, 0);
 
   penpos5(txhinx, -270);
-  penpos6(mediumy, -180);
-  penpos7(mediumx, -90);
-  penpos8(mediumx, -90);
-  penpos9(mediumy, -180);
-  penpos10(mediumx, -270);
-  penpos11(mediumx, 0);
-  penpos117(thinx, -40);
+  penpos6(STEM, -180);
+  penpos7(BAR, -90);
+  penpos8(BAR, -90);
+  penpos9(STEM, -180);
+  penpos10(BAR, -270);
+  penpos11(BAR, 0);
+  penpos117(BAR_THIN, -40);
 
-  penpos12(mediumx, 90 + tlangle);
+  penpos12(BAR, 90 + tlangle);
 
   
   z13 = z12 shifted(0.35w, 0) rotatedaround(z12, tlangle);
-  penpos13(mediumx, 90 + tlangle);
+  penpos13(BAR, 90 + tlangle);
 
   penstroke z1e{right}..tension ubtension..z2e{down}..tension TSN..z3e{left}..tension TSN..z4e{up}..tension TSN..cycle;
   %penstroke z5e{dir -180}..z6e{down}..z7e{right} -- z8e{right}..tension 1..z9e{down}..tension 1..z10e{left}..z11e{up}..z117e{dir 0};

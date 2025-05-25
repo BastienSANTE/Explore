@@ -16,15 +16,15 @@ newchar(71, 6.5pt#, 0);
   x71 = x6r; y71 = y7;
   x8 = 0.5w; y8 = y71;
   
-  penpos1(mediumx, 90 - APERTURE_ANGLE);
-  penpos2(mediumx, 90);
-  penpos3(mediumy, 180);
-  penpos4(mediumx, 270);
-  penpos5(mediumx, 270);
-  penpos6(mediumy, 0);
-  penpos7(mediumy, 0);
-  penpos71(mediumx, -90);
-penpos8(mediumx, -90);
+  penpos1(BAR, 90 - APERTURE_ANGLE);
+  penpos2(BAR, 90);
+  penpos3(STEM, 180);
+  penpos4(BAR, 270);
+  penpos5(BAR, 270);
+  penpos6(STEM, 0);
+  penpos7(STEM, 0);
+  penpos71(BAR, -90);
+penpos8(BAR, -90);
 
   if SERIF = true:
     makeserif(1, z1r, -SERIF_THICKNESS, -TERM_LENGTH);

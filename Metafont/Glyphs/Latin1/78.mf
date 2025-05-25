@@ -13,10 +13,10 @@ newchar(78, 6.4pt#, 2);
   x4r = x3r; y4 = y2;
   x41r = x4r; y41 = y2;
   
-  penpos1(mediumy, 0); penpos2(mediumy, 0);
-  penpos3(mediumy, 0); penpos4(mediumy, 0);
-  penpos5(mediumy, 0);
-  penpos11(mediumy * diag_width_coef, 0); penpos41(mediumy * diag_width_coef, 0);
+  penpos1(STEM, 0); penpos2(STEM, 0);
+  penpos3(STEM, 0); penpos4(STEM, 0);
+  penpos5(STEM, 0);
+  penpos11(STEM * diag_width_coef, 0); penpos41(STEM * diag_width_coef, 0);
 
   if SERIF = true:
     makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);

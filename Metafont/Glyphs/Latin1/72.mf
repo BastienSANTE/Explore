@@ -15,9 +15,9 @@ newchar(72, 6.1pt#, 0);
   x5 = x1; y5 = bar_h;
   x6 = x3; y6 = y5;
 
-  penpos1(mediumy, 0);  penpos2(mediumy, 0);
-  penpos3(mediumy, 0);  penpos4(mediumy, 0);
-  penpos5(mediumx, 90); penpos6(mediumx, 90);
+  penpos1(STEM, 0);  penpos2(STEM, 0);
+  penpos3(STEM, 0);  penpos4(STEM, 0);
+  penpos5(BAR, 90); penpos6(BAR, 90);
 
   if SERIF = true:
     makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);

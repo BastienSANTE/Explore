@@ -9,7 +9,7 @@ newchar(108, 2.6pt#, 0);
   z3l = (.8w , BASELINE);
   z4l = (0.95w, y3l);
 
-penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumx, 90); penpos4(mediumx, 90);
+penpos1(STEM, 0); penpos2(STEM, 0); penpos3(BAR, 90); penpos4(BAR, 90);
 
 fill z1l -- z1r -- z2r{down}..tsn..z3r{right} -- z4r -- z4l -- z3l{left}..tsn..z2l{up} -- cycle;
 

@@ -14,7 +14,7 @@ newchar(97, 5.3pt#, 1);
   x6 = x8; y6 = y5;
   x7r = CURVE_BEARING; y7 = y8l + ((y6l - y8l) / 2);
 
-  if mediumx > 0.8pt:
+  if BAR > 0.8pt:
     x8 = x7l + ((x9l - x7l) / 2); y8r = CAP_BOTTOM;
   else:
     x8 = x7 + y7; y8r = CAP_BOTTOM;
@@ -24,9 +24,9 @@ newchar(97, 5.3pt#, 1);
   
   x9l = x31l; y9r = y31r ;
   
-  penpos1(terminalx, 90 + APERTURE_ANGLE); penpos2(mediumx, 90); penpos3(mediumy, 0); penpos31(mediumy, 0); penpos4(terminaly, 0);
+  penpos1(BAR_TERM, 90 + APERTURE_ANGLE); penpos2(BAR, 90); penpos3(STEM, 0); penpos31(STEM, 0); penpos4(STEM_TERM, 0);
 
-  penpos5(mediumx, 90); penpos6(mediumx, 90); penpos7(mediumy, 180); penpos8(mediumx, 270); penpos9(thinx, 300);
+  penpos5(BAR, 90); penpos6(BAR, 90); penpos7(STEM, 180); penpos8(BAR, 270); penpos9(BAR_THIN, 300);
 
   if SERIF = true:
     makeserif(1, z1r,  SERIF_THICKNESS, -SERIF_LENGTH);

@@ -18,7 +18,7 @@ newchar(74, 4.8pt#, 0);
     x4 = 0.1w; y4 = 0.18 * CAP_H;
   fi
 
-  penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumx, -90);
+  penpos1(STEM, 0); penpos2(STEM, 0); penpos3(BAR, -90);
 
   if SERIF = true:
     makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
@@ -26,11 +26,11 @@ newchar(74, 4.8pt#, 0);
   
   
   if MONOSPACE = true:
-    penpos4(mediumy, 210);
-    penpos5(mediumx, 90);
-    penpos51(mediumx, 90);
+    penpos4(STEM, 210);
+    penpos5(BAR, 90);
+    penpos51(BAR, 90);
   else:
-    penpos4(mediumx, -90 - APERTURE_ANGLE);
+    penpos4(BAR, -90 - APERTURE_ANGLE);
   fi
     
   penstroke z1e -- z2e{down}..tension TSN..z3e{left}..tension TSN..z4e;

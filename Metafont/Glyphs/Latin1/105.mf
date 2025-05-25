@@ -14,14 +14,14 @@ newchar(105, 3pt#, 0);
 
   if MONOSPACE = true:
     z41r = (x4, BASELINE); z7r = (w - LINE_BEARING, BASELINE);
-    penpos41(mediumx, -90); penpos7(mediumx, -90);
+    penpos41(BAR, -90); penpos7(BAR, -90);
     penstroke z41e -- z7e;
   fi
 
-  penpos1(mediumx, 90);
-  penpos2(mediumx, 90);
-  penpos3(mediumy, 0);
-  penpos4(mediumy, 0);
+  penpos1(BAR, 90);
+  penpos2(BAR, 90);
+  penpos3(STEM, 0);
+  penpos4(STEM, 0);
 
   penstroke z1e -- z2e;
   penstroke z3e -- z4e;

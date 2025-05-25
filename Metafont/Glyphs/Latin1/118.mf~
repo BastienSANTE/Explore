@@ -1,0 +1,16 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0076 LATIN SMALL LETTER V - CODE 118
+newchar(118, 5.55pt#, 2);
+z1l = (OBLIQUE_BEARING; X_H);
+z11 = (0.5w, BASELINE);
+
+z21r = (x11r, y11);
+z2r = (W - OBLIQUE_BEARING; y1);
+
+penpos1(STEM, 0); penpos11(STEM, 0);
+penpos21(STEM_C, 0); penpos2(STEM_C, 0);
+endchar;
+end

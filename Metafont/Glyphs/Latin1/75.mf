@@ -14,7 +14,7 @@ newchar(75, 5.8pt#, 0);
   x3 = w - arm_x_delta; y3 = y1;
   x5r = x3r; y5 = y2;
 
-penpos1(mediumy, 0); penpos2(mediumy, 0);
+penpos1(STEM, 0); penpos2(STEM, 0);
 
 x4l = x1r; y4 = 0.5 * CAP_H;
 
@@ -45,7 +45,7 @@ x4l = x1r; y4 = 0.5 * CAP_H;
 % angle:= 1 / cosd(dp / (ma * mb));
 
 
-penpos3(mediumy, 0); penpos4(mediumy, 0); penpos5(mediumy, 0);
+penpos3(STEM, 0); penpos4(STEM, 0); penpos5(STEM, 0);
 
   penstroke z1e -- z2e;
   penstroke z3e -- z4e -- z5e;

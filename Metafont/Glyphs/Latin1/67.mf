@@ -15,11 +15,11 @@ fi
   x4 = x2; y4r = BASELINE;
   x5 = x1; y5 = BASELINE + (CAP_H * APERTURE);
 
-  penpos1(mediumx, 90 - APERTURE_ANGLE);
-  penpos2(mediumx, 90);
-  penpos3(mediumy, 180);
-  penpos4(mediumx, 270);
-  penpos5(mediumx, 270 + APERTURE_ANGLE);
+  penpos1(BAR, 90 - APERTURE_ANGLE);
+  penpos2(BAR, 90);
+  penpos3(STEM, 180);
+  penpos4(BAR, 270);
+  penpos5(BAR, 270 + APERTURE_ANGLE);
 
 penstroke z1e..z2e{left}..tension TSN..z3e{down}..tension TSN..z4e{right}..z5e;
 

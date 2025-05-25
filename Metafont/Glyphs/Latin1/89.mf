@@ -11,7 +11,7 @@ newchar(89, 5.9pt#, 2);
   x3r = w - (LINE_BEARING / 2); y3 = y1;
   x4 = x2; y4 = BASELINE;
 
-  penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumy, 0); penpos4(mediumy, 0);
+  penpos1(STEM, 0); penpos2(STEM, 0); penpos3(STEM, 0); penpos4(STEM, 0);
 
   if SERIF = true:
     makeserif(1,  z1, -SERIF_LENGTH, -SERIF_THICKNESS);

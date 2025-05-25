@@ -1,8 +1,0 @@
-input ../Config/ExploreSansCFG.mf;
-
-export_setup;
-
-% U+0074 LATIN SMALL LETTER R - CODE 116
-newchar(116, 4.2pt#, 0);
-endchar;
-end

@@ -11,8 +11,8 @@ newchar(90, 6pt#, 0);
   x31l = x3; y31 = y3r;
   x4 = x2; y4 = y3;
 
-  penpos1(mediumx, 90); penpos2(mediumx, 90); penpos3(mediumx, 90); penpos4(mediumx, 90);
-  penpos21(mediumy, 0);  penpos31(mediumy, 0);
+  penpos1(BAR, 90); penpos2(BAR, 90); penpos3(BAR, 90); penpos4(BAR, 90);
+  penpos21(STEM, 0);  penpos31(STEM, 0);
 
   if SERIF = true:
     makeserif(1, z1l,  SERIF_THICKNESS, -SERIF_LENGTH);

@@ -11,15 +11,15 @@ newchar(101, 5.45pt#, 0);
   z11r = (x7r, y7r);
   z2r = (0.52w, X_TOP);
   z3r = (CURVE_BEARING, bar_h);
-  z4r = (x2 + ((x1l - x2l) / 4), CAP_BOTTOM);
-  z5 = (x1r, BASELINE + (X_H * APERTURE));
+  z4r = (x2 + ((x1l - x2l) / 8), CAP_BOTTOM);
+  z5r = (x1r, BASELINE + (X_H * APERTURE));
 
   z6 = z3;
   z7l = z1r;
   
-  penpos1(mediumy, 0); penpos2(mediumx, 90); penpos3(mediumy, 180); penpos4(mediumx, 270); penpos5(mediumx, 270 + APERTURE_ANGLE);
-  penpos6(mediumx, 90); penpos7(mediumx, 90);
-  penpos11(mediumy, 0);
+  penpos1(STEM, 0); penpos2(BAR, 90); penpos3(STEM, 180); penpos4(BAR, 270); penpos5(BAR, 270 + APERTURE_ANGLE);
+  penpos6(BAR, 90); penpos7(BAR, 90);
+  penpos11(STEM, 0);
 
   penstroke z1e..z11e..tension TSN..z2e{left}..tension TSN..z3e{down}..tension TSN..z4e{right}..z5e;
   penstroke z6e -- z7e; 

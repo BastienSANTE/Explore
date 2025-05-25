@@ -13,8 +13,8 @@ newchar(80, 6pt#, 1);
   x6 = x4; y6r = 0.4 * CAP_H;
   x7 = x1; y7r = y6r;
   
-  penpos1(mediumy, 0); penpos2(mediumy, 0);
-  penpos3(mediumx, 90); penpos4(mediumx, 90); penpos5(mediumy, 0); penpos6(mediumx, -90); penpos7(mediumx, -90);
+  penpos1(STEM, 0); penpos2(STEM, 0);
+  penpos3(BAR, 90); penpos4(BAR, 90); penpos5(STEM, 0); penpos6(BAR, -90); penpos7(BAR, -90);
 
 if SERIF = true:
   makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);

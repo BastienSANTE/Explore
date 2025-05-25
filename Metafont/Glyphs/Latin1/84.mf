@@ -10,8 +10,8 @@ newchar(84, 6.1pt#, 0);
   x3 = 0.5w; y3 = y1;
   x4 = x3; y4 = BASELINE;
 
-  penpos1(mediumx, 90); penpos2(mediumx, 90);
-  penpos3(mediumy, 0); penpos4(mediumy, 0);
+  penpos1(BAR, 90); penpos2(BAR, 90);
+  penpos3(STEM, 0); penpos4(STEM, 0);
 
 if SERIF = true:
   makeserif(1, z1l,  SERIF_THICKNESS, -SERIF_LENGTH);

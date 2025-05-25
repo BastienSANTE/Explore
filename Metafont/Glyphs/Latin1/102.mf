@@ -17,9 +17,9 @@ z4r = (x7, y3r);
 z6r = (LINE_BEARING, X_H);
 z7r = (w - LINE_BEARING, X_H);
 
-penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumx, -90);
-if MONOSPACE = true: penpos4(mediumx, -90); else: penpos4(terminalx, -90); fi
-penpos6(mediumx, 90); penpos7(mediumx, 90);
+penpos1(STEM, 0); penpos2(STEM, 0); penpos3(BAR, -90);
+if MONOSPACE = true: penpos4(BAR, -90); else: penpos4(BAR_TERM, -90); fi
+penpos6(BAR, 90); penpos7(BAR, 90);
 
 fill z1l -- z2l{up}..tension TSN..z3l{right}..z4l -- z4r -- z3r{left}...{down}z2r -- z1r -- cycle;
 fill z6r -- z7r -- z7l -- z6l -- cycle;

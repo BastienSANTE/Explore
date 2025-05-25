@@ -14,8 +14,8 @@ newchar(98, 5.84pt#, 1);
   x7 =  x5; y7r = CAP_BOTTOM;
   x8l = x2r; y8r = y2r;
 
-  penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(terminaly, 0);
-  penpos4(jointx, 90 + APERTURE_ANGLE); penpos5(mediumx, 90); penpos6(mediumy, 0); penpos7(mediumx, -90); penpos8(jointx, -90 - APERTURE_ANGLE);
+  penpos1(STEM, 0); penpos2(STEM, 0); penpos3(STEM_TERM, 0);
+  penpos4(BAR_JOINT, 90 + APERTURE_ANGLE); penpos5(BAR, 90); penpos6(STEM, 0); penpos7(BAR, -90); penpos8(BAR_JOINT, -90 - APERTURE_ANGLE);
 
 if SERIF = true:
   makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
