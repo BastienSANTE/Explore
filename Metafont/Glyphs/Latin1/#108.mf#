@@ -1,0 +1,14 @@
+
+  z1 = (0.5w, CAP_TOP);
+  z2 = (x1, 0.2 * X_H);
+  z3l = (.8w , BASELINE);
+  z4l = (0.95w, y3l);
+
+penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumx, 90); penpos4(mediumx, 90);
+
+fill z1l -- z1r -- z2r{down}..tsn..z3r{right} -- z4r -- z4l -- z3l{left}..tsn..z2l{up} -- cycle;
+
+penstroke z1 -- z2{down}...z3{right};
+penlabels(range 1 thru 4);
+endchar;
+end

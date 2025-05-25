@@ -1,0 +1,35 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+006D LATIN SMALL LETTER M | CODE 109
+newchar(109, 8.2pt#, 2);
+z1l = (LINE_BEARING, X_H);
+z2l = (LINE_BEARING, BASELINE);
+
+z3l = (x1r, 0.72 * X_H);
+z4r = (x3l + ((x5l - x3l) * ARCHCOEF), X_TOP);
+z5 = (x3l + ((x9l - x3l) / 2), 0.65 * X_H);
+z6r = (x5r, BASELINE);
+
+z7l = (x5r, y3l);
+z9r = (w - LINE_BEARING, y5r);
+z10r = (x9r, BASELINE);
+z8r = (x7l + ((x10l - x7l) * ARCHCOEF), y4r);
+
+penpos1(mediumy, 0); penpos2(mediumy, 0);
+penpos3(jointx, 90 + APERTURE_ANGLE); penpos4(mediumx, 90); penpos5(mediumy, 0); penpos6(mediumy, 0);
+penpos7(jointx, 90 + APERTURE_ANGLE); penpos8(mediumx, 90); penpos9(mediumy, 0); penpos10(mediumy, 0);
+
+z41 = z4r shifted(STRETCH * ARCHCORR, 0);
+z81 = z8r shifted(STRETCH * ARCHCORR, 0);
+
+fill z1l -- z1r -- z2r -- z2l -- cycle;
+fill z3r..invtsn..z41{right}..tsn..z7r & z7r..invtsn..z81{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}..tsn..z8l{left}..z7l -- z5r -- z6r -- z6l -- z5l{up}..tsn..z4l{left}..tsn..z3l -- cycle;
+
+%fill z7r..tsn..z8r{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}..tsn..z8l{left}..tsn..z7l -- cycle;
+
+penlabels(range 1 thru 10);
+
+endchar;
+end

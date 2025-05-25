@@ -8,13 +8,13 @@ newchar(98, 5.84pt#, 1);
   x2l = x1l; y2 = 0.2 * CAP_H;
   x3l = x1l; y3 = BASELINE;
 
-  x4l = x1r; y4 = X_H * (1 - APERTURE);
+  x4l = x1r; y4 = X_H - (CAP_H * APERTURE);
   x5 = 0.5w; y5r = X_TOP;
   x6r = w - CURVE_BEARING; y6 = y5l - ((y5l - y7l) / 2);
   x7 =  x5; y7r = CAP_BOTTOM;
   x8l = x2r; y8r = y2r;
 
-  penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(mediumx, 0);
+  penpos1(mediumy, 0); penpos2(mediumy, 0); penpos3(terminaly, 0);
   penpos4(jointx, 90 + APERTURE_ANGLE); penpos5(mediumx, 90); penpos6(mediumy, 0); penpos7(mediumx, -90); penpos8(jointx, -90 - APERTURE_ANGLE);
 
 if SERIF = true:

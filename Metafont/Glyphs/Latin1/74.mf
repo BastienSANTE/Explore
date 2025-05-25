@@ -30,7 +30,7 @@ newchar(74, 4.8pt#, 0);
     penpos5(mediumx, 90);
     penpos51(mediumx, 90);
   else:
-    penpos4(mediumx, -150);
+    penpos4(mediumx, -90 - APERTURE_ANGLE);
   fi
     
   penstroke z1e -- z2e{down}..tension TSN..z3e{left}..tension TSN..z4e;

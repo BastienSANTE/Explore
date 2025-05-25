@@ -19,20 +19,23 @@ newchar(97, 5.3pt#, 1);
   else:
     x8 = x7 + y7; y8r = CAP_BOTTOM;
   fi
+
+  z81 = z8r shifted(-ARCHCORR, 0);
   
   x9l = x31l; y9r = y31r ;
   
-  penpos1(mediumx, 90 + APERTURE_ANGLE); penpos2(mediumx, 90); penpos3(mediumy, 0); penpos31(mediumy, 0); penpos4(mediumx, 0);
+  penpos1(terminalx, 90 + APERTURE_ANGLE); penpos2(mediumx, 90); penpos3(mediumy, 0); penpos31(mediumy, 0); penpos4(terminaly, 0);
 
   penpos5(mediumx, 90); penpos6(mediumx, 90); penpos7(mediumy, 180); penpos8(mediumx, 270); penpos9(thinx, 300);
 
   if SERIF = true:
     makeserif(1, z1r,  SERIF_THICKNESS, -SERIF_LENGTH);
-    makeserif(2, z4r,  SERIF_THICKNESS,  SERIF_LENGTH);
+    makeserif(2, z4r,  SERIF_LENGTH,  SERIF_THICKNESS);
   fi
 
   fill z1r..tension TSN..z2r{right}.. tension TSN..z3r{down} -- z4r -- z4l -- z31l -- z3l{up}..tension TSN..z2l{left}..tension TSN..z1l -- cycle;
-  fill z5r..z6r{left}..tension TSN..z7r{down}..tension TSN..z8r{right}..z9r -- z9l..z8l{left}..tension TSN..z7l{up}..tension TSN..z6l{right}..z5l -- z5r -- cycle;
+  
+  fill z5r..z6r{left}..tension TSN..z7r{down}..tension TSN..z81{right}..z9r -- z9l..z8l{left}..tension TSN..z7l{up}..tension TSN..z6l{right}..z5l -- z5r -- cycle;
 
   penlabels(range 1 thru 31);  
 endchar;

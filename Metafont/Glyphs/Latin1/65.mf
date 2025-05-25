@@ -13,15 +13,15 @@ newchar(65, 6.2pt#, 0);
   x4 = x1 - (barcoef * (width / 2)); y4 = CAP_H - (barcoef * CAP_H);
   x5 = x1 + (barcoef * (width / 2)); y5 = CAP_H - (barcoef * CAP_H);
   
-  penpos1(mediumy / 1.25, 0);
-  penpos2(mediumy, 0);
-  penpos3(mediumy, 0);
-  penpos4(mediumx, 90);
-  penpos5(mediumx, 90);
+  penpos1(STEM / 1.25, 0);
+  penpos2(STEM, 0);
+  penpos3(STEM, 0);
+  penpos4(BAR, 90);
+  penpos5(BAR, 90);
 
-  ikp1 = (x1 + (x1r - x1) / 8, y1 - mediumy);
-  ikp2 = (x1 - (x1r - x1) / 8, y1 - mediumy);
-  ikp3 = (x1, y1 - mediumy / 2);
+  ikp1 = (x1 + (x1r - x1) / 8, y1 - STEM);
+  ikp2 = (x1 - (x1r - x1) / 8, y1 - STEM);
+  ikp3 = (x1, y1 - STEM / 2);
 
   if SERIF = true:
     sfp1 = z1l;

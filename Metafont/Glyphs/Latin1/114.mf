@@ -1,0 +1,18 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0072 LATIN SMALL LETTER R - CODE 114
+newchar(114, 3.6pt#, 0);
+  z1l = (LINE_BEARING, X_H);
+  z2l = (LINE_BEARING, BASELINE);
+  z3l = (x1r, 0.7 * X_H);
+  z4r = (0.95w, X_TOP);
+
+penpos1(mediumy, 0); penpos2(mediumy, 0);
+penpos3(jointx, 90 + APERTURE_ANGLE); penpos4(mediumx, 90);
+
+penstroke z1e -- z2e; penstroke z3e...z4e{right};
+penlabels(range 1 thru 4);
+endchar;
+end

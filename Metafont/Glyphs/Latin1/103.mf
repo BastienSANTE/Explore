@@ -11,7 +11,7 @@ newchar(103, 5.5pt#, 0);
   lbey = -.05h;
   lboy = .05h;
   tlendx = 0.9w;
-  tlangle = 30;
+  tlangle = 0;
   %lbox
 
   % upper bowl
@@ -31,7 +31,7 @@ newchar(103, 5.5pt#, 0);
   x117r = x7r; y117r = y7r;
   
   % tail
-  x12 = x1 + (x2 - x1) / 2; y12l = y1r;
+  x12 = x1 + (x2 - x1) / 2; y12r = y1;
   %z13 = z12 shifted(1pt#, 0) rotatedaround(z12, 45);
   
   penpos1(mediumx, -90);

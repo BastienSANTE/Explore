@@ -1,0 +1,29 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0074 LATIN SMALL LETTER T - CODE 116
+newchar(116, 4.2pt#, 0);
+z1 = (0.46w, CAP_H);
+z2 = (x1, BASELINE + (0.14 * CAP_H));
+z3l = (x1 + (y2 - BASELINE), CAP_BOTTOM);
+z4r = (w - CURVE_BEARING, y3r);
+
+z5r = (CURVE_BEARING, X_H); z6r = (w - CURVE_BEARING, X_H);
+
+z11 = (x1l , y1l - 0.1 * X_H);
+
+penpos1(mediumy, 0); penpos2(mediumy, 0);
+penpos3(mediumx, 90); penpos4(terminalx, 90 + (APERTURE_ANGLE / 4));
+
+penpos5(mediumx, 90); penpos6(mediumx, 90);
+
+%penstroke z1e -- z2e{down}..tsn..{right}z3e -- z4e;
+penstroke z5e -- z6e;
+
+fill z11 -- z1r -- z2r{down}..tsn..z3r{right} -- z4r -- z4l..tsn..z3l{left}..tsn..z2l{up} -- cycle;
+
+penlabels(range 1 thru 11);
+
+endchar;
+end

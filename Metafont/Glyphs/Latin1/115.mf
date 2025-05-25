@@ -1,0 +1,48 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0073 LATIN SMALL LETTER S - CODE 115
+newchar(115, 4.7pt#, 0);
+  spine_center_y = 0.5 * X_H;
+  spine_angle:= 12;
+  spine_straight_length:= 0.1w;
+  spine_ydelta:= 0.25h;
+  beak_spine_xdelta = 0.01w;
+  right_terminal_xoffset:=0.1w;
+  
+  x1r = w - right_terminal_xoffset; y1 = X_TOP - (X_H * APERTURE);
+  x2 = x4 + beak_spine_xdelta; y2r = X_TOP;
+  x3r = CURVE_BEARING; y3 = y2l - ((y2l - y41l) / 2);
+  x4 = 0.5w; y4 = spine_center_y;
+  z41 = z4 shifted(-spine_straight_length, 0) rotatedaround((z4), -spine_angle);
+  z42 = z4 shifted(spine_straight_length, 0) rotatedaround((z4), -spine_angle);
+  x5l = x1r; y5 = 0.25 * X_H;
+x6 = x4 - beak_spine_xdelta; y6l = CAP_BOTTOM;
+
+if SERIF = true:
+  x7l = x3r; y7 = BASELINE + (X_H * APERTURE);
+else:
+  x7r = x3r; y7 = BASELINE + (X_H * APERTURE);
+fi
+  
+  penpos1(mediumx, 90 - APERTURE_ANGLE);
+  penpos2(mediumx, 90);
+  penpos3(mediumy, 180);
+  penpos41(mediumx, 270 - spine_angle);
+  penpos42(mediumx, 270 - spine_angle);
+  penpos5(mediumy, 180);
+  penpos6(mediumx, 90);
+  penpos7(mediumx, 90 - APERTURE_ANGLE);
+
+  if SERIF = true:
+    makeserif(1, z1r, -SERIF_THICKNESS, -TERM_LENGTH);
+    makeserif(2, z7l,  SERIF_THICKNESS,  TERM_LENGTH);
+  fi
+
+  penstroke z1e..tension TSN..z2e{left}..tension TSN..z3e{down}..tension TSN..z41e{dir -spine_angle} -- z42e{dir -spine_angle}..tension TSN..z5e{down}..tension TSN..z6e{left}..tension TSN..z7e;
+  penlabels (range 1 thru 42);
+endchar;
+end
+
+ 

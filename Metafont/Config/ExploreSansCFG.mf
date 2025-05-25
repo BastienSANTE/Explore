@@ -11,7 +11,7 @@ pair sfp[]; % Coordinates to define serif positions
 
 %%% PEN STROKE SETTINGS
 %%% These settings define the main "boldness" of the glyphs.
-mediumx:= .64pt;        % Thickness of the average horizontal stroke
+mediumx:= .4pt;        % Thickness of the average horizontal stroke
 mediumy:= .8pt;         % Thickness of the average vertical stroke
 terminalx:= mediumx * 0.8;
 terminaly:= mediumy * 0.8;
@@ -21,6 +21,19 @@ thinx = mediumx / 2;  % Thinner stroke, used for joints and inktraps
 thiny = mediumy / 2;    % Same as above
 verythinx = mediumx / 4;
 verythiny = mediumy / 4;
+
+BAR:=   .64pt: % Normal horizontal stroke width
+BAR_C:= .64pt; % "Counterpart", to use in high-contrast fonts, and avoid modifying TH or TV. For the classic font, keep BAR_C = BAR;
+
+STEM:=   .8pt; % Normal vertical stroke width
+STEM_C:= .8pt; % Same rule as NH and NH_C
+
+BAR_JOINT := BAR * 0.67;
+STEM_JOINT:= STEM * 0.67;
+BAR_THIN  := BAR * 0.5;
+STEM_THIN := STEM * 0.5;
+BAR_FINE  := BAR * 0.25;
+STEM_FINE := STEM * 0.25;
 
 %%% ESSENTIAL METRICS
 STRETCH:= 1;  % Font width setting, to create "condensed" or "expanded" versions.
@@ -40,11 +53,13 @@ X_TOP:= X_H + OVERSHOOT;          % Top of rounded lowercase glyphs
 TSN:= .9; % Average tension of curvature
 APERTURE:= .17; % Average aperture of glyphs, based on height;
 APERTURE_ANGLE:= 40;
+ARCHCOEF:= 0.6;
+ARCHCORR:= 0.2pt;
 
 %%% SERIFS
 boolean SERIF;
 SERIF:= false;
-SERIF_LENGTH#:= .4pt#;
+SERIF_LENGTH#:= .7pt#;
 SERIF_THICKNESS:= mediumx;
 TERM_LENGTH#:= 1pt#;
 
@@ -54,9 +69,9 @@ SERIFL:= SERIF_LENGTH;
 MONO_WIDTH#:= 6pt#;
 
 %%% SIDEBEARINGS & BASIC KERNING
-CURVE_BEARING:=.54pt; % Average sidebearing for glyphs with curved edges
-LINE_BEARING:= .8pt;  % Average sidebearing for glyphs with straight stems
-STEM_BEARING:= .64pt; % Average sidebearing for B, D, P, Q...
+CURVE_BEARING:=.48pt; % Average sidebearing for glyphs with curved edges
+LINE_BEARING:= .64pt;  % Average sidebearing for glyphs with straight stems
+STEM_BEARING:= .56pt; % Average sidebearing for B, D, P, Q...
 LEG_BEARING:= .64pt;
 MONO_CURVE_BEARING:= .56pt;
 MONO_LINE_BEARING:= .8pt;
@@ -146,6 +161,7 @@ enddef;
 
 
 def tsn = tension TSN enddef;
+def invtsn = tension (1 / TSN) enddef;
 
   
 

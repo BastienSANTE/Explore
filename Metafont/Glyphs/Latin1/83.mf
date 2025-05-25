@@ -11,15 +11,15 @@ newchar(83, 5.8pt#, 0);
   beak_spine_xdelta = 0.01w;
   right_terminal_xoffset:=0.1w;
   
-  x1r = w - right_terminal_xoffset; y1r = CAP_TOP - (CAP_TOP * APERTURE);
+  x1r = w - right_terminal_xoffset; y1 = CAP_TOP - (CAP_H * APERTURE);
   x2 = x4 + beak_spine_xdelta; y2r = CAP_TOP;
-  x3 = 0.17w; y3 = y2l - ((y2l - y41l) / 2);
+  x3r = CURVE_BEARING; y3 = y2l - ((y2l - y41l) / 2);
   x4 = 0.5w; y4 = spine_center_y;
   z41 = z4 shifted(-spine_straight_length, 0) rotatedaround((z4), -spine_angle);
   z42 = z4 shifted(spine_straight_length, 0) rotatedaround((z4), -spine_angle);
   x5l = w - CURVE_BEARING; y5 = 0.235h;
   x6 = x4 - beak_spine_xdelta; y6l = CAP_BOTTOM;
-  x7r = x3; y7 = BASELINE + (CAP_H * APERTURE);
+  x7l = x3r; y7 = BASELINE + (CAP_H * APERTURE);
   
   penpos1(mediumx, 90 - APERTURE_ANGLE);
   penpos2(mediumx, 90);
