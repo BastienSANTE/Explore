@@ -4,15 +4,30 @@ export_setup;
 
 % U+0072 LATIN SMALL LETTER R - CODE 114
 newchar(114, 3.6pt#, 0);
+
+  z2l = (x1l, BASELINE);
+  z3l = (x1r, X_H - (CAP_H * APERTURE));
+
+if MONOSPACE = true:
+  z1 = (0.45w, X_H);
+  z11r = z1;
+  z4r = (w - CURVE_BEARING, X_TOP);
+  z5r = (LINE_BEARING, X_H);
+
+  penpos5(BAR, 90); penpos11(BAR, 90);
+  fill z5r -- z11r -- z11l -- z5l -- cycle;
+else:
   z1l = (LINE_BEARING, X_H);
-  z2l = (LINE_BEARING, BASELINE);
-  z3l = (x1r, 0.7 * X_H);
   z4r = (0.95w, X_TOP);
+fi
 
 penpos1(STEM, 0); penpos2(STEM, 0);
 penpos3(BAR_JOINT, 90 + APERTURE_ANGLE); penpos4(BAR, 90);
 
-penstroke z1e -- z2e; penstroke z3e...z4e{right};
+penstroke z1e -- z2e;
+
+fill z3r{dir APERTURE_ANGLE}..tsn..z4r{right} -- z4l{left}..tsn..z3l{dir INV_APERTURE_ANGLE} -- cycle;
+% penstroke z3e{dir 60}...z4e{right};
 penlabels(range 1 thru 4);
 endchar;
 end

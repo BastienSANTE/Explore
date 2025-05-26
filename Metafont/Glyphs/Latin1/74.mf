@@ -26,7 +26,7 @@ newchar(74, 4.8pt#, 0);
   
   
   if MONOSPACE = true:
-    penpos4(STEM, 210);
+    penpos4(STEM, -90 - APERTURE_ANGLE);
     penpos5(BAR, 90);
     penpos51(BAR, 90);
   else:

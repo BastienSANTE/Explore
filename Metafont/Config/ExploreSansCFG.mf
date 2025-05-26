@@ -8,14 +8,15 @@
 %path skl[];
 pair ikp[]; % Coordinates to define inktraps
 pair sfp[]; % Coordinates to define serif positions
+pair dot[];
 
 %%% PEN STROKE SETTINGS
 %%% These settings define the main "boldness" of the glyphs.
-BAR:=   .64pt; % Normal horizontal stroke width
-BAR_C:= .64pt; % "Counterpart", to use in high-contrast fonts, and avoid modifying TH or TV. For the classic font, keep BAR_C = BAR;
+BAR:=   .96pt; % Normal horizontal stroke width
+BAR_C:= .96pt; % "Counterpart", to use in high-contrast fonts, and avoid modifying TH or TV. For the classic font, keep BAR_C = BAR;
 
-STEM:=   .8pt; % Normal vertical stroke width
-STEM_C:= .8pt; % Same rule as NH and NH_C
+STEM:=   1.28pt; % Normal vertical stroke width
+STEM_C:= 1.28pt; % Same rule as NH and NH_C
 
 BAR_TERM  := BAR * 0.8;
 STEM_TERM := STEM * 0.8;
@@ -27,7 +28,7 @@ BAR_FINE  := BAR * 0.25;
 STEM_FINE := STEM * 0.25;
 
 %%% ESSENTIAL METRICS
-STRETCH:= 1;  % Font width setting, to create "condensed" or "expanded" versions.
+STRETCH:= 1.05;  % Font width setting, to create "condensed" or "expanded" versions.
 EM_H:= 8pt#;     % height of the bounding box of the fontx
 DEPTH:= 2.24pt#; % Size of the bounding box's descender.
 % The total of em_h and depth are equal to 10.24, in order to match the 1024 unit TrueType convetion.
@@ -42,8 +43,9 @@ X_TOP:= X_H + OVERSHOOT;          % Top of rounded lowercase glyphs
 
 %%% CURVATURE
 TSN:= .9; % Average tension of curvature
-APERTURE:= .17; % Average aperture of glyphs, based on height;
+APERTURE:= .19; % Average aperture of glyphs, based on height;
 APERTURE_ANGLE:= 40;
+INV_APERTURE_ANGLE:= 180 + APERTURE_ANGLE;
 ARCHCOEF:= 0.6;
 ARCHCORR:= 0.2pt;
 
@@ -62,9 +64,9 @@ MONOSPACE = false;
 MONO_WIDTH#:= 6pt#;
 
 %%% SIDEBEARINGS & BASIC KERNING
-CURVE_BEARING:=.48pt; % Average sidebearing for glyphs with curved edges
-LINE_BEARING:= .64pt;  % Average sidebearing for glyphs with straight stems
-STEM_BEARING:= .56pt; % Average sidebearing for B, D, P, Q...
+CURVE_BEARING:=.56pt; % Average sidebearing for glyphs with curved edges
+LINE_BEARING:= .8pt;  % Average sidebearing for glyphs with straight stems
+STEM_BEARING:= .64pt; % Average sidebearing for B, D, P, Q...
 LEG_BEARING:= .64pt;
 OBLIQUE_BEARING:= .36pt;
 MONO_CURVE_BEARING:= .56pt;
@@ -149,6 +151,14 @@ enddef;
   
 
 
+%%% SHORTCUTS & SNIPPETS
+def lt:= left enddef;
+def rt:= right enddef;
+def dn:= down enddef;
+def daa:= dir APERTURE_ANGLE enddef;
+def naa:= dir -APERTURE_ANGLE enddef;
+def dia:= dir INV_APERTURE_ANGLE enddef;
+def nia:= dir -INV_APERTURE_ANGLE enddef;
 
 
 def tsn = tension TSN enddef;

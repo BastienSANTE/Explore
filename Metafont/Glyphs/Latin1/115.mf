@@ -4,20 +4,20 @@ export_setup;
 
 % U+0073 LATIN SMALL LETTER S - CODE 115
 newchar(115, 4.7pt#, 0);
-spine_center_y = 0.5 * X_H;
+spine_center_y = 0.5 * X_TOP;
   spine_angle:= 12;
   spine_straight_length:= 0.05w;
   spine_ydelta:= 0.25 * X_H;
   beak_spine_xdelta = 0.01w;
   right_terminal_xoffset:=0.1w;
   
-  x1r = w - right_terminal_xoffset; y1 = X_H - (X_H * APERTURE);
+  x1r = w - right_terminal_xoffset; y1 = X_TOP - (X_H * APERTURE);
   x2 = x4 + beak_spine_xdelta; y2r = X_TOP;
   x3r = CURVE_BEARING; y3 = y2l - ((y2l - y41l) / 2);
-  x4 = 0.5w ; y4 = spine_center_y;
+  x4 = 0.5w; y4 = spine_center_y;
   z41 = z4 shifted(-spine_straight_length, 0) rotatedaround((z4), -spine_angle);
   z42 = z4 shifted(spine_straight_length, 0) rotatedaround((z4), -spine_angle);
-  x5l = w - CURVE_BEARING; y5 = 0.25 * X_H;
+  x5l = w - CURVE_BEARING; y5 = 0.25 * X_TOP;
   x6 = x4 - beak_spine_xdelta; y6l = CAP_BOTTOM;
   x7l = x3r; y7 = BASELINE + (X_H * APERTURE);
   
@@ -35,10 +35,9 @@ spine_center_y = 0.5 * X_H;
     makeserif(2, z7l,  SERIF_THICKNESS,  TERM_LENGTH);
   fi
 
-  penstroke z1e..tension TSN..z2e{left}..tension TSN..z3e{down}..tension TSN..z41e{dir -spine_angle} -- z42e{dir -spine_angle}..tension TSN..z5e{down}..tension TSN..z6e{left}..tension TSN..z7e;
+  %penstroke z1e..tension TSN..z2e{left}..tension TSN..z3e{down}..tension TSN..z41e{dir -spine_angle} -- z42e{dir -spine_angle}..tension TSN..z5e{down}..tension TSN..z6e{left}..tension TSN..z7e;
+
+  fill z2r{rt}..tsn..z1r{naa} -- z1l{nia}..tsn..z2l{lt}..tsn..z3l{dn}..tsn..z41l{dir -spine_angle} -- z42l{dir -spine_angle}..tsn..z5l{dn}..tsn..z6l{lt}..tsn..z7l{nia} -- z7r{naa}..tsn..z6r{rt}..tsn..z5r{up}..tsn..z42r{dir (180 - spine_angle)} -- z41r{dir (180 - spine_angle)}..tsn..z3r{up}..tsn..cycle;
   penlabels (range 1 thru 42);
 endchar;
 end
-
-
- 

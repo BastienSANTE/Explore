@@ -14,7 +14,7 @@ z5r = (CURVE_BEARING, X_H); z6r = (w - CURVE_BEARING, X_H);
 z11 = (x1l , y1l - 0.1 * X_H);
 
 penpos1(STEM, 0); penpos2(STEM, 0);
-penpos3(BAR, 90); penpos4(BAR_TERM, 90 + (APERTURE_ANGLE / 4));
+penpos3(BAR, 90); penpos4(BAR_TERM, 90);
 
 penpos5(BAR, 90); penpos6(BAR, 90);
 

@@ -12,7 +12,7 @@ newchar(101, 5.45pt#, 0);
   z2r = (0.52w, X_TOP);
   z3r = (CURVE_BEARING, bar_h);
   z4r = (x2 + ((x1l - x2l) / 8), CAP_BOTTOM);
-  z5r = (x1r, BASELINE + (X_H * APERTURE));
+  z5r = (x1 + ((x1r - x1) / 2), BASELINE + (X_H * APERTURE));
 
   z6 = z3;
   z7l = z1r;

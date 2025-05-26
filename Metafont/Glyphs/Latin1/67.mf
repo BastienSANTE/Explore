@@ -4,10 +4,12 @@ export_setup;
 
 % U+0043 LATIN CAPITAL LETTER C - CODE 67
 newchar(67, 6.05pt#, 0);
+
 if MONOSPACE = true:
   z1 = (w - CURVE_BEARING, CAP_TOP * (1 - APERTURE));
 else:
-  z1 = (0.92w, CAP_TOP * (1 - APERTURE));
+  if MONOSPACE = false:
+    z1 = (0.92w, CAP_TOP * (1 - APERTURE));
 fi
 
   x2 = 0.58w; y2r = CAP_TOP;
@@ -21,7 +23,7 @@ fi
   penpos4(BAR, 270);
   penpos5(BAR, 270 + APERTURE_ANGLE);
 
-penstroke z1e..z2e{left}..tension TSN..z3e{down}..tension TSN..z4e{right}..z5e;
+penstroke z1e..z2e{left}..tsn..z3e{down}..tsn..z4e{right}..z5e;
 
 if SERIF = true:
   makeserif(1, z1r, -SERIF_THICKNESS, -TERM_LENGTH);

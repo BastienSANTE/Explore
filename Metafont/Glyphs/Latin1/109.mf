@@ -7,7 +7,7 @@ newchar(109, 8.2pt#, 2);
 z1l = (LINE_BEARING, X_H);
 z2l = (LINE_BEARING, BASELINE);
 
-z3l = (x1r, 0.72 * X_H);
+z3l = (x1r, X_H - (CAP_H * APERTURE));
 z4r = (x3l + ((x5l - x3l) * ARCHCOEF), X_TOP);
 z5 = (x3l + ((x9l - x3l) / 2), 0.65 * X_H);
 z6r = (x5r, BASELINE);
@@ -25,7 +25,7 @@ z41 = z4r shifted(STRETCH * ARCHCORR, 0);
 z81 = z8r shifted(STRETCH * ARCHCORR, 0);
 
 fill z1l -- z1r -- z2r -- z2l -- cycle;
-fill z3r..invtsn..z41{right}..tsn..z7r & z7r..invtsn..z81{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}..tsn..z8l{left}..z7l -- z5r -- z6r -- z6l -- z5l{up}..tsn..z4l{left}..tsn..z3l -- cycle;
+fill z3r{dir APERTURE_ANGLE}..invtsn..z41{right}..tsn..z7r & z7r..invtsn..z81{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}..tsn..z8l{left}..z7l{dir INV_APERTURE_ANGLE} -- z5r -- z6r -- z6l -- z5l{up}..tsn..z4l{left}..tsn..z3l{dir INV_APERTURE_ANGLE} -- cycle;
 
 %fill z7r..tsn..z8r{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}..tsn..z8l{left}..tsn..z7l -- cycle;
 

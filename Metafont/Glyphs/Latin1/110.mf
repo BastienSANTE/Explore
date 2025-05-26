@@ -8,7 +8,7 @@ newchar(110, 5.4pt#, 2);
 z1l = (LINE_BEARING, X_H);
 z2l = (LINE_BEARING, BASELINE);
 
-z3l = (x1r, 0.72 * X_H);
+z3l = (x1r, X_H - (CAP_H * APERTURE));
 z5r = (w - LEG_BEARING, 0.65 * X_H);
 z4r = (x3l + ((x5l - x3l) * ARCHCOEF), X_TOP);
 z6r = (x5r, BASELINE);
@@ -19,7 +19,7 @@ penpos3(BAR_JOINT, 90 + APERTURE_ANGLE); penpos4(BAR, 90); penpos5(STEM, 0); pen
 z41 = z4r shifted(STRETCH * ARCHCORR, 0);
 
 fill z1l -- z1r -- z2r -- z2l -- cycle;
-fill z3r..invtsn..z41{right}..tsn..z5r{down} -- z6r -- z6l -- z5l{up}..tsn..z4l{left}..tsn..z3l -- cycle;
+fill z3r{dir APERTURE_ANGLE}..invtsn..z41{right}..tsn..z5r{down} -- z6r -- z6l -- z5l{up}..tsn..z4l{left}..tsn..z3l{dir INV_APERTURE_ANGLE} -- cycle;
 penlabels(range 1 thru 6);
 endchar;
 end
