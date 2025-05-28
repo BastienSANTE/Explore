@@ -23,7 +23,7 @@ newchar(66, 6.1pt#, 0);
 
 
   if MONOSPACE = true:
-    x5:= x3:= w - CURVE_BEARING;
+    x5:= x3:= (w - CURVE_BEARING);
   fi
 
   penpos0(BAR, -90);

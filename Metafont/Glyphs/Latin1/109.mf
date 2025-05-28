@@ -25,7 +25,7 @@ z41 = z4r shifted(STRETCH * ARCHCORR, 0);
 z81 = z8r shifted(STRETCH * ARCHCORR, 0);
 
 fill z1l -- z1r -- z2r -- z2l -- cycle;
-fill z3r{dir APERTURE_ANGLE}..invtsn..z41{right}..tsn..z7r & z7r..invtsn..z81{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}..tsn..z8l{left}..z7l{dir INV_APERTURE_ANGLE} -- z5r -- z6r -- z6l -- z5l{up}..tsn..z4l{left}..tsn..z3l{dir INV_APERTURE_ANGLE} -- cycle;
+fill z3r{daa}..invtsn..z41{right}..tsn..z7r & z7r..invtsn..z81{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}..tsn..z8l{left}..z7l{dia} -- z5r -- z6r -- z6l -- z5l{up}..tsn..z4l{left}..tsn..z3l{dia} -- cycle;
 
 %fill z7r..tsn..z8r{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}..tsn..z8l{left}..tsn..z7l -- cycle;
 

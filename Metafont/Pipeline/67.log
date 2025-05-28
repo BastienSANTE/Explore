@@ -1,4 +1,4 @@
-This is MetaPost, version 2.02 (TeX Live 2022/Debian) (kpathsea version 6.3.4)  26 MAY 2025 23:30
+This is MetaPost, version 2.02 (TeX Live 2022/Debian) (kpathsea version 6.3.4)  27 MAY 2025 12:51
 **../Glyphs/Latin1/67.mf
 (/usr/share/texlive/texmf-dist/metapost/base/mfplain.mp
 Preloading the plain base, version 0.99: preliminaries,
@@ -9,7 +9,18 @@ Preloading the plain base, version 0.99: preliminaries,
  macros for proof labels and rules,
  macros for character and font administration,
 and a few last-minute items.) (../Glyphs/Latin1/67.mf
-(../Config/ExploreSansCFG.mf) [67] )
-(end occurred when else on line 10 was incomplete)
-1 output file written: 67.svg
+(../Config/ExploreSansCFG.mf)
+! Incomplete if; all text was ignored after line 10.
+<inserted text> 
+                fi
+<to be read again> 
+                   end
+l.35 end
+        
+? *x
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? x
 
