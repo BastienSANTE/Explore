@@ -1,0 +1,28 @@
+input ../Config/ExploreSansCFG.mf
+
+  export_setup;
+
+% U+0033 DIGIT THREE - CODE 51
+newchar(51, 5.5pt#, 0);
+z1r = (0.13w, CAP_H);
+z2r = (w - LINE_BEARING, y1r);
+
+z3r = (x2r, y2l);
+z5r = z4l = (w / 3, 0.595 * CAP_H);
+z6r = z4r;
+
+z7r = (w - CURVE_BEARING, 0.3 * CAP_H);
+z8r = (0.455w, CAP_BOTTOM);
+z9 = (x1, BASELINE + (CAP_H * APERTURE));
+
+penpos1(BAR, 90); penpos2(BAR, 90);
+penpos3(STEM, 0); penpos4(STEM,0);
+
+penpos5(BAR, 90); penpos6(BAR, 90);
+penpos7(STEM, 0); penpos8(BAR, -90); penpos9(BAR_TERM, INV_APERTURE_ANGLE);
+
+penstroke z1e -- z2e; penstroke z3e -- z4e;
+penstroke z5e -- z6e{rt}..tsn..z7e{dn}..tsn..z8e{lt}..z9e;
+penlabels(range 1 thru 9);
+endchar;
+end

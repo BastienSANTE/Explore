@@ -1,0 +1,14 @@
+input ../Config/ExploreSansCFG.mf
+
+  export_setup;
+
+% U+0033 DIGIT THREE - CODE 51
+newchar(51, 5.5pt#, 0);
+z1r = (0.13w, CAP_H);
+z2r = (w - LINE_BEARING, y1r);
+
+x3r = (x2r, y2l);
+x4l = (w / 3, 0.595 * CAP_H);
+
+endchar;
+end

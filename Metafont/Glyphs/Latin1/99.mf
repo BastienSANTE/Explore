@@ -4,11 +4,11 @@ export_setup;
 
 % U+0063 LATIN SMALL LETTER C - CODE 99
 newchar(99, 5.05pt#, 0);
-  z1 = (w - CURVE_BEARING, X_H - (CAP_H * APERTURE));
+  z1 = (w - CURVE_BEARING, X_H - (X_H * APERTURE));
   z2r = (x3l + ((x1l - x3l) / 2), X_TOP);
   z3r = (CURVE_BEARING, 0.5 * X_H);
   z4r = (x2, CAP_BOTTOM);
-  z5 = (x1, BASELINE + (CAP_H * APERTURE));
+  z5 = (x1, BASELINE + (X_H * APERTURE));
 
   penpos1(BAR, 90 - APERTURE_ANGLE); penpos2(BAR, 90); penpos3(STEM, 180); penpos4(BAR, 270); penpos5(BAR, 270 + APERTURE_ANGLE);
 

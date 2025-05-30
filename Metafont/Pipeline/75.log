@@ -1,4 +1,4 @@
-This is MetaPost, version 2.02 (TeX Live 2022/Debian) (kpathsea version 6.3.4)  27 MAY 2025 12:51
+This is MetaPost, version 2.02 (TeX Live 2022/Debian) (kpathsea version 6.3.4)  30 MAY 2025 11:42
 **../Glyphs/Latin1/75.mf
 (/usr/share/texlive/texmf-dist/metapost/base/mfplain.mp
 Preloading the plain base, version 0.99: preliminaries,
@@ -80,12 +80,16 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {SERIF_C:=0}
 {if}
 {true}
-{(true)=(true)}
+{(false)=(true)}
+{false}
+{if}
 {true}
-{WIDTH:=6}
-{LINE_BEARING:=39.8421}
-{CURVE_BEARING:=27.88925}
-{else}
+{(false)=(true)}
+{false}
+{(5.8)*(1)}
+{WIDTH:=5.8}
+{fi}
+{fi}
 {forsuffixes}
 {loop value=SERIF_LENGTH}
 {(0.7)*(49.80244)}
@@ -107,11 +111,11 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {false}
 {endgroup}
 {charcode:=75}
-{charwd:=6}
+{charwd:=5.8}
 {charht:=8}
 {chardp:=2.24}
-{(6)*(49.80244)}
-{w:=298.81467}
+{(5.8)*(49.80244)}
+{w:=288.85432}
 {(8)*(49.80244)}
 {h:=398.41956}
 {(2.24)*(49.80244)}
@@ -131,14 +135,14 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {sind(45)}
 {(1)/(0.7071)}
 {arm_width_coef:=1.41422}
-{(0.15)*(298.81467)}
-{(arm_x_delta)=(44.82037)}
+{(0.15)*(288.85432)}
+{(arm_x_delta)=(43.32639)}
 {(x1l)=(39.8421)}
 {(y1)=(348.61711)}
 {(x2l)=(39.8421)}
 {(y2)=(0)}
-{(298.81467)-(44.82037)}
-{(x3)=(253.9943)}
+{(288.85432)-(43.32639)}
+{(x3)=(245.52794)}
 {(y3)=(348.61711)}
 {(x5r)=(x3r)}
 {(y5)=(0)}
@@ -176,7 +180,7 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {((linearform,linearform))=((39.8421,0))}
 {(x5r-39.8421)+(x5r)}
 {(0.5)*(2x5r-39.8421)}
-{(253.9943)=(x5r-19.92105)}
+{(245.52794)=(x5r-19.92105)}
 {(y3r)+(y3r)}
 {(0.5)*(2y3r)}
 {(348.61711)=(y3r)}
@@ -194,13 +198,13 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {(174.30856)=(y4r)}
 {endgroup}
 {begingroup}
-{(273.91534)-(x5l)}
+{(265.44899)-(x5l)}
 {(y5r)-(y5l)}
 {((39.8421,0))rotated(0)}
-{((-x5l+273.91534,linearform))=((39.8421,0))}
-{(234.07324)+(273.91534)}
-{(0.5)*(507.98859)}
-{(x5)=(253.9943)}
+{((-x5l+265.44899,linearform))=((39.8421,0))}
+{(225.60689)+(265.44899)}
+{(0.5)*(491.05588)}
+{(x5)=(245.52794)}
 {(y5r)+(y5r)}
 {(0.5)*(2y5r)}
 {(0)=(y5r)}
@@ -375,16 +379,16 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {save}
 {picture}
 {if}
-{known((234.07324,348.61711))}
+{known((225.60689,348.61711))}
 {true}
 {("3l")infont("cmr10")}
 {(1)/(0.72015)}
 {(picture)scaled(1.3886)}
 {(unknown picture p)=(picture)}
-{((234.07324,348.61711))transformed((0,0,1,0,0,1))}
+{((225.60689,348.61711))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((234.07324,348.61711))+((0,4.16577))}
+{((225.60689,348.61711))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((10.75987,0))}
 {ulcorner(picture)}
@@ -395,8 +399,8 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((5.37994,0))+((0,0))}
-{((234.07324,352.78288))-((5.37994,0))}
-{(picture)shifted((228.6933,352.78288))}
+{((225.60689,352.78288))-((5.37994,0))}
+{(picture)shifted((220.22694,352.78288))}
 {addto}
 {if}
 {picture(picture)}
@@ -406,9 +410,9 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {linecap:=1}
 {addto}
 {if}
-{picture((234.07324,348.61711))}
+{picture((225.60689,348.61711))}
 {false}
-{((234.07324,348.61711))transformed((0,0,1,0,0,1))}
+{((225.60689,348.61711))transformed((0,0,1,0,0,1))}
 {fi}
 {pencircle}
 {(3)/(0.72015)}
@@ -471,16 +475,16 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {save}
 {picture}
 {if}
-{known((234.07324,0))}
+{known((225.60689,0))}
 {true}
 {("5l")infont("cmr10")}
 {(1)/(0.72015)}
 {(picture)scaled(1.3886)}
 {(unknown picture p)=(picture)}
-{((234.07324,0))transformed((0,0,1,0,0,1))}
+{((225.60689,0))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((234.07324,0))+((0,4.16577))}
+{((225.60689,0))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((10.75987,0))}
 {ulcorner(picture)}
@@ -491,8 +495,8 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((5.37994,0))+((0,0))}
-{((234.07324,4.16577))-((5.37994,0))}
-{(picture)shifted((228.6933,4.16577))}
+{((225.60689,4.16577))-((5.37994,0))}
+{(picture)shifted((220.22694,4.16577))}
 {addto}
 {if}
 {picture(picture)}
@@ -502,9 +506,9 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {linecap:=1}
 {addto}
 {if}
-{picture((234.07324,0))}
+{picture((225.60689,0))}
 {false}
-{((234.07324,0))transformed((0,0,1,0,0,1))}
+{((225.60689,0))transformed((0,0,1,0,0,1))}
 {fi}
 {pencircle}
 {(3)/(0.72015)}
@@ -628,16 +632,16 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {save}
 {picture}
 {if}
-{known((253.9943,348.61711))}
+{known((245.52794,348.61711))}
 {true}
 {("3")infont("cmr10")}
 {(1)/(0.72015)}
 {(picture)scaled(1.3886)}
 {(unknown picture p)=(picture)}
-{((253.9943,348.61711))transformed((0,0,1,0,0,1))}
+{((245.52794,348.61711))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((253.9943,348.61711))+((0,4.16577))}
+{((245.52794,348.61711))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((6.91707,0))}
 {ulcorner(picture)}
@@ -648,8 +652,8 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((3.45854,0))+((0,0))}
-{((253.9943,352.78288))-((3.45854,0))}
-{(picture)shifted((250.53575,352.78288))}
+{((245.52794,352.78288))-((3.45854,0))}
+{(picture)shifted((242.0694,352.78288))}
 {addto}
 {if}
 {picture(picture)}
@@ -659,9 +663,9 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {linecap:=1}
 {addto}
 {if}
-{picture((253.9943,348.61711))}
+{picture((245.52794,348.61711))}
 {false}
-{((253.9943,348.61711))transformed((0,0,1,0,0,1))}
+{((245.52794,348.61711))transformed((0,0,1,0,0,1))}
 {fi}
 {pencircle}
 {(3)/(0.72015)}
@@ -724,16 +728,16 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {save}
 {picture}
 {if}
-{known((253.9943,0))}
+{known((245.52794,0))}
 {true}
 {("5")infont("cmr10")}
 {(1)/(0.72015)}
 {(picture)scaled(1.3886)}
 {(unknown picture p)=(picture)}
-{((253.9943,0))transformed((0,0,1,0,0,1))}
+{((245.52794,0))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((253.9943,0))+((0,4.16577))}
+{((245.52794,0))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((6.91707,0))}
 {ulcorner(picture)}
@@ -744,8 +748,8 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((3.45854,0))+((0,0))}
-{((253.9943,4.16577))-((3.45854,0))}
-{(picture)shifted((250.53575,4.16577))}
+{((245.52794,4.16577))-((3.45854,0))}
+{(picture)shifted((242.0694,4.16577))}
 {addto}
 {if}
 {picture(picture)}
@@ -755,9 +759,9 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {linecap:=1}
 {addto}
 {if}
-{picture((253.9943,0))}
+{picture((245.52794,0))}
 {false}
-{((253.9943,0))transformed((0,0,1,0,0,1))}
+{((245.52794,0))transformed((0,0,1,0,0,1))}
 {fi}
 {pencircle}
 {(3)/(0.72015)}
@@ -881,16 +885,16 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {save}
 {picture}
 {if}
-{known((273.91534,348.61711))}
+{known((265.44899,348.61711))}
 {true}
 {("3r")infont("cmr10")}
 {(1)/(0.72015)}
 {(picture)scaled(1.3886)}
 {(unknown picture p)=(picture)}
-{((273.91534,348.61711))transformed((0,0,1,0,0,1))}
+{((265.44899,348.61711))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((273.91534,348.61711))+((0,4.16577))}
+{((265.44899,348.61711))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((12.33543,0))}
 {ulcorner(picture)}
@@ -901,8 +905,8 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((6.16772,0))+((0,0))}
-{((273.91534,352.78288))-((6.16772,0))}
-{(picture)shifted((267.74762,352.78288))}
+{((265.44899,352.78288))-((6.16772,0))}
+{(picture)shifted((259.28127,352.78288))}
 {addto}
 {if}
 {picture(picture)}
@@ -912,9 +916,9 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {linecap:=1}
 {addto}
 {if}
-{picture((273.91534,348.61711))}
+{picture((265.44899,348.61711))}
 {false}
-{((273.91534,348.61711))transformed((0,0,1,0,0,1))}
+{((265.44899,348.61711))transformed((0,0,1,0,0,1))}
 {fi}
 {pencircle}
 {(3)/(0.72015)}
@@ -977,16 +981,16 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {save}
 {picture}
 {if}
-{known((273.91534,0))}
+{known((265.44899,0))}
 {true}
 {("5r")infont("cmr10")}
 {(1)/(0.72015)}
 {(picture)scaled(1.3886)}
 {(unknown picture p)=(picture)}
-{((273.91534,0))transformed((0,0,1,0,0,1))}
+{((265.44899,0))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((273.91534,0))+((0,4.16577))}
+{((265.44899,0))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((12.33543,0))}
 {ulcorner(picture)}
@@ -997,8 +1001,8 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((6.16772,0))+((0,0))}
-{((273.91534,4.16577))-((6.16772,0))}
-{(picture)shifted((267.74762,4.16577))}
+{((265.44899,4.16577))-((6.16772,0))}
+{(picture)shifted((259.28127,4.16577))}
 {addto}
 {if}
 {picture(picture)}
@@ -1008,9 +1012,9 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {linecap:=1}
 {addto}
 {if}
-{picture((273.91534,0))}
+{picture((265.44899,0))}
 {false}
-{((273.91534,0))transformed((0,0,1,0,0,1))}
+{((265.44899,0))transformed((0,0,1,0,0,1))}
 {fi}
 {pencircle}
 {(3)/(0.72015)}
@@ -1089,7 +1093,7 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {(pen)scaled(0.55544)}
 {endgroup}
 {[repeat the loop]}
-{loop value=298.81467}
+{loop value=288.85432}
 {-(111.55775)}
 {begingroup}
 {interim}
@@ -1109,7 +1113,7 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {(0)<>(0)}
 {false}
 {fi}
-{chardx:=298.81467}
+{chardx:=288.85432}
 {if}
 {(2)>=(0)}
 {true}

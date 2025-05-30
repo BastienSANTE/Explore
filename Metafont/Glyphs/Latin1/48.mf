@@ -1,0 +1,20 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0030 DIGIT ZERO - CODE 48
+newchar(48, 5.5pt#, 0);
+  x1 = 0.5w; y1r = CAP_TOP;
+  x2r = w - CURVE_BEARING; y2 = 0.5 * CAP_H;
+  x3 = x1; y3r = CAP_BOTTOM;
+  x4r  = CURVE_BEARING; y4 = y2;
+
+  penpos1(BAR, 90); penpos2(STEM, 0);
+  penpos3(BAR, -90); penpos4(STEM, -180);
+
+fill z1r{right}..tsn..z2r{down}..tsn..z3r{left}..tsn..z4r{up}..tsn..z1r{right} --
+  z1l{left}..tsn..z4l{down}..tsn..z3l{right}..tsn..z2l{up}..tsn..z1l{left} -- z1r -- cycle;
+  
+  penlabels(range 1 thru 4);
+endchar;
+end

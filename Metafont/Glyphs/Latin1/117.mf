@@ -7,7 +7,7 @@ define_pixels(SERIF_LENGTH);
 newchar(117, 5.4pt#, 2);
 z1r = (w - LINE_BEARING, X_H);
 z2r = (x1r, BASELINE);
-z3l = (LINE_BEARING, X_H);
+z3l = (STEM_BEARING, X_H);
 z4l = (x3l, 0.35 * X_H);
 z5l = (x4r + ((x1l - x4r) * (1 - ARCHCOEF)), CAP_BOTTOM);
 z51 = z5l shifted(- ARCHCORR, 0);
@@ -18,7 +18,7 @@ penpos3(STEM, 0); penpos4(STEM, 0); penpos5(BAR, 90); penpos6(BAR_JOINT, 90 + AP
 
 penstroke z1e -- z2e;
 
-fill z3l -- z3r -- z4r{down}..tsn..z5r{right}..tsn..z6r{daa} -- z6l{dia}..tsn..z51{left}..tsn..z4l{up} -- cycle;
+fill z3l -- z3r -- z4r{down}..tsn..z5r{right}..invtsn..z6r{nia} -- z6l{dia}..invtsn..z51{left}..tsn..z4l{up} -- cycle;
 
 penstroke z3e -- z4e{down}..tsn..z5e{right}..tsn..z6e;
 penlabels(range 1 thru 51);

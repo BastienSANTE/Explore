@@ -18,33 +18,6 @@ penpos1(STEM, 0); penpos2(STEM, 0);
 
 x4l = x1r; y4 = 0.5 * CAP_H;
 
-%numeric dotp, vmsp, vmep, ang, pv, wcorr;
-%numeric xsp, ysp, xep, yep;
-%pv:= 1pt;
-
-%xsp:= xpart z3 / pv; ysp:= ypart z3 / pv;
-%xep:= xpart z4 / pv; yep:= ypart z4 / pv;
-
-%dotp:= dotproduct(z3, z4);
-%vmsp:=magnitude(z3)
-%vmep:=magnitude(z4);
-%wcorr:= 1 / cosd(dotp / (vmsp * vmep));
-
-
-% numeric xssq, yssq, xesq, yesq;
-% xssq:= (xpart z3 / pt) * (xpart z3 / pt);
-% yssq:= (ypart z3 / pt) * (ypart z3 / pt);
-% xesq:= (xpart z4 / pt) * (xpart z4 / pt);
-% yesq:= (ypart z4 / pt) * (ypart z4 / pt);
-
-% numeric dp; dp:= dotproduct(z4, z3);
-% numeric ma; ma:= sqrt(xssq * yssq);
-% numeric mb; mb:= sqrt(xesq * yesq);
-
-% numeric angle;
-% angle:= 1 / cosd(dp / (ma * mb));
-
-
 penpos3(STEM, 0); penpos4(STEM, 0); penpos5(STEM, 0);
 
   penstroke z1e -- z2e;

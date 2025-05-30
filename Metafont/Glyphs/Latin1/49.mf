@@ -1,0 +1,26 @@
+input ../Config/ExploreSansCFG.mf
+
+  export_setup;
+
+% U+0031 DIGIT ONE - CODE 49
+newchar(49, 5.5pt#, 0);
+z1 = (0.534w, CAP_H);
+z2 = (x1, BASELINE);
+
+z3l = (0.13w, BASELINE);
+z4l = (0.9w, y3l);
+
+z5r = (x3, 0.81 * CAP_H);
+z11r = z1l;
+
+penpos1(STEM, 0); penpos2(STEM,  0);
+penpos3(BAR, 90); penpos4(BAR,  90);
+penpos5(BAR, 90); penpos11(BAR, 90);
+
+fill z1l -- z1r -- z2r -- z2l -- cycle;
+fill z3r -- z4r -- z4l -- z3l -- cycle;
+fill z5r -- z11r -- z11l -- z5l -- cycle;
+
+penlabels(range 1 thru 11);
+endchar;
+end

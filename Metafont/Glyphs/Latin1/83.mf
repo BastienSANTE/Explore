@@ -21,14 +21,14 @@ newchar(83, 5.8pt#, 0);
   x6 = x4 - beak_spine_xdelta; y6l = CAP_BOTTOM;
   x7l = x3r; y7 = BASELINE + (CAP_H * APERTURE);
   
-  penpos1(BAR, 90 - APERTURE_ANGLE);
+  penpos1(STEM_TERM, 90 - APERTURE_ANGLE);
   penpos2(BAR, 90);
   penpos3(STEM, 180);
   penpos41(BAR, 270 - spine_angle);
   penpos42(BAR, 270 - spine_angle);
   penpos5(STEM, 180);
   penpos6(BAR, 90);
-  penpos7(BAR, 90 - APERTURE_ANGLE);
+  penpos7(STEM_TERM, 90 - APERTURE_ANGLE);
 
   if SERIF = true:
     makeserif(1, z1r, -SERIF_THICKNESS, -TERM_LENGTH);

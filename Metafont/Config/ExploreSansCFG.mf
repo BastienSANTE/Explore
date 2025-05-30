@@ -13,13 +13,13 @@ pair dot[];
 %%% PEN STROKE SETTINGS
 %%% These settings define the main "boldness" of the glyphs.
 BAR:=   .64pt; % Normal horizontal stroke width
-BAR_C:= .64pt; % "Counterpart", to use in high-contrast fonts, and avoid modifying TH or TV. For the classic font, keep BAR_C = BAR;
+BAR_C:= .64pt; % "Counterpart", to use in high-contrast fonts, and avoid modifying TH or TV. For the classic font, keep BAR_C = BAR.
 
 STEM:=   .8pt; % Normal vertical stroke width
 STEM_C:= .8pt; % Same rule as NH and NH_C
 
-BAR_TERM  := BAR * 0.8;
-STEM_TERM := STEM * 0.8;
+BAR_TERM  := BAR * 1;
+STEM_TERM := STEM * 1;
 BAR_JOINT := BAR * 0.67;
 STEM_JOINT:= STEM * 0.67;
 BAR_THIN  := BAR * 0.5;
@@ -43,8 +43,8 @@ X_TOP:= X_H + OVERSHOOT;          % Top of rounded lowercase glyphs
 
 %%% CURVATURE
 TSN:= .9; % Average tension of curvature
-APERTURE:= .2; % Average aperture of glyphs, based on height;
-APERTURE_ANGLE:= 40;
+APERTURE:= .17; % Average aperture of glyphs, based on height;
+APERTURE_ANGLE:= 45;
 INV_APERTURE_ANGLE:= 180 + APERTURE_ANGLE;
 ARCHCOEF:= 0.6;
 ARCHCORR:= 0.2pt;
@@ -60,7 +60,7 @@ SERIFL:= SERIF_LENGTH;
 
 %%% MONOSPACE METRICS
 boolean MONOSPACE;
-MONOSPACE = true;
+MONOSPACE = false;
 MONO_WIDTH#:= 6pt#;
 
 %%% SIDEBEARINGS & BASIC KERNING
@@ -69,8 +69,8 @@ LINE_BEARING:= .8pt;  % Average sidebearing for glyphs with straight stems
 STEM_BEARING:= .64pt; % Average sidebearing for B, D, P, Q...
 LEG_BEARING:= .64pt;
 OBLIQUE_BEARING:= .36pt;
-MONO_CURVE_BEARING:= .56pt;
-MONO_LINE_BEARING:= .8pt;
+MONO_CURVE_BEARING:= .8pt;
+MONO_LINE_BEARING:= .96pt;
 
 %%% DIACRITICS & ACCENTS
 ACC_YOFFSET:= 1.5pt; % Offset between the top of the lowercase glyphs and diacritics. 
@@ -142,7 +142,8 @@ enddef;
 
 def magnitude(expr p) =
   sqrt(((xpart p / 1pt) * (xpart p / 1pt)) + ((ypart p / 1pt) * (ypart p / 1pt));
-enddef;
+  enddef;
+
 
 def radtodeg(expr ang) =
   ang * 180/PI;

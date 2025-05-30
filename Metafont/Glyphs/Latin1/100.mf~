@@ -1,0 +1,31 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0062 LATIN SMALL LETTER D - CODE 100
+newchar(100, 5.84pt#, 1);
+  x1r = w - STEM_BEARING; y1 = CAP_TOP;
+  x2r = x1r; y2 = 0.2 * CAP_H;
+  x3r = x1r; y3 = BASELINE;
+
+  x4l = x1r; y4 = X_H - (CAP_H * APERTURE);
+  x5 = 0.5w; y5r = X_TOP;
+  x6r = w - CURVE_BEARING; y6 = y5l - ((y5l - y7l) / 2);
+  x7 =  x5; y7r = CAP_BOTTOM;
+  x8l = x2r; y8r = BASELINE + (CAP_H * APERTURE);
+
+  penpos1(STEM, 0); penpos2(STEM, 0); penpos3(STEM_TERM, 0);
+  penpos4(BAR_JOINT, 90 + APERTURE_ANGLE); penpos5(BAR, 90); penpos6(STEM, 0); penpos7(BAR, -90); penpos8(BAR_JOINT, -90 - APERTURE_ANGLE);
+
+if SERIF = true:
+  makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
+  makeserif(2, z3l, -SERIF_LENGTH,  SERIF_THICKNESS);
+fi
+
+  fill z1l -- z3l -- z3r -- z2r -- z1r -- cycle;
+  fill z4r .. z5r{right} ..tension TSN.. z6r{down} ..tension TSN.. z7r{left} .. z8r -- z8l .. z7l{right} ..tension TSN .. z6l{up} ..tension TSN.. z5l{left} .. z4l -- cycle;
+  
+  penlabels(range 1 thru 8);
+endchar;
+end;
+

@@ -1,0 +1,25 @@
+input ../Config/ExploreSansCFG.mf
+
+  export_setup;
+
+% U+0032 DIGIT TWO - CODE 50
+newchar(50, 5.5pt#, 0);
+z1 = (0.14w, CAP_H - (CAP_H * APERTURE));
+z2r = (0.455w, CAP_TOP);
+z3r = (w - LINE_BEARING, 0.72 * CAP_H);
+z4l = z5r;
+
+z5l = (x4, BASELINE);
+z6l = (x3r, x5l);
+
+penpos1(BAR_TERM, 90 + APERTURE_ANGLE); penpos2(BAR, 90); penpos3(STEM, 0); penpos4(BAR, APERTURE_ANGLE);
+
+penpos5(STEM, 90); penpos6(STEM, 90);
+
+penstroke z1e..tsn..z2e{right}..z3e{down}..z4e;
+penstroke z5e -- z6e;
+
+penlabels(range 1 thru 6);
+
+endchar;
+end

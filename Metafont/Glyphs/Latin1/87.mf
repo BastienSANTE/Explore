@@ -5,7 +5,7 @@ export_setup;
 % U+0057 LATIN CAPITAL LETTER W - CODE 87
 newchar(87, 8.2pt#, 2);
 x1l = LINE_BEARING / 2; y1 = CAP_H;
-z11r = (x2, BASELINE);
+z11r = (x2r, BASELINE);
 z2r = (x1 + ((x3 - x1) / 2), BASELINE);
 z21l = z3l;
 z3 = (0.5w, y1);

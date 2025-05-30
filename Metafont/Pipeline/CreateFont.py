@@ -11,7 +11,7 @@ svgfolder : str = "../MFExport/"
 latin1 = {
     "set": "Latin1",
     "file": "../Glyphs/Latin1/",
-    "range_start": 65,
+    "range_start": 0,
     "range_end": 128
 }
 
