@@ -9,7 +9,11 @@ newchar(88, 6.6pt#, 2);
   x3r = w - (LINE_BEARING / 2); y3 = y1;
   x4r = x3r; y4 = y2;
 
-  penpos1(STEM, 0); penpos2(STEM_C, 0); penpos3(STEM_C, 0); penpos4(STEM, 0);
+penpos1(STEM, 0); penpos2(STEM_C, 0); penpos3(STEM_C, 0); penpos4(STEM, 0);
+
+z11r = z1r; z21l = z2l; z31r = z3r; z41l = z4l;
+
+penpos11(STEM_ADJ(z4, z1), 180); penpos41(STEM_ADJ(z4, z1),180);
 
   if SERIF = true:
     makeserif(1,  z1, -SERIF_LENGTH, -SERIF_THICKNESS);
@@ -22,7 +26,7 @@ newchar(88, 6.6pt#, 2);
     makeserif(8,  z4,  SERIF_LENGTH,  SERIF_THICKNESS);
   fi
   
-  penstroke z1e -- z4e; penstroke z3e -- z2e;
-  penlabels(range 1 thru 4);
+  penstroke z11e -- z41e; penstroke z3e -- z2e;
+  penlabels(range 1 thru 41);
 endchar;
 end

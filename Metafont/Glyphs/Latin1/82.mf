@@ -17,7 +17,7 @@ x9r = x5r; y9 = BASELINE;
 
 penpos1(STEM, 0); penpos2(STEM, 0);
   penpos3(BAR, 90); penpos4(BAR, 90); penpos5(STEM, 0); penpos6(BAR, -90); penpos7(BAR, -90);
-  penpos8(STEM, 0); penpos9(STEM, 0);
+penpos8(STEM, 0); penpos9(STEM, 0);
 
 
 if SERIF = true:
@@ -31,7 +31,7 @@ fi
 
   fill z3r -- z4r{right}..tsn..z5r{down}..tsn..z6r{left} -- z7r -- z7l -- z6l{right}..tsn..z5l{up}..tsn..z4l{left} -- z3l -- cycle;
   fill z8r -- z9r -- z9l -- z8l -- cycle;
-  
-  penlabels(range 0 thru 9);
+
+  penlabels(range 0 thru 91);
 endchar;
 end

@@ -1,4 +1,4 @@
-This is MetaPost, version 2.02 (TeX Live 2022/Debian) (kpathsea version 6.3.4)  30 MAY 2025 11:42
+This is MetaPost, version 2.02 (TeX Live 2022/Debian) (kpathsea version 6.3.4)  1 JUN 2025 23:49
 **../Glyphs/Latin1/75.mf
 (/usr/share/texlive/texmf-dist/metapost/base/mfplain.mp
 Preloading the plain base, version 0.99: preliminaries,
@@ -145,7 +145,7 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {(x3)=(245.52794)}
 {(y3)=(348.61711)}
 {(x5r)=(x3r)}
-{(y5)=(0)}
+{(y5r)=(0)}
 {begingroup}
 {(x1r)-(39.8421)}
 {(y1r)-(y1l)}
@@ -170,9 +170,10 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {(0.5)*(2y2r)}
 {(0)=(y2r)}
 {endgroup}
-{(x4l)=(79.6842)}
+{begingroup}
+{endgroup}
 {(0.5)*(348.61711)}
-{(y4)=(174.30856)}
+{((x4l,y4l))=((79.6842,174.30856))}
 {begingroup}
 {(x5r)-(x3l)}
 {(y3r)-(y3l)}
@@ -187,27 +188,27 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {endgroup}
 {begingroup}
 {(x4r)-(79.6842)}
-{(y4r)-(y4l)}
+{(y4r)-(174.30856)}
 {((39.8421,0))rotated(0)}
-{((x4r-79.6842,linearform))=((39.8421,0))}
+{((x4r-79.6842,y4r-174.30856))=((39.8421,0))}
 {(79.6842)+(119.5263)}
 {(0.5)*(199.21051)}
 {(x4)=(99.60526)}
-{(y4r)+(y4r)}
-{(0.5)*(2y4r)}
-{(174.30856)=(y4r)}
+{(174.30856)+(174.30856)}
+{(0.5)*(348.61713)}
+{(y4)=(174.30856)}
 {endgroup}
 {begingroup}
 {(265.44899)-(x5l)}
-{(y5r)-(y5l)}
+{(0)-(y5l)}
 {((39.8421,0))rotated(0)}
-{((-x5l+265.44899,linearform))=((39.8421,0))}
+{((-x5l+265.44899,-y5l))=((39.8421,0))}
 {(225.60689)+(265.44899)}
 {(0.5)*(491.05588)}
 {(x5)=(245.52794)}
-{(y5r)+(y5r)}
-{(0.5)*(2y5r)}
-{(0)=(y5r)}
+{(0)+(0)}
+{(0.5)*(0)}
+{(y5)=(0)}
 {endgroup}
 {forsuffixes}
 {loop value=l}

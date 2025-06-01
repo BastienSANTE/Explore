@@ -1,0 +1,15 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0073 LATIN SMALL LETTER Y - CODE 121
+newchar(121, 5.55pt#, 0);
+z1l = (OBLIQUE_BEARING, X_H);
+z2r = (w - OBLIQUE_BEARING, y1);
+z21 = (0.5w, BASELINE);
+
+z3 = z2 rotatedaround (z21, 180);
+
+penpos1(STEM, 0); penpos2(STEM, 0); penpos21(STEM, 0); penpos3(STEM, 0);  
+endchar;
+end

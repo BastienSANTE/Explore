@@ -2,6 +2,8 @@ input ../Config/ExploreSansCFG.mf
 
   export_setup;
 
+loggingall;
+
 % U+0032 DIGIT TWO - CODE 50
 newchar(50, 5.5pt#, 0);
 z1  = (0.14w, CAP_H - (CAP_H * APERTURE));

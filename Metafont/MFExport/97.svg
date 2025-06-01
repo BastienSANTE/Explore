@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<!-- Created by MetaPost 2.02 on 2025.05.30:1142 -->
+<!-- Created by MetaPost 2.02 on 2025.06.01:2345 -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190.486832" height="367.662094" viewBox="0 0 190.486832 367.662094">
 <!-- Original BoundingBox: -0.199997 -80.538742 190.286835 287.123352 -->
-  <path d="M29.901367 124.089172C48.176498 105.294266,66.317429 97.630630,92.532486 97.630630C134.645920 97.630630,161.394394 123.812851,161.394394 165.776093L161.394394 287.000000L132.701950 287.000000L132.701950 250.560593L132.701950 165.776093C132.701950 139.002502,118.263199 120.584473,92.532486 120.584473C73.081268 120.584473,59.623810 126.308365,46.132187 140.320007Z" style="fill: rgb(69.999695%,69.999695%,69.999695%);stroke: none;"></path>
+  <path d="M31.524414 125.712234C48.477921 105.909454,66.463898 97.630630,92.532486 97.630630C134.645920 97.630630,161.394394 123.812851,161.394394 165.776093L161.394394 287.000000L138.440353 287.000000L132.701950 250.560593L132.701950 165.776093C132.701950 139.002502,118.263199 120.584473,92.532486 120.584473C72.891083 120.584473,59.258469 125.726151,44.509140 138.696945Z" style="fill: rgb(69.999695%,69.999695%,69.999695%);stroke: none;"></path>
   <path d="M147.048172 178.542236L87.225006 178.542236C48.149658 178.542236,20.084549 197.478714,20.084549 234.205765C20.084549 269.268127,44.090744 289.869293,80.052032 289.869293C105.700638 289.869293,128.790405 274.324600,138.440414 250.560593L132.701950 240.621262C123.336960 256.889008,105.995789 266.915451,87.225006 266.915451C64.705536 266.915451,48.776993 255.543747,48.776993 234.205765C48.776993 212.867798,64.705536 201.496094,87.225006 201.496094L147.048172 201.496094L147.048172 178.542236Z" style="fill: rgb(69.999695%,69.999695%,69.999695%);stroke: none;"></path>
-  <g transform="translate(42.257812 137.320007)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+  <g transform="translate(40.634750 135.696960)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
     <text font-size="9.962646">1l</text>
   </g>
-  <path d="M46.132187 140.320007l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M44.509140 138.696945l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
   <g transform="translate(88.658096 117.584473)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
     <text font-size="9.962646">2l</text>
   </g>
@@ -16,10 +16,10 @@
     <text font-size="9.962646">3l</text>
   </g>
   <path d="M132.701950 165.776093l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
-  <g transform="translate(128.827560 284.000000)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+  <g transform="translate(134.565964 284.000000)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
     <text font-size="9.962646">4l</text>
   </g>
-  <path d="M132.701950 287.000000l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M138.440353 287.000000l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
   <g transform="translate(143.173782 198.496094)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
     <text font-size="9.962646">5l</text>
   </g>
@@ -56,10 +56,10 @@
     <text font-size="9.962646">3</text>
   </g>
   <path d="M147.048172 165.776093l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
-  <g transform="translate(144.557495 284.000000)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+  <g transform="translate(147.426697 284.000000)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
     <text font-size="9.962646">4</text>
   </g>
-  <path d="M147.048172 287.000000l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M149.917374 287.000000l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
   <g transform="translate(144.557495 187.019165)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
     <text font-size="9.962646">5</text>
   </g>
@@ -84,10 +84,10 @@
     <text font-size="9.962646">31</text>
   </g>
   <path d="M147.048172 250.560593l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
-  <g transform="translate(25.459656 121.089172)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
+  <g transform="translate(27.082718 122.712234)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
     <text font-size="9.962646">1r</text>
   </g>
-  <path d="M29.901367 124.089172l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
+  <path d="M31.524414 125.712234l0 0" style="stroke:rgb(0.000000%,0.000000%,0.000000%); stroke-width: 3.000000;stroke-linecap: round;stroke-linejoin: round;stroke-miterlimit: 10.000000;fill: none;"></path>
   <g transform="translate(88.090775 94.630630)" style="fill: rgb(0.000000%,0.000000%,0.000000%);">
     <text font-size="9.962646">2r</text>
   </g>

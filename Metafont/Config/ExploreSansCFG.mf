@@ -6,6 +6,7 @@
 %%% These variables are font-wide, and serve to define
 %%% parameters in each glyph
 %path skl[];
+
 pair ikp[]; % Coordinates to define inktraps
 pair sfp[]; % Coordinates to define serif positions
 pair dot[];
@@ -18,8 +19,8 @@ BAR_C:= .64pt; % "Counterpart", to use in high-contrast fonts, and avoid modifyi
 STEM:=   .8pt; % Normal vertical stroke width
 STEM_C:= .8pt; % Same rule as NH and NH_C
 
-BAR_TERM  := BAR * 1;
-STEM_TERM := STEM * 1;
+BAR_TERM  := BAR * 0.8;
+STEM_TERM := STEM * 0.8;
 BAR_JOINT := BAR * 0.67;
 STEM_JOINT:= STEM * 0.67;
 BAR_THIN  := BAR * 0.5;
@@ -86,7 +87,16 @@ DOTSIZE:= STEM * 1.25;  % Diameter of the standard dot above i, ï, ÿ...
 boolean OLDSTYLE;
 OLDSTYLE = false;
 
+%%% INKTRAPS & OPTICAL CORRECTION
+INKFAC:= 0.25; % "Inktrap factor" defines the relativ importance of inktraps
 %def midpoint(expr a)
+
+def BAR_ADJ(expr a, b) =
+  BAR * acorr(a, b)
+enddef;
+
+
+def PT = 1pt enddef;
 
 %def makeserif(expr origin)
 
@@ -136,21 +146,26 @@ enddef;
 
 numeric PI; PI:= 3.141593;
 
-def dotproduct(expr sp, ep) =
-  ((xpart sp / 1pt) * (xpart ep / 1pt)) + ((ypart sp / 1pt) * (ypart ep / 1pt))
+primarydef w dprod z =
+  (xpart w * ypart w) + (xpart z * ypart z)
 enddef;
 
-def magnitude(expr p) =
-  sqrt(((xpart p / 1pt) * (xpart p / 1pt)) + ((ypart p / 1pt) * (ypart p / 1pt));
-  enddef;
-
-
-def radtodeg(expr ang) =
-  ang * 180/PI;
+primarydef a cprod b =
+  ((xpart a / PT) * (ypart b / PT)) - ((xpart b / PT) * (ypart a / PT))
 enddef;
 
+def pmag expr p =
+  (xpart p * xpart p) + (ypart p * ypart p)
+enddef;
+
+def corr(expr a, b) =
+  sind(((a dprod b)/ PT) / ((pmag a) * (pmag b)) / PT)
+enddef;
   
-
+def acorr(expr a, b) =
+  1 / sind(
+      ((a dprod b)/ PT) / ((pmag a) * (pmag b)) / PT)
+enddef;
 
 %%% SHORTCUTS & SNIPPETS
 def lt:= left enddef;
@@ -161,9 +176,16 @@ def naa:= dir -APERTURE_ANGLE enddef;
 def dia:= dir INV_APERTURE_ANGLE enddef;
 def nia:= dir -INV_APERTURE_ANGLE enddef;
 
-
 def tsn = tension TSN enddef;
 def invtsn = tension (1 / TSN) enddef;
+
+def BAR_ADJ(expr a, b) =
+  BAR * acorr(a, b)
+enddef;
+
+def STEM_ADJ(expr a, b) =
+  STEM * acorr(a, b)
+    enddef;
 
   
 

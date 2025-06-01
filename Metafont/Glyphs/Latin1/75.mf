@@ -12,11 +12,10 @@ newchar(75, 5.8pt#, 0);
   x1l = LINE_BEARING; y1 = CAP_H;
   x2l = x1l; y2 = BASELINE;
   x3 = w - arm_x_delta; y3 = y1;
-  x5r = x3r; y5 = y2;
+  x5r = x3r; y5r = y2;
 
 penpos1(STEM, 0); penpos2(STEM, 0);
-
-x4l = x1r; y4 = 0.5 * CAP_H;
+  z4l = (x1r, 0.5 * CAP_H);
 
 penpos3(STEM, 0); penpos4(STEM, 0); penpos5(STEM, 0);
 
