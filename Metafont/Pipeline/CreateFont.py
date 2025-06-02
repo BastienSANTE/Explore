@@ -3,6 +3,7 @@
 import os
 import os.path
 import subprocess
+import shutil
 #import fontforge
 import time
 
@@ -29,7 +30,8 @@ def exportMFGlyphs(dict):
             subprocess.run(["mpost", "-mem=mfplain", fullpath])
             
             print(f"Moving {output_name} to export folder")
-            subprocess.run(["mv", output_name, (svgfolder)])
+            shutil.move(output_name, svgfolder + output_name)
+            #subprocess.run(["mv", output_name, (svgfolder)])
         else:
             print(f"File {fullpath} does not exist")
 

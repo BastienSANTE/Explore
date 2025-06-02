@@ -1,6 +1,6 @@
-This is MetaPost, version 2.02 (TeX Live 2022/Debian) (kpathsea version 6.3.4)  1 JUN 2025 23:49
+This is MetaPost, version 2.11 (TeX Live 2025) (kpathsea version 6.4.1)  2 JUN 2025 14:01
 **../Glyphs/Latin1/50.mf
-(/usr/share/texlive/texmf-dist/metapost/base/mfplain.mp
+(c:/texlive/2025/texmf-dist/metapost/base/mfplain.mp
 Preloading the plain base, version 0.99: preliminaries,
  basic constants and mathematical macros,
  macros for converting units,
@@ -135,9 +135,9 @@ f.currentpen;pen_bot:=ypart.penoffset.right.of.currentpen;path.currentpen_path;
 {true}
 {(false)=(true)}
 {false}
-{(5.5)*(1)}
-{WIDTH:=5.5}
-## WIDTH=5.5
+{(5.5)*(1.05)}
+{WIDTH:=5.77502}
+## WIDTH=5.77502
 {fi}
 {fi}
 
@@ -165,7 +165,7 @@ e(EXPR0)else:0fi;charwd:=(EXPR1);charht:=(EXPR2);chardp:=(EXPR3);w:=charwd*pt;h
 :=charht*pt;d:=chardp*pt;charic:=0;clearxy;clearit;clearpen;scantokens.extra_be
 ginchar;
 (EXPR0)<-50
-(EXPR1)<-5.5
+(EXPR1)<-5.77502
 (EXPR2)<-8
 (EXPR3)<-2.24
 {begingroup}
@@ -184,12 +184,12 @@ byte<primary>->begingroup.if.string(EXPR2):ASCII.fi(EXPR2)endgroup
 {false}
 {endgroup}
 {charcode:=50}
-{charwd:=5.5}
+{charwd:=5.77502}
 {charht:=8}
 {chardp:=2.24}
-{(5.5)*(49.80244)}
-{w:=273.91345}
-## w=273.91345
+{(5.77502)*(49.80244)}
+{w:=287.61034}
+## w=287.61034
 {(8)*(49.80244)}
 {h:=398.41956}
 ## h=398.41956
@@ -222,12 +222,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-1
 {begingroup}
 {endgroup}
-{(0.14)*(273.91345)}
-{(348.61711)*(0.17)}
-{(348.61711)-(59.26427)}
-{((x1,y1))=((38.34772,289.35284))}
-## y1=289.35284
-## x1=38.34772
+{(0.14)*(287.61034)}
+{(348.61711)*(0.2)}
+{(348.61711)-(69.72235)}
+{((x1,y1))=((40.26527,278.89476))}
+## y1=278.89476
+## x1=40.26527
 
 z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX0)<-
@@ -235,10 +235,10 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-2r
 {begingroup}
 {endgroup}
-{(0.455)*(273.91345)}
-{((x2r,y2r))=((124.63112,352.6014))}
+{(0.455)*(287.61034)}
+{((x2r,y2r))=((130.86324,352.6014))}
 ## y2r=352.6014
-## x2r=124.63112
+## x2r=130.86324
 
 z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX0)<-
@@ -246,11 +246,11 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-3r
 {begingroup}
 {endgroup}
-{(273.91345)-(39.8421)}
+{(287.61034)-(39.8421)}
 {(0.72)*(348.61711)}
-{((x3r,y3r))=((234.07135,251.00475))}
+{((x3r,y3r))=((247.76823,251.00475))}
 ## y3r=251.00475
-## x3r=234.07135
+## x3r=247.76823
 
 z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX0)<-
@@ -258,11 +258,11 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-4
 {begingroup}
 {endgroup}
-{(0.61)*(273.91345)}
+{(0.61)*(287.61034)}
 {(0.43)*(348.61711)}
-{((x4,y4))=((167.08737,149.9028))}
+{((x4,y4))=((175.44247,149.9028))}
 ## y4=149.9028
-## x4=167.08737
+## x4=175.44247
 
 z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX0)<-
@@ -290,9 +290,9 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-7l
 {begingroup}
 {endgroup}
-{((x7l,y7l))=((234.07135,0))}
+{((x7l,y7l))=((247.76823,0))}
 ## y7l=0
-## x7l=234.07135
+## x7l=247.76823
 
 penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
 2)l)=((EXPR3),0)rotated(EXPR4);x(SUFFIX2)=0.5(x(SUFFIX2)l+x(SUFFIX2)r);y(SUFFIX
@@ -300,30 +300,30 @@ penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
 (SUFFIX0)<-
 (SUFFIX1)<-penpos
 (SUFFIX2)<-1
-(EXPR3)<-25.49893
+(EXPR3)<-38.24869
 {(90)+(45)}
 (EXPR4)<-135
 {begingroup}
 {(x5l)-(x1l)}
 {(y1r)-(y1l)}
-{((25.49893,0))rotated(135)}
-{((linearform,linearform))=((-18.03049,18.03049))}
-## y1l=y1r-18.03049
-## x1l=x5l+18.03049
-{(x5l+18.03049)+(x5l)}
-{(0.5)*(2x5l+18.03049)}
-{(38.34772)=(x5l+9.01524)}
-## x5l=29.33247
-#### %CAPSULE0x5591a2223aa0=38.34772
-#### x1l=47.36296
-#### x6l=29.33247
-#### x1r=29.33247
-{(y1r-18.03049)+(y1r)}
-{(0.5)*(2y1r-18.03049)}
-{(289.35284)=(y1r-9.01524)}
-## y1r=298.36809
-#### %CAPSULE0x5591a22232a0=289.35284
-#### y1l=280.3376
+{((38.24869,0))rotated(135)}
+{((linearform,linearform))=((-27.04593,27.04593))}
+## y1l=y1r-27.04593
+## x1l=x5l+27.04593
+{(x5l+27.04593)+(x5l)}
+{(0.5)*(2x5l+27.04593)}
+{(40.26527)=(x5l+13.52296)}
+## x5l=26.74231
+#### %CAPSULE0000000004B644F0=40.26527
+#### x1l=53.78824
+#### x6l=26.74231
+#### x1r=26.74231
+{(y1r-27.04593)+(y1r)}
+{(0.5)*(2y1r-27.04593)}
+{(278.89476)=(y1r-13.52296)}
+## y1r=292.41772
+#### %CAPSULE0000000004B64190=278.89476
+#### y1l=265.3718
 {endgroup}
 
 penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
@@ -332,23 +332,23 @@ penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
 (SUFFIX0)<-
 (SUFFIX1)<-penpos
 (SUFFIX2)<-2
-(EXPR3)<-31.87354
+(EXPR3)<-47.81068
 (EXPR4)<-90
 {begingroup}
-{(124.63112)-(x2l)}
+{(130.86324)-(x2l)}
 {(352.6014)-(y2l)}
-{((31.87354,0))rotated(90)}
-{((-x2l+124.63112,-y2l+352.6014))=((0,31.87354))}
-## y2l=320.72786
-## x2l=124.63112
-{(124.63112)+(124.63112)}
-{(0.5)*(249.26224)}
-{(x2)=(124.63112)}
-## x2=124.63112
-{(320.72786)+(352.6014)}
-{(0.5)*(673.32925)}
-{(y2)=(336.66463)}
-## y2=336.66463
+{((47.81068,0))rotated(90)}
+{((-x2l+130.86324,-y2l+352.6014))=((0,47.81068))}
+## y2l=304.79071
+## x2l=130.86324
+{(130.86324)+(130.86324)}
+{(0.5)*(261.72647)}
+{(x2)=(130.86324)}
+## x2=130.86324
+{(304.79071)+(352.6014)}
+{(0.5)*(657.3921)}
+{(y2)=(328.69606)}
+## y2=328.69606
 {endgroup}
 
 penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
@@ -357,19 +357,19 @@ penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
 (SUFFIX0)<-
 (SUFFIX1)<-penpos
 (SUFFIX2)<-3
-(EXPR3)<-39.8421
+(EXPR3)<-63.74707
 (EXPR4)<-0
 {begingroup}
-{(234.07135)-(x3l)}
+{(247.76823)-(x3l)}
 {(251.00475)-(y3l)}
-{((39.8421,0))rotated(0)}
-{((-x3l+234.07135,-y3l+251.00475))=((39.8421,0))}
+{((63.74707,0))rotated(0)}
+{((-x3l+247.76823,-y3l+251.00475))=((63.74707,0))}
 ## y3l=251.00475
-## x3l=194.22925
-{(194.22925)+(234.07135)}
-{(0.5)*(428.3006)}
-{(x3)=(214.1503)}
-## x3=214.1503
+## x3l=184.02116
+{(184.02116)+(247.76823)}
+{(0.5)*(431.7894)}
+{(x3)=(215.8947)}
+## x3=215.8947
 {(251.00475)+(251.00475)}
 {(0.5)*(502.00949)}
 {(y3)=(251.00475)}
@@ -382,28 +382,28 @@ penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
 (SUFFIX0)<-
 (SUFFIX1)<-penpos
 (SUFFIX2)<-4
-(EXPR3)<-31.87354
+(EXPR3)<-47.81068
 {-(45)}
 (EXPR4)<--45
 {begingroup}
 {(x4r)-(x4l)}
 {(y4r)-(y4l)}
-{((31.87354,0))rotated(-45)}
-{((linearform,linearform))=((22.53801,-22.53801))}
-## y4l=y4r+22.53801
-## x4l=x4r-22.53801
-{(x4r-22.53801)+(x4r)}
-{(0.5)*(2x4r-22.53801)}
-{(167.08737)=(x4r-11.26901)}
-## x4r=178.35638
-#### %CAPSULE0x5591a2222eb0=167.08737
-#### x4l=155.81837
-{(y4r+22.53801)+(y4r)}
-{(0.5)*(2y4r+22.53801)}
-{(149.9028)=(y4r+11.26901)}
-## y4r=138.63379
-#### %CAPSULE0x5591a22245e0=149.9028
-#### y4l=161.1718
+{((47.81068,0))rotated(-45)}
+{((linearform,linearform))=((33.8073,-33.8073))}
+## y4l=y4r+33.8073
+## x4l=x4r-33.8073
+{(x4r-33.8073)+(x4r)}
+{(0.5)*(2x4r-33.8073)}
+{(175.44247)=(x4r-16.90366)}
+## x4r=192.34613
+#### %CAPSULE0000000004B635C0=175.44247
+#### x4l=158.53883
+{(y4r+33.8073)+(y4r)}
+{(0.5)*(2y4r+33.8073)}
+{(149.9028)=(y4r+16.90366)}
+## y4r=132.99915
+#### %CAPSULE0000000004B65DC0=149.9028
+#### y4l=166.80644
 {endgroup}
 
 penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
@@ -412,24 +412,24 @@ penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
 (SUFFIX0)<-
 (SUFFIX1)<-penpos
 (SUFFIX2)<-5
-(EXPR3)<-31.87354
+(EXPR3)<-47.81068
 {-(45)}
 (EXPR4)<--45
 {begingroup}
-{(x5r)-(29.33247)}
+{(x5r)-(26.74231)}
 {(y5r)-(y5l)}
-{((31.87354,0))rotated(-45)}
-{((x5r-29.33247,linearform))=((22.53801,-22.53801))}
-## y5r=y5l-22.53801
-## x5r=51.87048
-{(29.33247)+(51.87048)}
-{(0.5)*(81.20296)}
-{(x5)=(40.60149)}
-## x5=40.60149
-{(y5l)+(y5l-22.53801)}
-{(0.5)*(2y5l-22.53801)}
-{(y5)=(y5l-11.26901)}
-## y5=y5l-11.26901
+{((47.81068,0))rotated(-45)}
+{((x5r-26.74231,linearform))=((33.8073,-33.8073))}
+## y5r=y5l-33.8073
+## x5r=60.5496
+{(26.74231)+(60.5496)}
+{(0.5)*(87.29192)}
+{(x5)=(43.64597)}
+## x5=43.64597
+{(y5l)+(y5l-33.8073)}
+{(0.5)*(2y5l-33.8073)}
+{(y5)=(y5l-16.90366)}
+## y5=y5l-16.90366
 {endgroup}
 
 penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
@@ -438,26 +438,26 @@ penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
 (SUFFIX0)<-
 (SUFFIX1)<-penpos
 (SUFFIX2)<-6
-(EXPR3)<-39.8421
+(EXPR3)<-63.74707
 (EXPR4)<-90
 {begingroup}
-{(x6r)-(29.33247)}
+{(x6r)-(26.74231)}
 {(y5l)-(0)}
-{((39.8421,0))rotated(90)}
-{((x6r-29.33247,y5l))=((0,39.8421))}
-## y5l=39.8421
-#### y5=28.57309
-#### y5r=17.3041
-#### y6r=39.8421
-## x6r=29.33247
-{(29.33247)+(29.33247)}
-{(0.5)*(58.66495)}
-{(x6)=(29.33247)}
-## x6=29.33247
-{(0)+(39.8421)}
-{(0.5)*(39.8421)}
-{(y6)=(19.92105)}
-## y6=19.92105
+{((63.74707,0))rotated(90)}
+{((x6r-26.74231,y5l))=((0,63.74707))}
+## y5l=63.74707
+#### y5=46.84341
+#### y5r=29.93977
+#### y6r=63.74707
+## x6r=26.74231
+{(26.74231)+(26.74231)}
+{(0.5)*(53.48462)}
+{(x6)=(26.74231)}
+## x6=26.74231
+{(0)+(63.74707)}
+{(0.5)*(63.74707)}
+{(y6)=(31.87354)}
+## y6=31.87354
 {endgroup}
 
 penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
@@ -466,23 +466,23 @@ penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
 (SUFFIX0)<-
 (SUFFIX1)<-penpos
 (SUFFIX2)<-7
-(EXPR3)<-39.8421
+(EXPR3)<-63.74707
 (EXPR4)<-90
 {begingroup}
-{(x7r)-(234.07135)}
+{(x7r)-(247.76823)}
 {(y7r)-(0)}
-{((39.8421,0))rotated(90)}
-{((x7r-234.07135,y7r))=((0,39.8421))}
-## y7r=39.8421
-## x7r=234.07135
-{(234.07135)+(234.07135)}
-{(0.5)*(468.1427)}
-{(x7)=(234.07135)}
-## x7=234.07135
-{(0)+(39.8421)}
-{(0.5)*(39.8421)}
-{(y7)=(19.92105)}
-## y7=19.92105
+{((63.74707,0))rotated(90)}
+{((x7r-247.76823,y7r))=((0,63.74707))}
+## y7r=63.74707
+## x7r=247.76823
+{(247.76823)+(247.76823)}
+{(0.5)*(495.53647)}
+{(x7)=(247.76823)}
+## x7=247.76823
+{(0)+(63.74707)}
+{(0.5)*(63.74707)}
+{(y7)=(31.87354)}
+## y7=31.87354
 {endgroup}
 
 fill<expr>->addto.currentpicture.contour(EXPR0)t_.pc_
@@ -599,34 +599,33 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 {begingroup}
 {endgroup}
 Path at line 22, before choices:
-(29.33247,298.36809){2896.30943,2896.30934}..tension 0.9
- ..{4096,0}(124.63112,352.6014){4096,0}..tension 0.9
- ..{0,-4096}(234.07135,251.00475){0,-4096}
- ..(178.35638,138.63379)..tension 4095.99998
- ..{curl 1}(51.87048,17.3041){curl 1}
- ..{curl 1}(29.33247,39.8421){curl 1}..tension 4095.99998
- ..(155.81837,161.1718)
- ..{0,4096}(194.22925,251.00475){0,4096}..tension 0.9
- ..{-4096,0}(124.63112,320.72786){-4096,0}..tension 0.9
- ..{-2896.30943,-2896.30934}(47.36296,280.3376){curl 1}
+(26.74231,292.41772){2896.30943,2896.30934}..tension 0.9
+ ..{4096,0}(130.86324,352.6014){4096,0}..tension 0.9
+ ..{0,-4096}(247.76823,251.00475){0,-4096}
+ ..(192.34613,132.99915)..tension 4095.99998
+ ..{curl 1}(60.5496,29.93977){curl 1}
+ ..{curl 1}(26.74231,63.74707){curl 1}..tension 4095.99998
+ ..(158.53883,166.80644)
+ ..{0,4096}(184.02116,251.00475){0,4096}..tension 0.9
+ ..{-4096,0}(130.86324,304.79071){-4096,0}..tension 0.9
+ ..{-2896.30943,-2896.30934}(53.78824,265.3718){curl 1}
  ..{curl 1}cycle
 
 Path at line 22, after choices:
-(29.33247,298.36809)..controls (59.3465,328.38211) and (82.32594,352.6014)
- ..(124.63112,352.6014)..controls (190.2623,352.6014) and (234.07135,314.99768)
- ..(234.07135,251.00475)..controls (234.07135,207.47879) and (209.85657,168.849
-85)
- ..(178.35638,138.63379)..controls (178.34608,138.62392) and (51.88078,17.31396
+(26.74231,292.41772)..controls (59.67361,325.34904) and (84.44191,352.6014)
+ ..(130.86324,352.6014)..controls (199.71008,352.6014) and (247.76823,316.68558
 )
- ..(51.87048,17.3041)..controls (44.35782,24.81676) and (36.84514,32.32944)
- ..(29.33247,39.8421)..controls (29.34277,39.85197) and (155.80807,161.16193)
- ..(155.81837,161.1718)..controls (180.30243,184.65776) and (194.22925,217.0792
-2)
- ..(194.22925,251.00475)..controls (194.22925,293.76538) and (167.36555,320.727
-86)
- ..(124.63112,320.72786)..controls (91.05138,320.72786) and (71.18327,304.15791
-)
- ..(47.36296,280.3376)..controls (41.3528,286.34776) and (35.34264,292.35793)
+ ..(247.76823,251.00475)..controls (247.76823,205.19783) and (228.37846,161.174
+93)
+ ..(192.34613,132.99915)..controls (192.3354,132.99075) and (60.56033,29.94817)
+ ..(60.5496,29.93977)..controls (49.2805,41.20888) and (38.01141,52.47797)
+ ..(26.74231,63.74707)..controls (26.75304,63.75546) and (158.5281,166.79805)
+ ..(158.53883,166.80644)..controls (182.88692,185.84563) and (184.02116,219.772
+02)
+ ..(184.02116,251.00475)..controls (184.02116,283.88461) and (163.61143,304.790
+71)
+ ..(130.86324,304.79071)..controls (97.53052,304.79071) and (77.4292,289.01276)
+ ..(53.78824,265.3718)..controls (44.77293,274.3871) and (35.75761,283.40242)
  ..cycle
 
 (EXPR0)<-path
@@ -692,17 +691,17 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 {begingroup}
 {endgroup}
 Path at line 24, before choices:
-(29.33247,0){curl 1}
- ..{curl 1}(234.07135,0){curl 1}
- ..{curl 1}(234.07135,39.8421){curl 1}
- ..{curl 1}(29.33247,39.8421){curl 1}
+(26.74231,0){curl 1}
+ ..{curl 1}(247.76823,0){curl 1}
+ ..{curl 1}(247.76823,63.74707){curl 1}
+ ..{curl 1}(26.74231,63.74707){curl 1}
  ..{curl 1}cycle
 
 Path at line 24, after choices:
-(29.33247,0)..controls (97.57877,0) and (165.82506,0)
- ..(234.07135,0)..controls (234.07135,13.2807) and (234.07135,26.5614)
- ..(234.07135,39.8421)..controls (165.82506,39.8421) and (97.57877,39.8421)
- ..(29.33247,39.8421)..controls (29.33247,26.5614) and (29.33247,13.2807)
+(26.74231,0)..controls (100.41762,0) and (174.09293,0)
+ ..(247.76823,0)..controls (247.76823,21.24902) and (247.76823,42.49805)
+ ..(247.76823,63.74707)..controls (174.09293,63.74707) and (100.41762,63.74707)
+ ..(26.74231,63.74707)..controls (26.74231,42.49805) and (26.74231,21.24902)
  ..cycle
 
 (EXPR0)<-path
@@ -789,12 +788,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-1l
 {begingroup}
 {endgroup}
-(EXPR4)<-(47.36296,280.3376)
+(EXPR4)<-(53.78824,265.3718)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((47.36296,280.3376))}
+{known((53.78824,265.3718))}
 {true}
 {("1l")infont("cmr10")}
 {(1)/(0.72015)}
@@ -805,10 +804,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((47.36296,280.3376))transformed((0,0,1,0,0,1))}
+{((53.78824,265.3718))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((47.36296,280.3376))+((0,4.16577))}
+{((53.78824,265.3718))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((10.75987,0))}
 {ulcorner(picture)}
@@ -819,8 +818,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((5.37994,0))+((0,0))}
-{((47.36296,284.50337))-((5.37994,0))}
-{(picture)shifted((41.98302,284.50337))}
+{((53.78824,269.53757))-((5.37994,0))}
+{(picture)shifted((48.4083,269.53757))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -836,14 +835,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(47.36296,280.3376)
+(EXPR0)<-(53.78824,265.3718)
 {addto}
 {if}
-{picture((47.36296,280.3376))}
+{picture((53.78824,265.3718))}
 {false}
 
 t_->transformed.currenttransform
-{((47.36296,280.3376))transformed((0,0,1,0,0,1))}
+{((53.78824,265.3718))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -876,12 +875,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-2l
 {begingroup}
 {endgroup}
-(EXPR4)<-(124.63112,320.72786)
+(EXPR4)<-(130.86324,304.79071)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((124.63112,320.72786))}
+{known((130.86324,304.79071))}
 {true}
 {("2l")infont("cmr10")}
 {(1)/(0.72015)}
@@ -892,10 +891,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((124.63112,320.72786))transformed((0,0,1,0,0,1))}
+{((130.86324,304.79071))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((124.63112,320.72786))+((0,4.16577))}
+{((130.86324,304.79071))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((10.75987,0))}
 {ulcorner(picture)}
@@ -906,8 +905,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((5.37994,0))+((0,0))}
-{((124.63112,324.89363))-((5.37994,0))}
-{(picture)shifted((119.25117,324.89363))}
+{((130.86324,308.95648))-((5.37994,0))}
+{(picture)shifted((125.48329,308.95648))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -923,14 +922,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(124.63112,320.72786)
+(EXPR0)<-(130.86324,304.79071)
 {addto}
 {if}
-{picture((124.63112,320.72786))}
+{picture((130.86324,304.79071))}
 {false}
 
 t_->transformed.currenttransform
-{((124.63112,320.72786))transformed((0,0,1,0,0,1))}
+{((130.86324,304.79071))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -963,12 +962,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-3l
 {begingroup}
 {endgroup}
-(EXPR4)<-(194.22925,251.00475)
+(EXPR4)<-(184.02116,251.00475)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((194.22925,251.00475))}
+{known((184.02116,251.00475))}
 {true}
 {("3l")infont("cmr10")}
 {(1)/(0.72015)}
@@ -979,10 +978,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((194.22925,251.00475))transformed((0,0,1,0,0,1))}
+{((184.02116,251.00475))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((194.22925,251.00475))+((0,4.16577))}
+{((184.02116,251.00475))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((10.75987,0))}
 {ulcorner(picture)}
@@ -993,8 +992,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((5.37994,0))+((0,0))}
-{((194.22925,255.17052))-((5.37994,0))}
-{(picture)shifted((188.8493,255.17052))}
+{((184.02116,255.17052))-((5.37994,0))}
+{(picture)shifted((178.64122,255.17052))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -1010,14 +1009,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(194.22925,251.00475)
+(EXPR0)<-(184.02116,251.00475)
 {addto}
 {if}
-{picture((194.22925,251.00475))}
+{picture((184.02116,251.00475))}
 {false}
 
 t_->transformed.currenttransform
-{((194.22925,251.00475))transformed((0,0,1,0,0,1))}
+{((184.02116,251.00475))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -1050,12 +1049,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-4l
 {begingroup}
 {endgroup}
-(EXPR4)<-(155.81837,161.1718)
+(EXPR4)<-(158.53883,166.80644)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((155.81837,161.1718))}
+{known((158.53883,166.80644))}
 {true}
 {("4l")infont("cmr10")}
 {(1)/(0.72015)}
@@ -1066,10 +1065,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((155.81837,161.1718))transformed((0,0,1,0,0,1))}
+{((158.53883,166.80644))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((155.81837,161.1718))+((0,4.16577))}
+{((158.53883,166.80644))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((10.75987,0))}
 {ulcorner(picture)}
@@ -1080,8 +1079,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((5.37994,0))+((0,0))}
-{((155.81837,165.33757))-((5.37994,0))}
-{(picture)shifted((150.43843,165.33757))}
+{((158.53883,170.97221))-((5.37994,0))}
+{(picture)shifted((153.15889,170.97221))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -1097,14 +1096,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(155.81837,161.1718)
+(EXPR0)<-(158.53883,166.80644)
 {addto}
 {if}
-{picture((155.81837,161.1718))}
+{picture((158.53883,166.80644))}
 {false}
 
 t_->transformed.currenttransform
-{((155.81837,161.1718))transformed((0,0,1,0,0,1))}
+{((158.53883,166.80644))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -1137,12 +1136,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-5l
 {begingroup}
 {endgroup}
-(EXPR4)<-(29.33247,39.8421)
+(EXPR4)<-(26.74231,63.74707)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((29.33247,39.8421))}
+{known((26.74231,63.74707))}
 {true}
 {("5l")infont("cmr10")}
 {(1)/(0.72015)}
@@ -1153,10 +1152,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((29.33247,39.8421))transformed((0,0,1,0,0,1))}
+{((26.74231,63.74707))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((29.33247,39.8421))+((0,4.16577))}
+{((26.74231,63.74707))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((10.75987,0))}
 {ulcorner(picture)}
@@ -1167,8 +1166,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((5.37994,0))+((0,0))}
-{((29.33247,44.00787))-((5.37994,0))}
-{(picture)shifted((23.95253,44.00787))}
+{((26.74231,67.91284))-((5.37994,0))}
+{(picture)shifted((21.36237,67.91284))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -1184,14 +1183,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(29.33247,39.8421)
+(EXPR0)<-(26.74231,63.74707)
 {addto}
 {if}
-{picture((29.33247,39.8421))}
+{picture((26.74231,63.74707))}
 {false}
 
 t_->transformed.currenttransform
-{((29.33247,39.8421))transformed((0,0,1,0,0,1))}
+{((26.74231,63.74707))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -1224,12 +1223,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-6l
 {begingroup}
 {endgroup}
-(EXPR4)<-(29.33247,0)
+(EXPR4)<-(26.74231,0)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((29.33247,0))}
+{known((26.74231,0))}
 {true}
 {("6l")infont("cmr10")}
 {(1)/(0.72015)}
@@ -1240,10 +1239,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((29.33247,0))transformed((0,0,1,0,0,1))}
+{((26.74231,0))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((29.33247,0))+((0,4.16577))}
+{((26.74231,0))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((10.75987,0))}
 {ulcorner(picture)}
@@ -1254,8 +1253,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((5.37994,0))+((0,0))}
-{((29.33247,4.16577))-((5.37994,0))}
-{(picture)shifted((23.95253,4.16577))}
+{((26.74231,4.16577))-((5.37994,0))}
+{(picture)shifted((21.36237,4.16577))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -1271,14 +1270,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(29.33247,0)
+(EXPR0)<-(26.74231,0)
 {addto}
 {if}
-{picture((29.33247,0))}
+{picture((26.74231,0))}
 {false}
 
 t_->transformed.currenttransform
-{((29.33247,0))transformed((0,0,1,0,0,1))}
+{((26.74231,0))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -1311,12 +1310,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-7l
 {begingroup}
 {endgroup}
-(EXPR4)<-(234.07135,0)
+(EXPR4)<-(247.76823,0)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((234.07135,0))}
+{known((247.76823,0))}
 {true}
 {("7l")infont("cmr10")}
 {(1)/(0.72015)}
@@ -1327,10 +1326,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((234.07135,0))transformed((0,0,1,0,0,1))}
+{((247.76823,0))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((234.07135,0))+((0,4.16577))}
+{((247.76823,0))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((10.75987,0))}
 {ulcorner(picture)}
@@ -1341,8 +1340,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((5.37994,0))+((0,0))}
-{((234.07135,4.16577))-((5.37994,0))}
-{(picture)shifted((228.6914,4.16577))}
+{((247.76823,4.16577))-((5.37994,0))}
+{(picture)shifted((242.38829,4.16577))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -1358,14 +1357,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(234.07135,0)
+(EXPR0)<-(247.76823,0)
 {addto}
 {if}
-{picture((234.07135,0))}
+{picture((247.76823,0))}
 {false}
 
 t_->transformed.currenttransform
-{((234.07135,0))transformed((0,0,1,0,0,1))}
+{((247.76823,0))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -1443,12 +1442,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-1
 {begingroup}
 {endgroup}
-(EXPR4)<-(38.34772,289.35284)
+(EXPR4)<-(40.26527,278.89476)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((38.34772,289.35284))}
+{known((40.26527,278.89476))}
 {true}
 {("1")infont("cmr10")}
 {(1)/(0.72015)}
@@ -1459,10 +1458,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((38.34772,289.35284))transformed((0,0,1,0,0,1))}
+{((40.26527,278.89476))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((38.34772,289.35284))+((0,4.16577))}
+{((40.26527,278.89476))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((6.91707,0))}
 {ulcorner(picture)}
@@ -1473,8 +1472,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((3.45854,0))+((0,0))}
-{((38.34772,293.51862))-((3.45854,0))}
-{(picture)shifted((34.88918,293.51862))}
+{((40.26527,283.06053))-((3.45854,0))}
+{(picture)shifted((36.80673,283.06053))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -1490,14 +1489,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(38.34772,289.35284)
+(EXPR0)<-(40.26527,278.89476)
 {addto}
 {if}
-{picture((38.34772,289.35284))}
+{picture((40.26527,278.89476))}
 {false}
 
 t_->transformed.currenttransform
-{((38.34772,289.35284))transformed((0,0,1,0,0,1))}
+{((40.26527,278.89476))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -1530,12 +1529,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-2
 {begingroup}
 {endgroup}
-(EXPR4)<-(124.63112,336.66463)
+(EXPR4)<-(130.86324,328.69606)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((124.63112,336.66463))}
+{known((130.86324,328.69606))}
 {true}
 {("2")infont("cmr10")}
 {(1)/(0.72015)}
@@ -1546,10 +1545,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((124.63112,336.66463))transformed((0,0,1,0,0,1))}
+{((130.86324,328.69606))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((124.63112,336.66463))+((0,4.16577))}
+{((130.86324,328.69606))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((6.91707,0))}
 {ulcorner(picture)}
@@ -1560,8 +1559,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((3.45854,0))+((0,0))}
-{((124.63112,340.8304))-((3.45854,0))}
-{(picture)shifted((121.17258,340.8304))}
+{((130.86324,332.86183))-((3.45854,0))}
+{(picture)shifted((127.4047,332.86183))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -1577,14 +1576,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(124.63112,336.66463)
+(EXPR0)<-(130.86324,328.69606)
 {addto}
 {if}
-{picture((124.63112,336.66463))}
+{picture((130.86324,328.69606))}
 {false}
 
 t_->transformed.currenttransform
-{((124.63112,336.66463))transformed((0,0,1,0,0,1))}
+{((130.86324,328.69606))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -1617,12 +1616,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-3
 {begingroup}
 {endgroup}
-(EXPR4)<-(214.1503,251.00475)
+(EXPR4)<-(215.8947,251.00475)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((214.1503,251.00475))}
+{known((215.8947,251.00475))}
 {true}
 {("3")infont("cmr10")}
 {(1)/(0.72015)}
@@ -1633,10 +1632,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((214.1503,251.00475))transformed((0,0,1,0,0,1))}
+{((215.8947,251.00475))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((214.1503,251.00475))+((0,4.16577))}
+{((215.8947,251.00475))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((6.91707,0))}
 {ulcorner(picture)}
@@ -1647,8 +1646,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((3.45854,0))+((0,0))}
-{((214.1503,255.17052))-((3.45854,0))}
-{(picture)shifted((210.69176,255.17052))}
+{((215.8947,255.17052))-((3.45854,0))}
+{(picture)shifted((212.43616,255.17052))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -1664,14 +1663,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(214.1503,251.00475)
+(EXPR0)<-(215.8947,251.00475)
 {addto}
 {if}
-{picture((214.1503,251.00475))}
+{picture((215.8947,251.00475))}
 {false}
 
 t_->transformed.currenttransform
-{((214.1503,251.00475))transformed((0,0,1,0,0,1))}
+{((215.8947,251.00475))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -1704,12 +1703,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-4
 {begingroup}
 {endgroup}
-(EXPR4)<-(167.08737,149.9028)
+(EXPR4)<-(175.44247,149.9028)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((167.08737,149.9028))}
+{known((175.44247,149.9028))}
 {true}
 {("4")infont("cmr10")}
 {(1)/(0.72015)}
@@ -1720,10 +1719,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((167.08737,149.9028))transformed((0,0,1,0,0,1))}
+{((175.44247,149.9028))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((167.08737,149.9028))+((0,4.16577))}
+{((175.44247,149.9028))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((6.91707,0))}
 {ulcorner(picture)}
@@ -1734,8 +1733,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((3.45854,0))+((0,0))}
-{((167.08737,154.06857))-((3.45854,0))}
-{(picture)shifted((163.62883,154.06857))}
+{((175.44247,154.06857))-((3.45854,0))}
+{(picture)shifted((171.98393,154.06857))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -1751,14 +1750,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(167.08737,149.9028)
+(EXPR0)<-(175.44247,149.9028)
 {addto}
 {if}
-{picture((167.08737,149.9028))}
+{picture((175.44247,149.9028))}
 {false}
 
 t_->transformed.currenttransform
-{((167.08737,149.9028))transformed((0,0,1,0,0,1))}
+{((175.44247,149.9028))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -1791,12 +1790,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-5
 {begingroup}
 {endgroup}
-(EXPR4)<-(40.60149,28.57309)
+(EXPR4)<-(43.64597,46.84341)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((40.60149,28.57309))}
+{known((43.64597,46.84341))}
 {true}
 {("5")infont("cmr10")}
 {(1)/(0.72015)}
@@ -1807,10 +1806,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((40.60149,28.57309))transformed((0,0,1,0,0,1))}
+{((43.64597,46.84341))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((40.60149,28.57309))+((0,4.16577))}
+{((43.64597,46.84341))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((6.91707,0))}
 {ulcorner(picture)}
@@ -1821,8 +1820,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((3.45854,0))+((0,0))}
-{((40.60149,32.73886))-((3.45854,0))}
-{(picture)shifted((37.14294,32.73886))}
+{((43.64597,51.00919))-((3.45854,0))}
+{(picture)shifted((40.18742,51.00919))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -1838,14 +1837,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(40.60149,28.57309)
+(EXPR0)<-(43.64597,46.84341)
 {addto}
 {if}
-{picture((40.60149,28.57309))}
+{picture((43.64597,46.84341))}
 {false}
 
 t_->transformed.currenttransform
-{((40.60149,28.57309))transformed((0,0,1,0,0,1))}
+{((43.64597,46.84341))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -1878,12 +1877,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-6
 {begingroup}
 {endgroup}
-(EXPR4)<-(29.33247,19.92105)
+(EXPR4)<-(26.74231,31.87354)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((29.33247,19.92105))}
+{known((26.74231,31.87354))}
 {true}
 {("6")infont("cmr10")}
 {(1)/(0.72015)}
@@ -1894,10 +1893,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((29.33247,19.92105))transformed((0,0,1,0,0,1))}
+{((26.74231,31.87354))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((29.33247,19.92105))+((0,4.16577))}
+{((26.74231,31.87354))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((6.91707,0))}
 {ulcorner(picture)}
@@ -1908,8 +1907,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((3.45854,0))+((0,0))}
-{((29.33247,24.08682))-((3.45854,0))}
-{(picture)shifted((25.87393,24.08682))}
+{((26.74231,36.0393))-((3.45854,0))}
+{(picture)shifted((23.28377,36.0393))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -1925,14 +1924,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(29.33247,19.92105)
+(EXPR0)<-(26.74231,31.87354)
 {addto}
 {if}
-{picture((29.33247,19.92105))}
+{picture((26.74231,31.87354))}
 {false}
 
 t_->transformed.currenttransform
-{((29.33247,19.92105))transformed((0,0,1,0,0,1))}
+{((26.74231,31.87354))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -1965,12 +1964,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-7
 {begingroup}
 {endgroup}
-(EXPR4)<-(234.07135,19.92105)
+(EXPR4)<-(247.76823,31.87354)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((234.07135,19.92105))}
+{known((247.76823,31.87354))}
 {true}
 {("7")infont("cmr10")}
 {(1)/(0.72015)}
@@ -1981,10 +1980,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((234.07135,19.92105))transformed((0,0,1,0,0,1))}
+{((247.76823,31.87354))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((234.07135,19.92105))+((0,4.16577))}
+{((247.76823,31.87354))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((6.91707,0))}
 {ulcorner(picture)}
@@ -1995,8 +1994,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((3.45854,0))+((0,0))}
-{((234.07135,24.08682))-((3.45854,0))}
-{(picture)shifted((230.61281,24.08682))}
+{((247.76823,36.0393))-((3.45854,0))}
+{(picture)shifted((244.3097,36.0393))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -2012,14 +2011,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(234.07135,19.92105)
+(EXPR0)<-(247.76823,31.87354)
 {addto}
 {if}
-{picture((234.07135,19.92105))}
+{picture((247.76823,31.87354))}
 {false}
 
 t_->transformed.currenttransform
-{((234.07135,19.92105))transformed((0,0,1,0,0,1))}
+{((247.76823,31.87354))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -2097,12 +2096,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-1r
 {begingroup}
 {endgroup}
-(EXPR4)<-(29.33247,298.36809)
+(EXPR4)<-(26.74231,292.41772)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((29.33247,298.36809))}
+{known((26.74231,292.41772))}
 {true}
 {("1r")infont("cmr10")}
 {(1)/(0.72015)}
@@ -2113,10 +2112,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((29.33247,298.36809))transformed((0,0,1,0,0,1))}
+{((26.74231,292.41772))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((29.33247,298.36809))+((0,4.16577))}
+{((26.74231,292.41772))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((12.33543,0))}
 {ulcorner(picture)}
@@ -2127,8 +2126,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((6.16772,0))+((0,0))}
-{((29.33247,302.53386))-((6.16772,0))}
-{(picture)shifted((23.16475,302.53386))}
+{((26.74231,296.5835))-((6.16772,0))}
+{(picture)shifted((20.57458,296.5835))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -2144,14 +2143,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(29.33247,298.36809)
+(EXPR0)<-(26.74231,292.41772)
 {addto}
 {if}
-{picture((29.33247,298.36809))}
+{picture((26.74231,292.41772))}
 {false}
 
 t_->transformed.currenttransform
-{((29.33247,298.36809))transformed((0,0,1,0,0,1))}
+{((26.74231,292.41772))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -2184,12 +2183,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-2r
 {begingroup}
 {endgroup}
-(EXPR4)<-(124.63112,352.6014)
+(EXPR4)<-(130.86324,352.6014)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((124.63112,352.6014))}
+{known((130.86324,352.6014))}
 {true}
 {("2r")infont("cmr10")}
 {(1)/(0.72015)}
@@ -2200,10 +2199,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((124.63112,352.6014))transformed((0,0,1,0,0,1))}
+{((130.86324,352.6014))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((124.63112,352.6014))+((0,4.16577))}
+{((130.86324,352.6014))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((12.33543,0))}
 {ulcorner(picture)}
@@ -2214,8 +2213,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((6.16772,0))+((0,0))}
-{((124.63112,356.76717))-((6.16772,0))}
-{(picture)shifted((118.4634,356.76717))}
+{((130.86324,356.76717))-((6.16772,0))}
+{(picture)shifted((124.69551,356.76717))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -2231,14 +2230,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(124.63112,352.6014)
+(EXPR0)<-(130.86324,352.6014)
 {addto}
 {if}
-{picture((124.63112,352.6014))}
+{picture((130.86324,352.6014))}
 {false}
 
 t_->transformed.currenttransform
-{((124.63112,352.6014))transformed((0,0,1,0,0,1))}
+{((130.86324,352.6014))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -2271,12 +2270,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-3r
 {begingroup}
 {endgroup}
-(EXPR4)<-(234.07135,251.00475)
+(EXPR4)<-(247.76823,251.00475)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((234.07135,251.00475))}
+{known((247.76823,251.00475))}
 {true}
 {("3r")infont("cmr10")}
 {(1)/(0.72015)}
@@ -2287,10 +2286,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((234.07135,251.00475))transformed((0,0,1,0,0,1))}
+{((247.76823,251.00475))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((234.07135,251.00475))+((0,4.16577))}
+{((247.76823,251.00475))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((12.33543,0))}
 {ulcorner(picture)}
@@ -2301,8 +2300,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((6.16772,0))+((0,0))}
-{((234.07135,255.17052))-((6.16772,0))}
-{(picture)shifted((227.90363,255.17052))}
+{((247.76823,255.17052))-((6.16772,0))}
+{(picture)shifted((241.60051,255.17052))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -2318,14 +2317,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(234.07135,251.00475)
+(EXPR0)<-(247.76823,251.00475)
 {addto}
 {if}
-{picture((234.07135,251.00475))}
+{picture((247.76823,251.00475))}
 {false}
 
 t_->transformed.currenttransform
-{((234.07135,251.00475))transformed((0,0,1,0,0,1))}
+{((247.76823,251.00475))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -2358,12 +2357,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-4r
 {begingroup}
 {endgroup}
-(EXPR4)<-(178.35638,138.63379)
+(EXPR4)<-(192.34613,132.99915)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((178.35638,138.63379))}
+{known((192.34613,132.99915))}
 {true}
 {("4r")infont("cmr10")}
 {(1)/(0.72015)}
@@ -2374,10 +2373,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((178.35638,138.63379))transformed((0,0,1,0,0,1))}
+{((192.34613,132.99915))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((178.35638,138.63379))+((0,4.16577))}
+{((192.34613,132.99915))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((12.33543,0))}
 {ulcorner(picture)}
@@ -2388,8 +2387,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((6.16772,0))+((0,0))}
-{((178.35638,142.79956))-((6.16772,0))}
-{(picture)shifted((172.18866,142.79956))}
+{((192.34613,137.16492))-((6.16772,0))}
+{(picture)shifted((186.1784,137.16492))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -2405,14 +2404,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(178.35638,138.63379)
+(EXPR0)<-(192.34613,132.99915)
 {addto}
 {if}
-{picture((178.35638,138.63379))}
+{picture((192.34613,132.99915))}
 {false}
 
 t_->transformed.currenttransform
-{((178.35638,138.63379))transformed((0,0,1,0,0,1))}
+{((192.34613,132.99915))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -2445,12 +2444,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-5r
 {begingroup}
 {endgroup}
-(EXPR4)<-(51.87048,17.3041)
+(EXPR4)<-(60.5496,29.93977)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((51.87048,17.3041))}
+{known((60.5496,29.93977))}
 {true}
 {("5r")infont("cmr10")}
 {(1)/(0.72015)}
@@ -2461,10 +2460,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((51.87048,17.3041))transformed((0,0,1,0,0,1))}
+{((60.5496,29.93977))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((51.87048,17.3041))+((0,4.16577))}
+{((60.5496,29.93977))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((12.33543,0))}
 {ulcorner(picture)}
@@ -2475,8 +2474,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((6.16772,0))+((0,0))}
-{((51.87048,21.46986))-((6.16772,0))}
-{(picture)shifted((45.70276,21.46986))}
+{((60.5496,34.10555))-((6.16772,0))}
+{(picture)shifted((54.38188,34.10555))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -2492,14 +2491,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(51.87048,17.3041)
+(EXPR0)<-(60.5496,29.93977)
 {addto}
 {if}
-{picture((51.87048,17.3041))}
+{picture((60.5496,29.93977))}
 {false}
 
 t_->transformed.currenttransform
-{((51.87048,17.3041))transformed((0,0,1,0,0,1))}
+{((60.5496,29.93977))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -2532,12 +2531,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-6r
 {begingroup}
 {endgroup}
-(EXPR4)<-(29.33247,39.8421)
+(EXPR4)<-(26.74231,63.74707)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((29.33247,39.8421))}
+{known((26.74231,63.74707))}
 {true}
 {("6r")infont("cmr10")}
 {(1)/(0.72015)}
@@ -2548,10 +2547,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((29.33247,39.8421))transformed((0,0,1,0,0,1))}
+{((26.74231,63.74707))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((29.33247,39.8421))+((0,4.16577))}
+{((26.74231,63.74707))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((12.33543,0))}
 {ulcorner(picture)}
@@ -2562,8 +2561,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((6.16772,0))+((0,0))}
-{((29.33247,44.00787))-((6.16772,0))}
-{(picture)shifted((23.16475,44.00787))}
+{((26.74231,67.91284))-((6.16772,0))}
+{(picture)shifted((20.57458,67.91284))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -2579,14 +2578,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(29.33247,39.8421)
+(EXPR0)<-(26.74231,63.74707)
 {addto}
 {if}
-{picture((29.33247,39.8421))}
+{picture((26.74231,63.74707))}
 {false}
 
 t_->transformed.currenttransform
-{((29.33247,39.8421))transformed((0,0,1,0,0,1))}
+{((26.74231,63.74707))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -2619,12 +2618,12 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 (SUFFIX2)<-7r
 {begingroup}
 {endgroup}
-(EXPR4)<-(234.07135,39.8421)
+(EXPR4)<-(247.76823,63.74707)
 {begingroup}
 {save}
 {picture}
 {if}
-{known((234.07135,39.8421))}
+{known((247.76823,63.74707))}
 {true}
 {("7r")infont("cmr10")}
 {(1)/(0.72015)}
@@ -2635,10 +2634,10 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 
 t_->transformed.currenttransform
-{((234.07135,39.8421))transformed((0,0,1,0,0,1))}
+{((247.76823,63.74707))transformed((0,0,1,0,0,1))}
 {(3)/(0.72015)}
 {(4.16577)*((0,1))}
-{((234.07135,39.8421))+((0,4.16577))}
+{((247.76823,63.74707))+((0,4.16577))}
 {lrcorner(picture)}
 {(0.5)*((12.33543,0))}
 {ulcorner(picture)}
@@ -2649,8 +2648,8 @@ t_->transformed.currenttransform
 {llcorner(picture)}
 {(0.5)*((0,0))}
 {((6.16772,0))+((0,0))}
-{((234.07135,44.00787))-((6.16772,0))}
-{(picture)shifted((227.90363,44.00787))}
+{((247.76823,67.91284))-((6.16772,0))}
+{(picture)shifted((241.60051,67.91284))}
 (EXPR0)<-picture
 {addto}
 {if}
@@ -2666,14 +2665,14 @@ do_pc_->withcolor.proofcolor
 
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
-(EXPR0)<-(234.07135,39.8421)
+(EXPR0)<-(247.76823,63.74707)
 {addto}
 {if}
-{picture((234.07135,39.8421))}
+{picture((247.76823,63.74707))}
 {false}
 
 t_->transformed.currenttransform
-{((234.07135,39.8421))transformed((0,0,1,0,0,1))}
+{((247.76823,63.74707))transformed((0,0,1,0,0,1))}
 {fi}
 
 pc_->do_pc_
@@ -2708,7 +2707,7 @@ d),(x,h));endfor.if.charic<>0:(TEXT0)((w+charic*pt,h),(w+charic*pt,0.5h));fi
 proofrule(EXPR0)(EXPR1)->begingroup.interim.linecap:=squared;draw(EXPR0)..(EXPR
 1)withpen.pencircle.scaled(0.4/bp_per_pixel)withcolor.black;endgroup
 (EXPR0)<-(0,0)
-(EXPR1)<-(273.91345,0)
+(EXPR1)<-(287.61034,0)
 {begingroup}
 {interim}
 {linecap:=2}
@@ -2717,11 +2716,11 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 Path at line 30, before choices:
 (0,0){curl 1}
- ..{curl 1}(273.91345,0)
+ ..{curl 1}(287.61034,0)
 
 Path at line 30, after choices:
-(0,0)..controls (91.30449,0) and (182.60896,0)
- ..(273.91345,0)
+(0,0)..controls (95.87012,0) and (191.74022,0)
+ ..(287.61034,0)
 
 (EXPR0)<-path
 {addto}
@@ -2747,7 +2746,7 @@ do_pc_->withcolor.proofcolor
 proofrule(EXPR0)(EXPR1)->begingroup.interim.linecap:=squared;draw(EXPR0)..(EXPR
 1)withpen.pencircle.scaled(0.4/bp_per_pixel)withcolor.black;endgroup
 (EXPR0)<-(0,398.41956)
-(EXPR1)<-(273.91345,398.41956)
+(EXPR1)<-(287.61034,398.41956)
 {begingroup}
 {interim}
 {linecap:=2}
@@ -2756,11 +2755,11 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 Path at line 30, before choices:
 (0,398.41956){curl 1}
- ..{curl 1}(273.91345,398.41956)
+ ..{curl 1}(287.61034,398.41956)
 
 Path at line 30, after choices:
-(0,398.41956)..controls (91.30449,398.41956) and (182.60896,398.41956)
- ..(273.91345,398.41956)
+(0,398.41956)..controls (95.87012,398.41956) and (191.74022,398.41956)
+ ..(287.61034,398.41956)
 
 (EXPR0)<-path
 {addto}
@@ -2786,7 +2785,7 @@ do_pc_->withcolor.proofcolor
 proofrule(EXPR0)(EXPR1)->begingroup.interim.linecap:=squared;draw(EXPR0)..(EXPR
 1)withpen.pencircle.scaled(0.4/bp_per_pixel)withcolor.black;endgroup
 (EXPR0)<-(0,-111.55775)
-(EXPR1)<-(273.91345,-111.55775)
+(EXPR1)<-(287.61034,-111.55775)
 {begingroup}
 {interim}
 {linecap:=2}
@@ -2795,11 +2794,11 @@ draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 Path at line 30, before choices:
 (0,-111.55775){curl 1}
- ..{curl 1}(273.91345,-111.55775)
+ ..{curl 1}(287.61034,-111.55775)
 
 Path at line 30, after choices:
-(0,-111.55775)..controls (91.30449,-111.55775) and (182.60896,-111.55775)
- ..(273.91345,-111.55775)
+(0,-111.55775)..controls (95.87012,-111.55775) and (191.74022,-111.55775)
+ ..(287.61034,-111.55775)
 
 (EXPR0)<-path
 {addto}
@@ -2861,13 +2860,13 @@ do_pc_->withcolor.proofcolor
 {restoring linecap=1}
 {endgroup}
 {[repeat the loop]}
-{loop value=273.91345}
+{loop value=287.61034}
 
 proofrule(EXPR0)(EXPR1)->begingroup.interim.linecap:=squared;draw(EXPR0)..(EXPR
 1)withpen.pencircle.scaled(0.4/bp_per_pixel)withcolor.black;endgroup
 {-(111.55775)}
-(EXPR0)<-(273.91345,-111.55775)
-(EXPR1)<-(273.91345,398.41956)
+(EXPR0)<-(287.61034,-111.55775)
+(EXPR1)<-(287.61034,398.41956)
 {begingroup}
 {interim}
 {linecap:=2}
@@ -2875,12 +2874,12 @@ proofrule(EXPR0)(EXPR1)->begingroup.interim.linecap:=squared;draw(EXPR0)..(EXPR
 draw<expr>->addto.currentpicture.if.picture(EXPR0):also(EXPR0)else:doublepath(E
 XPR0)t_.withpen.currentpen.fi.pc_
 Path at line 30, before choices:
-(273.91345,-111.55775){curl 1}
- ..{curl 1}(273.91345,398.41956)
+(287.61034,-111.55775){curl 1}
+ ..{curl 1}(287.61034,398.41956)
 
 Path at line 30, after choices:
-(273.91345,-111.55775)..controls (273.91345,58.43468) and (273.91345,228.42712)
- ..(273.91345,398.41956)
+(287.61034,-111.55775)..controls (287.61034,58.43468) and (287.61034,228.42712)
+ ..(287.61034,398.41956)
 
 (EXPR0)<-path
 {addto}
@@ -2905,8 +2904,8 @@ do_pc_->withcolor.proofcolor
 {(0)<>(0)}
 {false}
 {fi}
-{chardx:=273.91345}
-## chardx=273.91345
+{chardx:=287.61034}
+## chardx=287.61034
 
 shipit->if.proofing>=0:shipout.currentpicture.transformed(identity.shifted(xoff
 set,yoffset)scaled.bp_per_pixel)fi
@@ -2921,167 +2920,168 @@ set,yoffset)scaled.bp_per_pixel)fi
  [50]
 Edge structure at line 30 (just shipped out):
 Filled contour colored (0.7,0.7,0.7):
-(21.12389,214.87091)..controls (42.7386,236.48563) and (59.28734,253.92723)
- ..(89.75357,253.92723)..controls (137.01811,253.92723) and (168.56737,226.8467
+(19.25858,210.58574)..controls (42.97418,234.30136) and (60.81116,253.92723)
+ ..(94.24165,253.92723)..controls (143.82198,253.92723) and (178.43124,228.0623
+3)
+ ..(178.43124,180.76202)..controls (178.43124,147.774) and (164.46762,116.07074
+)
+ ..(138.5188,95.77985)..controls (138.51108,95.7738) and (43.61275,21.56729)
+ ..(43.60503,21.56125)..controls (35.48955,29.67673) and (27.37407,37.7922)
+ ..(19.25858,45.9077)..controls (19.2663,45.91374) and (114.16463,120.12025)
+ ..(114.17235,120.1263)..controls (131.70671,133.83743) and (132.52354,158.2696
+5)
+ ..(132.52354,180.76202)..controls (132.52354,204.44058) and (117.8254,219.4961
 9)
- ..(168.56737,180.76202)..controls (168.56737,149.41664) and (151.12901,121.597
-87)
- ..(128.44403,99.83765)..controls (128.43661,99.83054) and (37.36214,12.46872)
- ..(37.35472,12.46161)..controls (31.94446,17.87189) and (26.53416,23.28217)
- ..(21.12389,28.69244)..controls (21.13132,28.69955) and (112.20578,116.06137)
- ..(112.2132,116.06848)..controls (129.84547,132.982) and (139.87494,156.33043)
- ..(139.87494,180.76202)..controls (139.87494,211.55626) and (120.52895,230.973
-39)
- ..(89.75357,230.97339)..controls (65.571,230.97339) and (51.26291,219.04048)
- ..(34.10861,201.88618)..controls (29.78038,206.21443) and (25.45213,210.54268)
+ ..(94.24165,219.49619)..controls (70.23697,219.49619) and (55.76093,208.13364)
+ ..(38.73581,191.1085)..controls (32.2434,197.60092) and (25.75098,204.09334)
  ..cycle
 
 Filled contour colored (0.7,0.7,0.7):
-(21.12389,0)..controls (70.27171,0) and (119.41954,0)
- ..(168.56737,0)..controls (168.56737,9.56415) and (168.56737,19.1283)
- ..(168.56737,28.69244)..controls (119.41954,28.69244) and (70.27171,28.69244)
- ..(21.12389,28.69244)..controls (21.12389,19.1283) and (21.12389,9.56415)
+(19.25858,0)..controls (72.31613,0) and (125.37369,0)
+ ..(178.43124,0)..controls (178.43124,15.30257) and (178.43124,30.60513)
+ ..(178.43124,45.9077)..controls (125.37369,45.9077) and (72.31613,45.9077)
+ ..(19.25858,45.9077)..controls (19.25858,30.60513) and (19.25858,15.30257)
  ..cycle
 
 "1l" infont "cmr10"
-transformed (30.23422,204.88618,1,0,0,1)
+transformed (34.86142,194.1085,1,0,0,1)
 Filled pen stroke :
-(34.10861,201.88618)
+(38.73581,191.1085)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "2l" infont "cmr10"
-transformed (85.87918,233.97339,1,0,0,1)
+transformed (90.36726,222.49619,1,0,0,1)
 Filled pen stroke :
-(89.75357,230.97339)
+(94.24165,219.49619)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "3l" infont "cmr10"
-transformed (136.00055,183.76202,1,0,0,1)
+transformed (128.64915,183.76202,1,0,0,1)
 Filled pen stroke :
-(139.87494,180.76202)
+(132.52354,180.76202)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "4l" infont "cmr10"
-transformed (108.3388,119.06848,1,0,0,1)
+transformed (110.29796,123.1263,1,0,0,1)
 Filled pen stroke :
-(112.2132,116.06848)
+(114.17235,120.1263)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "5l" infont "cmr10"
-transformed (17.24951,31.69244,1,0,0,1)
+transformed (15.38419,48.90768,1,0,0,1)
 Filled pen stroke :
-(21.12389,28.69244)
+(19.25858,45.9077)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "6l" infont "cmr10"
-transformed (17.24951,3,1,0,0,1)
+transformed (15.38419,3,1,0,0,1)
 Filled pen stroke :
-(21.12389,0)
+(19.25858,0)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "7l" infont "cmr10"
-transformed (164.693,3,1,0,0,1)
+transformed (174.55685,3,1,0,0,1)
 Filled pen stroke :
-(168.56737,0)
+(178.43124,0)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "1" infont "cmr10"
-transformed (25.12558,211.37856,1,0,0,1)
+transformed (26.50652,203.84712,1,0,0,1)
 Filled pen stroke :
-(27.61626,208.37856)
+(28.9972,200.84712)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "2" infont "cmr10"
-transformed (87.2629,245.4503,1,0,0,1)
+transformed (91.75098,239.71172,1,0,0,1)
 Filled pen stroke :
-(89.75357,242.45032)
+(94.24165,236.71172)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "3" infont "cmr10"
-transformed (151.73047,183.76202,1,0,0,1)
+transformed (152.98671,183.76202,1,0,0,1)
 Filled pen stroke :
-(154.22116,180.76202)
+(155.47739,180.76202)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "4" infont "cmr10"
-transformed (117.83792,110.95306,1,0,0,1)
+transformed (123.85489,110.95306,1,0,0,1)
 Filled pen stroke :
-(120.32861,107.95308)
+(126.34557,107.95308)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "5" infont "cmr10"
-transformed (26.74863,23.57701,1,0,0,1)
+transformed (28.94113,36.73447,1,0,0,1)
 Filled pen stroke :
-(29.23932,20.57703)
+(31.43181,33.73447)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "6" infont "cmr10"
-transformed (18.63321,17.34622,1,0,0,1)
+transformed (16.7679,25.95384,1,0,0,1)
 Filled pen stroke :
-(21.12389,14.34622)
+(19.25858,22.95384)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "7" infont "cmr10"
-transformed (166.07669,17.34622,1,0,0,1)
+transformed (175.94055,25.95384,1,0,0,1)
 Filled pen stroke :
-(168.56737,14.34622)
+(178.43124,22.95384)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "1r" infont "cmr10"
-transformed (16.68219,217.87091,1,0,0,1)
+transformed (14.81686,213.58574,1,0,0,1)
 Filled pen stroke :
-(21.12389,214.87091)
+(19.25858,210.58574)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "2r" infont "cmr10"
-transformed (85.31186,256.92723,1,0,0,1)
+transformed (89.79994,256.92723,1,0,0,1)
 Filled pen stroke :
-(89.75357,253.92723)
+(94.24165,253.92723)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "3r" infont "cmr10"
-transformed (164.12567,183.76202,1,0,0,1)
+transformed (173.98953,183.76202,1,0,0,1)
 Filled pen stroke :
-(168.56737,180.76202)
+(178.43124,180.76202)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "4r" infont "cmr10"
-transformed (124.00232,102.83765,1,0,0,1)
+transformed (134.07709,98.77983,1,0,0,1)
 Filled pen stroke :
-(128.44403,99.83765)
+(138.5188,95.77985)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "5r" infont "cmr10"
-transformed (32.91301,15.46161,1,0,0,1)
+transformed (39.16331,24.56123,1,0,0,1)
 Filled pen stroke :
-(37.35472,12.46161)
+(43.60503,21.56125)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "6r" infont "cmr10"
-transformed (16.68219,31.69244,1,0,0,1)
+transformed (14.81686,48.90768,1,0,0,1)
 Filled pen stroke :
-(21.12389,28.69244)
+(19.25858,45.9077)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 "7r" infont "cmr10"
-transformed (164.12567,31.69244,1,0,0,1)
+transformed (173.98953,48.90768,1,0,0,1)
 Filled pen stroke :
-(168.56737,28.69244)
+(178.43124,45.9077)
 round ends, round joins with pen
 pencircle transformed (0,0,3,0,0,3)
 Filled pen stroke :
-(0,0)..controls (65.75328,0) and (131.50655,0)
- ..(197.25981,0)
+(0,0)..controls (69.04123,0) and (138.08244,0)
+ ..(207.12367,0)
 square ends, round joins with pen
 pencircle transformed (0,0,0.4,0,0,0.4)
 Filled pen stroke :
-(0,286.92336)..controls (65.75328,286.92336) and (131.50655,286.92336)
- ..(197.25981,286.92336)
+(0,286.92336)..controls (69.04123,286.92336) and (138.08244,286.92336)
+ ..(207.12367,286.92336)
 square ends, round joins with pen
 pencircle transformed (0,0,0.4,0,0,0.4)
 Filled pen stroke :
-(0,-80.33875)..controls (65.75328,-80.33875) and (131.50655,-80.33875)
- ..(197.25981,-80.33875)
+(0,-80.33875)..controls (69.04123,-80.33875) and (138.08244,-80.33875)
+ ..(207.12367,-80.33875)
 square ends, round joins with pen
 pencircle transformed (0,0,0.4,0,0,0.4)
 Filled pen stroke :
@@ -3090,8 +3090,8 @@ Filled pen stroke :
 square ends, round joins with pen
 pencircle transformed (0,0,0.4,0,0,0.4)
 Filled pen stroke :
-(197.25981,-80.33875)..controls (197.25981,42.08195) and (197.25981,164.50267)
- ..(197.25981,286.92336)
+(207.12367,-80.33875)..controls (207.12367,42.08195) and (207.12367,164.50267)
+ ..(207.12367,286.92336)
 square ends, round joins with pen
 pencircle transformed (0,0,0.4,0,0,0.4)
 End edges
@@ -3102,9 +3102,9 @@ End edges
  )
  
 Here is how much of MetaPost's memory you used:
- 55 strings using 708 characters
- 330872 bytes of node memory
- 670 symbolic tokens
+ 55 strings using 705 characters
+ 331912 bytes of node memory
+ 675 symbolic tokens
  8i,87n,12p,191b,2f stack positions out of 16i,98n,15p,200b,4f
 1 output file written: 50.svg
 

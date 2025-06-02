@@ -13,11 +13,11 @@ pair dot[];
 
 %%% PEN STROKE SETTINGS
 %%% These settings define the main "boldness" of the glyphs.
-BAR:=   .64pt; % Normal horizontal stroke width
-BAR_C:= .64pt; % "Counterpart", to use in high-contrast fonts, and avoid modifying TH or TV. For the classic font, keep BAR_C = BAR.
+BAR:=   .96pt; % Normal horizontal stroke width
+BAR_C:= .96pt; % "Counterpart", to use in high-contrast fonts, and avoid modifying TH or TV. For the classic font, keep BAR_C = BAR.
 
-STEM:=   .8pt; % Normal vertical stroke width
-STEM_C:= .8pt; % Same rule as NH and NH_C
+STEM:=   1.28pt; % Normal vertical stroke width
+STEM_C:= 1.28pt; % Same rule as NH and NH_C
 
 BAR_TERM  := BAR * 0.8;
 STEM_TERM := STEM * 0.8;
@@ -29,7 +29,7 @@ BAR_FINE  := BAR * 0.25;
 STEM_FINE := STEM * 0.25;
 
 %%% ESSENTIAL METRICS
-STRETCH:= 1;  % Font width setting, to create "condensed" or "expanded" versions.
+STRETCH:= 1.05;  % Font width setting, to create "condensed" or "expanded" versions.
 EM_H:= 8pt#;     % height of the bounding box of the fontx
 DEPTH:= 2.24pt#; % Size of the bounding box's descender.
 % The total of em_h and depth are equal to 10.24, in order to match the 1024 unit TrueType convetion.
@@ -44,7 +44,7 @@ X_TOP:= X_H + OVERSHOOT;          % Top of rounded lowercase glyphs
 
 %%% CURVATURE
 TSN:= .9; % Average tension of curvature
-APERTURE:= .17; % Average aperture of glyphs, based on height;
+APERTURE:= .2; % Average aperture of glyphs, based on height;
 APERTURE_ANGLE:= 45;
 INV_APERTURE_ANGLE:= 180 + APERTURE_ANGLE;
 ARCHCOEF:= 0.6;
@@ -88,7 +88,7 @@ boolean OLDSTYLE;
 OLDSTYLE = false;
 
 %%% INKTRAPS & OPTICAL CORRECTION
-INKFAC:= 0.25; % "Inktrap factor" defines the relativ importance of inktraps
+INKFAC:= 0.35; % "Inktrap factor" defines the relativ importance of inktraps
 %def midpoint(expr a)
 
 def BAR_ADJ(expr a, b) =
@@ -154,6 +154,14 @@ primarydef a cprod b =
   ((xpart a / PT) * (ypart b / PT)) - ((xpart b / PT) * (ypart a / PT))
 enddef;
 
+def tan(expr a, b) =
+  ((ypart a - xpart b) / (xpart a - xpart b)) / PT 
+enddef;
+
+def atan(expr a, b) =
+  1 / tan(a, b)
+enddef;
+
 def pmag expr p =
   (xpart p * xpart p) + (ypart p * ypart p)
 enddef;
@@ -163,8 +171,7 @@ def corr(expr a, b) =
 enddef;
   
 def acorr(expr a, b) =
-  1 / sind(
-      ((a dprod b)/ PT) / ((pmag a) * (pmag b)) / PT)
+  atan(a, b)
 enddef;
 
 %%% SHORTCUTS & SNIPPETS
