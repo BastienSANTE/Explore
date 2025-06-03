@@ -16,8 +16,8 @@ newchar(82, 6pt#, 1);
 x9r = x5r; y9 = BASELINE;
 
 penpos1(STEM, 0); penpos2(STEM, 0);
-  penpos3(BAR, 90); penpos4(BAR, 90); penpos5(STEM, 0); penpos6(BAR, -90); penpos7(BAR, -90);
-penpos8(STEM, 0); penpos9(STEM, 0);
+penpos3(BAR, 90); penpos4(BAR, 90); penpos5(STEM,0); penpos6(BAR, -90); penpos7(BAR, -90);
+penpos8(STEM, 0); penpos9(STEM * 1 / cosd(angle(z8r)), 0);
 
 
 if SERIF = true:

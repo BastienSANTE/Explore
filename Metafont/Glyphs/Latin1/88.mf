@@ -4,12 +4,15 @@ export_setup;
 
 % U+0058 LATIN CAPITAL LETTER X - CODE 88
 newchar(88, 6.6pt#, 2);
-  x1l = LINE_BEARING / 2; y1 = CAP_H;
-  x2l = x1l; y2 = BASELINE;
-  x3r = w - (LINE_BEARING / 2); y3 = y1;
-  x4r = x3r; y4 = y2;
+  z1 = ((LINE_BEARING / 2) + (STEM / 2), CAP_H);
+  z2 = (x1, BASELINE);
+  z3 = (w - LINE_BEARING / 2 - (STEM / 2), y1);
+  z4 = (x3, y2);
 
-penpos1(STEM * 1 / cosd(30), 0); penpos2(STEM_C, 0); penpos3(STEM_C, 0); penpos4(STEM, 0);
+penpos1(BAR_ADJ(z3 - z2), 0);
+penpos2(BAR_C_ADJ(z3 - z2), 0);
+penpos3(BAR_C_ADJ(z3 - z2), 0);
+penpos4(BAR_ADJ(z3 - z2), 0);
 
   if SERIF = true:
     makeserif(1,  z1, -SERIF_LENGTH, -SERIF_THICKNESS);

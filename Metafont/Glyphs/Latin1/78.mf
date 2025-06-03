@@ -16,7 +16,7 @@ newchar(78, 6.4pt#, 2);
   penpos1(STEM, 0); penpos2(STEM, 0);
   penpos3(STEM, 0); penpos4(STEM, 0);
   penpos5(STEM, 0);
-  penpos11(STEM * diag_width_coef, 0); penpos41(STEM * diag_width_coef, 0);
+  penpos11(BAR_ADJ(z4r - z1l), 0); penpos41(BAR_ADJ(z4r - z1l), 0);
 
   if SERIF = true:
     makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);

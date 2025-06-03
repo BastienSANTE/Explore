@@ -15,10 +15,10 @@ z5l = (x1r, y6r);
 z6l = (x5l, BASELINE);
 z7l = (x3r, y6l);
 
-penpos1(BAR_TERM, 90 + APERTURE_ANGLE); penpos2(BAR, 90); penpos3(STEM, 0); penpos4(BAR, -APERTURE_ANGLE); penpos5(BAR, -APERTURE_ANGLE);
+penpos1(BAR_TERM, 90 + APERTURE_ANGLE); penpos2(BAR, 90); penpos3(STEM, 0); penpos5(BAR_ADJ(z4), -APERTURE_ANGLE);
 
-penpos6(STEM, 90); penpos7(STEM, 90);
-
+penpos6(BAR, 90); penpos7(BAR, 90);
+penpos4(BAR_ADJ(z3r), -APERTURE_ANGLE);
 fill z1r{daa}..tsn..z2r{rt}..tsn..z3r{dn}..z4r --- z5r -- z5l --- z4l..z3l{up}..tsn..z2l{lt}..tsn..{dia}z1l -- cycle;
 
 fill z6l -- z7l -- z7r -- z6r -- cycle;

@@ -16,7 +16,7 @@ z8r = (0.455w, CAP_BOTTOM);
 z9 = (x1, BASELINE + (CAP_H * APERTURE));
 
 penpos1(BAR, 90); penpos2(BAR, 90);
-penpos3(STEM, 0); penpos4(STEM,0);
+penpos3(STEM_ADJ(-(z4l - z3r)), 0); penpos4(STEM,0);
 
 penpos5(BAR, 90); penpos6(BAR, 90);
 penpos7(STEM, 0); penpos8(BAR, -90); penpos9(BAR_TERM, INV_APERTURE_ANGLE);
