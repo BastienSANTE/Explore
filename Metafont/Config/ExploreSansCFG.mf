@@ -13,11 +13,26 @@ pair dot[];
 
 %%% PEN STROKE SETTINGS
 %%% These settings define the main "boldness" of the glyphs.
-BAR:=   .64pt; % Normal horizontal stroke width
-BAR_C:= .64pt; % "Counterpart", to use in high-contrast fonts, and avoid modifying TH or TV. For the classic font, keep BAR_C = BAR.
+boolean BOLD;
+BOLD:= false;
 
-STEM:=   .8pt; % Normal vertical stroke width
-STEM_C:= .8pt; % Same rule as NH and NH_C
+if BOLD = false:
+  BAR:=   .64pt; % Normal horizontal stroke width
+  BAR_C:= .64pt; % "Counterpart", to use in high-contrast fonts, and avoid modifying TH or TV. For the classic font, keep BAR_C = BAR.
+  STEM:=   .8pt; % Normal vertical stroke width
+  STEM_C:= .8pt; % Same rule as NH and NH_C
+else:
+  if BOLD = true:
+    BAR:=   .96pt;
+    BAR_C:= .96pt;
+    STEM:=   1.28pt; 
+    STEM_C:= 1.28pt;
+  fi
+fi
+
+
+
+
 
 BAR_TERM  := BAR * 0.8;
 STEM_TERM := STEM * 0.8;
@@ -88,13 +103,8 @@ boolean OLDSTYLE;
 OLDSTYLE = false;
 
 %%% INKTRAPS & OPTICAL CORRECTION
-INKFAC:= 0.35; % "Inktrap factor" defines the relativ importance of inktraps
+INKFAC:= 0.4; % "Inktrap factor" defines the relativ importance of inktraps
 %def midpoint(expr a)
-
-def BAR_ADJ(expr a, b) =
-  BAR * acorr(a, b)
-enddef;
-
 
 def PT = 1pt enddef;
 
@@ -165,6 +175,10 @@ enddef;
 def acorr(expr a, b) =
   atan(a, b)
 enddef;
+
+def onpath(expr a, b, c) =
+  origin shifted((xpart a + ((xpart b - xpart a) * c)), (ypart a + ((ypart b - ypart a ) * c)));
+  enddef;
 
 %%% SHORTCUTS & SNIPPETS
 def lt:= left enddef;
