@@ -1,6 +1,6 @@
-This is MetaPost, version 2.02 (TeX Live 2022/Debian) (kpathsea version 6.3.4)  6 JUN 2025 00:20
+This is MetaPost, version 2.11 (TeX Live 2025) (kpathsea version 6.4.1)  6 JUN 2025 12:39
 **../Glyphs/Latin1/50.mf
-(/usr/share/texlive/texmf-dist/metapost/base/mfplain.mp
+(c:/texlive/2025/texmf-dist/metapost/base/mfplain.mp
 Preloading the plain base, version 0.99: preliminaries,
  basic constants and mathematical macros,
  macros for converting units,
@@ -314,7 +314,7 @@ penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
 {(0.5)*(2x5l+18.03049)}
 {(38.34772)=(x5l+9.01524)}
 ## x5l=29.33247
-#### %CAPSULE0x5638d8f9b020=38.34772
+#### %CAPSULE0000000004B66760=38.34772
 #### x1l=47.36296
 #### x6l=29.33247
 #### x1r=29.33247
@@ -322,7 +322,7 @@ penpos@#(EXPR3)(EXPR4)->begingroup(x(SUFFIX2)r-x(SUFFIX2)l,y(SUFFIX2)r-y(SUFFIX
 {(0.5)*(2y1r-18.03049)}
 {(278.89476)=(y1r-9.01524)}
 ## y1r=287.91
-#### %CAPSULE0x5638d8f9a8d0=278.89476
+#### %CAPSULE0000000004B65B90=278.89476
 #### y1l=269.87952
 {endgroup}
 
@@ -501,13 +501,13 @@ z@#->begingroup(x(SUFFIX2),y(SUFFIX2))endgroup
 {(0.5)*(2x4r-33.04662)}
 {(167.08737)=(x4r-16.52332)}
 ## x4r=183.61069
-#### %CAPSULE0x5638d8f9bb60=167.08737
+#### %CAPSULE0000000004B697D0=167.08737
 #### x4l=150.56407
 {(y4r+33.04662)+(y4r)}
 {(0.5)*(2y4r+33.04662)}
 {(149.9028)=(y4r+16.52332)}
 ## y4r=133.37949
-#### %CAPSULE0x5638d8f9a8d0=149.9028
+#### %CAPSULE0000000004B65B90=149.9028
 #### y4l=166.4261
 {endgroup}
 
@@ -3127,9 +3127,9 @@ End edges
  )
  
 Here is how much of MetaPost's memory you used:
- 55 strings using 708 characters
+ 55 strings using 705 characters
  334680 bytes of node memory
- 675 symbolic tokens
+ 678 symbolic tokens
  8i,87n,12p,193b,2f stack positions out of 16i,98n,15p,200b,4f
 1 output file written: 50.svg
 

@@ -8,7 +8,7 @@ x1l = LINE_BEARING / 2; y1 = X_H;
   x2 = 0.5w; y2 = BASELINE;
   x3r = w - (LINE_BEARING / 2); y3 = y1;
 
-penpos1(STEM, 0); penpos2(STEM, 0); penpos3(STEM, 0);
+penpos1(STEM_ADJ(z2), 0); penpos2(STEM, 0); penpos3(STEM_ADJ(z2), 0);
 
 z11l = onpath(z2l, z1l, INKFAC);
 z21r = onpath(z2r, z3r, INKFAC);

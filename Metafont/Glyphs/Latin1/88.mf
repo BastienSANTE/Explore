@@ -9,10 +9,10 @@ newchar(88, 6.6pt#, 2);
   z3 = (w - LINE_BEARING / 2 - (STEM / 2), y1);
   z4 = (x3, y2);
 
-penpos1(BAR_ADJ(z3 - z2), 0);
-penpos2(BAR_C_ADJ(z3 - z2), 0);
-penpos3(BAR_C_ADJ(z3 - z2), 0);
-penpos4(BAR_ADJ(z3 - z2), 0);
+penpos1(STEM_ADJ(z4), 0);
+penpos2(STEM_C_ADJ(z2), 0);
+penpos3(STEM_C_ADJ(z2), 0);
+penpos4(STEM_ADJ(z4), 0);
 
   if SERIF = true:
     makeserif(1,  z1, -SERIF_LENGTH, -SERIF_THICKNESS);
