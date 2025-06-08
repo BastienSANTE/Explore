@@ -17,7 +17,7 @@ spine_center_y = 0.5 * X_TOP;
   x4 = 0.5w; y4 = spine_center_y;
   z41 = z4 shifted(-spine_straight_length, 0) rotatedaround((z4), -spine_angle);
   z42 = z4 shifted(spine_straight_length, 0) rotatedaround((z4), -spine_angle);
-  x5l = w - CURVE_BEARING; y5 = 0.25 * X_TOP;
+  x5l = w - CURVE_BEARING; y5 = y42r - ((y42r - y6r) / 2);
   x6 = x4 - beak_spine_xdelta; y6l = CAP_BOTTOM;
   x7l = x3r; y7 = BASELINE + (X_H * APERTURE);
   

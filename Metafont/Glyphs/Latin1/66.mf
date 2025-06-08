@@ -11,7 +11,7 @@ newchar(66, 6.1pt#, 0);
   x0 = x1; y0 = y4;
   x1l = LINE_BEARING; y1r = CAP_H;
   x2 = 0.535w; y2r = CAP_H;
-  x3 = 0.82w ; y3 = 0.66h;
+  x3r = 0.885w ; y3 = 0.66h;
   x4 = x2; y4 = 0.465h;
   x41 = x2; y41l = y4l;
   x42 = x2; y42l = y4r;
@@ -22,8 +22,8 @@ newchar(66, 6.1pt#, 0);
   x9l = LINE_BEARING; y9 = y7r;
 
 
-  if MONOSPACE = true:
-    x5:= x3:= (w - CURVE_BEARING);
+if MONOSPACE = true:
+    x5:= x3r:= (w - CURVE_BEARING);
   fi
 
   penpos0(BAR, -90);

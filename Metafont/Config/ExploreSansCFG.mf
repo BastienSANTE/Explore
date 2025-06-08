@@ -30,10 +30,8 @@ else:
   fi
 fi
 
-
-
-
-
+BAR_CROSS := BAR * 0.9;
+STEM_CROSS:= STEM * 0.9;
 BAR_TERM  := BAR * 0.8;
 STEM_TERM := STEM * 0.8;
 BAR_JOINT := BAR * 0.67;
@@ -85,7 +83,7 @@ LINE_BEARING:= .8pt;  % Average sidebearing for glyphs with straight stems
 STEM_BEARING:= .64pt; % Average sidebearing for B, D, P, Q...
 LEG_BEARING:= .64pt;
 OBLIQUE_BEARING:= .36pt;
-MONO_CURVE_BEARING:= .8pt;
+MONO_CURVE_BEARING:= .64pt;
 MONO_LINE_BEARING:= .96pt;
 
 %%% DIACRITICS & ACCENTS

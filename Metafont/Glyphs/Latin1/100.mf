@@ -12,10 +12,13 @@ newchar(100, 5.84pt#, 1);
   x5 = 0.5w; y5r = X_TOP;
   x6r = CURVE_BEARING; y6 = y5l - ((y5l - y7l) / 2);
   x7 =  x5; y7r = CAP_BOTTOM;
-  x8l = x2l; y8r = BASELINE + (CAP_H * APERTURE);
+x8l = x2l; y8r = BASELINE + (CAP_H * APERTURE);
 
   penpos1(STEM, 0); penpos2(STEM, 0); penpos3(STEM_TERM, 0);
-  penpos4(BAR_JOINT, 90 - APERTURE_ANGLE); penpos5(BAR, 90); penpos6(STEM, 180); penpos7(BAR, 270); penpos8(BAR_JOINT, 270 + APERTURE_ANGLE);
+penpos4(BAR_THIN, 90 - APERTURE_ANGLE); penpos5(BAR, 90); penpos6(STEM, 180); penpos7(BAR, 270); penpos8(BAR_THIN, 270 + APERTURE_ANGLE);
+
+z51 = z5r shifted (STRETCH * -ARCHCORR, 0);
+z71 = z7r shifted (STRETCH * -ARCHCORR, 0);
 
 if SERIF = true:
   makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
@@ -23,7 +26,7 @@ if SERIF = true:
 fi
 
   fill z1l -- z2l -- z3l -- z3r -- z1r -- cycle;
-  fill z4r .. z5r{left} ..tension TSN.. z6r{down} ..tension TSN.. z7r{right} .. z8r -- z8l .. z7l{left} ..tension TSN .. z6l{up} ..tension TSN.. z5l{right} .. z4l -- cycle;
+  fill z4r .. z51{left} ..tension TSN.. z6r{down} ..tension TSN.. z71{right} .. z8r -- z8l .. z7l{left} ..tension TSN .. z6l{up} ..tension TSN.. z5l{right} .. z4l -- cycle;
   
   penlabels(range 1 thru 8);
 endchar;

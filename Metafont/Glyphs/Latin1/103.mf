@@ -23,15 +23,15 @@ newchar(103, 5.5pt#, 0);
   % spinal cord & lower bowl
   x5 = x3; y5l = y3l;                      % Keep spine base attached
   x6r = x4l; y6 = y5l - ((y5l - y7l) / 2); % Align vertical center of spine to middle xof 2 bowls
-  x7r = x4r + ((x3 - x4) / 2); y7 = lboy;  % put on BASELINE;
+  x7 = x4r + ((x3 - x4r) / 2); y7r = BASELINE;  % put on BASELINE;
   x8l = x2r;  y8 = y7;
   x9l = tlendx; y9 = lbey;
   x10 = x1; y10l = DESCENDER;
-  x11l = x4l; y11 = -.1h;
+  x11l = x4l; y11 = 0.3 * DESCENDER;
   x117r = x7r; y117r = y7r;
   
   % tail
-  x12 = x1 + (x2 - x1) / 2; y12r = y1;
+  x12 = x1 + (x2 - x1) / 2; y12r = X_H;
   %z13 = z12 shifted(1pt#, 0) rotatedaround(z12, 45);
   
   penpos1(BAR, -90);
@@ -45,8 +45,8 @@ newchar(103, 5.5pt#, 0);
   penpos8(BAR, -90);
   penpos9(STEM, -180);
   penpos10(BAR, -270);
-  penpos11(BAR, 0);
-  penpos117(BAR_THIN, -40);
+  penpos11(STEM, 0);
+  penpos117(BAR_THIN, -110);
 
   penpos12(BAR, 90 + tlangle);
 
@@ -58,7 +58,7 @@ newchar(103, 5.5pt#, 0);
   %penstroke z5e{dir -180}..z6e{down}..z7e{right} -- z8e{right}..tension 1..z9e{down}..tension 1..z10e{left}..z11e{up}..z117e{dir 0};
   penstroke z12e -- z13e;
 
-  fill z3{left}..z6r..z7r{right} -- z8r{right}..z9r..tension (1/TSN)..z10r{left}...z11r..z117r -- z117l..z11l..z10l..tension (1/TSN)..z9l..z8l{left} -- z7l{left}.. {left}flex(z7l, z6l, z5l) -- cycle;
+  fill z3{left}..z6r..z7r{right} -- z8r{right}..z9r..tension (1/TSN)..z10r{left}...z11r{up}..{dir 20}z117r -- z117l{lt}..z11l{dn}..tsn..z10l{rt}..invtsn..z9l..z8l{left} -- z7l{left}..tsn..z6l{up}..tsn..z5l{rt} -- cycle;
   
   penlabels(range 1 thru 117);
 endchar;

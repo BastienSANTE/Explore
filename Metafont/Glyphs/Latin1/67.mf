@@ -26,7 +26,7 @@ fi
 
 penstroke z1e..z2e{left}..tsn..z3e{down}..tsn..z4e{right}..z5e;
 
-fill z1l -- z1r..tsn..z2r{left}..tsn..z3r{down}..tsn..z4r{right}..z5r{daa} -- z5l {dia}..z4l{left}..tsn..z3l{up}..tsn..z2l{right}..{dia}z1l -- cycle;
+fill z1l -- z1r..tsn..z2r{left}..tsn..z3r{down}..tsn..z4r{right}..tsn..z5r{daa} -- z5l..tsn..z4l{left}..tsn..z3l{up}..tsn..z2l{right}..{dia}z1l -- cycle;
 
 if SERIF = true:
   makeserif(1, z1r, -SERIF_THICKNESS, -TERM_LENGTH);

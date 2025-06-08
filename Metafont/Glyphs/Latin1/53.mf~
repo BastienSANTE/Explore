@@ -1,0 +1,6 @@
+input ../Config/ExploreSansCFG.mf
+
+export_setup;
+
+% U+0035 DIGIT TWO - CODE 53
+newchar(53, 5.5pt#, 0);

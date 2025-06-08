@@ -18,9 +18,7 @@ penpos3(STEM, 0); penpos4(STEM, 0); penpos5(BAR, 90); penpos6(BAR_JOINT, 90 + AP
 
 penstroke z1e -- z2e;
 
-fill z3l -- z3r -- z4r{down}..tsn..z5r{right}..z6r{nia} -- z6l{dia}..z51{left}..tsn..z4l{up} -- cycle;
-
-penstroke z3e -- z4e{down}..tsn..z5e{right}..tsn..z6e;
+fill z3l -- z3r -- z4r{down}..tsn..z5r{right}..z6r{daa} -- z6l{dia}..z51{left}..tsn..z4l{up} -- cycle;
 penlabels(range 1 thru 51);
 
 endchar;

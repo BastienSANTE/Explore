@@ -4,16 +4,35 @@ export_setup;
 
 % U+006C LATIN SMALL LETTER L | CODE 108
 newchar(108, 2.6pt#, 0);
+
+if MONOSPACE = false:
   z1 = (0.5w, CAP_TOP);
   z2 = (x1, 0.2 * X_H);
   z3l = (.8w , BASELINE);
   z4l = (0.95w, y3l);
+else:
+  if MONOSPACE = true:
+    z1 = (0.42w, CAP_TOP);
+    z2 = (x1, BASELINE);
+    z3l = (x1l, y2);
+    z4l = (w - LINE_BEARING, y3l);
+    z5r = z1l;
+    z6r = (0.05w, y5r);
+    penpos5(BAR, 90); penpos6(BAR, 90);
+  fi
+fi
+
 
 penpos1(STEM, 0); penpos2(STEM, 0); penpos3(BAR, 90); penpos4(BAR, 90);
+if MONOSPACE = false:
+  fill z1l -- z1r -- z2r{down}..tsn..z3r{right} -- z4r -- z4l -- z3l{left}..tsn..z2l{up} -- cycle;
+else:
+  if MONOSPACE = true:
+    fill z1l -- z1r -- z2r -- z2l -- cycle; fill z3r -- z4r -- z4l -- z3l -- cycle; fill z5r -- z5l -- z6l -- z6r -- cycle;
+  fi
+fi
 
-fill z1l -- z1r -- z2r{down}..tsn..z3r{right} -- z4r -- z4l -- z3l{left}..tsn..z2l{up} -- cycle;
 
-penstroke z1 -- z2{down}...z3{right};
-penlabels(range 1 thru 4);
+penlabels(range 1 thru 6);
 endchar;
 end

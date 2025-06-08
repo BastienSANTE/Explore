@@ -19,7 +19,7 @@ if SERIF = true:
   makeserif(4, z5l,  SERIF_LENGTH, -SERIF_THICKNESS);
 fi
 
-  penstroke z1e -- z2e{down}..z3e{right}..z4e{up} -- z5e;
+  penstroke z1e -- z2e{down}..tsn..z3e{right}..tsn..z4e{up} -- z5e;
   penlabels(range 1 thru 5);
 endchar;
 end

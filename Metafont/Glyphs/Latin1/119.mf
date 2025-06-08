@@ -5,29 +5,35 @@ export_setup;
 % U+0077 LATIN SMALL LETTER W - CODE 119
 newchar(119, 7.5pt#, 2);
 x1l = LINE_BEARING / 2; y1 = X_H;
-z11r = (x2r, BASELINE);
-z2r = (x1 + ((x3 - x1) / 2), BASELINE);
-z21l = z3l;
+z2 = (x1 + ((x3 - x1) / 2), BASELINE);
 z3 = (0.5w, y1);
-z31r = z4r;
-  z4 = ((x3 + (x5r - x3) / 2), y2);
-  x5r = w - (LINE_BEARING / 2); y5 = y1;
-
-  penpos1(STEM, 0); penpos11(STEM, 0); penpos2(STEM_C, 0); penpos21(STEM_C, 0); penpos3(STEM, 0); penpos31(STEM, 0); penpos4(STEM_C, 0); penpos5(STEM_C, 0);
+z4 = ((x3 + (x5 - x3) / 2), y2);
+x5r = w - (LINE_BEARING / 2); y5 = y1;
 
 z111l = onpath(z2l, z1l, INKFAC);
-penpos111(STEM_JOINT, 0);
+z21l = z2l; z22r = z2r;
+z31l = z3l; z32r = z3r;
+z41l = z4l; z42r = z4r;
 
-  if SERIF = true:
-    makeserif(1, z3l, -SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(2,  z3,  SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(3,  z1, -SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(4, z1r,  SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(5, z5l, -SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(6,  z5,  SERIF_LENGTH, -SERIF_THICKNESS);
-  fi
-  
-  penstroke z1e -- z11e; penstroke z2e -- z21e; penstroke z3e -- z31e; penstroke z5e -- z4e;
-  penlabels(range 1 thru 111);
+z211r = onpath(z2r, z3r, INKFAC); z221l = onpath(z3l, z2l, INKFAC);
+z311r = onpath(z3r, z4r, INKFAC); z321l = onpath(z4l, z3l, INKFAC);
+z411r = onpath(z4r, z5r, INKFAC);
+
+forsuffixes $ = 1, 2, 3, 4, 5:
+  penpos$(STEM, 0);
+endfor;
+
+forsuffixes $ = 11, 21, 22, 31, 32, 41, 42, 51:
+  penpos$(STEM_JOINT, 0);
+endfor;
+
+forsuffixes $ = 111, 211, 221, 311, 321, 411:
+  penpos$(STEM, 0);
+endfor;
+
+penstroke z1e -- z111e -- z21e; penstroke z22e -- z211e -- z221e -- z31e;
+penstroke z32e -- z311e -- z321e -- z41e;
+penstroke z42e -- z411e -- z5e;
+penlabels(range 1 thru 411);
 endchar;
 end

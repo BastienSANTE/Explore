@@ -18,7 +18,7 @@ newchar(101, 5.45pt#, 0);
   z7l = z1r;
   
   penpos1(STEM, 0); penpos2(BAR, 90); penpos3(STEM, 180); penpos4(BAR, 270); penpos5(BAR, 270 + APERTURE_ANGLE);
-  penpos6(BAR, 90); penpos7(BAR, 90);
+  penpos6(BAR_CROSS, 90); penpos7(BAR_CROSS, 90);
   penpos11(STEM, 0);
 
   penstroke z1e..z11e..tension TSN..z2e{left}..tension TSN..z3e{down}..tension TSN..z4e{right}..z5e;
