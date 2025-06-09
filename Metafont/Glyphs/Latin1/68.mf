@@ -11,14 +11,16 @@ newchar(68, 6.2pt#, 0);
   x5 = x1; y5r = BASELINE;
   x6l = x1; y6 = y1r;
   x7l = x1; y7 = BASELINE;
-  
+
+italicize
+
   penpos1(BAR, 90);
   penpos2(BAR, 90);
   penpos3(STEM, 0);
   penpos4(BAR, -90);
   penpos5(BAR, -90);
   penpos6(STEM, 0);
-  penpos7(STEM, 0);
+penpos7(STEM, 0);
   
   penstroke z1e -- z2e{right}..tension TSN..z3e{down}..tension TSN..z4e{left} -- z5e;
   penstroke z6e -- z7e;
@@ -27,7 +29,8 @@ newchar(68, 6.2pt#, 0);
     makeserif(1, z1r, -SERIF_LENGTH, -SERIF_THICKNESS);
     makeserif(2, z5r, -SERIF_LENGTH, SERIF_THICKNESS);
   fi
-  
+
+  italicize;
   penlabels(range 1 thru 7);
 endchar;
 end

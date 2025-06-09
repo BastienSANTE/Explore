@@ -25,7 +25,7 @@ fi
 
 penpos1(STEM, 0); penpos2(STEM, 0); penpos3(BAR, -90); penpos4(BAR, -90);
 
-fill z1l -- z1r -- z2r{down}..tsn..z3r{left} -- z4r -- z4l -- z3l{right}..tsn..z2l{up} -- cycle;
+fill z1l -- z1r -- z2r{down}..tsn..z3r{left} -- z4r -- z4l -- z3l{right}...z2l{up} -- cycle;
 fill fullcircle scaled DOTSIZE shifted dot1;
 penlabels(range 1 thru 11);
 endchar;

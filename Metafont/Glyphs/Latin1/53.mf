@@ -8,7 +8,7 @@ z1r = (0.835w, CAP_H);
 z2r = (0.19w, y1r);
 z3l = (LINE_BEARING, 0.48 * CAP_H);
 
-z4r = (0.5w, 0.625 * CAP_H);
+z4r = (0.5w, 0.65 * CAP_H);
 z5r = (w - CURVE_BEARING, 0.3125 * CAP_H);
 z6r = (0.45w, CAP_BOTTOM);
 z7r = (CURVE_BEARING, 0.13 * CAP_H);

@@ -35,6 +35,7 @@ newchar(74, 4.8pt#, 0);
     
   penstroke z1e -- z2e{down}..tension TSN..z3e{left}..tension TSN..z4e;
   if MONOSPACE = true: penstroke z5e -- z51e; fi
+  italicize;
   penlabels(range 1 thru 51);
 endchar;
 end

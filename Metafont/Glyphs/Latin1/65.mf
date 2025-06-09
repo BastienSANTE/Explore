@@ -53,6 +53,7 @@ newchar(65, 6.2pt#, 0);
   fill z11l -- z2l -- z2r -- ikp2 -- ikp3 -- z1 -- cycle;
   fill z4r -- z5r -- z5l -- z4l -- cycle;
 
+  italicize;
   penlabels(range 1 thru 11);
 endchar;
 end

@@ -17,7 +17,7 @@ penpos6(BAR, 90); penpos7(BAR, 90);
 
 penpos1(BAR_TERM, 90 + APERTURE_ANGLE); penpos2(BAR, 90); penpos3(STEM, 0); penpos5(BAR_ADJ(z6), -APERTURE_ANGLE);penpos4(BAR_ADJ(z6), -APERTURE_ANGLE);
 
-fill z1r{daa}..tsn..z2r{rt}..tsn..z3r{dn}..z4r --- z5r -- z5l --- z4l..z3l{up}..tsn..z2l{lt}..tsn..{dia}z1l -- cycle;
+fill z1r...z2r{rt}..tsn..z3r{dn}..z4r --- z5r -- z5l --- z4l..z3l{up}..tsn..z2l{lt}...z1l -- cycle;
 
 fill z6l -- z7l -- z7r -- z6r -- cycle;
 

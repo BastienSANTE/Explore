@@ -2,80 +2,108 @@
 %%% CONFIGURATION FILE %%%
 %%%====================%%%
 
-%%% VARIABLE DECLARATIONS
-%%% These variables are font-wide, and serve to define
-%%% parameters in each glyph
-%path skl[];
-
 pair ikp[]; % Coordinates to define inktraps
 pair sfp[]; % Coordinates to define serif positions
 pair dot[];
 
-%%% PEN STROKE SETTINGS
-%%% These settings define the main "boldness" of the glyphs.
+path glyph;
+
+%%% BOLDNESS
 boolean BOLD;
-BOLD:= false;
+BOLD:= true;
 
-if BOLD = false:
-  BAR:=   .64pt; % Normal horizontal stroke width
-  BAR_C:= .64pt; % "Counterpart", to use in high-contrast fonts, and avoid modifying TH or TV. For the classic font, keep BAR_C = BAR.
-  STEM:=   .8pt; % Normal vertical stroke width
-  STEM_C:= .8pt; % Same rule as NH and NH_C
-else:
-  if BOLD = true:
-    BAR:=   .96pt;
-    BAR_C:= .96pt;
-    STEM:=   1.28pt; 
-    STEM_C:= 1.28pt;
-  fi
-fi
+% MONO OR PROPORTIONAL?
+boolean MONOSPACE;
+MONOSPACE = true;
+MONO_WIDTH#:= 6pt#;
 
-BAR_CROSS := BAR * 0.9;
-STEM_CROSS:= STEM * 0.9;
-BAR_TERM  := BAR * 0.8;
-STEM_TERM := STEM * 0.8;
-BAR_JOINT := BAR * 0.67;
-STEM_JOINT:= STEM * 0.67;
-BAR_THIN  := BAR * 0.5;
-STEM_THIN := STEM * 0.5;
-BAR_FINE  := BAR * 0.25;
-STEM_FINE := STEM * 0.25;
+% ITALICS
+boolean ITALIC;
+ITALIC = true;
+ITANGLE:= 0.2;
 
-%%% ESSENTIAL METRICS
-STRETCH:= 1;  % Font width setting, to create "condensed" or "expanded" versions.
-EM_H:= 8pt#;     % height of the bounding box of the fontx
-DEPTH:= 2.24pt#; % Size of the bounding box's descender.
-% The total of em_h and depth are equal to 10.24, in order to match the 1024 unit TrueType convetion.
-CAP_H:= 7pt;                 % Height of standard uppercase glyphs
-X_H:= 5.2pt;                 % Height of standard lowercase glyphs
-BASELINE:= 0pt;                   % Self-explanatory
-OVERSHOOT:= 0.08pt;               % Height compensation for glyphs with rounded tops
-CAP_TOP = CAP_H + OVERSHOOT; % Top of uppercase glyphs with oversoot
-CAP_BOTTOM = BASELINE - OVERSHOOT;% Lowest point of uppercase glyphs with overshoot
-DESCENDER = -1.92pt;              % Actual position of the descender
-X_TOP:= X_H + OVERSHOOT;          % Top of rounded lowercase glyphs
-
-%%% CURVATURE
-TSN:= .9; % Average tension of curvature
-APERTURE:= .2; % Average aperture of glyphs, based on height;
-APERTURE_ANGLE:= 45;
-INV_APERTURE_ANGLE:= 180 + APERTURE_ANGLE;
-ARCHCOEF:= 0.6;
-ARCHCORR:= 0.2pt;
-
-%%% SERIFS
+% SERIF STYLE
 boolean SERIF;
 SERIF:= false;
 SERIF_LENGTH#:= .7pt#;
 SERIF_THICKNESS:= BAR;
 TERM_LENGTH#:= 1pt#;
-
 SERIFL:= SERIF_LENGTH;
 
-%%% MONOSPACE METRICS
-boolean MONOSPACE;
-MONOSPACE = false;
-MONO_WIDTH#:= 6pt#;
+% OLDSTYLE NUMERALS
+boolean OLDSTYLE;
+OLDSTYLE = false;
+
+%%% ESSENTIAL METRICS
+numeric STRETCH;                  % Font width setting, to create "condensed" or "expanded" versions.
+EM_H:= 8pt#;                      % height of the bounding box of the fontx
+DEPTH:= 2.24pt#;                  % Size of the bounding box's descender.
+                                  % EM_H + DEPTH = 10.24, to match the 1024 unit TrueType convetion.
+CAP_H:= 7pt;                      % Height of standard uppercase glyphs
+X_H:= 5.2pt;                      % Height of standard lowercase glyphs
+BASELINE:= 0pt;                   % Self-explanatory
+OVERSHOOT:= 0.08pt;               % Height compensation for glyphs with rounded tops
+CAP_TOP = CAP_H + OVERSHOOT;      % Top of uppercase glyphs with oversoot
+CAP_BOTTOM = BASELINE - OVERSHOOT;% Lowest point of uppercase glyphs with overshoot
+DESCENDER = -1.92pt;              % Actual position of the descender
+X_TOP:= X_H + OVERSHOOT;          % Top of rounded lowercase glyphs
+
+%%% KERNING DEIFINITIONS
+numeric CURVE_BEARING, LINE_BEARING,STEM_BEARING, OBLIQUE_BEARING, MONO_CURVE_BEARING, MONO_LINE_BEARING;
+
+if BOLD = false:
+  STRETCH:=             1;
+  BAR:=             .64pt; % Normal horizontal stroke width
+  BAR_C:=           .64pt; % "Counterpart", to use in high-contrast fonts, and avoid modifying TH or TV. For the classic font, keep BAR_C = BAR.
+  STEM:=             .8pt; % Normal vertical stroke width
+  STEM_C:=           .8pt; % Same rule as NH and NH_C
+  CURVE_BEARING:=   .56pt; % Average sidebearing for glyphs with curved edges
+  LINE_BEARING:=     .8pt; % Average sidebearing for glyphs with straight stems
+  STEM_BEARING:=    .64pt; % Average sidebearing for B, D, P, Q...
+  LEG_BEARING:=     .64pt;
+  OBLIQUE_BEARING:= .36pt;
+  MONO_CURVE_BEARING:= .64pt;
+  MONO_LINE_BEARING:= .96pt;
+else:
+  if BOLD = true:
+    STRETCH:=          1.05;
+    BAR   :=          .96pt;
+    BAR_C :=          .96pt;
+    STEM  :=         1.28pt; 
+    STEM_C:=         1.28pt;
+    CURVE_BEARING:=   .48pt; 
+    LINE_BEARING:=    .64pt;  
+    STEM_BEARING:=    .56pt; 
+    LEG_BEARING:=     .56pt;
+    OBLIQUE_BEARING:= .24pt;
+    MONO_CURVE_BEARING:= .56pt;
+    MONO_LINE_BEARING := .8pt;
+  fi
+fi
+
+STEM:= STEM / cosd(ITANGLE * 50);
+
+%%% PEN VARIATIONS
+BAR_CROSS := BAR *   0.9;
+STEM_CROSS:= STEM *  0.9;
+BAR_TERM  := BAR *   0.8;
+STEM_TERM := STEM *  0.8;
+BAR_JOINT := BAR *  0.67;
+STEM_JOINT:= STEM * 0.67;
+BAR_THIN  := BAR *   0.5;
+STEM_THIN := STEM *  0.5;
+BAR_FINE  := BAR *  0.25;
+STEM_FINE := STEM * 0.25;
+
+
+%%% CURVATURE
+TSN:= .9; % Average tension of curvature
+APERTURE:= .2; % Average aperture of glyphs, based on height;
+APERTURE_ANGLE:= 40;
+INV_APERTURE_ANGLE:= 180 + APERTURE_ANGLE;
+ARCHCOEF:= 0.6;
+ARCHCORR:= 0.2pt;
+
 
 %%% SIDEBEARINGS & BASIC KERNING
 CURVE_BEARING:=.56pt; % Average sidebearing for glyphs with curved edges
@@ -104,11 +132,16 @@ OLDSTYLE = false;
 INKFAC:= 0.4; % "Inktrap factor" defines the relativ importance of inktraps
 %def midpoint(expr a)
 
+
+%%%%%%%%%%%%%%%%%%%%%%
+% MACROS & FUNCTIONS %
+%%%%%%%%%%%%%%%%%%%%%%
+
+
 def PT = 1pt enddef;
 
-%def makeserif(expr origin)
 
-% NEWCHAR() : Creates a new glyph, with all definitions already made
+% EXPORT_SETUP() : To output correct filename & format
 def export_setup =
   outputtemplate := "%c.svg";
   outputformat := "svg";
@@ -182,6 +215,7 @@ def onpath(expr a, b, c) =
 def lt:= left enddef;
 def rt:= right enddef;
 def dn:= down enddef;
+def aa:= APERTURE_ANGLE enddef;
 def daa:= dir APERTURE_ANGLE enddef;
 def naa:= dir -APERTURE_ANGLE enddef;
 def dia:= dir INV_APERTURE_ANGLE enddef;
@@ -205,6 +239,12 @@ enddef;
 def STEM_C_ADJ(expr a) =
   STEM_C / cosd(angle(a))
 enddef;
+
+def italicize =
+  if ITALIC = true:
+    currentpicture:= currentpicture shifted(- CAP_H * ITANGLE / 2, 0) slanted ITANGLE; fi
+enddef;
+
 
   
 

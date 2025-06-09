@@ -1,0 +1,6 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0036 DIGIT SIX - CODE 54
+newchar(54, 5.5pt#, 0);

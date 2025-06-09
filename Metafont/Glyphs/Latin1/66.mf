@@ -51,7 +51,8 @@ fi
   penstroke z0e -- z4e;
   penstroke z42e{right}..tsn..z5e{down}..tsn..z6e{left} -- z7e;
   penstroke z8e -- z9e;
-  
+
+  italicize;
   penlabels(range 0 thru 99);
 endchar;
 end

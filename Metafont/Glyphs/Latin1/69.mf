@@ -33,7 +33,7 @@ if SERIF = true:
   makeserif(4, z8r, -SERIF_THICKNESS, SERIF_LENGTH);
 fi
 
-
+  italicize;
   penlabels(range 1 thru 8);
 endchar;
 end

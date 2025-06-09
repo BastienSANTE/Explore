@@ -26,9 +26,16 @@ z7l = (x5r, y3l);
 z10r = (x9r, BASELINE);
 z8r = (x7l + ((x10l - x7l) * ARCHCOEF), y4r);
 
-penpos1(STEM, 0); penpos2(STEM, 0);
-penpos3(BAR_JOINT, 90 + APERTURE_ANGLE); penpos4(BAR, 90); penpos5(STEM, 0); penpos6(STEM, 0);
-penpos7(BAR_JOINT, 90 + APERTURE_ANGLE); penpos8(BAR, 90); penpos9(STEM, 0); penpos10(STEM, 0);
+forsuffixes $ = 1, 2, 5, 6, 9, 10:
+   if MONOSPACE = false:
+    if BOLD = false:
+      penpos$(STEM, 0); fi
+  else:
+    penpos$(BAR, 0); fi
+endfor;
+
+penpos3(BAR_THIN, 90 + APERTURE_ANGLE); penpos4(BAR, 90); 
+penpos7(BAR_THIN, 90 + APERTURE_ANGLE); penpos8(BAR, 90);
 
 z41 = z4r shifted(STRETCH * ARCHCORR, 0);
 z81 = z8r shifted(STRETCH * ARCHCORR, 0);
@@ -36,7 +43,7 @@ z81 = z8r shifted(STRETCH * ARCHCORR, 0);
 fill z1l -- z1r -- z2r -- z2l -- cycle;
 
 if MONOSPACE = false:
-  fill z3r{daa}..invtsn..z41{right}..tsn..z7r & z7r..invtsn..z81{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}..tsn..z8l{left}..z7l{dia} -- z5r -- z6r -- z6l -- z5l{up}..tsn..z4l{left}..tsn..z3l{dia} -- cycle;
+  fill z3r...z41{right}..tsn..z7r & z7r...z81{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}..tsn..z8l{lt}...z7l -- z5r -- z6r -- z6l -- z5l{up}..tsn..z4l{left}...z3l -- cycle;
 else:
   if MONOSPACE = true:
      fill z3r{daa}..invtsn..z41{right}..tsn..z7r & z7r..invtsn..z81{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}...z8l{left}...{dn}z7l -- z5r -- z6r -- z6l -- z5l{up}...z4l{left}...{dn}z3l{dia} -- cycle;

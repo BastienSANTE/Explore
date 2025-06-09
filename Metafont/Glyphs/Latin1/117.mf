@@ -14,11 +14,11 @@ z51 = z5l shifted(- ARCHCORR, 0);
 z6r = (x1l, 0.3 * X_H);
 
 penpos1(STEM, 0); penpos2(STEM, 0);
-penpos3(STEM, 0); penpos4(STEM, 0); penpos5(BAR, 90); penpos6(BAR_JOINT, 90 + APERTURE_ANGLE);
+penpos3(STEM, 0); penpos4(STEM, 0); penpos5(BAR, 90); penpos6(BAR_THIN, 90 + APERTURE_ANGLE);
 
 penstroke z1e -- z2e;
 
-fill z3l -- z3r -- z4r{down}..tsn..z5r{right}..z6r{daa} -- z6l{dia}..z51{left}..tsn..z4l{up} -- cycle;
+fill z3l -- z3r -- z4r{down}..tsn..z5r{right}...z6r -- z6l...z51{lt}..tsn..z4l{up} -- cycle;
 penlabels(range 1 thru 51);
 
 endchar;

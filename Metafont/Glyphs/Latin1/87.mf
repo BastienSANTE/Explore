@@ -20,15 +20,27 @@ z311r = onpath(z3r, z4r, INKFAC); z321l = onpath(z4l, z3l, INKFAC);
 z411r = onpath(z4r, z5r, INKFAC);
 
 forsuffixes $ = 1, 2, 3, 4, 5:
-  penpos$(STEM, 0);
+  if MONOSPACE = false:
+    if BOLD = false:
+      penpos$(STEM, 0); fi
+  else:
+    penpos$(BAR, 0); fi
 endfor;
 
 forsuffixes $ = 11, 21, 22, 31, 32, 41, 42, 51:
-  penpos$(STEM_JOINT, 0);
+  if MONOSPACE = false:
+    if BOLD = false:
+      penpos$(STEM_JOINT, 0); fi
+  else:
+    penpos$(BAR_JOINT, 0); fi
 endfor;
 
 forsuffixes $ = 111, 211, 221, 311, 321, 411:
-  penpos$(STEM, 0);
+  if MONOSPACE = false:
+    if BOLD = false:
+      penpos$(STEM, 0); fi
+  else:
+    penpos$(BAR, 0); fi
 endfor;
 
 penstroke z1e -- z111e -- z21e; penstroke z22e -- z211e -- z221e -- z31e;

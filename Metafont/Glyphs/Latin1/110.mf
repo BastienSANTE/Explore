@@ -14,12 +14,12 @@ z4r = (x3l + ((x5l - x3l) * ARCHCOEF), X_TOP);
 z6r = (x5r, BASELINE);
 
 penpos1(STEM, 0); penpos2(STEM, 0);
-penpos3(BAR_JOINT, 90 + APERTURE_ANGLE); penpos4(BAR, 90); penpos5(STEM, 0); penpos6(STEM, 0);
+penpos3(BAR_THIN, 90 + APERTURE_ANGLE); penpos4(BAR, 90); penpos5(STEM, 0); penpos6(STEM, 0);
 
 z41 = z4r shifted(STRETCH * ARCHCORR, 0);
 
 fill z1l -- z1r -- z2r -- z2l -- cycle;
-fill z3r{dir APERTURE_ANGLE}..invtsn..z41{right}..tsn..z5r{down} -- z6r -- z6l -- z5l{up}..tsn..z4l{left}..tsn..z3l{dir INV_APERTURE_ANGLE} -- cycle;
+fill z3r...z41{right}..tsn..z5r{down} -- z6r -- z6l -- z5l{up}..tsn..z4l{left}...z3l -- cycle;
 penlabels(range 1 thru 6);
 endchar;
 end

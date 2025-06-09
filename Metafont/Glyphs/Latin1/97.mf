@@ -37,6 +37,8 @@ newchar(97, 5.3pt#, 1);
   
   fill z5r..z6r{left}..tsn..z7r{down}..tsn..z81{right}..tsn..z9r -- z9l..tsn..z8l{left}..tsn..z7l{up}..tsn..z6l{right}..z5l -- z5r -- cycle;
 
+  italicize;
+
   penlabels(range 1 thru 81);  
 endchar;
 end

@@ -35,6 +35,7 @@ penpos8(BAR, -90);
   penstroke z6e -- z7e;
   penstroke z71e -- z8e;
 
+  italicize;
   penlabels (range 1 thru 71);
 endchar;
 end
