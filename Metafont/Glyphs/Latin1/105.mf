@@ -28,6 +28,8 @@ newchar(105, 3pt#, 0);
 
   fill fullcircle scaled DOTSIZE shifted z5;
 
+italicize;
+
   penlabels(range 1 thru 7);
 endchar;
 end

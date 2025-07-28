@@ -33,6 +33,7 @@ if SERIF = true:
 fi
 
   italicize;
+
   penlabels (range 1 thru 5);
 endchar;
 end

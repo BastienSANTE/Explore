@@ -1,0 +1,18 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+007C VERTICAL LINE - CODE 124
+newchar(124, 3.5pt#, 0);
+
+z1 = (mid, ASCENDER);
+z2 = (x1, LOWPOINT);
+
+penpos1(STEM, 0); penpos2(STEM, 0);
+
+penstroke z1e -- z2e;
+
+italicize;
+
+endchar;
+end

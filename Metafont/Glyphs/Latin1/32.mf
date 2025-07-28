@@ -1,0 +1,9 @@
+input ../Config/ExploreSansCFG.mf
+
+export_setup;
+
+% U+0020 SPACE - CODE 32
+newchar(32, 2pt#, 0);
+
+endchar;
+end

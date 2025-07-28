@@ -6,13 +6,11 @@ export_setup;
 newchar(68, 6.2pt#, 0);
   x1 = LINE_BEARING; y1r = CAP_H;
   x2 = 0.45w; y2r = CAP_H;
-  x3r = w - CURVE_BEARING; y3 = 0.45h;
+  x3r = lerpbold(w - CURVE_BEARING, w - OBLIQUE_BEARING); y3 = 0.45h;
   x4 = x2; y4r = BASELINE;
   x5 = x1; y5r = BASELINE;
   x6l = x1; y6 = y1r;
   x7l = x1; y7 = BASELINE;
-
-italicize
 
   penpos1(BAR, 90);
   penpos2(BAR, 90);
@@ -31,6 +29,7 @@ penpos7(STEM, 0);
   fi
 
   italicize;
+
   penlabels(range 1 thru 7);
 endchar;
 end

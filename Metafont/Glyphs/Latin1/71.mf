@@ -30,12 +30,12 @@ penpos8(BAR, -90);
     makeserif(1, z1r, -SERIF_THICKNESS, -TERM_LENGTH);
   fi
 
-
   penstroke z1e..z2e{left}..tension TSN..z3e{down}..tension TSN..z4e{right}..z5e;
   penstroke z6e -- z7e;
   penstroke z71e -- z8e;
 
   italicize;
+
   penlabels (range 1 thru 71);
 endchar;
 end

@@ -12,7 +12,7 @@ newchar(90, 6pt#, 0);
   x4 = x2; y4 = y3;
 
   penpos1(BAR, 90); penpos2(BAR, 90); penpos3(BAR, 90); penpos4(BAR, 90);
-  penpos21(STEM, 0);  penpos31(STEM, 0);
+  penpos31(STEM, 0); penpos21(STEM, 0);
 
   if SERIF = true:
     makeserif(1, z1l,  SERIF_THICKNESS, -SERIF_LENGTH);
@@ -21,6 +21,8 @@ newchar(90, 6pt#, 0);
 
   penstroke z1e -- z2e; penstroke z3e -- z4e; penstroke z21e -- z31e;
   
+  italicize;
+
   penlabels(range 1 thru 31);
 endchar;
 end

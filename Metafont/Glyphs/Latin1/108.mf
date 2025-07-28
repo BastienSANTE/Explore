@@ -7,9 +7,9 @@ newchar(108, 2.6pt#, 0);
 
 if MONOSPACE = false:
   z1 = (0.5w, CAP_TOP);
-  z2 = (x1, 0.2 * X_H);
-  z3l = (.8w , BASELINE);
-  z4l = (0.95w, y3l);
+  z2 = (x1, lerp(0.2 * X_H, 0.3 * X_H, BOLDNESS/MAXBOLDNESS));
+  z3l = (lerp(.8w, .9w, BOLDNESS/MAXBOLDNESS) , BASELINE);
+  z4l = (lerp(0.95w, w, BOLDNESS/MAXBOLDNESS), y3l);
 else:
   if MONOSPACE = true:
     z1 = (0.42w, CAP_TOP);
@@ -32,6 +32,7 @@ else:
   fi
 fi
 
+italicize;
 
 penlabels(range 1 thru 6);
 endchar;

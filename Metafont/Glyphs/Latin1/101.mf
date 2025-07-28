@@ -15,22 +15,25 @@ z4r = (x2, CAP_BOTTOM);
 
   z6 = z3;
   z7l = z1r;
+  z8 = onpath(z1, z1r, 0.75);
 
-  z5r = (x7r, BASELINE + (X_H * APERTURE));
-  z8 = onpath(z1, z1r, 0.5);
+  z5r = (lerp(x7r, x8, BOLDNESS/MAXBOLDNESS), BASELINE + (X_H * APERTURE * 0.8));
+  
   z9 = (x1l, y6r);
   z10 = (x3l, y6r);
   z12 = (x3l, y6l);
 
-  penpos1(STEM, 0); penpos2(BAR, 90); penpos3(STEM, 180); penpos4(BAR, 270); penpos5(BAR, 270 + APERTURE_ANGLE);
+  penpos1(STEM, 0); penpos2(BAR, 90); penpos3(STEM, 180); penpos4(BAR, 270); penpos5(lerp(BAR, BAR, BOLDNESS/MAXBOLDNESS), 270 + APERTURE_ANGLE);
   penpos6(BAR_CROSS, 90); penpos7(BAR_CROSS, 90);
   penpos11(STEM, 0);
 
-fill z8..tsn..z7r{up}..tsn..z2r{lt}..tsn..z3r{dn}..tsn..z4r{rt}..z5r -- z5l..z4l{lt}..tsn..z12{up} -- z3l -- z10{up}..tsn..z2l{rt}..tsn..z9{dn} -- z1l -- cycle;
+fill z8..tsn..z7{up}..tsn..z2r{lt}..tsn..z3r{dn}..tsn..z4r{rt}..z5r -- z5l..z4l{lt}..tsn..z12{up} -- z3l -- z10{up}..tsn..z2l{rt}..tsn..z9{dn} -- z1l -- cycle;
 fill z6l -- z6r -- z7r --z8 -- cycle;
 
   %penstroke z1e..z11e..tension TSN..z2e{left}..tension TSN..z3e{down}..tension TSN..z4e{right}..z5e;
   %penstroke z6e -- z7e; 
+
+italicize;
 
   penlabels(range 1 thru 12);
 endchar;

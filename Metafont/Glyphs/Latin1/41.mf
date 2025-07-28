@@ -1,0 +1,29 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0029 RIGHT PARENTHESIS - CODE 41
+newchar(41, 3.5pt#, 0);
+if MONOSPACE = true:
+  z1r = (0.3w, ASCENDER);
+  z2r = (0.75w, CAP_H / 2);
+  z3r = (x1r, LOWPOINT);
+else:
+  z1l = (OBLIQUE_BEARING, ASCENDER);
+  z2r = (w - LINE_BEARING, CAP_H / 2);
+  z3r = (x1r, LOWPOINT);
+fi
+
+if MONOSPACE = true:
+  penpos2(STEM, 0); penpos1(STEM_TERM, 90 - angle(z2) / 1.414); penpos3(STEM_TERM, -90 + (angle(z2) / 1.414));
+else:
+  penpos1(BAR, 0); penpos2(STEM, 0); penpos3(BAR, 0);
+fi
+
+penstroke z1e...z2e{dn}...z3e;
+
+italicize;
+
+penlabels(range 1 thru 3);
+endchar;
+end

@@ -1,0 +1,23 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+003E GREATER-THAN SIGN - CODE 62
+newchar(62, 5.6pt#, 0);
+slope_height:= 2.5pt;
+
+z1 = (w - CURVE_BEARING, X_H / 2);
+penpos1(BAR, 90);
+
+z21r = z1r; z31l = z1l;
+
+z2 = (CURVE_BEARING, y1 + slope_height);
+z3 = (CURVE_BEARING, y1 - slope_height);
+
+penpos21(BAR, 90); penpos31(BAR, 90);
+penpos2(STEM, 90); penpos3(STEM, 90);
+
+penstroke z21e -- z2e; penstroke z31e -- z3e;
+
+endchar;
+end

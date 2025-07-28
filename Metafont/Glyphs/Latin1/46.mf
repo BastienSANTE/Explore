@@ -1,0 +1,15 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+002E FULL STOP - CODE 46
+newchar(46, 2.5pt#, 0);
+
+dot1 = (mid, CAP_BOTTOM + (DOTSIZE / 2));
+
+fill fullcircle scaled DOTSIZE shifted dot1;
+
+italicize;
+
+endchar;
+end

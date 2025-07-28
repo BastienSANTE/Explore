@@ -1,0 +1,40 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0070 LATIN SMALL LETTER P - CODE 112
+newchar(112, 5.84pt#, 1);
+  x1l = STEM_BEARING; y1 = X_H;
+  x2l = x1l; y2 = 0.8 * X_H;
+  x3l = x1l; y3 = DESCENDER;
+
+  x4l = x2r; y4 = X_H - (CAP_H * APERTURE);
+  x5 = 0.5w; y5r = X_TOP;
+  x6r = w - CURVE_BEARING; y6 = y5l - ((y5l - y7l) / 2);
+  x7 =  x5; y7r = CAP_BOTTOM;
+  x8l = x2r; y8r = BASELINE + (CAP_H * APERTURE);
+
+  penpos1(STEM_TERM, 0); penpos2(STEM, 0); penpos3(STEM, 0);
+penpos4(BAR_THIN, 90 + APERTURE_ANGLE); penpos5(BAR, 90); penpos6(STEM, 0); penpos7(BAR, 270); penpos8(BAR_THIN, 270 - APERTURE_ANGLE);
+
+z51 = z5r shifted (STRETCH * ARCHCORR, 0);
+z71 = z7r shifted (STRETCH * ARCHCORR, 0);
+
+if SERIF = true:
+  makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
+  makeserif(2, z3l, -SERIF_LENGTH,  SERIF_THICKNESS);
+fi
+
+  fill z1l -- z3l -- z3r -- z2r -- z1r -- cycle;
+  fill z4r .. z51{rt} ..tsn.. z6r{dn} ..tsn.. z71{lt} .. z8r -- z8l .. z7l{rt} ..tsn .. z6l{up} ..tsn.. z5l{lt} .. z4l -- cycle;
+
+help1 = (x5, y6);
+
+%rotmirror(help1);
+
+italicize;
+
+  penlabels(range 1 thru 8);
+endchar;
+end
+

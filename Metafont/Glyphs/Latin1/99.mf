@@ -4,12 +4,19 @@ export_setup;
 
 % U+0063 LATIN SMALL LETTER C - CODE 99
 newchar(99, 5.05pt#, 0);
-  z1 = (w - CURVE_BEARING, X_H - (X_H * APERTURE));
-  z2r = (x3l + ((x1l - x3l) / 2), X_TOP);
-  z3r = (CURVE_BEARING, 0.5 * X_H);
-  z4r = (x2, CAP_BOTTOM);
-  z5 = (x1, BASELINE + (X_H * APERTURE));
+if MONOSPACE = true:
+  z1r = (w - CURVE_BEARING,X_H - (X_H * APERTURE));
+  z2r = (lerp(0.5w, 0.53w, BOLDNESS/MAXBOLDNESS), X_TOP);
+  z5r = (x1r, BASELINE + (X_H * APERTURE));
+else:
+  z1 = (w - CURVE_BEARING, lerpbold(X_H - (X_H * APERTURE),X_H - (CAP_H * APERTURE)));
+  z2r = (lerp(0.55w, 0.58w, BOLDNESS/MAXBOLDNESS), X_TOP);
+  z5 = (x1, lerpbold(BASELINE + (X_H * APERTURE),BASELINE + (CAP_H * APERTURE)));
+fi
 
+z3r = (CURVE_BEARING, 0.5 * X_H);
+z4r = (x2, CAP_BOTTOM);
+  
   penpos1(BAR, 90 - APERTURE_ANGLE); penpos2(BAR, 90); penpos3(STEM, 180); penpos4(BAR, 270); penpos5(BAR, 270 + APERTURE_ANGLE);
 
 if SERIF = true:
@@ -19,6 +26,8 @@ fi
 
   fill z1r..tension TSN..z2r{left}..tension TSN..z3r{down}..tension TSN..z4r{right}..z5r -- z5l..z4l{left}..tension TSN..z3l{up}..tension TSN..z2l{right}..tension TSN..z1l  -- z1r -- cycle;
   
+  italicize;
+
   penlabels(range 0 thru 99);
 endchar;
 end

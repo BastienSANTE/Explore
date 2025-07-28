@@ -1,0 +1,28 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0037 DIGIT SEVEN - CODE 55
+newchar(55, 5.5pt#, 0);
+
+z1r = (CURVE_BEARING, CAP_H);
+z2r = (w - CURVE_BEARING, y1r);
+
+z3r = (x2, y1l); z4 = (0.325w, BASELINE);
+
+penpos1(BAR,90); penpos2(BAR, 90);
+penpos3(STEM_ADJ(z4), 0); penpos4(STEM_ADJ(z4), 0);
+
+penstroke z1e -- z2e;
+
+if ITALIC = true:
+  fill z3l -- z3r...z4r{dn} -- z4l{up}...z3l -- cycle;
+else:
+  penstroke z3e -- z4e;
+fi
+
+italicize;
+
+penlabels(range 1 thru 5);
+endchar;
+end

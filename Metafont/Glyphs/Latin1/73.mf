@@ -10,8 +10,8 @@ newchar(73, 2.3pt#, 0);
   penpos1(STEM, 0); penpos2(STEM, 0);
 
   if MONOSPACE = true:
-    z3r = (CURVE_BEARING, y1); z4r = (w - CURVE_BEARING, y1);
-    z5r = (CURVE_BEARING, y2); z6r = (w - CURVE_BEARING, y2);
+    z3r = (lerpbold(CURVE_BEARING, LINE_BEARING), y1); z4r = (lerpbold(w - CURVE_BEARING, w - LINE_BEARING), y1);
+    z5r = (lerpbold(CURVE_BEARING, LINE_BEARING), y2); z6r = (lerpbold(w - CURVE_BEARING, w - LINE_BEARING), y2);
 
     penpos3(BAR, 90); penpos4(BAR, 90);
     penpos5(BAR, -90); penpos6(BAR, -90);
@@ -28,7 +28,9 @@ newchar(73, 2.3pt#, 0);
   fi
 
   penstroke z1e -- z2e;
+
   italicize;
+
   penlabels(range 1 thru 2);
 endchar;
 end

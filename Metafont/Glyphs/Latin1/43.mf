@@ -1,0 +1,21 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+002B PLUS SIGN - CODE 43
+newchar(43, 6pt#, 2);
+z1 = (0.125w, 0.4 * CAP_H);
+z2 = (0.875w, y1);
+z3 = z1 rotatedaround((mid, y1), 90);
+z4 = z1 rotatedaround((mid, y1), -90);
+
+penpos1(BAR, 90); penpos2(BAR, 90);
+penpos3(STEM, 0); penpos4(STEM, 0);
+
+penstroke z1e -- z2e; penstroke z3e -- z4e;
+
+italicize;
+
+penlabels(range 1 thru 4);
+endchar;
+end;

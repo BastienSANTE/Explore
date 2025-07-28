@@ -1,0 +1,16 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+003A COLON - CODE 58
+newchar(58, 2.75pt#, 0);
+dot1 = (mid, CAP_BOTTOM + (DOTSIZE / 2));
+dot2 = (mid, X_TOP - (DOTSIZE / 2));
+
+fill fullcircle scaled DOTSIZE shifted dot1;
+fill fullcircle scaled DOTSIZE shifted dot2;
+
+italicize;
+
+endchar;
+end

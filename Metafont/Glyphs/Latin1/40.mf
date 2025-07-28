@@ -1,0 +1,29 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0028 LEFT PARENTHESIS - CODE 40
+newchar(40, 3.5pt#, 0);
+if MONOSPACE = true:
+  z1l = (0.7w, ASCENDER);
+  z2l = (0.25w, CAP_H / 2);
+  z3l = (x1l, LOWPOINT);
+else:
+  z1r = (w - OBLIQUE_BEARING, ASCENDER);
+  z2l = (LINE_BEARING, CAP_H / 2);
+  z3r = (x1r, LOWPOINT);
+fi
+
+if MONOSPACE = true:
+  penpos2(STEM, 0); penpos1(STEM_TERM, -angle(z2)); penpos3(STEM_TERM, angle(z2));
+else:
+  penpos1(BAR, 0); penpos2(STEM, 0); penpos3(BAR, 0);
+fi
+
+penstroke z1e...z2e{dn}...z3e;
+
+italicize;
+
+penlabels(range 1 thru 3);
+endchar;
+end

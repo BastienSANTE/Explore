@@ -6,8 +6,14 @@ export_setup;
 newchar(54, 5.5pt#, 0);
 bowl_height:= 0.65 * CAP_H;
 
+if ITALIC = true:
+  z1 = (0.6w, CAP_H);
+  z2 = onpath(z1, z3, 0.5);
+else:
   z1 = (0.865w, CAP_H - (X_H * APERTURE));
   z2r = (0.56w, CAP_TOP);
+fi
+
   z3r = (CURVE_BEARING, 0.44 * CAP_H);
   z4r = (0.5w, CAP_BOTTOM);
   z5r = (w - OBLIQUE_BEARING, 0.31 * CAP_H);
@@ -15,11 +21,26 @@ z6r = (x3l + ((x5l - x3l) / 2), bowl_height);
 z7l = (x3l, y5);
 
 z8 = (x3l, y7l);
+z9 = (x3r, y7);
 
-penpos1(BAR, 90 - aa); penpos2(BAR, 90); penpos3(STEM, 180); penpos4(BAR, 270); penpos5(STEM, 0); penpos6(BAR, 90); penpos7(BAR_THIN, 180);
+if ITALIC = true:
+  penpos1(STEM, 180);
+  penpos2(STEM, 180);
+else:
+  penpos1(BAR, 90 - aa);
+  penpos2(BAR, 90);
+fi
 
-fill z1r...z2r{lt}..tsn..z3r{dn}..tsn..z4r{rt}..tsn..z5r{up}..tsn..z6r{lt}...z7r{dn} -- z7l{up}..tsn..z6l{rt}..tsn..z5l{dn}..tsn..z4l{lt}..tsn..z8{up} -- z3l{up}..tsn..z2l{rt}...z1l -- cycle;
+penpos3(STEM, 180); penpos4(BAR, 270); penpos5(STEM, 0); penpos6(BAR, 90); penpos7(BAR_THIN, 180);
 
-penlabels(range 1 thru 7);
+if ITALIC = false:
+  fill z1r...z2r{lt}..tsn..z3r{dn}..tsn..z4r{rt}..tsn..z5r{up}..tsn..z6r{lt}...z7r{dn} -- z7l{up}..tsn..z6l{rt}..tsn..z5l{dn}..tsn..z4l{lt}..tsn..z8{up} -- z3l{up}..tsn..z2l{rt}...z1l -- cycle;
+else:
+  fill z1r..z2r..tsn..z9{dn}..tsn..z4r{rt}..tsn..z5r{up}..tsn..z6r{lt}...z7r{dn} -- z7l{up}..tsn..z6l{rt}..tsn..z5l{dn}..tsn..z4l{lt}..tsn..z8{up}..z3l..z2l...z1l -- cycle;
+fi
+
+italicize;
+
+penlabels(range 1 thru 8);
 endchar;
 end

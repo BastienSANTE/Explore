@@ -1,0 +1,22 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+005C REVERSE SOLIDUS - CODE 92
+newchar(92, 4.15pt#, 1);
+if MONOSPACE = true:
+  z1l = (CURVE_BEARING, CAP_TOP);
+  z2r = (w - CURVE_BEARING, CAP_BOTTOM);
+else:
+  z1l = (OBLIQUE_BEARING, CAP_TOP);
+  z2r = (w - OBLIQUE_BEARING, CAP_BOTTOM);
+fi
+
+penpos1(STEM, 0); penpos2(STEM, 0);
+
+penstroke z1e -- z2e;
+
+italicize;
+
+endchar;
+end

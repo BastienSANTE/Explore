@@ -1,0 +1,19 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+005F LOW LINE - CODE 95
+newchar(95, 5.3pt#, 1);
+z1r = (LINE_BEARING, BASELINE);
+z2r = (w - LINE_BEARING, y1r);
+
+penpos1(BAR, 90); penpos2(BAR, 90);
+
+fill z1r -- z2r -- z2l -- z1l -- cycle;
+
+italicize;
+
+penlabels(range 1 thru 2);
+
+endchar;
+end

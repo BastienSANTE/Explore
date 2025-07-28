@@ -11,7 +11,7 @@ z3l = (STEM_BEARING, X_H);
 z4l = (x3l, 0.35 * X_H);
 z5l = (x4r + ((x1l - x4r) * (1 - ARCHCOEF)), CAP_BOTTOM);
 z51 = z5l shifted(- ARCHCORR, 0);
-z6r = (x1l, 0.3 * X_H);
+z6r = (x1l, lerpbold(0.3 * X_H, y4r));
 
 penpos1(STEM, 0); penpos2(STEM, 0);
 penpos3(STEM, 0); penpos4(STEM, 0); penpos5(BAR, 90); penpos6(BAR_THIN, 90 + APERTURE_ANGLE);
@@ -19,6 +19,9 @@ penpos3(STEM, 0); penpos4(STEM, 0); penpos5(BAR, 90); penpos6(BAR_THIN, 90 + APE
 penstroke z1e -- z2e;
 
 fill z3l -- z3r -- z4r{down}..tsn..z5r{right}...z6r -- z6l...z51{lt}..tsn..z4l{up} -- cycle;
+
+italicize;
+
 penlabels(range 1 thru 51);
 
 endchar;

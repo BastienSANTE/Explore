@@ -2,29 +2,36 @@ input ../Config/ExploreSansCFG.mf
 
 export_setup;
 
-% U+0035 DIGIT TWO - CODE 53
+% U+0035 DIGIT FIVE - CODE 53
 newchar(53, 5.5pt#, 0);
 z1r = (0.835w, CAP_H);
-z2r = (0.19w, y1r);
-z3l = (LINE_BEARING, 0.48 * CAP_H);
+z2r = (lerpbold(0.2w, 0.1w), y1r);
+if MONOSPACE = true:
+  z3l = (x2r, lerp(0.48 * CAP_H, 0.4 * CAP_H, BOLDNESS/MAXBOLDNESS));
+else:
+  z3l = (LINE_BEARING, lerp(0.48 * CAP_H, 0.4 * CAP_H, BOLDNESS/MAXBOLDNESS));
+fi
 
-z4r = (0.5w, 0.65 * CAP_H);
-z5r = (w - CURVE_BEARING, 0.3125 * CAP_H);
+z4r = (lerp(0.5w, 0.52w, BOLDNESS/MAXBOLDNESS), 0.65 * CAP_H);
+z5r = (w - CURVE_BEARING, 0.33 * CAP_H);
 z6r = (0.45w, CAP_BOTTOM);
 z7r = (CURVE_BEARING, 0.13 * CAP_H);
 
 z21l = z2r;
 z31l = z3r;
+z41 = z4r shifted(ARCHCORR, 0);
 
 penpos1(BAR, 90); penpos2(BAR, 90); penpos3(STEM, 0);
-penpos4(BAR, 90); penpos5(STEM, 0); penpos6(BAR, -90); penpos7(BAR_TERM, -90 - APERTURE_ANGLE);
+penpos4(BAR_CROSS, 90); penpos5(STEM, 0); penpos6(BAR, -90); penpos7(BAR, -90 - APERTURE_ANGLE);
 
-penpos21(STEM, 0); penpos31(BAR_THIN, (angle(z4) + 90));
-
+penpos21(STEM, 0); penpos31(lerp(BAR_THIN, BAR_FINE, BOLDNESS/MAXBOLDNESS), 180);
 fill z2r -- z1r -- z1l -- z2l -- cycle;
 fill z21l -- z21r -- z3r -- z3l -- cycle;
 
-fill z31r..tsn..z4r{rt}..tsn..z5r{dn}..tsn..z6r{lt}..z7r -- z7l..z6l{rt}..tsn..z5l{up}..tsn..z4l{lt}..z31l -- cycle;
+fill z31r..tsn..z41{rt}..tsn..z5r{dn}..tsn..z6r{lt}..z7r -- z7l..z6l{rt}..tsn..z5l{up}..tsn..z4l{lt}..z31l -- cycle;
+
+italicize;
+
 penlabels(range 1 thru 31);
 endchar;
 end

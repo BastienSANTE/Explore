@@ -21,6 +21,8 @@ fill z1l -- z1r -- z2r -- z2l -- cycle;
 fill z3r -- z4r -- z4l -- z3l -- cycle;
 fill z5r -- z11r -- z11l -- z5l -- cycle;
 
+italicize;
+
 penlabels(range 1 thru 11);
 endchar;
 end

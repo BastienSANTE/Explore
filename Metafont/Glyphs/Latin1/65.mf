@@ -4,7 +4,7 @@ export_setup;
 
 % U+0041 LATIN CAPITAL LETTER A - CODE 65
 newchar(65, 6.2pt#, 0);
-  width:= .8w;
+  width:= .75w;
   barcoef:= 0.7; % "Bar coefficient": how low the bar is. Width is automatic.
   x1 = .5w; y1 = CAP_H;
   z11l = z1l;
@@ -54,6 +54,7 @@ newchar(65, 6.2pt#, 0);
   fill z4r -- z5r -- z5l -- z4l -- cycle;
 
   italicize;
+
   penlabels(range 1 thru 11);
 endchar;
 end

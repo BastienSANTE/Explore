@@ -1,0 +1,24 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+003D EQUALS SIGN - CODE 61
+newchar(61, 6pt#, 0);
+
+help1 = (mid, X_H / 2);
+z0l =  help1 shifted(0, lerpbold(STEM, BAR) / 2);
+z1l = (LINE_BEARING, y0l);
+z2l = (w - LINE_BEARING, y0l);
+
+penpos1(BAR, 90); penpos2(BAR, 90);
+
+elem1 = z1l -- z1r -- z2r -- z2l -- cycle;
+
+elem2 = elem1 rotatedaround(help1, 180);
+
+fill elem1; fill elem2;
+
+italicize;
+
+endchar;
+end

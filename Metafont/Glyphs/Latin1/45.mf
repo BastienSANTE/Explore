@@ -1,0 +1,17 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+002D HYPHEN-MINUS - CODE 45
+
+newchar(45, 6pt#, 0);
+z1 = (0.125w, 0.4 * CAP_H);
+z2 = (0.875w, y1);
+
+penpos1(BAR, 90); penpos2(BAR, 90);
+
+italicize;
+
+penstroke z1e -- z2e;
+endchar;
+end

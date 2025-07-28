@@ -21,7 +21,7 @@ z11 = onpath(z5l, z6l, 0.25);
 penpos1(BAR, 90); penpos2(BAR, 90);
 penpos3(STEM_ADJ(-(z4l - z3r)), 0); penpos4(STEM,0);
 
-penpos5(BAR, 90); penpos6(BAR, 90);
+penpos5(BAR_CROSS, 90); penpos6(BAR_CROSS, 90);
 penpos7(STEM, 0); penpos8(BAR, -90); penpos9(BAR, -90 - aa);
 
 penstroke z1e -- z2e; penstroke z3e -- z4e;
@@ -29,6 +29,9 @@ penstroke z1e -- z2e; penstroke z3e -- z4e;
 fill z5r -- z6r{rt}..tsn..z7r{dn}..tsn..z8r{lt}...z9r -- z9l...z8l{rt}..tsn..z7l{up}..tsn..z10{lt} -- z11 -- cycle;
 
 %penstroke z5e -- z6e{rt}..tsn..z7e{dn}..tsn..z8e{lt}..z9e;
+
+italicize;
+
 penlabels(range 1 thru 10);
 endchar;
 end

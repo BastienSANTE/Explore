@@ -14,8 +14,11 @@ else: if MONOSPACE = true:
     z1l = (CURVE_BEARING, X_H);
     z2l = (CURVE_BEARING, BASELINE);
     z9r = (w - CURVE_BEARING, y5r);
-    z3l = (x1r, 0.775 * X_H);
+    z3l = (x1r, lerpbold(0.775 * X_H, y51));
     z5 = (x3l + ((x9l - x3l) / 2), 0.775 * X_H);
+
+    z51 = z5l shifted(0, lerpbold(0, -0.3pt));
+    z91 = z9l shifted(0, lerpbold(0, -0.3pt));
   fi
 fi
 
@@ -27,15 +30,15 @@ z10r = (x9r, BASELINE);
 z8r = (x7l + ((x10l - x7l) * ARCHCOEF), y4r);
 
 forsuffixes $ = 1, 2, 5, 6, 9, 10:
-   if MONOSPACE = false:
-    if BOLD = false:
-      penpos$(STEM, 0); fi
+  if MONOSPACE = true:
+    penpos$(lerpbold(STEM, BAR), 0);
   else:
-    penpos$(BAR, 0); fi
+    penpos$(STEM, 0);
+  fi
 endfor;
 
-penpos3(BAR_THIN, 90 + APERTURE_ANGLE); penpos4(BAR, 90); 
-penpos7(BAR_THIN, 90 + APERTURE_ANGLE); penpos8(BAR, 90);
+penpos3(BAR_FINE, 90 + APERTURE_ANGLE); penpos4(BAR, 90); 
+penpos7(BAR_FINE, 90 + APERTURE_ANGLE); penpos8(BAR, 90);
 
 z41 = z4r shifted(STRETCH * ARCHCORR, 0);
 z81 = z8r shifted(STRETCH * ARCHCORR, 0);
@@ -46,14 +49,13 @@ if MONOSPACE = false:
   fill z3r...z41{right}..tsn..z7r & z7r...z81{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}..tsn..z8l{lt}...z7l -- z5r -- z6r -- z6l -- z5l{up}..tsn..z4l{left}...z3l -- cycle;
 else:
   if MONOSPACE = true:
-     fill z3r{daa}..invtsn..z41{right}..tsn..z7r & z7r..invtsn..z81{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}...z8l{left}...{dn}z7l -- z5r -- z6r -- z6l -- z5l{up}...z4l{left}...{dn}z3l{dia} -- cycle;
+     fill z3r{daa}..invtsn..z41{right}..tsn..z7r & z7r..invtsn..z81{right}..tsn..z9r{down} -- z10r -- z10l -- z91{up}...z8l{left}...{dn}z7l -- z5r -- z6r -- z6l -- z51{up}...z4l{left}...{dn}z3l{dia} -- cycle;
   fi
 fi
 
+italicize;
 
-%fill z7r..tsn..z8r{right}..tsn..z9r{down} -- z10r -- z10l -- z9l{up}..tsn..z8l{left}..tsn..z7l -- cycle;
-
-penlabels(range 1 thru 10);
+penlabels(range 1 thru 99);
 
 endchar;
 end

@@ -1,0 +1,29 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0038 DIGIT EIGHT - CODE 56
+newchar(56, 5.5pt#, 0);
+
+z1r = (0.5w, CAP_TOP);
+z2r = (w - LINE_BEARING, y1l - ((y1l - y3l) / 2));
+z3 = (x1, 0.52 * CAP_H);
+z4r = (LINE_BEARING, y2);
+
+z5r = z3r shifted(0, BAR_JOINT);
+z6r = (w - CURVE_BEARING, 0.275 * CAP_H);
+z7r = (x1, CAP_BOTTOM);
+z8r = (CURVE_BEARING, y6);
+
+penpos1(BAR, 90); penpos2(STEM, 0); penpos3(BAR_TERM, -90); penpos4(STEM, -180);
+penpos5(BAR_TERM, 90); penpos6(STEM, 0); penpos7(BAR, -90); penpos8(STEM, -180);
+
+penstroke z1e{rt}..tsn..z2e{dn}..tsn..z3e{lt}..tsn..z4e{up}..tsn..{rt}cycle;
+penstroke z5e{rt}..tsn..z6e{dn}..tsn..z7e{lt}..tsn..z8e{up}..tsn..{rt}cycle;
+
+italicize;
+
+penlabels(range 1 thru 8);
+
+endchar;
+end

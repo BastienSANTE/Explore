@@ -7,7 +7,7 @@ newchar(50, 5.5pt#, 0);
 z1  = (0.14w, CAP_H - (CAP_H * APERTURE));
 z2r = (0.455w, CAP_TOP);
 z3r = (w - LINE_BEARING, 0.72 * CAP_H);
-z4  = (0.61w,  0.43 * CAP_H);
+z4  = (0.61w,  lerp(0.43 * CAP_H, 0.47 * CAP_H, BOLDNESS/MAXBOLDNESS));
 z5l = (x1r, y6r);
 
 z6l = (x5l, BASELINE);
@@ -15,7 +15,7 @@ z7l = (x3r, y6l);
 
 penpos6(BAR, 90); penpos7(BAR, 90);
 
-penpos1(BAR_TERM, 90 + APERTURE_ANGLE); penpos2(BAR, 90); penpos3(STEM, 0); penpos5(BAR_ADJ(z6), -APERTURE_ANGLE);penpos4(BAR_ADJ(z6), -APERTURE_ANGLE);
+penpos1(BAR, 90 + APERTURE_ANGLE); penpos2(BAR, 90); penpos3(STEM, 0); penpos5(STEM_TERM, -APERTURE_ANGLE);penpos4(STEM_TERM, -APERTURE_ANGLE);
 
 fill z1r...z2r{rt}..tsn..z3r{dn}..z4r --- z5r -- z5l --- z4l..z3l{up}..tsn..z2l{lt}...z1l -- cycle;
 
@@ -23,6 +23,8 @@ fill z6l -- z7l -- z7r -- z6r -- cycle;
 
 %penstroke z1e..tsn..z2e{rt}..tsn..z3e{dn}..tsn..z4e..z5e;
 %penstroke z6e -- z7e;
+
+italicize;
 
 penlabels(range 1 thru 7);
 endchar;

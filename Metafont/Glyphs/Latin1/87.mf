@@ -6,7 +6,13 @@ export_setup;
 newchar(87, 8.2pt#, 2);
 x1l = LINE_BEARING / 2; y1 = CAP_H;
 z2 = (x1 + ((x3 - x1) / 2), BASELINE);
-z3 = (0.5w, y1);
+
+if MONOSPACE = true:
+  z3 = (0.5w, 0.82 * CAP_H);
+else:
+  z3 = (0.5w, y1);
+fi
+
 z4 = ((x3 + (x5 - x3) / 2), y2);
 x5r = w - (LINE_BEARING / 2); y5 = y1;
 
@@ -20,32 +26,35 @@ z311r = onpath(z3r, z4r, INKFAC); z321l = onpath(z4l, z3l, INKFAC);
 z411r = onpath(z4r, z5r, INKFAC);
 
 forsuffixes $ = 1, 2, 3, 4, 5:
-  if MONOSPACE = false:
-    if BOLD = false:
-      penpos$(STEM, 0); fi
+  if MONOSPACE = true:
+    penpos$(lerpbold(STEM, BAR), 0);
   else:
-    penpos$(BAR, 0); fi
+    penpos$(STEM, 0);
+  fi
 endfor;
 
 forsuffixes $ = 11, 21, 22, 31, 32, 41, 42, 51:
-  if MONOSPACE = false:
-    if BOLD = false:
-      penpos$(STEM_JOINT, 0); fi
+  if MONOSPACE = true:
+    penpos$(lerpbold(STEM_JOINT, BAR_JOINT), 0);
   else:
-    penpos$(BAR_JOINT, 0); fi
+    penpos$(STEM_JOINT, 0);
+  fi
 endfor;
 
 forsuffixes $ = 111, 211, 221, 311, 321, 411:
-  if MONOSPACE = false:
-    if BOLD = false:
-      penpos$(STEM, 0); fi
+  if MONOSPACE = true:
+    penpos$(lerpbold(STEM, BAR), 0);
   else:
-    penpos$(BAR, 0); fi
+    penpos$(STEM, 0);
+  fi
 endfor;
 
 penstroke z1e -- z111e -- z21e; penstroke z22e -- z211e -- z221e -- z31e;
 penstroke z32e -- z311e -- z321e -- z41e;
 penstroke z42e -- z411e -- z5e;
+
+italicize;
+
 penlabels(range 1 thru 411);
 endchar;
 end

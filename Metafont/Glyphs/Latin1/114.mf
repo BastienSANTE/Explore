@@ -5,29 +5,39 @@ export_setup;
 % U+0072 LATIN SMALL LETTER R - CODE 114
 newchar(114, 3.6pt#, 0);
 
-  z2l = (x1l, BASELINE);
-  z3l = (x1r, X_H - (CAP_H * APERTURE));
+  z2l = (x1l, BASELINE); penpos2(STEM, 0);
+  z3l = (x1r, lerpbold(X_H - CAP_H * APERTURE, 0.6 * X_H)); penpos3(BAR_JOINT, 90 + APERTURE_ANGLE);
 
 if MONOSPACE = true:
   z1 = (0.45w, X_H);
   z11r = z1;
-  z4r = (w - CURVE_BEARING, X_TOP);
+  z4r = (w - (CURVE_BEARING / 2), X_TOP);
+  penpos4(BAR, 90);
   z5r = (LINE_BEARING, X_H);
-
   penpos5(BAR, 90); penpos11(BAR, 90);
   fill z5r -- z11r -- z11l -- z5l -- cycle;
+
+  z6l = (x5, BASELINE);
+  z7l = (lerp(x2r, x4r, 0.5), BASELINE);
 else:
   z1l = (LINE_BEARING, X_H);
   z4r = (0.95w, X_TOP);
+  penpos4(BAR, 90);
 fi
 
-penpos1(STEM, 0); penpos2(STEM, 0);
-penpos3(BAR_JOINT, 90 + APERTURE_ANGLE); penpos4(BAR, 90);
+penpos1(STEM, 0);
 
 penstroke z1e -- z2e;
 
 fill z3r{dir APERTURE_ANGLE}..tsn..z4r{right} -- z4l{left}..tsn..z3l{dir INV_APERTURE_ANGLE} -- cycle;
-% penstroke z3e{dir 60}...z4e{right};
-penlabels(range 1 thru 4);
+
+if MONOSPACE = true:
+  penpos6(BAR, 90); penpos7(BAR, 90);
+  fill z6r -- z7r -- z7l -- z6l -- cycle;
+fi
+
+italicize;
+
+penlabels(range 1 thru 7);
 endchar;
 end

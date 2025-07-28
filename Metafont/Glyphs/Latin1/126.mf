@@ -1,0 +1,26 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+007E TILDE - CODE 126
+newchar(126, 6.75pt#, 1);
+
+center = (mid, X_H / 2);
+
+z1r = (CURVE_BEARING, X_H / 2);
+z2r = (lerp(CURVE_BEARING, mid, 0.5), 0.7 * X_H);
+z3 = center;
+
+penpos2(BAR, 90); penpos1(BAR, 180 -angle(z2)); penpos3(BAR, angle(z2));
+
+elem1 = z1r...z2r{rt}..tsn..z3r -- z3l..tsn..z2l{lt}...z1l -- cycle;
+
+elem2 = elem1 rotatedaround(center, 180);
+
+fill elem1; fill elem2;
+
+italicize;
+
+penlabels(range 1 thru 3);
+endchar;
+end

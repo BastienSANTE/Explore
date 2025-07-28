@@ -25,7 +25,10 @@ penpos31(STEM_JOINT, 0); penpos32(STEM_JOINT, 0);
     makeserif(4, z1r,   SERIF_LENGTH, -SERIF_THICKNESS);
   fi
   
-  penstroke z1e -- z11e -- z31e; penstroke z3e -- z21e -- z32e;
+  penstroke z1e -- z31e; penstroke z3e -- z32e;
+
+  italicize;
+
   penlabels(range 1 thru 32);
 endchar;
 end

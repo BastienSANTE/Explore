@@ -1,0 +1,45 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0040 COMMERCIAL AT - CODE 64
+newchar(64, 9.5pt#, 0);
+
+bottomjoin = lerpbold(0.2, 0.4);
+
+z1l = (lerpbold(0.7w, 0.85w), lerpbold(BASELINE, 1pt)); penpos1(BAR, 270);
+z2r = (mid, lerpbold(-0.5pt, LOWPOINT)); penpos2(BAR, 270);
+z4r = (x2, ASCENDER); penpos4(BAR, 90);
+z3r = (CURVE_BEARING, lerp(y2l, y4l, 0.5)); penpos3(STEM, 180);
+z6r = (0.825w, 0.225 * CAP_H); penpos6(BAR, 270 + lerpbold(20, 30));
+z5r = (w - CURVE_BEARING, lerp(y4l, y6l, 0.7)); penpos5(STEM, 0);
+z7l = z6l;
+z8l = (lerp(x4l, x5l, lerpbold(0.35, 0.5)), lerp(y5l, y6l, 2 / 3));
+
+z9l = (x8l, lerp(y4l, y5, lerpbold(0.5, 0.35)));
+z10l = z8r;
+
+%penpos6(BAR, 270 + (angle(z5r) * 2));
+penpos7(BAR, 270 - (angle(z5) / 2));
+penpos8(BAR, 270 - (angle(z7l) * 2));
+penpos9(BAR, 0); penpos10(BAR, 0);
+
+z11l = onpath(z9l, z8r, lerpbold(0.25, 0.5)); penpos11(BAR_JOINT, APERTURE_ANGLE);
+z12r = (lerp(x9l, x3l, 1 / 3), y9 + (OVERSHOOT / 2)); penpos12(BAR, 90);
+z13  = (lerp(x9l, x3l, 2 / 3), y3); penpos13(STEM, 180);
+z14r = (x12, y7r); penpos14(BAR, 270);
+z15r = z8r; penpos15(BAR_JOINT, -90-(angle(z8l) / 2));
+adjp1 = onpath(z8r, z9r, bottomjoin);
+
+penstroke z1e...z2e{lt}..tsn..z3e{up}..tsn..z4e{rt}..tsn..z5e{dn}..invtsn..z6e -- z7e -- z8e;
+penstroke z9e -- z10e;
+
+penstroke z11e..z12e{lt}..tsn..z13e{dn}..tsn..z14e{rt}..z15e;
+
+%fill z1r..z2r{rt}...z3r{up}...z4r{rt}...z5r{dn}...z6r -- zZr -- z8l -- z8r
+
+penlabels(range 1 thru 15);
+
+italicize;
+endchar;
+end

@@ -14,6 +14,12 @@ newchar(103, 5.5pt#, 0);
   tlangle = 0;
   %lbox
 
+if BOLDNESS > 600:
+  ubheight:= 0.32h;
+fi
+
+
+if ITALIC = false:
   % upper bowl
   x1 = ubox + (ubwidth / 2); y1l = X_H + OVERSHOOT;
   x2 = ubox + ubwidth; y2 = y1 - (ubheight / 2);
@@ -33,23 +39,30 @@ newchar(103, 5.5pt#, 0);
   % tail
   x12 = x1 + (x2 - x1) / 2; y12r = X_H;
   %z13 = z12 shifted(1pt#, 0) rotatedaround(z12, 45);
+
+  if BOLDNESS > 500:
+    forsuffixes $ = 1, 7, 8:
+      penpos$(BAR_CROSS, -90); endfor
+    forsuffixes $ = 3, 10:
+      penpos$(BAR_CROSS, -270); endfor
+  else:
+    forsuffixes $ = 1, 7, 8:
+      penpos$(BAR, -90); endfor
+    forsuffixes $ = 3, 10:
+      penpos$(BAR, -270); endfor
+  fi
   
-  penpos1(BAR, -90);
+  
   penpos2(STEM, -180);
-  penpos3(BAR, -270);
   penpos4(STEM, 0);
 
-  penpos5(txhinx, -270);
+  penpos5(BAR_FINE, -270);
   penpos6(STEM, -180);
-  penpos7(BAR, -90);
-  penpos8(BAR, -90);
   penpos9(STEM, -180);
-  penpos10(BAR, -270);
   penpos11(STEM, 0);
-  penpos117(BAR_THIN, -110);
+  penpos117(BAR_FINE, -110);
 
   penpos12(BAR, 90 + tlangle);
-
   
   z13 = z12 shifted(0.35w, 0) rotatedaround(z12, tlangle);
   penpos13(BAR, 90 + tlangle);
@@ -58,8 +71,40 @@ newchar(103, 5.5pt#, 0);
   %penstroke z5e{dir -180}..z6e{down}..z7e{right} -- z8e{right}..tension 1..z9e{down}..tension 1..z10e{left}..z11e{up}..z117e{dir 0};
   penstroke z12e -- z13e;
 
-  fill z3{left}..z6r..z7r{right} -- z8r{right}..z9r..tension (1/TSN)..z10r{left}...z11r{up}..{dir 20}z117r -- z117l{lt}..z11l{dn}..tsn..z10l{rt}..invtsn..z9l..z8l{left} -- z7l{left}..tsn..z6l{up}..tsn..z5l{rt} -- cycle;
+  fill z3{left}..z6r..z7r{right} -- z8r{right}..z9r...z10r{left}...z11r{up}..{dir 20}z117r -- z117l{lt}..z11l{dn}..tsn..z10l{rt}..invtsn..z9l..z8l{left} -- z7l{left}...z6l{up}..tsn..z5l{rt} -- cycle;
+elseif ITALIC = true:
+
+  z1l = (x6l, X_H - (CAP_H * APERTURE));
+  z2r = (0.5w, X_TOP); z3r = (CURVE_BEARING, 0.5 * X_TOP);
+  z21 = z2r shifted(STRETCH * -ARCHCORR, 0);
+  z4r = (x2, CAP_BOTTOM); z5l = (x6l, BASELINE + (CAP_H * APERTURE));
+  z41 = z4r shifted(STRETCH * -ARCHCORR, 0);
+  z6r = (w - LINE_BEARING, X_H);
+  z8r = (x2 - ((x2 - x3l) / 4), DESCENDER);
+  if MONOSPACE = true:
+    z7r = (x6r, y4);
+    z9l = (x3r + ((x3 - x3r) / 2), y8l);
+    penpos9(BAR, -90);
+  else:
+    z7r = (x6r, BASELINE);
+    z9r = (x3r, DESCENDER + (X_H * APERTURE));
+    penpos9(BAR, -90 - APERTURE_ANGLE);
+  fi
   
+  penpos1(BAR_FINE, aa); penpos2(BAR, 90); penpos3(STEM, 180); penpos4(BAR, 270); penpos5(BAR_FINE, 270 + aa);
+  penpos6(STEM, 0); penpos7(STEM, 0); penpos8(BAR, -90);
+
+  %penstroke z1e..tsn..z2e..tsn..z3e..tsn..z4e;
+
+  fill z21...z1r -- z1l...z2l{lt}..tsn..z3l{dn}..tsn..z4l{rt}...z5l -- z5r...z41{lt}..tsn..z3r{up}..tsn..{rt} cycle;
+  fill z6l -- z6r -- z7r -- z7l -- cycle;
+  fill z7r{dn}..tsn..z8r{lt}...z9r -- z9l...z8l{rt}..tsn..z7l{up} -- cycle;
+  
+fi
+
+  
+italicize;
+
   penlabels(range 1 thru 117);
 endchar;
 end

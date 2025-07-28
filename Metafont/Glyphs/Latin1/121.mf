@@ -24,6 +24,8 @@ penpos11(STEM, 0); penpos21(STEM, 0); penpos31(STEM_JOINT, 0); penpos32(STEM_JOI
 
 penstroke z1e -- z11e -- z31e; penstroke z2e -- z21e -- z32e; penstroke z3e -- z4e;
 
+italicize;
+
 penlabels(range 1 thru 32);
 labels(z1a, z1al, z1ar);
 endchar;

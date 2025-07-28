@@ -29,6 +29,7 @@ newchar(78, 6.4pt#, 2);
   penstroke z11e -- z41e;
 
   italicize;
+
   penlabels(range 1 thru 41);
 endchar;
 end

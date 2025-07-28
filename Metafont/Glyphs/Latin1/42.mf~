@@ -1,0 +1,22 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+002A ASTERISK - CODE 42
+newchar(42, 5.5pt#, 0);
+center = (mid, X_H + ((CAP_H - X_H) / 2));
+asterisk_length = 2pt;
+
+z1 = center;
+z2 = center shifted(0, asterisk_length);
+
+penpos1(STEM_JOINT, 0); penpos2(STEM, 0);
+
+elem1 = z1l -- z1r -- z2r -- z2l -- cycle;
+
+for x = 1 upto 5:
+  fill elem1 rotatedaround(center, x * 72);
+endfor;
+
+endchar;
+end

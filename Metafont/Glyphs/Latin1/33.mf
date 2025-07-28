@@ -1,0 +1,20 @@
+input ../Config/ExploreSansCFG.mf
+
+export_setup;
+
+% U+0021 EXCLAMATION MARK - CODE 33
+newchar(33, 3pt#, 0);
+z1 = (mid, CAP_H);
+z2 = (x1, 0.33 * CAP_H);
+
+dot1 = (x1, DOTSIZE / 2);
+
+penpos1(STEM, 0); penpos2(STEM_TERM, 0);
+penstroke z1e -- z2e;
+
+fill fullcircle scaled DOTSIZE shifted dot1;
+
+italicize;
+
+endchar;
+end

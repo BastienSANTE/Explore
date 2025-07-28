@@ -1,0 +1,32 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+005D RIGHT SQUARE BRACKET - CODE 93
+newchar(93, 4pt#, 1);
+if MONOSPACE = true:
+  z1r = (0.75w, ASCENDER);
+  z4r = (0.15w, y1l);
+else:
+  z1r = (w - LINE_BEARING, ASCENDER);
+  z4r = (LINE_BEARING, y1l);
+fi
+
+z2r = (x1r, LOWPOINT);
+z3r = z1l; 
+z5l = z2l; z6l = (x4r, y2l);
+
+penpos1(STEM, 0); penpos2(STEM, 0);
+
+forsuffixes $ = 3, 4, 5, 6:
+  penpos$(BAR, 90);
+endfor;
+
+penstroke z1e -- z2e; penstroke z3e -- z4e; penstroke z5e -- z6e;
+
+italicize;
+
+penlabels(range 1 thru 6);
+
+endchar;
+end

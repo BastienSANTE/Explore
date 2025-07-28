@@ -43,7 +43,7 @@ time.sleep(1)
 
 testfont = fontforge.font()
 
-for g in range(65, 127):
+for g in range(0, 127):
     filename = "{}.svg".format(g)
     if os.path.isfile(svgfolder + filename):   
         g = testfont.createChar(g)

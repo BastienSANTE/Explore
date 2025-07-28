@@ -1,0 +1,18 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0027 APOSTROPHE - CODE 39
+newchar(39, 1.5pt#, 0);
+
+z1 = (mid, ASCENDER);
+z2 = (x1, CAP_H - 1pt);
+
+penpos1(STEM, 0); penpos2(STEM_TERM, 0);
+
+penstroke z1e -- z2e;
+
+italicize;
+
+endchar;
+end

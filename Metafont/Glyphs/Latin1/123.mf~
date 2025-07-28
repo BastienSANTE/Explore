@@ -1,0 +1,54 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+007B LEFT CURLY BRACKET - CODE 123
+newchar(123, 3.5pt#, 1);
+
+arc_width = lerpbold(.5pt, .8pt);
+if MONOSPACE = true:
+  z0l = (w - CURVE_BEARING, ASCENDER);
+  z1l = (w * (2 / 3), ASCENDER);
+  z40 = (CURVE_BEARING, CAP_H / 2);
+  z4 = (x2l - arc_width, CAP_H / 2);
+  z9l = (x0, LOWPOINT);
+
+  penpos0(BAR, -90);
+  penpos40(BAR, -90);
+  penpos9(BAR, 90);
+else:  
+  z1l = (w - CURVE_BEARING, ASCENDER);
+  z4 = (x2l - arc_width, CAP_H / 2);
+fi
+
+z2r = (x1r - arc_width, y1r - arc_width);
+z3r = (x2r, y4l + arc_width);
+z5r = (x2r, y4r - arc_width);
+z6r = (x2r, y7r + arc_width);
+z7l = (x1, LOWPOINT);
+z41l = z4l; z42r = z4r;
+
+penpos1(BAR, -90);
+penpos2(STEM, 0); penpos3(STEM, 0);
+penpos4(BAR, -90);
+penpos5(STEM, 0); penpos6(STEM, 0);
+penpos7(BAR, 90);
+
+penpos41(BAR_JOINT, -90);
+penpos42(BAR_JOINT, -90);
+
+if MONOSPACE = true:
+  fill z1l -- z0l -- z0r -- z1r{lt}..tsn..z2r{dn} -- z3r{dn}..tsn..z4r{lt} -- z41r -- z41l -- z4l{rt}..tsn..z3l{up} -- z2l{up}..tsn..z1l{rt} -- cycle;
+  fill z40l -- z41l -- z42r -- z40r -- cycle;
+  fill z41l{rt}..tsn..z5r{dn} -- z6r{dn}..tsn..z7r{rt} -- z9r -- z9l -- z7l{lt}..tsn..z6l{up} -- z5l{up}..tsn..z4r{lt} -- cycle;
+else:
+  fill z1l -- z1r{lt}..tsn..z2r{dn} -- z3r{dn}..tsn..z41r{lt} -- z4l{rt}..tsn..z3l{up} -- z2l{up}..tsn..z1l{rt} -- cycle;
+  fill z42l{rt}..tsn..z5r{dn} -- z6r{dn}..tsn..z7r{rt} -- z7l{lt}..tsn..z6l{up} -- z5l{up}..tsn..z42r{lt} -- cycle;
+fi
+
+italicize;
+
+penlabels(range 1 thru 42);
+
+endchar;
+end

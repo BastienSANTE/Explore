@@ -1,0 +1,29 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0026 AMPERSAND - CODE 38
+newchar(38, 6.85pt#, 0);
+z1r = (0.765w, CAP_H);
+z2r = (0.11w, y1r);
+penpos1(BAR, 90); penpos2(BAR, 90);
+
+help1 = z2l; help2 = (0.791w, BASELINE);
+
+z3l = help1; z4l = help2;
+penpos3(STEM_ADJ(help2), 0); penpos4(STEM_ADJ(help2), 0);
+
+z5 = (0.88w, 0.416 * CAP_H);
+z6r = (0.45w, CAP_BOTTOM);
+z7r = (CURVE_BEARING, CAP_H / 3);
+z8 = onpath(z3, z4, 0.35);
+
+penpos5(BAR, -APERTURE_ANGLE); penpos6(BAR, -90);
+penpos7(STEM, -180); penpos8(BAR_TERM, -270);
+
+
+penstroke z1e -- z2e; penstroke z3e -- z4e;
+fill z5r..z6r{lt}..tsn..z7r{up}..tsn..z8r{rt} -- z8l{lt}..tsn..z7l{dn}..tsn..z6l{rt}..z5l -- cycle;
+penlabels(range 1 thru 8);
+endchar;
+end

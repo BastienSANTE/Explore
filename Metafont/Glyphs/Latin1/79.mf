@@ -16,6 +16,7 @@ fill z1r{right}..tsn..z2r{down}..tsn..z3r{left}..tsn..z4r{up}..tsn..z1r{right} -
   z1l{left}..tsn..z4l{down}..tsn..z3l{right}..tsn..z2l{up}..tsn..z1l{left} -- z1r -- cycle;
 
   italicize;
+
   penlabels(range 1 thru 4);
 endchar;
 end

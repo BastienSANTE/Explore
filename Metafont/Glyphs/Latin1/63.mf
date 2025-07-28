@@ -1,0 +1,25 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+spine_angle = lerpbold(60, 80);
+
+% U+003F QUESTION MARK - CODE 63
+newchar(63, 5.15pt#, 1);
+z1 = (0.1w, CAP_H - (CAP_H * APERTURE));
+z2r = (mid, CAP_TOP);
+z3r = (w - CURVE_BEARING, 0.747 * CAP_H);
+z4r = (.625w, 0.45 * CAP_H);
+z5 = (0.43w, lerpbold(0.2 * CAP_H, 0.33 * CAP_H));
+
+penpos1(BAR, 90 + APERTURE_ANGLE); penpos2(BAR, 90); penpos3(STEM, 0); penpos4(BAR, -spine_angle); penpos5(STEM, 0);
+
+dot1 = (x5, CAP_BOTTOM + (DOTSIZE / 2));
+
+fill z1r...z2r{rt}..tsn..z3r{dn}..tsn..z4r..z5r{dn} -- z5l{up}...z4l..z3l{up}..tsn..z2l{lt}...z1l -- cycle;
+fill fullcircle scaled DOTSIZE shifted dot1;
+
+italicize;
+
+penlabels(range 1 thru 4);
+endchar;
+end;

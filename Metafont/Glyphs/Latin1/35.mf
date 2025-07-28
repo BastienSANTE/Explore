@@ -1,0 +1,42 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0023 NUMBER SIGN - CODE 35
+newchar(35, 7pt#, 0);
+if MONOSPACE = true:
+  z1r = (CURVE_BEARING, X_H);
+  z2r = (w - CURVE_BEARING, y1r);
+else:
+  z1r = (LINE_BEARING, X_H);
+  z2r = (w - LINE_BEARING, y1r);
+fi
+
+  z3r = (x1r, 0.5 * X_H);
+  z4r = (x2r,  y3r);
+
+helpxoff = lerp(0.4w, 0.3w, BOLDNESS/MAXBOLDNESS);
+help5 = (x1, BASELINE); help6 = (helpxoff, CAP_H);
+help7 = (w - helpxoff, BASELINE); help8 = (x2, CAP_H);
+
+z5l = help5; z6l = help6;
+z7r = help7; z8r = help8;
+
+forsuffixes $ = 1, 2, 3, 4:
+  penpos$(BAR, 90);
+endfor;
+
+helpangle = angle(help5);
+
+penpos5(lerpbold(STEM,BAR), 0); penpos6(lerpbold(STEM,BAR), 0);
+penpos7(lerpbold(STEM,BAR), 0); penpos8(lerpbold(STEM,BAR), 0);
+
+penstroke z1e -- z2e; penstroke z3e -- z4e;
+penstroke z5e -- z6e; penstroke z7e -- z8e;
+
+italicize;
+
+penlabels(range 1 thru 6);
+
+endchar;
+end

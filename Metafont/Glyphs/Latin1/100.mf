@@ -28,6 +28,8 @@ fi
   fill z1l -- z2l -- z3l -- z3r -- z1r -- cycle;
   fill z4r .. z51{left} ..tension TSN.. z6r{down} ..tension TSN.. z71{right} .. z8r -- z8l .. z7l{left} ..tension TSN .. z6l{up} ..tension TSN.. z5l{right} .. z4l -- cycle;
   
+italicize;
+
   penlabels(range 1 thru 8);
 endchar;
 end;

@@ -1,0 +1,27 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+002C COMMA - CODE 44
+newchar(44, 2.3pt#, 0);
+
+dot1 = (mid, CAP_BOTTOM + (DOTSIZE / 2));
+
+if MONOSPACE = true:
+  fill fullcircle scaled DOTSIZE shifted dot1;
+  z1r = dot1 shifted (DOTSIZE / 2, 0);
+  z2r = (x1r, LOWPOINT);
+else:
+  z1r = ( w - CURVE_BEARING, 1pt);
+  z2l = (CURVE_BEARING, LOWPOINT);
+fi
+
+penpos1(STEM, 0); penpos2(STEM_TERM, 0);
+
+penstroke z1e -- z2e;
+
+italicize;
+
+penlabels(range 1 thru 2);
+endchar;
+end

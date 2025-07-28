@@ -14,17 +14,19 @@ newchar(66, 6.1pt#, 0);
   x3r = 0.885w ; y3 = 0.66h;
   x4 = x2; y4 = 0.465h;
   x41 = x2; y41l = y4l;
-  x42 = x2; y42l = y4r;
+x42 = x2; y42l = y4r;
+if MONOSPACE = true:
+  x5r:= x3r:= (w - CURVE_BEARING); y5r = 0.275 * CAP_H;
+else:
   x5 = x3 + bxdelta; y5 = 0.25h;
+fi  
   x6 = x2; y6r = BASELINE;
   x7 = x8; y7r = BASELINE;
   x8l = LINE_BEARING; y8 = y1r;
-  x9l = LINE_BEARING; y9 = y7r;
+x9l = LINE_BEARING; y9 = y7r;
 
-
-if MONOSPACE = true:
-    x5:= x3r:= (w - CURVE_BEARING);
-  fi
+z10 = (x3l, y41l + ((y2l - y41l) / 2));
+z11 = (x5l, y6l + ((y42l - y6l) / 2));
 
   penpos0(BAR, -90);
   penpos1(BAR, 90);
@@ -46,13 +48,18 @@ if SERIF =  true:
   makeserif(1, z1r, -SERIF_LENGTH, -SERIF_THICKNESS);
   makeserif(2, z9l, -SERIF_LENGTH, SERIF_THICKNESS);
 fi
-  
-  penstroke z1e -- z2e{right}..tsn..z3e{down}..tsn..z41e{left};
-  penstroke z0e -- z4e;
-  penstroke z42e{right}..tsn..z5e{down}..tsn..z6e{left} -- z7e;
+
+
+fill z1r -- z2r{rt}..tsn..z3r{dn}..tsn..z41r{lt} -- z0 -- z0l -- z41l{rt}..tsn..z10{up}..tsn..z2l{lt} -- z1l -- cycle;
+fill z0 -- z41{rt}..tsn..z5r{dn}..tsn..z6r{lt} -- z9l -- z7l -- z6l{rt}..tsn..z11{up}..tsn..z42l{lt} -- z0r -- cycle;
+
+  %penstroke z1e -- z2e{right}..tsn..z3e{down}..tsn..z41e{left};
+  %penstroke z0e -- z4e;
+  %penstroke z42e{right}..tsn..z5e{down}..tsn..z6e{left} -- z7e;
   penstroke z8e -- z9e;
 
   italicize;
+
   penlabels(range 0 thru 99);
 endchar;
 end

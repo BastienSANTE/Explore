@@ -6,9 +6,9 @@ export_setup;
 newchar(74, 4.8pt#, 0);
   if MONOSPACE =  true:
     x1r = w - LINE_BEARING; y1 = CAP_H;
-    x2r = x1r; y2 = (x2 - x3);
-    x3 = 0.5w; y3r = CAP_BOTTOM;
-    x4r = LINE_BEARING; y4 = y2;
+    x2r = x1r; y2r = lerpbold(0.3 * CAP_H, 0.35 * CAP_H);
+    x3 = lerpbold(0.5w, 0.47w); y3r = CAP_BOTTOM;
+    x4r = LINE_BEARING; y4r = BASELINE + (X_H * APERTURE);
     x5 = (x3 - x4); y5r = CAP_H;
     x51 = x1; y51r = CAP_H;
   else:
@@ -24,9 +24,8 @@ newchar(74, 4.8pt#, 0);
     makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
   fi
   
-  
   if MONOSPACE = true:
-    penpos4(STEM, -90 - APERTURE_ANGLE);
+    penpos4(BAR, -90 - APERTURE_ANGLE);
     penpos5(BAR, 90);
     penpos51(BAR, 90);
   else:
@@ -35,7 +34,9 @@ newchar(74, 4.8pt#, 0);
     
   penstroke z1e -- z2e{down}..tension TSN..z3e{left}..tension TSN..z4e;
   if MONOSPACE = true: penstroke z5e -- z51e; fi
+
   italicize;
+
   penlabels(range 1 thru 51);
 endchar;
 end

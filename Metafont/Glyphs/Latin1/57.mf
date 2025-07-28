@@ -1,0 +1,44 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0039 DIGIT NINE - CODE 57
+newchar(57, 5.5pt#, 0);
+bowl_height:= 0.35 * CAP_H;
+
+if ITALIC = true:
+  z1 = (0.4w, BASELINE);
+  z2r = onpath(z1r, z3r, 0.5);
+  penpos1(STEM_ADJ(z1), 0);
+  penpos2(STEM_ADJ(z1), 0);
+else:
+  z1 = (0.125w, BASELINE + (X_H * APERTURE));
+  z2r = (0.45w, CAP_BOTTOM);
+  penpos1(BAR, -90 -APERTURE_ANGLE);
+  penpos2(BAR, -90);
+fi
+
+z3r = (w - CURVE_BEARING, bowl_height + ((CAP_H - bowl_height) / 3));
+z4r = (0.5w, CAP_TOP);
+z5r = (CURVE_BEARING, bowl_height + ((CAP_H - bowl_height) / 2));
+z6r = (x4r, bowl_height);
+z7l = (x3l, y5);
+
+penpos3(STEM, 0); penpos4(BAR, 90); penpos5(STEM, 180); penpos6(BAR, 270); penpos7(BAR_FINE, 0);
+
+z8 = (x3l, y7l);
+z9 = (x3r, y7l);
+
+if ITALIC = true:
+  fill z1l..z2l..z8{up}..tsn..z4l{lt}..tsn..z5l{dn}..tsn..z6l{rt}..tsn..z7l{up} -- z7r..z6r{lt}..tsn..z5r{up}..tsn..z4r{rt}..tsn..z9{dn}..z3r..z2r..z1r -- cycle;
+  % penstroke z1e..tsn..z2e..tsn..z3e{up}..tsn..z4e{lt}..tsn..z5e{dn}..z6e{rt}..tsn..z7e{up};
+else:
+  fill z1l...z2l{rt}..tsn..z8{up}..tsn..z4l{lt}..tsn..z5l{dn}..tsn..z6l{rt}..tsn..z7l{up} -- z7r..z6r{lt}..tsn..z5r{up}..tsn..z4r{rt}..tsn..z3r{dn}..tsn..z2r{lt}...z1r -- cycle;
+fi
+
+italicize;
+
+penlabels(range 1 thru 9);
+
+endchar;
+end

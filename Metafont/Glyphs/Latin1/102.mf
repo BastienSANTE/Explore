@@ -8,25 +8,52 @@ stem_x:= 0.46w;
 stem_arc_y:= 0.85 * CAP_H;
 terminal_angle:= 10;
 
-z1 = (stem_x, BASELINE);
 z2 = (x1, stem_arc_y);
 z21 = (x2r, y3r - ((y3r - y2r) / 2));
-z3 = (0.705w, CAP_H);
+
+if MONOSPACE = true:
+  z3 = (0.675w, CAP_H);
+else:
+  z3 = (0.705w, CAP_H);
+fi
+
 z4r = (x7, y3r);
 
+if ITALIC = true:
+  z1 = (stem_x, DESCENDER / 4);
+  z5l = (x6, DESCENDER);
+  z11 = (lerpbold(x1 - (y1 - y5), x1l), y5);
+  penpos5(BAR, 90);
+  penpos11(BAR, 90);
+  z6r = (OBLIQUE_BEARING, X_H);
+else:
+  z6r = (LINE_BEARING, X_H);
+  z1 = (stem_x, BASELINE);
+fi
 
-z6r = (LINE_BEARING, X_H);
 z7r = (w - CURVE_BEARING, X_H);
 
 penpos1(STEM, 0); penpos2(STEM, 0); penpos3(BAR, -90);
 
-z31 = z3l shifted(STRETCH * -ARCHCORR, 0);
+if MONOSPACE = true:
+  z31 = z3l;
+else:
+  z31 = z3l shifted(STRETCH * -ARCHCORR, 0);
+fi
+
 
 if MONOSPACE = true: penpos4(BAR, -90); else: penpos4(BAR_TERM, -90 - terminal_angle); fi
 penpos6(BAR, 90); penpos7(BAR, 90);
 
-fill z1l -- z2l{up}..tsn..z31{right}..z4l -- z4r -- z3r{left}...{down}z2r -- z1r -- cycle;
-fill z6r -- z7r -- z7l -- z6l -- cycle;
+if ITALIC = false:
+  fill z1l -- z2l{up}..tsn..z31{right}..z4l -- z4r -- z3r{left}...{down}z2r -- z1r -- cycle;
+  fill z6r -- z7r -- z7l -- z6l -- cycle;
+else:
+  fill z5r -- z11r{rt} ...z1l{up} -- z2l{up}..tsn..z31{right}..z4l -- z4r -- z3r{left}...{down}z2r -- z1r{dn}...z11l{lt} -- z5l -- cycle;
+  fill z6r -- z7r -- z7l -- z6l -- cycle;
+fi
+
+italicize;
 
 penlabels(range 1 thru 21);
 endchar;

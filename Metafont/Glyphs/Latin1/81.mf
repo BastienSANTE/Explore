@@ -22,6 +22,7 @@ newchar(81, 6.6pt#, 0);
   fill z5r{down}...z6r{right} -- z7r -- z7l -- z6l{left}...z5l{up} -- cycle;
 
   italicize;
+
   penlabels(range 1 thru 7);
 endchar;
 end

@@ -4,12 +4,28 @@ export_setup;
 
 % U+0078 LATIN SMALL LETTER X - CODE 120
 newchar(120, 5.15pt#, 2);
-  x1l = OBLIQUE_BEARING; y1 = X_H;
-  x2l = x1l; y2 = BASELINE;
-  x3r = w - OBLIQUE_BEARING; y3 = y1;
-  x4r = x3r; y4 = y2;
+INKFAC:= 0.1;
 
-  penpos1(STEM, 0); penpos2(STEM_C, 0); penpos3(STEM_C, 0); penpos4(STEM, 0);
+z1 = (OBLIQUE_BEARING, X_H);
+z2 = (x1, BASELINE);
+z3 = (w - OBLIQUE_BEARING, y1);
+z4 = (x3, y2);
+
+z5 = onpath(z1, z4, 0.5);
+penpos5(STEM, 0);
+
+crossangle = angle(z5 - z2) / 2;
+
+z11l = z1; z21l = z2; z31r = z3; z41r = z4;
+
+penpos11(STEM_ADJN(crossangle), 0); penpos41(STEM_ADJN(crossangle), 0);
+penpos21(STEM_ADJN(crossangle), 0); penpos31(STEM_ADJN(crossangle), 0);
+
+z51r = onpath(z5r, z11r, INKFAC); z52r = onpath(z5r, z21r, INKFAC);
+z53l = onpath(z5l, z31l, INKFAC); z54l = onpath(z5l, z41l, INKFAC);
+
+penpos51(STEM_ADJN(crossangle), 0); penpos52(STEM_ADJN(crossangle), 0);
+penpos53(STEM_ADJN(crossangle), 0); penpos54(STEM_ADJN(crossangle), 0);
 
   if SERIF = true:
     makeserif(1,  z1, -SERIF_LENGTH, -SERIF_THICKNESS);
@@ -22,7 +38,12 @@ newchar(120, 5.15pt#, 2);
     makeserif(8,  z4,  SERIF_LENGTH,  SERIF_THICKNESS);
   fi
   
-  penstroke z1e -- z4e; penstroke z3e -- z2e;
-  penlabels(range 1 thru 4);
+  penstroke z11e -- z5e -- z41e;
+  penstroke z31e -- z5e -- z21e;
+
+  italicize;
+
+  penlabels(range 1 thru 55);
+  labels(help4);
 endchar;
 end

@@ -1,0 +1,50 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0025 PERCENT SIGN - CODE 37
+newchar(37, 7.85pt#, 1);
+if MONOSPACE = true:
+  help1:= (0.25w, 0.2 * CAP_H);
+  help2:= (0.75w, 0.8 * CAP_H);
+  helpangle = angle(help1);
+  circlew:= 0.5w; circleh:=0.5 * CAP_H;
+  center = (0.5w, 0.5 * CAP_H);
+  z1 = help1; z2 = help2;
+  penpos1(BAR_ADJN(helpangle), 90); penpos2(BAR_ADJN(helpangle),90);
+  circlebar = lerp(BAR, BAR_JOINT, BOLDNESS/MAXBOLDNESS);
+  circlestem = lerp(STEM, STEM_JOINT, BOLDNESS/MAXBOLDNESS);
+else:
+  help1:= (0.225w, BASELINE);
+  help2:= (0.775w, CAP_H);
+  helpangle = angle(help1);
+  circlew:= 0.4w; circleh:=0.47 * CAP_H;
+  center = (0.5w, 0.5 * CAP_H);
+  z1 = help1; z2 = help2;
+  penpos1(STEM_ADJN(helpangle), 0); penpos2(STEM_ADJN(helpangle),0);
+    circlebar = BAR;
+  circlestem = STEM;
+fi
+
+z3r = (lerp(x1r, x1, BOLDNESS/MAXBOLDNESS), CAP_TOP); z4r = (x3 + (0.5 * circlew), y3r - (circleh / 2));
+z5r = (x3, y3r - circleh); z6r = (x3 - (0.5 * circlew), y3r - (circleh / 2));
+
+penpos3(circlebar, 90); penpos4(circlestem, 0); penpos5(circlebar, -90); penpos6(circlestem, -180);
+
+penstroke z1e -- z2e;
+
+p1 = z3r{rt}..tsn..z4r{dn}..tsn..z5r{lt}..tsn..z6r{up}..tsn..z3r{rt} -- z3l{lt}..tsn..z6l{dn}..tsn..z5l{rt}..tsn..z4l{up}..tsn..z3l{lt} -- cycle;
+
+fill p1;
+
+p2 = p1 rotatedaround(center, 180);
+fill p2;
+
+%penstroke z3e{rt}..tsn..z4e{dn}..tsn..z5e{lt}..tsn..z6e{up}..tsn..cycle;
+
+italicize;
+
+penlabels(range 1 thru 10);
+
+endchar;
+end;
