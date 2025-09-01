@@ -10,7 +10,7 @@ newchar(66, 6.1pt#, 0);
   bxdelta:= 0.05w;
   x0 = x1; y0 = y4;
   x1l = LINE_BEARING; y1r = CAP_H;
-  x2 = 0.535w; y2r = CAP_H;
+  x2 = lerpbold(0.535w, 0.5w); y2r = CAP_H;
   x3r = 0.885w ; y3 = 0.66h;
   x4 = x2; y4 = 0.465h;
   x41 = x2; y41l = y4l;
@@ -28,13 +28,13 @@ x9l = LINE_BEARING; y9 = y7r;
 z10 = (x3l, y41l + ((y2l - y41l) / 2));
 z11 = (x5l, y6l + ((y42l - y6l) / 2));
 
-  penpos0(BAR, -90);
+  penpos0(lerpbold(BAR_CROSS, BAR_JOINT), -90);
   penpos1(BAR, 90);
   penpos2(BAR, 90);
   penpos3(STEM, 0);
   penpos41(BAR_JOINT, -90);
 
-  penpos4(BAR, -90);
+  penpos4(lerpbold(BAR_CROSS, BAR_JOINT), -90);
 
   penpos42(BAR_JOINT, 90);
   penpos5(STEM, 0);
@@ -44,13 +44,14 @@ z11 = (x5l, y6l + ((y42l - y6l) / 2));
   penpos8(STEM, 0);
   penpos9(STEM, 0);
 
+adjp1 = (x3r, lerp(y10, y3r, 0.5));
+
 if SERIF =  true:
   makeserif(1, z1r, -SERIF_LENGTH, -SERIF_THICKNESS);
   makeserif(2, z9l, -SERIF_LENGTH, SERIF_THICKNESS);
 fi
 
-
-fill z1r -- z2r{rt}..tsn..z3r{dn}..tsn..z41r{lt} -- z0 -- z0l -- z41l{rt}..tsn..z10{up}..tsn..z2l{lt} -- z1l -- cycle;
+fill z1r -- z2r{rt}..tsn..adjp1{dn}..tsn..z41r{lt} -- z0 -- z0l -- z41l{rt}..tsn..z10{up}..tsn..z2l{lt} -- z1l -- cycle;
 fill z0 -- z41{rt}..tsn..z5r{dn}..tsn..z6r{lt} -- z9l -- z7l -- z6l{rt}..tsn..z11{up}..tsn..z42l{lt} -- z0r -- cycle;
 
   %penstroke z1e -- z2e{right}..tsn..z3e{down}..tsn..z41e{left};

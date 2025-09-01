@@ -7,19 +7,23 @@ newchar(107, 5.1pt#, 0);
 z1l = (LINE_BEARING, CAP_H);
 z2l = (x1l, BASELINE);
 
-z3r = (w - LINE_BEARING / 2, X_H);
+z3r = (w - lerpbold(LINE_BEARING, OBLIQUE_BEARING) / 2, X_H);
 z4r = (x1r + STEM, 0.5 * X_H);
 z5r = (x3r, BASELINE);
 
+z6 = z4; z7 = (x2, y4);
+
 penpos1(STEM, 0); penpos2(STEM, 0);
 penpos4(STEM, 0); penpos3(STEM_ADJ(z4r), 0); penpos5(STEM_ADJ(z4r), 0);
+penpos6(BAR, 90); penpos7(BAR, 90);
 
 penstroke z1e -- z2e;
 penstroke z3e -- z4e -- z5e;
+penstroke z6e -- z7e;
 
 italicize;
 
-penlabels(range 1 thru 5);
+penlabels(range 1 thru 7);
 
 endchar;
 end

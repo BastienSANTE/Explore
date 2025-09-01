@@ -5,7 +5,7 @@ export_setup;
 % U+0057 LATIN CAPITAL LETTER W - CODE 87
 newchar(87, 8.2pt#, 2);
 x1l = LINE_BEARING / 2; y1 = CAP_H;
-z2 = (x1 + ((x3 - x1) / 2), BASELINE);
+z2 = (lerp(x1, x3, lerpbold(0.55, 0.4)), BASELINE);
 
 if MONOSPACE = true:
   z3 = (0.5w, 0.82 * CAP_H);
@@ -13,23 +13,23 @@ else:
   z3 = (0.5w, y1);
 fi
 
-z4 = ((x3 + (x5 - x3) / 2), y2);
+z4 = (lerp(x5, x3, lerpbold(0.55, 0.4)), BASELINE);
 x5r = w - (LINE_BEARING / 2); y5 = y1;
 
-z111l = onpath(z2l, z1l, INKFAC);
+z111l = onpath(z2l, z1l, lerpbold(0.5, 0.3));
 z21l = z2l; z22r = z2r;
 z31l = z3l; z32r = z3r;
 z41l = z4l; z42r = z4r;
 
-z211r = onpath(z2r, z3r, INKFAC); z221l = onpath(z3l, z2l, INKFAC);
-z311r = onpath(z3r, z4r, INKFAC); z321l = onpath(z4l, z3l, INKFAC);
-z411r = onpath(z4r, z5r, INKFAC);
+z211r = onpath(z2r, z3r, lerpbold(0.5, 0.4)); z221l = onpath(z3l, z2l, lerpbold(0.5, 0.4));
+z311r = onpath(z3r, z4r, lerpbold(0.5, 0.4)); z321l = onpath(z4l, z3l, lerpbold(0.5, 0.4));
+z411r = onpath(z4r, z5r, lerpbold(0.5, 0.4));
 
 forsuffixes $ = 1, 2, 3, 4, 5:
   if MONOSPACE = true:
-    penpos$(lerpbold(STEM, BAR), 0);
+    penpos$(lerpbold(STEM_TERM, BAR_TERM), 0);
   else:
-    penpos$(STEM, 0);
+    penpos$(lerpbold(STEM, STEM_TERM), 0);
   fi
 endfor;
 
@@ -45,7 +45,7 @@ forsuffixes $ = 111, 211, 221, 311, 321, 411:
   if MONOSPACE = true:
     penpos$(lerpbold(STEM, BAR), 0);
   else:
-    penpos$(STEM, 0);
+    penpos$(lerpbold(STEM, STEM_TERM), 0);
   fi
 endfor;
 

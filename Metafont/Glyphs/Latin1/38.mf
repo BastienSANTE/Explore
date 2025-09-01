@@ -3,28 +3,80 @@ input ../Config/ExploreSansCFG.mf;
 export_setup;
 
 % U+0026 AMPERSAND - CODE 38
-newchar(38, 6.85pt#, 0);
-z1r = (0.765w, CAP_H);
-z2r = (0.15w, y1r);
-penpos1(BAR, 90); penpos2(BAR, 90);
+newchar(38, lerpbold(5.9pt#, 6.5pt#),0);
 
-help1 = z2l; help2 = (0.455w, 0.65 * CAP_H);
+z1 = (0.7w, CAP_H - (X_H * APERTURE));
+z2 = (0.45w, CAP_TOP);
+z3 = (lerpbold(0.1w, 0.18w), lerpbold(X_H, .98 * X_H));
+z4 = (lerp(x3, x2, 0.65), lerpbold(0.7 * X_H, 0.68 * X_H));
+z5 = (CURVE_BEARING / 2, lerpbold(0.35 * X_H, 0.4 * X_H));
+z6 = (lerpbold(0.35w, 0.34w), CAP_BOTTOM);
 
-z3l = help1; z4l = help2;
-penpos3(STEM, 0); penpos4(STEM, 0);
+z7 = (x1, y5); z8 = (x7, y4);
 
-z5 = (0.88w, lerpbold(0.25 * CAP_H, 0.3 * CAP_H));
-z6r = (lerpbold(0.45w, 0.5w), CAP_BOTTOM);
-z7r = (CURVE_BEARING, CAP_H / 3);
-z8r = z4l;
-z9r = z4r;
+if MONOSPACE = true:
+  z9 = (w - CURVE_BEARING, y4);
+else:
+  z9 = (w - CURVE_BEARING, y4);
+fi
+z10 = (x9 -.2pt, BASELINE);
 
-penpos5(BAR, -APERTURE_ANGLE); penpos6(BAR, -90);
-penpos7(STEM, -180); penpos8(BAR_CROSS, -270); penpos9(BAR_CROSS, -270);
+%penstroke z1e..tsn..z2e{lt}..tsn..z3e{dn}..tsn..z4e;
 
+if SERIF = false:
+  p1 = z1; pen1(lerpbold(BAR, BAR_CROSS), 90 - lerpbold(APERTURE_ANGLE, -40));
+  p2r = z2 shifted(lerpbold(-.2pt, 0), 0); pen2(lerpbold(BAR, BAR_CROSS), 90);
+  p3 = z3 shifted(0, lerpbold(0, -.1pt)); pen3(lerpbold(STEM, STEM_TERM), 180);
+  p9 = z9; pen9(lerpbold(BAR, BAR * .87), 270);
 
-penstroke z1e -- z2e; penstroke z3e -- z4e;
-fill z5r..z6r{lt}..tsn..z7r{up}..tsn..z8r{rt} -- z9r -- z9l -- z8l{lt}..tsn..z7l{dn}..tsn..z6l{rt}..z5l -- cycle;
-penlabels(range 1 thru 8);
+  p4 = z4 shifted(lerpbold(0, .2pt), 0); pen4(lerpbold(BAR, BAR * .87), 270);
+  p5r = z5; pen5(STEM, 180);
+  p6r = z6; pen6(lerpbold(BAR, BAR * 0.87), 270);
+  p7 = z7; pen7(lerpbold(BAR, BAR * 0.9), 270 - lerpbold(-60, 30));
+
+  p8 = z8; pen8(lerpbold(STEM, STEM_CROSS), 0);
+  p81 = (x7, lerp(py7, py6l, lerpbold(0, 0.8))); pen81(lerpbold(STEM, STEM_CROSS), 0);
+  p10r = z10; pen10(STEM, 0);
+
+  adjp1 = (lerpbold(lerp(x3, x4, 0.85), x3), y4);
+  adjp2 = p6l shifted(lerpbold(ARCHCORR / 2, ARCHCORR), 0);
+  adjp3 = onpath(p4l, p9l, lerpbold(0.07, 0.15));
+
+fill p2r{rt}..p1r -- p1l..p2l{lt}..tsn..p3l{dn}..p4l -- p9l -- p9r -- p4r -- adjp1..p3r{up}..tsn..cycle;
+fill adjp1..p5r{dn}..tsn..p6r{rt}..p7r -- lerpbold(p81l, p7l)..adjp2{lt}..tsn..p5l{up}..p4r -- cycle;
+fill p8l -- p8r -- p81r -- p10r  -- p10l -- p81l --  cycle;
+  
+else:
+  p1 = z1; pen1(lerpbold(BAR, BAR_CROSS), 90 - lerpbold(APERTURE_ANGLE, -60));
+  p2r = z2 shifted(lerpbold(-.2pt, 0), 0); pen2(lerpbold(BAR_THIN, BAR_FINE), 90);
+  p3 = z3 shifted(0, lerpbold(0, .1pt)); pen3(lerpbold(STEM, STEM_CROSS), 180);
+  p9 = z9; pen9(BAR_FINE, 270);
+
+  p4 = z4 shifted(lerpbold(0, .37pt), 0); pen4(BAR_FINE, 270);
+  p5r = z5 shifted(0, lerpbold(0, -.25pt)); pen5(lerpbold(STEM, STEM * .95), 180);
+  p6r = z6; pen6(lerpbold(BAR_THIN, BAR_FINE), 270);
+  p7 = z7; pen7(lerpbold(BAR, BAR * 0.9), 270 - lerpbold(-60, 30));
+
+  p8 = z8; pen8(lerpbold(STEM, STEM * .77), 0);
+  p81 = (x7, lerp(py7, py6l, lerpbold(0, 0.35))); pen81(lerpbold(STEM, STEM * .77), 0);
+  p10r = z10; pen10(STEM, 0);
+
+  adjp1 = (lerp(x3, x4, lerpbold(0.7,  0.4)), y4);
+  adjp2 = p6l shifted(lerpbold(ARCHCORR / 2, ARCHCORR), 0);
+  adjp3 = onpath(p4l, p9l, lerpbold(0.07, 0.2));
+  adjp4 = onpath(p81l, p10l, lerpbold(0.16, 0.4));
+  adjp5 = p5l shifted(0, lerpbold(0, .15pt));
+
+pickup pencircle;
+  
+fill p2r{rt}..p1r -- p1l..p2l{lt}..tsn..p3l{dn}..p4l -- p9l -- p9r -- p4r -- adjp1..p3r{up}..tsn..cycle;
+fill adjp1..p5r{dn}..tsn..p6r{rt}..adjp4 -- p81l..adjp2{lt}..tsn..adjp5{up}..p4r -- cycle;
+fill p8l -- p8r -- p81r -- p10r  -- p10l -- p81l --  cycle;
+
+  
+fi
+
+labels(range 1 thru 99);
+
 endchar;
 end

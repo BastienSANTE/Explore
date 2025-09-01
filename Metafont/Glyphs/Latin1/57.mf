@@ -12,10 +12,10 @@ if ITALIC = true:
   penpos1(STEM_ADJ(z1), 0);
   penpos2(STEM_ADJ(z1), 0);
 else:
-  z1 = (0.125w, BASELINE + (X_H * APERTURE));
-  z2r = (0.45w, CAP_BOTTOM);
-  penpos1(BAR, -90 -APERTURE_ANGLE);
-  penpos2(BAR, -90);
+  z1 = (lerpbold(0.125w, 0.1w), lerpbold(X_H * APERTURE, X_H * 1.2 * APERTURE));
+  z2r = (lerpbold(0.45w, 0.42w), CAP_BOTTOM);
+  penpos1(lerpbold(BAR, BAR_TERM), -90 -APERTURE_ANGLE);
+  penpos2(lerpbold(BAR, BAR * 0.95), -90);
 fi
 
 z3r = (w - CURVE_BEARING, bowl_height + ((CAP_H - bowl_height) / 3));
@@ -24,7 +24,9 @@ z5r = (CURVE_BEARING, bowl_height + ((CAP_H - bowl_height) / 2));
 z6r = (x4r, bowl_height);
 z7l = (x3l, y5);
 
-penpos3(STEM, 0); penpos4(BAR, 90); penpos5(STEM, 180); penpos6(BAR, 270); penpos7(BAR_FINE, 0);
+z61 = z6r shifted(-ARCHCORR, 0);
+
+penpos3(STEM, 0); penpos4(lerpbold(BAR, BAR), 90); penpos5(STEM, 180); penpos6(lerpbold(BAR, BAR_CROSS), 270); penpos7(lerpbold(STEM_JOINT, STEM_FINE / 2), 0);
 
 z8 = (x3l, y7l);
 z9 = (x3r, y7l);
@@ -33,7 +35,7 @@ if ITALIC = true:
   fill z1l..z2l..z8{up}..tsn..z4l{lt}..tsn..z5l{dn}..tsn..z6l{rt}..tsn..z7l{up} -- z7r..z6r{lt}..tsn..z5r{up}..tsn..z4r{rt}..tsn..z9{dn}..z3r..z2r..z1r -- cycle;
   % penstroke z1e..tsn..z2e..tsn..z3e{up}..tsn..z4e{lt}..tsn..z5e{dn}..z6e{rt}..tsn..z7e{up};
 else:
-  fill z1l...z2l{rt}..tsn..z8{up}..tsn..z4l{lt}..tsn..z5l{dn}..tsn..z6l{rt}..tsn..z7l{up} -- z7r..z6r{lt}..tsn..z5r{up}..tsn..z4r{rt}..tsn..z3r{dn}..tsn..z2r{lt}...z1r -- cycle;
+  fill z1l...z2l{rt}..tsn..z8{up}..tsn..z4l{lt}..tsn..z5l{dn}..tsn..z6l{rt}..tsn..z7l{up} -- z7r..z61{lt}..tsn..z5r{up}..tsn..z4r{rt}..tsn..z3r{dn}..tvar (0.9, 0.8)..z2r{lt}...z1r -- cycle;
 fi
 
 italicize;

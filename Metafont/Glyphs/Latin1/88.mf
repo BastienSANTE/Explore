@@ -5,8 +5,6 @@ export_setup;
 % U+0058 LATIN CAPITAL LETTER X - CODE 88
 newchar(88, 6.6pt#, 2);
 
-INKFAC:= 0.1;
-
 z1 = (OBLIQUE_BEARING, CAP_H);
 z2 = (x1, BASELINE);
 z3 = (w - OBLIQUE_BEARING, y1);
@@ -20,27 +18,18 @@ crossangle = angle(z5 - z2) / 2;
 z11l = z1; z21l = z2; z31r = z3; z41r = z4;
 
 penpos11(STEM_ADJN(crossangle), 0); penpos41(STEM_ADJN(crossangle), 0);
-penpos21(STEM_ADJN(crossangle), 0); penpos31(STEM_ADJN(crossangle), 0);
+penpos21(STEM_C, 0); penpos31(STEM_C, 0);
 
-z51r = onpath(z5r, z11r, INKFAC); z52r = onpath(z5r, z21r, INKFAC);
-z53l = onpath(z5l, z31l, INKFAC); z54l = onpath(z5l, z41l, INKFAC);
+z50 = z5;
+z51r = onpath(z5r, z11r, lerpbold(0.3, 0.5)); z52r = onpath(z5r, z21r, lerpbold(0.3, 0.5));
+z53l = onpath(z5l, z31l, lerpbold(0.3, 0.5)); z54l = onpath(z5l, z41l, lerpbold(0.3, 0.5));
 
-penpos51(STEM_ADJN(crossangle), 0); penpos52(STEM_ADJN(crossangle), 0);
-penpos53(STEM_ADJN(crossangle), 0); penpos54(STEM_ADJN(crossangle), 0);
-
-  if SERIF = true:
-    makeserif(1,  z1, -SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(2, z1r,  SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(3, z3l, -SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(4,  z3,  SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(5,  z2, -SERIF_LENGTH,  SERIF_THICKNESS);
-    makeserif(6, z2r,  SERIF_LENGTH,  SERIF_THICKNESS);
-    makeserif(7, z4l, -SERIF_LENGTH,  SERIF_THICKNESS);
-    makeserif(8,  z4,  SERIF_LENGTH,  SERIF_THICKNESS);
-  fi
+penpos50(STEM_C, 0);
+penpos51(STEM_ADJN(crossangle), 0); penpos52(STEM_C, 0);
+penpos53(STEM_C, 0); penpos54(STEM_ADJN(crossangle), 0);
   
   penstroke z11e -- z5e -- z41e;
-  penstroke z31e -- z5e -- z21e;
+  penstroke z31e -- z50e -- z21e;
 
   italicize;
 

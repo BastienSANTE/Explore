@@ -4,8 +4,11 @@ export_setup;
 
 % U+0073 LATIN SMALL LETTER S - CODE 115
 newchar(115, 4.7pt#, 0);
-spine_center_y = 0.5 * X_TOP;
-  spine_angle:= lerpbold(14, 6);
+% z1 = (w - CURVE_BEARING, X_TOP - (X_H * APERTURE));
+% z2 = (mid, X_TOP);
+
+spine_center_y = lerpbold(0.5 * X_TOP, 0.49 * X_TOP);
+  spine_angle:= lerpbold(14, 4.5);
   spine_straight_length:= lerpbold(0.1w, 0.05w);
   spine_ydelta:= 0.25 * X_H;
   right_terminal_xoffset:=0.1w;
@@ -15,14 +18,15 @@ if MONOSPACE = true:
   x1r = lerpbold(w - right_terminal_xoffset, x5l); y1 = lerpbold(X_TOP - (X_H * APERTURE), X_TOP - (CAP_H * APERTURE * 0.85));
   x7l = lerpbold(x3r, 0.05w); y7 = lerpbold(BASELINE + (X_H * APERTURE), BASELINE + (CAP_H * APERTURE * 0.85));
 else:
-  beak_spine_xdelta = lerpbold(0.02w, 0.05w);
-  x1r = lerpbold(w - right_terminal_xoffset, x5l); y1 = X_TOP - (X_H * APERTURE);
-  x7l = lerpbold(x3r, 0.05w); y7 = BASELINE + (X_H * APERTURE);
+  beak_spine_xdelta = lerpbold(0.03w, 0.02w);
+  x1r = lerpbold(w - right_terminal_xoffset, x5l);
+  y1 = X_TOP - (X_H * APERTURE);
+  x7l = lerpbold(x3r, 0.01w); y7 = BASELINE + (X_H * APERTURE);
 fi
 
   x2 = x4 + beak_spine_xdelta; y2r = X_TOP;
   x3r = CURVE_BEARING; y3 = y2l - ((y2l - y41l) / 2);
-  x4 = 0.5w; y4 = spine_center_y;
+  x4 = mid; y4 = spine_center_y;
   z41 = z4 shifted(-spine_straight_length, 0) rotatedaround((z4), -spine_angle);
 z42 = z4 shifted(spine_straight_length, 0) rotatedaround((z4), -spine_angle);
 
@@ -32,16 +36,16 @@ else:
   x5l = w - OBLIQUE_BEARING; y5 = y42r - ((y42r - y6r) / 2);
 fi
   
-  x6 = x4 - beak_spine_xdelta; y6l = CAP_BOTTOM;
+  x6 = lerpbold(x4 - beak_spine_xdelta, x41 + beak_spine_xdelta); y6l = CAP_BOTTOM;
   
-  penpos1(BAR, 90 - APERTURE_ANGLE);
-  penpos2(BAR, 90);
-  penpos3(STEM, 180);
-  penpos41(BAR, 270 - spine_angle);
-  penpos42(BAR, 270 - spine_angle);
-  penpos5(STEM, 180);
-  penpos6(BAR, 90);
-  penpos7(BAR, 90 - APERTURE_ANGLE);
+  penpos1(lerpbold(BAR, BAR * 0.9), 90 - APERTURE_ANGLE);
+  penpos2(lerpbold(BAR, BAR_CROSS), 90);
+  penpos3(lerpbold(STEM, STEM * 0.9), 180);
+  penpos41(STEM_CROSS, 270 - spine_angle);
+  penpos42(STEM_CROSS, 270 - spine_angle);
+  penpos5(lerpbold(STEM, STEM * 0.9), 180);
+  penpos6(lerpbold(BAR, BAR_CROSS), 90);
+  penpos7(lerpbold(BAR, BAR * 0.9), 90 - APERTURE_ANGLE);
 
   if SERIF = true:
     makeserif(1, z1r, -SERIF_THICKNESS, -TERM_LENGTH);
@@ -50,7 +54,7 @@ fi
 
   %penstroke z1e..tension TSN..z2e{left}..tension TSN..z3e{down}..tension TSN..z41e{dir -spine_angle} -- z42e{dir -spine_angle}..tension TSN..z5e{down}..tension TSN..z6e{left}..tension TSN..z7e;
 
-  fill z2r{rt}...z1r -- z1l...z2l{lt}...z3l{dn}..tsn..z41l{dir -spine_angle} -- z42l{dir -spine_angle}..tsn..z5l{dn}..tsn..z6l{lt}...z7l -- z7r...z6r{rt}...z5r{up}..tsn..z42r{dir (180 - spine_angle)} -- z41r{dir (180 - spine_angle)}..tsn..z3r{up}..tsn..{rt}cycle;
+  fill z2r{rt}...z1r -- z1l...z2l{lt}..tsn..z3l{dn}..tsn..z41l{dir -spine_angle} -- z42l{dir -spine_angle}..tsn..z5l{dn}..tsn..z6l{lt}...z7l -- z7r...z6r{rt}..tsn..z5r{up}..tsn..z42r{dir (180 - spine_angle)} -- z41r{dir (180 - spine_angle)}..tsn..z3r{up}..tsn..{rt}cycle;
   
 italicize;
 

@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+
+import os
+import os.path
+import subprocess
+import shutil
+import fontforge
+import time
+
+from collections import deque
+
+svgfolder : str = "../MFExport/"
+
+latin1 = {
+    "set": "Latin1",
+    "file": "../Glyphs/Latin1/",
+    "range_start": 0,
+    "range_end": 128
+}
+
+
+currentfont = fontforge.font()
+monowidth = 600
+
+for currentglyph in range(0, 127):
+    filename = "{}.svg".format(currentglyph)
+    if os.path.isfile(svgfolder + filename):
+
+        # Create a "buffer glyph" to import boxed drawings
+        tempglyph = currentfont.createChar(1)
+
+        tempglyph.importOutlines(svgfolder + filename, scale=True)
+
+        # Iterate through contours except 1st one (the bounding box)
+        contour_layer = tempglyph.foreground
+        contour_list = contour_layer.__iter__()
+        
+        # Skip the bounding box
+
+        # Create actual glyph with correct code
+        finalglyph = currentfont.createChar(currentglyph)
+        finalfg = finalglyph.foreground
+
+        contour_count = len(contour_layer)
+        
+        # Copy all contours one by one
+        for i in range(contour_count - 1):
+                finalglyph.foreground += contour_layer[i]
+                print(contour_layer[i])
+                
+                
+        # Set glyph metrics
+        #finalglyph.width = monowidth
+        
+        # Clear buffer for next glyph
+        tempglyph.clear()
+    else:
+        print(f"SVG file {filename} does not exist.")
+
+        
+currentfont.save("Explore_Test.sfd")

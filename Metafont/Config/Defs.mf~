@@ -1,0 +1,163 @@
+numeric px[];
+numeric py[];
+pair p[];    % Stroke points
+pair ikp[];  % Coordinates to define inktraps
+pair sfp[];  % Coordinates to define serif positions
+pair dot[];  % Coordinates of dots (i.e. points on i, j, etc.)
+pair help[]; % Points used to place other points in complex glyphs
+pair adjp[]; % Adjustment points, for things that would be far too difficult with regular pens & points
+pair center; % Horizontal & vertical center of the glyph
+
+path glyph;  % the whole glyph
+path elem[]; % Standard container for all kinds of elements
+
+
+% P-Convention
+vardef p@#=(px@#, py@#) enddef;
+
+vardef pen@#(expr b, d) =
+  (px@#r - px@#l, py@#r - py@#l)=(b, 0) rotated d;
+  px@# = .5(px@#l + px@#r); py@# = .5(py@#l + py@#r) enddef;
+
+% How bold ?
+numeric BOLDNESS;
+
+% Mono or proportional?
+boolean MONOSPACE;
+
+% Italics
+boolean ITALIC;
+
+% Serif or sans-serif ?
+boolean SERIF;
+
+% Oldstyle numerals
+boolean OLDSTYLE;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ESSENTIAL METRICS %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+numeric STRETCH;      % Font width setting, to create "condensed" or "expanded" versions.
+numeric EM_H;         % Height from the baseline to the top of the EM
+numeric DEPTH;        % Height from the bottom of the EM to the baseline
+numeric CAP_H;        % Height of standard uppercase glyphs
+numeric X_H;          % Height of standard lowercase glyphs
+numeric BASELINE;     % Self-explanatory (should be 0)
+numeric OVERSHOOT;    % Height compensation for glyphs with rounded tops
+numeric ASCENDER_H;   % ???
+numeric CAP_TOP;      % Top of uppercase glyphs with oversoot
+numeric CAP_BOTTOM;   % Lowest point of glyphs with overshoot
+numeric ASCENDER;     % Ascender height
+numeric LOWPOINT;     % Middleground between baseline and descender
+numeric DESCENDER;    % Actual position of the descender
+numeric X_TOP;        % Top of rounded lowercase glyphs
+numeric SCALEOFFSET;  % Used to resize glyphs at export
+
+%%%%%%%%%%%%%%%%%%%%
+%%% SIDEBEARINGS %%%
+%%%%%%%%%%%%%%%%%%%%
+numeric CURVE_BEARING, LINE_BEARING, STEM_BEARING, OBLIQUE_BEARING, MONO_CURVE_BEARING, MONO_LINE_BEARING;
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%% PEN VARIATIONS %%%
+%%%%%%%%%%%%%%%%%%%%%%
+numeric BASE_BAR;
+numeric BASE_STEM;
+numeric BASE_STRETCH;
+numeric BFAC;
+numeric CONTRAST;
+
+numeric BAR_CROSS;
+numeric STEM_CROSS;
+numeric BAR_TERM;
+numeric STEM_TERM;
+numeric BAR_JOINT;
+numeric STEM_JOINT;
+numeric BAR_THIN;
+numeric STEM_THIN;
+numeric BAR_FINE;
+numeric STEM_FINE;
+
+
+%%% CURVATURE %%%
+numeric TSN   ;    % Average tension of curvature
+numeric APERTURE;  % Average aperture of glyphs, based on height;
+numeric APERTURE_ANGLE;
+numeric INV_APERTURE_ANGLE;
+numeric ARCHCOEF;
+numeric ARCHCORR;
+numeric ARCHHEIGHT; % Height of average arch on a, m, n, h...
+
+%%% DIACRITICS & ACCENTS
+numeric ACC_YOFFSET; % Offset between the top of the lowercase glyphs and diacritics. 
+numeric DOTSIZE;  % Diameter of the standard dot above i, ï, ÿ...
+
+%%% ALTERNATE GLYPHS %%%
+boolean ALTERNATES;
+% Some fonts have an option to enable "alternate" styles for certain glyphs,
+% namely A, G, K, S, Z, etc. Modern type engines allow to select these alte-
+% rnate glyphs for style reasons, to add flair.
+
+% Variables which are not of NUMERIC type must have a type declaration.
+% See the METAFONTbook, Chapter 7 for more information.
+
+
+%%% SHORTCUTS & SNIPPETS %%%
+def lt:= left enddef;
+def rt:= right enddef;
+def dn:= down enddef;
+def aa:= APERTURE_ANGLE enddef;
+def daa:= dir APERTURE_ANGLE enddef;
+def naa:= dir -APERTURE_ANGLE enddef;
+def dia:= dir INV_APERTURE_ANGLE enddef;
+def nia:= dir -INV_APERTURE_ANGLE enddef;
+
+def mid = 0.5w enddef;
+def tsn = tension TSN enddef;
+def invtsn = tension (1 / TSN) enddef;
+
+% TVAR : Interpolates tension of curve
+def tvar(expr a, b) =
+  tension(lerpbold(a, b))
+enddef;
+
+def BAR_ADJ(expr a) =
+  BAR / cosd(angle(a))
+enddef;
+
+def STEM_ADJ(expr a) =
+  STEM / cosd(angle(a))
+enddef;
+
+def BAR_C_ADJ(expr a) =
+  BAR_C / cosd(angle(a))
+enddef;
+
+def STEM_C_ADJ(expr a) =
+  STEM_C / cosd(angle(a))
+enddef;
+
+def STEM_ADJN(expr a) =
+  STEM / cosd(a)
+enddef;
+
+def BAR_ADJN(expr a) =
+  BAR / cosd(a)
+enddef;
+
+def rotmirror(expr x) =
+    currentpicture:= currentpicture rotatedaround(x, 180);
+enddef;
+
+def italicize =
+  if ITALIC = true:
+    currentpicture:= currentpicture shifted(- CAP_H * ITANGLE / 2, 0) slanted ITANGLE; fi
+enddef;
+
+def reposition =
+  currentpicture:= currentpicture scaled (1024/1000) shifted (0, SCALEOFFSET);
+enddef;
+  
+
+  

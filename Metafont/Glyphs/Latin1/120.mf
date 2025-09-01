@@ -27,16 +27,16 @@ z53l = onpath(z5l, z31l, INKFAC); z54l = onpath(z5l, z41l, INKFAC);
 penpos51(STEM_ADJN(crossangle), 0); penpos52(STEM_ADJN(crossangle), 0);
 penpos53(STEM_ADJN(crossangle), 0); penpos54(STEM_ADJN(crossangle), 0);
 
-  if SERIF = true:
-    makeserif(1,  z1, -SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(2, z1r,  SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(3, z3l, -SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(4,  z3,  SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(5,  z2, -SERIF_LENGTH,  SERIF_THICKNESS);
-    makeserif(6, z2r,  SERIF_LENGTH,  SERIF_THICKNESS);
-    makeserif(7, z4l, -SERIF_LENGTH,  SERIF_THICKNESS);
-    makeserif(8,  z4,  SERIF_LENGTH,  SERIF_THICKNESS);
-  fi
+  % if SERIF = true:
+  %   makeserif(1,  z1, -SERIF_LENGTH, -SERIF_THICKNESS);
+  %   makeserif(2, z1r,  SERIF_LENGTH, -SERIF_THICKNESS);
+  %   makeserif(3, z3l, -SERIF_LENGTH, -SERIF_THICKNESS);
+  %   makeserif(4,  z3,  SERIF_LENGTH, -SERIF_THICKNESS);
+  %   makeserif(5,  z2, -SERIF_LENGTH,  SERIF_THICKNESS);
+  %   makeserif(6, z2r,  SERIF_LENGTH,  SERIF_THICKNESS);
+  %   makeserif(7, z4l, -SERIF_LENGTH,  SERIF_THICKNESS);
+  %   makeserif(8,  z4,  SERIF_LENGTH,  SERIF_THICKNESS);
+  % fi
   
   penstroke z11e -- z5e -- z41e;
   penstroke z31e -- z5e -- z21e;

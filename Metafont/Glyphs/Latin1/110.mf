@@ -4,17 +4,17 @@ export_setup;
 
 % U+006E LATIN SMALL LETTER N | CODE 110
 
-newchar(110, 5.4pt#, 2);
-z1l = (LINE_BEARING, X_H);
-z2l = (LINE_BEARING, BASELINE);
+newchar(110, lerpbold(5.4pt#, 5.7pt#), 2);
+z1l = (LEG_BEARING, X_H);
+z2l = (x1l, BASELINE);
 
 z3l = (x1r, lerpbold(X_H - (CAP_H * APERTURE), y5r));
-z5r = (w - STEM_BEARING, 0.65 * X_H);
-z4r = (x3l + ((x5l - x3l) * ARCHCOEF), X_TOP);
+z5r = (w - STEM_BEARING, ARCHHEIGHT);
+z4r = (lerp(x3l, x5l, ARCHCOEF), X_TOP);
 z6r = (x5r, BASELINE);
 
 penpos1(STEM, 0); penpos2(STEM, 0);
-penpos3(BAR_FINE, 90 + APERTURE_ANGLE); penpos4(BAR, 90); penpos5(STEM, 0); penpos6(STEM, 0);
+penpos3(BAR_FINE, 90 + APERTURE_ANGLE); penpos4(BAR_CROSS, 90); penpos5(STEM, 0); penpos6(STEM, 0);
 
 z41 = z4r shifted(STRETCH * ARCHCORR, 0);
 

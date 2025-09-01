@@ -2,24 +2,29 @@ input ../Config/ExploreSansCFG.mf;
 
 export_setup;
 
+curve_radius:=lerpbold(2pt, 2.5pt);
+
 % U+006A LATIN SMALL LETTER J | CODE 106
 newchar(106, 2.7pt#, 0);
 if MONOSPACE = true:
   bar_xoffset:= (w / 3);
   tail_length:= lerpbold(w / 2, w / 4);
-  z1 = (.75w, X_H);
-  tail_xoffset:= .75pt;
-  z3r = (lerpbold(.6w, .45w), DESCENDER);
+  z1 = (.75w, X_H); penpos1(STEM, 0);
+  z2r = (x1r, DESCENDER + curve_radius);
+  tail_xoffset:= lerpbold(.75pt, .25pt);
+  z3r = (lerp(x4r, x2l, lerpbold(0.5, 0.6)), DESCENDER);
+  z4r = (tail_xoffset, y3r + X_H * APERTURE / 2); penpos4(BAR, -90 - APERTURE_ANGLE / 4);
 else:
   bar_xoffset:= 1pt;
   tail_length:= lerpbold(w / 4, w / 16);
-  z1 = (.5w, X_H);
+  z1 = (.5w, X_H); penpos1(STEM, 0);
+  z2 = (x1, DESCENDER  curve_radius);
   tail_xoffset:= 0;
   z3r = (tail_length, DESCENDER);
+  z4r = (tail_xoffset, y3r); penpos4(BAR, -90);
 fi
+
   z11r = z1;
-  z2 = (x1, lerpbold(-.2pt, BASELINE));
-  z4r = (tail_xoffset, y3r);
   z5r = (bar_xoffset, y1);
 
 dot1 = (x1, X_H + ACC_YOFFSET);
@@ -31,9 +36,9 @@ if MONOSPACE = true:
   fill z5r -- z11r -- z11l -- z5l -- cycle;
 fi
 
-penpos1(STEM, 0); penpos2(STEM, 0); penpos3(BAR, -90); penpos4(BAR, -90);
+penpos2(STEM, 0); penpos3(BAR, -90); 
 
-fill z1l -- z1r -- z2r{down}..tsn..z3r{left} -- z4r -- z4l -- z3l{right}...z2l{up} -- cycle;
+fill z1l -- z1r -- z2r{down}..tsn..z3r{left}...z4r -- z4l...z3l{right}...z2l{up} -- cycle;
 fill fullcircle scaled DOTSIZE shifted dot1;
 
 italicize;

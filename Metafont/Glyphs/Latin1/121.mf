@@ -14,9 +14,9 @@ z4 = z3 shifted -((x2 - x3) * (-DESCENDER / X_H), (y2 - y3) * (-DESCENDER / X_H)
 penpos1(STEM, 0); penpos2(STEM, 0); penpos3(STEM, 0); penpos4(STEM, 0);
 
 %z11l = z3l shifted((x1l - x3l) * INKFAC, (y1l - y3l) * INKFAC);
-z11l = onpath(z3l, z1l, INKFAC);
+z11l = onpath(z3l, z1l, lerpbold(0.5, 0.5));
 %z21r = z3r shifted((x2r - x3r) * INKFAC, (y2r - y3r) * INKFAC);
-z21r = onpath(z3r, z2r, INKFAC);
+z21r = onpath(z3r, z2r,  lerpbold(0.5, 0.5));
 z31l = z3l; z32r = z3r;
 
 penpos11(STEM, 0); penpos21(STEM, 0); penpos31(STEM_JOINT, 0); penpos32(STEM_JOINT, 0);

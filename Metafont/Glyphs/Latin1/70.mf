@@ -3,7 +3,7 @@ input ../Config/ExploreSansCFG.mf;
 export_setup;
 
 % U+0046 LATIN CAPITAL LETTER F - CODE 70
-newchar(70, 5.45pt#, 0);
+newchar(70, 5.45pt#, 1);
   bar_h:= 0.5 * CAP_H;
   bar_crease:=0.1w;
   

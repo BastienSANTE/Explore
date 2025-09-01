@@ -4,107 +4,103 @@ export_setup;
 
 % U+0067 LATIN SMALL LETTER G | CODE 103
 newchar(103, 5.5pt#, 0);
-  ubox = 0.15w;
-  ubwidth = 0.55w;
-  ubheight = 0.35h;
-  ubtension:= 0.9;
-  lbey = -.05h;
+  ubox = CURVE_BEARING;
+  ubwidth = lerpbold(0.7w, 0.75w);
+  ubheight = lerpbold(0.43h, 0.41h);
+  lbey = lerpbold(-.7pt, -.2pt);
   lboy = .05h;
   tlendx = 0.9w;
   tlangle = 0;
   %lbox
 
-if BOLDNESS > 600:
-  ubheight:= 0.32h;
-fi
-
-
 if ITALIC = false:
   % upper bowl
-  x1 = ubox + (ubwidth / 2); y1l = X_H + OVERSHOOT;
-  x2 = ubox + ubwidth; y2 = y1 - (ubheight / 2);
-  x3 = x1; y3 = y1 - ubheight;
-  x4 = ubox; y4 = y2;
-
-  % spinal cord & lower bowl
-  x5 = x3; y5l = y3l;                      % Keep spine base attached
-  x6r = x4l; y6 = y5l - ((y5l - y7l) / 2); % Align vertical center of spine to middle xof 2 bowls
-  x7 = x4r + ((x3 - x4r) / 2); y7r = BASELINE;  % put on BASELINE;
-  x8l = x2r;  y8 = y7;
-  x9l = tlendx; y9 = lbey;
-  x10 = x1; y10l = DESCENDER;
-  x11l = x4l; y11 = 0.3 * DESCENDER;
-  x117r = x7r; y117r = y7r;
   
-  % tail
-  x12 = x1 + (x2 - x1) / 2; y12r = X_H;
-  %z13 = z12 shifted(1pt#, 0) rotatedaround(z12, 45);
+  z1 = (ubox + (ubwidth / 2), X_TOP);
+  z2 = ( ubox + ubwidth, y1 - (ubheight / 2));
+  z3 = (x1, y1 - ubheight);
+  z4 = (ubox, y2);
 
-  if BOLDNESS > 500:
-    forsuffixes $ = 1, 7, 8:
-      penpos$(BAR_CROSS, -90); endfor
-    forsuffixes $ = 3, 10:
-      penpos$(BAR_CROSS, -270); endfor
+  
+  z5 = z3;
+  z7 = (x5, BASELINE);
+  z8 = (lerp(x1, x2, lerpbold(0.56, 0.65)), y7);
+  z6 = (x4, lerp(y5, y7, 0.5));
+  z9 = (w - CURVE_BEARING, DESCENDER / 3);
+  z10 = (mid, DESCENDER);
+  z11 = (OBLIQUE_BEARING, DESCENDER / 2);
+
+  z13 = (w - OBLIQUE_BEARING, X_H);
+
+  
+  if SERIF = false:
+    p1r = z1; pen1(lerpbold(BAR, BAR_TQ), 90);
+    p2r = z2; pen2(lerpbold(STEM, STEM_TERM), 0);
+    p3r = z3; pen3(lerpbold(BAR, BAR_TQ), -90);
+    p4r = z4; pen4(lerpbold(STEM, STEM_TERM), 180);
+
+    p5l = z5; pen5(lerpbold(BAR * .75, BAR * .3), 90);
+    p7r = z7 shifted(0, lerpbold(.2pt, 0)); pen7(lerpbold(BAR, BAR * .87), -90);
+    p6r = (x6, lerp(py5r, py7r, 0.5)); pen6(lerpbold(STEM, STEM * .87), 180);
+    p8r = (x8,py7r); pen8(lerpbold(BAR, BAR * .87), -90);
+    p9r = z9 shifted(0, lerpbold(0, .5pt)); pen9(lerpbold(STEM, STEM * .9), 0);
+    p10r = z10; pen10(lerpbold(BAR, BAR * .77), -90);
+    p11r = z11; pen11(BAR * .95, -140);
+    
+    p13r = z13; pen13(STEM, 90);
+    
+    adjp1 = (px6l, lerp(py7l, py5l, 0.5));
+    adjp2 = onpath(p8r, p7r, lerpbold(0, 0.5));
+    adjp3 = (px9l, lerp(py8r, py10l, lerpbold(0.42, 0.35)));
+    adjp4 = (lerpbold(px8, px2), y13) shifted((px2r - px2) * 2 ,0);
+    adjp5 = (lerpbold(px8, px2), lerpbold(py13l, y2));
+
+
+    fill p1r{rt}..tsn..p2r{dn}..tsn..p3r{lt}..tsn..p4r{up}..tsn..p1r{rt} -- p1l{lt}..tsn..p4l{dn}..tsn..p3l{rt}..tsn..p2l{up}..tsn..p1l{lt} -- cycle;
+    
+    fill p5r{lt}..tsn..p6r{dn}..tsn..p7r{rt} -- adjp2{rt}...adjp3{dn}..p10l{lt}..tsn..p11l -- p11r..tsn..p10r{rt}..p9r{up}..tsn..p8l{lt} -- p7l{lt}..tsn..adjp1{up}..p5l{rt} -- cycle;
+
+    fill p13r -- lerpbold(p13l, (x13, y2)) -- adjp5{up}..tsn..{rt}adjp4 -- cycle;
   else:
-    forsuffixes $ = 1, 7, 8:
-      penpos$(BAR, -90); endfor
-    forsuffixes $ = 3, 10:
-      penpos$(BAR, -270); endfor
+    p1r = z1; pen1(BAR_FINE, 90);
+    p2r = z2; pen2(lerpbold(STEM, STEM_TERM), 0);
+    p3r = z3; pen3(BAR_FINE, -90);
+    p4r = z4; pen4(lerpbold(STEM, STEM_TERM), 180);
+
+    p5l = z5; pen5(lerpbold(BAR_FINE, BAR * .3), 90);
+    p7r = z7 shifted(0, lerpbold(.2pt, 0)); pen7(lerpbold(STEM, BAR * .87), -90);
+    p6r = (x6, lerp(py5r, py7r, 0.5)); pen6(lerpbold(STEM, STEM * .87), 180);
+    p8r = (x8,py7r); pen8(lerpbold(STEM, BAR * .87), -90);
+    p9r = z9 shifted(0, lerpbold(0, .5pt)); pen9(lerpbold(STEM, STEM * .9), 0);
+    p10r = z10 shifted(lerpbold(0, -.3pt), 0); pen10(BAR_FINE, -90);
+    p11r = z11; pen11(BAR_FINE, -150);
+
+    p12r = p11r; pen12(BAR_THIN, 150);
+    p14l = adjp6; pen14(BAR_THIN, 150);
+    
+    p13r = z13; pen13(STEM, 90);
+
+    
+    adjp1 = (px6l, lerp(py7l, py5l, 0.5));
+    adjp2 = onpath(p8r, p7r, lerpbold(0, 0.5));
+    adjp3 = (px9l, lerp(py8r, py10l, lerpbold(0.42, 0.45)));
+    adjp4 = (lerp(px2, px13, lerpbold(0.6, 0.8)), y13);
+    adjp5 = (lerpbold(px8, px2), lerpbold(py13l, y2));
+    adjp6 = (lerp(x7, x6, lerpbold(0.2, 0.27)), py7r);
+
+    fill p1r{rt}..tsn..p2r{dn}..tsn..p3r{lt}..tsn..p4r{up}..tsn..p1r{rt} -- p1l{lt}..tsn..p4l{dn}..tsn..p3l{rt}..tsn..p2l{up}..tsn..p1l{lt} -- cycle;
+    
+    fill p5r{lt}..tsn..p6r{dn}..tsn..adjp6{rt} -- adjp2{rt}...adjp3{dn}..p10l{lt}..tvar(0.9, 0.8)..p11l -- p11r..tvar(0.9, 0.8)..p10r{rt}..p9r{up}..tsn..p8l{lt} -- p7l{lt}..tsn..adjp1{up}..p5l{rt} -- cycle;
+
+    fill p13r -- lerpbold(p13l, (x13, y2)) -- adjp5 -- adjp4 -- cycle;
+    fill p12r -- p14r -- p14l -- p12l -- cycle;
   fi
-  
-  
-  penpos2(STEM, -180);
-  penpos4(STEM, 0);
 
-  penpos5(BAR_FINE, -270);
-  penpos6(STEM, -180);
-  penpos9(STEM, -180);
-  penpos11(STEM, 0);
-  penpos117(BAR_FINE, -110);
-
-  penpos12(BAR, 90 + tlangle);
-  
-  z13 = z12 shifted(0.35w, 0) rotatedaround(z12, tlangle);
-  penpos13(BAR, 90 + tlangle);
-
-  penstroke z1e{right}..tension ubtension..z2e{down}..tension TSN..z3e{left}..tension TSN..z4e{up}..tension TSN..cycle;
-  %penstroke z5e{dir -180}..z6e{down}..z7e{right} -- z8e{right}..tension 1..z9e{down}..tension 1..z10e{left}..z11e{up}..z117e{dir 0};
-  penstroke z12e -- z13e;
-
-  fill z3{left}..z6r..z7r{right} -- z8r{right}..z9r...z10r{left}...z11r{up}..{dir 20}z117r -- z117l{lt}..z11l{dn}..tsn..z10l{rt}..invtsn..z9l..z8l{left} -- z7l{left}...z6l{up}..tsn..z5l{rt} -- cycle;
-elseif ITALIC = true:
-
-  z1l = (x6l, X_H - (CAP_H * APERTURE));
-  z2r = (0.5w, X_TOP); z3r = (CURVE_BEARING, 0.5 * X_TOP);
-  z21 = z2r shifted(STRETCH * -ARCHCORR, 0);
-  z4r = (x2, CAP_BOTTOM); z5l = (x6l, BASELINE + (CAP_H * APERTURE));
-  z41 = z4r shifted(STRETCH * -ARCHCORR, 0);
-  z6r = (w - LINE_BEARING, X_H);
-  z8r = (x2 - ((x2 - x3l) / 4), DESCENDER);
-  if MONOSPACE = true:
-    z7r = (x6r, y4);
-    z9l = (x3r + ((x3 - x3r) / 2), y8l);
-    penpos9(BAR, -90);
-  else:
-    z7r = (x6r, BASELINE);
-    z9r = (x3r, DESCENDER + (X_H * APERTURE));
-    penpos9(BAR, -90 - APERTURE_ANGLE);
-  fi
-  
-  penpos1(BAR_FINE, aa); penpos2(BAR, 90); penpos3(STEM, 180); penpos4(BAR, 270); penpos5(BAR_FINE, 270 + aa);
-  penpos6(STEM, 0); penpos7(STEM, 0); penpos8(BAR, -90);
-
-  %penstroke z1e..tsn..z2e..tsn..z3e..tsn..z4e;
-
-  fill z21...z1r -- z1l...z2l{lt}..tsn..z3l{dn}..tsn..z4l{rt}...z5l -- z5r...z41{lt}..tsn..z3r{up}..tsn..{rt} cycle;
-  fill z6l -- z6r -- z7r -- z7l -- cycle;
-  fill z7r{dn}..tsn..z8r{lt}...z9r -- z9l...z8l{rt}..tsn..z7l{up} -- cycle;
-  
+ 
+else:
 fi
 
-  
-italicize;
 
-  penlabels(range 1 thru 117);
+ penlabels(range 1 thru 117);
 endchar;
 end

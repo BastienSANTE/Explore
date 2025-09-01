@@ -11,20 +11,26 @@ z3r = (x2r, y2l);
 z5r = z4l = (w / 3, 0.595 * CAP_H);
 z6r = z4r;
 
-z7r = (w - CURVE_BEARING, 0.3 * CAP_H);
 z8r = (0.455w, CAP_BOTTOM);
 z9 = (x1, BASELINE + (CAP_H * APERTURE));
 
-z10 = onpath(z5l, z6l, 0.75);
+z10 = onpath(z5l, z6l, lerpbold(0.8, 0.5));
 z11 = onpath(z5l, z6l, 0.25);
 
-penpos1(BAR, 90); penpos2(BAR, 90);
+penpos1(lerpbold(BAR, BAR_TERM), 90); penpos2(lerpbold(BAR, BAR_TERM), 90);
 penpos3(STEM_ADJ(-(z4l - z3r)), 0); penpos4(STEM,0);
 
-penpos5(BAR_CROSS, 90); penpos6(BAR_CROSS, 90);
-penpos7(STEM, 0); penpos8(BAR, -90); penpos9(BAR, -90 - aa);
+penpos5(lerpbold(BAR_CROSS, BAR_TQ), 90); penpos6(lerpbold(BAR_CROSS, BAR_TQ), 90);
+penpos8(BAR, -90); penpos9(BAR, -90 - aa);
 
-penstroke z1e -- z2e; penstroke z3e -- z4e;
+% z7 defined here to use defined pen positions
+z7r = (w - CURVE_BEARING, lerp(y6l, y8l, 0.5));
+penpos7(STEM, 0);
+
+adjp1 = onpath(z2, z2l, 0.5);
+adjp2 = z3l shifted(-(ypart(adjp1) - y2l), 0);
+
+fill z1r -- z2r -- adjp1 -- z4r -- z4l -- adjp2 -- z1l -- cycle;
 
 fill z5r -- z6r{rt}..tsn..z7r{dn}..tsn..z8r{lt}...z9r -- z9l...z8l{rt}..tsn..z7l{up}..tsn..z10{lt} -- z11 -- cycle;
 

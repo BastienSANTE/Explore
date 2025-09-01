@@ -5,21 +5,22 @@ export_setup;
 % U+0074 LATIN SMALL LETTER T - CODE 116
 newchar(116, 4.2pt#, 0);
 z1 = (0.46w, CAP_H);
-z2 = (x1, lerp((BASELINE + (0.14 * CAP_H)), 0.22 * CAP_H, BOLDNESS/MAXBOLDNESS));
-z3l = (lerp(x1 + (y2 - BASELINE), x2r + ((x6 - x2r) / 3), BOLDNESS/MAXBOLDNESS), CAP_BOTTOM);
-z4r = (w - CURVE_BEARING, y3r);
+z2 = (x1, lerpbold(0.14 * CAP_H, 0.25 * CAP_H));
+z3l = (lerpbold(x1 + (y2 - BASELINE), x2r + ((x6 - x2r) / 3)), CAP_BOTTOM);
+z31 = z3l shifted(-ARCHCORR / 2, 0);
+z4r = (lerpbold(w - CURVE_BEARING, lerp(x3r, x6, 0.95)), y3r);
 
 z5r = (CURVE_BEARING, X_H); z6r = (w - CURVE_BEARING, X_H);
 
 z11 = (x1l , y1l - 0.1 * X_H);
 
 penpos1(STEM, 0); penpos2(STEM, 0);
-penpos3(BAR, 90);
+penpos3(lerpbold(BAR, BAR * 0.9), 90);
 
 if MONOSPACE = true:
-  penpos4(BAR, 90);
+  penpos4(lerpbold(BAR, BAR * 0.9), 90);
 else:
-  penpos4(BAR_TERM, 90);
+  penpos4(BAR_CROSS, lerpbold(90, 94));
 fi
 
 penpos5(BAR, 90); penpos6(BAR, 90);
@@ -27,11 +28,11 @@ penpos5(BAR, 90); penpos6(BAR, 90);
 %penstroke z1e -- z2e{down}..tsn..{right}z3e -- z4e;
 penstroke z5e -- z6e;
 
-fill z11 -- z1r -- z2r{down}..tsn..z3r{right} -- z4r -- z4l..tsn..z3l{left}..tsn..z2l{up} -- cycle;
+fill z11 -- z1r -- z2r{down}..tsn..z3r{right} -- z4r -- z4l..tsn..z31{left}..tsn..z2l{up} -- cycle;
 
 italicize;
 
-penlabels(range 1 thru 11);
+penlabels(range 1 thru 31);
 
 endchar;
 end

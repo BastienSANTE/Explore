@@ -4,33 +4,60 @@ export_setup;
 
 % U+0062 LATIN SMALL LETTER B - CODE 98
 newchar(98, 5.84pt#, 1);
-  x1l = STEM_BEARING; y1 = CAP_TOP;
-  x2l = x1l; y2 = 0.2 * CAP_H;
-  x3l = x1l; y3 = BASELINE;
 
-  x4l = x1r; y4 = X_H - (CAP_H * APERTURE);
-  x5 = 0.5w; y5r = X_TOP;
-  x6r = w - CURVE_BEARING; y6 = y5l - ((y5l - y7l) / 2);
-  x7 =  x5; y7r = CAP_BOTTOM;
-  x8l = x2r; y8r = BASELINE + (CAP_H * APERTURE);
+z1 = (STEM_BEARING, CAP_TOP);
+z2 = (x1, 0.2 * CAP_H);
+z3 = (x1, BASELINE);
+z4 = (x1, X_H - (CAP_H * APERTURE));
 
-  penpos1(STEM, 0); penpos2(STEM, 0); penpos3(STEM_TERM, 0);
-  penpos4(BAR_THIN, 90 + APERTURE_ANGLE); penpos5(BAR, 90); penpos6(STEM, 0); penpos7(BAR, -90); penpos8(BAR_THIN, -90 - APERTURE_ANGLE);
+z5 = (mid, X_TOP);
+z7 = (mid, CAP_BOTTOM);
+z6 = (w - CURVE_BEARING, lerp(y5, y7, 0.5));
 
-z51 = z5r shifted (STRETCH * ARCHCORR, 0);
-z71 = z7r shifted (STRETCH * ARCHCORR, 0);
+if SERIF = false:
+  p1l = z1; pen1(STEM, 0);
+  p2l = z2; pen2(STEM, 0);
+  p3l = z3; pen3(STEM_NIB, 0);
 
-if SERIF = true:
-  makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);
-  makeserif(2, z3l, -SERIF_LENGTH,  SERIF_THICKNESS);
+  px4l = px1r; py4 = y4; pen4(BAR_THIN, 90 + APERTURE_ANGLE);
+  p5r = z5; pen5(BAR_CROSS, 90);
+  p6r = z6; pen6(STEM, 0);
+  p7r = z7; pen7(BAR_CROSS, -90);
+  px8l = px2r; py8 = CAP_H * APERTURE; pen8(BAR_THIN, -90 - APERTURE_ANGLE);
+  
+  adjp1 = p5r shifted (STRETCH * ARCHCORR, 0);
+  adjp2 = p7r shifted (STRETCH * ARCHCORR, 0);
+
+  fill p1l -- p1r -- p2r -- p3r -- p3l -- p2l -- p1l -- cycle;
+   fill p4r .. adjp1{right} ..tsn.. p6r{down} ..tsn.. adjp2{left} .. p8r -- p8l .. p7l{right} ..tsn .. p6l{up} ..tsn.. p5l{left} .. p4l -- cycle;
+else:
+  p1l = z1; pen1(STEM, 0);
+  p2l = z2; pen2(STEM, 0);
+  p3l = z3; pen3(STEM_NIB, 0);
+
+  px4l = px1r; py4 = y4; pen4(BAR_THIN, 90 + APERTURE_ANGLE);
+  p5r = z5; pen5(BAR_THIN, 90);
+  p6r = z6; pen6(STEM, 0);
+  p7r = z7; pen7(BAR_THIN, -90);
+  p8l = p2r; pen8(BAR_THIN, -90);
+  
+ 
+  adjp1 = p5r shifted (STRETCH * ARCHCORR, 0);
+  adjp2 = p7r shifted (STRETCH * ARCHCORR, 0);
+
+  serif(1, p1r, lerpbold(BAR, BAR * .5), lerpbold(-1pt, -2.6pt), 0.5, -90, true);
+
+  adjp3 = (px1l, ypart sfp1c);
+  adjp4 = p8r;
+  
+  fill sfp1a -- p1r -- p2r -- adjp4 -- p3r -- p3l -- adjp3 -- sfp1c -- sfp1d -- cycle;
+  fill p4r .. adjp1{right} ..tsn.. p6r{down} ..tsn.. adjp2{left} .. p8r -- p8l .. p7l{right} ..tsn .. p6l{up} ..tsn.. p5l{left} .. p4l -- cycle; 
 fi
 
-  fill z1l -- z3l -- z3r -- z2r -- z1r -- cycle;
-  fill z4r .. z51{right} ..tension TSN.. z6r{down} ..tension TSN.. z71{left} .. z8r -- z8l .. z7l{right} ..tension TSN .. z6l{up} ..tension TSN.. z5l{left} .. z4l -- cycle;
-  
-  italicize;
+italicize;
 
-  penlabels(range 1 thru 8);
+penlabels(range 1 thru 8);
+
 endchar;
-end;
+end
 

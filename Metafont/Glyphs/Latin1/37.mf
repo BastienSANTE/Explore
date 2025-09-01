@@ -11,9 +11,9 @@ if MONOSPACE = true:
   circlew:= 0.5w; circleh:=0.5 * CAP_H;
   center = (0.5w, 0.5 * CAP_H);
   z1 = help1; z2 = help2;
-  penpos1(BAR, 90 + helpangle); penpos2(BAR, 90 + helpangle);
-  circlebar = lerp(BAR, BAR_JOINT, BOLDNESS/MAXBOLDNESS);
-  circlestem = lerp(STEM, STEM_JOINT, BOLDNESS/MAXBOLDNESS);
+  penpos1(lerpbold(BAR, BAR_JOINT), 90 + helpangle); penpos2(lerpbold(BAR, BAR_JOINT), 90 + helpangle);
+  circlebar = lerpbold(BAR, BAR_JOINT);
+  circlestem = lerpbold(STEM, STEM_JOINT);
 else:
   help1:= (0.225w, BASELINE);
   help2:= (0.775w, CAP_H);
@@ -33,12 +33,12 @@ penpos3(circlebar, 90); penpos4(circlestem, 0); penpos5(circlebar, -90); penpos6
 
 penstroke z1e -- z2e;
 
-p1 = z3r{rt}..tsn..z4r{dn}..tsn..z5r{lt}..tsn..z6r{up}..tsn..z3r{rt} -- z3l{lt}..tsn..z6l{dn}..tsn..z5l{rt}..tsn..z4l{up}..tsn..z3l{lt} -- cycle;
+elem1 = z3r{rt}..tsn..z4r{dn}..tsn..z5r{lt}..tsn..z6r{up}..tsn..z3r{rt} -- z3l{lt}..tsn..z6l{dn}..tsn..z5l{rt}..tsn..z4l{up}..tsn..z3l{lt} -- cycle;
 
-fill p1;
+fill elem1;
 
-p2 = p1 rotatedaround(center, 180);
-fill p2;
+elem2 = elem1 rotatedaround(center, 180);
+fill elem2;
 
 %penstroke z3e{rt}..tsn..z4e{dn}..tsn..z5e{lt}..tsn..z6e{up}..tsn..cycle;
 

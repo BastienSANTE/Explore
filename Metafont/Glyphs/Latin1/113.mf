@@ -15,7 +15,7 @@ newchar(113, 5.84pt#, 1);
   x8l = x2l; y8r = BASELINE + (CAP_H * APERTURE);
 
   penpos1(STEM_TERM, 0); penpos2(STEM, 0); penpos3(STEM, 0);
-penpos4(BAR_THIN, 90 - APERTURE_ANGLE); penpos5(BAR, 90); penpos6(STEM, 180); penpos7(BAR, 270); penpos8(BAR_THIN, 270 + APERTURE_ANGLE);
+penpos4(BAR_THIN, 90 - APERTURE_ANGLE); penpos5(BAR_CROSS, 90); penpos6(STEM, 180); penpos7(BAR_CROSS, 270); penpos8(BAR_THIN, 270 + APERTURE_ANGLE);
 
 z51 = z5r shifted (STRETCH * -ARCHCORR, 0);
 z71 = z7r shifted (STRETCH * -ARCHCORR, 0);

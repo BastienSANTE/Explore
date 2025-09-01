@@ -4,7 +4,6 @@ import os
 import os.path
 import subprocess
 import shutil
-#import fontforge
 import time
 
 svgfolder : str = "../MFExport/"
@@ -38,20 +37,3 @@ def exportMFGlyphs(dict):
 
 
 exportMFGlyphs(latin1)
-
-time.sleep(1)
-
-testfont = fontforge.font()
-
-for g in range(0, 127):
-    filename = "{}.svg".format(g)
-    if os.path.isfile(svgfolder + filename):   
-        g = testfont.createChar(g)
-        g.importOutlines(svgfolder + filename)
-        g.right_side_bearing = 0
-    else:
-        print(f"SVG file {filename} does not exist.")
-
-        
-testfont.save("Explore.sfd")
-testfont.generate("Explore.ttf")

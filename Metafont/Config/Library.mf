@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%%%%%%
+% METAFONT FUNCTIONS %
+%%%%%%%%%%%%%%%%%%%%%%
+
+% This file must be imported after Defs.mf
+% as it relies on font-wide varialbes defined
+% in this file.
+
+%%%%%%%%%%%%%%%%%%%%%
+%%% INTERPOLATION %%%
+%%%%%%%%%%%%%%%%%%%%%
+
+% LERP: Linear interpolation from x to y using v
+def lerp(expr x, y, v) =
+  (1 - v) * x + v * y
+enddef;
+
+% LERPBOLD :  Square interpolation using boldness
+def lerpbold(expr x, y) =
+  lerp(x, y, (BOLDNESS/MAXBOLDNESS * BOLDNESS/MAXBOLDNESS))
+enddef;
+
+% ONPATH : Places a point at c on the path from a to b
+def onpath(expr a, b, c) =
+  origin shifted((xpart a + ((xpart b - xpart a) * c)), (ypart a + ((ypart b - ypart a ) * c)));
+enddef;
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%% GLYPH CREATION %%%
+%%%%%%%%%%%%%%%%%%%%%%
+
+% NEWCHAR : Creates new character wth specified metrics
+def newchar(expr code, width, serifc) =
+  mode_setup;
+
+  PROP_WIDTH:= width;
+  SERIF_C:= serifc;
+
+  if MONOSPACE = true:
+    WIDTH:= MONO_WIDTH#;
+    LINE_BEARING:= MONO_LINE_BEARING;
+    CURVE_BEARING:= MONO_CURVE_BEARING;
+    OBLIQUE_BEARING:= MONO_OBLIQUE_BEARING;
+  else:
+  
+    if SERIF = true:
+      WIDTH:= PROP_WIDTH * STRETCH;
+    else:
+      WIDTH:= PROP_WIDTH * STRETCH;
+    fi
+  fi
+
+  define_pixels(SERIF_LENGTH);
+  define_pixels(TERM_LENGTH);
+  beginchar(code, WIDTH, EM_H, DEPTH);
+enddef;
+
+% ENDCHAR : Ends current character, draws export bounding box
+def endchar =
+reposition;
+pickup pensquare;
+draw (0, h) -- (w, h) -- (w, DESCENDER) -- (0, DESCENDER) -- cycle;
+scantokens extra_endchar;
+chardx:=w;
+shipit;
+endgroup enddef;
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%% SHAPE CREATION %%%
+%%%%%%%%%%%%%%%%%%%%%%
+
+% SERIF : Creates serif shape at origin with given dimensions
+def serif(suffix $)(expr origin, s_thickness, length, fac, r, invert) =
+  if invert = false:
+    sfp$a = origin;
+    sfp$b = origin shifted(s_thickness, 0) rotatedaround(origin, r);
+    sfp$c = origin shifted(s_thickness * fac, length) rotatedaround(origin, r);
+    sfp$d = origin shifted(0, length) rotatedaround(origin, r);
+
+    sf$ = (sfp$a -- sfp$b -- sfp$c -- sfp$d -- cycle) rotatedaround(origin, r);
+
+  else:
+    sfp$a = origin;
+    sfp$b = origin shifted(s_thickness, 0) rotatedaround(origin, r);
+    sfp$c = origin shifted(s_thickness, length) rotatedaround(origin, r);
+    sfp$d = origin shifted(s_thickness * fac, length) rotatedaround(origin, r);
+
+    sf$ = (sfp$a -- sfp$b -- sfp$c -- sfp$d -- cycle) rotatedaround(origin, r);
+    
+  fi
+enddef;
+
+
+
+def makeserif(suffix $)(expr origin, h_expand, v_expand) =
+  z$a = origin;
+  z$b = origin shifted(h_expand, 0);
+  z$c = origin shifted(h_expand, v_expand);
+  z$d = origin shifted(0, v_expand);
+
+  fill z$a -- z$b -- z$c -- z$d -- cycle;
+  labels($a, $b, $c, $d);
+enddef;
+
+
+%%%%%%%%%%%%%%%
+%%% METRICS %%%
+%%%%%%%%%%%%%%%
+
+% MAKEGUIDES (deprecated) : Create visual guides
+def makeguides(text r) =
+for y=h.o_, -d.o_: r((0,y),(w,y)); endfor
+%for x=0,w: r((x,-d.o_), (x,h.o_)); endfor
+  if charic<>0: r((w+charic*hppp, h.o_), (w+charic*hppp,.5h.o_)); fi
+enddef;
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%% FILE MANAGEMENT %%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+% EXPORT_SETUP : Handles export to SVG
+def export_setup =
+  outputtemplate := "%c.svg";
+  outputformat := "svg";
+enddef;
+

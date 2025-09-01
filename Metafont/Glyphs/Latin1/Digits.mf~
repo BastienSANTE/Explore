@@ -1,0 +1,429 @@
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0030 DIGIT ZERO - CODE 48
+newchar(48, 5.5pt#, 0);
+z1 = (mid, CAP_TOP);
+z2 = (w - CURVE_BEARING, CAP_H / 2);
+z3 = (mid, CAP_BOTTOM);
+z4 = (CURVE_BEARING, CAP_H / 2);
+
+if SERIF = false:
+  p1r = z1; pen1(BAR, 90);
+  p2r = z2;  pen2(STEM, 0);
+  p3r = z3; pen3(BAR, -90);
+  p4r = z4; pen4(STEM, -180);
+
+  fill p1r{rt}..tsn..p2r{dn}..tsn..p3r{lt}..tsn..p4r{up}..tsn..p1r{rt} --
+  p1l{lt}..tvar(0.9, 1.1)..p4l{dn}..tvar(0.9, 1.1)..p3l{rt}..tvar(0.9, 1.1)..p2l{up}..tvar(0.9, 1.1)..p1l{lt} -- p1r -- cycle;
+else:
+   p1r = z1; pen1(lerpbold(BAR_THIN, BAR_FINE), 90);
+  p2r = z2;  pen2(lerpbold(STEM, STEM_TERM), 0);
+  p3r = z3; pen3(lerpbold(BAR_THIN, BAR_FINE), -90);
+  p4r = z4; pen4(lerpbold(STEM, STEM_TERM), -180);
+
+  fill p1r{rt}..tsn..p2r{dn}..tsn..p3r{lt}..tsn..p4r{up}..tsn..p1r{rt} --
+  p1l{lt}..tvar(0.9, 1.2)..p4l{dn}..tvar(0.9, 1.2)..p3l{rt}..tvar(0.9, 1.2)..p2l{up}..tvar(0.9, 1.2)..p1l{lt} -- p1r -- cycle;
+fi
+
+italicize;
+
+  penlabels(range 1 thru 4);
+endchar;
+end
+input ../Config/ExploreSansCFG.mf
+
+  export_setup;
+
+% U+0031 DIGIT ONE - CODE 49
+% newchar(49, 5.5pt#, 0);
+% z1 = (lerpbold(0.52w, 0.51w), CAP_H);
+% z2 = (x1, BASELINE);
+
+% z3l = (LINE_BEARING, BASELINE);
+% z4l = (0.9w, y3l);
+
+% z5r = (x3, lerpbold(0.87 * CAP_H, 0.85 * CAP_H));
+% z11r = z1l;
+
+% penpos1(STEM, 0); penpos2(STEM,  0);
+% penpos3(BAR, 90); penpos4(BAR,  90);
+% penpos5(lerpbold(STEM_CROSS, STEM * 0.85) , 90); penpos11(lerpbold(STEM_CROSS, STEM * 0.85), 90);
+
+% fill z1l -- z1r -- z2r -- z2l -- cycle;
+% fill z3r -- z4r -- z4l -- z3l -- cycle;
+% fill z5r -- z11r -- z11l -- z5l -- cycle;
+
+% italicize;
+
+% penlabels(range 1 thru 11);
+% endchar;
+% end
+
+newchar(49, 5.5pt#, 0);
+z1 = (lerpbold(0.52w, 0.51w), CAP_H);
+z2 = (x1, BASELINE);
+
+z3l = (LINE_BEARING, BASELINE);
+z4l = (0.9w, y3l);
+
+z5r = (LINE_BEARING, lerpbold(0.87 * CAP_H, 0.85 * CAP_H));
+z11r = z1l;
+
+if SERIF = false:
+  p1 = z1; p2 = z2;   pen1(STEM, 0); pen2(STEM, 0);
+  p3l = z3l; p4l = z4l;
+  p5r = z5r; p11r = p1l;
+
+  pen3(BAR, 90); pen4(BAR, 90);
+  pen11(lerpbold(STEM_CROSS, STEM * 0.85) , 90); pen5(lerpbold(STEM_CROSS, STEM * 0.85), 90);
+
+  fill p1l -- p1r -- p2r -- p2l -- p11l -- p5l -- p5r -- cycle;
+  fill p3r -- p4r -- p4l -- p3l -- cycle;
+  
+elseif SERIF = true:
+  p1 = z1; p2 = z2; pen1(STEM, 0); pen2(STEM, 0);
+  p20r = z2; pen20(lerpbold(BAR_THIN, BAR_FINE), -90);
+  p3l = z3l; p4l = z4l;
+  p5r = z5r; p11r = p1l;
+
+  pen3(lerpbold(BAR_THIN, BAR_FINE), 90); pen4(lerpbold(BAR_THIN, BAR_FINE), 90);
+  pen11(BAR_THIN , 90); pen5(BAR_THIN, 90);
+
+  fill p1l -- p1r -- p2r -- p2l -- p11l -- p5l -- p5r -- cycle;
+  fill p3r -- p20l -- p4r -- p4l -- p3l -- cycle;
+fi
+
+penlabels(range 1 thru 11);
+endchar;
+end
+input ../Config/ExploreSansCFG.mf
+
+export_setup;
+
+% U+0032 DIGIT TWO - CODE 50
+newchar(50, 5.5pt#, 0);
+
+z1  = (lerpbold(0.14w, 0.13w), CAP_H - (CAP_H * APERTURE));
+z2 = (0.455w, CAP_TOP);
+z3 = (lerpbold(w - LINE_BEARING, 0.92w), .71 * CAP_H);
+z4 = (0.6w, lerpbold(.4 * CAP_H, .48 * CAP_H));
+z5 = (CURVE_BEARING, BASELINE);
+z6 = (x5, BASELINE); z7 = (x3, y6);
+
+if SERIF = false:
+  p6l = z6; pen6(BAR, 90); p7l = z7; pen7(BAR, 90);
+
+  p1  = z1 shifted(0, lerpbold(0, -.1pt)); pen1(lerpbold(BAR, BAR * .95), (90 + lerpbold(APERTURE_ANGLE, 60)));
+  p2r = z2; pen2(lerpbold(BAR, BAR * 0.95), 90);
+  p3r = z3; pen3(STEM, 0);
+  
+  p4 = z4; pen4(lerpbold(STEM_TERM, STEM * 0.8), -APERTURE_ANGLE);
+
+  p5l = p6r; pen5(lerpbold(STEM_TERM, STEM * .75), -APERTURE_ANGLE);
+
+  adjp1 = (px3l, lerp(py3, py4l, lerpbold(0, 0.2)));
+
+  if MONOSPACE = false:
+    fill p1r...p2r{rt}..tsn..p3r{dn}..p4r --- p5r -- p5l --- p4l..adjp1{up}..tsn..p2l{lt}...p1l -- cycle;
+  else:
+    fill p1r...p2r{rt}..tsn..p3r{dn}..p4r --- p5r -- p5l --- p4l..p3l{up}..tsn..p2l{lt}...p1l -- cycle;
+  fi
+
+  fill p6l -- p7l -- p7r -- p6r -- cycle;
+
+else:
+  p6l = z6; pen6(lerpbold(BAR, BAR * .95), 90); p7l = z7; pen7(lerpbold(BAR, BAR * .95), 90);
+
+  p1l  = z1 shifted(0, lerpbold(0, .5pt)); pen1(lerpbold(BAR_THIN, BAR_FINE), (90 + lerpbold(APERTURE_ANGLE, 60)));
+  p2r = z2; pen2(lerpbold(BAR_THIN, BAR_FINE), 90);
+  p3r = z3 shifted(lerpbold(0, -.3pt), 0); pen3(lerpbold(STEM, STEM * .95), 0);
+  
+  p4 = z4; pen4(lerpbold(BAR_THIN, BAR_THIN), -APERTURE_ANGLE);
+
+  p5l = p6r; pen5(lerpbold(BAR_THIN, BAR_THIN), -APERTURE_ANGLE);
+
+  adjp1 = (px3l, lerp(py3, py4l, lerpbold(0, 0.2)));
+  adjp2 = onpath(p4l, p5l, lerpbold(0, .9));
+  
+  fill p1r...p2r{rt}..tsn..p3r{dn}..p4r --- p5r -- p5l --- adjp2..p3l{up}..tsn..p2l{lt}...p1l -- cycle;
+
+  fill p6l -- p7l -- p7r -- p6r -- cycle;
+
+  serif(1, p7r, -BAR, -BAR_THIN, 1pt);
+  
+fi
+
+%penstroke z1e..tsn..z2e{rt}..tsn..z3e{dn}..tsn..z4e..z5e;
+%penstroke z6e -- z7e;
+
+italicize;
+
+penlabels(range 1 thru 7);
+endchar;
+end
+input ../Config/ExploreSansCFG.mf
+
+  export_setup;
+
+% U+0033 DIGIT THREE - CODE 51
+newchar(51, 5.5pt#, 0);
+z1r = (0.13w, CAP_H);
+z2r = (w - LINE_BEARING, y1r);
+
+z3r = (x2r, y2l);
+z5r = z4l = (w / 3, 0.595 * CAP_H);
+z6r = z4r;
+
+z8r = (0.455w, CAP_BOTTOM);
+z9 = (x1, BASELINE + (CAP_H * APERTURE));
+
+z10 = onpath(z5l, z6l, lerpbold(0.8, 0.5));
+z11 = onpath(z5l, z6l, 0.25);
+
+penpos1(lerpbold(BAR, BAR_TERM), 90); penpos2(lerpbold(BAR, BAR_TERM), 90);
+penpos3(STEM_ADJ(-(z4l - z3r)), 0); penpos4(STEM,0);
+
+penpos5(lerpbold(BAR_CROSS, BAR_TQ), 90); penpos6(lerpbold(BAR_CROSS, BAR_TQ), 90);
+penpos8(BAR, -90); penpos9(BAR, -90 - aa);
+
+% z7 defined here to use defined pen positions
+z7r = (w - CURVE_BEARING, lerp(y6l, y8l, 0.5));
+penpos7(STEM, 0);
+
+adjp1 = onpath(z2, z2l, 0.5);
+adjp2 = z3l shifted(-(ypart(adjp1) - y2l), 0);
+
+fill z1r -- z2r -- adjp1 -- z4r -- z4l -- adjp2 -- z1l -- cycle;
+
+fill z5r -- z6r{rt}..tsn..z7r{dn}..tsn..z8r{lt}...z9r -- z9l...z8l{rt}..tsn..z7l{up}..tsn..z10{lt} -- z11 -- cycle;
+
+%penstroke z5e -- z6e{rt}..tsn..z7e{dn}..tsn..z8e{lt}..z9e;
+
+italicize;
+
+penlabels(range 1 thru 10);
+endchar;
+end
+input ../Config/ExploreSansCFG.mf
+
+  export_setup;
+
+% U+0034 DIGIT THREE - CODE 52
+newchar(52, 5.5pt#, 0);
+z1 = (0.62w, CAP_H);
+z3r = z2l = (CURVE_BEARING, lerpbold(0.27 * CAP_H, 0.37 * CAP_H));
+z4r = (w - OBLIQUE_BEARING, y3r);
+
+z5 = (0.675w, lerpbold(0.545 * CAP_H, 0.6 * CAP_H));
+z6 = (x5, BASELINE);
+
+penpos1(STEM, 0); penpos2(STEM, 0);
+penpos3(BAR, 90); penpos4(BAR, 90);
+penpos5(lerpbold(STEM, STEM_TERM), 0); penpos6(lerpbold(STEM, STEM_TERM), 0);
+
+adjp1 = onpath(z5l, z6l, .1);
+
+penstroke z1e -- z2e; penstroke z3e -- z4e; fill adjp1 -- z5r -- z6r -- z6l -- cycle;
+
+italicize;
+
+penlabels(range 1 thru 6);
+endchar;
+end
+input ../Config/ExploreSansCFG.mf
+
+export_setup;
+
+% U+0035 DIGIT FIVE - CODE 53
+newchar(53, 5.5pt#, 0);
+z1r = (lerpbold(0.835w, 0.85w), CAP_H);
+z2r = (LINE_BEARING, y1r);
+if MONOSPACE = true:
+  z3l = (x2r, lerpbold(0.48 * CAP_H, 0.4 * CAP_H));
+else:
+  z3l = (LINE_BEARING, lerpbold(0.48 * CAP_H, 0.38 * CAP_H));
+fi
+
+z4r = (lerpbold(0.51w, 0.49w), lerpbold(0.65 * CAP_H, 0.66 * CAP_H));
+z5r = (w - CURVE_BEARING, 0.33 * CAP_H);
+z6r = (0.45w, CAP_BOTTOM);
+z7r = (lerpbold(CURVE_BEARING, .02w), X_H * APERTURE);
+
+z21l = z2r;
+z31l = z3r;
+z41 = z4r shifted(ARCHCORR, 0);
+
+penpos1(lerpbold(BAR, BAR), 90); penpos2(lerpbold(BAR, BAR), 90); penpos3(lerpbold(STEM, STEM_TERM), 0);
+penpos4(lerpbold(BAR_CROSS, BAR * .92), 90); penpos5(STEM, 0); penpos6(lerpbold(BAR, BAR * .95), -90); penpos7(BAR, -90 - APERTURE_ANGLE);
+
+penpos21(lerpbold(STEM, STEM_TERM), 0); penpos31(lerp(BAR_THIN, BAR_FINE, BOLDNESS/MAXBOLDNESS), 180);
+fill z2r -- z1r -- z1l -- z2l -- cycle;
+fill z21l -- z21r -- z3r -- z3l -- cycle;
+
+fill z31r..tsn..z41{rt}..tsn..z5r{dn}..tsn..z6r{lt}..z7r -- z7l..z6l{rt}..tsn..z5l{up}..tsn..z4l{lt}..z31l -- cycle;
+
+italicize;
+
+penlabels(range 1 thru 31);
+endchar;
+end
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0036 DIGIT SIX - CODE 54
+newchar(54, 5.5pt#, 0);
+bowl_height:= lerpbold(0.65 * CAP_H, 0.67 * CAP_H);
+
+if ITALIC = true:
+  z1 = (0.6w, CAP_H);
+  z2 = onpath(z1, z3, 0.5);
+else:
+  z1 = (lerpbold(0.865w, 0.83w), lerpbold(CAP_H - (X_H * APERTURE), CAP_H - (X_H * 1.2 * APERTURE)));
+  z2r = (lerpbold(0.57w, 0.55w), CAP_TOP);
+fi
+
+z3r = (CURVE_BEARING, 0.44 * CAP_H);
+z4r = (0.5w, CAP_BOTTOM);
+z5r = (w - OBLIQUE_BEARING, lerp(y4l, y6l, 0.5));
+z6r = (x3l + ((x5l - x3l) / 2), bowl_height);
+z7l = (x3l, y5);
+
+z8 = (x3l, y7l);
+z9 = (x3r, y7);
+
+z61 = z6r shifted(ARCHCORR, 0);
+
+if ITALIC = true:
+  penpos1(STEM, 180);
+  penpos2(STEM, 180);
+else:
+  penpos1(lerpbold(BAR, BAR_TERM), 90 - aa);
+  penpos2(lerpbold(BAR, BAR_TERM), 90);
+fi
+
+penpos3(STEM, 180); penpos4(lerpbold(BAR, BAR_TERM), 270); penpos5(STEM, 0); penpos6(lerpbold(BAR, BAR_CROSS), 90); penpos7(lerpbold(BAR_JOINT, BAR_THIN / 2), 180);
+
+if ITALIC = false:
+  fill z1r...z2r{lt}..tvar(0.9, 0.8)..z3r{dn}..tsn..z4r{rt}..tsn..z5r{up}..tsn..z61{lt}..tsn..z7r{dn} -- z7l{up}..tsn..z6l{rt}..tsn..z5l{dn}..tsn..z4l{lt}..tsn..z8{up} -- z3l{up}..tsn..z2l{rt}...z1l -- cycle;
+else:
+  fill z1r..z2r..tsn..z9{dn}..tsn..z4r{rt}..tsn..z5r{up}..tsn..z6r{lt}...z7r{dn} -- z7l{up}..tsn..z6l{rt}..tsn..z5l{dn}..tsn..z4l{lt}..tsn..z8{up}..z3l..z2l...z1l -- cycle;
+fi
+
+italicize;
+
+penlabels(range 1 thru 8);
+endchar;
+end
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0037 DIGIT SEVEN - CODE 55
+newchar(55, 5.5pt#, 0);
+
+z1r = (CURVE_BEARING, CAP_H);
+z2r = (w - CURVE_BEARING, y1r);
+
+z3r = (x2, y1l); z4 = (0.325w, BASELINE);
+
+penpos1(BAR,90); penpos2(BAR, 90);
+penpos3(STEM_ADJ(z4), 0); penpos4(STEM_ADJ(z4), 0);
+
+penstroke z1e -- z2e;
+
+if ITALIC = true:
+  fill z3l -- z3r...z4r{dn} -- z4l{up}...z3l -- cycle;
+else:
+  penstroke z3e -- z4e;
+fi
+
+italicize;
+
+penlabels(range 1 thru 5);
+endchar;
+end
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0038 DIGIT EIGHT - CODE 56
+newchar(56, 5.5pt#, 0);
+
+z1r = (0.5w, CAP_TOP);
+
+if MONOSPACE = true:
+  z2r = (w - (CURVE_BEARING * 1.25), y1l - ((y1l - y3l) / 2));
+  z4r = (CURVE_BEARING * 1.25, y2);
+else:
+  z2r = (w - LINE_BEARING, y1l - ((y1l - y3l) / 2));
+  z4r = (LINE_BEARING, y2);
+fi
+
+z3 = (x1, 0.52 * CAP_H);
+  
+z5r = z3r shifted(0, BAR_JOINT);
+z6r = (w - CURVE_BEARING, y7l + ((y3r - y7l) / 2));
+z7r = (x1, CAP_BOTTOM);
+z8r = (CURVE_BEARING, y6);
+
+penpos1(lerpbold(BAR, BAR_CROSS), 90); penpos2(STEM, 0); penpos3(lerpbold(BAR_TERM, BAR_JOINT), -90); penpos4(STEM, -180);
+penpos5(lerpbold(BAR_TERM, BAR_JOINT), 90); penpos6(STEM, 0); penpos7(lerpbold(BAR, BAR_CROSS), -90); penpos8(STEM, -180);
+
+penstroke z1e{rt}..tsn..z2e{dn}..tsn..z3e{lt}..tsn..z4e{up}..tsn..{rt}cycle;
+penstroke z5e{rt}..tsn..z6e{dn}..tsn..z7e{lt}..tsn..z8e{up}..tsn..{rt}cycle;
+
+italicize;
+
+penlabels(range 1 thru 8);
+
+endchar;
+end
+input ../Config/ExploreSansCFG.mf;
+
+export_setup;
+
+% U+0039 DIGIT NINE - CODE 57
+newchar(57, 5.5pt#, 0);
+bowl_height:= 0.35 * CAP_H;
+
+if ITALIC = true:
+  z1 = (0.4w, BASELINE);
+  z2r = onpath(z1r, z3r, 0.5);
+  penpos1(STEM_ADJ(z1), 0);
+  penpos2(STEM_ADJ(z1), 0);
+else:
+  z1 = (lerpbold(0.125w, 0.1w), lerpbold(X_H * APERTURE, X_H * 1.2 * APERTURE));
+  z2r = (lerpbold(0.45w, 0.42w), CAP_BOTTOM);
+  penpos1(lerpbold(BAR, BAR_TERM), -90 -APERTURE_ANGLE);
+  penpos2(lerpbold(BAR, BAR * 0.95), -90);
+fi
+
+z3r = (w - CURVE_BEARING, bowl_height + ((CAP_H - bowl_height) / 3));
+z4r = (0.5w, CAP_TOP);
+z5r = (CURVE_BEARING, bowl_height + ((CAP_H - bowl_height) / 2));
+z6r = (x4r, bowl_height);
+z7l = (x3l, y5);
+
+z61 = z6r shifted(-ARCHCORR, 0);
+
+penpos3(STEM, 0); penpos4(lerpbold(BAR, BAR), 90); penpos5(STEM, 180); penpos6(lerpbold(BAR, BAR_CROSS), 270); penpos7(lerpbold(STEM_JOINT, STEM_FINE / 2), 0);
+
+z8 = (x3l, y7l);
+z9 = (x3r, y7l);
+
+if ITALIC = true:
+  fill z1l..z2l..z8{up}..tsn..z4l{lt}..tsn..z5l{dn}..tsn..z6l{rt}..tsn..z7l{up} -- z7r..z6r{lt}..tsn..z5r{up}..tsn..z4r{rt}..tsn..z9{dn}..z3r..z2r..z1r -- cycle;
+  % penstroke z1e..tsn..z2e..tsn..z3e{up}..tsn..z4e{lt}..tsn..z5e{dn}..z6e{rt}..tsn..z7e{up};
+else:
+  fill z1l...z2l{rt}..tsn..z8{up}..tsn..z4l{lt}..tsn..z5l{dn}..tsn..z6l{rt}..tsn..z7l{up} -- z7r..z61{lt}..tsn..z5r{up}..tsn..z4r{rt}..tsn..z3r{dn}..tvar (0.9, 0.8)..z2r{lt}...z1r -- cycle;
+fi
+
+italicize;
+
+penlabels(range 1 thru 9);
+
+endchar;
+end

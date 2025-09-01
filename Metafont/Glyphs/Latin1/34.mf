@@ -4,7 +4,7 @@ input ../Config/ExploreSansCFG.mf
 
 % U+0022 QUOTATION MARK - CODE 34
 newchar(34, 4pt#, 0);
-z1l = (lerpbold(LINE_BEARING, OBLIQUE_BEARING), ASCENDER);
+z1l = (lerpbold(2 * LINE_BEARING, OBLIQUE_BEARING), ASCENDER);
 z2l = (x1l, CAP_H - 1pt);
 
 help1 = (mid, lerp(y1, y2, 0.5));

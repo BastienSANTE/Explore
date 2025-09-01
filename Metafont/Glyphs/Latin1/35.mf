@@ -3,7 +3,7 @@ input ../Config/ExploreSansCFG.mf;
 export_setup;
 
 % U+0023 NUMBER SIGN - CODE 35
-newchar(35, 7pt#, 0);
+newchar(35, 6pt#, 0);
 if MONOSPACE = true:
   z1r = (CURVE_BEARING, X_H);
   z2r = (w - CURVE_BEARING, y1r);

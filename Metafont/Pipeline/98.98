@@ -1,0 +1,56 @@
+%!PS
+%%BoundingBox: -1 -70 218 288 
+%%HiResBoundingBox: -0.36008 -69.22162 217.17741 287.28343 
+%%Creator: MetaPost 2.11
+%%CreationDate: 2025.08.25:2303
+%%Pages: 1
+%*Font: cmr10 10.20177 9.96265 31:fe
+%%BeginProlog
+%%EndProlog
+%%Page: 1 1
+ 0 0 0 setrgbcolor
+21.09204 265.4861 moveto
+(1) cmr10 10.20177 fshow
+ 0 3.072 dtransform truncate idtransform setlinewidth pop [] 0 setdash
+ 1 setlinecap 1 setlinejoin 10 setmiterlimit
+newpath 23.6425 262.4141 moveto 0 0 rlineto stroke
+21.09204 56.88007 moveto
+(2) cmr10 10.20177 fshow
+newpath 23.6425 53.80806 moveto 0 0 rlineto stroke
+21.09204 5.46408 moveto
+(3) cmr10 10.20177 fshow
+newpath 23.6425 2.39207 moveto 0 0 rlineto stroke
+21.09204 147.8372 moveto
+(4) cmr10 10.20177 fshow
+newpath 23.6425 144.7652 moveto 0 0 rlineto stroke
+108.46025 199.37872 moveto
+(5) cmr10 10.20177 fshow
+newpath 111.01071 196.30672 moveto 0 0 rlineto stroke
+203.56947 100.95232 moveto
+(6) cmr10 10.20177 fshow
+newpath 206.11993 97.88031 moveto 0 0 rlineto stroke
+108.46025 2.52591 moveto
+(7) cmr10 10.20177 fshow
+newpath 111.01071 -0.54608 moveto 0 0 rlineto stroke
+ 0.7 0.7 0.7 setrgbcolor
+newpath -0.36008 287.28343 moveto
+-0.36008 286.56328 lineto
+0.36008 286.56328 lineto
+217.17741 286.56328 lineto
+216.45726 286.56328 lineto
+216.45726 -69.22162 lineto
+216.45726 -68.50146 lineto
+-0.36008 -68.50146 lineto
+0.36008 -68.50146 lineto
+0.36008 287.28343 lineto
+-0.36008 287.28343 lineto
+-0.36008 286.56328 lineto
+-0.36008 -69.22162 lineto
+0.36008 -69.22162 lineto
+217.17741 -69.22162 lineto
+217.17741 -68.50146 lineto
+217.17741 287.28343 lineto
+216.45726 287.28343 lineto
+ closepath fill
+showpage
+%%EOF

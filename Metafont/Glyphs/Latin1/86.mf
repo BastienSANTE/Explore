@@ -8,23 +8,20 @@ newchar(86, 6.55pt#, 2);
   x2 = 0.5w; y2 = BASELINE;
   x3r = w - (LINE_BEARING / 2); y3 = y1;
 
-penpos1(STEM, 0); penpos2(STEM, 0); penpos3(STEM, 0);
+penpos1(STEM, 0); penpos2(STEM, 0); penpos3(STEM_C, 0);
 
 z11l = onpath(z2l, z1l, INKFAC);
 z21r = onpath(z2r, z3r, INKFAC);
-z31l = z2l;
-z32r = z2r;
-
-penpos11(STEM, 0); penpos21(STEM, 0);
-penpos31(STEM_JOINT, 0); penpos32(STEM_JOINT, 0); 
-
-  if SERIF = true:
-    makeserif(1, z3l,  -SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(2,  z3,   SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(3,  z1,  -SERIF_LENGTH, -SERIF_THICKNESS);
-    makeserif(4, z1r,   SERIF_LENGTH, -SERIF_THICKNESS);
-  fi
+z31l = z2l; penpos31(STEM_JOINT, 0);
+if SERIF = true:
+  z32r = z2r;
+else:
+  z32r = z2r;
+fi
   
+penpos11(STEM, 0); penpos21(STEM, 0);
+penpos32(STEM_JOINT, 0);
+
   penstroke z1e  -- z31e; penstroke z3e -- z32e;
 
   italicize;

@@ -1,4 +1,4 @@
-This is MetaPost, version 2.11 (TeX Live 2025) (kpathsea version 6.4.1)  28 JUL 2025 23:46
+This is MetaPost, version 2.11 (TeX Live 2025) (kpathsea version 6.4.1)  1 SEP 2025 18:56
 **../Glyphs/Latin1/64.mf
 (/usr/local/texlive/2025/texmf-dist/metapost/base/mfplain.mp
 Preloading the plain base, version 0.99: preliminaries,
@@ -9,6 +9,75 @@ Preloading the plain base, version 0.99: preliminaries,
  macros for proof labels and rules,
  macros for character and font administration,
 and a few last-minute items.) (../Glyphs/Latin1/64.mf
-(../Config/ExploreSansCFG.mf) [64] )
+(../Config/ExploreSansCFG.mf (../Config/Library.mf) (../Config/Defs.mf))
+! A statement can't begin with `/'.
+<to be read again> 
+                   /
+l.45 /
+        z13  = (lerp(x9l, x3l, 2 / 3), y3); penpos13(STEM, 180);
+? 
+! Extra tokens will be flushed.
+<to be read again> 
+                   /
+l.45 /
+        z13  = (lerp(x9l, x3l, 2 / 3), y3); penpos13(STEM, 180);
+? 
+>> x13r+97.09625
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   {
+<for(l)> .....z12(SUFFIX0){lt}..tsn..z13(SUFFIX0){
+                                                  dn}..tsn..z14(SUFFIX0){rt}...
+
+penstroke->...ffixes.e=l,r:path_.e:=(TEXT0);endfor
+                                                  .fill.path_.l--reverse.pat...
+<to be read again> 
+                   ;
+l.71 ...e{lt}..tsn..z13e{dn}..tsn..z14e{rt}..z15e;
+                                                  
+? 
+>> y13r
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   {
+<for(l)> .....z12(SUFFIX0){lt}..tsn..z13(SUFFIX0){
+                                                  dn}..tsn..z14(SUFFIX0){rt}...
+
+penstroke->...ffixes.e=l,r:path_.e:=(TEXT0);endfor
+                                                  .fill.path_.l--reverse.pat...
+<to be read again> 
+                   ;
+l.71 ...e{lt}..tsn..z13e{dn}..tsn..z14e{rt}..z15e;
+                                                  
+? 
+>> x13r
+! Undefined x coordinate has been replaced by 0.
+<to be read again> 
+                   {
+<for(r)> .....z12(SUFFIX0){lt}..tsn..z13(SUFFIX0){
+                                                  dn}..tsn..z14(SUFFIX0){rt}...
+
+penstroke->...ffixes.e=l,r:path_.e:=(TEXT0);endfor
+                                                  .fill.path_.l--reverse.pat...
+<to be read again> 
+                   ;
+l.71 ...e{lt}..tsn..z13e{dn}..tsn..z14e{rt}..z15e;
+                                                  
+? 
+>> y13r
+! Undefined y coordinate has been replaced by 0.
+<to be read again> 
+                   {
+<for(r)> .....z12(SUFFIX0){lt}..tsn..z13(SUFFIX0){
+                                                  dn}..tsn..z14(SUFFIX0){rt}...
+
+penstroke->...ffixes.e=l,r:path_.e:=(TEXT0);endfor
+                                                  .fill.path_.l--reverse.pat...
+<to be read again> 
+                   ;
+l.71 ...e{lt}..tsn..z13e{dn}..tsn..z14e{rt}..z15e;
+                                                  
+? 
+[64] )
 1 output file written: 64.svg
 

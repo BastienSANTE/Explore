@@ -5,17 +5,19 @@ input ../Config/ExploreSansCFG.mf
 % U+0034 DIGIT THREE - CODE 52
 newchar(52, 5.5pt#, 0);
 z1 = (0.62w, CAP_H);
-z3r = z2l = (CURVE_BEARING, 0.325 * CAP_H);
+z3r = z2l = (CURVE_BEARING, lerpbold(0.27 * CAP_H, 0.37 * CAP_H));
 z4r = (w - OBLIQUE_BEARING, y3r);
 
-z5 = (0.675w, 0.545 * CAP_H);
+z5 = (0.675w, lerpbold(0.545 * CAP_H, 0.6 * CAP_H));
 z6 = (x5, BASELINE);
 
 penpos1(STEM, 0); penpos2(STEM, 0);
 penpos3(BAR, 90); penpos4(BAR, 90);
-penpos5(STEM, 0); penpos6(STEM, 0);
+penpos5(lerpbold(STEM, STEM_TERM), 0); penpos6(lerpbold(STEM, STEM_TERM), 0);
 
-penstroke z1e -- z2e; penstroke z3e -- z4e; penstroke z5e -- z6e;
+adjp1 = onpath(z5l, z6l, .1);
+
+penstroke z1e -- z2e; penstroke z3e -- z4e; fill adjp1 -- z5r -- z6r -- z6l -- cycle;
 
 italicize;
 

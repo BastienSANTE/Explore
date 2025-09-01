@@ -5,53 +5,95 @@ export_setup;
 % U+0066 LATIN CAPITAL SMALL LETTER F - CODE 102
 newchar(102, 4.2pt#, 0);
 stem_x:= 0.46w;
-stem_arc_y:= 0.85 * CAP_H;
+stem_arc_y:= lerpbold(0.8 * CAP_H, 0.95 * CAP_H);
 terminal_angle:= 10;
 
-z2 = (x1, stem_arc_y);
-z21 = (x2r, y3r - ((y3r - y2r) / 2));
+z1 = (stem_x, BASELINE);
+z3 = (lerpbold(0.75w, 0.85w), CAP_TOP + .2pt);
+z2 = (x1, y3 - (x3 - x1));
+z4 = (w - CURVE_BEARING, y3);
 
-if MONOSPACE = true:
-  z3 = (0.675w, CAP_H);
+z5 = (LINE_BEARING / 2, X_H);
+z6 = (w - CURVE_BEARING, y5);
+
+if SERIF = false:
+  p1 = z1; pen1(STEM, 0);
+  p2 = z2; pen2(STEM, 0);
+  p3r = z3; pen3(lerpbold(BAR, BAR * .9), 90);
+  p4l = (x4, py3l); pen4(lerpbold(BAR_TERM, BAR * .85), 90 + lerpbold(0, -5));
+  
+  p5r = z5; pen5(BAR, 90);
+  p6r = z6; pen6(BAR, 90);
+  
+  adjp1 = z3 shifted(-ARCHCORR, 0);
+  
+  fill p1l -- p2l{up}..tsn..adjp1{rt}..p4r -- p4l -- p3l{lt}..tsn..{dn}p2r -- p1r -- cycle;
+  fill p5r -- p6r -- p6l -- p5l -- cycle;
 else:
-  z3 = (0.705w, CAP_H);
+  stemshift = lerp(0, x4 - x1, .06);
+
+  p1 = z1 shifted(stemshift, 0); pen1(STEM, 0);
+  p2 = z2 shifted(stemshift, 0); pen2(STEM, 0);
+  p3r = z3; pen3(lerpbold(BAR / 2, BAR_THIN), 90);
+  p4l = (x4, py3l); pen4(lerpbold(BAR_TQ, BAR * .25), 90);
+  
+  p5r = z5; pen5(lerpbold(BAR / 2, BAR * .3), 90);
+  p6r = z6; pen6(lerpbold(BAR / 2, BAR * .3), 90);
+  adjp1 = z3 shifted(-ARCHCORR, 0);
+
+  serif(1, p1l, lerpbold(BAR / 2, BAR * .3), -(x5 - px1l), .6, 90, false);
+  serif(2, p1r, lerpbold(BAR / 2, BAR * .3),  (x5 - px1l), 1, 90, false);
+  fill sfp1a -- sfp1b -- sfp1c -- sfp1d -- cycle;
+  
+  fill sfp2a -- sfp2b -- sfp2c -- sfp2d -- cycle;
+  
+  fill p1l -- p2l{up}..tsn..adjp1{rt}..p4r -- p4l -- p3l{lt}..tsn..{dn}p2r -- p1r -- cycle;
+  fill p5r -- p6r -- p6l -- p5l -- cycle;
 fi
 
-z4r = (x7, y3r);
+%if MONOSPACE = true:
+%   z3l = (lerpbold(0.675w, 0.75w), CAP_H + 0.3pt);
+%   z4r = (x7, y3r - (lerpbold(X_H * APERTURE / 2, X_H * APERTURE / 4)));
+  
+% else:
+%   z3l = (lerpbold(0.705w, 0.8w), CAP_TOP + 0.25pt);
+%   z4r = (x7, y3r);
+% fi
 
-if ITALIC = true:
-  z1 = (stem_x, DESCENDER / 4);
-  z5l = (x6, DESCENDER);
-  z11 = (lerpbold(x1 - (y1 - y5), x1l), y5);
-  penpos5(BAR, 90);
-  penpos11(BAR, 90);
-  z6r = (OBLIQUE_BEARING, X_H);
-else:
-  z6r = (LINE_BEARING, X_H);
-  z1 = (stem_x, BASELINE);
-fi
+% if ITALIC = true:
+%   z1 = (stem_x, DESCENDER / 4);
+%   z5l = (x6, DESCENDER);
+%   z11 = (lerpbold(x1 - (y1 - y5), x1l), y5);
+%   penpos5(BAR, 90);
+%   penpos11(BAR, 90);
+%   z6r = (OBLIQUE_BEARING, X_H);
+% else:
+%   z6r = (LINE_BEARING, X_H);
+%   z1 = (stem_x, BASELINE);
+% fi
 
-z7r = (w - CURVE_BEARING, X_H);
+% z7r = (w - CURVE_BEARING, X_H);
 
-penpos1(STEM, 0); penpos2(STEM, 0); penpos3(BAR, -90);
+% penpos1(STEM, 0); penpos2(STEM, 0); penpos3(lerpbold(BAR, BAR * 0.85), -90);
 
-if MONOSPACE = true:
-  z31 = z3l;
-else:
-  z31 = z3l shifted(STRETCH * -ARCHCORR, 0);
-fi
+% if MONOSPACE = true:
+%   z31 = z3l;
+% else:
+%   z31 = z3l shifted(STRETCH * -ARCHCORR / 2, 0);
+% fi
 
 
-if MONOSPACE = true: penpos4(BAR, -90); else: penpos4(BAR_TERM, -90 - terminal_angle); fi
-penpos6(BAR, 90); penpos7(BAR, 90);
+% if MONOSPACE = true: penpos4(lerpbold(BAR, BAR * 0.75), -90 - (APERTURE_ANGLE / 2));
+% else: penpos4(lerpbold(BAR_TERM, BAR_TQ), -90 - terminal_angle); fi
+% penpos6(BAR_CROSS, 90); penpos7(BAR_CROSS, 90);
 
-if ITALIC = false:
-  fill z1l -- z2l{up}..tsn..z31{right}..z4l -- z4r -- z3r{left}...{down}z2r -- z1r -- cycle;
-  fill z6r -- z7r -- z7l -- z6l -- cycle;
-else:
-  fill z5r -- z11r{rt} ...z1l{up} -- z2l{up}..tsn..z31{right}..z4l -- z4r -- z3r{left}...{down}z2r -- z1r{dn}...z11l{lt} -- z5l -- cycle;
-  fill z6r -- z7r -- z7l -- z6l -- cycle;
-fi
+% if ITALIC = false:
+%   fill z1l -- z2l{up}..tsn..z31{right}..z4l -- z4r...z3r{left}..tension(lerpbold(0.9, 0.75))..{down}z2r -- z1r -- cycle;
+%   fill z6r -- z7r -- z7l -- z6l -- cycle;
+% else:
+%   fill z5r -- z11r{rt} ...z1l{up} -- z2l{up}..tsn..z31{right}..z4l -- z4r...z3r{left}...{down}z2r -- z1r{dn}...z11l{lt} -- z5l -- cycle;
+%   fill z6r -- z7r -- z7l -- z6l -- cycle;
+% fi
 
 italicize;
 

@@ -13,12 +13,12 @@ newchar(74, 4.8pt#, 0);
     x51 = x1; y51r = CAP_H;
   else:
     x1r = w - LINE_BEARING; y1 = CAP_H;
-    x2r = x1r; y2 =  0.3 * CAP_H;
+    x2r = x1r; y2 = lerpbold(0.3 * CAP_H, 0.35 * CAP_H);;
     x3 = 0.415w; y3r = CAP_BOTTOM;
     x4 = 0.1w; y4 = 0.18 * CAP_H;
   fi
 
-  penpos1(STEM, 0); penpos2(STEM, 0); penpos3(BAR, -90);
+  penpos1(STEM, 0); penpos2(STEM, 0); penpos3(BAR_CROSS, -90);
 
   if SERIF = true:
     makeserif(1, z1l, -SERIF_LENGTH, -SERIF_THICKNESS);

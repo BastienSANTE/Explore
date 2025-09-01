@@ -6,51 +6,22 @@ export_setup;
 newchar(65, 6.2pt#, 0);
   width:= .75w;
   barcoef:= 0.7; % "Bar coefficient": how low the bar is. Width is automatic.
-  x1 = .5w; y1 = CAP_H;
-  z11l = z1l;
-  x2 = x1 - width / 2; y2 = BASELINE;
-  x3 = x1 + width / 2; y3 = BASELINE;
+  x1 = mid; y1 = CAP_H;
+  z11 = z1;
+  z2l = (OBLIQUE_BEARING, BASELINE);
+  z3r = (w - OBLIQUE_BEARING, BASELINE);
   x4 = x1 - (barcoef * (width / 2)); y4 = CAP_H - (barcoef * CAP_H);
   x5 = x1 + (barcoef * (width / 2)); y5 = CAP_H - (barcoef * CAP_H);
   
-  penpos1(STEM / 1, 0);
-  penpos11(STEM_C, 0);
+  penpos1(STEM, 0);
+  penpos11(lerpbold(STEM_CROSS, STEM / 2), 0);
   penpos2(STEM_C, 0);
   penpos3(STEM, 0);
-  penpos4(BAR, 90);
-  penpos5(BAR, 90);
-
-  ikp1 = (x1 + (x1r - x1) / 8, y1 - STEM);
-  ikp2 = (x1 - (x1r - x1) / 8, y1 - STEM);
-  ikp3 = (x1, y1 - STEM / 2);
-
-  if SERIF = true:
-    sfp1 = z1l;
-    sfp11 = sfp1 shifted(-SERIF_LENGTH, 0);
-    sfp12 = sfp1 shifted(-SERIF_LENGTH, -SERIF_THICKNESS);
-    sfp13 = sfp1 shifted(0, -SERIF_THICKNESS);
-
-    fill sfp1 -- sfp11 -- sfp12 -- sfp13 -- cycle;
-
-    sfp2 = z2r;
-    sfp21 = sfp2 shifted(-SERIF_LENGTH, 0);
-    sfp22 = sfp2 shifted(SERIF_LENGTH, 0);
-    sfp23 = sfp2 shifted(SERIF_LENGTH, SERIF_THICKNESS);
-    sfp24 = sfp2 shifted(-SERIF_LENGTH, SERIF_THICKNESS);
-
-    fill sfp21 -- sfp22 -- sfp23 -- sfp24 -- cycle;
-
-    sfp3 = z3l;
-    sfp31 = sfp3 shifted(-SERIF_LENGTH, 0);
-    sfp32 = sfp3 shifted(SERIF_LENGTH, 0);
-    sfp33 = sfp3 shifted(SERIF_LENGTH, SERIF_THICKNESS);
-    sfp34 = sfp3 shifted(-SERIF_LENGTH, SERIF_THICKNESS);
-
-    fill sfp31 -- sfp32 -- sfp33 -- sfp34 --  cycle;
-  fi
+  penpos4(BAR_CROSS, 90);
+  penpos5(BAR_CROSS, 90);
   
-  fill z1 -- z1r -- z3r -- z3l -- ikp1 -- ikp3 -- z1 -- cycle;
-  fill z11l -- z2l -- z2r -- ikp2 -- ikp3 -- z1 -- cycle;
+  fill z1 -- z1r -- z3r -- z3l -- z11l -- cycle;
+  fill z1l -- z2l -- z2r -- z11r -- cycle;
   fill z4r -- z5r -- z5l -- z4l -- cycle;
 
   italicize;

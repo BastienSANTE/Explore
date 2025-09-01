@@ -15,7 +15,7 @@ fi
 
   x2 = 0.58w; y2r = CAP_TOP;
   x3r = CURVE_BEARING; y3 = CAP_H / 2;
-  x4 = x2; y4r = BASELINE;
+  x4 = x2; y4r = CAP_BOTTOM;
   x5 = x1; y5 = BASELINE + (CAP_H * APERTURE);
 
   penpos1(BAR, 90 - APERTURE_ANGLE);

@@ -5,7 +5,7 @@ export_setup;
 % U+007B LEFT CURLY BRACKET - CODE 123
 newchar(123, 3.5pt#, 1);
 
-arc_width = lerpbold(.5pt, .8pt);
+arc_width = lerpbold(.4pt, .75pt);
 if MONOSPACE = true:
   z0l = (w - CURVE_BEARING, ASCENDER);
   z1l = (w * (2 / 3), ASCENDER);

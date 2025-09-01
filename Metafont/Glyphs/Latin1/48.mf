@@ -4,17 +4,29 @@ export_setup;
 
 % U+0030 DIGIT ZERO - CODE 48
 newchar(48, 5.5pt#, 0);
-  x1 = 0.5w; y1r = CAP_TOP;
-  x2r = w - CURVE_BEARING; y2 = 0.5 * CAP_H;
-  x3 = x1; y3r = CAP_BOTTOM;
-  x4r  = CURVE_BEARING; y4 = y2;
+z1 = (mid, CAP_TOP);
+z2 = (w - CURVE_BEARING, CAP_H / 2);
+z3 = (mid, CAP_BOTTOM);
+z4 = (CURVE_BEARING, CAP_H / 2);
 
-  penpos1(BAR, 90); penpos2(STEM, 0);
-  penpos3(BAR, -90); penpos4(STEM, -180);
+if SERIF = false:
+  p1r = z1; pen1(BAR, 90);
+  p2r = z2;  pen2(STEM, 0);
+  p3r = z3; pen3(BAR, -90);
+  p4r = z4; pen4(STEM, -180);
 
-fill z1r{right}..tsn..z2r{down}..tsn..z3r{left}..tsn..z4r{up}..tsn..z1r{right} --
-  z1l{left}..tsn..z4l{down}..tsn..z3l{right}..tsn..z2l{up}..tsn..z1l{left} -- z1r -- cycle;
-  
+  fill p1r{rt}..tsn..p2r{dn}..tsn..p3r{lt}..tsn..p4r{up}..tsn..p1r{rt} --
+  p1l{lt}..tvar(0.9, 1.1)..p4l{dn}..tvar(0.9, 1.1)..p3l{rt}..tvar(0.9, 1.1)..p2l{up}..tvar(0.9, 1.1)..p1l{lt} -- p1r -- cycle;
+else:
+   p1r = z1; pen1(lerpbold(BAR_THIN, BAR_FINE), 90);
+  p2r = z2;  pen2(lerpbold(STEM, STEM_TERM), 0);
+  p3r = z3; pen3(lerpbold(BAR_THIN, BAR_FINE), -90);
+  p4r = z4; pen4(lerpbold(STEM, STEM_TERM), -180);
+
+  fill p1r{rt}..tsn..p2r{dn}..tsn..p3r{lt}..tsn..p4r{up}..tsn..p1r{rt} --
+  p1l{lt}..tvar(0.9, 1.2)..p4l{dn}..tvar(0.9, 1.2)..p3l{rt}..tvar(0.9, 1.2)..p2l{up}..tvar(0.9, 1.2)..p1l{lt} -- p1r -- cycle;
+fi
+
 italicize;
 
   penlabels(range 1 thru 4);

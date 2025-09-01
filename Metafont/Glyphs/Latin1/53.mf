@@ -4,27 +4,27 @@ export_setup;
 
 % U+0035 DIGIT FIVE - CODE 53
 newchar(53, 5.5pt#, 0);
-z1r = (0.835w, CAP_H);
-z2r = (lerpbold(0.2w, 0.1w), y1r);
+z1r = (lerpbold(0.835w, 0.85w), CAP_H);
+z2r = (LINE_BEARING, y1r);
 if MONOSPACE = true:
-  z3l = (x2r, lerp(0.48 * CAP_H, 0.4 * CAP_H, BOLDNESS/MAXBOLDNESS));
+  z3l = (x2r, lerpbold(0.48 * CAP_H, 0.4 * CAP_H));
 else:
-  z3l = (LINE_BEARING, lerp(0.48 * CAP_H, 0.4 * CAP_H, BOLDNESS/MAXBOLDNESS));
+  z3l = (LINE_BEARING, lerpbold(0.48 * CAP_H, 0.38 * CAP_H));
 fi
 
-z4r = (lerp(0.5w, 0.52w, BOLDNESS/MAXBOLDNESS), 0.65 * CAP_H);
+z4r = (lerpbold(0.51w, 0.49w), lerpbold(0.65 * CAP_H, 0.66 * CAP_H));
 z5r = (w - CURVE_BEARING, 0.33 * CAP_H);
 z6r = (0.45w, CAP_BOTTOM);
-z7r = (CURVE_BEARING, 0.13 * CAP_H);
+z7r = (lerpbold(CURVE_BEARING, .02w), X_H * APERTURE);
 
 z21l = z2r;
 z31l = z3r;
 z41 = z4r shifted(ARCHCORR, 0);
 
-penpos1(BAR, 90); penpos2(BAR, 90); penpos3(STEM, 0);
-penpos4(BAR_CROSS, 90); penpos5(STEM, 0); penpos6(BAR, -90); penpos7(BAR, -90 - APERTURE_ANGLE);
+penpos1(lerpbold(BAR, BAR), 90); penpos2(lerpbold(BAR, BAR), 90); penpos3(lerpbold(STEM, STEM_TERM), 0);
+penpos4(lerpbold(BAR_CROSS, BAR * .92), 90); penpos5(STEM, 0); penpos6(lerpbold(BAR, BAR * .95), -90); penpos7(BAR, -90 - APERTURE_ANGLE);
 
-penpos21(STEM, 0); penpos31(lerp(BAR_THIN, BAR_FINE, BOLDNESS/MAXBOLDNESS), 180);
+penpos21(lerpbold(STEM, STEM_TERM), 0); penpos31(lerp(BAR_THIN, BAR_FINE, BOLDNESS/MAXBOLDNESS), 180);
 fill z2r -- z1r -- z1l -- z2l -- cycle;
 fill z21l -- z21r -- z3r -- z3l -- cycle;
 

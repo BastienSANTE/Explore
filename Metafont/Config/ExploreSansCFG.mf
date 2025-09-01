@@ -1,128 +1,115 @@
 %%%====================%%%
 %%% CONFIGURATION FILE %%%
 %%%====================%%%
+input ../Config/Library.mf;
+input ../Config/Defs.mf;
 
-pair ikp[]; % Coordinates to define inktraps
-pair sfp[]; % Coordinates to define serif positions
-pair dot[];
-pair help[];
-pair adjp[]; % Adjustment points, for things that would be far too difficult with regular pens & points
-pair center;
+proofing = O;
 
-path glyph;
-path p[];
-path elem[]; % Standard container for all kinds of elements
-
-numeric BOLDNESS;
-BOLDNESS = 400;
+BOLDNESS = 800;
 MAXBOLDNESS = 800;
 
-%%% BOLDNESS
-
-% MONO OR PROPORTIONAL?
-boolean MONOSPACE;
-MONOSPACE = true;
+MONOSPACE = false;
 MONO_WIDTH#:= 6pt#;
 
-% ITALICS
-boolean ITALIC;
-ITALIC = true;
-ITANGLE:= 0;
+ITALIC = false;
+ITANGLE:= 0.2;
 
-% SERIF STYLE
-boolean SERIF;
-SERIF:= false;
-SERIF_LENGTH#:= .7pt#;
-SERIF_THICKNESS:= BAR;
-TERM_LENGTH#:= 1pt#;
+SERIF = false;
 
-SERIFL:= SERIF_LENGTH;
-
-% OLDSTYLE NUMERALS
-boolean OLDSTYLE;
 OLDSTYLE = false;
 
-def lerp(expr x, y, v) =
-  (1 - v) * x + v * y
-enddef;
-
-def lerpbold(expr x, y) =
-  lerp(x, y, BOLDNESS/MAXBOLDNESS)
-enddef;
-
-  
 %%% ESSENTIAL METRICS
-numeric STRETCH;                  % Font width setting, to create "condensed" or "expanded" versions.
-EM_H:= 8pt#;                      % height of the bounding box of the fontx
-DEPTH:= 2.24pt#;                  % Size of the bounding box's descender.
-                                  % EM_H + DEPTH = 10.24, to match the 1024 unit TrueType convetion.
-CAP_H:= 7pt;                      % Height of standard uppercase glyphs
-X_H:= 5.2pt;                      % Height of standard lowercase glyphs
-BASELINE:= 0pt;                   % Self-explanatory
-OVERSHOOT:= 0.08pt;               % Height compensation for glyphs with rounded tops
+STRETCH:= 1;
+EM_H:= 8pt#;
+DEPTH:= 2.24pt#;
+
+SCALEOFFSET = 0.0667pt;
+CAP_H:= 7pt;
+X_H:= 5.2pt;
+BASELINE:= 0pt;
+OVERSHOOT:= 0.08pt;
 ASCENDER_H:= 1pt;
-CAP_TOP = CAP_H + OVERSHOOT;      % Top of uppercase glyphs with oversoot
-CAP_BOTTOM = BASELINE - OVERSHOOT;% Lowest point of uppercase glyphs with overshoot
+CAP_TOP = CAP_H + OVERSHOOT;
+CAP_BOTTOM = BASELINE - OVERSHOOT;
 ASCENDER = CAP_H + ASCENDER_H;
 LOWPOINT = BASELINE - ASCENDER_H;
-DESCENDER = -1.92pt;              % Actual position of the descender
-X_TOP:= X_H + OVERSHOOT;          % Top of rounded lowercase glyphs
+DESCENDER = -1.92pt;
+X_TOP:= X_H + OVERSHOOT;
 
-%%% KERNING DEIFINITIONS
-numeric CURVE_BEARING, LINE_BEARING,STEM_BEARING, OBLIQUE_BEARING, MONO_CURVE_BEARING, MONO_LINE_BEARING;
+if MONOSPACE = false:  
+  BASE_BAR:= lerpbold(.21pt, 1.6pt);
+  BASE_STEM:= .lerpbold(.28pt, 1.92pt);
+  BASE_STRETCH:= 1;
+  BFAC:= lerpbold(0, 2);
+  CONTRAST:= lerpbold(1.2, 1.3);
+else:  
+  BASE_BAR:= lerpbold(.21pt, 1.4pt);
+  BASE_STEM:= .lerpbold(.28pt, 1.6pt);
+  BASE_STRETCH:= 1;
+  BFAC:= lerpbold(0, 2);
+  CONTRAST:= 2;
+fi
 
-BASE_BAR:= .64pt;
-BASE_STEM:= .8pt;
-BASE_STRETCH:= 1;
 
-BFAC:= BOLDNESS/400;
-
-BAR:=  BASE_BAR * BFAC;
-STEM:= BASE_STEM * BFAC;
-BAR_C:=  BASE_BAR * BFAC;
-STEM_C:= BASE_STEM * BFAC;
+if SERIF = false:
+  BAR:=  BASE_BAR;
+  STEM:= BASE_STEM;
+  BAR_C:=  BASE_BAR;
+  STEM_C:= BASE_STEM;
+else:
+  BAR:=  BASE_BAR;
+  STEM:= BASE_STEM;
+  BAR_C:=  BASE_BAR  / CONTRAST;
+  STEM_C:= BASE_STEM / CONTRAST;
+fi
 
 if MONOSPACE = false:
-  STRETCH:= lerpbold(0.97, 1.05);
+  STRETCH:= lerpbold(1, 1.1);
 else:
   STRETCH:= 1;
 fi
 
 LINE_BEARING:= lerpbold(.96pt, .64pt); % Average sidebearing for glyphs with straight stems
-CURVE_BEARING:=LINE_BEARING / 1.5; % Average sidebearing for glyphs with curved edges
-STEM_BEARING:= lerpbold(.80pt, .48pt); % Average sidebearing for B, D, P, Q...
-LEG_BEARING:=  .64pt / BFAC;
+CURVE_BEARING:=lerpbold(LINE_BEARING / 1.5, .24pt); % Average sidebearing for glyphs with curved edges
+STEM_BEARING:= lerpbold(.80pt, .40pt); % Average sidebearing for B, D, P, Q...
+LEG_BEARING:=  lerpbold(.64pt, .40pt);
 OBLIQUE_BEARING:= lerpbold(.40pt, .16pt);
-MONO_LINE_BEARING:= lerpbold(1.5pt, .7pt);
-MONO_CURVE_BEARING:= MONO_LINE_BEARING / 1.5;
+MONO_LINE_BEARING:= lerpbold(1.3pt, 0.5pt);
+MONO_CURVE_BEARING:= MONO_LINE_BEARING / 1.667;
 MONO_OBLIQUE_BEARING:= lerpbold(.56pt, .15pt);
 
 STEM:= STEM / cosd(ITANGLE * 50);
 
 %%% PEN VARIATIONS
-BAR_CROSS := lerpbold(BAR * 0.9, BAR * 0.8);
-STEM_CROSS:= lerpbold(STEM * 0.9, STEM * 0.8);
-BAR_TERM  := BAR *   0.8;
-STEM_TERM := STEM *  0.8;
+BAR_CROSS := lerpbold(BAR * 0.95, BAR * 0.85);
+STEM_CROSS:= lerpbold(STEM * 0.9, STEM * 0.85);
+BAR_TERM  := BAR *   0.9;
+STEM_TERM := STEM *  0.9;
+BAR_NIB   := lerpbold(BAR * 0.85, BAR * 0.75);
+STEM_NIB  := lerpbold(STEM * 0.85, STEM * 0.75);
+BAR_TQ    := BAR * 0.75;
+STEM_TQ   := BAR * 0.75;
 BAR_JOINT := lerpbold(BAR * 0.9, BAR * 0.7);
 STEM_JOINT:= lerpbold(STEM * 0.9, STEM * 0.7);
 BAR_THIN  := lerpbold(BAR * 0.8, BAR * 0.4);
 STEM_THIN := lerpbold(STEM * 0.8, STEM * 0.4);
-BAR_FINE:=  lerpbold(BAR * 0.75, BAR * 0.3);
-STEM_FINE:= lerpbold(STEM * 0.75, STEM * 0.25);
+BAR_FINE:=  lerpbold(BAR * 0.6, BAR * 0.3);
+STEM_FINE:= lerpbold(STEM * 0.6, STEM * 0.25);
 
 
 %%% CURVATURE
 TSN:= .9;       % Average tension of curvature
-APERTURE:= lerpbold(.15, .22); % Average aperture of glyphs, based on height;
-APERTURE_ANGLE:= lerpbold(35, 45);
+APERTURE:= lerpbold(.15, .25); % Average aperture of glyphs, based on height;
+APERTURE_ANGLE:= lerpbold(35, 55);
 INV_APERTURE_ANGLE:= 180 + APERTURE_ANGLE;
-ARCHCOEF:= 0.6;
-ARCHCORR:= STRETCH * BFAC * 0.15pt;
+ARCHCOEF:= lerpbold(0.6, 0.55);
+ARCHCORR:= STRETCH * lerpbold(0.3, 4) * 0.15pt;
+ARCHHEIGHT:= lerpbold(0.66 * X_H, 0.61 * X_H);
 
 %%% DIACRITICS & ACCENTS
-ACC_YOFFSET:= 1.5pt; % Offset between the top of the lowercase glyphs and diacritics. 
-DOTSIZE:= STEM * 1.25;  % Diameter of the standard dot above i, ï, ÿ...
+ACC_YOFFSET:= 1.5pt; % Offset between the top of the lowercase glyphs and diacritics.
+DOTSIZE:= lerpbold(STEM * 1.25, STEM * 1.05);  % Diameter of the standard dot above i, ï, ÿ...
 
 %%% ALTERNATE GLYPHS
 % Some fonts have an option to enable "alternate" styles for certain glyphs,
@@ -134,156 +121,8 @@ DOTSIZE:= STEM * 1.25;  % Diameter of the standard dot above i, ï, ÿ...
 boolean OLDSTYLE;
 OLDSTYLE = false;
 
-%%% INKTRAPS & OPTICAL CORRECTION
-INKFAC:= lerpbold(0.25, 0.5); % "Inktrap factor" defines the relativ importance of inktraps
-%def midpoint(expr a)
-
-
-%%%%%%%%%%%%%%%%%%%%%%
-% MACROS & FUNCTIONS %
-%%%%%%%%%%%%%%%%%%%%%%
-
-
-% def PT = 1pt enddef;
-
-
-% EXPORT_SETUP() : To output correct filename & format
-def export_setup =
-  outputtemplate := "%c.svg";
-  outputformat := "svg";
-enddef;
-
-
-def newchar(expr code, width, serifc) =
-  mode_setup;
-
-  PROP_WIDTH:= width;
-  SERIF_C:= serifc;
-
-  if MONOSPACE = true:
-    %STRETCH:= 1;
-    WIDTH:= MONO_WIDTH#;
-    LINE_BEARING:= MONO_LINE_BEARING;
-    CURVE_BEARING:= MONO_CURVE_BEARING;
-    OBLIQUE_BEARING:= MONO_OBLIQUE_BEARING;
-  else:
-  
-    if SERIF = true:
-      WIDTH:= PROP_WIDTH * STRETCH;
-    else:
-      WIDTH:= PROP_WIDTH * STRETCH;
-    fi
-  fi
-
-  %input ../Config/ExploreSansCFG.mf;
-
-  define_pixels(SERIF_LENGTH);
-  define_pixels(TERM_LENGTH);
-  beginchar(code, WIDTH, EM_H, DEPTH);
-enddef;
-
-
-def makeserif(suffix $)(expr origin, h_expand, v_expand) =
-  z$a = origin;
-  z$b = origin shifted(h_expand, 0);
-  z$c = origin shifted(h_expand, v_expand);
-  z$d = origin shifted(0, v_expand);
-
-  fill z$a -- z$b -- z$c -- z$d -- cycle;
-  labels($a, $b, $c, $d);
-enddef;
-
-numeric PI; PI:= 3.141593;
-
-primarydef w dprod z =
-  (xpart w * ypart w) + (xpart z * ypart z)
-enddef;
-
-primarydef a cprod b =
-  ((xpart a / PT) * (ypart b / PT)) - ((xpart b / PT) * (ypart a / PT))
-enddef;
-
-def pmag expr p =
-  (xpart p * xpart p) + (ypart p * ypart p)
-enddef;
-
-def corr(expr a, b) =
-  sind(((a dprod b)/ PT) / ((pmag a) * (pmag b)) / PT)
-enddef;
-  
-def acorr(expr a, b) =
-  atan(a, b)
-enddef;
-
-def onpath(expr a, b, c) =
-  origin shifted((xpart a + ((xpart b - xpart a) * c)), (ypart a + ((ypart b - ypart a ) * c)));
-  enddef;
-
-%%% SHORTCUTS & SNIPPETS
-def lt:= left enddef;
-def rt:= right enddef;
-def dn:= down enddef;
-def aa:= APERTURE_ANGLE enddef;
-def daa:= dir APERTURE_ANGLE enddef;
-def naa:= dir -APERTURE_ANGLE enddef;
-def dia:= dir INV_APERTURE_ANGLE enddef;
-def nia:= dir -INV_APERTURE_ANGLE enddef;
-
-def mid = 0.5w enddef;
-
-def tsn = tension TSN enddef;
-def invtsn = tension (1 / TSN) enddef;
-
-def BAR_ADJ(expr a) =
-  BAR / cosd(angle(a))
-enddef;
-
-def STEM_ADJ(expr a) =
-  STEM / cosd(angle(a))
-enddef;
-
-def BAR_C_ADJ(expr a) =
-  BAR_C / cosd(angle(a))
-enddef;
-
-def STEM_C_ADJ(expr a) =
-  STEM_C / cosd(angle(a))
-enddef;
-
-def STEM_ADJN(expr a) =
-  STEM / cosd(a)
-enddef;
-
-def BAR_ADJN(expr a) =
-  BAR / cosd(a)
-enddef;
-
-def rotmirror(expr x) =
-    currentpicture:= currentpicture rotatedaround(x, 180);
-enddef;
-
-def italicize =
-  if ITALIC = true:
-    currentpicture:= currentpicture shifted(- CAP_H * ITANGLE / 2, 0) slanted ITANGLE; fi
-enddef;
-
-proofrulethickness 0;
-%screenrulethickness 0;
-
-def makeguides(text r) =
-for y=h.o_, -d.o_: r((0,y),(w,y)); endfor
-%for x=0,w: r((x,-d.o_), (x,h.o_)); endfor
-  if charic<>0: r((w+charic*hppp, h.o_), (w+charic*hppp,.5h.o_)); fi
-enddef;
-
-
-def endchar =
-scantokens extra_endchar;
-if proofing>0: makeguides(proofrule); fi
-chardx:=w;
-shipit;
-endgroup enddef;
-
-  
-
-  
+% SERIF STYLE 
+SERIF_LENGTH#:= .7pt#;
+SERIF_THICKNESS:= BAR;
+TERM_LENGTH#:= 1pt#;
+SERIFL:= SERIF_LENGTH;

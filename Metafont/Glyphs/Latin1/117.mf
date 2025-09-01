@@ -4,17 +4,17 @@ export_setup;
 
 define_pixels(SERIF_LENGTH);
 % U+0061 LATIN SMALL LETTER U - CODE 117
-newchar(117, 5.4pt#, 2);
-z1r = (w - LINE_BEARING, X_H);
+newchar(117, lerpbold(5.4pt#, 5.7pt#), 2);
+z1r = (w - LEG_BEARING, X_H);
 z2r = (x1r, BASELINE);
-z3l = (STEM_BEARING, X_H);
-z4l = (x3l, 0.35 * X_H);
-z5l = (x4r + ((x1l - x4r) * (1 - ARCHCOEF)), CAP_BOTTOM);
+z3l = (LEG_BEARING, X_H);
+z4l = (x3l, X_H - ARCHHEIGHT);
+z5l = (lerp(x4r, x1l, 1 - ARCHCOEF), CAP_BOTTOM);
 z51 = z5l shifted(- ARCHCORR, 0);
 z6r = (x1l, lerpbold(0.3 * X_H, y4r));
 
 penpos1(STEM, 0); penpos2(STEM, 0);
-penpos3(STEM, 0); penpos4(STEM, 0); penpos5(BAR, 90); penpos6(BAR_THIN, 90 + APERTURE_ANGLE);
+penpos3(STEM, 0); penpos4(STEM, 0); penpos5(BAR_CROSS, 90); penpos6(BAR_THIN, 90 + APERTURE_ANGLE);
 
 penstroke z1e -- z2e;
 

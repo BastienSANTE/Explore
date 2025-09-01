@@ -13,6 +13,9 @@
   ItalicFont = Explore_Sans_Regular_Italic.ttf,
   Path = {./Exports/}
 ]
+\setmonofont{ExploreMetaMonoRegular.ttf}[
+  Path = {./Exports/}
+]
 
 
 \begin{document}
@@ -37,6 +40,16 @@
   {
     \begin{minipage}[b][1.1em][b]{1em}
         \textbf{\char\x}\hspace*{\fill}
+  \end{minipage}
+  }
+  \fi
+}
+
+\foreach \x in {33,...,512}{
+  \iffontchar\font\x
+  {
+    \begin{minipage}[b][1.1em][b]{1em}
+        \texttt{\char\x}\hspace*{\fill}
   \end{minipage}
   }
   \fi

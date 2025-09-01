@@ -1,32 +1,45 @@
 input ../Config/ExploreSansCFG.mf;
 
+
 export_setup;
 
 % U+0063 LATIN SMALL LETTER C - CODE 99
 newchar(99, 5.05pt#, 0);
-if MONOSPACE = true:
-  z1r = (w - CURVE_BEARING,X_H - (X_H * APERTURE));
-  z2r = (lerp(0.5w, 0.53w, BOLDNESS/MAXBOLDNESS), X_TOP);
-  z5r = (x1r, BASELINE + (X_H * APERTURE));
+z1 = (w - CURVE_BEARING, X_H - (X_H * APERTURE));
+z2 = (lerpbold(0.53w, .51w), X_TOP);
+z3 = (CURVE_BEARING, X_H / 2);
+z4 = (mid, CAP_BOTTOM);
+z5 = (x1, X_H * APERTURE);
+
+if SERIF = false:
+  p1r = z1; pen1(BAR * .9, 90 - APERTURE_ANGLE);
+  p2r = z2 shifted(lerpbold(0, .2pt), 0); pen2(BAR_TERM, 90);
+  p3r = z3; pen3(lerpbold(STEM, STEM * .92), 180);
+  p4r = (px2, y4); pen4(BAR_TERM, 270);
+  p5r = z5; pen5(BAR * .9, 270 + APERTURE_ANGLE);
+  
+  
+  fill p1r..tsn..p2r{left}..tsn..p3r{down}..tsn..p4r{right}..p5r -- p5l..p4l{left}..tsn..p3l{up}..tsn..p2l{right}..tsn..p1l  -- p1r -- cycle;
 else:
-  z1 = (w - CURVE_BEARING, lerpbold(X_H - (X_H * APERTURE),X_H - (CAP_H * APERTURE)));
-  z2r = (lerp(0.55w, 0.58w, BOLDNESS/MAXBOLDNESS), X_TOP);
-  z5 = (x1, lerpbold(BASELINE + (X_H * APERTURE),BASELINE + (CAP_H * APERTURE)));
+
+  p1r = z1; pen1(lerpbold(BAR_THIN, BAR_FINE), 90 - APERTURE_ANGLE);
+  p2r = z2 shifted(lerpbold(0, .2pt), 0); pen2(lerpbold(BAR_THIN, BAR_FINE), 90);
+  p3r = z3; pen3(lerpbold(STEM, STEM * .92), 180);
+  p4r = (px2, y4); pen4(lerpbold(BAR_THIN, BAR_FINE), 270);
+  p5r = z5; pen5(lerpbold(BAR_THIN, BAR_FINE), 270 + APERTURE_ANGLE);
+
+  adjp1 = p2l shifted(ARCHCORR * (lerpbold(1, 0.5)), lerpbold(0, -.1pt));
+  adjp2 = p4l shifted(ARCHCORR * (lerpbold(1, 0.75)), lerpbold(0,  .15pt));
+
+  serif(1, p1r, -BAR, -1pt, .5, 0, true);
+
+  adjp3 = (xpart sfp1c, lerp(ypart adjp1, ypart sfp1b, lerpbold(1.7, 0.6)));
+  
+  fill p1r..tsn..p2r{left}..tsn..p3r{down}..tsn..p4r{right}..p5r -- p5l..adjp2{left}..tsn..p3l{up}..tsn..adjp1{right}..tsn..adjp3{dn}  -- sfp1b -- sfp1c -- sfp1d -- cycle;
 fi
 
-z3r = (CURVE_BEARING, 0.5 * X_H);
-z4r = (x2, CAP_BOTTOM);
-  
-  penpos1(BAR, 90 - APERTURE_ANGLE); penpos2(BAR, 90); penpos3(STEM, 180); penpos4(BAR, 270); penpos5(BAR, 270 + APERTURE_ANGLE);
+italicize;
 
-if SERIF = true:
-  makeserif(1, z1r, -SERIF_THICKNESS, -TERM_LENGTH);
-fi
-
-
-  fill z1r..tension TSN..z2r{left}..tension TSN..z3r{down}..tension TSN..z4r{right}..z5r -- z5l..z4l{left}..tension TSN..z3l{up}..tension TSN..z2l{right}..tension TSN..z1l  -- z1r -- cycle;
-  
-  italicize;
 
   penlabels(range 0 thru 99);
 endchar;

@@ -5,11 +5,11 @@ export_setup;
 % U+0053 LATIN CAPITAL LETTER S - CODE 83
 newchar(83, 5.8pt#, 0);
   spine_center_y = 0.5 * CAP_TOP;
-  spine_angle:= 12;
+  spine_angle:= lerpbold(14, 8);
   spine_straight_length:= 0.1w;
   spine_ydelta:= 0.25 * X_H;
   beak_spine_xdelta = 0.01w;
-  right_terminal_xoffset:=0.1w;
+  right_terminal_xoffset:=lerpbold(0.1w, 0.05w);
   
   x1r = w - right_terminal_xoffset; y1 = CAP_H - (CAP_H * APERTURE);
   x2 = x4 + beak_spine_xdelta; y2r = CAP_TOP;
@@ -19,13 +19,13 @@ newchar(83, 5.8pt#, 0);
   z42 = z4 shifted(spine_straight_length, 0) rotatedaround((z4), -spine_angle);
   x5l = w - CURVE_BEARING; y5 = y42r - ((y42r - y6r) / 2);
   x6 = x4 - beak_spine_xdelta; y6l = CAP_BOTTOM;
-  x7l = x3r; y7 = BASELINE + (CAP_H * APERTURE);
+  x7l = lerpbold(x3r, 0); y7 = BASELINE + (CAP_H * APERTURE);
   
   penpos1(BAR, 90 - APERTURE_ANGLE);
-  penpos2(BAR, 90);
+  penpos2(lerpbold(BAR, BAR * 0.97), 90);
   penpos3(STEM, 180);
-  penpos41(BAR, 270 - spine_angle);
-  penpos42(BAR, 270 - spine_angle);
+  penpos41(STEM_CROSS, 270 - spine_angle);
+  penpos42(STEM_CROSS, 270 - spine_angle);
   penpos5(STEM, 180);
   penpos6(BAR, 90);
   penpos7(BAR, 90 - APERTURE_ANGLE);
@@ -37,7 +37,7 @@ newchar(83, 5.8pt#, 0);
 
   %penstroke z1e..tension TSN..z2e{left}..tension TSN..z3e{down}..tension TSN..z41e{dir -spine_angle} -- z42e{dir -spine_angle}..tension TSN..z5e{down}..tension TSN..z6e{left}..tension TSN..z7e;
 
-  fill z2r{rt}...z1r -- z1l...z2l{lt}..tsn..z3l{dn}..tsn..z41l{dir -spine_angle} -- z42l{dir -spine_angle}..tsn..z5l{dn}..tsn..z6l{lt}...z7l -- z7r...z6r{rt}..tsn..z5r{up}..tsn..z42r{dir (180 - spine_angle)} -- z41r{dir (180 - spine_angle)}..tsn..z3r{up}..tsn..cycle;
+  fill z2r{rt}...z1r -- z1l...z2l{lt}..tension(lerpbold(0.9, 1))..z3l{dn}..tsn..z41l{dir -spine_angle} -- z42l{dir -spine_angle}..tsn..z5l{dn}..tsn..z6l{lt}...z7l -- z7r...z6r{rt}..tsn..z5r{up}..tsn..z42r{dir (180 - spine_angle)} -- z41r{dir (180 - spine_angle)}..tsn..z3r{up}..tsn..cycle;
 
   italicize;
 

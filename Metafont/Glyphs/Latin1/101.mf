@@ -5,33 +5,100 @@ export_setup;
 define_pixels(SERIF_LENGTH);
 % U+0061 LATIN SMALL LETTER E - CODE 101
 newchar(101, 5.45pt#, 0);
-  bar_h:= 0.52 * X_H;
 
-  z1r = (w - CURVE_BEARING, y6l);
-  z11r = (x7r, y7r);
-  z2r = (0.52w, X_TOP);
-  z3r = (CURVE_BEARING, bar_h);
-z4r = (x2, CAP_BOTTOM);
+bar_h:= lerpbold(0.51 * X_H, 0.49 * X_H);
+z1 = (w - CURVE_BEARING, bar_h);
+z2 = (0.52w, X_TOP);
+z3 = (CURVE_BEARING, bar_h);
+z4 = (x2, CAP_BOTTOM);
+z5 = (lerpbold(x7, x8), BASELINE + (X_H * APERTURE * 0.8));
+z6 = z3;
+z7 = z1;
+z8 = onpath(p1, p1r, 0.75);
 
-  z6 = z3;
-  z7l = z1r;
-  z8 = onpath(z1, z1r, 0.75);
 
-  z5r = (lerp(x7r, x8, BOLDNESS/MAXBOLDNESS), BASELINE + (X_H * APERTURE * 0.8));
+if SERIF = false:
+  p1r = (w - CURVE_BEARING, py6l); pen1(lerpbold(STEM, STEM * 0.95), 0);
+  p11r = p7r; pen11(STEM, 0);
+  p2r = z2; pen2(lerpbold(BAR, BAR * 0.85), 90);
+  p3r = z3; pen3(STEM, 180);
+  p4r = z4; pen4(lerpbold(BAR, BAR * 0.8), 270);
+  p5r = lerp(z5, z4, lerpbold(0.1, 0.2)); pen5(lerpbold(BAR, BAR * 0.8), 270 + APERTURE_ANGLE);
+  p6 = z3;  pen6(lerpbold(BAR_CROSS, BAR / 1.5), 90);
+  p7l = p1r; pen7(lerpbold(BAR_CROSS, BAR / 1.5), 90);
+
+  p8r = (x1, lerp(y2, y1, 0.5)); pen8(STEM, 0);
   
-  z9 = (x1l, y6r);
-  z10 = (x3l, y6r);
-  z12 = (x3l, y6l);
+  adjp1 = onpath(p1, p1r, 0.75);
+  adjp2 = onpath(p4l, p5l, 0);
+  
+  adjp9 = (px1l, py6r);
+  adjp10 = (px3l, py6r);
+  adjp12 = (px3l, py6l);
+  
 
-  penpos1(STEM, 0); penpos2(BAR, 90); penpos3(STEM, 180); penpos4(BAR, 270); penpos5(lerp(BAR, BAR, BOLDNESS/MAXBOLDNESS), 270 + APERTURE_ANGLE);
-  penpos6(BAR_CROSS, 90); penpos7(BAR_CROSS, 90);
-  penpos11(STEM, 0);
+  if ITALIC = false:
+    fill adjp1..tsn..p7{up}..tsn..p2r{lt}..tsn..p3r{dn}..tsn..p4r{rt}..p5r -- p5l..p4l{lt}..tsn..adjp12{up} -- p3l -- adjp10{up}..tsn..p2l{rt}..tsn..adjp9{dn} -- p1l -- cycle;
+  fill p6l -- p6r -- p7r -- adjp1 -- cycle;
+  else:
+    fill p6l{rt}...p8r{up}..tsn..p2r{lt}..tsn..p3r{dn}..tsn..p4r{rt}..p5r -- p5l..adjp2{lt}..tsn..adjp12{up} -- p3l -- adjp10{up}..tsn..p2l{rt}..tsn..p8l{dn}...p6r{lt} -- cycle;
+  fi
 
-fill z8..tsn..z7{up}..tsn..z2r{lt}..tsn..z3r{dn}..tsn..z4r{rt}..z5r -- z5l..z4l{lt}..tsn..z12{up} -- z3l -- z10{up}..tsn..z2l{rt}..tsn..z9{dn} -- z1l -- cycle;
-fill z6l -- z6r -- z7r --z8 -- cycle;
+else:
+ p1r = (w - CURVE_BEARING, py6l); pen1(lerpbold(STEM, STEM * 0.9), 0);
+  p11r = p7r; pen11(STEM, 0);
+  p2r = z2; pen2(BAR_FINE, 90);
+  p3r = z3; pen3(STEM, 180);
+  p4r = z4; pen4(BAR_THIN, 270);
+  p5r = lerp(z5, z4, lerpbold(0.1, 0.1)); pen5(BAR_FINE, 270 + APERTURE_ANGLE);
+  p6 = z3;  pen6(BAR_FINE, 90);
+  p7l = p1r; pen7(BAR_FINE, 90);
 
-  %penstroke z1e..z11e..tension TSN..z2e{left}..tension TSN..z3e{down}..tension TSN..z4e{right}..z5e;
-  %penstroke z6e -- z7e; 
+  p8r = (x1, lerp(y2, y1, 0.55)); pen8(STEM, 0);
+  
+  adjp1 = onpath(p1, p1r, 0.75);
+  adjp2 = onpath(p4l, p5l, lerpbold(0, 0.2));
+
+  adjp9 = (px1l, py6r);
+  adjp10 = (px3l, py6r);
+  adjp12 = (px3l, py6l);
+
+  if ITALIC = false:
+    fill adjp1..tsn..p7{up}..tsn..p2r{lt}..tsn..p3r{dn}..tsn..p4r{rt}..p5r -- p5l..adjp2{lt}..tsn..adjp12{up} -- p3l -- adjp10{up}..tsn..p2l{rt}..tsn..adjp9{dn} -- p1l -- cycle;
+    fill p6l -- p6r -- p7r -- adjp1 -- cycle;
+  else:
+    fill p6l{rt}...p8r{up}..tsn..p2r{lt}..tsn..p3r{dn}..tsn..p4r{rt}..p5r -- p5l..adjp2{lt}..tsn..adjp12{up} -- p3l -- adjp10{up}..tsn..p2l{rt}..tsn..p8l{dn}...p6r{lt} -- cycle;
+  fi
+  
+fi
+
+
+%   z1r = (w - CURVE_BEARING, y6l);
+%   z11r = z7r;
+%   z2r = (0.52w, X_TOP);
+%   z3r = (CURVE_BEARING, bar_h);
+% z4r = (x2, CAP_BOTTOM);
+
+%   z6 = z3;
+%   z7l = z1r;
+%   z8 = onpath(z1, z1r, 0.75);
+
+%   z5r = (lerpbold(x7r, x8), BASELINE + (X_H * APERTURE * 0.8));
+  
+%   z9 = (x1l, y6r);
+%   z10 = (x3l, y6r);
+%   z12 = (x3l, y6l);
+
+%   pen1(lerpbold(STEM, STEM * 0.95), 0); pen2(lerpbold(BAR, BAR * 0.85), 90); pen3(STEM, 180); pen4(lerpbold(BAR, BAR * 0.8), 270); pen5(lerpbold(BAR, BAR * 0.8), 270 + APERTURE_ANGLE);
+%   pen6(lerpbold(BAR_CROSS, BAR / 1.5), 90);  pen7(lerpbold(BAR_CROSS, BAR / 1.5), 90);
+%   pen11(STEM, 0);
+
+% fill z8..tsn..(x7, lerp(y7, y11r, 0.5)){up}..tsn..z2r{lt}..tsn..z3r{dn}..tsn..z4r{rt}..z5r -- z5l..z4l{lt}..tsn..z12{up} -- z3l -- z10{up}..tsn..z2l{rt}..tsn..z9{dn} -- z1l -- cycle;
+% fill z6l -- z6r -- z7r --z8 -- cycle;
+
+%   %penstroke z1e..z11e..tension TSN..z2e{left}..tension TSN..z3e{down}..tension TSN..z4e{right}..z5e;
+%   %penstroke z6e -- z7e;
+
 
 italicize;
 

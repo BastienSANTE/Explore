@@ -8,9 +8,9 @@ newchar(80, 6pt#, 1);
   x2l = x1l; y2 = BASELINE;
 
   x3 = x1; y3r = CAP_H;
-  x4 = 0.55w; y4r = y3r;
-  x5r = w - CURVE_BEARING; y5 = 0.7 * CAP_H;
-  x6 = x4; y6r = 0.4 * CAP_H;
+  x4 = lerpbold(0.55w, 0.51w); y4r = y3r;
+  x5r = w - CURVE_BEARING; y5 = lerp(y4l, y6l, 0.5);
+  x6 = x4; y6r = lerpbold(0.4 * CAP_H, 0.3 * CAP_H);
   x7 = x1; y7r = y6r;
   
   penpos1(STEM, 0); penpos2(STEM, 0);

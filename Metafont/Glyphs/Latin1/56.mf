@@ -22,8 +22,8 @@ z6r = (w - CURVE_BEARING, y7l + ((y3r - y7l) / 2));
 z7r = (x1, CAP_BOTTOM);
 z8r = (CURVE_BEARING, y6);
 
-penpos1(BAR, 90); penpos2(STEM, 0); penpos3(BAR_TERM, -90); penpos4(STEM, -180);
-penpos5(BAR_TERM, 90); penpos6(STEM, 0); penpos7(BAR, -90); penpos8(STEM, -180);
+penpos1(lerpbold(BAR, BAR_CROSS), 90); penpos2(STEM, 0); penpos3(lerpbold(BAR_TERM, BAR_JOINT), -90); penpos4(STEM, -180);
+penpos5(lerpbold(BAR_TERM, BAR_JOINT), 90); penpos6(STEM, 0); penpos7(lerpbold(BAR, BAR_CROSS), -90); penpos8(STEM, -180);
 
 penstroke z1e{rt}..tsn..z2e{dn}..tsn..z3e{lt}..tsn..z4e{up}..tsn..{rt}cycle;
 penstroke z5e{rt}..tsn..z6e{dn}..tsn..z7e{lt}..tsn..z8e{up}..tsn..{rt}cycle;

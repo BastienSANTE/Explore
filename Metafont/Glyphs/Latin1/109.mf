@@ -9,7 +9,7 @@ if MONOSPACE = false:
   z2l = (LINE_BEARING, BASELINE);
   z9r = (w - LINE_BEARING, y5r);
   z3l = (x1r, X_H - (CAP_H * APERTURE));
-  z5 = (x3l + ((x9l - x3l) / 2), 0.65 * X_H);
+  z5 = (x3l + ((x9l - x3l) / 2), ARCHHEIGHT);
 else: if MONOSPACE = true:
     z1l = (CURVE_BEARING, X_H);
     z2l = (CURVE_BEARING, BASELINE);
@@ -22,12 +22,12 @@ else: if MONOSPACE = true:
   fi
 fi
 
-z4r = (x3l + ((x5l - x3l) * ARCHCOEF), X_TOP);
+z4r = (lerp(x3l, x5l, ARCHCOEF), X_TOP);
 z6r = (x5r, BASELINE);
 
 z7l = (x5r, y3l);
 z10r = (x9r, BASELINE);
-z8r = (x7l + ((x10l - x7l) * ARCHCOEF), y4r);
+z8r = (lerp(x7l, x10l, ARCHCOEF), y4r);
 
 forsuffixes $ = 1, 2, 5, 6, 9, 10:
   if MONOSPACE = true:
@@ -37,8 +37,8 @@ forsuffixes $ = 1, 2, 5, 6, 9, 10:
   fi
 endfor;
 
-penpos3(BAR_FINE, 90 + APERTURE_ANGLE); penpos4(BAR, 90); 
-penpos7(BAR_FINE, 90 + APERTURE_ANGLE); penpos8(BAR, 90);
+penpos3(BAR_FINE, 90 + APERTURE_ANGLE); penpos4(BAR_CROSS, 90); 
+penpos7(BAR_FINE, 90 + APERTURE_ANGLE); penpos8(BAR_CROSS, 90);
 
 z41 = z4r shifted(STRETCH * ARCHCORR, 0);
 z81 = z8r shifted(STRETCH * ARCHCORR, 0);

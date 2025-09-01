@@ -3,25 +3,63 @@ input ../Config/ExploreSansCFG.mf
   export_setup;
 
 % U+0031 DIGIT ONE - CODE 49
+% newchar(49, 5.5pt#, 0);
+% z1 = (lerpbold(0.52w, 0.51w), CAP_H);
+% z2 = (x1, BASELINE);
+
+% z3l = (LINE_BEARING, BASELINE);
+% z4l = (0.9w, y3l);
+
+% z5r = (x3, lerpbold(0.87 * CAP_H, 0.85 * CAP_H));
+% z11r = z1l;
+
+% penpos1(STEM, 0); penpos2(STEM,  0);
+% penpos3(BAR, 90); penpos4(BAR,  90);
+% penpos5(lerpbold(STEM_CROSS, STEM * 0.85) , 90); penpos11(lerpbold(STEM_CROSS, STEM * 0.85), 90);
+
+% fill z1l -- z1r -- z2r -- z2l -- cycle;
+% fill z3r -- z4r -- z4l -- z3l -- cycle;
+% fill z5r -- z11r -- z11l -- z5l -- cycle;
+
+% italicize;
+
+% penlabels(range 1 thru 11);
+% endchar;
+% end
+
 newchar(49, 5.5pt#, 0);
-z1 = (0.534w, CAP_H);
+z1 = (lerpbold(0.52w, 0.51w), CAP_H);
 z2 = (x1, BASELINE);
 
-z3l = (0.13w, BASELINE);
+z3l = (LINE_BEARING, BASELINE);
 z4l = (0.9w, y3l);
 
-z5r = (x3, 0.81 * CAP_H);
+z5r = (LINE_BEARING, lerpbold(0.87 * CAP_H, 0.85 * CAP_H));
 z11r = z1l;
 
-penpos1(STEM, 0); penpos2(STEM,  0);
-penpos3(BAR, 90); penpos4(BAR,  90);
-penpos5(BAR_ADJ(z11r - z5r), 90); penpos11(BAR_ADJ(z11r - z5r), 90);
+if SERIF = false:
+  p1 = z1; p2 = z2;   pen1(STEM, 0); pen2(STEM, 0);
+  p3l = z3l; p4l = z4l;
+  p5r = z5r; p11r = p1l;
 
-fill z1l -- z1r -- z2r -- z2l -- cycle;
-fill z3r -- z4r -- z4l -- z3l -- cycle;
-fill z5r -- z11r -- z11l -- z5l -- cycle;
+  pen3(BAR, 90); pen4(BAR, 90);
+  pen11(lerpbold(STEM_CROSS, STEM * 0.85) , 90); pen5(lerpbold(STEM_CROSS, STEM * 0.85), 90);
 
-italicize;
+  fill p1l -- p1r -- p2r -- p2l -- p11l -- p5l -- p5r -- cycle;
+  fill p3r -- p4r -- p4l -- p3l -- cycle;
+  
+elseif SERIF = true:
+  p1 = z1; p2 = z2; pen1(STEM, 0); pen2(STEM, 0);
+  p20r = z2; pen20(lerpbold(BAR_THIN, BAR_FINE), -90);
+  p3l = z3l; p4l = z4l;
+  p5r = z5r; p11r = p1l;
+
+  pen3(lerpbold(BAR_THIN, BAR_FINE), 90); pen4(lerpbold(BAR_THIN, BAR_FINE), 90);
+  pen11(BAR_THIN , 90); pen5(BAR_THIN, 90);
+
+  fill p1l -- p1r -- p2r -- p2l -- p11l -- p5l -- p5r -- cycle;
+  fill p3r -- p20l -- p4r -- p4l -- p3l -- cycle;
+fi
 
 penlabels(range 1 thru 11);
 endchar;

@@ -3,17 +3,17 @@ input ../Config/ExploreSansCFG.mf;
 export_setup;
 
 % U+007E TILDE - CODE 126
-newchar(126, 6.75pt#, 1);
+newchar(126, 6.25pt#, 1);
 
 center = (mid, X_H / 2);
 
-z1r = (CURVE_BEARING, X_H / 2);
-z2r = (lerp(CURVE_BEARING, mid, 0.5), 0.7 * X_H);
+z1r = (CURVE_BEARING, y3 - (y2r - y3));
+z2r = (lerp(CURVE_BEARING, mid, lerpbold(0.5, 0.6)), lerpbold(0.6 * X_H, 0.7 * X_H));
 z3 = center;
 
-penpos2(BAR, 90); penpos1(BAR, 180 -angle(z2)); penpos3(BAR, angle(z2));
+penpos2(BAR, 90); penpos1(BAR, 180); penpos3(BAR, angle(z2));
 
-elem1 = z1r...z2r{rt}..tsn..z3r -- z3l..tsn..z2l{lt}...z1l -- cycle;
+elem1 = z1r{up}...z2r{rt}..tsn..z3r -- z3l..tsn..z2l{lt}...z1l{dn} -- cycle;
 
 elem2 = elem1 rotatedaround(center, 180);
 

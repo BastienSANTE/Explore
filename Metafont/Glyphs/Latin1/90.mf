@@ -6,13 +6,14 @@ export_setup;
 newchar(90, 6pt#, 0);
   x1 = LINE_BEARING; y1r = CAP_H;
   x2 = w - LINE_BEARING; y2 = y1;
-  x21r = x2; y21 = y2l;
+  x21r = x2l; y21r = y2l;
   x3 = x1; y3l = BASELINE;
-  x31l = x3; y31 = y3r;
+  x31l = x3; y31l = y3r;
   x4 = x2; y4 = y3;
 
   penpos1(BAR, 90); penpos2(BAR, 90); penpos3(BAR, 90); penpos4(BAR, 90);
-  penpos31(STEM, 0); penpos21(STEM, 0);
+  penpos31(STEM_CROSS, -angle(z2 - z3)); penpos21(STEM_CROSS, -angle(z2 - z3));
+
 
   if SERIF = true:
     makeserif(1, z1l,  SERIF_THICKNESS, -SERIF_LENGTH);

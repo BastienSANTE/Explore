@@ -6,34 +6,13 @@ export_setup;
 newchar(122, 5.2pt#, 0);
   x1 = LINE_BEARING; y1r = X_H;
   x2 = w - LINE_BEARING; y2 = y1;
-  x21r = x2; y21 = y2l;
+  x21r = x2; y21r = y2l;
   x3 = x1; y3l = BASELINE;
-  x31l = x3; y31 = y3r;
+  x31l = x3; y31l = y3r;
   x4 = x2; y4 = y3;
 
   penpos1(BAR, 90); penpos2(BAR, 90); penpos3(BAR, 90); penpos4(BAR, 90);
-  penpos31(STEM, 0); penpos21(STEM, 0);
-
-  if SERIF = true:
-    makeserif(1, z1l,  SERIF_THICKNESS, -SERIF_LENGTH);
-    makeserif(2, z4r,  -SERIF_THICKNESS, SERIF_LENGTH);
-  fi
-
-  penstroke z1e -- z2e; penstroke z3e -- z4e; penstroke z21e -- z31e;
-  
-  italicize;
-
-  penlabels(range 1 thru 31);
-endchar;
-end  x1 = LINE_BEARING; y1r = X_H;
-  x2 = w - LINE_BEARING; y2 = y1;
-  x21r = x2; y21 = y2l;
-  x3 = x1; y3l = BASELINE;
-  x31l = x3; y31 = y3r;
-  x4 = x2; y4 = y3;
-
-  penpos1(BAR, 90); penpos2(BAR, 90); penpos3(BAR, 90); penpos4(BAR, 90);
-  penpos31(STEM_ADJ(z2), 0); penpos21(STEM_ADJ(z2), 0);
+  penpos31(STEM_CROSS, -angle(z2 - z3)); penpos21(STEM_CROSS, -angle(z2 - z3));
 
   if SERIF = true:
     makeserif(1, z1l,  SERIF_THICKNESS, -SERIF_LENGTH);
