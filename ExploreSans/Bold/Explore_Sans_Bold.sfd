@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1735138560
-ModificationTime: 1757758230
+ModificationTime: 1757758653
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -125,7 +125,7 @@ NameList: AGL For New Fonts
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 60 12 10
+WinInfo: 12 12 10
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -997,17 +997,17 @@ AnchorPoint: "Ring" 277 687 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-262 205 m 2x9e
+326 205 m 5
+ 262 205 l 2x9e
  221 205 208 187 208 162 c 0
  208 138 222 117 258 117 c 0
  286 117 311 129 326 155 c 1
- 326 205 l 1
- 262 205 l 2x9e
+ 326 205 l 5
 254 528 m 0
  418 528 508 455 508 307 c 2
- 508 150 l 6
- 508 117 520 102 552 102 c 6x5e
- 565 102 l 5
+ 508 150 l 2
+ 508 117 520 102 552 102 c 2x5e
+ 565 102 l 1
  565 0 l 1x3e
  533 -4 512 -8 463 -8 c 0x5e
  398 -8 352 15 326 67 c 1
@@ -1113,7 +1113,7 @@ Encoding: 292 101 36
 GlifName: e
 Width: 605
 VWidth: 1048
-Flags: HW
+Flags: HWO
 HStem: -8 132<257.398 446.97> 212 98<224 393> 399 129<250 369.215>
 VStem: 32 192<155.918 212 310 374.787> 393 180<310 376.52>
 AnchorPoint: "AccentCenter" 311 686 basechar 0
@@ -3481,7 +3481,7 @@ Encoding: 328 43 72
 GlifName: plus
 Width: 564
 VWidth: 1048
-Flags: HWO
+Flags: HW
 HStem: 203 128<64 218 346 500>
 VStem: 218 128<54 203 331 480>
 LayerCount: 2
