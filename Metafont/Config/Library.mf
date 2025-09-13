@@ -58,8 +58,9 @@ enddef;
 % ENDCHAR : Ends current character, draws export bounding box
 def endchar =
 reposition;
+currentpicture:= currentpicture scaled 5;
 pickup pensquare;
-draw (0, h) -- (w, h) -- (w, DESCENDER) -- (0, DESCENDER) -- cycle;
+draw (0, h * 5) -- (w * 5, h * 5) -- (w * 5, DESCENDER * 5) -- (0, DESCENDER * 5) -- cycle;
 scantokens extra_endchar;
 chardx:=w;
 shipit;
@@ -124,5 +125,6 @@ enddef;
 def export_setup =
   outputtemplate := "%c.svg";
   outputformat := "svg";
+  defaultscale:= 1;
 enddef;
 

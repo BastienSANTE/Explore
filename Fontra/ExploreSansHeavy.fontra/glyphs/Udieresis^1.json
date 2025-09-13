@@ -1,0 +1,28 @@
+{
+"name": "Udieresis",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"components": [
+{
+"name": "uni0308",
+"transformation": {
+"translateX": 311,
+"translateY": 20
+}
+},
+{
+"name": "U"
+}
+],
+"xAdvance": 635
+}
+}
+}
+}

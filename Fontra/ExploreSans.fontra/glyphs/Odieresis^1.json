@@ -1,0 +1,28 @@
+{
+"name": "Odieresis",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"components": [
+{
+"name": "uni0308",
+"transformation": {
+"translateX": 334,
+"translateY": 21
+}
+},
+{
+"name": "O"
+}
+],
+"xAdvance": 662
+}
+}
+}
+}

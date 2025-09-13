@@ -4,37 +4,94 @@ input ../Config/ExploreSansCFG.mf
 
 % U+0033 DIGIT THREE - CODE 51
 newchar(51, 5.5pt#, 0);
-z1r = (0.13w, CAP_H);
-z2r = (w - LINE_BEARING, y1r);
+z1 = (0.13w, CAP_H);
+z2 = (w - LINE_BEARING, y1);
 
-z3r = (x2r, y2l);
-z5r = z4l = (w / 3, 0.595 * CAP_H);
-z6r = z4r;
+z4 = (w / 3, lerpbold(0.595 * CAP_H, 0.61 * CAP_H)); 
 
-z8r = (0.455w, CAP_BOTTOM);
-z9 = (x1, BASELINE + (CAP_H * APERTURE));
+z8 = (mid, CAP_BOTTOM);
 
-z10 = onpath(z5l, z6l, lerpbold(0.8, 0.5));
-z11 = onpath(z5l, z6l, 0.25);
+z7 = (w - CURVE_BEARING, lerp(py8, py6, 0.5));
+z9 = (x1 / 2, BASELINE + (CAP_H * APERTURE));
 
-penpos1(lerpbold(BAR, BAR_TERM), 90); penpos2(lerpbold(BAR, BAR_TERM), 90);
-penpos3(STEM_ADJ(-(z4l - z3r)), 0); penpos4(STEM,0);
+if SERIF = false:
+  p1r = z1; pen1(lerpbold(BAR, BAR_TERM), 90);
+  p2r = z2; pen2(lerpbold(BAR, BAR_TERM), 90);
 
-penpos5(lerpbold(BAR_CROSS, BAR_TQ), 90); penpos6(lerpbold(BAR_CROSS, BAR_TQ), 90);
-penpos8(BAR, -90); penpos9(BAR, -90 - aa);
+  p3r = p2l; pen3(lerpbold(STEM * 1.2, STEM * 1.12), 0);
+  help1 = z4 shifted(lerpbold(0, -.05w), 0);
+  p4l = help1; pen4(lerpbold(STEM * 1.2, STEM * 1.12), 0);
+
+  p5l = help1; pen5(lerpbold(BAR, BAR * .85), -90);
+  p6l = p4r shifted(lerpbold(.1w, .005w), 0); pen6(lerpbold(BAR, BAR * .85), -90);
+  
+  p8r = z8 shifted(lerpbold(-.04w, -.03w) ,0); pen8(BAR * .95, -90);
+  
+  px7l = (x7 - STEM); py7l = lerp(py6r, py8l, 0.5); pen7(STEM, 0);
+  
+  p9r = z9 shifted(lerpbold(0, -.05w), lerpbold(0, -.26pt)); pen9(BAR * .95, -145);
+
+  adjp1 = (lerpbold(px6r, x8) ,py6r);
+  adjp2 = lerp(p2l, p2r, lerpbold(0, 0.2));
+  adjp3 = p4l shifted(0, py3l - (ypart adjp2));
+  pickup pencircle;
+  
+  fill p1r -- p2r -- adjp2 -- p4r -- p6l{rt}..tsn..p7r{dn}..tsn..p8r{lt}..tsn..p9r -- p9l..tsn..p8l{rt}..tsn..p7l{up}..tsn..adjp1{lt} -- p5r -- adjp3 -- p3l -- p1l -- cycle;
+  
+else:
+p1r = z1; pen1(lerpbold(BAR, BAR_TERM), 90);
+  p2r = z2; pen2(lerpbold(BAR, BAR_TERM), 90);
+
+  p3r = p2l; pen3(STEM, 45);
+  p4l = z4; pen4(STEM, 45);
+
+  p5l = z4; pen5(lerpbold(BAR, BAR * .85), -90);
+  p6l = p4r shifted(lerpbold(.1w, .005w), 0); pen6(lerpbold(BAR, BAR * .85), -90);
+  
+  p8r = z8 shifted(lerpbold(-.04w, -.03w) ,0); pen8(BAR * .95, -90);
+  
+  px7l = (x7 - STEM); py7l = lerp(py6r, py8l, 0.5); pen7(STEM, 0);
+  
+  p9r = z9 shifted(lerpbold(0, -.05w), lerpbold(0, -.26pt)); pen9(BAR * .95, -145);
+
+  adjp1 = (lerpbold(px6r, x8) ,py6r);
+  adjp2 = lerp(p2r, p2l, lerpbold(0, 0.5));
+  
+  fill p1r -- p2r -- adjp2 -- p3r -- p4r -- p4l -- cycle;
+  fill p5l -- p6l{rt}..tsn..p7r{dn}..tsn..p8r{lt}..tsn..p9r -- p9l..tsn..p8l{rt}..tsn..p7l{up}..tsn..adjp1{lt} -- p5r -- cycle;
+  
+fi
+% z1r = (0.13w, CAP_H);
+% z2r = (w - LINE_BEARING, y1r);
+
+% z3r = (x2r, y2l);
+% z5r = z4l = (w / 3, 0.595 * CAP_H);
+% z6r = z4r;
+
+% z8r = (0.455w, CAP_BOTTOM);
+% z9 = (x1, BASELINE + (CAP_H * APERTURE));
+
+% z10 = onpath(z5l, z6l, lerpbold(0.8, 0.5));
+% z11 = onpath(z5l, z6l, 0.25);
+
+% pen1(lerpbold(BAR, BAR_TERM), 90); pen2(lerpbold(BAR, BAR_TERM), 90);
+% pen3(STEM_ADJ(-(z4l - z3r)), 0); pen4(STEM,0);
+
+% pen5(lerpbold(BAR_CROSS, BAR_TQ), 90); pen6(lerpbold(BAR_CROSS, BAR_TQ), 90);
+% pen8(BAR, -90); pen9(BAR, -90 - aa);
 
 % z7 defined here to use defined pen positions
-z7r = (w - CURVE_BEARING, lerp(y6l, y8l, 0.5));
-penpos7(STEM, 0);
+% z7r = (w - CURVE_BEARING, lerp(y6l, y8l, 0.5));
+% pen7(STEM, 0);
 
-adjp1 = onpath(z2, z2l, 0.5);
-adjp2 = z3l shifted(-(ypart(adjp1) - y2l), 0);
+% adjp1 = onpath(z2, z2l, 0.5);
+% adjp2 = z3l shifted(-(ypart(adjp1) - y2l), 0);
 
-fill z1r -- z2r -- adjp1 -- z4r -- z4l -- adjp2 -- z1l -- cycle;
+% fill z1r -- z2r -- adjp1 -- z4r -- z4l -- adjp2 -- z1l -- cycle;
 
-fill z5r -- z6r{rt}..tsn..z7r{dn}..tsn..z8r{lt}...z9r -- z9l...z8l{rt}..tsn..z7l{up}..tsn..z10{lt} -- z11 -- cycle;
+% fill z5r -- z6r{rt}..tsn..z7r{dn}..tsn..z8r{lt}...z9r -- z9l...z8l{rt}..tsn..z7l{up}..tsn..z10{lt} -- z11 -- cycle;
 
-%penstroke z5e -- z6e{rt}..tsn..z7e{dn}..tsn..z8e{lt}..z9e;
+% %penstroke z5e -- z6e{rt}..tsn..z7e{dn}..tsn..z8e{lt}..z9e;
 
 italicize;
 

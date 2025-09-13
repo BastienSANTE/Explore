@@ -1,0 +1,92 @@
+{
+"name": "dotlessi",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+},
+{
+"name": "",
+"layerName": "73c1fb1b",
+"locationBase": "73c1fb1b"
+}
+],
+"layers": {
+"73c1fb1b": {
+"glyph": {
+"path": {
+"contours": [
+{
+"points": [
+{
+"x": 8,
+"y": 520
+},
+{
+"x": 288,
+"y": 520
+},
+{
+"x": 288,
+"y": 0
+},
+{
+"x": 96,
+"y": 0
+},
+{
+"x": 96,
+"y": 364
+},
+{
+"x": 8,
+"y": 364
+}
+],
+"isClosed": true
+}
+]
+},
+"xAdvance": 324
+}
+},
+"default": {
+"glyph": {
+"path": {
+"contours": [
+{
+"points": [
+{
+"x": 30,
+"y": 519
+},
+{
+"x": 212,
+"y": 519
+},
+{
+"x": 212,
+"y": 0
+},
+{
+"x": 132,
+"y": 0
+},
+{
+"x": 132,
+"y": 454
+},
+{
+"x": 30,
+"y": 454
+}
+],
+"isClosed": true
+}
+]
+},
+"xAdvance": 313
+}
+}
+}
+}

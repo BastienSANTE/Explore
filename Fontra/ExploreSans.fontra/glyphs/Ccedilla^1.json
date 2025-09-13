@@ -1,0 +1,27 @@
+{
+"name": "Ccedilla",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"components": [
+{
+"name": "uni0327",
+"transformation": {
+"translateX": 350
+}
+},
+{
+"name": "C"
+}
+],
+"xAdvance": 606
+}
+}
+}
+}

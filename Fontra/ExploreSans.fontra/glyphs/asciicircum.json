@@ -1,0 +1,53 @@
+{
+"name": "asciicircum",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"path": {
+"contours": [
+{
+"points": [
+{
+"x": 74,
+"y": 717
+},
+{
+"x": 207,
+"y": 852
+},
+{
+"x": 274,
+"y": 852
+},
+{
+"x": 407,
+"y": 717
+},
+{
+"x": 364,
+"y": 666
+},
+{
+"x": 241,
+"y": 785
+},
+{
+"x": 118,
+"y": 666
+}
+],
+"isClosed": true
+}
+]
+},
+"xAdvance": 505
+}
+}
+}
+}

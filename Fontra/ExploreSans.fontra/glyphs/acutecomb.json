@@ -1,0 +1,76 @@
+{
+"name": "acutecomb",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+},
+{
+"name": "",
+"layerName": "73c1fb1b",
+"locationBase": "73c1fb1b"
+}
+],
+"layers": {
+"73c1fb1b": {
+"glyph": {
+"path": {
+"contours": [
+{
+"points": [
+{
+"x": 120,
+"y": 867
+},
+{
+"x": -99,
+"y": 744
+},
+{
+"x": -134,
+"y": 796
+},
+{
+"x": 73,
+"y": 931
+}
+],
+"isClosed": true
+}
+]
+},
+"xAdvance": 0
+}
+},
+"default": {
+"glyph": {
+"path": {
+"contours": [
+{
+"points": [
+{
+"x": 128,
+"y": 867
+},
+{
+"x": -91,
+"y": 744
+},
+{
+"x": -126,
+"y": 796
+},
+{
+"x": 81,
+"y": 931
+}
+],
+"isClosed": true
+}
+]
+},
+"xAdvance": 0
+}
+}
+}
+}

@@ -1,0 +1,26 @@
+{
+"name": "onehalf",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+},
+{
+"name": "",
+"layerName": "73c1fb1b",
+"locationBase": "73c1fb1b"
+}
+],
+"layers": {
+"73c1fb1b": {
+"glyph": {
+"xAdvance": 750
+}
+},
+"default": {
+"glyph": {
+"xAdvance": 750
+}
+}
+}
+}

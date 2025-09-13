@@ -1,4 +1,4 @@
-This is MetaPost, version 2.11 (TeX Live 2025) (kpathsea version 6.4.1)  1 SEP 2025 18:56
+This is MetaPost, version 2.11 (TeX Live 2025) (kpathsea version 6.4.1)  7 SEP 2025 11:45
 **../Glyphs/Latin1/50.mf
 (/usr/local/texlive/2025/texmf-dist/metapost/base/mfplain.mp
 Preloading the plain base, version 0.99: preliminaries,
@@ -9,6 +9,31 @@ Preloading the plain base, version 0.99: preliminaries,
  macros for proof labels and rules,
  macros for character and font administration,
 and a few last-minute items.) (../Glyphs/Latin1/50.mf
-(../Config/ExploreSansCFG.mf (../Config/Library.mf) (../Config/Defs.mf)) [50] )
+(../Config/ExploreSansCFG.mf (../Config/Library.mf) (../Config/Defs.mf))
+! Missing argument to serif.
+<to be read again> 
+                   ;
+l.54   serif(1, p7r, -BAR, -BAR_THIN, 1pt);
+                                           
+? 
+! Missing argument to serif.
+<to be read again> 
+                   ;
+l.54   serif(1, p7r, -BAR, -BAR_THIN, 1pt);
+                                           
+? 
+>> 0
+>> false
+! Not implemented: (known numeric)=(boolean).
+<to be read again> 
+                   :
+serif->if(EXPR6)=false:
+                       sfp(SUFFIX0)a=(EXPR1);sfp(SUFFIX0)b=(EXPR1)shifted((E...
+<to be read again> 
+                   ;
+l.54   serif(1, p7r, -BAR, -BAR_THIN, 1pt);
+                                           
+? 
+[50] )
 1 output file written: 50.svg
 

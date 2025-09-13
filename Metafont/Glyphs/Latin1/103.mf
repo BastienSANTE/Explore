@@ -6,7 +6,7 @@ export_setup;
 newchar(103, 5.5pt#, 0);
   ubox = CURVE_BEARING;
   ubwidth = lerpbold(0.7w, 0.75w);
-  ubheight = lerpbold(0.43h, 0.41h);
+  ubheight = lerpbold(0.4h, 0.41h);
   lbey = lerpbold(-.7pt, -.2pt);
   lboy = .05h;
   tlendx = 0.9w;
@@ -21,7 +21,6 @@ if ITALIC = false:
   z3 = (x1, y1 - ubheight);
   z4 = (ubox, y2);
 
-  
   z5 = z3;
   z7 = (x5, BASELINE);
   z8 = (lerp(x1, x2, lerpbold(0.56, 0.65)), y7);
@@ -31,36 +30,41 @@ if ITALIC = false:
   z11 = (OBLIQUE_BEARING, DESCENDER / 2);
 
   z13 = (w - OBLIQUE_BEARING, X_H);
-
-  
+ 
   if SERIF = false:
-    p1r = z1; pen1(lerpbold(BAR, BAR_TQ), 90);
+    p1r = z1; pen1(lerpbold(BAR, BAR * .7), 90);
     p2r = z2; pen2(lerpbold(STEM, STEM_TERM), 0);
-    p3r = z3; pen3(lerpbold(BAR, BAR_TQ), -90);
+    p3r = z3; pen3(lerpbold(BAR, BAR * .7), -90);
     p4r = z4; pen4(lerpbold(STEM, STEM_TERM), 180);
 
     p5l = z5; pen5(lerpbold(BAR * .75, BAR * .3), 90);
-    p7r = z7 shifted(0, lerpbold(.2pt, 0)); pen7(lerpbold(BAR, BAR * .87), -90);
-    p6r = (x6, lerp(py5r, py7r, 0.5)); pen6(lerpbold(STEM, STEM * .87), 180);
-    p8r = (x8,py7r); pen8(lerpbold(BAR, BAR * .87), -90);
+    p7r = z7 shifted(lerpbold(-.07w, -.02w), lerpbold(.2pt, 0)); pen7(lerpbold(BAR, BAR * .9), -90);
+    p6r = (x6, lerp(py5r, py7r, 0.5)); pen6(lerpbold(STEM, STEM * .9), 180);
+    p8r = (x8,py7r); pen8(lerpbold(BAR, BAR * .9), -90);
     p9r = z9 shifted(0, lerpbold(0, .5pt)); pen9(lerpbold(STEM, STEM * .9), 0);
-    p10r = z10; pen10(lerpbold(BAR, BAR * .77), -90);
-    p11r = z11; pen11(BAR * .95, -140);
+    p10r = z10 shifted(lerpbold(0, -.2pt), 0); pen10(lerpbold(BAR, BAR * .77), -90);
+    p11r = z11 shifted(lerpbold(-.2pt, -.2pt), 0); pen11(lerpbold( BAR, BAR * .8), -130);
     
-    p13r = z13; pen13(STEM, 90);
+    p13r = z13; pen13(lerpbold(BAR, BAR * .92), 90);
     
     adjp1 = (px6l, lerp(py7l, py5l, 0.5));
-    adjp2 = onpath(p8r, p7r, lerpbold(0, 0.5));
-    adjp3 = (px9l, lerp(py8r, py10l, lerpbold(0.42, 0.35)));
+    adjp2 = onpath(p8r, p7r, lerpbold(0, 0.25));
+    adjp3 = (px9l, lerp(py8r, py10l, lerpbold(0.45, 0.45)));
     adjp4 = (lerpbold(px8, px2), y13) shifted((px2r - px2) * 2 ,0);
-    adjp5 = (lerpbold(px8, px2), lerpbold(py13l, y2));
+    adjp5 = (lerpbold(px8, px2), py13l);
+    adjp6 = (lerp(px7, px6, lerpbold(0.2, 0.3)), py7);
 
-
-    fill p1r{rt}..tsn..p2r{dn}..tsn..p3r{lt}..tsn..p4r{up}..tsn..p1r{rt} -- p1l{lt}..tsn..p4l{dn}..tsn..p3l{rt}..tsn..p2l{up}..tsn..p1l{lt} -- cycle;
+    elem1 = p3r{lt}..tsn..p4r{up};
+    elem2 = p5r{lt}..tsn..p6r{dn};
     
-    fill p5r{lt}..tsn..p6r{dn}..tsn..p7r{rt} -- adjp2{rt}...adjp3{dn}..p10l{lt}..tsn..p11l -- p11r..tsn..p10r{rt}..p9r{up}..tsn..p8l{lt} -- p7l{lt}..tsn..adjp1{up}..p5l{rt} -- cycle;
+    adjp7 = elem1 intersectionpoint elem2 shifted(lerpbold(0, .1w), 0);
+    
+    fill p1r{rt}..tsn..p2r{dn}..tsn..p3r{lt} -- adjp7..tsn..p4r{up}..tsn..p1r{rt} -- p1l{lt}..tsn..p4l{dn}..tsn..p3l{rt}..tsn..p2l{up}..tsn..p1l{lt} -- cycle;
+    
+    fill p5r{lt} -- adjp7{lt}..tsn..p6r{dn}..tsn..p7r{rt} -- adjp2{rt}..tsn..adjp3{dn}..tvar(0.9, 1.3)..p10l{lt}..tsn..p11l -- p11r..tsn..p10r{rt}..tsn..p9r{up}..tsn..p8l{lt} -- p7l{lt}..tsn..adjp1{up}..tsn..{rt}p5l -- cycle;
 
-    fill p13r -- lerpbold(p13l, (x13, y2)) -- adjp5{up}..tsn..{rt}adjp4 -- cycle;
+    
+    fill p13r -- p13l -- adjp5{up}..tsn..{rt}adjp4 -- cycle;
   else:
     p1r = z1; pen1(BAR_FINE, 90);
     p2r = z2; pen2(lerpbold(STEM, STEM_TERM), 0);
@@ -72,34 +76,32 @@ if ITALIC = false:
     p6r = (x6, lerp(py5r, py7r, 0.5)); pen6(lerpbold(STEM, STEM * .87), 180);
     p8r = (x8,py7r); pen8(lerpbold(STEM, BAR * .87), -90);
     p9r = z9 shifted(0, lerpbold(0, .5pt)); pen9(lerpbold(STEM, STEM * .9), 0);
-    p10r = z10 shifted(lerpbold(0, -.3pt), 0); pen10(BAR_FINE, -90);
-    p11r = z11; pen11(BAR_FINE, -150);
+    p10r = z10 shifted(lerpbold(0, -.3pt), 0); pen10(lerpbold(BAR_FINE, BAR * .15), -90);
+    p11r = z11 shifted(lerpbold(0w, -.05w), 0); pen11(lerpbold(BAR_FINE, BAR * .15), -150);
 
-    p12r = p11r; pen12(BAR_THIN, 150);
-    p14l = adjp6; pen14(BAR_THIN, 150);
+    p12r = p11r; pen12(lerpbold(BAR_FINE, BAR * .15), 150);
+    p14l = adjp6; pen14(lerpbold(BAR_FINE, BAR * .15), 150);
     
-    p13r = z13; pen13(STEM, 90);
-
+    p13r = z13; pen13(BAR, 90);
     
     adjp1 = (px6l, lerp(py7l, py5l, 0.5));
     adjp2 = onpath(p8r, p7r, lerpbold(0, 0.5));
     adjp3 = (px9l, lerp(py8r, py10l, lerpbold(0.42, 0.45)));
     adjp4 = (lerp(px2, px13, lerpbold(0.6, 0.8)), y13);
     adjp5 = (lerpbold(px8, px2), lerpbold(py13l, y2));
-    adjp6 = (lerp(x7, x6, lerpbold(0.2, 0.27)), py7r);
+    adjp6 = (lerp(x7, x6, lerpbold(0.3, 0.27)), py7r);
+    adjp7 = p10l shifted(lerpbold(0, -.05w), 0);
 
     fill p1r{rt}..tsn..p2r{dn}..tsn..p3r{lt}..tsn..p4r{up}..tsn..p1r{rt} -- p1l{lt}..tsn..p4l{dn}..tsn..p3l{rt}..tsn..p2l{up}..tsn..p1l{lt} -- cycle;
     
-    fill p5r{lt}..tsn..p6r{dn}..tsn..adjp6{rt} -- adjp2{rt}...adjp3{dn}..p10l{lt}..tvar(0.9, 0.8)..p11l -- p11r..tvar(0.9, 0.8)..p10r{rt}..p9r{up}..tsn..p8l{lt} -- p7l{lt}..tsn..adjp1{up}..p5l{rt} -- cycle;
+    fill p5r{lt}..tsn..p6r{dn}..tsn..adjp6{rt} -- adjp2{rt}..tsn..adjp3{dn}..tvar(0.9,0.95)..adjp7{lt}...p11l -- p11r..tvar(0.9, 0.8)..p10r{rt}..tsn..p9r{up}..tsn..p8l{lt} -- p7l{lt}..tsn..adjp1{up}..tsn..p5l{rt} -- cycle;
 
     fill p13r -- lerpbold(p13l, (x13, y2)) -- adjp5 -- adjp4 -- cycle;
     fill p12r -- p14r -- p14l -- p12l -- cycle;
   fi
 
- 
 else:
 fi
-
 
  penlabels(range 1 thru 117);
 endchar;

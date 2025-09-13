@@ -159,7 +159,7 @@ def italicize =
 enddef;
 
 def reposition =
-  currentpicture:= currentpicture scaled (1024/1000) shifted (0, SCALEOFFSET);
+  currentpicture:= currentpicture scaled(1024/1000) shifted (0, SCALEOFFSET);
 enddef;
   
 

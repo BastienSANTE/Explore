@@ -1,0 +1,28 @@
+{
+"name": "Oacute",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"components": [
+{
+"name": "acutecomb",
+"transformation": {
+"translateX": 328,
+"translateY": 41
+}
+},
+{
+"name": "O"
+}
+],
+"xAdvance": 662
+}
+}
+}
+}

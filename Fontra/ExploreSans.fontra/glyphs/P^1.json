@@ -1,0 +1,242 @@
+{
+"name": "P",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+},
+{
+"name": "",
+"layerName": "73c1fb1b",
+"locationBase": "73c1fb1b"
+}
+],
+"layers": {
+"73c1fb1b": {
+"glyph": {
+"path": {
+"contours": [
+{
+"points": [
+{
+"x": 240,
+"y": 548
+},
+{
+"x": 240,
+"y": 376
+},
+{
+"x": 317,
+"y": 376,
+"smooth": true
+},
+{
+"x": 385,
+"y": 376,
+"type": "quad"
+},
+{
+"x": 440,
+"y": 422,
+"type": "quad"
+},
+{
+"x": 440,
+"y": 464,
+"smooth": true
+},
+{
+"x": 440,
+"y": 501,
+"type": "quad"
+},
+{
+"x": 391,
+"y": 548,
+"type": "quad"
+},
+{
+"x": 335,
+"y": 548,
+"smooth": true
+}
+],
+"isClosed": true
+},
+{
+"points": [
+{
+"x": 48,
+"y": 708
+},
+{
+"x": 350,
+"y": 708,
+"smooth": true
+},
+{
+"x": 499,
+"y": 708,
+"type": "quad"
+},
+{
+"x": 632,
+"y": 566,
+"type": "quad"
+},
+{
+"x": 632,
+"y": 465,
+"smooth": true
+},
+{
+"x": 632,
+"y": 355,
+"type": "quad"
+},
+{
+"x": 495,
+"y": 216,
+"type": "quad"
+},
+{
+"x": 332,
+"y": 216,
+"smooth": true
+},
+{
+"x": 240,
+"y": 216
+},
+{
+"x": 240,
+"y": 0
+},
+{
+"x": 48,
+"y": 0
+}
+],
+"isClosed": true
+}
+]
+},
+"xAdvance": 656
+}
+},
+"default": {
+"glyph": {
+"path": {
+"contours": [
+{
+"points": [
+{
+"x": 162,
+"y": 644
+},
+{
+"x": 162,
+"y": 324
+},
+{
+"x": 309,
+"y": 324,
+"smooth": true
+},
+{
+"x": 391,
+"y": 324,
+"type": "quad"
+},
+{
+"x": 472,
+"y": 402,
+"type": "quad"
+},
+{
+"x": 472,
+"y": 491,
+"smooth": true
+},
+{
+"x": 472,
+"y": 571,
+"type": "quad"
+},
+{
+"x": 396,
+"y": 644,
+"type": "quad"
+},
+{
+"x": 327,
+"y": 644,
+"smooth": true
+}
+],
+"isClosed": true
+},
+{
+"points": [
+{
+"x": 86,
+"y": 708
+},
+{
+"x": 324,
+"y": 708,
+"smooth": true
+},
+{
+"x": 429,
+"y": 708,
+"type": "quad"
+},
+{
+"x": 552,
+"y": 600,
+"type": "quad"
+},
+{
+"x": 552,
+"y": 491,
+"smooth": true
+},
+{
+"x": 552,
+"y": 379,
+"type": "quad"
+},
+{
+"x": 431,
+"y": 260,
+"type": "quad"
+},
+{
+"x": 309,
+"y": 260,
+"smooth": true
+},
+{
+"x": 162,
+"y": 260
+},
+{
+"x": 162,
+"y": 0
+},
+{
+"x": 86,
+"y": 0
+}
+],
+"isClosed": true
+}
+]
+},
+"xAdvance": 605
+}
+}
+}
+}

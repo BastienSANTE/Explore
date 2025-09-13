@@ -1,0 +1,216 @@
+{
+"name": "questiondown",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"path": {
+"contours": [
+{
+"points": [
+{
+"x": 479,
+"y": -117
+},
+{
+"x": 394,
+"y": -212,
+"type": "quad"
+},
+{
+"x": 282,
+"y": -212,
+"smooth": true
+},
+{
+"x": 183,
+"y": -212,
+"type": "quad"
+},
+{
+"x": 69,
+"y": -113,
+"type": "quad"
+},
+{
+"x": 69,
+"y": -21,
+"smooth": true
+},
+{
+"x": 69,
+"y": 10,
+"type": "quad"
+},
+{
+"x": 90,
+"y": 64,
+"type": "quad"
+},
+{
+"x": 133,
+"y": 113,
+"type": "quad"
+},
+{
+"x": 164,
+"y": 142,
+"type": "quad"
+},
+{
+"x": 193,
+"y": 165,
+"smooth": true
+},
+{
+"x": 202,
+"y": 172,
+"type": "quad"
+},
+{
+"x": 218,
+"y": 186,
+"smooth": true
+},
+{
+"x": 245,
+"y": 209,
+"type": "quad"
+},
+{
+"x": 260,
+"y": 254,
+"type": "quad"
+},
+{
+"x": 260,
+"y": 288,
+"smooth": true
+},
+{
+"x": 260,
+"y": 311,
+"type": "quad"
+},
+{
+"x": 254,
+"y": 335
+},
+{
+"x": 322,
+"y": 343
+},
+{
+"x": 328,
+"y": 301,
+"type": "quad"
+},
+{
+"x": 328,
+"y": 282,
+"smooth": true
+},
+{
+"x": 328,
+"y": 186,
+"type": "quad"
+},
+{
+"x": 244,
+"y": 123,
+"smooth": true
+},
+{
+"x": 197,
+"y": 87,
+"type": "quad"
+},
+{
+"x": 146,
+"y": 23,
+"type": "quad"
+},
+{
+"x": 146,
+"y": -18,
+"smooth": true
+},
+{
+"x": 146,
+"y": -145,
+"type": "quad"
+},
+{
+"x": 282,
+"y": -145,
+"smooth": true
+},
+{
+"x": 373,
+"y": -145,
+"type": "quad"
+},
+{
+"x": 431,
+"y": -68
+}
+],
+"isClosed": true
+},
+{
+"points": [
+{
+"x": 251,
+"y": 528,
+"type": "quad"
+},
+{
+"x": 307,
+"y": 528,
+"type": "quad"
+},
+{
+"x": 342,
+"y": 492,
+"type": "quad"
+},
+{
+"x": 342,
+"y": 440,
+"type": "quad"
+},
+{
+"x": 307,
+"y": 402,
+"type": "quad"
+},
+{
+"x": 251,
+"y": 402,
+"type": "quad"
+},
+{
+"x": 216,
+"y": 440,
+"type": "quad"
+},
+{
+"x": 216,
+"y": 492,
+"type": "quad"
+}
+],
+"isClosed": true
+}
+]
+},
+"xAdvance": 517
+}
+}
+}
+}

@@ -1,0 +1,50 @@
+{
+"name": "ecircumflex",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+},
+{
+"name": "",
+"layerName": "73c1fb1b",
+"locationBase": "73c1fb1b"
+}
+],
+"layers": {
+"73c1fb1b": {
+"glyph": {
+"components": [
+{
+"name": "uni0302",
+"transformation": {
+"translateX": 285,
+"translateY": -154
+}
+},
+{
+"name": "e"
+}
+],
+"xAdvance": 605
+}
+},
+"default": {
+"glyph": {
+"components": [
+{
+"name": "uni0302",
+"transformation": {
+"translateX": 285,
+"translateY": -154
+}
+},
+{
+"name": "e"
+}
+],
+"xAdvance": 535
+}
+}
+}
+}

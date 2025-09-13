@@ -1,0 +1,28 @@
+{
+"name": "odieresis",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"components": [
+{
+"name": "uni0308",
+"transformation": {
+"translateX": 285,
+"translateY": -174
+}
+},
+{
+"name": "o"
+}
+],
+"xAdvance": 576
+}
+}
+}
+}

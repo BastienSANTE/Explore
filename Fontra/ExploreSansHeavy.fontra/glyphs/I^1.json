@@ -1,0 +1,76 @@
+{
+"name": "I",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+},
+{
+"name": "",
+"layerName": "73c1fb1b",
+"locationBase": "73c1fb1b"
+}
+],
+"layers": {
+"73c1fb1b": {
+"glyph": {
+"path": {
+"contours": [
+{
+"points": [
+{
+"x": 48,
+"y": 708
+},
+{
+"x": 240,
+"y": 708
+},
+{
+"x": 240,
+"y": 0
+},
+{
+"x": 48,
+"y": 0
+}
+],
+"isClosed": true
+}
+]
+},
+"xAdvance": 288
+}
+},
+"default": {
+"glyph": {
+"path": {
+"contours": [
+{
+"points": [
+{
+"x": 76,
+"y": 708
+},
+{
+"x": 156,
+"y": 708
+},
+{
+"x": 156,
+"y": 0
+},
+{
+"x": 76,
+"y": 0
+}
+],
+"isClosed": true
+}
+]
+},
+"xAdvance": 232
+}
+}
+}
+}

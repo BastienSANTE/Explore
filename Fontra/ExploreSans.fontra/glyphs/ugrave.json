@@ -1,0 +1,28 @@
+{
+"name": "ugrave",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"components": [
+{
+"name": "gravecomb",
+"transformation": {
+"translateX": 272,
+"translateY": -154
+}
+},
+{
+"name": "u"
+}
+],
+"xAdvance": 542
+}
+}
+}
+}

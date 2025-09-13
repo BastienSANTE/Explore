@@ -15,7 +15,7 @@ MONO_WIDTH#:= 6pt#;
 ITALIC = false;
 ITANGLE:= 0.2;
 
-SERIF = false;
+SERIF = true;
 
 OLDSTYLE = false;
 
@@ -44,7 +44,7 @@ if MONOSPACE = false:
   BFAC:= lerpbold(0, 2);
   CONTRAST:= lerpbold(1.2, 1.3);
 else:  
-  BASE_BAR:= lerpbold(.21pt, 1.4pt);
+  BASE_BAR:= lerpbold(.24pt, 1.4pt);
   BASE_STEM:= .lerpbold(.28pt, 1.6pt);
   BASE_STRETCH:= 1;
   BFAC:= lerpbold(0, 2);
@@ -94,8 +94,8 @@ BAR_JOINT := lerpbold(BAR * 0.9, BAR * 0.7);
 STEM_JOINT:= lerpbold(STEM * 0.9, STEM * 0.7);
 BAR_THIN  := lerpbold(BAR * 0.8, BAR * 0.4);
 STEM_THIN := lerpbold(STEM * 0.8, STEM * 0.4);
-BAR_FINE:=  lerpbold(BAR * 0.6, BAR * 0.3);
-STEM_FINE:= lerpbold(STEM * 0.6, STEM * 0.25);
+BAR_FINE:=  lerpbold(BAR * 0.8, BAR * 0.3);
+STEM_FINE:= lerpbold(STEM * 0.8, STEM * 0.25);
 
 
 %%% CURVATURE

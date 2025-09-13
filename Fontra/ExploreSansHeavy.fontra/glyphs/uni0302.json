@@ -1,0 +1,53 @@
+{
+"name": "uni0302",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"path": {
+"contours": [
+{
+"points": [
+{
+"x": -167,
+"y": 795
+},
+{
+"x": -34,
+"y": 930
+},
+{
+"x": 34,
+"y": 930
+},
+{
+"x": 167,
+"y": 795
+},
+{
+"x": 123,
+"y": 744
+},
+{
+"x": 0,
+"y": 864
+},
+{
+"x": -123,
+"y": 744
+}
+],
+"isClosed": true
+}
+]
+},
+"xAdvance": 0
+}
+}
+}
+}

@@ -1,0 +1,28 @@
+{
+"name": "Yacute",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"components": [
+{
+"name": "acutecomb",
+"transformation": {
+"translateX": 290,
+"translateY": 40
+}
+},
+{
+"name": "Y"
+}
+],
+"xAdvance": 595
+}
+}
+}
+}

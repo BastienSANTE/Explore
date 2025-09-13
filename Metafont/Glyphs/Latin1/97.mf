@@ -2,15 +2,16 @@ input ../Config/ExploreSansCFG.mf;
 
 export_setup;
 
+
 % U+0061 LATIN SMALL LETTER A - CODE 97
 newchar(97, 5.3pt#, 1);
 z1 = (lerpbold(0.17w, 0.16w), X_H * (1 - APERTURE));
 z2 = (mid, X_TOP);
 z3 = (w - LINE_BEARING, .63 * X_H);
 z4 = (x3, BASELINE);
-z5 = (x3, lerpbold(.57 * X_H, .58 * X_H));
+z5 = (x3, lerpbold(.57 * X_H, .62 * X_H));
 z6 = (x2, y5);
-z8 = (x2 - lerpbold(0.2pt, 0), CAP_BOTTOM);
+z8 = (x2 - lerpbold(0.2pt, -0.1pt), CAP_BOTTOM);
 z7 = (CURVE_BEARING, lerp(y6, y8, 0.5));
 z9 = (x3, lerp(y4, y3, lerpbold(0.3, 0.25)));
 
@@ -29,38 +30,38 @@ if ITALIC = false:
     p7r = (x7, lerp(py6l, py8l, 0.5));   pen7(lerpbold(STEM, STEM * .95), 180);
     p9r = p31l; pen9(lerpbold(BAR, BAR * .5), 270);
 
+    
     adjp1 = (lerp(px8r, px7r, lerpbold(0.08, 0.4)), py8r);
     adjp2 = p8l shifted(-ARCHCORR / 4, 0);
     adjp3 = (lerp(px2r, x1, lerpbold(0, -.2)), py2r);
     adjp4 = (lerp(x6, px7r, lerpbold(0.1, 0.2)), py6r);
-   
-    fill p1r..tsn..adjp3{rt}..tsn..p3r{dn} -- p4r -- p4l -- p31l -- p3l{up}..tsn..p2l{lt}..p1l -- cycle;
+
+    fill p1r..tsn..adjp3{rt}..tsn..p3r{dn} -- p4r -- p4l -- p31l -- p3l{up}..tsn..p2l{lt}..tsn..p1l -- cycle;
 
     fill p5r -- adjp4{lt}..tsn..p7r{dn}..tsn..adjp1{rt}..p9r -- p9l..adjp2{lt}..tsn..p7l{up}..tsn..p6l{rt} -- p5l -- cycle;
     
   else:
     p1  = z1 shifted(lerpbold(0, -.2pt), lerpbold(0, .5pt)); pen1(lerpbold(BAR_THIN, BAR_FINE), 90 + lerpbold(APERTURE_ANGLE, 45));
-    p2r = z2 shifted(lerpbold(-0.03w, -0.06w), 0); pen2(lerpbold(BAR_THIN, BAR_FINE), 90);
+    p2r = z2 shifted(lerpbold(-0.03w, -0.06w), 0); pen2(lerpbold(BAR_TERM, BAR* .28), 90);
     p3r = z3; pen3(lerpbold(STEM, STEM * .9), 0);
-    p4r = z4; pen4(lerpbold(STEM_NIB, STEM / 2), 0);
+    p4r = z4; pen4(lerpbold(STEM_NIB, STEM_TQ), 0);
     
-    p31r = (x3, y9); pen31(lerpbold(STEM, STEM * .9), 0);
-
-    p5r = z5;   pen5(lerpbold(BAR_THIN, BAR_FINE), 90);
-    p6r = z6 shifted(lerpbold(-.3pt, 0),0);   pen6(lerpbold(BAR_THIN, BAR_FINE), 90);
-    p8r = (px6, y8);   pen8(BAR_THIN, 270);
+    p31r = (x3, y9) shifted(0, lerpbold(0, -.3pt)); pen31(lerpbold(STEM, STEM * .9), 0);
+    p5r = z5;   pen5(lerpbold(BAR_TERM, BAR_THIN), 90);
+    p6r = z6 shifted(lerpbold(-.3pt, 0),0);   pen6(lerpbold(BAR_TERM, BAR_THIN), 90);
+    p8r = (px6, y8);   pen8(lerpbold(BAR_TERM, BAR_THIN), 270);
     p7r = (x7, lerp(py6l, py8l, 0.5));   pen7(lerpbold(STEM, STEM * .9), 180);
-    p9r = p31l; pen9(lerpbold(BAR_JOINT, BAR_THIN), 270);
+    p9r = p31l; pen9(lerpbold(BAR, BAR / 2), 270);
 
     adjp1 = (lerp(px8r, px7r, lerpbold(0.08, 0.33)), py8r);
-    adjp2 = p8l shifted(-ARCHCORR / 3, 0);
-    adjp3 = (lerp(px2r, x1, lerpbold(0, -.3)), py2r);
+    adjp2 = p8l shifted(-ARCHCORR * .33, 0);
+    adjp3 = (lerp(px2r, x1, lerpbold(-.05, -.3)), py2r);
     adjp4 = (lerp(x6, px7r, lerpbold(0.1, 0.2)), py6r);
 
     serif(1, p1r, (lerpbold(STEM, STEM * .6)), (lerpbold(-.8pt, -1.1pt)), .5, lerpbold(0, 0), true);
-   serif(2, z4, (lerpbold(STEM, BAR_THIN)), (lerpbold(-.8pt, -.7pt)), .5, 120, false);
+   serif(2, z4, (lerpbold(STEM, BAR * .6)), (lerpbold(-.8pt, -.7pt)), .5, 90, true);
    
-    fill p1r..tsn..adjp3{rt}..tsn..p3r{dn} -- (x3, ypart sfp2b) -- sfp2c -- sfp2d --- p4l -- p31l -- p3l{up}..tsn..p2l{lt} .. sfp1b -- sfp1c -- sfp1d -- sfp1a --  cycle;
+    fill p1r..tsn..adjp3{rt}..tsn..p3r{dn} -- sfp2b -- sfp2c -- sfp2d --- p4l -- p31l -- p3l{up}..tsn..p2l{lt} .. sfp1b -- sfp1c -- sfp1d -- sfp1a --  cycle;
 
     
     fill p5r -- adjp4{lt}..tsn..p7r{dn}..tsn..adjp1{rt}..p9r -- p9l..adjp2{lt}..tsn..p7l{up}..tsn..p6l{rt} -- p5l -- cycle;
@@ -72,7 +73,7 @@ else:
      p1  = z1 shifted(lerpbold(0, -.2pt), lerpbold(0, .5pt)); pen1(lerpbold(BAR_THIN, BAR_FINE), 90 + lerpbold(APERTURE_ANGLE, 45));
     p2r = z2 shifted(lerpbold(-0.03w, -0.06w), 0); pen2(lerpbold(BAR_THIN, BAR_FINE), 90);
     p3r = z3; pen3(lerpbold(STEM, STEM * .9), 0);
-    p4r = z4; pen4(lerpbold(STEM_NIB, STEM / 2), 0);
+    p4r = z4; pen4(lerpbold(STEM_NIB, STEM_NIB), 0);
     
     p31r = (x3, y9); pen31(lerpbold(STEM, STEM * .9), 0);
 
@@ -92,11 +93,11 @@ else:
    
     fill p1r..tsn..adjp3{rt}..tsn..p3r{dn} -- (x3, ypart sfp2b) -- sfp2c -- sfp2d --- p4l -- p31l -- p3l{up}..tsn..p2l{lt} .. sfp1b -- sfp1c -- sfp1d -- sfp1a --  cycle;
 
-    
     fill p5r -- adjp4{lt}..tsn..p7r{dn}..tsn..adjp1{rt}..p9r -- p9l..adjp2{lt}..tsn..p7l{up}..tsn..p6l{rt} -- p5l -- cycle;
   fi
   fi
 
+  
 italicize;
 
 penlabels(range 1 thru 10);

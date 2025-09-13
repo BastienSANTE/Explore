@@ -1,0 +1,28 @@
+{
+"name": "icircumflex",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"components": [
+{
+"name": "uni0302",
+"transformation": {
+"translateX": 157,
+"translateY": -146
+}
+},
+{
+"name": "dotlessi"
+}
+],
+"xAdvance": 313
+}
+}
+}
+}

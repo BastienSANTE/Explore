@@ -1,0 +1,28 @@
+{
+"name": "ocircumflex",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"components": [
+{
+"name": "uni0302",
+"transformation": {
+"translateX": 285,
+"translateY": -154
+}
+},
+{
+"name": "o"
+}
+],
+"xAdvance": 576
+}
+}
+}
+}

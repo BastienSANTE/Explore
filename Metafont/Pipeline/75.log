@@ -1,4 +1,4 @@
-This is MetaPost, version 2.11 (TeX Live 2025) (kpathsea version 6.4.1)  1 SEP 2025 18:57
+This is MetaPost, version 2.11 (TeX Live 2025) (kpathsea version 6.4.1)  7 SEP 2025 11:45
 **../Glyphs/Latin1/75.mf
 (/usr/local/texlive/2025/texmf-dist/metapost/base/mfplain.mp
 Preloading the plain base, version 0.99: preliminaries,
@@ -84,11 +84,11 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {false}
 {if}
 {true}
-{(false)=(true)}
-{false}
+{(true)=(true)}
+{true}
 {(5.8)*(1.1)}
 {WIDTH:=6.38004}
-{fi}
+{else}
 {fi}
 {forsuffixes}
 {loop value=SERIF_LENGTH}
@@ -1049,6 +1049,8 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {(picture)scaled(1.024)}
 {(picture)shifted((0,3.32162))}
 {currentpicture:=picture}
+{(picture)scaled(5)}
+{currentpicture:=picture}
 {if}
 {numeric(pen)}
 {false}
@@ -1067,6 +1069,12 @@ and a few last-minute items.) (../Glyphs/Latin1/75.mf
 {ypart((0.5,-0.5))}
 {pen_bot:=-0.5}
 {path}
+{(398.41956)*(5)}
+{(317.74136)*(5)}
+{(398.41956)*(5)}
+{(317.74136)*(5)}
+{(-95.6206)*(5)}
+{(-95.6206)*(5)}
 {addto}
 {if}
 {picture(path)}

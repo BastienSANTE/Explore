@@ -1,0 +1,28 @@
+{
+"name": "Idieresis",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"components": [
+{
+"name": "uni0308",
+"transformation": {
+"translateX": 121,
+"translateY": 20
+}
+},
+{
+"name": "I"
+}
+],
+"xAdvance": 232
+}
+}
+}
+}

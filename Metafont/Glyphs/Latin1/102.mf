@@ -3,7 +3,7 @@ input ../Config/ExploreSansCFG.mf;
 export_setup;
 
 % U+0066 LATIN CAPITAL SMALL LETTER F - CODE 102
-newchar(102, 4.2pt#, 0);
+newchar(102, lerpbold(3.7pt#, 4.2pt#), 0);
 stem_x:= 0.46w;
 stem_arc_y:= lerpbold(0.8 * CAP_H, 0.95 * CAP_H);
 terminal_angle:= 10;
@@ -19,30 +19,29 @@ z6 = (w - CURVE_BEARING, y5);
 if SERIF = false:
   p1 = z1; pen1(STEM, 0);
   p2 = z2; pen2(STEM, 0);
-  p3r = z3; pen3(lerpbold(BAR, BAR * .9), 90);
-  p4l = (x4, py3l); pen4(lerpbold(BAR_TERM, BAR * .85), 90 + lerpbold(0, -5));
+  p3r = z3 shifted(lerpbold(-.05w, -.05w), 0); pen3(lerpbold(BAR, BAR * .8), 90);
+  p4l = (x4, py3l); pen4(lerpbold(BAR_TERM, BAR * .75), 90 + lerpbold(0, -5));
   
-  p5r = z5; pen5(BAR, 90);
-  p6r = z6; pen6(BAR, 90);
+  p5r = z5; pen5(lerpbold(BAR, BAR * .85), 90);
+  p6r = z6; pen6(lerpbold(BAR, BAR * .85), 90);
   
-  adjp1 = z3 shifted(-ARCHCORR, 0);
-  
+  adjp1 = p3r shifted(-ARCHCORR, 0);
+ 
   fill p1l -- p2l{up}..tsn..adjp1{rt}..p4r -- p4l -- p3l{lt}..tsn..{dn}p2r -- p1r -- cycle;
   fill p5r -- p6r -- p6l -- p5l -- cycle;
 else:
   stemshift = lerp(0, x4 - x1, .06);
-
   p1 = z1 shifted(stemshift, 0); pen1(STEM, 0);
   p2 = z2 shifted(stemshift, 0); pen2(STEM, 0);
-  p3r = z3; pen3(lerpbold(BAR / 2, BAR_THIN), 90);
-  p4l = (x4, py3l); pen4(lerpbold(BAR_TQ, BAR * .25), 90);
+  p3r = z3 shifted(lerpbold(-.04w, 0w), 0); pen3(lerpbold(BAR_TQ, BAR_THIN), 90);
+  p4l = (x4, py3l); pen4(lerpbold(BAR * .5, BAR * .3), 90);
   
-  p5r = z5; pen5(lerpbold(BAR / 2, BAR * .3), 90);
-  p6r = z6; pen6(lerpbold(BAR / 2, BAR * .3), 90);
-  adjp1 = z3 shifted(-ARCHCORR, 0);
-
-  serif(1, p1l, lerpbold(BAR / 2, BAR * .3), -(x5 - px1l), .6, 90, false);
-  serif(2, p1r, lerpbold(BAR / 2, BAR * .3),  (x5 - px1l), 1, 90, false);
+  p5r = z5; pen5(lerpbold(BAR, BAR_THIN), 90);
+  p6r = z6; pen6(lerpbold(BAR, BAR_THIN), 90);
+  adjp1 = p3r shifted(-ARCHCORR, 0);
+  
+  serif(1, p1l, lerpbold(BAR_TERM, BAR_THIN), -(x5 - px1l), .6, 90, false);
+  serif(2, p1r, lerpbold(BAR_TERM, BAR_THIN),  (x5 - px1l), 1, 90, false);
   fill sfp1a -- sfp1b -- sfp1c -- sfp1d -- cycle;
   
   fill sfp2a -- sfp2b -- sfp2c -- sfp2d -- cycle;

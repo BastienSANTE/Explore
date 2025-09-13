@@ -1,0 +1,28 @@
+{
+"name": "Atilde",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"components": [
+{
+"name": "tildecomb",
+"transformation": {
+"translateX": 321,
+"translateY": 40
+}
+},
+{
+"name": "A"
+}
+],
+"xAdvance": 619
+}
+}
+}
+}

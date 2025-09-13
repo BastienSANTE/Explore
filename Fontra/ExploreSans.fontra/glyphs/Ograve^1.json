@@ -1,0 +1,28 @@
+{
+"name": "Ograve",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"components": [
+{
+"name": "gravecomb",
+"transformation": {
+"translateX": 334,
+"translateY": 41
+}
+},
+{
+"name": "O"
+}
+],
+"xAdvance": 662
+}
+}
+}
+}

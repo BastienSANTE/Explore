@@ -1,0 +1,41 @@
+{
+"name": "underscore",
+"sources": [
+{
+"name": "default",
+"layerName": "default"
+}
+],
+"layers": {
+"default": {
+"glyph": {
+"path": {
+"contours": [
+{
+"points": [
+{
+"x": 92,
+"y": 0
+},
+{
+"x": 498,
+"y": 0
+},
+{
+"x": 498,
+"y": -70
+},
+{
+"x": 92,
+"y": -70
+}
+],
+"isClosed": true
+}
+]
+},
+"xAdvance": 579
+}
+}
+}
+}
