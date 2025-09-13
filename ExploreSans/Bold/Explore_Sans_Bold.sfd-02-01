@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1735138560
-ModificationTime: 1757768398
+ModificationTime: 1757761474
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -125,7 +125,7 @@ NameList: AGL For New Fonts
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 12 4
+WinInfo: 0 12 10
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -201,7 +201,7 @@ Encoding: 257 66 1
 GlifName: B_
 Width: 673
 VWidth: 1048
-Flags: HW
+Flags: HWO
 HStem: 0 160<256 430.236> 297 140<256 408.181> 548 160<256 405.979>
 VStem: 64 192<160 297 437 548> 418 192<448.75 536.594> 449 192<176.244 280.579>
 LayerCount: 2
@@ -4028,9 +4028,9 @@ StartChar: at
 Encoding: 349 64 93
 GlifName: at
 Width: 1022
-Flags: WO
-HStem: -120 133<368.182 686.728> 116 134<422.508 521.667> 447 130<437.99 539.476> 687 137<386.915 644.793>
-VStem: 24 151<212.364 469.724> 246 160<266.378 411.215> 830 152<269.053 505.292>
+Flags: HW
+HStem: -120 133<368.017 686.728> 116 134<422.476 522.333> 447 130<438.055 539.492> 687 137<386.914 644.741>
+VStem: 24 151<212.447 469.812> 246 160<266.518 411.288> 830 152<269.1 505.333>
 LayerCount: 2
 Fore
 SplineSet
@@ -4051,8 +4051,8 @@ SplineSet
  830 575 713 687 504 687 c 0
  320 687 175 539 175 352 c 0
  175 138 296 13 501 13 c 0
- 606 13 716 41 737 48 c 1
- 737 -92 l 1
+ 606 13 716 41 737 48 c 5
+ 737 -92 l 5
  715 -98 615 -120 497 -120 c 0
  195 -120 24 48 24 346 c 0
  24 628 224 824 512 824 c 0
