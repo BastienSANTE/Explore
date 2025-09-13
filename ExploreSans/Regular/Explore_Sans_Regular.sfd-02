@@ -915,7 +915,7 @@ StartChar: U
 Encoding: 85 85 45
 Width: 635
 GlyphClass: 1
-Flags: HW
+Flags: HWO
 LayerCount: 2
 Fore
 SplineSet
@@ -1083,7 +1083,7 @@ StartChar: Z
 Encoding: 90 90 55
 Width: 603
 GlyphClass: 1
-Flags: HWO
+Flags: HW
 LayerCount: 2
 Fore
 SplineSet

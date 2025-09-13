@@ -761,7 +761,7 @@ Encoding: 278 87 22
 GlifName: W_
 Width: 890
 VWidth: 1048
-Flags: HW
+Flags: HWO
 HStem: 0 21G<162.395 375.492 518.621 727.605> 688 20G<4 183.814 355.96 541.814 706.186 886>
 LayerCount: 2
 Fore
@@ -815,7 +815,7 @@ Encoding: 280 89 24
 GlifName: Y_
 Width: 647
 VWidth: 1048
-Flags: HWO
+Flags: HW
 HStem: 0 21G<228.25 420.25> 688 20G<4 197.511 449.632 643>
 VStem: 228 192<0 268.648>
 AnchorPoint: "AccentCenter" 313 880 basechar 0
@@ -828,8 +828,8 @@ SplineSet
  458 708 l 1
  643 708 l 1
  420 270 l 1
- 420 0 l 5
- 228 0 l 5
+ 420 0 l 1
+ 228 0 l 1
  228 269 l 1
  4 708 l 1
 EndSplineSet
