@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1757699245
-ModificationTime: 1757781999
+ModificationTime: 1757784952
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5
@@ -158,44 +158,45 @@ NameList: AGL For New Fonts
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 48 12 4
+WinInfo: 143 11 4
 BeginPrivate: 0
 EndPrivate
 Grid
--1024 688.5 m 4
- 2048 688.5 l 1028
--1024 484.5 m 4
- 2048 484.5 l 1028
--1024 -63.99609375 m 4
- 2048 -63.99609375 l 1028
--1024 -34 m 4
- 2048 -34 l 1028
--1024 934 m 4
- 2048 934 l 1028
--1024 772 m 4
- 2048 772 l 1028
--1024 881 m 4
- 2048 881 l 1028
+-1024 996.666625977 m 0
+ 2048 996.666625977 l 1024
+-1024 484.5 m 0
+ 2048 484.5 l 1024
+-1024 -63.99609375 m 0
+ 2048 -63.99609375 l 1024
+-1024 -34 m 0
+ 2048 -34 l 1024
+-1024 934 m 0
+ 2048 934 l 1024
+-1024 772 m 0
+ 2048 772 l 1024
+-1024 881 m 0
+ 2048 881 l 1024
   Named: "Uppercase_Accent_Y"
--1020 687 m 4
- 2052 687 l 1028
+-1020 687 m 0
+ 2052 687 l 1024
   Named: "Lowercase_Accent_Y"
--1024 929 m 4
- 2048 929 l 1028
--1024 -191 m 4
- 2048 -191 l 1028
-2048 708 m 4
- -1024 708 l 4
- 2048 708 l 4
--1024 716 m 4
- 2048 716 l 1028
--1024 520 m 4
- 2048 520 l 1028
--1024 -8 m 4
- 2048 -8 l 1028
--1018 528 m 4
- 2054 528 l 1028
+-1024 929 m 0
+ 2048 929 l 1024
+-1024 -191 m 0
+ 2048 -191 l 1024
+2048 708 m 0
+ -1024 708 l 0
+ 2048 708 l 0
+-1024 716 m 0
+ 2048 716 l 1024
+-1024 520 m 0
+ 2048 520 l 1024
+-1024 -8 m 0
+ 2048 -8 l 1024
+-1018 528 m 0
+ 2054 528 l 1024
 EndSplineSet
+AnchorClass2: "AccentCenter""" 
 BeginChars: 65537 177
 
 StartChar: .notdef
@@ -2394,6 +2395,7 @@ GlyphClass: 1
 Flags: W
 HStem: -8 64<152.59 296.511 448.201 501> 245 62<156.815 368> 464 64<155.962 330.335>
 VStem: 42 80<84.9826 212.664> 368 80<104.012 245 307 425.212>
+AnchorPoint: "AccentCenter" 267 687 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -2556,6 +2558,7 @@ Encoding: 769 769 59
 Width: 0
 GlyphClass: 1
 Flags: HW
+AnchorPoint: "AccentCenter" -0.146484 834.021 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -3243,9 +3246,10 @@ EndChar
 
 StartChar: backslash
 Encoding: 92 92 71
-Width: 420
+Width: 374
 GlyphClass: 1
-Flags: HW
+Flags: W
+HStem: 752 20G<-24 63.5112>
 LayerCount: 2
 Back
 SplineSet
@@ -3257,11 +3261,11 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-81 768 m 1
- 81 766 424 -33 424 -35 c 1
- 340 -35 l 1
- 340 -33 -3 766 -3 768 c 1
- 81 768 l 1
+-24 772 m 5
+ 55 772 l 5
+ 398 -34 l 5
+ 319 -34 l 5
+ -24 772 l 5
 EndSplineSet
 EndChar
 
@@ -3838,7 +3842,10 @@ StartChar: dotlessi
 Encoding: 305 305 85
 Width: 313
 GlyphClass: 1
-Flags: HW
+Flags: W
+HStem: 0 21G<132 212> 455 65<30 132>
+VStem: 132 80<0 455>
+AnchorPoint: "AccentCenter" 176 687 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -3852,13 +3859,13 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-30 519 m 1
- 212 519 l 1
+30 520 m 5
+ 212 520 l 5
  212 0 l 1
  132 0 l 1
- 132 454 l 1
- 30 454 l 1
- 30 519 l 1
+ 132 455 l 5
+ 30 455 l 5
+ 30 520 l 5
 EndSplineSet
 EndChar
 
@@ -3869,6 +3876,7 @@ GlyphClass: 1
 Flags: HW
 HStem: -8 64<197.802 390.522> 236 59<128 411> 464 64<189.064 355.582>
 VStem: 48 80<130.416 236 295 394.563> 411 75<295.094 408.85>
+AnchorPoint: "AccentCenter" 274 687 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -3909,11 +3917,11 @@ SplineSet
  424 19 352 -8 279 -8 c 0
  134 -8 48 92 48 261 c 0
  48 436 128 528 279 528 c 0
-272 464 m 260
- 178 464 128 405 128 295 c 1
+268 464 m 260
+ 174 464 128 405 128 295 c 1
  411 295 l 1
  411 318 l 2
- 411 413 363 464 272 464 c 260
+ 411 413 359 464 268 464 c 260
 EndSplineSet
 EndChar
 
@@ -4537,11 +4545,11 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-246 464 m 4
+246 464 m 0
  171 464 130 426 130 357 c 0
  130 282 166 248 246 248 c 0
  319 248 356 284 356 357 c 0
- 356 424 315 464 246 464 c 4
+ 356 424 315 464 246 464 c 0
 242 528 m 0
  301 528 348 512 383 482 c 1
  399 505 430 520 462 520 c 2
@@ -4597,6 +4605,7 @@ Encoding: 768 768 101
 Width: 0
 GlyphClass: 1
 Flags: HW
+AnchorPoint: "AccentCenter" -0.146484 834.021 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -4608,11 +4617,11 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-128 796 m 1
+-81 931 m 1
+ 128 796 l 1
  91 744 l 1
  -127 867 l 1
  -81 931 l 1
- 128 796 l 1
 EndSplineSet
 EndChar
 
@@ -5393,6 +5402,7 @@ GlyphClass: 1
 Flags: HW
 HStem: -8 64<190.659 352.419> 464 64<193.192 354.484>
 VStem: 40 79<136.266 377.629> 428 80<142.078 379.426>
+AnchorPoint: "AccentCenter" 277 687 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -6745,9 +6755,9 @@ EndSplineSet
 Fore
 SplineSet
 319 772 m 5
- 398 772 l 1
- 55 -34 l 1
- -24 -34 l 1
+ 398 772 l 5
+ 55 -34 l 5
+ -24 -34 l 5
  319 772 l 5
 EndSplineSet
 EndChar
@@ -7071,6 +7081,9 @@ Encoding: 771 771 154
 Width: 0
 GlyphClass: 1
 Flags: HW
+HStem: 782 64<16.26 100.363> 844 65<-114.122 -27.1429>
+VStem: -193 72<786 837.938> 108 72<852.232 905>
+AnchorPoint: "AccentCenter" -0.146484 845.021 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -7093,18 +7106,15 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-84 844 m 0
- 138 844 143 907 143 921 c 1
- 208 877 l 1
- 207 876 l 1
- 197 837 157 774 82 774 c 0
- 10 774 -17 844 -70 844 c 0
- -130 844 -147 791 -148 788 c 2
- -152 770 l 1
- -152 766 l 1
- -208 809 l 1
- -208 811 -184 916 -63 916 c 0
- -7 916 40 844 84 844 c 0
+-73 909 m 0x70
+ -8 909 22 846 60 846 c 0xb0
+ 95 846 107 868 108 905 c 1
+ 180 905 l 1
+ 180 818 126 782 58 782 c 0xb0
+ -14 782 -27 844 -70 844 c 0
+ -108 844 -121 823 -121 786 c 1
+ -193 786 l 1
+ -193 857 -172 909 -73 909 c 0x70
 EndSplineSet
 EndChar
 
@@ -7164,6 +7174,7 @@ GlyphClass: 1
 Flags: W
 HStem: -8 64<192.054 322.834> 0 21G<416.543 482> 500 20G<72 152 404 482>
 VStem: 72 80<100.885 520> 404 78<119.164 520> 420 62<0 41.472>
+AnchorPoint: "AccentCenter" 276 687 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -7394,7 +7405,8 @@ StartChar: uni0302
 Encoding: 770 770 163
 Width: 0
 GlyphClass: 1
-Flags: HW
+Flags: HWO
+AnchorPoint: "AccentCenter" -0.146484 834.021 mark 0
 LayerCount: 2
 Back
 SplineSet
@@ -7769,9 +7781,9 @@ EndChar
 
 StartChar: yen
 Encoding: 165 165 174
-Width: 627
+Width: 595
 GlyphClass: 1
-Flags: HWO
+Flags: HW
 LayerCount: 2
 Back
 SplineSet
@@ -7803,17 +7815,18 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-116 360 m 1
- 116 296 l 1
- 514 296 l 1
- 514 360 l 1
- 116 360 l 1
-116 206 m 5
- 514 206 l 1
- 514 140 l 1
- 116 140 l 1
- 116 206 l 5
+100 322 m 1
+ 498 322 l 1
+ 498 258 l 1
+ 100 258 l 1
+ 100 322 l 1
+100 168 m 5
+ 498 168 l 1
+ 498 102 l 1
+ 100 102 l 1
+ 100 168 l 5
 EndSplineSet
+Refer: 53 89 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: z
