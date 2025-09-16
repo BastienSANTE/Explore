@@ -8,12 +8,8 @@
 %%% SETTINGS %%%
 \pagenumbering{gobble}
 
-\setmainfont{Explore_Sans_Regular.ttf}[
-  BoldFont = Explore_Sans_Bold.ttf,
-  ItalicFont = Explore_Sans_Regular_Italic.ttf,
-  Path = {./Exports/}
-]
-\setmonofont{ExploreMetaMonoRegular.ttf}[
+\setmainfont{ExploreSans_Normal.ttf}[
+  BoldFont = ExploreSans_Bold.ttf,
   Path = {./Exports/}
 ]
 
@@ -28,8 +24,8 @@
 \foreach \x in {33,...,512}{
   \iffontchar\font\x
   {
-    \begin{minipage}[b][1.1em][b]{1em}
-        \char\x\hspace*{\fill}
+    \begin{minipage}[b][1.1em][b]{.5em}
+        {\char\x\hspace*{\fill}}
   \end{minipage}
   }
   \fi
@@ -38,18 +34,8 @@
 \foreach \x in {33,...,512}{
   \iffontchar\font\x
   {
-    \begin{minipage}[b][1.1em][b]{1em}
+    \begin{minipage}[b][1.1em][b]{.5em}
         \textbf{\char\x}\hspace*{\fill}
-  \end{minipage}
-  }
-  \fi
-}
-
-\foreach \x in {33,...,512}{
-  \iffontchar\font\x
-  {
-    \begin{minipage}[b][1.1em][b]{1em}
-        \texttt{\char\x}\hspace*{\fill}
   \end{minipage}
   }
   \fi
@@ -57,11 +43,13 @@
 
 \newpage
 
-\fontsize{64}{64}\selectfont
+\fontsize{180}{180}\selectfont
 \noindent
-\textbf{Lorem ipsum dolor sit amet, consectetur adpiscing elit.}\\
+\begin{center}
+\textbf{Skefga}\\
 \noindent
-{Lorem ipsum dolor sit amet, consectetur adpiscing elit.}
+    {Skefga}
+\end{center}
 
 \newpage
 \noindent

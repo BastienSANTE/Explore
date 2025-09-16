@@ -1,18 +1,18 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.3.28)  29 APR 2025 11:32
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.6.27)  14 SEP 2025 19:01
  restricted system commands enabled.
 **Specimen.tex
 (./Specimen.tex
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-05-26>
 Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
 Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
 collection.
-luaotfload | conf : Root cache directory is "C:/texlive/2025/texmf-var/luatex-ca
-che/generic/names".
+luaotfload | conf : Root cache directory is "/home/bastien/.texlive2025/texmf-va
+r/luatex-cache/generic/names".
 luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
-olved path "c:/texlive/2025/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-
-28.lua".
+olved path "/usr/local/texlive/2025/texmf-dist/tex/luatex/luaotfload/fontloader-
+2023-12-28.lua".
 Lua-only attribute luaotfload@noligature = 1
 luaotfload | init : Context OpenType loader version 3.134
 Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
@@ -20,8 +20,8 @@ Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
 Inserting `luaotfload.define_font' in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "C:/texlive/2025/texmf-var/luatex-ca
-che/generic/names".
+luaotfload | conf : Root cache directory is "/home/bastien/.texlive2025/texmf-va
+r/luatex-cache/generic/names".
 Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
 Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
 Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
@@ -39,261 +39,255 @@ Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
-Inserting `tracingstacklevels' in `input_level_string'. (c:/texlive/2025/texmf-
-dist/tex/latex/base/article.cls
-Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
-(c:/texlive/2025/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from C:/texlive/2025/texmf-var/luat
-ex-cache/generic/names/luaotfload-names.luc.gz)
-\c@part=\count194
-\c@section=\count195
-\c@subsection=\count196
-\c@subsubsection=\count197
-\c@paragraph=\count198
-\c@subparagraph=\count199
-\c@figure=\count266
-\c@table=\count267
+Inserting `tracingstacklevels' in `input_level_string'. (/usr/local/texlive/202
+5/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from /home/bastien/.texlive2025/tex
+mf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count273
+\c@section=\count274
+\c@subsection=\count275
+\c@subsubsection=\count276
+\c@paragraph=\count277
+\c@subparagraph=\count278
+\c@figure=\count279
+\c@table=\count280
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen140
+\bibindent=\dimen147
 )
-(c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count268
-\Gm@cntv=\count269
-\c@Gm@tempcnt=\count270
-\Gm@bindingoffset=\dimen141
-\Gm@wd@mp=\dimen142
-\Gm@odd@mp=\dimen143
-\Gm@even@mp=\dimen144
-\Gm@layoutwidth=\dimen145
-\Gm@layoutheight=\dimen146
-\Gm@layouthoffset=\dimen147
-\Gm@layoutvoffset=\dimen148
+\Gm@cnth=\count281
+\Gm@cntv=\count282
+\c@Gm@tempcnt=\count283
+\Gm@bindingoffset=\dimen148
+\Gm@wd@mp=\dimen149
+\Gm@odd@mp=\dimen150
+\Gm@even@mp=\dimen151
+\Gm@layoutwidth=\dimen152
+\Gm@layoutheight=\dimen153
+\Gm@layouthoffset=\dimen154
+\Gm@layoutvoffset=\dimen155
 \Gm@dimlist=\toks18
 )
-(c:/texlive/2025/texmf-dist/tex/latex/mwe/mwe.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/mwe/mwe.sty
 Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
 
-(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: luatex.def on input line 106.
 
-(c:/texlive/2025/texmf-dist/tex/latex/graphics-def/luatex.def
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/luatex.def
 File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
 ))
-\Gin@req@height=\dimen149
-\Gin@req@width=\dimen150
+\Gin@req@height=\dimen156
+\Gin@req@width=\dimen157
 )
-(c:/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.sty
-(c:/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-(c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-01-18 L3 programming layer (loader) 
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-05-26 L3 programming layer (loader) 
 
-(c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
-File: l3backend-luatex.def 2024-05-08 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count271
-Inserting `l3color' in `luaotfload.parse_color'.
-\l__pdf_internal_box=\box52
-))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2025-04-14 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count284
+Inserting `l3color' in `luaotfload.parse_color'.))
 Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count272
-\l__lipsum_a_int=\count273
-\l__lipsum_b_int=\count274
-
-(c:/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
-(c:/texlive/2025/texmf-dist/tex/latex/blindtext/blindtext.sty
+\g__lipsum_par_int=\count285
+\l__lipsum_a_int=\count286
+\l__lipsum_b_int=\count287
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
 
-(c:/texlive/2025/texmf-dist/tex/latex/tools/xspace.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count275
-\c@Blindtext=\count276
-\c@blind@countparstart=\count277
-\blind@countxx=\count278
-\blindtext@numBlindtext=\count279
-\blind@countyy=\count280
-\c@blindlist=\count281
-\c@blindlistlevel=\count282
-\c@blindlist@level=\count283
-\blind@listitem=\count284
-\c@blind@listcount=\count285
-\c@blind@levelcount=\count286
-\blind@mathformula=\count287
-\blind@Mathformula=\count288
-\c@blind@randomcount=\count289
-\c@blind@randommax=\count290
-\c@blind@pangramcount=\count291
-\c@blind@pangrammax=\count292
+\c@blindtext=\count288
+\c@Blindtext=\count289
+\c@blind@countparstart=\count290
+\blind@countxx=\count291
+\blindtext@numBlindtext=\count292
+\blind@countyy=\count293
+\c@blindlist=\count294
+\c@blindlistlevel=\count295
+\c@blindlist@level=\count296
+\blind@listitem=\count297
+\c@blind@listcount=\count298
+\c@blind@levelcount=\count299
+\blind@mathformula=\count300
+\blind@Mathformula=\count301
+\c@blind@randomcount=\count302
+\c@blind@randommax=\count303
+\c@blind@pangramcount=\count304
+\c@blind@pangrammax=\count305
 ))
-(c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty
-(c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2024-08-16 L3 Experimental document command parser
 )
 Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
 Lua module: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
-(c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaT
 eX
-\l__fontspec_script_int=\count293
-\l__fontspec_language_int=\count294
-\l__fontspec_strnum_int=\count295
-\l__fontspec_tmp_int=\count296
-\l__fontspec_tmpa_int=\count297
-\l__fontspec_tmpb_int=\count298
-\l__fontspec_tmpc_int=\count299
-\l__fontspec_em_int=\count300
-\l__fontspec_emdef_int=\count301
-\l__fontspec_strong_int=\count302
-\l__fontspec_strongdef_int=\count303
-\l__fontspec_tmpa_dim=\dimen151
-\l__fontspec_tmpb_dim=\dimen152
-\l__fontspec_tmpc_dim=\dimen153
+\l__fontspec_script_int=\count306
+\l__fontspec_language_int=\count307
+\l__fontspec_strnum_int=\count308
+\l__fontspec_tmp_int=\count309
+\l__fontspec_tmpa_int=\count310
+\l__fontspec_tmpb_int=\count311
+\l__fontspec_tmpc_int=\count312
+\l__fontspec_em_int=\count313
+\l__fontspec_emdef_int=\count314
+\l__fontspec_strong_int=\count315
+\l__fontspec_strongdef_int=\count316
+\l__fontspec_tmpa_dim=\dimen158
+\l__fontspec_tmpb_dim=\dimen159
+\l__fontspec_tmpc_dim=\dimen160
 
-(c:/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
 )
-(c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
-(c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
 \pgfutil@everybye=\toks19
-\pgfutil@tempdima=\dimen154
-\pgfutil@tempdimb=\dimen155
+\pgfutil@tempdima=\dimen161
+\pgfutil@tempdimb=\dimen162
 )
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box53
-)
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
-(c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks20
 \pgfkeys@temptoks=\toks21
 
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.co
-de.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+tered.code.tex
 \pgfkeys@tmptoks=\toks22
-))) (c:/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
-\pgf@x=\dimen156
-\pgf@xa=\dimen157
-\pgf@xb=\dimen158
-\pgf@xc=\dimen159
-\pgf@y=\dimen160
-\pgf@ya=\dimen161
-\pgf@yb=\dimen162
-\pgf@yc=\dimen163
-\c@pgf@counta=\count304
-\c@pgf@countb=\count305
-\c@pgf@countc=\count306
-\c@pgf@countd=\count307
+)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen163
+\pgf@xa=\dimen164
+\pgf@xb=\dimen165
+\pgf@xc=\dimen166
+\pgf@y=\dimen167
+\pgf@ya=\dimen168
+\pgf@yb=\dimen169
+\pgf@yc=\dimen170
+\c@pgf@counta=\count317
+\c@pgf@countb=\count318
+\c@pgf@countc=\count319
+\c@pgf@countd=\count320
 )
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen164
-\pgfmath@count=\count308
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen171
+\pgfmath@count=\count321
 \pgfmath@box=\box54
 \pgfmath@toks=\toks23
 \pgfmath@stack@operand=\toks24
 \pgfmath@stack@operation=\toks25
 )
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
-x)
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
 .code.tex)
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
-ex)
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
-de.tex)
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
-)
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
-x)
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
-)
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
-etics.code.tex)
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count309
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count322
 )))
-(c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen165
-\pgffor@skip=\dimen166
+\pgffor@iter=\dimen172
+\pgffor@skip=\dimen173
 \pgffor@stack=\toks26
 \pgffor@toks=\toks27
 ))
 
 Package fontspec Info: 
-(fontspec)             Font family 'Explore_Sans_Regular.ttf(0)' created for
-(fontspec)             font 'Explore_Sans_Regular.ttf' with options
-(fontspec)             [Ligatures=TeX,BoldFont =
-(fontspec)             Explore_Sans_Bold.ttf,ItalicFont =
-(fontspec)             Explore_Sans_Regular_Italic.ttf,Path = {./Exports/}].
+(fontspec)             Font family 'ExploreSans_Normal.ttf(0)' created for
+(fontspec)             font 'ExploreSans_Normal.ttf' with options
+(fontspec)             [Ligatures=TeX,BoldFont = ExploreSans_Bold.ttf,Path =
+(fontspec)             {./Exports/}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[./Exports/Explore_Sans_Regular.ttf]:mode=node;scrip
-t=latn;language=dflt;+tlig;"
+(fontspec)             <->"[./Exports/ExploreSans_Normal.ttf]:mode=node;languag
+e=dflt;+tlig;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"[./Exports/Explore_Sans_Bold.ttf]:mode=node;script=l
-atn;language=dflt;+tlig;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"[./Exports/Explore_Sans_Regular_Italic.ttf]:mode=nod
-e;script=latn;language=dflt;+tlig;"
-
+(fontspec)             <->"[./Exports/ExploreSans_Bold.ttf]:mode=node;language=
+dflt;+tlig;"
 
 (./Specimen.aux)
 \openout1 = Specimen.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -329,25 +323,25 @@ LaTeX Font Info:    ... okay on input line 18.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count310
-\scratchdimen=\dimen167
+\scratchcounter=\count323
+\scratchdimen=\dimen174
 \scratchbox=\box55
-\nofMPsegments=\count311
-\nofMParguments=\count312
+\nofMPsegments=\count324
+\nofMParguments=\count325
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count313
-\MPscratchDim=\dimen168
-\MPnumerator=\count314
-\makeMPintoPDFobject=\count315
+\MPscratchCnt=\count326
+\MPscratchDim=\dimen175
+\MPnumerator=\count327
+\makeMPintoPDFobject=\count328
 \everyMPtoPDFconversion=\toks29
-) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -358,140 +352,1073 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 18.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 18.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 18.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 18.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 18.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 18.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 18.
-LaTeX Font Info:    Redeclaring math accent \check on input line 18.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 18.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 18.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 18.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 18.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 17.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 17.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 17.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 17.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 17.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 17.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 17.
+LaTeX Font Info:    Redeclaring math accent \check on input line 17.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 17.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 17.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 17.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 17.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 17.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 18.
+(Font)              `operators' in the math version `normal' on input line 17.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Explore_Sans_Regular.ttf(0)/m/n on i
-nput line 18.
+(Font)                  OT1/cmr/m/n --> TU/ExploreSans_Normal.ttf(0)/m/n on inp
+ut line 17.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 18.
+(Font)              `operators' in the math version `bold' on input line 17.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Explore_Sans_Regular.ttf(0)/m/n on 
-input line 18.
+(Font)                  OT1/cmr/bx/n --> TU/ExploreSans_Normal.ttf(0)/m/n on in
+put line 17.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Explore_Sans_Regular.ttf(0)/m/n --> TU/Explore_Sans_
-Regular.ttf(0)/m/n on input line 18.
+(Font)                  TU/ExploreSans_Normal.ttf(0)/m/n --> TU/ExploreSans_Nor
+mal.ttf(0)/m/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Explore_Sans_Regular.ttf(0)/m/it on
- input line 18.
+(Font)                  OT1/cmr/m/it --> TU/ExploreSans_Normal.ttf(0)/m/it on i
+nput line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Explore_Sans_Regular.ttf(0)/b/n on 
-input line 18.
+(Font)                  OT1/cmr/bx/n --> TU/ExploreSans_Normal.ttf(0)/b/n on in
+put line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 18.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 17.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Explore_Sans_Regular.ttf(0)/m/n --> TU/Explore_Sans_
-Regular.ttf(0)/b/n on input line 18.
+(Font)                  TU/ExploreSans_Normal.ttf(0)/m/n --> TU/ExploreSans_Nor
+mal.ttf(0)/b/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Explore_Sans_Regular.ttf(0)/b/it o
-n input line 18.
+(Font)                  OT1/cmr/bx/it --> TU/ExploreSans_Normal.ttf(0)/b/it on 
+input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 18.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 17.
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
+ []
+
+
+Overfull \hbox (1.42969pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 #|  
+ []
+
+
+Overfull \hbox (0.96094pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 $|  
+ []
+
+
+Overfull \hbox (3.1875pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 %|  
+ []
+
+
+Overfull \hbox (1.40625pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 &|  
+ []
+
+
+Overfull \hbox (0.9961pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 +|  
+ []
+
+
+Overfull \hbox (0.9961pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 =|  
+ []
+
+
+Overfull \hbox (5.17969pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 @|  
+ []
+
+
+Overfull \hbox (1.2539pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 A|  
+ []
+
+
+Overfull \hbox (1.19531pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 B|  
+ []
+
+
+Overfull \hbox (1.1836pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 C|  
+ []
+
+
+Overfull \hbox (1.26563pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 D|  
+ []
+
+
+Overfull \hbox (0.51563pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 F|  
+ []
+
+
+Overfull \hbox (1.59375pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 G|  
+ []
+
+
+Overfull \hbox (1.16016pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 H|  
+ []
+
+
+Overfull \hbox (0.8086pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 K|  
+ []
+
+
+Overfull \hbox (2.55469pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 M|  
+ []
+
+
+Overfull \hbox (1.8164pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 N|  
+ []
+
+
+Overfull \hbox (1.75781pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 O|  
+ []
+
+
+Overfull \hbox (1.08984pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 P|  
+ []
+
+
+Overfull \hbox (1.75781pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Q|  
+ []
+
+
+Overfull \hbox (1.11328pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 R|  
+ []
+
+
+Overfull \hbox (0.96094pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 S|  
+ []
+
+
+Overfull \hbox (1.16016pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 T|  
+ []
+
+
+Overfull \hbox (1.4414pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 U|  
+ []
+
+
+Overfull \hbox (1.67578pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 V|  
+ []
+
+
+Overfull \hbox (3.51563pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 W|  
+ []
+
+
+Overfull \hbox (1.73438pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 X|  
+ []
+
+
+Overfull \hbox (0.97266pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Y|  
+ []
+
+
+Overfull \hbox (1.0664pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Z|  
+ []
+
+
+Overfull \hbox (0.78516pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 _|  
+ []
+
+
+Overfull \hbox (1.03125pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 b|  
+ []
+
+
+Overfull \hbox (0.91406pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 d|  
+ []
+
+
+Overfull \hbox (0.53906pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 g|  
+ []
+
+
+Overfull \hbox (3.79688pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 m|  
+ []
+
+
+Overfull \hbox (0.67969pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 n|  
+ []
+
+
+Overfull \hbox (0.91406pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 p|  
+ []
+
+
+Overfull \hbox (1.00781pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 q|  
+ []
+
+
+Overfull \hbox (0.58594pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 u|  
+ []
+
+
+Overfull \hbox (2.8711pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 w|  
+ []
+
+
+Overfull \hbox (0.5039pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 y|  
+ []
+
+
+Overfull \hbox (1.83984pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 ~|  
+ []
+
+
+Overfull \hbox (1.04297pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 £|  
+ []
+
+
+Overfull \hbox (1.66406pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 ¤|  
+ []
+
+
+Overfull \hbox (0.97266pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 ¥|  
+ []
+
+
+Overfull \hbox (0.64453pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 §|  
+ []
+
+
+Overfull \hbox (0.9375pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 µ|  
+ []
+
+
+Overfull \hbox (2.78906pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 ¼|  
+ []
+
+
+Overfull \hbox (2.78906pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 ½|  
+ []
+
+
+Overfull \hbox (2.78906pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 ¾|  
+ []
+
+
+Overfull \hbox (1.2539pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 À|  
+ []
+
+
+Overfull \hbox (1.2539pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Á|  
+ []
+
+
+Overfull \hbox (1.2539pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Â|  
+ []
+
+
+Overfull \hbox (1.2539pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Ã|  
+ []
+
+
+Overfull \hbox (1.2539pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Ä|  
+ []
+
+
+Overfull \hbox (1.2539pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Å|  
+ []
+
+
+Overfull \hbox (4.6289pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Æ|  
+ []
+
+
+Overfull \hbox (1.10156pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Ç|  
+ []
+
+
+Overfull \hbox (1.75781pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Ò|  
+ []
+
+
+Overfull \hbox (1.75781pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Ó|  
+ []
+
+
+Overfull \hbox (1.75781pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Ô|  
+ []
+
+
+Overfull \hbox (1.75781pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Õ|  
+ []
+
+
+Overfull \hbox (1.75781pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Ö|  
+ []
+
+
+Overfull \hbox (1.4414pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Ù|  
+ []
+
+
+Overfull \hbox (1.4414pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Ú|  
+ []
+
+
+Overfull \hbox (1.4414pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Û|  
+ []
+
+
+Overfull \hbox (1.4414pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Ü|  
+ []
+
+
+Overfull \hbox (0.97266pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Ý|  
+ []
+
+
+Overfull \hbox (0.52734pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 Þ|  
+ []
+
+
+Overfull \hbox (3.97266pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 æ|  
+ []
+
+
+Overfull \hbox (1.03125pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 ð|  
+ []
+
+
+Overfull \hbox (0.58594pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 ù|  
+ []
+
+
+Overfull \hbox (0.58594pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 ú|  
+ []
+
+
+Overfull \hbox (0.58594pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 û|  
+ []
+
+
+Overfull \hbox (0.58594pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 ü|  
+ []
+
+
+Overfull \hbox (0.5039pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 ý|  
+ []
+
+
+Overfull \hbox (1.11328pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 þ|  
+ []
+
+
+Overfull \hbox (0.5039pt too wide) in paragraph at lines 32--32
+[]\TU/ExploreSans_Normal.ttf(0)/m/n/12 ÿ|  
+ []
+
+
+Overfull \hbox (1.67578pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 #|  
+ []
+
+
+Overfull \hbox (1.14844pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 $|  
+ []
+
+
+Overfull \hbox (3.45703pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 %|  
+ []
+
+
+Overfull \hbox (1.95703pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 &|  
+ []
+
+
+Overfull \hbox (0.79688pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 +|  
+ []
+
+
+Overfull \hbox (0.70313pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 0|  
+ []
+
+
+Overfull \hbox (0.89063pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 1|  
+ []
+
+
+Overfull \hbox (0.70313pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 2|  
+ []
+
+
+Overfull \hbox (0.70313pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 3|  
+ []
+
+
+Overfull \hbox (0.70313pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 4|  
+ []
+
+
+Overfull \hbox (0.70313pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 5|  
+ []
+
+
+Overfull \hbox (0.70313pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 6|  
+ []
+
+
+Overfull \hbox (0.70313pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 7|  
+ []
+
+
+Overfull \hbox (0.70313pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 8|  
+ []
+
+
+Overfull \hbox (0.70313pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 9|  
+ []
+
+
+Overfull \hbox (0.89063pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 =|  
+ []
+
+
+Overfull \hbox (0.55078pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 >|  
+ []
+
+
+Overfull \hbox (5.57813pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 @|  
+ []
+
+
+Overfull \hbox (1.69922pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 A|  
+ []
+
+
+Overfull \hbox (1.53516pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 B|  
+ []
+
+
+Overfull \hbox (1.48828pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 C|  
+ []
+
+
+Overfull \hbox (1.69922pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 D|  
+ []
+
+
+Overfull \hbox (0.85547pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 E|  
+ []
+
+
+Overfull \hbox (0.82031pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 F|  
+ []
+
+
+Overfull \hbox (1.89844pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 G|  
+ []
+
+
+Overfull \hbox (1.76953pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 H|  
+ []
+
+
+Overfull \hbox (1.51172pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 K|  
+ []
+
+
+Overfull \hbox (0.55078pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 L|  
+ []
+
+
+Overfull \hbox (3.19922pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 M|  
+ []
+
+
+Overfull \hbox (2.34375pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 N|  
+ []
+
+
+Overfull \hbox (2.09766pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 O|  
+ []
+
+
+Overfull \hbox (1.52344pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 P|  
+ []
+
+
+Overfull \hbox (2.09766pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Q|  
+ []
+
+
+Overfull \hbox (1.58203pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 R|  
+ []
+
+
+Overfull \hbox (1.14844pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 S|  
+ []
+
+
+Overfull \hbox (1.51172pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 T|  
+ []
+
+
+Overfull \hbox (1.91016pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 U|  
+ []
+
+
+Overfull \hbox (1.92188pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 V|  
+ []
+
+
+Overfull \hbox (3.97266pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 W|  
+ []
+
+
+Overfull \hbox (2.02734pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 X|  
+ []
+
+
+Overfull \hbox (1.27734pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Y|  
+ []
+
+
+Overfull \hbox (1.40625pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Z|  
+ []
+
+
+Overfull \hbox (0.67969pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 _|  
+ []
+
+
+Overfull \hbox (1.33594pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 b|  
+ []
+
+
+Overfull \hbox (1.27734pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 d|  
+ []
+
+
+Overfull \hbox (0.67969pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 e|  
+ []
+
+
+Overfull \hbox (0.9375pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 g|  
+ []
+
+
+Overfull \hbox (0.94922pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 h|  
+ []
+
+
+Overfull \hbox (0.75pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 k|  
+ []
+
+
+Overfull \hbox (4.3711pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 m|  
+ []
+
+
+Overfull \hbox (1.16016pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 n|  
+ []
+
+
+Overfull \hbox (0.92578pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 o|  
+ []
+
+
+Overfull \hbox (1.32422pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 p|  
+ []
+
+
+Overfull \hbox (1.3711pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 q|  
+ []
+
+
+Overfull \hbox (1.00781pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 u|  
+ []
+
+
+Overfull \hbox (0.72656pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 v|  
+ []
+
+
+Overfull \hbox (3.2461pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 w|  
+ []
+
+
+Overfull \hbox (0.67969pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 y|  
+ []
+
+
+Overfull \hbox (1.71094pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ~|  
+ []
+
+
+Overfull \hbox (1.24219pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 £|  
+ []
+
+
+Overfull \hbox (2.05078pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ¤|  
+ []
+
+
+Overfull \hbox (1.27734pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ¥|  
+ []
+
+
+Overfull \hbox (0.9375pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 §|  
+ []
+
+
+Overfull \hbox (1.48828pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 µ|  
+ []
+
+Missing character: There is no ¼ (U+00BC) in font [./Exports/ExploreSans_Bold.t
+tf]:mode=node;language=dflt;+tlig;!
+Missing character: There is no ¼ (U+00BC) in font [./Exports/ExploreSans_Bold.t
+tf]:mode=node;language=dflt;+tlig;!
+Missing character: There is no ½ (U+00BD) in font [./Exports/ExploreSans_Bold.t
+tf]:mode=node;language=dflt;+tlig;!
+Missing character: There is no ½ (U+00BD) in font [./Exports/ExploreSans_Bold.t
+tf]:mode=node;language=dflt;+tlig;!
+Missing character: There is no ¾ (U+00BE) in font [./Exports/ExploreSans_Bold.t
+tf]:mode=node;language=dflt;+tlig;!
+Missing character: There is no ¾ (U+00BE) in font [./Exports/ExploreSans_Bold.t
+tf]:mode=node;language=dflt;+tlig;!
+
+Overfull \hbox (1.69922pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 À|  
+ []
+
+
+Overfull \hbox (1.69922pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Á|  
+ []
+
+
+Overfull \hbox (1.69922pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Â|  
+ []
+
+
+Overfull \hbox (1.69922pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Ã|  
+ []
+
+
+Overfull \hbox (1.69922pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Ä|  
+ []
+
+
+Overfull \hbox (1.69922pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Å|  
+ []
+
+
+Overfull \hbox (4.82813pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Æ|  
+ []
+
+
+Overfull \hbox (1.4414pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Ç|  
+ []
+
+
+Overfull \hbox (0.85547pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 È|  
+ []
+
+
+Overfull \hbox (0.85547pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 É|  
+ []
+
+
+Overfull \hbox (0.85547pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Ê|  
+ []
+
+
+Overfull \hbox (0.85547pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Ë|  
+ []
+
+
+Overfull \hbox (2.09766pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Ò|  
+ []
+
+
+Overfull \hbox (2.09766pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Ó|  
+ []
+
+
+Overfull \hbox (2.09766pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Ô|  
+ []
+
+
+Overfull \hbox (2.09766pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Õ|  
+ []
+
+
+Overfull \hbox (2.09766pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Ö|  
+ []
+
+
+Overfull \hbox (1.91016pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Ù|  
+ []
+
+
+Overfull \hbox (1.91016pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Ú|  
+ []
+
+
+Overfull \hbox (1.91016pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Û|  
+ []
+
+
+Overfull \hbox (1.91016pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Ü|  
+ []
+
+
+Overfull \hbox (1.27734pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Ý|  
+ []
+
+
+Overfull \hbox (0.89063pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 Þ|  
+ []
+
+
+Overfull \hbox (4.17188pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 æ|  
+ []
+
+
+Overfull \hbox (0.67969pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 è|  
+ []
+
+
+Overfull \hbox (0.67969pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 é|  
+ []
+
+
+Overfull \hbox (0.67969pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ê|  
+ []
+
+
+Overfull \hbox (0.67969pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ë|  
+ []
+
+
+Overfull \hbox (1.26563pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ð|  
+ []
+
+
+Overfull \hbox (0.97266pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ñ|  
+ []
+
+
+Overfull \hbox (0.92578pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ò|  
+ []
+
+
+Overfull \hbox (0.92578pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ó|  
+ []
+
+
+Overfull \hbox (0.92578pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ô|  
+ []
+
+
+Overfull \hbox (0.92578pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 õ|  
+ []
+
+
+Overfull \hbox (0.92578pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ö|  
+ []
+
+
+Overfull \hbox (0.92578pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ø|  
+ []
+
+
+Overfull \hbox (1.00781pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ù|  
+ []
+
+
+Overfull \hbox (1.00781pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ú|  
+ []
+
+
+Overfull \hbox (1.00781pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 û|  
+ []
+
+
+Overfull \hbox (1.00781pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ü|  
+ []
+
+
+Overfull \hbox (0.67969pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ý|  
+ []
+
+
+Overfull \hbox (1.41797pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 þ|  
+ []
+
+
+Overfull \hbox (0.67969pt too wide) in paragraph at lines 42--42
+[]\TU/ExploreSans_Normal.ttf(0)/b/n/12 ÿ|  
  []
 
 
 
 [1
 
-{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (12.96979pt too wide) in paragraph at lines 48--52
-\TU/Explore_Sans_Regular.ttf(0)/b/n/64 Lorem ip-sum do-lor sit
- []
-
-
-Overfull \hbox (31.0323pt too wide) in paragraph at lines 48--52
-\TU/Explore_Sans_Regular.ttf(0)/b/n/64 amet, con-secte-tur ad-
- []
-
-
-Overfull \hbox (13.0948pt too wide) in paragraph at lines 48--52
-\TU/Explore_Sans_Regular.ttf(0)/m/n/64 amet, con-secte-tur ad-
- []
-
-
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+Missing character: There is no ¼ (U+00BC) in font [./Exports/ExploreSans_Bold.t
+tf]:mode=node;language=dflt;+tlig;!
+Missing character: There is no ½ (U+00BD) in font [./Exports/ExploreSans_Bold.t
+tf]:mode=node;language=dflt;+tlig;!
+Missing character: There is no ¾ (U+00BE) in font [./Exports/ExploreSans_Bold.t
+tf]:mode=node;language=dflt;+tlig;!
+]
 
 [2]
-Overfull \hbox (111.45418pt too wide) in paragraph at lines 54--59
-\TU/Explore_Sans_Regular.ttf(0)/m/n/48 AaB-bC-cD-dE-eF-fG-gH-hI-iJjKkLlMmNn 
+
+LaTeX Font Warning: Font shape `TU/ExploreSans_Normal.ttf(0)/m/it' undefined
+(Font)              using `TU/ExploreSans_Normal.ttf(0)/m/n' instead on input l
+ine 59.
+
+
+Overfull \hbox (108.07918pt too wide) in paragraph at lines 55--60
+\TU/ExploreSans_Normal.ttf(0)/m/n/48 AaB-bC-cD-dE-eF-fG-gH-hI-iJjKkLlMmNn 
  []
 
 
-Overfull \hbox (70.06355pt too wide) in paragraph at lines 54--59
-\TU/Explore_Sans_Regular.ttf(0)/m/n/48 OoPpQqRrSsTtUuVvWwXxYyZz 
+Overfull \hbox (72.07918pt too wide) in paragraph at lines 55--60
+\TU/ExploreSans_Normal.ttf(0)/m/n/48 OoPpQqRrSsTtUuVvWwXxYyZz 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--59
+Underfull \hbox (badness 10000) in paragraph at lines 55--60
 
  []
 
 
-Overfull \hbox (115.20418pt too wide) in paragraph at lines 54--59
-\TU/Explore_Sans_Regular.ttf(0)/m/it/48 AaBbCcDdEeFfGgHhIiJjKkLlMmNn 
+Overfull \hbox (108.07918pt too wide) in paragraph at lines 55--60
+\TU/ExploreSans_Normal.ttf(0)/m/n/48 AaBbCcDdEeFfGgHhIiJjKkLlMmNn 
  []
 
 
-Overfull \hbox (68.89168pt too wide) in paragraph at lines 54--59
-\TU/Explore_Sans_Regular.ttf(0)/m/it/48 OoPpQqRrSsTtUuVvWwXxYyZz 
+Overfull \hbox (72.07918pt too wide) in paragraph at lines 55--60
+\TU/ExploreSans_Normal.ttf(0)/m/n/48 OoPpQqRrSsTtUuVvWwXxYyZz 
  []
 
 
 
 [3] (./Specimen.aux)
  ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-05-26>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 10103 strings out of 475506
- 125007,953878 words of node,token memory allocated
+ 10097 strings out of 470203
+ 125007,794899 words of node,token memory allocated
  406 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 4 attribute, 48 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 2:5514,3:1366,4:99,5:400,6:670,7:8602,9:2722,10:32,11:24
- 32952 multiletter control sequences out of 65536+600000
- 35 fonts using 1390599 bytes
- 94i,5n,102p,361b,245s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Users/b.sante/AppData/Local/Microsoft/Windows/Fonts/Explore_Sans_Regular_Ita
-lic.ttf><./Exports/Explore_Sans_Bold.ttf><./Exports/Explore_Sans_Regular.ttf>
-Output written on Specimen.pdf (3 pages, 29819 bytes).
+   avail lists: 2:5848,3:1366,4:136,5:370,6:670,7:8616,9:2718,10:48,11:16
+ 38247 multiletter control sequences out of 65536+600000
+ 32 fonts using 1316335 bytes
+ 88i,5n,92p,361b,235s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<./Exports/ExploreSans_Bold.ttf><./Exports/ExploreSans_Normal.ttf>
+Output written on Specimen.pdf (3 pages, 22152 bytes).
 
-PDF statistics: 35 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+PDF statistics: 28 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
