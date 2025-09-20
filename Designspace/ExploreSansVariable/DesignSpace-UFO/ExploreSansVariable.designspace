@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="4.0">
+ <axes>
+  <axis tag="wght" minimum="100" maximum="900" default="400" name="weight">
+   <labelname xml:lang="en">Weight</labelname>
+   <map input="100" output="100"/>
+   <map input="400" output="400"/>
+   <map input="900" output="900"/>
+  </axis>
+ </axes>
+ <sources>
+  <source filename="./ExploreSansVariable-ExtraLight.ufo" familyname="Explore Sans Variable" stylename="Regular" name="ExtraLight">
+   <location>
+    <dimension name="weight" xvalue="100"/>
+   </location>
+  </source>
+  <source filename="./ExploreSansVariable-Heavy.ufo" familyname="Explore Sans Variable" stylename="Black" name="Heavy">
+   <location>
+    <dimension name="weight" xvalue="900"/>
+   </location>
+  </source>
+  <source filename="./ExploreSansVariable-Normal.ufo" familyname="Explore Sans Variable" stylename="Normal" name="Normal">
+   <lib copy="1"/>
+   <groups copy="1"/>
+   <info copy="1"/>
+   <features copy="1"/>
+   <location>
+    <dimension name="weight" xvalue="400"/>
+   </location>
+  </source>
+ </sources>
+ <lib>
+  <dict>
+   <key>com.fontlab.mastersFolder</key>
+   <string>.</string>
+   <key>fontra.projectGlyphSets</key>
+   <array>
+    <dict>
+     <key>commentChars</key>
+     <string>#</string>
+     <key>dataFormat</key>
+     <string>glyph-names</string>
+     <key>name</key>
+     <string>GF Latin Kernel</string>
+     <key>url</key>
+     <string>https://raw.githubusercontent.com/googlefonts/glyphsets/main/data/results/txt/nice-names/GF_Latin_Kernel.txt</string>
+    </dict>
+   </array>
+  </dict>
+ </lib>
+</designspace>

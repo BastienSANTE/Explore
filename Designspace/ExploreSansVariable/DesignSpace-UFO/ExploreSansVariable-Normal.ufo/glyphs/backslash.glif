@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="backslash" format="2">
+  <advance width="374"/>
+  <unicode hex="005C"/>
+  <outline>
+    <contour>
+      <point x="-24" y="772" type="line"/>
+      <point x="55" y="772" type="line"/>
+      <point x="398" y="-34" type="line"/>
+      <point x="319" y="-34" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.hintData</key>
+  <dict>
+    <key>hhints</key>
+    <array>
+      <dict>
+        <key>position</key>
+        <integer>752</integer>
+        <key>width</key>
+        <integer>20</integer>
+      </dict>
+    </array>
+  </dict>
+  </dict>
+  </lib>
+</glyph>

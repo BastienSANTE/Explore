@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="semicolon" format="2">
+  <advance width="111"/>
+  <unicode hex="003B"/>
+  <outline>
+    <component base="comma" xOffset="28.8"/>
+    <contour>
+      <point x="108.8" y="1143.8" type="curve" smooth="yes"/>
+      <point x="168" y="1113.2"/>
+      <point x="185.4" y="1044.8"/>
+      <point x="154.8" y="987.2" type="curve" smooth="yes"/>
+      <point x="124.2" y="929.6"/>
+      <point x="56.4" y="911.6"/>
+      <point x="-2.8" y="942.2" type="curve" smooth="yes"/>
+      <point x="-60.4" y="972.8"/>
+      <point x="-77.4" y="1041.2"/>
+      <point x="-46.8" y="1098.8" type="curve" smooth="yes"/>
+      <point x="-16.2" y="1156.4"/>
+      <point x="51.2" y="1174.4"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.hintData</key>
+  <dict>
+    <key>hhints</key>
+    <array>
+      <dict>
+        <key>position</key>
+        <integer>382</integer>
+        <key>width</key>
+        <integer>146</integer>
+      </dict>
+    </array>
+    <key>vhints</key>
+    <array>
+      <dict>
+        <key>position</key>
+        <integer>34</integer>
+        <key>width</key>
+        <integer>146</integer>
+      </dict>
+      <dict>
+        <key>position</key>
+        <integer>46</integer>
+        <key>width</key>
+        <integer>82</integer>
+      </dict>
+    </array>
+  </dict>
+  </dict>
+  </lib>
+</glyph>

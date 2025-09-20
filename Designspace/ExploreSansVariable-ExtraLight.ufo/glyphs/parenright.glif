@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="parenright" format="2">
+  <advance width="240"/>
+  <unicode hex="0029"/>
+  <outline>
+    <contour>
+      <point x="9.4" y="800" type="curve"/>
+      <point x="51" y="800" type="line"/>
+      <point x="47.2" y="803"/>
+      <point x="213" y="706.4"/>
+      <point x="213" y="371" type="curve" smooth="yes"/>
+      <point x="213" y="172.8"/>
+      <point x="162.8" y="30.2"/>
+      <point x="44.4" y="-64" type="curve"/>
+      <point x="7.8" y="-64" type="line"/>
+      <point x="55.6" y="-30.2"/>
+      <point x="200.2" y="105.8"/>
+      <point x="200.2" y="371" type="curve" smooth="yes"/>
+      <point x="200.2" y="529.6"/>
+      <point x="159.6" y="678"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.fontlab.hintData</key>
+  <dict>
+    <key>vhints</key>
+    <array>
+      <dict>
+        <key>position</key>
+        <integer>189</integer>
+        <key>width</key>
+        <integer>192</integer>
+      </dict>
+    </array>
+  </dict>
+  </dict>
+  </lib>
+</glyph>
