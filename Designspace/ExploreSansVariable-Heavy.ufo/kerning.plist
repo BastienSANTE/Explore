@@ -1,43 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-  <key>A</key>
   <dict>
+    <key>A</key>
+    <dict>
+      <key>V</key>
+      <integer>-102</integer>
+    </dict>
+    <key>F</key>
+    <dict>
+      <key>A</key>
+      <integer>-140</integer>
+    </dict>
+    <key>T</key>
+    <dict>
+      <key>o</key>
+      <integer>-100</integer>
+      <key>public.kern2.e</key>
+      <integer>-90</integer>
+    </dict>
     <key>V</key>
-    <integer>-102</integer>
-  </dict>
-  <key>F</key>
-  <dict>
-    <key>A</key>
-    <integer>-140</integer>
-  </dict>
-  <key>T</key>
-  <dict>
-    <key>o</key>
-    <integer>-100</integer>
-  </dict>
-  <key>V</key>
-  <dict>
-    <key>A</key>
-    <integer>-114</integer>
-  </dict>
-  <key>W</key>
-  <dict>
-    <key>A</key>
-    <integer>-72</integer>
-  </dict>
-  <key>g</key>
-  <dict>
-    <key>e</key>
-    <integer>-50</integer>
-    <key>eacute</key>
-    <integer>-40</integer>
-  </dict>
-  <key>r</key>
-  <dict>
+    <dict>
+      <key>A</key>
+      <integer>-114</integer>
+    </dict>
+    <key>W</key>
+    <dict>
+      <key>A</key>
+      <integer>-72</integer>
+    </dict>
     <key>g</key>
-    <integer>-30</integer>
+    <dict>
+      <key>e</key>
+      <integer>-50</integer>
+      <key>eacute</key>
+      <integer>-40</integer>
+    </dict>
+    <key>r</key>
+    <dict>
+      <key>g</key>
+      <integer>-30</integer>
+    </dict>
   </dict>
-</dict>
 </plist>

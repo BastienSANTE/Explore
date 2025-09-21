@@ -1,48 +1,44 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <designspace format="4.0">
- <axes>
-  <axis tag="wght" minimum="100" maximum="900" default="100" name="weight">
-   <labelname xml:lang="en">Weight</labelname>
-  </axis>
- </axes>
- <sources>
-  <source filename="ExploreSansVariable-ExtraLight.ufo" familyname="Explore Sans Variable" stylename="Regular" name="ExtraLight">
-   <location>
-    <dimension name="weight" xvalue="100"/>
-   </location>
-  </source>
-  <source filename="ExploreSansVariable-Heavy.ufo" familyname="Explore Sans Variable" stylename="Black" name="Heavy">
-   <location>
-    <dimension name="weight" xvalue="900"/>
-   </location>
-  </source>
-  <source filename="ExploreSansVariable-Normal.ufo" familyname="Explore Sans Variable" stylename="Normal" name="Normal">
-   <lib copy="1"/>
-   <groups copy="1"/>
-   <info copy="1"/>
-   <features copy="1"/>
-   <location>
-    <dimension name="weight" xvalue="400"/>
-   </location>
-  </source>
- </sources>
- <lib>
-  <dict>
-   <key>com.fontlab.mastersFolder</key>
-   <real>0</real>
-   <key>fontra.projectGlyphSets</key>
-   <array>
+  <axes>
+    <axis tag="wght" name="weight" minimum="100" maximum="900" default="100">
+      <labelname xml:lang="en">Weight</labelname>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="ExploreSansVariable-ExtraLight.ufo" name="ExtraLight" familyname="Explore Sans Variable" stylename="ExtraThin">
+      <location>
+        <dimension name="weight" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="ExploreSansVariable-Heavy.ufo" name="Heavy" familyname="Explore Sans Variable" stylename="Black">
+      <location>
+        <dimension name="weight" xvalue="900"/>
+      </location>
+    </source>
+    <source filename="ExploreSansVariable-Normal.ufo" name="Normal" familyname="Explore Sans Variable" stylename="Normal">
+      <location>
+        <dimension name="weight" xvalue="400"/>
+      </location>
+    </source>
+  </sources>
+  <lib>
     <dict>
-     <key>commentChars</key>
-     <string>#</string>
-     <key>dataFormat</key>
-     <string>glyph-names</string>
-     <key>name</key>
-     <string>GF Latin Kernel</string>
-     <key>url</key>
-     <string>https://raw.githubusercontent.com/googlefonts/glyphsets/main/data/results/txt/nice-names/GF_Latin_Kernel.txt</string>
+      <key>com.fontlab.mastersFolder</key>
+      <real>0.0</real>
+      <key>fontra.projectGlyphSets</key>
+      <array>
+        <dict>
+          <key>commentChars</key>
+          <string>#</string>
+          <key>dataFormat</key>
+          <string>glyph-names</string>
+          <key>name</key>
+          <string>GF Latin Kernel</string>
+          <key>url</key>
+          <string>https://raw.githubusercontent.com/googlefonts/glyphsets/main/data/results/txt/nice-names/GF_Latin_Kernel.txt</string>
+        </dict>
+      </array>
     </dict>
-   </array>
-  </dict>
- </lib>
+  </lib>
 </designspace>
