@@ -11,10 +11,14 @@
     <dict>
       <key>A</key>
       <integer>-140</integer>
+      <key>public.kern2.a</key>
+      <integer>-97</integer>
     </dict>
     <key>T</key>
     <dict>
       <key>o</key>
+      <integer>-100</integer>
+      <key>public.kern2.a</key>
       <integer>-100</integer>
       <key>public.kern2.e</key>
       <integer>-90</integer>
@@ -23,11 +27,20 @@
     <dict>
       <key>A</key>
       <integer>-114</integer>
+      <key>public.kern2.a</key>
+      <integer>-43</integer>
     </dict>
     <key>W</key>
     <dict>
       <key>A</key>
       <integer>-72</integer>
+      <key>public.kern2.a</key>
+      <integer>-34</integer>
+    </dict>
+    <key>Y</key>
+    <dict>
+      <key>public.kern2.a</key>
+      <integer>-80</integer>
     </dict>
     <key>g</key>
     <dict>
