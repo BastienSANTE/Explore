@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0302" format="2">
+  <unicode hex="0302"/>
+  <anchor x="0" y="830.4" name="_AccentCenter"/>
+  <outline>
+    <contour>
+      <point x="-12" y="931" type="line"/>
+      <point x="12" y="931" type="line"/>
+      <point x="140" y="784" type="line"/>
+      <point x="115.2" y="760.8" type="line"/>
+      <point x="0" y="898.8" type="line"/>
+      <point x="-110" y="761" type="line"/>
+      <point x="-136" y="784" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>716</integer>
+            <key>width</key>
+            <integer>214</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>
