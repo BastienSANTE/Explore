@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="M" format="2">
-  <advance width="576"/>
+  <advance width="640"/>
   <unicode hex="004D"/>
   <outline>
     <contour>
@@ -11,10 +11,12 @@
       <point x="496" y="708" type="line"/>
       <point x="496" y="0" type="line"/>
       <point x="416" y="0" type="line"/>
-      <point x="416" y="463" type="line"/>
+      <point x="416" y="256" type="line"/>
+      <point x="416" y="500" type="line"/>
       <point x="338" y="179" type="line"/>
       <point x="248" y="179" type="line"/>
-      <point x="160" y="465" type="line"/>
+      <point x="160" y="502" type="line"/>
+      <point x="160" y="256" type="line"/>
       <point x="160" y="0" type="line"/>
       <point x="80" y="0" type="line"/>
     </contour>
