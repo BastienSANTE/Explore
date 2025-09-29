@@ -18,6 +18,16 @@
       <string>e</string>
       <string>eacute</string>
     </array>
+    <key>public.kern1.o</key>
+    <array>
+      <string>o</string>
+      <string>oacute</string>
+      <string>ocircumflex</string>
+      <string>odieresis</string>
+      <string>ograve</string>
+      <string>oslash</string>
+      <string>otilde</string>
+    </array>
     <key>public.kern2.a</key>
     <array>
       <string>a</string>
@@ -33,6 +43,16 @@
     <array>
       <string>e</string>
       <string>eacute</string>
+    </array>
+    <key>public.kern2.o</key>
+    <array>
+      <string>o</string>
+      <string>oacute</string>
+      <string>ocircumflex</string>
+      <string>odieresis</string>
+      <string>ograve</string>
+      <string>oslash</string>
+      <string>otilde</string>
     </array>
   </dict>
 </plist>
