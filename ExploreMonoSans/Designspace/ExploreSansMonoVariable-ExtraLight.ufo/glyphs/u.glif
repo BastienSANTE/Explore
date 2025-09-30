@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="u" format="2">
-  <advance width="612"/>
+  <advance width="600"/>
   <unicode hex="0075"/>
   <anchor x="276" y="687" name="AccentCenter"/>
   <outline>
@@ -12,14 +12,14 @@
       <point x="195" y="20"/>
       <point x="272" y="20" type="curve" smooth="yes"/>
       <point x="346" y="20"/>
-      <point x="431" y="64"/>
-      <point x="476" y="124" type="curve"/>
-      <point x="476" y="520" type="line"/>
-      <point x="508" y="520" type="line"/>
-      <point x="508" y="0" type="line"/>
-      <point x="483" y="0" type="line"/>
-      <point x="477" y="94" type="line"/>
-      <point x="453" y="56"/>
+      <point x="427" y="64"/>
+      <point x="472" y="124" type="curve"/>
+      <point x="472" y="520" type="line"/>
+      <point x="504" y="520" type="line"/>
+      <point x="504" y="0" type="line"/>
+      <point x="479" y="0" type="line"/>
+      <point x="473" y="94" type="line"/>
+      <point x="449" y="56"/>
       <point x="364" y="-8"/>
       <point x="271" y="-8" type="curve" smooth="yes"/>
       <point x="156" y="-8"/>
