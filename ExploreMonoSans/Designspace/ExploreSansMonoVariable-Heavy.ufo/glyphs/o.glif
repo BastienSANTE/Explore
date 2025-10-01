@@ -5,32 +5,32 @@
   <anchor x="328" y="686" name="AccentCenter"/>
   <outline>
     <contour>
-      <point x="306" y="387" type="curve" smooth="yes"/>
-      <point x="244" y="387"/>
-      <point x="224" y="349"/>
-      <point x="224" y="254" type="curve" smooth="yes"/>
-      <point x="224" y="167"/>
-      <point x="243" y="134"/>
-      <point x="306" y="134" type="curve" smooth="yes"/>
-      <point x="365" y="134"/>
-      <point x="388" y="170"/>
-      <point x="388" y="258" type="curve" smooth="yes"/>
-      <point x="388" y="347"/>
-      <point x="365" y="387"/>
+      <point x="300" y="387" type="curve" smooth="yes"/>
+      <point x="238" y="387"/>
+      <point x="216" y="349"/>
+      <point x="216" y="254" type="curve" smooth="yes"/>
+      <point x="216" y="167"/>
+      <point x="237" y="134"/>
+      <point x="300" y="134" type="curve" smooth="yes"/>
+      <point x="360" y="134"/>
+      <point x="384" y="170"/>
+      <point x="384" y="258" type="curve" smooth="yes"/>
+      <point x="384" y="347"/>
+      <point x="360" y="387"/>
     </contour>
     <contour>
-      <point x="306" y="528" type="curve" smooth="yes"/>
-      <point x="474" y="528"/>
-      <point x="580" y="428"/>
-      <point x="580" y="261" type="curve" smooth="yes"/>
-      <point x="580" y="93"/>
-      <point x="473" y="-8"/>
-      <point x="306" y="-8" type="curve" smooth="yes"/>
-      <point x="144" y="-8"/>
-      <point x="32" y="91"/>
-      <point x="32" y="259" type="curve" smooth="yes"/>
-      <point x="32" y="431"/>
-      <point x="139" y="528"/>
+      <point x="300" y="528" type="curve" smooth="yes"/>
+      <point x="470" y="528"/>
+      <point x="576" y="428"/>
+      <point x="576" y="261" type="curve" smooth="yes"/>
+      <point x="576" y="93"/>
+      <point x="468" y="-8"/>
+      <point x="300" y="-8" type="curve" smooth="yes"/>
+      <point x="137" y="-8"/>
+      <point x="24" y="91"/>
+      <point x="24" y="259" type="curve" smooth="yes"/>
+      <point x="24" y="431"/>
+      <point x="132" y="528"/>
     </contour>
   </outline>
   <lib>
