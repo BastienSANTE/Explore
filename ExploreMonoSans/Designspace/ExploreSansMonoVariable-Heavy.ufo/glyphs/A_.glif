@@ -2,23 +2,23 @@
 <glyph name="A" format="2">
   <advance width="600"/>
   <unicode hex="0041"/>
-  <anchor x="336" y="881" name="AccentCenter"/>
+  <anchor x="302" y="881" name="AccentCenter"/>
   <outline>
     <contour>
-      <point x="200" y="708" type="line"/>
-      <point x="416" y="708" type="line"/>
-      <point x="616" y="0" type="line"/>
-      <point x="432" y="0" type="line"/>
-      <point x="396" y="153" type="line"/>
-      <point x="225" y="153" type="line"/>
-      <point x="187" y="0" type="line"/>
-      <point x="-4" y="0" type="line"/>
+      <point x="194" y="708" type="line"/>
+      <point x="410" y="708" type="line"/>
+      <point x="610" y="0" type="line"/>
+      <point x="426" y="0" type="line"/>
+      <point x="390" y="153" type="line"/>
+      <point x="219" y="153" type="line"/>
+      <point x="181" y="0" type="line"/>
+      <point x="-10" y="0" type="line"/>
     </contour>
     <contour>
-      <point x="302" y="528" type="line"/>
-      <point x="251" y="293" type="line"/>
-      <point x="370" y="293" type="line"/>
-      <point x="317" y="528" type="line"/>
+      <point x="296" y="528" type="line"/>
+      <point x="245" y="293" type="line"/>
+      <point x="364" y="293" type="line"/>
+      <point x="311" y="528" type="line"/>
     </contour>
   </outline>
   <lib>
