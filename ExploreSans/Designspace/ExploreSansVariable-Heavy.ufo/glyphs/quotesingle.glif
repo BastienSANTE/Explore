@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="quotesingle" format="2">
   <advance width="185"/>
   <unicode hex="0027"/>
@@ -6,33 +6,33 @@
     <contour>
       <point x="18" y="772" type="line"/>
       <point x="166" y="772" type="line"/>
-      <point x="150" y="527" type="line"/>
-      <point x="34" y="527" type="line"/>
+      <point x="150" y="508" type="line"/>
+      <point x="34" y="508" type="line"/>
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.fontlab.hintData</key>
-  <dict>
-    <key>hhints</key>
-    <array>
+    <dict>
+      <key>com.fontlab.hintData</key>
       <dict>
-        <key>position</key>
-        <integer>527</integer>
-        <key>width</key>
-        <integer>245</integer>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>527</integer>
+            <key>width</key>
+            <integer>245</integer>
+          </dict>
+        </array>
+        <key>vhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>34</integer>
+            <key>width</key>
+            <integer>116</integer>
+          </dict>
+        </array>
       </dict>
-    </array>
-    <key>vhints</key>
-    <array>
-      <dict>
-        <key>position</key>
-        <integer>34</integer>
-        <key>width</key>
-        <integer>116</integer>
-      </dict>
-    </array>
-  </dict>
-  </dict>
+    </dict>
   </lib>
 </glyph>
