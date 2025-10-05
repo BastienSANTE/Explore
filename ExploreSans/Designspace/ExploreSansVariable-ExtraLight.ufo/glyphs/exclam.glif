@@ -25,34 +25,34 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.fontlab.hintData</key>
-  <dict>
-    <key>hhints</key>
-    <array>
+    <dict>
+      <key>com.fontlab.hintData</key>
       <dict>
-        <key>position</key>
-        <integer>-7</integer>
-        <key>width</key>
-        <integer>205</integer>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>-7</integer>
+            <key>width</key>
+            <integer>79</integer>
+          </dict>
+        </array>
+        <key>vhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>77</integer>
+            <key>width</key>
+            <integer>79</integer>
+          </dict>
+          <dict>
+            <key>position</key>
+            <integer>96</integer>
+            <key>width</key>
+            <integer>40</integer>
+          </dict>
+        </array>
       </dict>
-      <dict>
-        <key>position</key>
-        <integer>696</integer>
-        <key>width</key>
-        <integer>20</integer>
-      </dict>
-    </array>
-    <key>vhints</key>
-    <array>
-      <dict>
-        <key>position</key>
-        <integer>43</integer>
-        <key>width</key>
-        <integer>204</integer>
-      </dict>
-    </array>
-  </dict>
-  </dict>
+    </dict>
   </lib>
 </glyph>

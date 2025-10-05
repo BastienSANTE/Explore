@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="bracketright" format="2">
   <advance width="309"/>
   <unicode hex="005D"/>
@@ -24,28 +24,22 @@
             <key>position</key>
             <integer>-64</integer>
             <key>width</key>
-            <integer>144</integer>
+            <integer>28</integer>
           </dict>
           <dict>
             <key>position</key>
-            <integer>675</integer>
+            <integer>791</integer>
             <key>width</key>
-            <integer>144</integer>
+            <integer>28</integer>
           </dict>
         </array>
         <key>vhints</key>
         <array>
           <dict>
             <key>position</key>
-            <integer>31</integer>
+            <integer>213</integer>
             <key>width</key>
-            <integer>290</integer>
-          </dict>
-          <dict>
-            <key>position</key>
-            <integer>161</integer>
-            <key>width</key>
-            <integer>160</integer>
+            <integer>32</integer>
           </dict>
         </array>
       </dict>

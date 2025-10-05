@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="quotesingle" format="2">
   <advance width="142"/>
   <unicode hex="0027"/>
@@ -18,18 +18,18 @@
         <array>
           <dict>
             <key>position</key>
-            <integer>527</integer>
+            <integer>508</integer>
             <key>width</key>
-            <integer>245</integer>
+            <integer>264</integer>
           </dict>
         </array>
         <key>vhints</key>
         <array>
           <dict>
             <key>position</key>
-            <integer>34</integer>
+            <integer>66</integer>
             <key>width</key>
-            <integer>116</integer>
+            <integer>26</integer>
           </dict>
         </array>
       </dict>

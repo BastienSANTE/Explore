@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="semicolon" format="2">
-  <advance width="111"/>
+  <advance width="161"/>
   <unicode hex="003B"/>
   <outline>
-    <component base="comma" xOffset="7"/>
-    <component base="period" xOffset="-49" yOffset="457"/>
+    <component base="comma" xOffset="32"/>
+    <component base="period" xOffset="-21" yOffset="457"/>
   </outline>
   <lib>
     <dict>
@@ -14,24 +14,36 @@
         <array>
           <dict>
             <key>position</key>
-            <integer>382</integer>
+            <integer>-143</integer>
             <key>width</key>
-            <integer>146</integer>
+            <integer>222</integer>
+          </dict>
+          <dict>
+            <key>position</key>
+            <integer>449</integer>
+            <key>width</key>
+            <integer>79</integer>
           </dict>
         </array>
         <key>vhints</key>
         <array>
           <dict>
             <key>position</key>
-            <integer>34</integer>
+            <integer>14</integer>
             <key>width</key>
-            <integer>146</integer>
+            <integer>79</integer>
           </dict>
           <dict>
             <key>position</key>
-            <integer>46</integer>
+            <integer>34</integer>
             <key>width</key>
-            <integer>82</integer>
+            <integer>27</integer>
+          </dict>
+          <dict>
+            <key>position</key>
+            <integer>34</integer>
+            <key>width</key>
+            <integer>44</integer>
           </dict>
         </array>
       </dict>

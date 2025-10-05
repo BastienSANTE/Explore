@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="period" format="2">
   <advance width="211"/>
   <unicode hex="002E"/>
@@ -28,16 +28,16 @@
             <key>position</key>
             <integer>-8</integer>
             <key>width</key>
-            <integer>204</integer>
+            <integer>79</integer>
           </dict>
         </array>
         <key>vhints</key>
         <array>
           <dict>
             <key>position</key>
-            <integer>23</integer>
+            <integer>63</integer>
             <key>width</key>
-            <integer>204</integer>
+            <integer>79</integer>
           </dict>
         </array>
       </dict>

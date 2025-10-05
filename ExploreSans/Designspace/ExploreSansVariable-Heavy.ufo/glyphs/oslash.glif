@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="oslash" format="2">
   <advance width="635"/>
   <unicode hex="00F8"/>
@@ -34,12 +34,6 @@
             <integer>387</integer>
             <key>width</key>
             <integer>141</integer>
-          </dict>
-          <dict>
-            <key>position</key>
-            <integer>500</integer>
-            <key>width</key>
-            <integer>20</integer>
           </dict>
         </array>
         <key>vhints</key>

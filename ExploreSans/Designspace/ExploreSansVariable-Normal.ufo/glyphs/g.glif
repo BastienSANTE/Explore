@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="g" format="2">
   <advance width="552"/>
   <unicode hex="0067"/>
@@ -45,9 +45,7 @@
     </contour>
     <contour>
       <point x="202" y="44" type="line"/>
-      <point x="202" y="44"/>
-      <point x="108" y="-85"/>
-      <point x="108" y="-85" type="curve"/>
+      <point x="108" y="-85" type="line"/>
       <point x="154" y="-106"/>
       <point x="215" y="-128"/>
       <point x="286" y="-128" type="curve" smooth="yes"/>
@@ -87,15 +85,15 @@
           </dict>
           <dict>
             <key>position</key>
-            <integer>12</integer>
+            <integer>190</integer>
             <key>width</key>
-            <integer>67</integer>
+            <integer>58</integer>
           </dict>
           <dict>
             <key>position</key>
-            <integer>456</integer>
+            <integer>451</integer>
             <key>width</key>
-            <integer>64</integer>
+            <integer>69</integer>
           </dict>
           <dict>
             <key>position</key>
@@ -108,19 +106,19 @@
         <array>
           <dict>
             <key>position</key>
-            <integer>52</integer>
-            <key>width</key>
-            <integer>72</integer>
-          </dict>
-          <dict>
-            <key>position</key>
-            <integer>356</integer>
+            <integer>47</integer>
             <key>width</key>
             <integer>80</integer>
           </dict>
           <dict>
             <key>position</key>
-            <integer>438</integer>
+            <integer>351</integer>
+            <key>width</key>
+            <integer>80</integer>
+          </dict>
+          <dict>
+            <key>position</key>
+            <integer>437</integer>
             <key>width</key>
             <integer>80</integer>
           </dict>

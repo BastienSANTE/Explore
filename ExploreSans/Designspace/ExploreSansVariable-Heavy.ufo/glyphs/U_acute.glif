@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Uacute" format="2">
   <advance width="716"/>
   <unicode hex="00DA"/>
@@ -20,12 +20,6 @@
           </dict>
           <dict>
             <key>position</key>
-            <integer>688</integer>
-            <key>width</key>
-            <integer>20</integer>
-          </dict>
-          <dict>
-            <key>position</key>
             <integer>763</integer>
             <key>width</key>
             <integer>206</integer>
@@ -35,7 +29,7 @@
         <array>
           <dict>
             <key>position</key>
-            <integer>56</integer>
+            <integer>64</integer>
             <key>width</key>
             <integer>192</integer>
           </dict>
@@ -47,7 +41,7 @@
           </dict>
           <dict>
             <key>position</key>
-            <integer>468</integer>
+            <integer>476</integer>
             <key>width</key>
             <integer>192</integer>
           </dict>

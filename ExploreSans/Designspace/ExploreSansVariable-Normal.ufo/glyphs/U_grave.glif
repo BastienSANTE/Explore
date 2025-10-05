@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Ugrave" format="2">
   <advance width="635"/>
   <unicode hex="00D9"/>
@@ -20,12 +20,6 @@
           </dict>
           <dict>
             <key>position</key>
-            <integer>688</integer>
-            <key>width</key>
-            <integer>20</integer>
-          </dict>
-          <dict>
-            <key>position</key>
             <integer>784</integer>
             <key>width</key>
             <integer>187</integer>
@@ -35,7 +29,7 @@
         <array>
           <dict>
             <key>position</key>
-            <integer>78</integer>
+            <integer>92</integer>
             <key>width</key>
             <integer>80</integer>
           </dict>
@@ -47,7 +41,7 @@
           </dict>
           <dict>
             <key>position</key>
-            <integer>478</integer>
+            <integer>492</integer>
             <key>width</key>
             <integer>80</integer>
           </dict>

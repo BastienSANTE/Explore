@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="percent" format="2">
   <advance width="823"/>
   <unicode hex="0025"/>
@@ -102,36 +102,30 @@
             <key>width</key>
             <integer>108</integer>
           </dict>
-          <dict>
-            <key>position</key>
-            <integer>688</integer>
-            <key>width</key>
-            <integer>20</integer>
-          </dict>
         </array>
         <key>vhints</key>
         <array>
           <dict>
             <key>position</key>
-            <integer>17</integer>
+            <integer>16</integer>
             <key>width</key>
             <integer>118</integer>
           </dict>
           <dict>
             <key>position</key>
-            <integer>255</integer>
+            <integer>254</integer>
             <key>width</key>
             <integer>119</integer>
           </dict>
           <dict>
             <key>position</key>
-            <integer>450</integer>
+            <integer>449</integer>
             <key>width</key>
             <integer>119</integer>
           </dict>
           <dict>
             <key>position</key>
-            <integer>689</integer>
+            <integer>688</integer>
             <key>width</key>
             <integer>119</integer>
           </dict>

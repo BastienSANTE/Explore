@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ucircumflex" format="2">
   <advance width="635"/>
   <unicode hex="00FB"/>
@@ -26,12 +26,6 @@
           </dict>
           <dict>
             <key>position</key>
-            <integer>500</integer>
-            <key>width</key>
-            <integer>20</integer>
-          </dict>
-          <dict>
-            <key>position</key>
             <integer>560</integer>
             <key>width</key>
             <integer>214</integer>
@@ -41,13 +35,13 @@
         <array>
           <dict>
             <key>position</key>
-            <integer>56</integer>
+            <integer>64</integer>
             <key>width</key>
             <integer>192</integer>
           </dict>
           <dict>
             <key>position</key>
-            <integer>387</integer>
+            <integer>395</integer>
             <key>width</key>
             <integer>192</integer>
           </dict>
