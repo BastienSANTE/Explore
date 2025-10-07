@@ -39,7 +39,7 @@
     <key>openTypeHheaDescender</key>
     <integer>-224</integer>
     <key>openTypeHheaLineGap</key>
-    <integer>192</integer>
+    <integer>256</integer>
     <key>openTypeNameDesigner</key>
     <string>Bastien SANTE</string>
     <key>openTypeNamePreferredFamilyName</key>
@@ -92,7 +92,7 @@
     <key>openTypeOS2TypoDescender</key>
     <integer>-224</integer>
     <key>openTypeOS2TypoLineGap</key>
-    <integer>192</integer>
+    <integer>256</integer>
     <key>openTypeOS2VendorID</key>
     <string>Fontra</string>
     <key>openTypeOS2WeightClass</key>
