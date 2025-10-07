@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
+    <key>public.kern1./</key>
+    <array>
+      <string>slash</string>
+    </array>
     <key>public.kern1.A</key>
     <array>
       <string>A</string>
@@ -13,6 +17,10 @@
     <key>public.kern1.Y</key>
     <array>
       <string>Y</string>
+    </array>
+    <key>public.kern1.\</key>
+    <array>
+      <string>backslash</string>
     </array>
     <key>public.kern1.a</key>
     <array>
@@ -40,6 +48,10 @@
       <string>oslash</string>
       <string>otilde</string>
     </array>
+    <key>public.kern2./</key>
+    <array>
+      <string>slash</string>
+    </array>
     <key>public.kern2.A</key>
     <array>
       <string>A</string>
@@ -51,6 +63,10 @@
     <key>public.kern2.Y</key>
     <array>
       <string>Y</string>
+    </array>
+    <key>public.kern2.\</key>
+    <array>
+      <string>backslash</string>
     </array>
     <key>public.kern2.a</key>
     <array>
