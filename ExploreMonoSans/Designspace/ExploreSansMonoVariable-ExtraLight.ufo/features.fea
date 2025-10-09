@@ -27,3 +27,10 @@ languagesystem latn dflt;
 #
 # Stylistic Sets
 #
+feature ss01 {
+  featureNames {
+    name "Stylistic Set 1";
+    name 1 "Stylistic Set 1";
+  };
+  sub r by r.ss01;
+} ss01;
