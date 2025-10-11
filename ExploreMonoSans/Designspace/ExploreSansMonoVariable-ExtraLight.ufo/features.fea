@@ -19,14 +19,20 @@ languagesystem latn dflt;
 #< languagesystem
 
 
-#
-# Lookup definitions
-#
+
+#-----------------------#
+# Programming ligatures #
+#-----------------------#
+feature liga {
+
+  # The following applies to all scripts
+  sub equal equal by equal_equal.liga;
+} liga;
 
 
-#
-# Stylistic Sets
-#
+#----------------------#
+# Stylistic Glyph Sets #
+#----------------------#
 feature ss01 {
   featureNames {
     name "Stylistic Set 1";
