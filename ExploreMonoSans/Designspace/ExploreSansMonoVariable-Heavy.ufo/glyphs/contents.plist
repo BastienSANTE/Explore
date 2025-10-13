@@ -38,6 +38,8 @@
     <string>E_dieresis.glif</string>
     <key>Egrave</key>
     <string>E_grave.glif</string>
+    <key>Eth</key>
+    <string>E_th.glif</string>
     <key>Euro</key>
     <string>E_uro.glif</string>
     <key>F</key>
@@ -128,6 +130,8 @@
     <string>agrave.glif</string>
     <key>ampersand</key>
     <string>ampersand.glif</string>
+    <key>ampersand_ampersand.liga</key>
+    <string>ampersand_ampersand.liga.glif</string>
     <key>aring</key>
     <string>aring.glif</string>
     <key>asciicircum</key>
