@@ -14,21 +14,43 @@
         <label uservalue="900" name="Black"/>
       </labels>
     </axis>
+    <axis tag="sfns" name="serifness" values="0 100" default="0"/>
   </axes>
   <sources>
-    <source filename="ExploreSansVariable-ExtraLight.ufo" name="ExtraLight" familyname="Explore Sans Variable" stylename="ExtraThin">
+    <source filename="ExploreSansVariable-ExtraLightSans.ufo" name="ExtraLightSans" familyname="Explore Sans Variable" stylename="ExtraThin Sans">
       <location>
         <dimension name="weight" xvalue="100"/>
+        <dimension name="serifness" xvalue="0"/>
       </location>
     </source>
-    <source filename="ExploreSansVariable-Heavy.ufo" name="Heavy" familyname="Explore Sans Variable" stylename="Black">
-      <location>
-        <dimension name="weight" xvalue="900"/>
-      </location>
-    </source>
-    <source filename="ExploreSansVariable-Normal.ufo" name="Normal" familyname="Explore Sans Variable" stylename="Normal">
+    <source filename="ExploreSansVariable-NormalSans.ufo" name="NormalSans" familyname="Explore Sans Variable" stylename="Normal Sans">
       <location>
         <dimension name="weight" xvalue="400"/>
+        <dimension name="serifness" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="ExploreSansVariable-HeavySans.ufo" name="HeavySans" familyname="Explore Sans Variable" stylename="Black Sans">
+      <location>
+        <dimension name="weight" xvalue="900"/>
+        <dimension name="serifness" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="ExploreSansVariable_ExtraThinSerif.ufo" name="ExtraLightSerif" familyname="Explore Sans Variable" stylename="ExtraThin Serif">
+      <location>
+        <dimension name="weight" xvalue="100"/>
+        <dimension name="serifness" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="ExploreSansVariable_NormalSerif.ufo" name="NormalSerif" familyname="Explore Sans Variable" stylename="Normal Serif">
+      <location>
+        <dimension name="weight" xvalue="400"/>
+        <dimension name="serifness" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="ExploreSansVariable_BlackSerif.ufo" name="HeavySerif" familyname="Explore Sans Variable" stylename="Black Serif">
+      <location>
+        <dimension name="weight" xvalue="900"/>
+        <dimension name="serifness" xvalue="100"/>
       </location>
     </source>
   </sources>

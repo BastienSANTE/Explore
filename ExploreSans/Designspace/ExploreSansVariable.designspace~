@@ -1,27 +1,63 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <designspace format="5.0">
   <axes>
-    <axis tag="wght" name="weight" minimum="100" maximum="900" default="400"/>
+    <axis tag="wght" name="weight" minimum="100" maximum="900" default="400">
+      <labels>
+        <label uservalue="100" name="ExtraThin"/>
+        <label uservalue="200" name="ExtraLight"/>
+        <label uservalue="300" name="Light"/>
+        <label uservalue="400" name="Normal"/>
+        <label uservalue="500" name="Medium"/>
+        <label uservalue="600" name="SemiBold"/>
+        <label uservalue="700" name="Bold"/>
+        <label uservalue="800" name="ExtraBold"/>
+        <label uservalue="900" name="Black"/>
+      </labels>
+    </axis>
+    <axis tag="sfns" name="serifness" values="0 100" default="0"/>
   </axes>
   <sources>
-    <source filename="ExploreSansVariable_Hair.ufo" name="0c885930" familyname="Explore Sans" stylename="Hair">
+    <source filename="ExploreSansVariable-ExtraLight.ufo" name="ExtraLight" familyname="Explore Sans Variable" stylename="ExtraThin Sans">
       <location>
         <dimension name="weight" xvalue="100"/>
+        <dimension name="serifness" xvalue="0"/>
       </location>
     </source>
-    <source filename="ExploreSans_Normal.ufo" name="e2b7a227" familyname="Explore Sans" stylename="Normal">
-      <location>
-        <dimension name="weight" xvalue="400"/>
-      </location>
-    </source>
-    <source filename="ExploreSans_Heavy.ufo" name="026e7afd" familyname="Explore Sans" stylename="Heavy">
+    <source filename="ExploreSansVariable-Heavy.ufo" name="Heavy" familyname="Explore Sans Variable" stylename="Black Sans">
       <location>
         <dimension name="weight" xvalue="900"/>
+        <dimension name="serifness" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="ExploreSansVariable-Normal.ufo" name="Normal" familyname="Explore Sans Variable" stylename="Normal Sans">
+      <location>
+        <dimension name="weight" xvalue="400"/>
+        <dimension name="serifness" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="ExploreSansVariable_ExtraThin Serif.ufo" name="::fontra003" familyname="Explore Sans Variable" stylename="ExtraThin Serif">
+      <location>
+        <dimension name="weight" xvalue="100"/>
+        <dimension name="serifness" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="ExploreSansVariable_Normal Serif.ufo" name="::fontra004" familyname="Explore Sans Variable" stylename="Normal Serif">
+      <location>
+        <dimension name="weight" xvalue="400"/>
+        <dimension name="serifness" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="ExploreSansVariable_Black Serif.ufo" name="::fontra005" familyname="Explore Sans Variable" stylename="Black Serif">
+      <location>
+        <dimension name="weight" xvalue="900"/>
+        <dimension name="serifness" xvalue="100"/>
       </location>
     </source>
   </sources>
   <lib>
     <dict>
+      <key>com.fontlab.mastersFolder</key>
+      <real>0.0</real>
       <key>fontra.projectGlyphSets</key>
       <array>
         <dict>
@@ -33,6 +69,26 @@
           <string>GF Latin Kernel</string>
           <key>url</key>
           <string>https://raw.githubusercontent.com/googlefonts/glyphsets/main/data/results/txt/nice-names/GF_Latin_Kernel.txt</string>
+        </dict>
+        <dict>
+          <key>commentChars</key>
+          <string>#</string>
+          <key>dataFormat</key>
+          <string>glyph-names</string>
+          <key>name</key>
+          <string>GF Latin Plus</string>
+          <key>url</key>
+          <string>https://cdn.jsdelivr.net/gh/googlefonts/glyphsets/data/results/txt/nice-names/GF_Latin_Plus.txt</string>
+        </dict>
+        <dict>
+          <key>commentChars</key>
+          <string>#</string>
+          <key>dataFormat</key>
+          <string>glyph-names</string>
+          <key>name</key>
+          <string>GF Latin Core</string>
+          <key>url</key>
+          <string>https://cdn.jsdelivr.net/gh/googlefonts/glyphsets/data/results/txt/nice-names/GF_Latin_Core.txt</string>
         </dict>
       </array>
     </dict>
