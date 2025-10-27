@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="E" format="2">
+  <advance width="561"/>
+  <unicode hex="0045"/>
+  <anchor x="282" y="880" name="AccentCenter"/>
+  <outline>
+    <contour>
+      <point x="32" y="708" type="line"/>
+      <point x="512" y="708" type="line"/>
+      <point x="512" y="605" type="line"/>
+      <point x="476" y="605" type="line"/>
+      <point x="476" y="673" type="line"/>
+      <point x="185" y="673" type="line"/>
+      <point x="185" y="385" type="line"/>
+      <point x="434" y="385" type="line"/>
+      <point x="434" y="349" type="line"/>
+      <point x="185" y="349" type="line"/>
+      <point x="185" y="34" type="line"/>
+      <point x="496" y="34" type="line"/>
+      <point x="496" y="109" type="line"/>
+      <point x="532" y="109" type="line"/>
+      <point x="532" y="0" type="line"/>
+      <point x="32" y="0" type="line"/>
+      <point x="32" y="36" type="line"/>
+      <point x="105" y="36" type="line"/>
+      <point x="105" y="672" type="line"/>
+      <point x="32" y="672" type="line"/>
+    </contour>
+  </outline>
+</glyph>
