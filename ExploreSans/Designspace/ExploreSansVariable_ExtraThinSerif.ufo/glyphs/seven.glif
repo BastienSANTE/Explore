@@ -4,19 +4,15 @@
   <unicode hex="0037"/>
   <outline>
     <contour>
-      <point x="97" y="708" type="line"/>
+      <point x="65" y="708" type="line"/>
       <point x="479" y="708" type="line"/>
       <point x="479" y="688" type="line"/>
       <point x="190" y="0" type="line"/>
       <point x="160" y="0" type="line"/>
       <point x="448" y="686" type="line"/>
       <point x="97" y="686" type="line"/>
-    </contour>
-    <contour>
-      <point x="65" y="708" type="line"/>
-      <point x="65" y="559" type="line"/>
       <point x="97" y="559" type="line"/>
-      <point x="97" y="708" type="line"/>
+      <point x="65" y="559" type="line"/>
     </contour>
   </outline>
 </glyph>
