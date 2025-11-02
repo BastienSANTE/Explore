@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="y" format="2">
   <advance width="555"/>
   <unicode hex="0079"/>
@@ -17,7 +17,4 @@
       <point x="243" y="26" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict/>
-  </lib>
 </glyph>
