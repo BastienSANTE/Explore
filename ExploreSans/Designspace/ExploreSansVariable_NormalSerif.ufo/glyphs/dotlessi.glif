@@ -1,20 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="dotlessi" format="2">
-  <advance width="278"/>
+  <advance width="296"/>
   <unicode hex="0131"/>
   <anchor x="135" y="687" name="AccentCenter"/>
   <outline>
     <contour>
-      <point x="35" y="520" type="line"/>
-      <point x="179" y="520" type="line"/>
-      <point x="179" y="56" type="line"/>
-      <point x="243" y="56" type="line"/>
-      <point x="243" y="0" type="line"/>
-      <point x="35" y="0" type="line"/>
-      <point x="35" y="56" type="line"/>
-      <point x="99" y="56" type="line"/>
-      <point x="99" y="464" type="line"/>
-      <point x="35" y="464" type="line"/>
+      <point x="44" y="520" type="line"/>
+      <point x="188" y="520" type="line"/>
+      <point x="188" y="56" type="line"/>
+      <point x="252" y="56" type="line"/>
+      <point x="252" y="0" type="line"/>
+      <point x="108" y="0" type="line"/>
+      <point x="108" y="464" type="line"/>
+      <point x="44" y="464" type="line"/>
     </contour>
   </outline>
 </glyph>

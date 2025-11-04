@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="i" format="2">
-  <advance width="278"/>
+  <advance width="284"/>
   <unicode hex="0069"/>
   <outline>
     <contour>
-      <point x="142" y="739" type="curve" smooth="yes"/>
-      <point x="173" y="739"/>
-      <point x="196" y="715"/>
-      <point x="196" y="683" type="curve" smooth="yes"/>
-      <point x="196" y="652"/>
-      <point x="173" y="629"/>
-      <point x="142" y="629" type="curve" smooth="yes"/>
-      <point x="110" y="629"/>
-      <point x="86" y="652"/>
-      <point x="86" y="683" type="curve" smooth="yes"/>
-      <point x="86" y="715"/>
-      <point x="110" y="739"/>
+      <point x="127" y="739" type="curve" smooth="yes"/>
+      <point x="158" y="739"/>
+      <point x="181" y="715"/>
+      <point x="181" y="683" type="curve" smooth="yes"/>
+      <point x="181" y="652"/>
+      <point x="158" y="629"/>
+      <point x="127" y="629" type="curve" smooth="yes"/>
+      <point x="95" y="629"/>
+      <point x="71" y="652"/>
+      <point x="71" y="683" type="curve" smooth="yes"/>
+      <point x="71" y="715"/>
+      <point x="95" y="739"/>
     </contour>
-    <component base="dotlessi" xOffset="3"/>
+    <component base="dotlessi" xOffset="-12"/>
   </outline>
 </glyph>
