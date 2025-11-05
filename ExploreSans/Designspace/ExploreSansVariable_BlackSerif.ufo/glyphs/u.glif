@@ -7,15 +7,15 @@
     <contour>
       <point x="4" y="520" type="line"/>
       <point x="260" y="520" type="line"/>
-      <point x="260" y="174" type="line" smooth="yes"/>
-      <point x="260" y="96"/>
-      <point x="291" y="74"/>
-      <point x="326" y="74" type="curve" smooth="yes"/>
-      <point x="370" y="74"/>
-      <point x="398" y="101"/>
-      <point x="411" y="151" type="curve"/>
-      <point x="411" y="448" type="line"/>
-      <point x="347" y="448" type="line"/>
+      <point x="260" y="204" type="line" smooth="yes"/>
+      <point x="260" y="126"/>
+      <point x="291" y="104"/>
+      <point x="326" y="104" type="curve" smooth="yes"/>
+      <point x="370" y="104"/>
+      <point x="398" y="131"/>
+      <point x="411" y="181" type="curve"/>
+      <point x="411" y="424" type="line"/>
+      <point x="347" y="424" type="line"/>
       <point x="347" y="520" type="line"/>
       <point x="602" y="520" type="line"/>
       <point x="602" y="72" type="line"/>
@@ -29,8 +29,8 @@
       <point x="153" y="-8"/>
       <point x="68" y="61"/>
       <point x="68" y="191" type="curve" smooth="yes"/>
-      <point x="68" y="448" type="line"/>
-      <point x="4" y="448" type="line"/>
+      <point x="68" y="424" type="line"/>
+      <point x="4" y="424" type="line"/>
     </contour>
   </outline>
 </glyph>
