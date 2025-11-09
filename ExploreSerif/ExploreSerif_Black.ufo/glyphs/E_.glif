@@ -1,30 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="E" format="2">
-  <advance width="663"/>
+  <advance width="692"/>
   <unicode hex="0045"/>
   <anchor x="282" y="880" name="AccentCenter"/>
   <outline>
     <contour>
-      <point x="20" y="708" type="line"/>
-      <point x="612" y="708" type="line"/>
-      <point x="612" y="559" type="line"/>
-      <point x="540" y="559" type="line"/>
-      <point x="540" y="636" type="line"/>
-      <point x="286" y="636" type="line"/>
-      <point x="286" y="403" type="line"/>
-      <point x="520" y="403" type="line"/>
-      <point x="520" y="331" type="line"/>
-      <point x="286" y="331" type="line"/>
-      <point x="286" y="72" type="line"/>
-      <point x="560" y="72" type="line"/>
-      <point x="560" y="155" type="line"/>
-      <point x="632" y="155" type="line"/>
-      <point x="632" y="0" type="line"/>
-      <point x="20" y="0" type="line"/>
-      <point x="20" y="72" type="line"/>
-      <point x="93" y="72" type="line"/>
-      <point x="93" y="636" type="line"/>
-      <point x="20" y="636" type="line"/>
+      <point x="40" y="708" type="line"/>
+      <point x="632" y="708" type="line"/>
+      <point x="632" y="559" type="line"/>
+      <point x="536" y="559" type="line"/>
+      <point x="536" y="612" type="line"/>
+      <point x="306" y="612" type="line"/>
+      <point x="306" y="417" type="line"/>
+      <point x="540" y="417" type="line"/>
+      <point x="540" y="317" type="line"/>
+      <point x="306" y="317" type="line"/>
+      <point x="306" y="96" type="line"/>
+      <point x="556" y="96" type="line"/>
+      <point x="556" y="155" type="line"/>
+      <point x="652" y="155" type="line"/>
+      <point x="652" y="0" type="line"/>
+      <point x="40" y="0" type="line"/>
+      <point x="40" y="96" type="line"/>
+      <point x="113" y="96" type="line"/>
+      <point x="113" y="612" type="line"/>
+      <point x="40" y="612" type="line"/>
     </contour>
   </outline>
 </glyph>
