@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="t" format="2">
+  <advance width="372"/>
+  <unicode hex="0074"/>
+  <outline>
+    <contour>
+      <point x="136" y="671" type="line"/>
+      <point x="168" y="687" type="line"/>
+      <point x="168" y="520" type="line"/>
+      <point x="307" y="520" type="line"/>
+      <point x="307" y="492" type="line"/>
+      <point x="168" y="492" type="line"/>
+      <point x="168" y="92" type="line" smooth="yes"/>
+      <point x="168" y="45"/>
+      <point x="199" y="19"/>
+      <point x="246" y="19" type="curve" smooth="yes"/>
+      <point x="255" y="19"/>
+      <point x="271" y="20"/>
+      <point x="289" y="23" type="curve" smooth="yes"/>
+      <point x="312" y="28" type="line"/>
+      <point x="316" y="4" type="line"/>
+      <point x="278" y="-6"/>
+      <point x="259" y="-8"/>
+      <point x="238" y="-8" type="curve" smooth="yes"/>
+      <point x="179" y="-8"/>
+      <point x="136" y="28"/>
+      <point x="136" y="92" type="curve" smooth="yes"/>
+      <point x="136" y="492" type="line"/>
+      <point x="20" y="492" type="line"/>
+      <point x="20" y="520" type="line"/>
+      <point x="136" y="520" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>-8</integer>
+            <key>width</key>
+            <integer>27</integer>
+          </dict>
+          <dict>
+            <key>position</key>
+            <integer>4</integer>
+            <key>width</key>
+            <integer>18</integer>
+          </dict>
+          <dict>
+            <key>position</key>
+            <integer>492</integer>
+            <key>width</key>
+            <integer>28</integer>
+          </dict>
+        </array>
+        <key>vhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>136</integer>
+            <key>width</key>
+            <integer>32</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>
