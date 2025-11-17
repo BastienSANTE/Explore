@@ -1,20 +1,20 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="y" format="2">
   <advance width="594"/>
   <unicode hex="0079"/>
-  <anchor x="274" y="687" name="AccentCenter"/>
+  <anchor x="385.061" y="687" name="AccentCenter"/>
   <outline>
     <contour>
-      <point x="8" y="520" type="line"/>
-      <point x="222" y="520" type="line"/>
-      <point x="289" y="300" type="line"/>
-      <point x="302" y="206" type="line"/>
-      <point x="319" y="300" type="line"/>
-      <point x="392" y="520" type="line"/>
-      <point x="586" y="520" type="line"/>
-      <point x="296" y="-191" type="line"/>
-      <point x="116" y="-191" type="line"/>
-      <point x="211" y="37" type="line"/>
+      <point x="83.5635" y="520" type="line"/>
+      <point x="297.563" y="520" type="line"/>
+      <point x="317.802" y="300" type="line"/>
+      <point x="310.821" y="206" type="line"/>
+      <point x="347.802" y="300" type="line"/>
+      <point x="467.563" y="520" type="line"/>
+      <point x="661.563" y="520" type="line"/>
+      <point x="220.437" y="-191" type="line"/>
+      <point x="40.4365" y="-191" type="line"/>
+      <point x="183.899" y="37" type="line"/>
     </contour>
   </outline>
 </glyph>

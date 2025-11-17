@@ -1,0 +1,40 @@
+languagesystem DFLT dflt;
+
+
+# GPOS 
+
+
+lookup kernCrnagehorizontallookups0 {
+  lookupflag 0;
+} kernCrnagehorizontallookups0;
+
+feature kern {
+
+ script DFLT;
+     language dflt ;
+      lookup kernCrnagehorizontallookups0;
+} kern;
+
+@GDEF_Simple = [\A \AE \Aacute \Acircumflex \Adieresis \Agrave \Aring \Atilde \B \C 
+	\Ccedilla \D \E \Eacute \Ecircumflex \Edieresis \Egrave \Euro \F \G \H \I \Iacute 
+	\Icircumflex \Idieresis \Igrave \J \K \L \M \N \O \Oacute \Ocircumflex \Odieresis 
+	\Ograve \Otilde \P \Q \R \S \T \Thorn \U \Uacute \Ucircumflex \Udieresis \Ugrave \V \W 
+	\X \Y \Yacute \Z \a \aacute \acircumflex \adieresis \ae \agrave \ampersand \aring 
+	\asciicircum \asciitilde \asterisk \at \atilde \b \backslash \bar \braceleft 
+	\braceright \bracketleft \bracketright \c \ccedilla \cent \colon \comma 
+	\copyright \currency \d \dollar \dotlessi \e \eacute \ecircumflex \edieresis 
+	\egrave \eight \equal \eth \exclam \exclamdown \f \five \four \g \grave \greater \h 
+	\hyphen \i \iacute \icircumflex \idieresis \igrave \j \k \l \less \m \mu \n \nine 
+	\ntilde \numbersign \o \oacute \ocircumflex \odieresis \ograve \one \oslash 
+	\otilde \p \paragraph \parenleft \parenright \percent \period \plus \q \question 
+	\questiondown \quotedbl \quotesingle \r \s \section \semicolon \seven \six \slash 
+	\space \sterling \t \thorn \three \two \u \uacute \ucircumflex \udieresis \ugrave 
+	\umacron \underscore \uni00A0 \uni0304 \uni0327 \v \w \x \y \yacute \ydieresis \yen 
+	\z \zero ];
+@GDEF_Mark = [\acutecomb \gravecomb \tildecomb \uni0302 \uni0308 \uni030A ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , @GDEF_Mark, ;
+
+} GDEF;
+

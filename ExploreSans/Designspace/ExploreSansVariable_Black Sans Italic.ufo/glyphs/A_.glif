@@ -1,24 +1,24 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="A" format="2">
   <advance width="696"/>
   <unicode hex="0041"/>
-  <anchor x="336" y="876" name="AccentCenter"/>
+  <anchor x="446.954" y="876" name="AccentCenter"/>
   <outline>
     <contour>
-      <point x="231" y="708" type="line"/>
-      <point x="467" y="708" type="line"/>
-      <point x="692" y="0" type="line"/>
-      <point x="503" y="0" type="line"/>
-      <point x="460" y="153" type="line"/>
-      <point x="241" y="153" type="line"/>
-      <point x="196" y="0" type="line"/>
-      <point x="4" y="0" type="line"/>
+      <point x="306.245" y="708" type="line"/>
+      <point x="542.245" y="708" type="line"/>
+      <point x="616.755" y="0" type="line"/>
+      <point x="427.755" y="0" type="line"/>
+      <point x="417.276" y="153" type="line"/>
+      <point x="198.276" y="153" type="line"/>
+      <point x="120.755" y="0" type="line"/>
+      <point x="-71.2451" y="0" type="line"/>
     </contour>
     <contour>
-      <point x="348" y="528" type="line"/>
-      <point x="281" y="293" type="line"/>
-      <point x="421" y="293" type="line"/>
-      <point x="356" y="528" type="line"/>
+      <point x="384.984" y="528" type="line"/>
+      <point x="268.034" y="293" type="line"/>
+      <point x="408.034" y="293" type="line"/>
+      <point x="392.984" y="528" type="line"/>
     </contour>
   </outline>
   <lib>

@@ -1,31 +1,31 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="P" format="2">
   <advance width="680"/>
   <unicode hex="0050"/>
   <outline>
     <contour>
-      <point x="256" y="548" type="line"/>
-      <point x="256" y="376" type="line"/>
-      <point x="368" y="376" type="line" smooth="yes"/>
-      <point x="425" y="376"/>
-      <point x="456" y="407"/>
-      <point x="456" y="464" type="curve" smooth="yes"/>
-      <point x="456" y="518"/>
-      <point x="424" y="548"/>
-      <point x="368" y="548" type="curve" smooth="yes"/>
+      <point x="297.236" y="548" type="line"/>
+      <point x="260.676" y="376" type="line"/>
+      <point x="372.676" y="376" type="line" smooth="yes"/>
+      <point x="429.676" y="376"/>
+      <point x="467.266" y="407"/>
+      <point x="479.381" y="464" type="curve" smooth="yes"/>
+      <point x="490.859" y="518"/>
+      <point x="465.236" y="548"/>
+      <point x="409.236" y="548" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="64" y="708" type="line"/>
-      <point x="379" y="708" type="line" smooth="yes"/>
-      <point x="545" y="708"/>
-      <point x="648" y="614"/>
-      <point x="648" y="464" type="curve" smooth="yes"/>
-      <point x="648" y="306"/>
-      <point x="544" y="216"/>
-      <point x="360" y="216" type="curve" smooth="yes"/>
-      <point x="256" y="216" type="line"/>
-      <point x="256" y="0" type="line"/>
-      <point x="64" y="0" type="line"/>
+      <point x="139.245" y="708" type="line"/>
+      <point x="454.245" y="708" type="line" smooth="yes"/>
+      <point x="620.245" y="708"/>
+      <point x="703.265" y="614"/>
+      <point x="671.381" y="464" type="curve" smooth="yes"/>
+      <point x="637.797" y="306"/>
+      <point x="514.667" y="216"/>
+      <point x="330.667" y="216" type="curve" smooth="yes"/>
+      <point x="226.667" y="216" type="line"/>
+      <point x="180.755" y="0" type="line"/>
+      <point x="-11.2451" y="0" type="line"/>
     </contour>
   </outline>
   <lib>
