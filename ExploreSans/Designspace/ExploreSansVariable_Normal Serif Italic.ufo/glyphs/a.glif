@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="a" format="2">
+  <advance width="538"/>
+  <unicode hex="0061"/>
+  <image fileName="dc618929-a55f-466c-963a-781cd6bd16fe.png" xScale="1.5574777981803578" yScale="1.5574777981803576" xOffset="-801.0" yOffset="-2373.0" color="0,0,0,0.26143"/>
+  <anchor x="357.762" y="687" name="AccentCenter"/>
+  <anchor x="347.762" y="687" name="Ring"/>
+  <outline>
+    <contour>
+      <point x="276" y="528" type="curve" smooth="yes"/>
+      <point x="339" y="528"/>
+      <point x="379" y="493"/>
+      <point x="396" y="460" type="curve"/>
+      <point x="411" y="535" type="line"/>
+      <point x="488" y="521" type="line"/>
+      <point x="389" y="58" type="line"/>
+      <point x="473" y="41" type="line"/>
+      <point x="456" y="0" type="line"/>
+      <point x="382" y="0" type="line"/>
+      <point x="340" y="9"/>
+      <point x="318" y="29"/>
+      <point x="308" y="54" type="curve"/>
+      <point x="316" y="89" type="line"/>
+      <point x="165" y="-8" type="line"/>
+      <point x="58" y="3"/>
+      <point x="14" y="66"/>
+      <point x="14" y="169" type="curve" smooth="yes"/>
+      <point x="14" y="388"/>
+      <point x="137" y="527"/>
+    </contour>
+    <contour>
+      <point x="281" y="474" type="curve" smooth="yes"/>
+      <point x="150" y="474"/>
+      <point x="94" y="317"/>
+      <point x="94" y="180" type="curve" smooth="yes"/>
+      <point x="94" y="111"/>
+      <point x="105" y="68"/>
+      <point x="172" y="56" type="curve"/>
+      <point x="330" y="155" type="line"/>
+      <point x="384" y="406" type="line"/>
+      <point x="368" y="437"/>
+      <point x="337" y="474"/>
+    </contour>
+  </outline>
+</glyph>

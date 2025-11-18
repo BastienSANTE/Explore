@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="O" format="2">
+  <advance width="728"/>
+  <unicode hex="004F"/>
+  <anchor x="473.167" y="877" name="AccentCenter"/>
+  <outline>
+    <contour>
+      <point x="441.945" y="716" type="curve" smooth="yes"/>
+      <point x="646.945" y="716"/>
+      <point x="744.038" y="580"/>
+      <point x="696.638" y="357" type="curve" smooth="yes"/>
+      <point x="648.6" y="131"/>
+      <point x="489.055" y="-8"/>
+      <point x="287.055" y="-8" type="curve" smooth="yes"/>
+      <point x="85.0547" y="-8"/>
+      <point x="-15.1875" y="132"/>
+      <point x="32.6377" y="357" type="curve" smooth="yes"/>
+      <point x="80.0381" y="580"/>
+      <point x="236.945" y="716"/>
+    </contour>
+    <contour>
+      <point x="426.066" y="646" type="curve" smooth="yes"/>
+      <point x="338.066" y="646"/>
+      <point x="266.724" y="555"/>
+      <point x="224.638" y="357" type="curve" smooth="yes"/>
+      <point x="180.851" y="151"/>
+      <point x="215.934" y="62"/>
+      <point x="302.934" y="62" type="curve" smooth="yes"/>
+      <point x="388.934" y="62"/>
+      <point x="460.639" y="150"/>
+      <point x="504.425" y="356" type="curve" smooth="yes"/>
+      <point x="546.724" y="555"/>
+      <point x="514.066" y="646"/>
+    </contour>
+  </outline>
+</glyph>

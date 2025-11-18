@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="n" format="2">
+  <advance width="544"/>
+  <unicode hex="006E"/>
+  <anchor x="364.312" y="687" name="AccentCenter"/>
+  <outline>
+    <contour>
+      <point x="92.9268" y="513" type="line"/>
+      <point x="192.115" y="528" type="line"/>
+      <point x="165.545" y="403" type="line"/>
+      <point x="205.149" y="467"/>
+      <point x="275.115" y="528"/>
+      <point x="362.115" y="528" type="curve" smooth="yes"/>
+      <point x="465.115" y="528"/>
+      <point x="501.448" y="459"/>
+      <point x="473.816" y="329" type="curve" smooth="yes"/>
+      <point x="409.411" y="26" type="line"/>
+      <point x="473.411" y="26" type="line"/>
+      <point x="467.885" y="0" type="line"/>
+      <point x="372.885" y="0" type="line"/>
+      <point x="443.879" y="334" type="line" smooth="yes"/>
+      <point x="467.473" y="445"/>
+      <point x="438.589" y="502"/>
+      <point x="350.589" y="502" type="curve" smooth="yes"/>
+      <point x="266.589" y="502"/>
+      <point x="193.435" y="426"/>
+      <point x="157.468" y="365" type="curve"/>
+      <point x="85.4111" y="26" type="line"/>
+      <point x="149.411" y="26" type="line"/>
+      <point x="143.885" y="0" type="line"/>
+      <point x="-16.1152" y="0" type="line"/>
+      <point x="-10.5889" y="26" type="line"/>
+      <point x="53.4111" y="26" type="line"/>
+      <point x="154.163" y="500" type="line"/>
+      <point x="88.0381" y="490" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,29 @@
+languagesystem DFLT dflt;
+
+
+# GPOS 
+
+
+lookup kernCrnagehorizontallookups0 {
+  lookupflag 0;
+} kernCrnagehorizontallookups0;
+
+feature kern {
+
+ script DFLT;
+     language dflt ;
+      lookup kernCrnagehorizontallookups0;
+} kern;
+
+@GDEF_Simple = [\A \B \C \D \E \F \G \H \I \J \K \L \M \N \O \P \Q \R \S \T \U \V \W \X \Y \Z \a 
+	\aacute \ampersand \asterisk \b \bracketleft \bracketright \c \cent \comma \d 
+	\dollar \dotlessi \e \eacute \eight \exclam \f \five \four \g \h \i \j \k \l \m \n \nine 
+	\o \one \oslash \p \parenleft \parenright \percent \period \q \r \s \semicolon 
+	\seven \six \slash \space \t \three \two \u \v \w \x \y \z \zero ];
+@GDEF_Mark = [\acutecomb ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , @GDEF_Mark, ;
+
+} GDEF;
+

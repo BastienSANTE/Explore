@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dotlessi" format="2">
+  <advance width="289"/>
+  <unicode hex="0131"/>
+  <image fileName="dd6c3e5e-f500-4a5c-b5c9-c49213c106e1.png" xScale="1.5925446327684514" yScale="1.5925446327684514" xOffset="-2471.0" yOffset="-2411.0" color="0,0,0,0.2157"/>
+  <anchor x="138" y="687" name="AccentCenter"/>
+  <outline>
+    <contour>
+      <point x="68" y="520" type="line"/>
+      <point x="237" y="520" type="line"/>
+      <point x="139" y="56" type="line"/>
+      <point x="220" y="40" type="line"/>
+      <point x="212" y="0" type="line"/>
+      <point x="107" y="0" type="line" smooth="yes"/>
+      <point x="70" y="0"/>
+      <point x="59" y="22"/>
+      <point x="59" y="39" type="curve" smooth="yes"/>
+      <point x="59" y="56"/>
+      <point x="61" y="65"/>
+      <point x="64" y="78" type="curve" smooth="yes"/>
+      <point x="145" y="464" type="line"/>
+      <point x="56" y="464" type="line"/>
+    </contour>
+  </outline>
+</glyph>

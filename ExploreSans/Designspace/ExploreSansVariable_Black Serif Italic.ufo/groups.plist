@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
     <key>public.kern1./</key>
@@ -23,34 +23,20 @@
       <string>Y</string>
     </array>
     <key>public.kern1.\</key>
-    <array>
-      <string>backslash</string>
-    </array>
+    <array/>
     <key>public.kern1.a</key>
     <array>
       <string>a</string>
-      <string>aacute</string>
-      <string>acircumflex</string>
-      <string>adieresis</string>
-      <string>agrave</string>
-      <string>aring</string>
-      <string>atilde</string>
     </array>
     <key>public.kern1.e</key>
     <array>
-      <string>ae</string>
       <string>e</string>
       <string>eacute</string>
     </array>
     <key>public.kern1.o</key>
     <array>
       <string>o</string>
-      <string>oacute</string>
-      <string>ocircumflex</string>
-      <string>odieresis</string>
-      <string>ograve</string>
       <string>oslash</string>
-      <string>otilde</string>
     </array>
     <key>public.kern2./</key>
     <array>
@@ -73,19 +59,10 @@
       <string>Y</string>
     </array>
     <key>public.kern2.\</key>
-    <array>
-      <string>backslash</string>
-    </array>
+    <array/>
     <key>public.kern2.a</key>
     <array>
       <string>a</string>
-      <string>aacute</string>
-      <string>acircumflex</string>
-      <string>adieresis</string>
-      <string>ae</string>
-      <string>agrave</string>
-      <string>aring</string>
-      <string>atilde</string>
     </array>
     <key>public.kern2.e</key>
     <array>
@@ -95,12 +72,7 @@
     <key>public.kern2.o</key>
     <array>
       <string>o</string>
-      <string>oacute</string>
-      <string>ocircumflex</string>
-      <string>odieresis</string>
-      <string>ograve</string>
       <string>oslash</string>
-      <string>otilde</string>
     </array>
   </dict>
 </plist>

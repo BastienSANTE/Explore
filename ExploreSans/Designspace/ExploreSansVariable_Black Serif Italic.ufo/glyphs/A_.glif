@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="A" format="2">
+  <advance width="721"/>
+  <unicode hex="0041"/>
+  <anchor x="447.954" y="876" name="AccentCenter"/>
+  <outline>
+    <contour>
+      <point x="525.245" y="708" type="line"/>
+      <point x="603.634" y="70" type="line"/>
+      <point x="648.634" y="70" type="line"/>
+      <point x="633.755" y="0" type="line"/>
+      <point x="369.755" y="0" type="line"/>
+      <point x="384.634" y="70" type="line"/>
+      <point x="428.634" y="70" type="line"/>
+      <point x="418.465" y="168" type="line"/>
+      <point x="143.465" y="168" type="line"/>
+      <point x="89.6338" y="70" type="line"/>
+      <point x="146.634" y="70" type="line"/>
+      <point x="131.755" y="0" type="line"/>
+      <point x="-63.2451" y="0" type="line"/>
+      <point x="-48.3662" y="70" type="line"/>
+      <point x="-12.3662" y="70" type="line"/>
+      <point x="318.24" y="628" type="line"/>
+      <point x="335.245" y="708" type="line"/>
+    </contour>
+    <contour>
+      <point x="375.864" y="598" type="line"/>
+      <point x="186.02" y="260" type="line"/>
+      <point x="414.02" y="260" type="line"/>
+      <point x="381.864" y="598" type="line"/>
+    </contour>
+  </outline>
+</glyph>
