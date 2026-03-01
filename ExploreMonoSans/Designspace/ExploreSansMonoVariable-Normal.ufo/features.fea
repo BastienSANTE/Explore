@@ -39,4 +39,5 @@ feature ss01 {
     name 1 "Stylistic Set 1";
   };
   sub r by r.ss01;
+  sub a by a.ss01;
 } ss01;
