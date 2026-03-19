@@ -14,21 +14,43 @@
         <label uservalue="900" name="Black"/>
       </labels>
     </axis>
+    <axis tag="ital" name="italic" values="0 1" default="0"/>
   </axes>
   <sources>
     <source filename="ExploreSansMonoVariable-ExtraLight.ufo" name="ExtraLight" familyname="Explore Sans Mono Variable" stylename="ExtraThin">
       <location>
         <dimension name="weight" xvalue="100"/>
+        <dimension name="italic" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="ExploreSansMonoVariable-ExtraLightItalic.ufo" name="ExtraLight" familyname="Explore Sans Mono Variable" stylename="ExtraThin Italic">
+      <location>
+        <dimension name="weight" xvalue="100"/>
+        <dimension name="italic" xvalue="1"/>
       </location>
     </source>
     <source filename="ExploreSansMonoVariable-Heavy.ufo" name="Heavy" familyname="Explore Sans Mono Variable" stylename="Black">
       <location>
         <dimension name="weight" xvalue="900"/>
+        <dimension name="italic" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="ExploreSansMonoVariable-HeavyItalic.ufo" name="Heavy" familyname="Explore Sans Mono Variable" stylename="Black Italic">
+      <location>
+        <dimension name="weight" xvalue="900"/>
+        <dimension name="italic" xvalue="1"/>
       </location>
     </source>
     <source filename="ExploreSansMonoVariable-Normal.ufo" name="Normal" familyname="Explore Sans Mono Variable" stylename="Normal">
       <location>
         <dimension name="weight" xvalue="400"/>
+        <dimension name="italic" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="ExploreSansMonoVariable-NormalItalic.ufo" name="Normal" familyname="Explore Sans Mono Variable" stylename="Normal Italic">
+      <location>
+        <dimension name="weight" xvalue="400"/>
+        <dimension name="italic" xvalue="1"/>
       </location>
     </source>
   </sources>

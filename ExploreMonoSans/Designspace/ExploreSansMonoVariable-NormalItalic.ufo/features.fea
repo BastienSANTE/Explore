@@ -1,0 +1,82 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+
+# GSUB 
+
+
+lookup ligaLigaturesstandarddansLatinlookup0 {
+  lookupflag 0;
+    sub \equal \equal  by \equal_equal.liga;
+} ligaLigaturesstandarddansLatinlookup0;
+
+lookup ss01Jeustylistique1dansLatinlookup1 {
+  lookupflag 0;
+    sub \a by \a.ss01 ;
+    sub \r by \r.ss01 ;
+} ss01Jeustylistique1dansLatinlookup1;
+
+feature liga {
+
+ script DFLT;
+     language dflt ;
+      lookup ligaLigaturesstandarddansLatinlookup0;
+
+ script latn;
+     language dflt ;
+      lookup ligaLigaturesstandarddansLatinlookup0;
+} liga;
+
+feature ss01 {
+  featureNames {
+    name 3 1 0x409 "Stylistic Set 1";
+  };
+
+ script DFLT;
+     language dflt ;
+      lookup ss01Jeustylistique1dansLatinlookup1;
+
+ script latn;
+     language dflt ;
+      lookup ss01Jeustylistique1dansLatinlookup1;
+} ss01;
+
+# GPOS 
+
+
+lookup kernCrnagehorizontallookups0 {
+  lookupflag 0;
+} kernCrnagehorizontallookups0;
+
+feature kern {
+
+ script DFLT;
+     language dflt ;
+      lookup kernCrnagehorizontallookups0;
+} kern;
+
+@GDEF_Simple = [\A \AE \Aacute \Acircumflex \Adieresis \Agrave \Aring \Atilde \B \C 
+	\Ccedilla \D \E \Eacute \Ecircumflex \Edieresis \Egrave \Eth \Euro \F \G \H \I 
+	\Iacute \Icircumflex \Idieresis \Igrave \J \K \L \M \N \O \Oacute \Ocircumflex 
+	\Odieresis \Ograve \Otilde \P \Q \R \S \T \Thorn \U \Uacute \Ucircumflex \Udieresis 
+	\Ugrave \V \W \X \Y \Yacute \Z \a \a.ss01 \aacute \acircumflex \adieresis \ae \agrave 
+	\ampersand \ampersand_ampersand.liga \aring \asciicircum \asciitilde 
+	\asterisk \at \atilde \b \backslash \bar \braceleft \braceright \bracketleft 
+	\bracketright \c \ccedilla \cent \colon \comma \copyright \currency \d \dollar 
+	\dotlessi \e \eacute \ecircumflex \edieresis \egrave \eight \equal \eth \exclam 
+	\exclamdown \f \five \four \g \grave \greater \h \hyphen \i \iacute \icircumflex 
+	\idieresis \igrave \j \k \l \less \m \mu \n \nine \ntilde \numbersign \o \oacute 
+	\ocircumflex \odieresis \ograve \one \onehalf \onequarter \oslash \otilde \p 
+	\paragraph \parenleft \parenright \percent \period \plus \q \question 
+	\questiondown \quotedbl \quotesingle \r \r.alt \r.ss01 \s \section \semicolon 
+	\seven \six \slash \space \sterling \t \thorn \three \threequarters \two \u \uacute 
+	\ucircumflex \udieresis \ugrave \umacron \underscore \uni00A0 \uni0304 \uni0327 
+	\v \w \x \y \yacute \ydieresis \yen \z \zero ];
+@GDEF_Ligature = [\equal_equal.liga ];
+@GDEF_Mark = [\acutecomb \gravecomb \tildecomb \uni0302 \uni0308 \uni030A ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
+
+} GDEF;
+
