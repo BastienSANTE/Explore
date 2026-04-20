@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
     <key>.notdef</key>
@@ -218,6 +218,8 @@
     <string>iacute.glif</string>
     <key>icircumflex</key>
     <string>icircumflex.glif</string>
+    <key>icon_bike</key>
+    <string>icon_bike.glif</string>
     <key>idieresis</key>
     <string>idieresis.glif</string>
     <key>igrave</key>
@@ -288,6 +290,8 @@
     <string>quotesingle.glif</string>
     <key>r</key>
     <string>r.glif</string>
+    <key>racingMotorcycle</key>
+    <string>racingM_otorcycle.glif</string>
     <key>s</key>
     <string>s.glif</string>
     <key>section</key>
