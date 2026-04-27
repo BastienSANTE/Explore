@@ -14,43 +14,103 @@
         <label uservalue="900" name="Black"/>
       </labels>
     </axis>
-    <axis tag="ital" name="italic" values="0 1" default="0"/>
+    <axis tag="ital" name="italic" values="0 1" default="0">
+      <labels>
+        <label uservalue="0" name="Upright"/>
+        <label uservalue="1" name="Italic"/>
+      </labels>
+    </axis>
+    <axis tag="wdth" name="width" minimum="75" maximum="125" default="100">
+      <labels>
+        <label uservalue="75" name="Condensed"/>
+        <label uservalue="100" name="Normal"/>
+        <label uservalue="125" name="Expanded"/>
+      </labels>
+    </axis>
   </axes>
   <sources>
+    <source filename="ExploreSansMonoVariable_ExtraLight Condensed.ufo" name="0a631069" familyname="Explore Sans Mono Variable" stylename="ExtraLight Condensed">
+      <location>
+        <dimension name="weight" xvalue="100"/>
+        <dimension name="italic" xvalue="0"/>
+        <dimension name="width" xvalue="75"/>
+      </location>
+    </source>
     <source filename="ExploreSansMonoVariable-ExtraLight.ufo" name="ExtraLight" familyname="Explore Sans Mono Variable" stylename="ExtraThin">
       <location>
         <dimension name="weight" xvalue="100"/>
         <dimension name="italic" xvalue="0"/>
+        <dimension name="width" xvalue="100"/>
       </location>
     </source>
-    <source filename="ExploreSansMonoVariable-ExtraLightItalic.ufo" name="ExtraLight" familyname="Explore Sans Mono Variable" stylename="ExtraThin Italic">
+    <source filename="ExploreSansMonoVariable_ExtraLight Italic Condensed.ufo" name="a85f6cad" familyname="Explore Sans Mono Variable" stylename="ExtraLight Italic Condensed">
       <location>
         <dimension name="weight" xvalue="100"/>
         <dimension name="italic" xvalue="1"/>
+        <dimension name="width" xvalue="75"/>
+      </location>
+    </source>
+    <source filename="ExploreSansMonoVariable-ExtraLightItalic.ufo" name="ExtraLight::fontra001" familyname="Explore Sans Mono Variable" stylename="ExtraThin Italic">
+      <location>
+        <dimension name="weight" xvalue="100"/>
+        <dimension name="italic" xvalue="1"/>
+        <dimension name="width" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="ExploreSansMonoVariable_Normal Condensed.ufo" name="f1c28d46" familyname="Explore Sans Mono Variable" stylename="Normal Condensed">
+      <location>
+        <dimension name="weight" xvalue="400"/>
+        <dimension name="italic" xvalue="0"/>
+        <dimension name="width" xvalue="75"/>
       </location>
     </source>
     <source filename="ExploreSansMonoVariable-Heavy.ufo" name="Heavy" familyname="Explore Sans Mono Variable" stylename="Black">
       <location>
         <dimension name="weight" xvalue="900"/>
         <dimension name="italic" xvalue="0"/>
+        <dimension name="width" xvalue="100"/>
       </location>
     </source>
-    <source filename="ExploreSansMonoVariable-HeavyItalic.ufo" name="Heavy" familyname="Explore Sans Mono Variable" stylename="Black Italic">
+    <source filename="ExploreSansMonoVariable_Black Italic Condensed.ufo" name="e2037b9b" familyname="Explore Sans Mono Variable" stylename="Black Italic Condensed">
       <location>
         <dimension name="weight" xvalue="900"/>
         <dimension name="italic" xvalue="1"/>
+        <dimension name="width" xvalue="75"/>
+      </location>
+    </source>
+    <source filename="ExploreSansMonoVariable-HeavyItalic.ufo" name="Heavy::fontra003" familyname="Explore Sans Mono Variable" stylename="Black Italic">
+      <location>
+        <dimension name="weight" xvalue="900"/>
+        <dimension name="italic" xvalue="1"/>
+        <dimension name="width" xvalue="100"/>
       </location>
     </source>
     <source filename="ExploreSansMonoVariable-Normal.ufo" name="Normal" familyname="Explore Sans Mono Variable" stylename="Normal">
       <location>
         <dimension name="weight" xvalue="400"/>
         <dimension name="italic" xvalue="0"/>
+        <dimension name="width" xvalue="100"/>
       </location>
     </source>
-    <source filename="ExploreSansMonoVariable-NormalItalic.ufo" name="Normal" familyname="Explore Sans Mono Variable" stylename="Normal Italic">
+    <source filename="ExploreSansMonoVariable_Normal Italic Condensed.ufo" name="cb936216" familyname="Explore Sans Mono Variable" stylename="Normal Italic Condensed">
       <location>
         <dimension name="weight" xvalue="400"/>
         <dimension name="italic" xvalue="1"/>
+        <dimension name="width" xvalue="75"/>
+      </location>
+    </source>
+    <source filename="ExploreSansMonoVariable-NormalItalic.ufo" name="Normal::fontra005" familyname="Explore Sans Mono Variable" stylename="Normal Italic">
+      <location>
+        <dimension name="weight" xvalue="400"/>
+        <dimension name="italic" xvalue="1"/>
+        <dimension name="width" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="ExploreSansMonoVariable_Black Condensed.ufo" name="daf23a13" familyname="Explore Sans Mono Variable" stylename="Black Condensed">
+      <location>
+        <dimension name="weight" xvalue="900"/>
+        <dimension name="italic" xvalue="0"/>
+        <dimension name="width" xvalue="75"/>
       </location>
     </source>
   </sources>

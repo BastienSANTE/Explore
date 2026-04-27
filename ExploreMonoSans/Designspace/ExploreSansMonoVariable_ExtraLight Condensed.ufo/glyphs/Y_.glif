@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Y" format="2">
+  <advance width="450"/>
+  <unicode hex="0059"/>
+  <anchor x="282.8" y="880" name="AccentCenter"/>
+  <outline>
+    <contour>
+      <point x="20" y="708" type="line"/>
+      <point x="54" y="708" type="line"/>
+      <point x="227" y="300" type="line"/>
+      <point x="397" y="708" type="line"/>
+      <point x="430" y="708" type="line"/>
+      <point x="243" y="268" type="line"/>
+      <point x="243" y="0" type="line"/>
+      <point x="211" y="0" type="line"/>
+      <point x="211" y="268" type="line"/>
+    </contour>
+  </outline>
+</glyph>
