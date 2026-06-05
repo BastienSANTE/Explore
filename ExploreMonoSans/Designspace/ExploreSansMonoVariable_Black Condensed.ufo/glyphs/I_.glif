@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="I" format="2">
+  <advance width="450"/>
+  <unicode hex="0049"/>
+  <anchor x="232" y="876" name="AccentCenter"/>
+  <outline>
+    <contour>
+      <point x="16" y="708" type="line"/>
+      <point x="434" y="708" type="line"/>
+      <point x="434" y="548" type="line"/>
+      <point x="321" y="548" type="line"/>
+      <point x="321" y="160" type="line"/>
+      <point x="434" y="160" type="line"/>
+      <point x="434" y="0" type="line"/>
+      <point x="16" y="0" type="line"/>
+      <point x="16" y="160" type="line"/>
+      <point x="129" y="160" type="line"/>
+      <point x="129" y="548" type="line"/>
+      <point x="16" y="548" type="line"/>
+    </contour>
+  </outline>
+</glyph>
