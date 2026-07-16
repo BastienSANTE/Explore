@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="y" format="2">
-  <advance width="594"/>
+  <advance width="528"/>
   <unicode hex="0079"/>
-  <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
-  <anchor x="385.061" y="687" name="AccentCenter"/>
+  <guideline x="-52" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
+  <anchor x="333.061" y="687" name="AccentCenter"/>
   <outline>
     <contour>
-      <point x="83.5635" y="520" type="line"/>
-      <point x="297.563" y="520" type="line"/>
-      <point x="317.802" y="300" type="line"/>
-      <point x="310.821" y="206" type="line"/>
-      <point x="347.802" y="300" type="line"/>
-      <point x="467.563" y="520" type="line"/>
-      <point x="661.563" y="520" type="line"/>
-      <point x="220.437" y="-191" type="line"/>
-      <point x="40.4365" y="-191" type="line"/>
-      <point x="183.899" y="37" type="line"/>
+      <point x="32" y="520" type="line"/>
+      <point x="246" y="520" type="line"/>
+      <point x="266" y="300" type="line"/>
+      <point x="259" y="206" type="line"/>
+      <point x="296" y="300" type="line"/>
+      <point x="416" y="520" type="line"/>
+      <point x="610" y="520" type="line"/>
+      <point x="168" y="-191" type="line"/>
+      <point x="-12" y="-191" type="line"/>
+      <point x="132" y="37" type="line"/>
     </contour>
   </outline>
   <lib>

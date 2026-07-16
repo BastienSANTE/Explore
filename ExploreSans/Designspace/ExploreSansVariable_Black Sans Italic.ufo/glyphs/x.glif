@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="x" format="2">
-  <advance width="576"/>
+  <advance width="543"/>
   <unicode hex="0078"/>
   <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
   <outline>
     <contour>
-      <point x="63.2646" y="520" type="line"/>
-      <point x="258.265" y="520" type="line"/>
-      <point x="309.13" y="350" type="line"/>
-      <point x="433.265" y="520" type="line"/>
-      <point x="623.265" y="520" type="line"/>
-      <point x="407" y="260" type="line"/>
-      <point x="512.735" y="0" type="line"/>
-      <point x="322.735" y="0" type="line"/>
-      <point x="273.082" y="171" type="line"/>
-      <point x="147.735" y="0" type="line"/>
-      <point x="-47.2646" y="0" type="line"/>
-      <point x="168" y="260" type="line"/>
+      <point x="43" y="520" type="line"/>
+      <point x="238" y="520" type="line"/>
+      <point x="289" y="350" type="line"/>
+      <point x="413" y="520" type="line"/>
+      <point x="603" y="520" type="line"/>
+      <point x="387" y="260" type="line"/>
+      <point x="493" y="0" type="line"/>
+      <point x="303" y="0" type="line"/>
+      <point x="253" y="171" type="line"/>
+      <point x="128" y="0" type="line"/>
+      <point x="-67" y="0" type="line"/>
+      <point x="148" y="260" type="line"/>
     </contour>
   </outline>
   <lib>
