@@ -2,6 +2,7 @@
 <glyph name="i" format="2">
   <advance width="289"/>
   <unicode hex="0069"/>
+  <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
   <outline>
     <contour>
       <point x="234.54" y="739" type="curve" smooth="yes"/>
@@ -19,4 +20,10 @@
     </contour>
     <component base="dotlessi" yxScale="4.383299778976113e-07"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.locked.fontra-guideline-0</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

@@ -3,6 +3,7 @@
   <advance width="552"/>
   <unicode hex="0078"/>
   <image fileName="7b885355-de91-4283-8f54-b9751122f22c.png" xScale="1.5497539112656824" yScale="1.5497539112656824" xOffset="-3653.0" yOffset="-2349.0" color="0,0,0,0.25796"/>
+  <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
   <outline>
     <contour>
       <point x="81" y="520" type="line"/>
@@ -29,4 +30,10 @@
       <point x="82" y="464" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.locked.fontra-guideline-0</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

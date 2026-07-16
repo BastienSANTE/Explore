@@ -2,6 +2,7 @@
 <glyph name="r" format="2">
   <advance width="513"/>
   <unicode hex="0072"/>
+  <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
   <outline>
     <contour>
       <point x="294" y="528" type="line"/>
@@ -24,4 +25,10 @@
       <point x="71" y="492" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.locked.fontra-guideline-0</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

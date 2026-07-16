@@ -3,6 +3,7 @@
   <advance width="538"/>
   <unicode hex="0061"/>
   <image fileName="dc618929-a55f-466c-963a-781cd6bd16fe.png" xScale="1.5574777981803578" yScale="1.5574777981803576" xOffset="-801.0" yOffset="-2373.0" color="0,0,0,0.26143"/>
+  <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
   <anchor x="357.762" y="687" name="AccentCenter"/>
   <anchor x="347.762" y="687" name="Ring"/>
   <outline>
@@ -42,4 +43,10 @@
       <point x="354" y="474"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.locked.fontra-guideline-0</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>
