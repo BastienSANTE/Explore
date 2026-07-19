@@ -1,24 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="A" format="2">
-  <advance width="619"/>
+  <advance width="580"/>
   <unicode hex="0041"/>
-  <anchor x="432.018" y="881" name="AccentCenter"/>
+  <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
+  <anchor x="432" y="881" name="AccentCenter"/>
   <outline>
     <contour>
-      <point x="344.245" y="708" type="line"/>
-      <point x="451.245" y="708" type="line"/>
-      <point x="527.755" y="0" type="line"/>
-      <point x="446.755" y="0" type="line"/>
-      <point x="429.44" y="182" type="line"/>
-      <point x="124.44" y="182" type="line"/>
-      <point x="23.7549" y="0" type="line"/>
-      <point x="-59.2451" y="0" type="line"/>
+      <point x="344" y="708" type="line"/>
+      <point x="451" y="708" type="line"/>
+      <point x="528" y="0" type="line"/>
+      <point x="447" y="0" type="line"/>
+      <point x="429" y="182" type="line"/>
+      <point x="124" y="182" type="line"/>
+      <point x="24" y="0" type="line"/>
+      <point x="-59" y="0" type="line"/>
     </contour>
     <contour>
-      <point x="382.491" y="648" type="line"/>
-      <point x="160.044" y="246" type="line"/>
-      <point x="424.044" y="246" type="line"/>
-      <point x="385.491" y="648" type="line"/>
+      <point x="382" y="648" type="line"/>
+      <point x="160" y="246" type="line"/>
+      <point x="424" y="246" type="line"/>
+      <point x="385" y="648" type="line"/>
     </contour>
   </outline>
   <lib>
@@ -41,6 +42,8 @@
           </dict>
         </array>
       </dict>
+      <key>com.typemytype.robofont.guideline.locked.fontra-guideline-0</key>
+      <true/>
     </dict>
   </lib>
 </glyph>

@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="u" format="2">
-  <advance width="578"/>
+  <advance width="582"/>
   <unicode hex="0075"/>
   <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
   <anchor x="386.612" y="687" name="AccentCenter"/>
   <outline>
     <contour>
-      <point x="132.115" y="520" type="line"/>
-      <point x="212.115" y="520" type="line"/>
-      <point x="143.459" y="197" type="line" smooth="yes"/>
-      <point x="123.479" y="103"/>
-      <point x="148.488" y="56"/>
-      <point x="219.488" y="56" type="curve" smooth="yes"/>
-      <point x="256.488" y="56"/>
-      <point x="308.614" y="66"/>
-      <point x="384.619" y="146" type="curve"/>
-      <point x="464.115" y="520" type="line"/>
-      <point x="542.115" y="520" type="line"/>
-      <point x="431.586" y="0" type="line"/>
-      <point x="369.586" y="0" type="line"/>
-      <point x="372.803" y="81" type="line"/>
-      <point x="352.764" y="62"/>
-      <point x="277.885" y="-8"/>
-      <point x="180.885" y="-8" type="curve" smooth="yes"/>
-      <point x="137.885" y="-8"/>
-      <point x="19.8848" y="-8"/>
-      <point x="63.0342" y="195" type="curve" smooth="yes"/>
+      <point x="135" y="520" type="line"/>
+      <point x="215" y="520" type="line"/>
+      <point x="146" y="197" type="line" smooth="yes"/>
+      <point x="126" y="103"/>
+      <point x="151" y="56"/>
+      <point x="222" y="56" type="curve" smooth="yes"/>
+      <point x="259" y="56"/>
+      <point x="312" y="66"/>
+      <point x="388" y="146" type="curve"/>
+      <point x="467" y="520" type="line"/>
+      <point x="545" y="520" type="line"/>
+      <point x="435" y="0" type="line"/>
+      <point x="373" y="0" type="line"/>
+      <point x="376" y="81" type="line"/>
+      <point x="356" y="62"/>
+      <point x="281" y="-8"/>
+      <point x="184" y="-8" type="curve" smooth="yes"/>
+      <point x="141" y="-8"/>
+      <point x="23" y="-8"/>
+      <point x="66" y="195" type="curve" smooth="yes"/>
     </contour>
   </outline>
   <lib>

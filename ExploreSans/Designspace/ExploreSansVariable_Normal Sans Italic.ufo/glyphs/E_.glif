@@ -2,21 +2,22 @@
 <glyph name="E" format="2">
   <advance width="560"/>
   <unicode hex="0045"/>
+  <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
   <anchor x="413.805" y="880" name="AccentCenter"/>
   <outline>
     <contour>
-      <point x="167.245" y="708" type="line"/>
-      <point x="599.245" y="708" type="line"/>
-      <point x="585.642" y="644" type="line"/>
-      <point x="233.642" y="644" type="line"/>
-      <point x="182.203" y="402" type="line"/>
-      <point x="454.203" y="402" type="line"/>
-      <point x="439.324" y="332" type="line"/>
-      <point x="167.324" y="332" type="line"/>
-      <point x="110.358" y="64" type="line"/>
-      <point x="462.358" y="64" type="line"/>
-      <point x="448.755" y="0" type="line"/>
-      <point x="16.7549" y="0" type="line"/>
+      <point x="175" y="708" type="line"/>
+      <point x="607" y="708" type="line"/>
+      <point x="594" y="644" type="line"/>
+      <point x="242" y="644" type="line"/>
+      <point x="190" y="402" type="line"/>
+      <point x="462" y="402" type="line"/>
+      <point x="447" y="332" type="line"/>
+      <point x="175" y="332" type="line"/>
+      <point x="118" y="64" type="line"/>
+      <point x="470" y="64" type="line"/>
+      <point x="457" y="0" type="line"/>
+      <point x="25" y="0" type="line"/>
     </contour>
   </outline>
   <lib>
@@ -54,6 +55,8 @@
           </dict>
         </array>
       </dict>
+      <key>com.typemytype.robofont.guideline.locked.fontra-guideline-0</key>
+      <true/>
     </dict>
   </lib>
 </glyph>
