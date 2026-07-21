@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="z" format="2">
-  <advance width="523"/>
+  <advance width="438.9296"/>
   <unicode hex="007A"/>
   <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
   <outline>
     <contour>
-      <point x="144.265" y="520" type="line"/>
-      <point x="493.265" y="520" type="line"/>
-      <point x="487.313" y="492" type="line"/>
-      <point x="73.6865" y="28" type="line"/>
-      <point x="388.687" y="28" type="line"/>
-      <point x="382.735" y="0" type="line"/>
-      <point x="29.7354" y="0" type="line"/>
-      <point x="35.6865" y="28" type="line"/>
-      <point x="448.313" y="492" type="line"/>
-      <point x="138.313" y="492" type="line"/>
+      <point x="103.22959999999998" y="520" type="line"/>
+      <point x="452.2296" y="520" type="line"/>
+      <point x="446.2776" y="492" type="line"/>
+      <point x="32.6511" y="28" type="line"/>
+      <point x="347.65160000000003" y="28" type="line"/>
+      <point x="341.69960000000003" y="0" type="line"/>
+      <point x="-11.3" y="0" type="line"/>
+      <point x="-5.3489" y="28" type="line"/>
+      <point x="407.2776" y="492" type="line"/>
+      <point x="97.27759999999998" y="492" type="line"/>
     </contour>
   </outline>
   <lib>

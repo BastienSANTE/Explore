@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>ascender</key>
-    <integer>800</integer>
+    <integer>1024</integer>
     <key>capHeight</key>
     <integer>708</integer>
     <key>descender</key>
@@ -73,7 +73,7 @@
       <integer>2</integer>
     </array>
     <key>openTypeOS2TypoAscender</key>
-    <integer>800</integer>
+    <integer>1024</integer>
     <key>openTypeOS2TypoDescender</key>
     <integer>-224</integer>
     <key>openTypeOS2TypoLineGap</key>
@@ -116,7 +116,7 @@
     <key>styleMapStyleName</key>
     <string>regular</string>
     <key>styleName</key>
-    <string>Black</string>
+    <string>Black Sans</string>
     <key>unitsPerEm</key>
     <integer>1024</integer>
     <key>versionMajor</key>
