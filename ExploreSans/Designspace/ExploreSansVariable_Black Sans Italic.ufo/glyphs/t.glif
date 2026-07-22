@@ -1,35 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="t" format="2">
-  <advance width="451"/>
+  <advance width="475.9204"/>
   <unicode hex="0074"/>
   <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
   <outline>
     <contour>
-      <point x="173.24" y="614" type="line"/>
-      <point x="375" y="687" type="line"/>
-      <point x="339" y="520" type="line"/>
-      <point x="464.26" y="520" type="line"/>
-      <point x="435.14" y="383" type="line"/>
-      <point x="310" y="383" type="line"/>
-      <point x="270" y="194" type="line" smooth="yes"/>
-      <point x="262" y="156"/>
-      <point x="279.063" y="138"/>
-      <point x="312.063" y="138" type="curve"/>
-      <point x="330.063" y="138"/>
-      <point x="344.276" y="139"/>
-      <point x="356.488" y="140" type="curve"/>
-      <point x="383.126" y="143" type="line"/>
-      <point x="370.794" y="5" type="line"/>
-      <point x="309.881" y="-4"/>
-      <point x="280.243" y="-7"/>
-      <point x="246.243" y="-7" type="curve" smooth="yes"/>
-      <point x="105.243" y="-7"/>
-      <point x="55.2715" y="59"/>
-      <point x="86.5176" y="206" type="curve" smooth="yes"/>
-      <point x="124.14" y="383" type="line"/>
-      <point x="21.1396" y="383" type="line"/>
-      <point x="50.2598" y="520" type="line"/>
-      <point x="153.26" y="520" type="line"/>
+      <point x="190.2004" y="614" type="line"/>
+      <point x="391.9604" y="687" type="line"/>
+      <point x="355.9604" y="520" type="line"/>
+      <point x="481.2204" y="520" type="line"/>
+      <point x="452.1004" y="383" type="line"/>
+      <point x="326.9604" y="383" type="line"/>
+      <point x="286.9604" y="194" type="line" smooth="yes"/>
+      <point x="278.9604" y="156"/>
+      <point x="296.0234" y="138"/>
+      <point x="329.0234" y="138" type="curve"/>
+      <point x="347.0234" y="138"/>
+      <point x="361.2364" y="139"/>
+      <point x="373.4484" y="140" type="curve"/>
+      <point x="400.08639999999997" y="143" type="line"/>
+      <point x="387.7544" y="5" type="line"/>
+      <point x="326.84139999999996" y="-4"/>
+      <point x="297.2034" y="-7"/>
+      <point x="263.2034" y="-7" type="curve" smooth="yes"/>
+      <point x="122.20339999999999" y="-7"/>
+      <point x="72.2319" y="59"/>
+      <point x="103.47800000000001" y="206" type="curve" smooth="yes"/>
+      <point x="141.1004" y="383" type="line"/>
+      <point x="38.1" y="383" type="line"/>
+      <point x="67.2202" y="520" type="line"/>
+      <point x="170.22039999999998" y="520" type="line"/>
     </contour>
   </outline>
   <lib>
