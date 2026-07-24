@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="l" format="2">
-  <advance width="241"/>
+  <advance width="259.98673699589773"/>
   <unicode hex="006C"/>
   <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
   <outline>
     <contour>
-      <point x="184.916" y="791" type="line"/>
-      <point x="216.916" y="791" type="line"/>
-      <point x="59.6133" y="50.0195" type="line" smooth="yes"/>
-      <point x="55.6934" y="31.5566"/>
-      <point x="70.2168" y="23.043"/>
-      <point x="89.3174" y="23" type="curve" smooth="yes"/>
-      <point x="97.3135" y="22.9824"/>
-      <point x="106.012" y="24.1221"/>
-      <point x="119.284" y="26.0947" type="curve"/>
-      <point x="152.373" y="31" type="line"/>
-      <point x="151.847" y="5" type="line"/>
-      <point x="134.571" y="-1"/>
-      <point x="94.2471" y="-8"/>
-      <point x="73.084" y="-8" type="curve" smooth="yes"/>
-      <point x="30.084" y="-8"/>
-      <point x="20.0869" y="15.5391"/>
-      <point x="27.624" y="51" type="curve" smooth="yes"/>
+      <point x="212.88673699589773" y="791" type="line"/>
+      <point x="244.88673699589773" y="791" type="line"/>
+      <point x="87.58403699589773" y="50.0195" type="line" smooth="yes"/>
+      <point x="83.66413699589772" y="31.5566"/>
+      <point x="98.18753699589773" y="23.043"/>
+      <point x="117.28813699589773" y="23" type="curve" smooth="yes"/>
+      <point x="125.28423699589773" y="22.9824"/>
+      <point x="133.9827369958977" y="24.1221"/>
+      <point x="147.25473699589773" y="26.0947" type="curve"/>
+      <point x="180.34373699589773" y="31" type="line"/>
+      <point x="179.81773699589775" y="5" type="line"/>
+      <point x="162.54173699589774" y="-1"/>
+      <point x="122.21783699589773" y="-8"/>
+      <point x="101.05473699589773" y="-8" type="curve" smooth="yes"/>
+      <point x="58.05473699589773" y="-8"/>
+      <point x="48.057636995897724" y="15.5391"/>
+      <point x="55.59473699589772" y="51" type="curve" smooth="yes"/>
     </contour>
   </outline>
   <lib>

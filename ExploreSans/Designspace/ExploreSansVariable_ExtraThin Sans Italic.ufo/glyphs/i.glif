@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="i" format="2">
-  <advance width="221"/>
+  <advance width="240.0481523104291"/>
   <unicode hex="0069"/>
   <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
   <outline>
@@ -18,7 +18,7 @@
       <point x="180.23" y="713.885"/>
       <point x="200.584" y="731.063"/>
     </contour>
-    <component base="dotlessi" yxScale="0.212557" xOffset="-81.2961"/>
+    <component base="dotlessi" yxScale="4.383299778976113e-07" xOffset="-26.03139396579425"/>
   </outline>
   <lib>
     <dict>

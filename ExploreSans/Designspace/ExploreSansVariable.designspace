@@ -144,6 +144,16 @@
           <key>url</key>
           <string>https://cdn.jsdelivr.net/gh/googlefonts/glyphsets/data/results/txt/nice-names/GF_Latin_Core.txt</string>
         </dict>
+        <dict>
+          <key>commentChars</key>
+          <string>#</string>
+          <key>dataFormat</key>
+          <string>glyph-names</string>
+          <key>name</key>
+          <string>GF Greek Core</string>
+          <key>url</key>
+          <string>https://cdn.jsdelivr.net/gh/googlefonts/glyphsets/data/results/txt/nice-names/GF_Greek_Core.txt</string>
+        </dict>
       </array>
     </dict>
   </lib>

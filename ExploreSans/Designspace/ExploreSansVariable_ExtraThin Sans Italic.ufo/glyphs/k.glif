@@ -5,19 +5,36 @@
   <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
   <outline>
     <contour>
-      <point x="178.245" y="708" type="line"/>
-      <point x="210.245" y="708" type="line"/>
-      <point x="121.609" y="291" type="line"/>
-      <point x="144.609" y="291" type="line"/>
-      <point x="431.497" y="521" type="line"/>
-      <point x="473.497" y="521" type="line"/>
-      <point x="169.421" y="276" type="line"/>
-      <point x="358.755" y="0" type="line"/>
-      <point x="316.755" y="0" type="line"/>
-      <point x="138.657" y="263" type="line"/>
-      <point x="115.657" y="263" type="line"/>
       <point x="59.7549" y="0" type="line"/>
       <point x="27.7549" y="0" type="line"/>
+      <point x="178.245" y="708" type="line"/>
+      <point x="210.245" y="708" type="line"/>
+    </contour>
+    <contour>
+      <point x="213" y="262" type="line"/>
+      <point x="384" y="356" type="line"/>
+      <point x="398" y="378"/>
+      <point x="406" y="398"/>
+      <point x="406" y="429" type="curve" smooth="yes"/>
+      <point x="406" y="489"/>
+      <point x="367" y="502"/>
+      <point x="326" y="502" type="curve" smooth="yes"/>
+      <point x="230" y="502"/>
+      <point x="160" y="372"/>
+      <point x="114" y="261" type="curve"/>
+      <point x="94" y="271" type="line"/>
+      <point x="145" y="399"/>
+      <point x="218" y="528"/>
+      <point x="330" y="528" type="curve" smooth="yes"/>
+      <point x="392" y="528"/>
+      <point x="434" y="494"/>
+      <point x="434" y="434" type="curve" smooth="yes"/>
+      <point x="434" y="395"/>
+      <point x="421" y="365"/>
+      <point x="405" y="339" type="curve"/>
+      <point x="248" y="254" type="line"/>
+      <point x="388" y="0" type="line"/>
+      <point x="356" y="0" type="line"/>
     </contour>
   </outline>
   <lib>
