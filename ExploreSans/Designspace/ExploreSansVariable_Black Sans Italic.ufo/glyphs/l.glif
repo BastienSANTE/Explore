@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="l" format="2">
-  <advance width="360"/>
+  <advance width="359.957027468661"/>
   <unicode hex="006C"/>
   <guideline x="0" y="260" angle="0" name="ItalicCenter" identifier="fontra-guideline-0"/>
   <outline>
     <contour>
-      <point x="146.897" y="772" type="line"/>
-      <point x="338.897" y="772" type="line"/>
-      <point x="210.938" y="170" type="line" smooth="yes"/>
-      <point x="204.773" y="141"/>
-      <point x="215.798" y="127"/>
-      <point x="244.798" y="127" type="curve"/>
-      <point x="246.798" y="127"/>
-      <point x="253.011" y="128"/>
-      <point x="256.011" y="128" type="curve"/>
-      <point x="289.861" y="132" type="line"/>
-      <point x="275.016" y="1" type="line"/>
-      <point x="249.166" y="-3"/>
-      <point x="203.103" y="-8"/>
-      <point x="166.103" y="-8" type="curve" smooth="yes"/>
-      <point x="59.1025" y="-8"/>
-      <point x="-5.29297" y="56"/>
-      <point x="16.5996" y="159" type="curve" smooth="yes"/>
+      <point x="172.85702746866102" y="772" type="line"/>
+      <point x="364.857027468661" y="772" type="line"/>
+      <point x="236.898027468661" y="170" type="line" smooth="yes"/>
+      <point x="230.73302746866102" y="141"/>
+      <point x="241.75802746866103" y="127"/>
+      <point x="270.758027468661" y="127" type="curve"/>
+      <point x="272.75802746866106" y="127"/>
+      <point x="278.971027468661" y="128"/>
+      <point x="281.971027468661" y="128" type="curve"/>
+      <point x="315.821027468661" y="132" type="line"/>
+      <point x="300.976027468661" y="1" type="line"/>
+      <point x="275.12602746866105" y="-3"/>
+      <point x="229.06302746866103" y="-8"/>
+      <point x="192.06302746866103" y="-8" type="curve" smooth="yes"/>
+      <point x="85.06252746866102" y="-8"/>
+      <point x="20.667057468661" y="56"/>
+      <point x="42.559627468661006" y="159" type="curve" smooth="yes"/>
     </contour>
   </outline>
   <lib>
