@@ -2,21 +2,21 @@
 <glyph name="I" format="2">
   <advance width="480"/>
   <unicode hex="0049"/>
-  <anchor x="222" y="876" name="AccentCenter"/>
+  <anchor x="237" y="876" name="AccentCenter"/>
   <outline>
     <contour>
-      <point x="64" y="708" type="line"/>
-      <point x="386" y="708" type="line"/>
-      <point x="386" y="683" type="line"/>
-      <point x="240" y="683" type="line"/>
-      <point x="240" y="25" type="line"/>
-      <point x="386" y="25" type="line"/>
-      <point x="386" y="0" type="line"/>
-      <point x="64" y="0" type="line"/>
-      <point x="64" y="25" type="line"/>
-      <point x="208" y="25" type="line"/>
-      <point x="208" y="683" type="line"/>
-      <point x="64" y="683" type="line"/>
+      <point x="79" y="708" type="line"/>
+      <point x="401" y="708" type="line"/>
+      <point x="401" y="683" type="line"/>
+      <point x="255" y="683" type="line"/>
+      <point x="255" y="25" type="line"/>
+      <point x="401" y="25" type="line"/>
+      <point x="401" y="0" type="line"/>
+      <point x="79" y="0" type="line"/>
+      <point x="79" y="25" type="line"/>
+      <point x="223" y="25" type="line"/>
+      <point x="223" y="683" type="line"/>
+      <point x="79" y="683" type="line"/>
     </contour>
   </outline>
 </glyph>
